@@ -48,6 +48,7 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
 
   opt.decorationAlignment = Qt::AlignHCenter | Qt::AlignTop;
   opt.displayAlignment = Qt::AlignTop | Qt::AlignHCenter;
+  opt.font.setPointSize(QApplication::font().pointSize()-2); // probono: FIXME: Make configurable
 
   // draw the icon
   QIcon::Mode iconMode;
@@ -156,6 +157,7 @@ QSize DesktopItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QM
     return qvariant_cast<QSize>(value);
   QStyleOptionViewItemV4 opt = option;
   initStyleOption(&opt, index);
+  opt.font.setPointSize(QApplication::font().pointSize()-2); // probono: FIXME: Make configurable
 
   // use grid size as size hint
   QSize gridSize = view_->gridSize();

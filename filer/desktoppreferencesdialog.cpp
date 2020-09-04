@@ -78,12 +78,11 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   qDebug("wallpaper: %s", settings.wallpaper().toUtf8().data());
   ui.imageFile->setText(settings.wallpaper());
 
-  ui.font->setFont(settings.desktopFont());
 
   ui.backgroundColor->setColor(settings.desktopBgColor());
   ui.textColor->setColor(settings.desktopFgColor());
   ui.shadowColor->setColor(settings.desktopShadowColor());
-  ui.showWmMenu->setChecked(settings.showWmMenu());
+  // ui.showWmMenu->setChecked(settings.showWmMenu()); // probono: Never show window manager menu
 
   connect(ui.buttonBox->button(QDialogButtonBox::Apply), &QPushButton::clicked,
           this, &DesktopPreferencesDialog::onApplyClicked);
@@ -94,11 +93,6 @@ DesktopPreferencesDialog::~DesktopPreferencesDialog() {
 
 void DesktopPreferencesDialog::setupDesktopFolderUi()
 {
-  desktopFolderWidget = new QWidget();
-  uiDesktopFolder.setupUi(desktopFolderWidget);
-  ui.advancedPageLayout->insertWidget(1, desktopFolderWidget);
-  uiDesktopFolder.verticalLayout->setMargin(0);
-
   desktopFolder = XdgDir::readDesktopDir();
   qDebug("desktop folder: %s", desktopFolder.toStdString().c_str());
 
@@ -118,11 +112,10 @@ void DesktopPreferencesDialog::applySettings()
   settings.setWallpaper(ui.imageFile->text());
   int mode = ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt();
   settings.setWallpaperMode(mode);
-  settings.setDesktopFont(ui.font->font());
   settings.setDesktopBgColor(ui.backgroundColor->color());
   settings.setDesktopFgColor(ui.textColor->color());
   settings.setDesktopShadowColor(ui.shadowColor->color());
-  settings.setShowWmMenu(ui.showWmMenu->isChecked());
+  // settings.setShowWmMenu(ui.showWmMenu->isChecked());  // probono: Never show window manager menu
 
   settings.save();
 }
@@ -183,12 +176,6 @@ void DesktopPreferencesDialog::onBrowseDesktopFolderClicked()
     dir = dlg.selectedFiles().first();
     uiDesktopFolder.desktopFolder->setText(dir);
   }
-}
-
-void DesktopPreferencesDialog::selectPage(QString name) {
-  QWidget* page = findChild<QWidget*>(name + "Page");
-  if(page)
-    ui.tabWidget->setCurrentWidget(page);
 }
 
 void DesktopPreferencesDialog::setEditDesktopFolder(const bool enabled)

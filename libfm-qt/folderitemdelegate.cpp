@@ -52,6 +52,7 @@ QSize FolderItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QMo
 
     QStyleOptionViewItemV4 opt = option;
     initStyleOption(&opt, index);
+    opt.font.setPointSize(QApplication::font().pointSize()-2); // probono: FIXME: Make configurable
     opt.decorationAlignment = Qt::AlignHCenter|Qt::AlignTop;
     opt.displayAlignment = Qt::AlignTop|Qt::AlignHCenter;
 
@@ -93,6 +94,7 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
 
     QStyleOptionViewItemV4 opt = option;
     initStyleOption(&opt, index);
+    opt.font.setPointSize(QApplication::font().pointSize()-2); // probono: FIXME: Make configurable
     opt.decorationAlignment = Qt::AlignHCenter|Qt::AlignTop;
     opt.displayAlignment = Qt::AlignTop|Qt::AlignHCenter;
 
@@ -120,6 +122,7 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
     if(isSymlink) {
       QStyleOptionViewItemV4 opt = option;
       initStyleOption(&opt, index);
+      opt.font.setPointSize(QApplication::font().pointSize()-2); // probono: FIXME: Make configurable
       QIcon::Mode iconMode = iconModeFromState(opt.state);
       QPoint iconPos(opt.rect.x(), opt.rect.y() + (opt.rect.height() - opt.decorationSize.height()) / 2);
       // draw some emblems for the item if needed

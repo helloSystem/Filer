@@ -204,6 +204,7 @@
     <addaction name="actionGoBack"/>
     <addaction name="actionGoForward"/>
     <addaction name="actionGoUp"/>
+    <addaction name="actionToolbar"/>
    </widget>
    <widget class="QMenu" name="menu_Tool">
     <property name="title">
@@ -718,6 +719,17 @@
    </property>
    <property name="text">
     <string>Filter</string>
+   </property>
+  </action>
+  <action name="actionToolbar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Go to Folder</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+G</string>
    </property>
   </action>
  </widget>

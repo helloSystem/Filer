@@ -53,7 +53,6 @@ set(libfm_SRCS
     renamedialog.cpp
     pathedit.cpp
     colorbutton.cpp
-    fontbutton.cpp
     browsehistory.cpp
     utilities.cpp
     dndactionmenu.cpp

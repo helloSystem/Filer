@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>543</width>
-    <height>418</height>
+    <height>545</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -117,6 +117,11 @@ Application icon:
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
         <widget class="QPlainTextEdit" name="plainTextEdit">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
          <property name="readOnly">
           <bool>true</bool>
          </property>

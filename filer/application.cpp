@@ -431,7 +431,6 @@ void Application::desktopPrefrences(QString page) {
     // Should be used only one time
     desktopPreferencesDialog_->setEditDesktopFolder(!lxqtRunning_);
   }
-  desktopPreferencesDialog_.data()->selectPage(page);
   desktopPreferencesDialog_.data()->show();
   desktopPreferencesDialog_.data()->raise();
   desktopPreferencesDialog_.data()->activateWindow();

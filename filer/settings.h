@@ -177,21 +177,27 @@ public:
     desktopShadowColor_ = desktopShadowColor;
   }
 
+  // probono: Use system font
+  /*
   QFont desktopFont() const {
     return desktopFont_;
   }
+  /*
 
   void setDesktopFont(QFont font) {
     desktopFont_ = font;
   }
 
-  bool showWmMenu() const {
+  // probono: Never show window manager menu
+  /*
+    bool showWmMenu() const {
     return showWmMenu_;
   }
 
   void setShowWmMenu(bool value) {
     showWmMenu_ = value;
   }
+  */
 
   bool desktopShowHidden() const {
     return desktopShowHidden_;
@@ -557,8 +563,8 @@ private:
   QColor desktopBgColor_;
   QColor desktopFgColor_;
   QColor desktopShadowColor_;
-  QFont desktopFont_;
-  bool showWmMenu_;
+  // QFont desktopFont_; probono: Use system font
+  // bool showWmMenu_; // probono: Never show window manager menu
 
   bool desktopShowHidden_;
   Qt::SortOrder desktopSortOrder_;

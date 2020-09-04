@@ -127,7 +127,7 @@ private:
   QPixmap wallpaperPixmap_;
   DesktopItemDelegate* delegate_;
   Launcher fileLauncher_;
-  bool showWmMenu_;
+  // bool showWmMenu_; // probono: Never show window manager menu
 
   int screenNum_;
   QHash<QByteArray, QPoint> customItemPos_;

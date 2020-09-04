@@ -119,6 +119,9 @@ MainWindow::MainWindow(FmPath* path):
   connect(pathEntry, &Fm::PathEdit::returnPressed, this, &MainWindow::onPathEntryReturnPressed);
   ui.toolBar->insertWidget(ui.actionGo, pathEntry);
 
+  // probono: Start with toolbar hidden
+  ui.toolBar->setVisible(false);
+
   // add filesystem info to status bar
   fsInfoLabel = new QLabel(ui.statusbar);
   ui.statusbar->addPermanentWidget(fsInfoLabel);
@@ -254,6 +257,15 @@ void MainWindow::on_actionGoUp_triggered() {
     ui.filterBar->clear();
     page->up();
     updateUIForCurrentPage();
+  }
+}
+
+// probono: toggle toolbar
+void MainWindow::on_actionToolbar_triggered() {
+  if(ui.toolBar->isVisible() == true) {
+      ui.toolBar->setVisible(false);
+  } else {
+      ui.toolBar->setVisible(true);
   }
 }
 

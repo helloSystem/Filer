@@ -64,7 +64,7 @@ DesktopWindow::DesktopWindow(int screenNum):
     model_(NULL),
     proxyModel_(NULL),
     fileLauncher_(NULL),
-    showWmMenu_(false),
+    // showWmMenu_(false),  // probono: Never show window manager menu
     wallpaperMode_(WallpaperNone),
     relayoutTimer_(NULL) {
 
@@ -342,21 +342,21 @@ void DesktopWindow::updateFromSettings(Settings& settings) {
     setDesktopFolder();
     setWallpaperFile(settings.wallpaper());
     setWallpaperMode(settings.wallpaperMode());
-    setFont(settings.desktopFont());
+    // setFont(QApplication::font()); // probono: Use system default font
     setIconSize(Fm::FolderView::IconMode, QSize(settings.bigIconSize(), settings.bigIconSize()));
     // setIconSize may trigger relayout of items by QListView, so we need to do the layout again.
     queueRelayout();
     setForeground(settings.desktopFgColor());
     setBackground(settings.desktopBgColor());
     setShadow(settings.desktopShadowColor());
-    showWmMenu_ = settings.showWmMenu();
+    // showWmMenu_ = settings.showWmMenu(); // probono: Never show window manager menu
     updateWallpaper();
     update();
 }
 
 void DesktopWindow::onFileClicked(int type, FmFileInfo* fileInfo) {
-    if(!fileInfo && showWmMenu_)
-        return; // do not show the popup if we want to use the desktop menu provided by the WM.
+    // if(!fileInfo && showWmMenu_) // probono: Never show window manager menu
+        // return; // do not show the popup if we want to use the desktop menu provided by the WM.
     View::onFileClicked(type, fileInfo);
 }
 
@@ -583,7 +583,14 @@ void DesktopWindow::onStickToCurrentPos(bool toggled) {
 }
 
 void DesktopWindow::queueRelayout(int delay) {
-    // qDebug() << "queueRelayout";
+    qDebug() << "queueRelayout";
+
+    // probono: Use system default font
+    QFont desktopFont = QApplication::font();
+    desktopFont.setPointSize(desktopFont.pointSize()-2); // probono: TODO: Make configurable
+    desktopFont.setWeight(QFont::Bold);
+    setFont(desktopFont);
+
     if(!relayoutTimer_) {
         relayoutTimer_ = new QTimer();
         relayoutTimer_->setSingleShot(true);
@@ -754,6 +761,7 @@ bool DesktopWindow::eventFilter(QObject * watched, QEvent * event) {
         switch(event->type()) {
         case QEvent::MouseButtonPress:
         case QEvent::MouseButtonRelease:
+            /*  // probono: Never show window manager menu
             if(showWmMenu_) {
                 QMouseEvent* e = static_cast<QMouseEvent*>(event);
                 // If we want to show the desktop menus provided by the window manager instead of ours,
@@ -766,7 +774,8 @@ bool DesktopWindow::eventFilter(QObject * watched, QEvent * event) {
             }
             break;
         default:
-            break;
+        */
+        break;
         }
     }
     return false;

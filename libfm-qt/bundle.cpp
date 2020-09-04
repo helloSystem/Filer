@@ -30,7 +30,7 @@ bool checkWhetherAppDirOrBundle(FmFileInfo* _info)
         // TODO: Before falling back to foo.app/foo, parse the Info-gnustep.plist/Info.plist and get the NSExecutable from there
         // as described in http://www.gnustep.org/resources/documentation/Developer/Gui/ProgrammingManual/AppKit_1.html
         QFile executableFile(path.toUtf8() + "/" + nameWithoutSuffix);
-        if (executableFile.exists() && QFileInfo(executableFile).isExecutable()) {
+        if (executableFile.exists()) {
             isAppDirOrBundle = true;
         }
     }
@@ -46,7 +46,7 @@ bool checkWhetherAppDirOrBundle(FmFileInfo* _info)
 
     // Check whether we have a ROX AppDir
     QFile appRunFile(path.toUtf8() + "/AppRun");
-    if ((appRunFile.exists()) && QFileInfo(appRunFile).isExecutable()) {
+    if ((appRunFile.exists())) {
         isAppDirOrBundle = true;
     }
 

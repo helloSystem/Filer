@@ -51,7 +51,6 @@ FileLauncher::~FileLauncher() {
 bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos) {
     qDebug() << "probono: FileLauncher::launchFiles called";
     qDebug() << "probono: LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
-    qDebug() << "probono: TODO: Determine whether it is an AppDir/.app bundle and if so, set the path that is handed over to fm_launch_files to the file that should actually be executed";
     // probono: This gets invoked when an icon is double clicked or "Open" is selected from the context menu
     // but not if "Open with..." is selected from the context menu
     // GAppLaunchContext is a concept from
@@ -72,6 +71,45 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos) {
     GList* itemsToBeLaunched = NULL;
     for(GList* l = file_infos; l; l = l->next) {
         FmFileInfo* info = FM_FILE_INFO(l->data);
+
+        QString path = QString(fm_path_to_str(fm_file_info_get_path(info)));
+        QFileInfo fileInfo = QFileInfo(path);
+
+        // Follow symlinks
+        if(fileInfo.isSymLink()) {
+            path = fileInfo.symLinkTarget();
+            fileInfo = QFileInfo(path);
+        }
+
+        qDebug() << "probono: Item to be launched:" << path;
+
+        // qDebug() << "probono: MIME type:" << fm_file_info_get_mime_type(info);
+
+        qDebug() << "probono: Check if we are about to launch an executable file type and ask user to set execute bit if it is missing";
+        bool isExecutableType = fm_file_info_is_executable_type(info);
+
+        qDebug() << "probono: fm_file_info_is_executable_type:" << isExecutableType;
+        if(isExecutableType == true) {
+            qDebug() << "probono: TODO: Check whether file is on a noexec or showexec partition";
+            if (fileInfo.isExecutable() == false) {
+                    qDebug() << "probono: Executable file type detected with the execute bit not set. TODO: Ask user";
+                    QMessageBox msgBox;
+                    qDebug() << "probono: TODO: Make strings in dialog translatable or use ExecFileDialog";
+                    msgBox.setWindowTitle("Executable");
+                    msgBox.setText("Do you want to allow this to be executed?");
+                    msgBox.setStandardButtons(QMessageBox::Yes);
+                    msgBox.addButton(QMessageBox::No);
+                    msgBox.setDefaultButton(QMessageBox::No);
+                    if(msgBox.exec() == QMessageBox::Yes){
+                      // Set execute bit
+                      QFile(path).setPermissions(QFile(path).permissions()| QFile::ExeGroup | QFile::ExeOther | QFile::ExeOther | QFile::ExeUser);
+                    } else {
+                      return 0;
+                    }
+            }
+        }
+
+        qDebug() << "probono: Determine whether it is an AppDir/.app bundle";
         bool isAppDirOrBundle = checkWhetherAppDirOrBundle(info);
         if(isAppDirOrBundle == false) {
             itemsToBeLaunched = g_list_append(itemsToBeLaunched, l->data);
@@ -83,6 +121,8 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos) {
             itemsToBeLaunched = g_list_append(itemsToBeLaunched, launchableExecutableFileInfo);
         }
     }
+     qDebug() << "probono: TODO: Intercept stderr and display errors in GUI";
+     qDebug() << "probono: if they happen within 10 seconds after launching";
     bool ret = fm_launch_files(G_APP_LAUNCH_CONTEXT(context), itemsToBeLaunched, &funcs, this);
     g_list_free(itemsToBeLaunched);
     g_object_unref(context);
@@ -122,7 +162,9 @@ bool FileLauncher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, GErro
 
 FmFileLauncherExecAction FileLauncher::execFile(FmFileInfo* file) {
     qDebug() << "probono: FileLauncher::execFile called";
-    qDebug() << "probono: TODO: check if execute bit is set and if not ask the user whether to set it";
+    qDebug() << "probono: TODO: Is here the best point to intercept stderr to be able to display it?";
+    // probono: We may want to launch without libfm FM_FILE_LAUNCHER_EXEC, see
+    // https://github.com/lxqt/libfm-qt/blob/master/src/core/basicfilelauncher.cpp
 
     if (quickExec_) {
         /* SF bug#838: open terminal for each script may be just a waste.
