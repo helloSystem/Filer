@@ -91,7 +91,7 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos) {
         qDebug() << "probono: fm_file_info_is_executable_type:" << isExecutableType;
         if(isExecutableType == true) {
             qDebug() << "probono: TODO: Check whether file is on a noexec or showexec partition";
-            if (fileInfo.isExecutable() == false) {
+            if ((fileInfo.isExecutable() == false) && (path.endsWith(".desktop") == false )) {
                     qDebug() << "probono: Executable file type detected with the execute bit not set. TODO: Ask user";
                     QMessageBox msgBox;
                     qDebug() << "probono: TODO: Make strings in dialog translatable or use ExecFileDialog";
