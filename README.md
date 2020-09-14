@@ -11,9 +11,9 @@ Minimalistic simplicity, see [hello](https://github.com/probonopd/hello) for the
 * Appeal to users coming from macOS
 * Cross platform: Builds for Linux, FreeBSD
 * Can handle ROX AppDirs (work in progess)
-* Can handle GNUstep `.app` bundles (work in progess)
-* Can handle macOS `.app` bundles (not started yet)
-* Can handle ELF files that are lacking the executable bit (not started yet)
+* Can handle GNUstep `.app` bundles (`.plist` parsing still missing)
+* Can handle macOS `.app` bundles (`.plist` parsing still missing)
+* Can handle ELF files that are lacking the executable bit
 * Can handle AppImages (not started yet)
 * Context menu can be extended using file manager actions
 
