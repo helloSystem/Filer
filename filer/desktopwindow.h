@@ -38,6 +38,7 @@ namespace Filer {
 
 class DesktopItemDelegate;
 class Settings;
+class MenuBar;
 
 class DesktopWindow : public View {
 Q_OBJECT
@@ -54,6 +55,8 @@ public:
 
   explicit DesktopWindow(int screenNum);
   virtual ~DesktopWindow();
+
+  void installMenuBar(MenuBar* menuBar) noexcept;
 
   void setForeground(const QColor& color);
   void setShadow(const QColor& color);
@@ -132,6 +135,8 @@ private:
   int screenNum_;
   QHash<QByteArray, QPoint> customItemPos_;
   QTimer* relayoutTimer_;
+
+  MenuBar* menuBar_ {Q_NULLPTR};
 };
 
 }

@@ -21,6 +21,7 @@
 #include "launcher.h"
 #include "mainwindow.h"
 #include "application.h"
+#include "menubar.h"
 
 namespace Filer {
 
@@ -45,6 +46,7 @@ bool Launcher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** 
   MainWindow* mainWindow = mainWindow_;
   if(!mainWindow) {
     mainWindow = new MainWindow(fm_file_info_get_path(fi));
+    mainWindow->installMenuBar(new MenuBar());
     mainWindow->resize(app->settings().windowWidth(), app->settings().windowHeight());
 
     if(app->settings().windowMaximized()) {

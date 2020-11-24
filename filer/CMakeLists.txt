@@ -32,6 +32,7 @@ set(filer_SRCS
     desktopitemdelegate.cpp
     autorundialog.cpp
     settings.cpp
+    menubar.cpp
 )
 
 qt5_add_dbus_adaptor(filer_SRCS

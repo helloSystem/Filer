@@ -40,6 +40,7 @@
 #include "preferencesdialog.h"
 #include "desktoppreferencesdialog.h"
 #include "mountoperation.h"
+#include "menubar.h"
 #include "autorundialog.h"
 #include "launcher.h"
 #include "filesearchdialog.h"
@@ -569,6 +570,7 @@ DesktopWindow* Application::createDesktopWindow(int screenNum) {
     QRect rect = desktop()->screenGeometry(screenNum);
     window->setGeometry(rect);
   }
+  window->installMenuBar(new MenuBar());
   window->updateFromSettings(settings_);
   window->show();
   return window;
@@ -629,6 +631,9 @@ void Application::updateFromSettings() {
     if(window->inherits("Filer::MainWindow")) {
       MainWindow* mainWindow = static_cast<MainWindow*>(window);
       mainWindow->updateFromSettings(settings_);
+
+      if(!desktopManagerEnabled())
+          mainWindow->installMenuBar(new MenuBar());
     }
   }
   if(desktopManagerEnabled())
@@ -639,6 +644,7 @@ void Application::updateDesktopsFromSettings() {
   QVector<DesktopWindow*>::iterator it;
   for(it = desktopWindows_.begin(); it != desktopWindows_.end(); ++it) {
     DesktopWindow* desktopWindow = static_cast<DesktopWindow*>(*it);
+    desktopWindow->installMenuBar(new MenuBar());
     desktopWindow->updateFromSettings(settings_);
   }
 }

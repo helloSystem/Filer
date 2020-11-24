@@ -37,6 +37,7 @@ namespace Filer {
 
 class TabPage;
 class Settings;
+class MenuBar;
 
 class MainWindow : public QMainWindow {
 Q_OBJECT
@@ -52,6 +53,7 @@ public:
   }
 
   void updateFromSettings(Settings& settings);
+  void installMenuBar(MenuBar* menuBar) noexcept;
 
 protected Q_SLOTS:
 

@@ -42,6 +42,7 @@
 #include "desktopitemdelegate.h"
 #include "foldermenu.h"
 #include "filemenu.h"
+#include "menubar.h"
 #include "cachedfoldermodel.h"
 #include "folderview_p.h"
 #include "fileoperation.h"
@@ -66,8 +67,8 @@ DesktopWindow::DesktopWindow(int screenNum):
     fileLauncher_(NULL),
     showWmMenu_(false),
     wallpaperMode_(WallpaperNone),
-    relayoutTimer_(NULL) {
-
+    relayoutTimer_(NULL)
+{
     QDesktopWidget* desktopWidget = QApplication::desktop();
     setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
@@ -160,6 +161,30 @@ DesktopWindow::~DesktopWindow() {
 
     if(folder_)
         g_object_unref(folder_);
+
+    if (menuBar_)
+    {
+        menuBar_->deleteLater();
+        menuBar_ = Q_NULLPTR;
+     }
+}
+
+void DesktopWindow::installMenuBar(MenuBar *menuBar) noexcept
+{
+    if (menuBar_)
+    {
+       menuBar_->deleteLater();
+       menuBar_ = Q_NULLPTR;
+    }
+
+    if (menuBar)
+    {
+        menuBar_ = menuBar;
+        menuBar_->setNativeMenuBar(false);
+        menuBar_->setParent(this);
+        menuBar_->setGeometry(0, 0, this->width(), menuBar_->sizeHint().height());
+        menuBar_->show();
+    }
 }
 
 void DesktopWindow::setBackground(const QColor& color) {

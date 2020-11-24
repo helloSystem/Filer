@@ -42,6 +42,7 @@
 #include "ui_about.h"
 #include "application.h"
 #include "../libfm-qt/path.h"
+#include "menubar.h"
 
 // #include "qmodeltest/modeltest.h"
 
@@ -61,8 +62,6 @@ MainWindow::MainWindow(FmPath* path):
   // hide menu items that are not usable
   //if(!uriExists("computer:///"))
   //  ui.actionComputer->setVisible(false);
-  if(!settings.supportTrash())
-    ui.actionTrash->setVisible(false);
 
   // FIXME: add an option to hide network:///
   // We cannot use uriExists() here since calling this on "network:///"
@@ -98,7 +97,6 @@ MainWindow::MainWindow(FmPath* path):
 
   // FIXME: should we make the filter bar a per-view configuration?
   ui.filterBar->setVisible(settings.showFilter());
-  ui.actionFilter->setChecked(settings.showFilter());
   connect(ui.filterBar, &QLineEdit::textChanged, this, &MainWindow::onFilterStringChanged);
 
   // side pane
@@ -135,27 +133,6 @@ MainWindow::MainWindow(FmPath* path):
   g_signal_connect(bookmarks, "changed", G_CALLBACK(onBookmarksChanged), this);
   loadBookmarksMenu();
 
-  // Fix the menu groups which is not done by Qt designer
-  // To my suprise, this was supported in Qt designer 3 :-(
-  QActionGroup* group = new QActionGroup(ui.menu_View);
-  group->setExclusive(true);
-  group->addAction(ui.actionIconView);
-  group->addAction(ui.actionCompactView);
-  group->addAction(ui.actionThumbnailView);
-  group->addAction(ui.actionDetailedList);
-
-  group = new QActionGroup(ui.menuSorting);
-  group->setExclusive(true);
-  group->addAction(ui.actionByFileName);
-  group->addAction(ui.actionByMTime);
-  group->addAction(ui.actionByFileSize);
-  group->addAction(ui.actionByFileType);
-  group->addAction(ui.actionByOwner);
-
-  group = new QActionGroup(ui.menuSorting);
-  group->setExclusive(true);
-  group->addAction(ui.actionAscending);
-  group->addAction(ui.actionDescending);
 
   // create shortcuts
   QShortcut* shortcut;
@@ -486,9 +463,9 @@ void MainWindow::onTabBarTabMoved(int from, int to) {
   //  corredponding tab page in the stacked widget to the new position, too.
   QWidget* page = ui.stackedWidget->widget(from);
   if(page) {
-	// we're not going to delete the tab page, so here we block signals
-	// to avoid calling the slot onStackedWidgetWidgetRemoved() before
-	// removing the page. Otherwise the page widget will be destroyed.
+    // we're not going to delete the tab page, so here we block signals
+    // to avoid calling the slot onStackedWidgetWidgetRemoved() before
+    // removing the page. Otherwise the page widget will be destroyed.
     ui.stackedWidget->blockSignals(true);
     ui.stackedWidget->removeWidget(page);
     ui.stackedWidget->insertWidget(to, page); // insert the page to the new position
@@ -566,28 +543,28 @@ void MainWindow::updateStatusBarForCurrentPage() {
 void MainWindow::updateViewMenuForCurrentPage() {
   TabPage* tabPage = currentPage();
 
-  if(tabPage) {
+  if(tabPage && qobject_cast<MenuBar*>(menuBar())) {
     // update menus. FIXME: should we move this to another method?
-    ui.actionShowHidden->setChecked(tabPage->showHidden());
+    static_cast<MenuBar*>(menuBar())->actionShowHidden->setChecked(tabPage->showHidden());
 
     // view mode
     QAction* modeAction = NULL;
 
     switch(tabPage->viewMode()) {
     case Fm::FolderView::IconMode:
-      modeAction = ui.actionIconView;
+      modeAction = static_cast<MenuBar*>(menuBar())->actionIconView;
       break;
 
     case Fm::FolderView::CompactMode:
-      modeAction = ui.actionCompactView;
+      modeAction = static_cast<MenuBar*>(menuBar())->actionCompactView;
       break;
 
     case Fm::FolderView::DetailedListMode:
-      modeAction = ui.actionDetailedList;
+      modeAction = static_cast<MenuBar*>(menuBar())->actionDetailedList;
       break;
 
     case Fm::FolderView::ThumbnailMode:
-      modeAction = ui.actionThumbnailView;
+      modeAction = static_cast<MenuBar*>(menuBar())->actionThumbnailView;
       break;
     }
 
@@ -596,20 +573,20 @@ void MainWindow::updateViewMenuForCurrentPage() {
 
     // sort menu
     QAction* sortActions[Fm::FolderModel::NumOfColumns];
-    sortActions[Fm::FolderModel::ColumnFileName] = ui.actionByFileName;
-    sortActions[Fm::FolderModel::ColumnFileMTime] = ui.actionByMTime;
-    sortActions[Fm::FolderModel::ColumnFileSize] = ui.actionByFileSize;
-    sortActions[Fm::FolderModel::ColumnFileType] = ui.actionByFileType;
-    sortActions[Fm::FolderModel::ColumnFileOwner] = ui.actionByOwner;
+    sortActions[Fm::FolderModel::ColumnFileName] = static_cast<MenuBar*>(menuBar())->actionByFileName;
+    sortActions[Fm::FolderModel::ColumnFileMTime] = static_cast<MenuBar*>(menuBar())->actionByMTime;
+    sortActions[Fm::FolderModel::ColumnFileSize] = static_cast<MenuBar*>(menuBar())->actionByFileSize;
+    sortActions[Fm::FolderModel::ColumnFileType] = static_cast<MenuBar*>(menuBar())->actionByFileType;
+    sortActions[Fm::FolderModel::ColumnFileOwner] = static_cast<MenuBar*>(menuBar())->actionByOwner;
     sortActions[tabPage->sortColumn()]->setChecked(true);
 
     if(tabPage->sortOrder() == Qt::AscendingOrder)
-      ui.actionAscending->setChecked(true);
+      static_cast<MenuBar*>(menuBar())->actionAscending->setChecked(true);
     else
-      ui.actionDescending->setChecked(true);
+      static_cast<MenuBar*>(menuBar())->actionDescending->setChecked(true);
 
-    ui.actionCaseSensitive->setChecked(tabPage->sortCaseSensitive());
-    ui.actionFolderFirst->setChecked(tabPage->sortFolderFirst());
+    static_cast<MenuBar*>(menuBar())->actionCaseSensitive->setChecked(tabPage->sortCaseSensitive());
+    static_cast<MenuBar*>(menuBar())->actionFolderFirst->setChecked(tabPage->sortFolderFirst());
   }
 }
 
@@ -753,30 +730,40 @@ void MainWindow::onSplitterMoved(int pos, int index) {
 }
 
 void MainWindow::loadBookmarksMenu() {
+  if (!qobject_cast<MenuBar*>(menuBar()))
+  {
+      return;
+  }
+
   GList* allBookmarks = fm_bookmarks_get_all(bookmarks);
-  QAction* before = ui.actionAddToBookmarks;
+  QAction* before = static_cast<MenuBar*>(menuBar())->actionAddToBookmarks;
 
   for(GList* l = allBookmarks; l; l = l->next) {
     FmBookmarkItem* item = reinterpret_cast<FmBookmarkItem*>(l->data);
-    BookmarkAction* action = new BookmarkAction(item, ui.menu_Bookmarks);
+    BookmarkAction* action = new BookmarkAction(item, static_cast<MenuBar*>(menuBar())->menu_Bookmarks);
     connect(action, &QAction::triggered, this, &MainWindow::onBookmarkActionTriggered);
-    ui.menu_Bookmarks->insertAction(before, action);
+    static_cast<MenuBar*>(menuBar())->menu_Bookmarks->insertAction(before, action);
   }
 
-  ui.menu_Bookmarks->insertSeparator(before);
+  static_cast<MenuBar*>(menuBar())->menu_Bookmarks->insertSeparator(before);
   g_list_free_full(allBookmarks, (GDestroyNotify)fm_bookmark_item_unref);
 }
 
 void MainWindow::onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis) {
+  auto menuBar = qobject_cast<MainWindow*>(pThis)->menuBar();
+  if (!qobject_cast<MenuBar*>(menuBar))
+  {
+      return;
+  }
   // delete existing items
-  QList<QAction*> actions = pThis->ui.menu_Bookmarks->actions();
+  QList<QAction*> actions = static_cast<MenuBar*>(menuBar)->menu_Bookmarks->actions();
   QList<QAction*>::const_iterator it = actions.begin();
   QList<QAction*>::const_iterator last_it = actions.end() - 2;
 
   while(it != last_it) {
     QAction* action = *it;
     ++it;
-    pThis->ui.menu_Bookmarks->removeAction(action);
+    static_cast<MenuBar*>(menuBar)->menu_Bookmarks->removeAction(action);
   }
 
   pThis->loadBookmarksMenu();
@@ -893,10 +880,6 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
 void MainWindow::updateFromSettings(Settings& settings) {
   // apply settings
 
-  // menu
-  ui.actionDelete->setText(settings.useTrash() ? tr("&Move to Trash") : tr("&Delete"));
-  ui.actionDelete->setIcon(settings.useTrash() ? QIcon::fromTheme("user-trash") : QIcon::fromTheme("edit-delete"));
-
   // side pane
   ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
 
@@ -914,6 +897,16 @@ void MainWindow::updateFromSettings(Settings& settings) {
     TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(i));
     page->updateFromSettings(settings);
   }
+}
+
+void MainWindow::installMenuBar(MenuBar *menuBar) noexcept
+{
+    setMenuBar(menuBar);
+
+    if (menuBar)
+    {
+        // connect slots
+    }
 }
 
 static const char* su_cmd_subst(char opt, gpointer user_data) {
