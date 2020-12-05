@@ -183,8 +183,22 @@ void DesktopWindow::installMenuBar(MenuBar *menuBar) noexcept
         menuBar_->setNativeMenuBar(false);
         menuBar_->setParent(this);
         menuBar_->setGeometry(0, 0, this->width(), menuBar_->sizeHint().height());
+        connectMenuActions();
         menuBar_->show();
     }
+}
+
+void DesktopWindow::connectMenuActions() noexcept
+{
+    if (!menuBar_)
+    {
+        return;
+    }
+
+    connect(menuBar_->actionNewFolder, &QAction::triggered,
+            this, &DesktopWindow::createNewFolder);
+    connect(menuBar_->actionNewBlankFile, &QAction::triggered,
+            this, &DesktopWindow::createNewBlankFile);
 }
 
 void DesktopWindow::setBackground(const QColor& color) {
@@ -663,6 +677,26 @@ void DesktopWindow::onFilePropertiesActivated() {
     if(FmFileInfoList* files = selectedFiles()) {
         Fm::FilePropsDialog::showForFiles(files);
         fm_file_info_list_unref(files);
+    }
+}
+
+void DesktopWindow::createNewFolder()
+{
+    FmPath *desktop = fm_path_get_desktop();
+
+    if (desktop)
+    {
+        Fm::createFileOrFolder(Fm::CreateNewFolder, desktop);
+    }
+}
+
+void DesktopWindow::createNewBlankFile()
+{
+    FmPath *desktop = fm_path_get_desktop();
+
+    if (desktop)
+    {
+        Fm::createFileOrFolder(Fm::CreateNewTextFile, desktop);
     }
 }
 

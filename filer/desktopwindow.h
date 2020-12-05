@@ -57,6 +57,8 @@ public:
   virtual ~DesktopWindow();
 
   void installMenuBar(MenuBar* menuBar) noexcept;
+  void connectMenuActions() noexcept;
+
 
   void setForeground(const QColor& color);
   void setShadow(const QColor& color);
@@ -115,6 +117,9 @@ protected Q_SLOTS:
   void onRenameActivated();
   void onDeleteActivated();
   void onFilePropertiesActivated();
+
+  void createNewFolder();
+  void createNewBlankFile();
 
 private:
   Fm::ProxyFolderModel* proxyModel_;
