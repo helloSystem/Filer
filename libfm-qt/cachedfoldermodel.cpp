@@ -25,17 +25,19 @@ using namespace Fm;
 static GQuark data_id = 0;
 
 
-CachedFolderModel::CachedFolderModel(FmFolder* folder):
+CachedFolderModel::CachedFolderModel(FmFolder* folder, bool addComputerFiles):
   FolderModel(),
   refCount(1) {
 
+  if (addComputerFiles)
+    FolderModel::addComputerFiles();
   FolderModel::setFolder(folder);
 }
 
 CachedFolderModel::~CachedFolderModel() {
 }
 
-CachedFolderModel* CachedFolderModel::modelFromFolder(FmFolder* folder) {
+CachedFolderModel* CachedFolderModel::modelFromFolder(FmFolder* folder, bool addComputerFiles) {
   CachedFolderModel* model = NULL;
   if(!data_id)
     data_id = g_quark_from_static_string("CachedFolderModel");
@@ -46,16 +48,16 @@ CachedFolderModel* CachedFolderModel::modelFromFolder(FmFolder* folder) {
     model->ref();
   }
   else {
-    model = new CachedFolderModel(folder);
+    model = new CachedFolderModel(folder, addComputerFiles);
     g_object_set_qdata(G_OBJECT(folder), data_id, model);
   }
   return model;
 }
 
-CachedFolderModel* CachedFolderModel::modelFromPath(FmPath* path) {
+CachedFolderModel* CachedFolderModel::modelFromPath(FmPath* path, bool addComputerFiles) {
   FmFolder* folder = fm_folder_from_path(path);
   if(folder) {
-    CachedFolderModel* model = modelFromFolder(folder);
+    CachedFolderModel* model = modelFromFolder(folder, addComputerFiles);
     g_object_unref(folder);
     return model;
   }

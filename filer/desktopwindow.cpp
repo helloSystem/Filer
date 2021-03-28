@@ -90,8 +90,7 @@ DesktopWindow::DesktopWindow(int screenNum):
         loadItemPositions();
         Settings& settings = static_cast<Application* >(qApp)->settings();
 
-        model_ = Fm::CachedFolderModel::modelFromPath(fm_path_get_desktop());
-        model_->addComputerFiles();
+        model_ = Fm::CachedFolderModel::modelFromPath(fm_path_get_desktop(), true);
         folder_ = reinterpret_cast<FmFolder*>(g_object_ref(model_->folder()));
 
         proxyModel_ = new Fm::ProxyFolderModel();
@@ -201,7 +200,7 @@ void DesktopWindow::resizeEvent(QResizeEvent* event) {
 
 void DesktopWindow::setDesktopFolder() {
     FmPath *path = fm_path_new_for_path(XdgDir::readDesktopDir().toStdString().c_str());
-    model_ = Fm::CachedFolderModel::modelFromPath(path);
+    model_ = Fm::CachedFolderModel::modelFromPath(path, true);
     proxyModel_->setSourceModel(model_);
 }
 

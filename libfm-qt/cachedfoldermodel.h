@@ -29,14 +29,14 @@ namespace Fm {
 class LIBFM_QT_API CachedFolderModel : public FolderModel {
   Q_OBJECT
 public:
-  CachedFolderModel(FmFolder* folder);
+  CachedFolderModel(FmFolder* folder, bool addComputerFiles = false);
   void ref() {
     ++refCount;
   }
   void unref();
 
-  static CachedFolderModel* modelFromFolder(FmFolder* folder);
-  static CachedFolderModel* modelFromPath(FmPath* path);
+  static CachedFolderModel* modelFromFolder(FmFolder* folder, bool addComputerFiles = false);
+  static CachedFolderModel* modelFromPath(FmPath* path, bool addComputerFiles = false);
 
 private:
   virtual ~CachedFolderModel();
