@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(filer-qt)
+project(Filer)
 
 set(PCMANFM_QT_VERSION_MAJOR 0)
 set(PCMANFM_QT_VERSION_MINOR 10)
@@ -10,6 +10,9 @@ set(LIBFM_QT_VERSION_MAJOR 0)
 set(LIBFM_QT_VERSION_MINOR 10)
 set(LIBFM_QT_VERSION_PATCH 0)
 set(LIBFM_QT_VERSION ${LIBFM_QT_VERSION_MAJOR}.${LIBFM_QT_VERSION_MINOR}.${LIBFM_QT_VERSION_PATCH})
+
+set(CMAKE_INSTALL_BINDIR "/Contents/Airyx")
+set(CMAKE_INSTALL_DATAROOTDIR "/Contents/Resources")
 
 list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
 
@@ -65,7 +68,7 @@ configure_file(
 )
 install(FILES
     "${CMAKE_CURRENT_BINARY_DIR}/filer-qt.1"
-    DESTINATION "${CMAKE_INSTALL_MANDIR}/man1"
+    DESTINATION "/Contents/Resources"
 )
 
 # add Doxygen support to generate API docs

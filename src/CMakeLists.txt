@@ -129,43 +129,50 @@ lxqt_translate_desktop(DESKTOP_FILES
 if(APPLE)
     set(CMAKE_INSTALL_RPATH "@executable_path") # Darwin, macOS
 else()
-    set(CMAKE_INSTALL_RPATH "$ORIGIN/../lib") # FreeBSD
+    set(CMAKE_INSTALL_RPATH "$ORIGIN/../Resources/lib") # FreeBSD
 endif()
 if(NOT LINUX)
   set(CMAKE_BUILD_WITH_INSTALL_RPATH ON) # On Linux we let appimagetool handle it
 endif()
 
-add_executable(filer-qt
+add_executable(Filer
     ${filer_SRCS}
     ${filer_UIS_H}
     ${QM_FILES}
     ${DESKTOP_FILES}
 )
 set_property(
-     TARGET filer-qt APPEND
+     TARGET Filer APPEND
      PROPERTY COMPILE_DEFINITIONS
      LIBFM_QT_API=Q_DECL_IMPORT
-     PCMANFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/share/filer-qt"
+     PCMANFM_DATA_DIR="/Contents/Resources"
      LIBFM_DATA_DIR="${LIBFM_PREFIX}/share/libfm" # This is a little bit dirty
      PCMANFM_QT_VERSION="${PCMANFM_QT_VERSION}"
 )
 
-target_link_libraries(filer-qt
+target_link_libraries(Filer
     ${QTX_LIBRARIES}
     ${LIBFM_LIBRARIES}
     ${LIBMENUCACHE_LIBRARIES}
     ${SYSTEM_LIBS_LIBRARIES}
+    "-framework Foundation"
+    "-framework CoreFoundation"
+    "-framework CFNetwork"
 )
 
-install(TARGETS filer-qt RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+target_link_options(Filer PUBLIC
+    "${CMAKE_CURRENT_BINARY_DIR}/cocoa.o"
+)
+
+install(TARGETS Filer RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 # install a desktop entry file for filer-qt and desktop preferences
 install(FILES ${DESKTOP_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/applications"
 )
 
-install(FILES ${QM_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/filer-qt/translations")
+install(FILES ${QM_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/translations")
 
 # prevent the generated files from being deleted during make clean
 set_directory_properties(PROPERTIES CLEAN_NO_CUSTOM true)
 
-qt5_use_modules(filer-qt Widgets DBus)
+qt5_use_modules(Filer Widgets DBus)
