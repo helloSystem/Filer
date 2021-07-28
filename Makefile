@@ -11,7 +11,10 @@ QTFLAGS!= pkg-config --cflags Qt5Core
 CXXFLAGS+= ${QTFLAGS} -fPIC -F${BUILDROOT}/System/Library/Frameworks \
     -framework Foundation -framework CoreFoundation
 
-build: ${APP_DIR} ${.CURDIR}/build/src/cocoa.o
+build: Filer.app ${.CURDIR}/build/src/cocoa.o
+	cp -fv ${.CURDIR}/src/icons/filer-256.png ${APP_DIR}/Contents/Resources/Icon.png
+	cp -fv ${.CURDIR}/Info.plist ${APP_DIR}/Contents
+
 clean:
 	rm -f ${.CURDIR}/build/src/*.o
 
