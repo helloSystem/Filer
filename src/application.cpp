@@ -225,7 +225,8 @@ bool Application::parseCommandLineArgs() {
   parser.addPositionalArgument("files", tr("Files or directories to open"), tr("[FILE1, FILE2,...]"));
 
   QList<QString> args = arguments();
-  args.append(programArguments());
+  if(args.length() == 0)
+    args.append(programArguments());
   parser.process(args);
 
   if(isPrimaryInstance) {

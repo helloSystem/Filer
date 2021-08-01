@@ -27,10 +27,6 @@
 	<key>ProgramArguments</key>
 	<array>
 		<string>--desktop</string>
-		<string>--set-wallpaper</string>
-		<string>/usr/share/slim/themes/default/background.jpg</string>
-		<string>--wallpaper-mode</string>
-		<string>fit</string>
 	</array>
 </dict>
 </plist>
