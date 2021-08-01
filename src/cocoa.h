@@ -22,6 +22,13 @@
  * THE SOFTWARE.
  */
 
+#if defined(COCOA)
 #import <Foundation/Foundation.h>
+#endif
+
 #include <QString>
 #include <QList>
+
+QString resourcePath();
+QString executablePath();
+QList<QString> programArguments();

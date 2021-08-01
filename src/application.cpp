@@ -53,6 +53,7 @@
 #include <QFileSystemWatcher>
 
 #include "dbusinterface.h"
+#include "cocoa.h"
 
 using namespace Filer;
 static const char* serviceName = "org.filer.Filer";
@@ -223,7 +224,9 @@ bool Application::parseCommandLineArgs() {
 
   parser.addPositionalArgument("files", tr("Files or directories to open"), tr("[FILE1, FILE2,...]"));
 
-  parser.process(arguments());
+  QList<QString> args = arguments();
+  args.append(programArguments());
+  parser.process(args);
 
   if(isPrimaryInstance) {
     qDebug("isPrimaryInstance");
@@ -327,7 +330,7 @@ void Application::init() {
   translator.load("filer-qt_" + QLocale::system().name(), PCMANFM_DATA_DIR "/translations");
   // qDebug("probono: Use relative path from main executable so that this works when it is not installed system-wide, too:");
   // qDebug((QCoreApplication::applicationDirPath() + QString("/../share/filer-qt/translations/")).toUtf8()); // probono
-  translator.load("filer-qt_" + QLocale::system().name(), QCoreApplication::applicationDirPath() + QString("/../share/filer-qt/translations/")); // probono
+  translator.load("filer-qt_" + QLocale::system().name(), resourcePath() + "/translations");
   installTranslator(&translator);
 }
 
@@ -560,8 +563,10 @@ void Application::setWallpaper(QString path, QString modeString) {
   for(int i = 0; i < G_N_ELEMENTS(valid_wallpaper_modes); ++i) {
     if(modeString == valid_wallpaper_modes[i]) {
       mode = (DesktopWindow::WallpaperMode)i;
-      if(mode != settings_.wallpaperMode())
+      if(mode != settings_.wallpaperMode()) {
+	settings_.setWallpaperMode(mode);
         changed = true;
+      }
       break;
     }
   }

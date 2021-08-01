@@ -22,6 +22,7 @@
  * THE SOFTWARE.
  */
 
+#define COCOA
 #import "cocoa.h"
 
 QString resourcePath()
