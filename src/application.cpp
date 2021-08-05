@@ -85,6 +85,7 @@ Application::Application(int& argc, char** argv):
 
   argc_ = argc;
   argv_ = argv;
+  initializeCocoa(argc, (const char **)argv);
 
   // QDBusConnection::sessionBus().registerObject("/org/filer/Application", this);
   QDBusConnection dbus = QDBusConnection::sessionBus();

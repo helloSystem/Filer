@@ -22,7 +22,8 @@
 #include <QFileInfo>
 #include <QDebug>
 #include <QProcess>
-#include "bundle.h"
+//#include "bundle.h"
+#include "cocoa.h"
 
 using namespace Fm;
 
@@ -31,28 +32,28 @@ FolderModelItem::FolderModelItem(FmFileInfo* _info):
   displayName = QString::fromUtf8(fm_file_info_get_disp_name(info));
   // qDebug() << "probono: (1) FolderModelItem created for" << displayName;
 
-  bool isAppDirOrBundle = checkWhetherAppDirOrBundle(_info);
+  QString path = QString(fm_path_to_str(fm_file_info_get_path(_info)));
+  bool isAppDirOrBundle = checkWhetherAppDirOrBundle(path);
 
   icon = IconTheme::icon(fm_file_info_get_icon(_info));
 
   // probono: Set some things differently for AppDir/app bundle than for normal folder
   if(isAppDirOrBundle) {
 
-      QString path = QString(fm_path_to_str(fm_file_info_get_path(info)));
-      QFileInfo fileInfo = QFileInfo(path);
-      QString nameWithoutSuffix = QFileInfo(fileInfo.completeBaseName()).fileName();
+      //QFileInfo fileInfo = QFileInfo(path);
+      //QString nameWithoutSuffix = QFileInfo(fileInfo.completeBaseName()).fileName();
 
       qDebug("probono: AppDir/app bundle detected xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx " + path.toUtf8());
 
       qDebug("probono: Set different icon for AppDir/app bundle");
-      icon = getIconForBundle(info);
+      icon = getIconForBundle(path);
 
       // probono: Set display name
-      fm_file_info_set_disp_name(_info, nameWithoutSuffix.toUtf8()); // probono: Remove the suffix from display name
-      qDebug("probono: TODO: Set the proper display name for AppDir based on Name= entries in desktop file. Similar to what happens when desktop files are displayed");
+      fm_file_info_set_disp_name(_info, displayNameForBundle(path).toUtf8() /*nameWithoutSuffix.toUtf8()*/); // probono: Remove the suffix from display name
+      //qDebug("probono: TODO: Set the proper display name for AppDir based on Name= entries in desktop file. Similar to what happens when desktop files are displayed");
 
-      qDebug("probono: TODO: Submit it to some Launch Services like database?");
-
+      //qDebug("probono: TODO: Submit it to some Launch Services like database?");
+      registerApplicationWithLS(path);
   }
 
   thumbnails.reserve(2);

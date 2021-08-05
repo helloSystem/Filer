@@ -31,7 +31,8 @@
 #include <time.h>
 #include <QDebug>
 #include <QFileInfo>
-#include "bundle.h"
+//#include "bundle.h"
+#include "cocoa.h"
 
 #define DIFFERENT_UIDS    ((uid)-1)
 #define DIFFERENT_GIDS    ((gid)-1)
@@ -230,7 +231,8 @@ void FilePropsDialog::initPermissionsPage() {
 
 void FilePropsDialog::initGeneralPage() {
 
-    bool isAppDirOrBundle = checkWhetherAppDirOrBundle(fileInfo);
+    QString path = QString(fm_path_to_str(fm_file_info_get_path(fileInfo)));
+    bool isAppDirOrBundle = checkWhetherAppDirOrBundle(path);
 
     // probono: Set some things differently for AppDir/app bundle than for normal folder
     if(isAppDirOrBundle) {
@@ -248,7 +250,7 @@ void FilePropsDialog::initGeneralPage() {
 
       qDebug() << "probono: fm_file_info_get_icon(fileInfo) called";
       if(isAppDirOrBundle){
-          icon = getIconForBundle(fileInfo);
+          icon = getIconForBundle(path);
       }
     }
     if(mimeType) {

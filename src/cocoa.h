@@ -24,11 +24,38 @@
 
 #if defined(COCOA)
 #import <Foundation/Foundation.h>
-#endif
 
 #include <QString>
 #include <QList>
+#include <QIcon>
+#include <XdgDesktopFile>
+#endif
 
+// Initialize our NS subsystem
+void initializeCocoa(int argc, const char *argv[]);
+
+// Returns the absolute path to a bundle's Resources folder
 QString resourcePath();
-QString executablePath();
+
+// Returns the list of strings from key "ProgramArguments" in 
+// the bundle's Info.plist
 QList<QString> programArguments();
+
+// Opens applications and files with their preferred app using
+// LaunchServices
+int launchFilesWithLS(QList<QString> files);
+
+// Returns true if path is an App Bundle or AppDir
+bool checkWhetherAppDirOrBundle(QString path);
+
+// Returns the value of CFBundleDisplayName or CFBundleName
+// and falls back to folder name on error
+QString displayNameForBundle(QString path);
+
+// Registers path as an application with LaunchServices
+int registerApplicationWithLS(QString path);
+
+// Returns the absolute path to a bundle's icon file
+QIcon getIconForBundle(QString path);
+
+

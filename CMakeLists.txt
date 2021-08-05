@@ -31,6 +31,7 @@ find_package(Qt5Widgets 5.2 REQUIRED)
 find_package(Qt5DBus 5.2 REQUIRED)
 find_package(Qt5LinguistTools 5.2 REQUIRED)
 find_package(Qt5X11Extras 5.2 REQUIRED)
+find_package(Qt5Xdg 3.7 REQUIRED)
 
 find_package(PkgConfig)
 pkg_check_modules(SYSTEM_LIBS REQUIRED

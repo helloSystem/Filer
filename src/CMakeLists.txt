@@ -1,6 +1,6 @@
 set(LIBFM_LIBRARY "fm-qt5")
 set(QTX_INCLUDE_DIRS "")
-set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras)
+set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras Qt5Xdg)
 
 include_directories(
     ${QTX_INCLUDE_DIRS}
@@ -17,7 +17,7 @@ link_directories(
 )
 
 set(filer_SRCS
-    bundle.cpp # probono
+    #    bundle.cpp # probono
     libfmqt.cpp
     bookmarkaction.cpp
     sidepane.cpp
@@ -155,6 +155,7 @@ target_link_libraries(Filer
     ${LIBFM_LIBRARIES}
     ${LIBMENUCACHE_LIBRARIES}
     ${SYSTEM_LIBS_LIBRARIES}
+    "-framework LaunchServices"
     "-framework Foundation"
     "-framework CoreFoundation"
     "-framework CFNetwork"

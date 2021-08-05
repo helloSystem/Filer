@@ -27,7 +27,8 @@
 #include "execfiledialog_p.h"
 #include "appchooserdialog.h"
 #include "utilities.h"
-#include "bundle.h"
+//#include "bundle.h"
+#include "cocoa.h"
 
 using namespace Fm;
 
@@ -72,15 +73,24 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos) {
     // Since fm_launch_files needs all items to be opened in multiple tabs at once, we need
     // to construct a list that contains those that are not bundles
     GList* itemsToBeLaunched = NULL;
+    QList<QString> LSFiles;
     for(GList* l = file_infos; l; l = l->next) {
         FmFileInfo* info = FM_FILE_INFO(l->data);
-        bool isAppDirOrBundle = checkWhetherAppDirOrBundle(info);
+        QString path = QString(fm_path_to_str(fm_file_info_get_path(info)));
+        bool isAppDirOrBundle = checkWhetherAppDirOrBundle(path);
         if(isAppDirOrBundle == false) {
-            qDebug() << "probono: Not an .AppDir or .app bundle. TODO: Make it possible to use the 'launch' command for those, too";
+            //qDebug() << "probono: Not an .AppDir or .app bundle. TODO: Make it possible to use the 'launch' command for those, too";
             // probono: URLs like network://, sftp:// and so on will continue to be handled like this in any case since they need GIO,
             // but documents, non-bundle executables etc. could all be handled by 'launch' if we make 'launch' understand them
-            itemsToBeLaunched = g_list_append(itemsToBeLaunched, l->data);
+            if(fm_file_info_is_native(info) && !fm_file_info_is_dir(info)) {
+		    LSFiles.push_back(path);
+		    qDebug() << "Airyx: opening with LaunchServices:" << path;
+	    } else
+		    itemsToBeLaunched = g_list_append(itemsToBeLaunched, l->data);
         } else {
+            LSFiles.push_back(path);
+	    qDebug() << "Airyx: opening with LaunchServices:" << path;
+#if 0
             QString launchableExecutable = getLaunchableExecutable(info);
             if(QStandardPaths::findExecutable("launch") != "") {
                 qDebug() << "probono: Launching using the 'launch' command";
@@ -91,8 +101,10 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos) {
                 FmFileInfo* launchableExecutableFileInfo = fm_file_info_new_from_native_file(nullptr, launchableExecutable.toUtf8(),nullptr);
                 itemsToBeLaunched = g_list_append(itemsToBeLaunched, launchableExecutableFileInfo);
             }
+#endif
         }
     }
+    launchFilesWithLS(LSFiles);
     bool ret = fm_launch_files(G_APP_LAUNCH_CONTEXT(context), itemsToBeLaunched, &funcs, this);
     g_list_free(itemsToBeLaunched);
     g_object_unref(context);

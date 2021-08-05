@@ -7,8 +7,8 @@ MK_DEBUG_FILES=no
 RESOURCES=
 FRAMEWORKS=
 
-QTFLAGS!= pkg-config --cflags Qt5Core
-CXXFLAGS+= ${QTFLAGS} -fPIC -F${BUILDROOT}/System/Library/Frameworks \
+QTFLAGS!= pkg-config --cflags Qt5Gui Qt5Xdg
+CXXFLAGS+= -g -O0 ${QTFLAGS} -fPIC -F${BUILDROOT}/System/Library/Frameworks \
     -framework Foundation -framework CoreFoundation
 
 build: Filer.app ${.CURDIR}/build/src/cocoa.o
