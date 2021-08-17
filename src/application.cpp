@@ -53,7 +53,9 @@
 #include <QFileSystemWatcher>
 
 #include "dbusinterface.h"
-#include "cocoa.h"
+#if defined(__AIRYX__)
+#include "airyx.h"
+#endif
 
 using namespace Filer;
 static const char* serviceName = "org.filer.Filer";
@@ -85,7 +87,9 @@ Application::Application(int& argc, char** argv):
 
   argc_ = argc;
   argv_ = argv;
-  initializeCocoa(argc, (const char **)argv);
+#if defined(__AIRYX__)
+  __NSInitializeProcess(argc, (const char **)argv);
+#endif
 
   // QDBusConnection::sessionBus().registerObject("/org/filer/Application", this);
   QDBusConnection dbus = QDBusConnection::sessionBus();
@@ -226,8 +230,10 @@ bool Application::parseCommandLineArgs() {
   parser.addPositionalArgument("files", tr("Files or directories to open"), tr("[FILE1, FILE2,...]"));
 
   QList<QString> args = arguments();
+#if defined(__AIRYX__)
   if(args.length() == 0)
     args.append(programArguments());
+#endif
   parser.process(args);
 
   if(isPrimaryInstance) {
@@ -332,7 +338,14 @@ void Application::init() {
   translator.load("filer-qt_" + QLocale::system().name(), PCMANFM_DATA_DIR "/translations");
   // qDebug("probono: Use relative path from main executable so that this works when it is not installed system-wide, too:");
   // qDebug((QCoreApplication::applicationDirPath() + QString("/../share/filer-qt/translations/")).toUtf8()); // probono
-  translator.load("filer-qt_" + QLocale::system().name(), resourcePath() + "/translations");
+#if defined(__AIRYX__)
+  CFURLRef resourceURL = CFBundleCopyResourcesDirectoryURL(CFBundleGetMainBundle());
+  QString resourcePath = QString::fromUtf8( CFStringGetCStringPtr(
+      CFURLCopyFileSystemPath(resourceURL, kCFURLPOSIXPathStyle), kCFStringEncodingUTF8 ));
+  translator.load("filer-qt_" + QLocale::system().name(), resourcePath + "/translations");
+#else
+  translator.load("filer-qt_" + QLocale::system().name(), QCoreApplication::applicationDirPath() + QString("../share/filer-qt/translations")); // probono
+#endif
   installTranslator(&translator);
 }
 

@@ -22,30 +22,22 @@
  * THE SOFTWARE.
  */
 
-#define COCOA
+#import "airyx.h"
 #import <LaunchServices/LaunchServices.h>
-#import "cocoa.h"
 
 NSFileManager *fm = [NSFileManager defaultManager];
 
-void initializeCocoa(int argc, const char *argv[])
-{
-    __NSInitializeProcess(argc, argv);
-}
-
-QString resourcePath()
-{
-    return QString::fromUtf8( [[[NSBundle mainBundle] resourcePath] UTF8String] );
-}
-
 QList<QString> programArguments()
 {
-    NSArray *args = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"ProgramArguments"];
-    NSEnumerator *e = [args objectEnumerator];
-    id object;
+    CFArrayRef args = (CFArrayRef)CFBundleGetValueForInfoDictionaryKey(
+    	CFBundleGetMainBundle(), CFSTR("ProgramArguments" )); 
     QList<QString> list;
-    while(object = [e nextObject]) {
-        list.append(QString::fromUtf8([object UTF8String]));
+    if(!args)
+    	return list;
+
+    for(int x = 0; x < CFArrayGetCount(args); ++x) {
+	CFStringRef value = (CFStringRef)CFArrayGetValueAtIndex(args, x);
+        list.append(QString::fromUtf8( CFStringGetCStringPtr(value, kCFStringEncodingUTF8) ));
     }
     return list;
 }

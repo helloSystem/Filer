@@ -22,17 +22,15 @@
  * THE SOFTWARE.
  */
 
-#if defined(COCOA)
-#import <Foundation/Foundation.h>
+#include <CoreFoundation/CoreFoundation.h>
 
 #include <QString>
 #include <QList>
 #include <QIcon>
 #include <XdgDesktopFile>
-#endif
 
-// Initialize our NS subsystem
-void initializeCocoa(int argc, const char *argv[]);
+extern "C" void __NSInitializeProcess(int argc, const char **argv);
+
 
 // Returns the absolute path to a bundle's Resources folder
 QString resourcePath();
