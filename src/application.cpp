@@ -135,6 +135,24 @@ Application::Application(int& argc, char** argv):
             delay(100);
         }
     }
+#if defined(__AIRYX__)
+    // On Airyx, plasmashell provides the global menu bar and some widgets
+    qDebug("Waiting for plasmashell to appear on D-Bus...");
+    while(true) {
+        QDBusInterface* plasmaIface = new QDBusInterface(
+                    QStringLiteral("org.kde.plasmashell"),
+                    QStringLiteral("/org/kde/plasmashell"));
+        if (plasmaIface) {
+            if (plasmaIface->isValid()) {
+                qDebug("Plasma shell has started");
+                break;
+            }
+            delete plasmaIface;
+            plasmaIface = 0;
+        }
+        delay(100);
+    }
+#endif
 
     // Check if LXQt Session is running. LXQt has it's own Desktop Folder
     // editor. We just hide our editor when LXQt is running.
