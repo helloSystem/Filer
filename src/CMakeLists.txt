@@ -25,6 +25,7 @@ link_directories(
 )
 
 set(filer_SRCS
+    airyx.cpp
     bundle.cpp # probono
     libfmqt.cpp
     bookmarkaction.cpp
@@ -170,12 +171,6 @@ target_link_libraries(${EXEC_NAME}
     ${SYSTEM_LIBS_LIBRARIES}
     ${SYSTEM_FRAMEWORKS}
 )
-
-if(AIRYX)
-    target_link_options(Filer PUBLIC
-        "${CMAKE_CURRENT_BINARY_DIR}/cocoa.o"
-    )
-endif()
 
 install(TARGETS ${EXEC_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 

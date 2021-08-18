@@ -22,26 +22,21 @@
  * THE SOFTWARE.
  */
 
-#include <CoreFoundation/CoreFoundation.h>
-
 #include <QString>
 #include <QList>
 #include <QIcon>
+#include <QDir>
+#include <QFileInfo>
 #include <XdgDesktopFile>
 
+#import <CoreFoundation/CoreFoundation.h>
+#import <LaunchServices/LaunchServices.h>
+
 extern "C" void __NSInitializeProcess(int argc, const char **argv);
-
-
-// Returns the absolute path to a bundle's Resources folder
-QString resourcePath();
 
 // Returns the list of strings from key "ProgramArguments" in 
 // the bundle's Info.plist
 QList<QString> programArguments();
-
-// Opens applications and files with their preferred app using
-// LaunchServices
-int launchFilesWithLS(QList<QString> files);
 
 // Returns true if path is an App Bundle or AppDir
 bool checkWhetherAppDirOrBundle(QString path);
@@ -50,10 +45,7 @@ bool checkWhetherAppDirOrBundle(QString path);
 // and falls back to folder name on error
 QString displayNameForBundle(QString path);
 
-// Registers path as an application with LaunchServices
-int registerApplicationWithLS(QString path);
-
-// Returns the absolute path to a bundle's icon file
+// Returns an icon for a bundle or a generic default
 QIcon getIconForBundle(QString path);
 
 

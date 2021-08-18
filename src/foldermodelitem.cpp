@@ -22,8 +22,11 @@
 #include <QFileInfo>
 #include <QDebug>
 #include <QProcess>
-//#include "bundle.h"
-#include "cocoa.h"
+#if defined(__AIRYX__)
+#include "airyx.h"
+#else
+#include "bundle.h"
+#endif
 
 using namespace Fm;
 
@@ -32,28 +35,46 @@ FolderModelItem::FolderModelItem(FmFileInfo* _info):
   displayName = QString::fromUtf8(fm_file_info_get_disp_name(info));
   // qDebug() << "probono: (1) FolderModelItem created for" << displayName;
 
+#if defined(__AIRYX__)
   QString path = QString(fm_path_to_str(fm_file_info_get_path(_info)));
   bool isAppDirOrBundle = checkWhetherAppDirOrBundle(path);
+#else
+  bool isAppDirOrBundle = checkWhetherAppDirOrBundle(_info);
+#endif
 
   icon = IconTheme::icon(fm_file_info_get_icon(_info));
 
   // probono: Set some things differently for AppDir/app bundle than for normal folder
   if(isAppDirOrBundle) {
-
-      //QFileInfo fileInfo = QFileInfo(path);
-      //QString nameWithoutSuffix = QFileInfo(fileInfo.completeBaseName()).fileName();
+#if !defined(__AIRYX__)
+      QString path = QString(fm_path_to_str(fm_file_info_get_path(info)));
+      QFileInfo fileInfo = QFileInfo(path);
+      QString nameWithoutSuffix = QFileInfo(fileInfo.completeBaseName()).fileName();
 
       qDebug("probono: AppDir/app bundle detected xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx " + path.toUtf8());
 
       qDebug("probono: Set different icon for AppDir/app bundle");
+      icon = getIconForBundle(_info);
+#else
       icon = getIconForBundle(path);
+#endif
 
       // probono: Set display name
-      fm_file_info_set_disp_name(_info, displayNameForBundle(path).toUtf8() /*nameWithoutSuffix.toUtf8()*/); // probono: Remove the suffix from display name
-      //qDebug("probono: TODO: Set the proper display name for AppDir based on Name= entries in desktop file. Similar to what happens when desktop files are displayed");
+#if defined(__AIRYX__)
+      fm_file_info_set_disp_name(_info, displayNameForBundle(path).toUtf8());
 
-      //qDebug("probono: TODO: Submit it to some Launch Services like database?");
-      registerApplicationWithLS(path);
+      CFStringRef cfpath = CFStringCreateWithCString(NULL, path.toUtf8(), kCFStringEncodingUTF8);
+      CFURLRef appURL = CFURLCreateWithFileSystemPath(NULL, cfpath, kCFURLPOSIXPathStyle, true);
+
+      LSRegisterURL(appURL, false);
+      CFRelease(appURL);
+      CFRelease(cfpath);
+#else
+      fm_file_info_set_disp_name(_info, nameWithoutSuffix.toUtf8()); // probono: Remove the suffix from display name
+      qDebug("probono: TODO: Set the proper display name for AppDir based on Name= entries in desktop file. Similar to what happens when desktop files are displayed");
+
+      qDebug("probono: TODO: Submit it to some Launch Services like database?");
+#endif
   }
 
   thumbnails.reserve(2);

@@ -340,8 +340,10 @@ void Application::init() {
   // qDebug((QCoreApplication::applicationDirPath() + QString("/../share/filer-qt/translations/")).toUtf8()); // probono
 #if defined(__AIRYX__)
   CFURLRef resourceURL = CFBundleCopyResourcesDirectoryURL(CFBundleGetMainBundle());
-  QString resourcePath = QString::fromUtf8( CFStringGetCStringPtr(
-      CFURLCopyFileSystemPath(resourceURL, kCFURLPOSIXPathStyle), kCFStringEncodingUTF8 ));
+  CFStringRef cfResourcePath = CFURLCopyFileSystemPath(resourceURL, kCFURLPOSIXPathStyle);
+  QString resourcePath = QString(CFStringGetCStringPtr(cfResourcePath, kCFStringEncodingUTF8));
+  CFRelease(cfResourcePath);
+  CFRelease(resourceURL);
   translator.load("filer-qt_" + QLocale::system().name(), resourcePath + "/translations");
 #else
   translator.load("filer-qt_" + QLocale::system().name(), QCoreApplication::applicationDirPath() + QString("../share/filer-qt/translations")); // probono
