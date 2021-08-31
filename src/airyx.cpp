@@ -110,29 +110,30 @@ QIcon getIconForBundle(QString path)
     // AppDirs, so just a quick check to tell them apart...
     if(path.toLower().endsWith(".app")) {
     	CFStringRef cfpath = CFStringCreateWithCString(NULL, path.toUtf8(), kCFStringEncodingUTF8);
-	CFURLRef url = CFURLCreateWithFileSystemPath(NULL, cfpath, kCFURLPOSIXPathStyle, true);
-	CFBundleRef bundle = CFBundleCreate(NULL, url);
-	CFDictionaryRef infoDict = CFBundleGetInfoDictionary(bundle);
-	CFStringRef iconfile = (CFStringRef)CFDictionaryGetValue(infoDict, CFSTR("CFBundleIconFile"));
+	    CFURLRef url = CFURLCreateWithFileSystemPath(NULL, cfpath, kCFURLPOSIXPathStyle, true);
+	    CFBundleRef bundle = CFBundleCreate(NULL, url);
+	    CFDictionaryRef infoDict = CFBundleGetInfoDictionary(bundle);
+	    CFStringRef iconfile = (CFStringRef)CFDictionaryGetValue(infoDict, CFSTR("CFBundleIconFile"));
 
-	if(iconfile == NULL)
-	    iconfile = (CFStringRef)CFDictionaryGetValue(infoDict, CFSTR("NSIcon"));
+	    if(iconfile == NULL)
+	        iconfile = (CFStringRef)CFDictionaryGetValue(infoDict, CFSTR("NSIcon"));
+
         if(iconfile != NULL) {
-	    CFURLRef resourceURL = CFBundleCopyResourcesDirectoryURL(bundle);
-	    CFStringRef resourcePath = CFURLCopyFileSystemPath(resourceURL, kCFURLPOSIXPathStyle);
-	    QDir resourceDir(QString::fromUtf8(CFStringGetCStringPtr(resourcePath, kCFStringEncodingUTF8)));
-	    CFRelease(resourcePath);
-	    CFRelease(resourceURL);
+            CFURLRef resourceURL = CFBundleCopyResourcesDirectoryURL(bundle);
+            CFStringRef resourcePath = CFURLCopyFileSystemPath(resourceURL, kCFURLPOSIXPathStyle);
+            QDir resourceDir(QString::fromUtf8(CFStringGetCStringPtr(resourcePath, kCFStringEncodingUTF8)));
+            CFRelease(resourcePath);
+            CFRelease(resourceURL);
 
-	    QString iconPath(resourceDir.filePath(QString::fromUtf8(
-	        CFStringGetCStringPtr(iconfile, kCFStringEncodingUTF8))));
-	    if(resourceDir.exists(iconPath))
-                icon = QIcon(iconPath);
+            QString iconPath(resourceDir.filePath(QString::fromUtf8(
+                CFStringGetCStringPtr(iconfile, kCFStringEncodingUTF8))));
+            if(resourceDir.exists(iconPath))
+                    icon = QIcon(iconPath);
         }
 
-	CFRelease(bundle);
-	CFRelease(url);
-	CFRelease(cfpath);
+	    CFRelease(bundle);
+	    CFRelease(url);
+	    CFRelease(cfpath);
         return icon;
     }
 

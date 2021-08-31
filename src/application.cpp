@@ -137,18 +137,34 @@ Application::Application(int& argc, char** argv):
     }
 #if defined(__AIRYX__)
     // On Airyx, plasmashell provides the global menu bar and some widgets
-    qDebug("Waiting for plasmashell to appear on D-Bus...");
-    while(true) {
-        QDBusInterface* plasmaIface = new QDBusInterface(
-                    QStringLiteral("org.kde.plasmashell"),
-                    QStringLiteral("/org/kde/plasmashell"));
-        if (plasmaIface) {
-            if (plasmaIface->isValid()) {
-                qDebug("Plasma shell has started");
-                break;
-            }
-            delete plasmaIface;
-            plasmaIface = 0;
+    qDebug("Waiting for services to appear on DBus...");
+    bool plasmaHere(false), menuHere(false);
+    while(plasmaHere == false || menuHere == false) {
+        if(!menuHere) {
+          QDBusInterface* menuIface = new QDBusInterface(
+                      QStringLiteral("com.canonical.AppMenu.Registrar"),
+                      QStringLiteral("/com/canonical/AppMenu/Registrar"));
+          if (menuIface) {
+              if (menuIface->isValid()) {
+                  qDebug("Global menu is available");
+                  menuHere = true;
+              }
+              delete menuIface;
+              menuIface = 0;
+          }
+        }
+        if(!plasmaHere) {
+          QDBusInterface* plasmaIface = new QDBusInterface(
+                      QStringLiteral("org.kde.plasmashell"),
+                      QStringLiteral("/org/kde/plasmashell"));
+          if (plasmaIface) {
+              if (plasmaIface->isValid()) {
+                  qDebug("Plasma shell is available");
+                  plasmaHere = true;
+              }
+              delete plasmaIface;
+              plasmaIface = 0;
+          }
         }
         delay(100);
     }
@@ -249,7 +265,7 @@ bool Application::parseCommandLineArgs() {
 
   QList<QString> args = arguments();
 #if defined(__AIRYX__)
-  if(args.length() == 0)
+  if(args.length() <= 1)
     args.append(programArguments());
 #endif
   parser.process(args);
