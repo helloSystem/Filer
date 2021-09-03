@@ -166,7 +166,7 @@ Application::Application(int& argc, char** argv):
               plasmaIface = 0;
           }
         }
-        delay(100);
+        delay(500);
     }
 #endif
 
