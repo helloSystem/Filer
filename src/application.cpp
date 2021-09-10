@@ -628,6 +628,38 @@ void Application::setWallpaper(QString path, QString modeString) {
   }
 }
 
+void Application::ShowFolders(const QStringList uriList, const QString startupId)
+{
+}
+
+/* This method receives a list of file:// URIs from DBus and opens windows
+ * or tabs for each folder, highlighting all listed items within each. The
+ * input list is not sorted or grouped so we need to marshal it into groups
+ * by folder, then call our "reveal" method to show each group
+ * --mszoek
+ */
+void Application::ShowItems(const QStringList uriList, const QString startupId)
+{
+    QMap<QString,QStringList> groups;
+    
+    for(QUrl u : uriList) {
+        QFileInfo info(u.path());
+        QString folder(QDir(info.dir()).absolutePath());
+        if(info.exists()) {
+            if(groups.empty() || !groups.contains(folder))
+                groups[folder] = QStringList();
+            groups[folder].append(info.filePath());
+        }
+    }
+
+    for(QString k : groups.keys())
+        Q_EMIT openFolderAndSelectItems(k, groups[k]);
+}
+
+void Application::ShowItemProperties(const QStringList uriList, const QString startupId)
+{
+}
+
 void Application::onScreenResized(int num) {
   if(desktop()->isVirtualDesktop()) {
     // in virtual desktop mode, we only have one desktop window. that is the first one.

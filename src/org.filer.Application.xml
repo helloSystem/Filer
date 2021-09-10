@@ -23,5 +23,17 @@
       <arg type="as" direction="in"/>
     </method>
     <property name="desktopManagerEnabled" type="b" access="read"/>
+    <method name="ShowFolders">
+      <arg type="as" direction="in"/>
+      <arg type="s" direction="in"/>
+    </method>
+    <method name="ShowItems">
+      <arg type="as" direction="in"/>
+      <arg type="s" direction="in"/>
+    </method>
+    <method name="ShowItemProperties">
+      <arg type="as" direction="in"/>
+      <arg type="s" direction="in"/>
+    </method>
   </interface>
 </node>
