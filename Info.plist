@@ -24,9 +24,5 @@
 	<string>Icon.png</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
-	<key>ProgramArguments</key>
-	<array>
-		<string>--desktop</string>
-	</array>
 </dict>
 </plist>
