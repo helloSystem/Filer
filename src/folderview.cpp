@@ -734,16 +734,19 @@ void FolderView::selectFiles(QStringList files, bool add) {
       break;
     index = model_->index(row, 0);
     auto info = model_->fileInfoFromIndex(index);
+    FmPath *infopath = fm_file_info_get_path(info);
     for(auto iter = files.begin(); iter != files.end(); ++iter) {
       FmFileInfo *fi = fm_file_info_new_from_native_file(nullptr, iter->toUtf8(), nullptr);
-      if(fm_path_equal(fm_file_info_get_path(info),fm_file_info_get_path(fi))) {
+      FmPath *fipath = fm_file_info_get_path(fi);
+      //qDebug() << "COMPARING " << fm_path_display_name(infopath,false)
+      //	 << fm_path_display_name(fipath,false);
+      if(fm_path_equal(infopath, fipath)) {
         if(!firstIndex.isValid()) {
           firstIndex = index;
           if(!add)
             selectionModel()->clear();
         }
         selectionModel()->select(index, flags);
-	qDebug() << "Found file " << *iter;
         files.erase(iter);
         break;
       }
