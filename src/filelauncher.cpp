@@ -127,6 +127,7 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos) {
     }
 
     LSLaunchURLSpec spec;
+    memset(&spec, 0, sizeof(spec));
     spec.appURL = NULL;
     spec.itemURLs = CFLSFiles;
     LSOpenFromURLSpec(&spec, NULL);
