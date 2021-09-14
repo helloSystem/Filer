@@ -373,12 +373,21 @@ void Application::init() {
   // qDebug("probono: Use relative path from main executable so that this works when it is not installed system-wide, too:");
   // qDebug((QCoreApplication::applicationDirPath() + QString("/../share/filer-qt/translations/")).toUtf8()); // probono
 #if defined(__AIRYX__)
-  CFURLRef resourceURL = CFBundleCopyResourcesDirectoryURL(CFBundleGetMainBundle());
+  CFBundleRef watashi = CFBundleGetMainBundle();
+  CFURLRef bundleURL = CFBundleCopyBundleURL(watashi);
+  LSRegisterURL(bundleURL, false); // make sure this app is known to LaunchServices
+  CFRelease(bundleURL);
+
+  CFURLRef resourceURL = CFBundleCopyResourcesDirectoryURL(watashi);
   CFStringRef cfResourcePath = CFURLCopyFileSystemPath(resourceURL, kCFURLPOSIXPathStyle);
   QString resourcePath = QString(CFStringGetCStringPtr(cfResourcePath, kCFStringEncodingUTF8));
   CFRelease(cfResourcePath);
   CFRelease(resourceURL);
+  CFRelease(watashi);
   translator.load("filer-qt_" + QLocale::system().name(), resourcePath + "/translations");
+
+  AppHunter *apphunter = new AppHunter(this);
+  apphunter->start();
 #else
   translator.load("filer-qt_" + QLocale::system().name(), QCoreApplication::applicationDirPath() + QString("../share/filer-qt/translations")); // probono
 #endif

@@ -25,6 +25,7 @@
 #if defined(__AIRYX__)
 #import "airyx.h"
 #import <LaunchServices/LaunchServices.h>
+#include <QDebug>
 
 QList<QString> programArguments()
 {
@@ -144,4 +145,52 @@ QIcon getIconForBundle(QString path)
         icon = QIcon(iconPath);
     return icon;
 }
+
+// Scan well-known locations for apps and add to LaunchServices
+AppHunter::AppHunter(QObject *p): QThread(p)
+{
+}
+
+void AppHunter::run(void)
+{
+    QStringList dirs;
+    dirs.append("/Applications");
+    dirs.append("/System/Library/CoreServices");
+    dirs.append("/System/Library/Applications");
+    dirs.append(QDir::homePath().append("/Applications"));
+    dirs.append("/usr/share/applications");
+    dirs.append("/usr/local/share/applications");
+
+    size_t nDirs = dirs.size();
+    for(size_t pos = 0; pos < nDirs; ++pos) {
+        QDir dir(dirs.at(pos));
+        for(QString entry : dir.entryList()) {
+            if(entry == "." || entry == "..")
+                continue;
+
+            QString filepath(dir.filePath(entry));
+            QFileInfo fi(dir, entry);
+
+            if(checkWhetherAppDirOrBundle(filepath) || entry.endsWith(".desktop", Qt::CaseInsensitive)) {
+    	        CFStringRef cfpath = CFStringCreateWithCString(NULL, filepath.toUtf8(), kCFStringEncodingUTF8);
+	            CFURLRef url = CFURLCreateWithFileSystemPath(NULL, cfpath, kCFURLPOSIXPathStyle, true);
+
+                qDebug() << "Registering " << filepath;
+                LSRegisterURL(url, false);
+                CFRelease(url);
+                CFRelease(cfpath);
+            } else if(fi.isDir()) { // is a regular dir?
+                dirs.append(filepath);
+                ++nDirs;
+            }
+        }
+    }
+    // FIXME: Bus Error on thread exit without these lines.
+    // There is an incompatibility with QThread and objc's ARC pools
+    // which results in a Bus Error when the thread exits, crashing
+    // Filer. This little hack gets around the problem for now.
+    yieldCurrentThread();
+    while(1) sleep(1);
+}
+
 #endif

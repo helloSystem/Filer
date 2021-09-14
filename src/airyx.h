@@ -27,6 +27,7 @@
 #include <QIcon>
 #include <QDir>
 #include <QFileInfo>
+#include <QThread>
 #include <XdgDesktopFile>
 
 #import <CoreFoundation/CoreFoundation.h>
@@ -49,3 +50,8 @@ QString displayNameForBundle(QString path);
 QIcon getIconForBundle(QString path);
 
 
+class AppHunter: public QThread {
+    public:
+        AppHunter(QObject *);
+        void run();
+};
