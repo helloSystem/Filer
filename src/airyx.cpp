@@ -175,8 +175,8 @@ void AppHunter::run(void)
     	        CFStringRef cfpath = CFStringCreateWithCString(NULL, filepath.toUtf8(), kCFStringEncodingUTF8);
 	            CFURLRef url = CFURLCreateWithFileSystemPath(NULL, cfpath, kCFURLPOSIXPathStyle, true);
 
-                qDebug() << "Registering " << filepath;
-                LSRegisterURL(url, false);
+//                qDebug() << "Registering " << filepath;
+                LSRegisterURL(url, true);
                 CFRelease(url);
                 CFRelease(cfpath);
             } else if(fi.isDir()) { // is a regular dir?

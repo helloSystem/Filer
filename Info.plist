@@ -24,5 +24,28 @@
 	<string>Icon.png</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
+    <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>LSItemContentTypes</key>
+            <array>
+                    <string>public.folder</string>
+            </array>
+            <key>CFBundleTypeName</key>
+            <string>Folder</string>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+        </dict>
+        <dict>
+            <key>LSItemContentTypes</key>
+            <array>
+                    <string>public.volume</string>
+            </array>
+            <key>CFBundleTypeName</key>
+            <string>Volume</string>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+        </dict>
+    </array>
 </dict>
 </plist>

@@ -375,7 +375,7 @@ void Application::init() {
 #if defined(__AIRYX__)
   CFBundleRef watashi = CFBundleGetMainBundle();
   CFURLRef bundleURL = CFBundleCopyBundleURL(watashi);
-  LSRegisterURL(bundleURL, false); // make sure this app is known to LaunchServices
+  LSRegisterURL(bundleURL, true); // make sure this app is known to LaunchServices
   CFRelease(bundleURL);
 
   CFURLRef resourceURL = CFBundleCopyResourcesDirectoryURL(watashi);
