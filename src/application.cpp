@@ -273,6 +273,9 @@ bool Application::parseCommandLineArgs() {
   if(isPrimaryInstance) {
     qDebug("isPrimaryInstance");
 
+    AppHunter *apphunter = new AppHunter(this);
+    apphunter->start();
+
     if(parser.isSet(daemonOption))
       daemonMode_ = true;
     if(parser.isSet(profileOption))
@@ -385,9 +388,6 @@ void Application::init() {
   CFRelease(resourceURL);
   CFRelease(watashi);
   translator.load("filer-qt_" + QLocale::system().name(), resourcePath + "/translations");
-
-  AppHunter *apphunter = new AppHunter(this);
-  apphunter->start();
 #else
   translator.load("filer-qt_" + QLocale::system().name(), QCoreApplication::applicationDirPath() + QString("../share/filer-qt/translations")); // probono
 #endif
