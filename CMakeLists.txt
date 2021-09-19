@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(filer-qt)
+if(AIRYX)
+    project(Filer)
+else()
+    project(filer-qt)
+endif()
 
 set(PCMANFM_QT_VERSION_MAJOR 0)
 set(PCMANFM_QT_VERSION_MINOR 10)
@@ -10,6 +14,11 @@ set(LIBFM_QT_VERSION_MAJOR 0)
 set(LIBFM_QT_VERSION_MINOR 10)
 set(LIBFM_QT_VERSION_PATCH 0)
 set(LIBFM_QT_VERSION ${LIBFM_QT_VERSION_MAJOR}.${LIBFM_QT_VERSION_MINOR}.${LIBFM_QT_VERSION_PATCH})
+
+if(AIRYX)
+    set(CMAKE_INSTALL_BINDIR "/Contents/Airyx")
+    set(CMAKE_INSTALL_DATAROOTDIR "/Contents/Resources")
+endif()
 
 list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
 
@@ -28,6 +37,9 @@ find_package(Qt5Widgets 5.2 REQUIRED)
 find_package(Qt5DBus 5.2 REQUIRED)
 find_package(Qt5LinguistTools 5.2 REQUIRED)
 find_package(Qt5X11Extras 5.2 REQUIRED)
+if(AIRYX)
+    find_package(Qt5Xdg 3.7 REQUIRED)
+endif()
 
 find_package(PkgConfig)
 pkg_check_modules(SYSTEM_LIBS REQUIRED
@@ -64,9 +76,15 @@ configure_file(
     "${CMAKE_CURRENT_BINARY_DIR}/filer-qt.1"
     @ONLY
 )
+if(AIRYX)
+    set(MAN1PATH "${CMAKE_INSTALL_DATAROOTDIR}")
+else()
+    set(MAN1PATH "${CMAKE_INSTALL_MANDIR}/man1")
+endif()
+
 install(FILES
     "${CMAKE_CURRENT_BINARY_DIR}/filer-qt.1"
-    DESTINATION "${CMAKE_INSTALL_MANDIR}/man1"
+    DESTINATION "${MAN1PATH}"
 )
 
 # add Doxygen support to generate API docs

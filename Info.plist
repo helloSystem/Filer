@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>Filer</string>
+	<key>CFBundleDisplayName</key>
+	<string>Filer</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.airyx.Filer</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>OBJC</string>
+	<key>CFBundleExecutable</key>
+	<string>Filer</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright (C) 2021 Airyx Project</string>
+	<key>CFBundleIconFile</key>
+	<string>Icon.png</string>
+	<key>NSPrincipalClass</key>
+	<string></string>
+    <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>LSItemContentTypes</key>
+            <array>
+                    <string>public.folder</string>
+            </array>
+            <key>CFBundleTypeName</key>
+            <string>Folder</string>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+        </dict>
+        <dict>
+            <key>LSItemContentTypes</key>
+            <array>
+                    <string>public.volume</string>
+            </array>
+            <key>CFBundleTypeName</key>
+            <string>Volume</string>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+        </dict>
+    </array>
+</dict>
+</plist>

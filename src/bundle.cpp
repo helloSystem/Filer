@@ -1,5 +1,5 @@
 // File added by probono
-
+#if !defined(__AIRYX__)
 #include "bundle.h"
 
 #include <QIcon>
@@ -149,3 +149,4 @@ QIcon getIconForBundle(FmFileInfo* _info)
 }
 
 }
+#endif // not __AIRYX__

@@ -53,6 +53,9 @@
 #include <QFileSystemWatcher>
 
 #include "dbusinterface.h"
+#if defined(__AIRYX__)
+#include "airyx.h"
+#endif
 
 using namespace Filer;
 static const char* serviceName = "org.freedesktop.FileManager1";
@@ -84,6 +87,9 @@ Application::Application(int& argc, char** argv):
 
   argc_ = argc;
   argv_ = argv;
+#if defined(__AIRYX__)
+  __NSInitializeProcess(argc, (const char **)argv);
+#endif
 
   QDBusConnection dbus = QDBusConnection::sessionBus();
   if(dbus.registerService(serviceName)) {
@@ -128,6 +134,40 @@ Application::Application(int& argc, char** argv):
             delay(100);
         }
     }
+#if defined(__AIRYX__)
+    // On Airyx, plasmashell provides the global menu bar and some widgets
+    qDebug("Waiting for services to appear on DBus...");
+    bool plasmaHere(false), menuHere(false);
+    while(plasmaHere == false || menuHere == false) {
+        if(!menuHere) {
+          QDBusInterface* menuIface = new QDBusInterface(
+                      QStringLiteral("com.canonical.AppMenu.Registrar"),
+                      QStringLiteral("/com/canonical/AppMenu/Registrar"));
+          if (menuIface) {
+              if (menuIface->isValid()) {
+                  qDebug("Global menu is available");
+                  menuHere = true;
+              }
+              delete menuIface;
+              menuIface = 0;
+          }
+        }
+        if(!plasmaHere) {
+          QDBusInterface* plasmaIface = new QDBusInterface(
+                      QStringLiteral("org.kde.plasmashell"),
+                      QStringLiteral("/org/kde/plasmashell"));
+          if (plasmaIface) {
+              if (plasmaIface->isValid()) {
+                  qDebug("Plasma shell is available");
+                  plasmaHere = true;
+              }
+              delete plasmaIface;
+              plasmaIface = 0;
+          }
+        }
+        delay(500);
+    }
+#endif
 
     // Check if LXQt Session is running. LXQt has it's own Desktop Folder
     // editor. We just hide our editor when LXQt is running.
@@ -222,10 +262,18 @@ bool Application::parseCommandLineArgs() {
 
   parser.addPositionalArgument("files", tr("Files or directories to open"), tr("[FILE1, FILE2,...]"));
 
-  parser.process(arguments());
+  QList<QString> args = arguments();
+#if defined(__AIRYX__)
+  if(args.length() <= 1)
+    args.append(programArguments());
+#endif
+  parser.process(args);
 
   if(isPrimaryInstance) {
     qDebug("isPrimaryInstance");
+
+    AppHunter *apphunter = new AppHunter(this);
+    apphunter->start();
 
     if(parser.isSet(daemonOption))
       daemonMode_ = true;
@@ -326,7 +374,22 @@ void Application::init() {
   translator.load("filer-qt_" + QLocale::system().name(), PCMANFM_DATA_DIR "/translations");
   // qDebug("probono: Use relative path from main executable so that this works when it is not installed system-wide, too:");
   // qDebug((QCoreApplication::applicationDirPath() + QString("/../share/filer-qt/translations/")).toUtf8()); // probono
-  translator.load("filer-qt_" + QLocale::system().name(), QCoreApplication::applicationDirPath() + QString("/../share/filer-qt/translations/")); // probono
+#if defined(__AIRYX__)
+  CFBundleRef watashi = CFBundleGetMainBundle();
+  CFURLRef bundleURL = CFBundleCopyBundleURL(watashi);
+  LSRegisterURL(bundleURL, true); // make sure this app is known to LaunchServices
+  CFRelease(bundleURL);
+
+  CFURLRef resourceURL = CFBundleCopyResourcesDirectoryURL(watashi);
+  CFStringRef cfResourcePath = CFURLCopyFileSystemPath(resourceURL, kCFURLPOSIXPathStyle);
+  QString resourcePath = QString(CFStringGetCStringPtr(cfResourcePath, kCFStringEncodingUTF8));
+  CFRelease(cfResourcePath);
+  CFRelease(resourceURL);
+  CFRelease(watashi);
+  translator.load("filer-qt_" + QLocale::system().name(), resourcePath + "/translations");
+#else
+  translator.load("filer-qt_" + QLocale::system().name(), QCoreApplication::applicationDirPath() + QString("../share/filer-qt/translations")); // probono
+#endif
   installTranslator(&translator);
 }
 
@@ -559,8 +622,10 @@ void Application::setWallpaper(QString path, QString modeString) {
   for(int i = 0; i < G_N_ELEMENTS(valid_wallpaper_modes); ++i) {
     if(modeString == valid_wallpaper_modes[i]) {
       mode = (DesktopWindow::WallpaperMode)i;
-      if(mode != settings_.wallpaperMode())
+      if(mode != settings_.wallpaperMode()) {
+	settings_.setWallpaperMode(mode);
         changed = true;
+      }
       break;
     }
   }

@@ -27,7 +27,11 @@
 #include "execfiledialog_p.h"
 #include "appchooserdialog.h"
 #include "utilities.h"
+#if defined(__AIRYX__)
+#include "airyx.h"
+#else
 #include "bundle.h"
+#endif
 
 using namespace Fm;
 
@@ -72,15 +76,33 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos) {
     // Since fm_launch_files needs all items to be opened in multiple tabs at once, we need
     // to construct a list that contains those that are not bundles
     GList* itemsToBeLaunched = NULL;
+#if defined(__AIRYX__)
+    QStringList LSFiles;
+#endif
     for(GList* l = file_infos; l; l = l->next) {
         FmFileInfo* info = FM_FILE_INFO(l->data);
+#if defined(__AIRYX__)
+        QString path = QString(fm_path_to_str(fm_file_info_get_path(info)));
+        bool isAppDirOrBundle = checkWhetherAppDirOrBundle(path);
+#else
         bool isAppDirOrBundle = checkWhetherAppDirOrBundle(info);
+#endif
         if(isAppDirOrBundle == false) {
+#if !defined(__AIRYX__)
             qDebug() << "probono: Not an .AppDir or .app bundle. TODO: Make it possible to use the 'launch' command for those, too";
+#endif
             // probono: URLs like network://, sftp:// and so on will continue to be handled like this in any case since they need GIO,
             // but documents, non-bundle executables etc. could all be handled by 'launch' if we make 'launch' understand them
-            itemsToBeLaunched = g_list_append(itemsToBeLaunched, l->data);
+#if defined(__AIRYX__)
+            if(fm_file_info_is_native(info) && !fm_file_info_is_dir(info))
+	        LSFiles.append(path);
+	    else
+#endif
+	        itemsToBeLaunched = g_list_append(itemsToBeLaunched, l->data);
         } else {
+#if defined(__AIRYX__)
+            LSFiles.append(path);
+#else
             QString launchableExecutable = getLaunchableExecutable(info);
             if(QStandardPaths::findExecutable("launch") != "") {
                 qDebug() << "probono: Launching using the 'launch' command";
@@ -91,8 +113,28 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos) {
                 FmFileInfo* launchableExecutableFileInfo = fm_file_info_new_from_native_file(nullptr, launchableExecutable.toUtf8(),nullptr);
                 itemsToBeLaunched = g_list_append(itemsToBeLaunched, launchableExecutableFileInfo);
             }
+#endif
         }
+#if defined(__AIRYX__)
     }
+
+    CFMutableArrayRef CFLSFiles = CFArrayCreateMutable(NULL, LSFiles.count(), NULL);
+    for(QStringList::iterator f = LSFiles.begin(); f != LSFiles.end(); f++) {
+	CFStringRef item = CFStringCreateWithCString(NULL, f->toUtf8(), kCFStringEncodingUTF8);
+	CFURLRef itemURL = CFURLCreateWithFileSystemPath(NULL, item, kCFURLPOSIXPathStyle, false);
+	CFArrayAppendValue(CFLSFiles, itemURL);
+	CFRelease(item);
+    }
+
+    LSLaunchURLSpec spec;
+    memset(&spec, 0, sizeof(spec));
+    spec.appURL = NULL;
+    spec.itemURLs = CFLSFiles;
+    LSOpenFromURLSpec(&spec, NULL);
+    CFRelease(CFLSFiles);
+#else
+    }
+#endif
     bool ret = fm_launch_files(G_APP_LAUNCH_CONTEXT(context), itemsToBeLaunched, &funcs, this);
     g_list_free(itemsToBeLaunched);
     g_object_unref(context);

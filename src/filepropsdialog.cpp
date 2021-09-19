@@ -31,7 +31,11 @@
 #include <time.h>
 #include <QDebug>
 #include <QFileInfo>
+#if defined(__AIRYX__)
+#include "airyx.h"
+#else
 #include "bundle.h"
+#endif
 
 #define DIFFERENT_UIDS    ((uid)-1)
 #define DIFFERENT_GIDS    ((gid)-1)
@@ -230,7 +234,12 @@ void FilePropsDialog::initPermissionsPage() {
 
 void FilePropsDialog::initGeneralPage() {
 
+#if defined(__AIRYX__)
+    QString path = QString(fm_path_to_str(fm_file_info_get_path(fileInfo)));
+    bool isAppDirOrBundle = checkWhetherAppDirOrBundle(path);
+#else
     bool isAppDirOrBundle = checkWhetherAppDirOrBundle(fileInfo);
+#endif
 
     // probono: Set some things differently for AppDir/app bundle than for normal folder
     if(isAppDirOrBundle) {
@@ -248,7 +257,11 @@ void FilePropsDialog::initGeneralPage() {
 
       qDebug() << "probono: fm_file_info_get_icon(fileInfo) called";
       if(isAppDirOrBundle){
+#if defined(__AIRYX__)
+          icon = getIconForBundle(path);
+#else
           icon = getIconForBundle(fileInfo);
+#endif
       }
     }
     if(mimeType) {

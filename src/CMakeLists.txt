@@ -1,6 +1,14 @@
 set(LIBFM_LIBRARY "fm-qt5")
 set(QTX_INCLUDE_DIRS "")
-set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras)
+if(AIRYX)
+    set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras Qt5Xdg)
+    set(EXEC_NAME "Filer")
+    set(PCMANFM_DIR "/Contents/Resources")
+else()
+    set(QTX_LIBRARIES Qt5::Widgets Qt5::DBus Qt5::X11Extras)
+    set(EXEC_NAME "filer-qt")
+    set(PCMANFM_DIR "${CMAKE_INSTALL_PREFIX}/share/filer-qt")
+endif()
 
 include_directories(
     ${QTX_INCLUDE_DIRS}
@@ -17,6 +25,7 @@ link_directories(
 )
 
 set(filer_SRCS
+    airyx.cpp
     bundle.cpp # probono
     libfmqt.cpp
     bookmarkaction.cpp
@@ -129,43 +138,51 @@ lxqt_translate_desktop(DESKTOP_FILES
 if(APPLE)
     set(CMAKE_INSTALL_RPATH "@executable_path") # Darwin, macOS
 else()
-    set(CMAKE_INSTALL_RPATH "$ORIGIN/../lib") # FreeBSD
+    if(AIRYX)
+	set(CMAKE_INSTALL_RPATH "$ORIGIN/../Resources/lib") # Airyx
+    else()
+        set(CMAKE_INSTALL_RPATH "$ORIGIN/../lib") # FreeBSD
+    endif()
 endif()
 if(NOT LINUX)
   set(CMAKE_BUILD_WITH_INSTALL_RPATH ON) # On Linux we let appimagetool handle it
 endif()
 
-add_executable(filer-qt
+
+add_executable(${EXEC_NAME}
     ${filer_SRCS}
     ${filer_UIS_H}
     ${QM_FILES}
     ${DESKTOP_FILES}
 )
 set_property(
-     TARGET filer-qt APPEND
+     TARGET ${EXEC_NAME} APPEND
      PROPERTY COMPILE_DEFINITIONS
      LIBFM_QT_API=Q_DECL_IMPORT
-     PCMANFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/share/filer-qt"
+     PCMANFM_DATA_DIR="${PCMANFM_DIR}"
      LIBFM_DATA_DIR="${LIBFM_PREFIX}/share/libfm" # This is a little bit dirty
      PCMANFM_QT_VERSION="${PCMANFM_QT_VERSION}"
 )
 
-target_link_libraries(filer-qt
+target_link_libraries(${EXEC_NAME}
     ${QTX_LIBRARIES}
     ${LIBFM_LIBRARIES}
     ${LIBMENUCACHE_LIBRARIES}
     ${SYSTEM_LIBS_LIBRARIES}
+    ${SYSTEM_FRAMEWORKS}
 )
 
-install(TARGETS filer-qt RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+install(TARGETS ${EXEC_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
-# install a desktop entry file for filer-qt and desktop preferences
-install(FILES ${DESKTOP_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/applications"
-)
+if(NOT AIRYX)
+    # install a desktop entry file for filer-qt and desktop preferences
+    install(FILES ${DESKTOP_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/applications"
+    )
+endif()
 
-install(FILES ${QM_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/filer-qt/translations")
+install(FILES ${QM_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/translations")
 
 # prevent the generated files from being deleted during make clean
 set_directory_properties(PROPERTIES CLEAN_NO_CUSTOM true)
 
-qt5_use_modules(filer-qt Widgets DBus)
+qt5_use_modules(${EXEC_NAME} Widgets DBus)
