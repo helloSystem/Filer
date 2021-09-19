@@ -1,6 +1,6 @@
 <!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
 <node>
-  <interface name="org.filer.Application">
+  <interface name="org.freedesktop.FileManager1">
     <method name="preferences">
       <arg type="s" direction="in"/>
     </method>

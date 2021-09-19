@@ -58,8 +58,8 @@
 #endif
 
 using namespace Filer;
-static const char* serviceName = "org.filer.Filer";
-static const char* ifaceName = "org.filer.Application";
+static const char* serviceName = "org.freedesktop.FileManager1";
+static const char* ifaceName = "org.freedesktop.FileManager1";
 
 // https://stackoverflow.com/a/20894436
 void delay( int millisecondsToWait )
@@ -91,7 +91,6 @@ Application::Application(int& argc, char** argv):
   __NSInitializeProcess(argc, (const char **)argv);
 #endif
 
-  // QDBusConnection::sessionBus().registerObject("/org/filer/Application", this);
   QDBusConnection dbus = QDBusConnection::sessionBus();
   if(dbus.registerService(serviceName)) {
     // we successfully registered the service
@@ -99,7 +98,7 @@ Application::Application(int& argc, char** argv):
     desktop()->installEventFilter(this);
 
     new ApplicationAdaptor(this);
-    dbus.registerObject("/Application", this);
+    dbus.registerObject(QStringLiteral("/org/freedesktop/FileManager1"), this);
 
     connect(this, &Application::aboutToQuit, this, &Application::onAboutToQuit);
     // aboutToQuit() is not signalled on SIGTERM, install signal handler
@@ -329,7 +328,7 @@ bool Application::parseCommandLineArgs() {
   }
   else {
     QDBusConnection dbus = QDBusConnection::sessionBus();
-    QDBusInterface iface(serviceName, "/Application", ifaceName, dbus, this);
+    QDBusInterface iface(serviceName, QStringLiteral("/org/freedesktop/FileManager1"), ifaceName, dbus, this);
     if(parser.isSet(quitOption)) {
       iface.call("quit");
       return false;
