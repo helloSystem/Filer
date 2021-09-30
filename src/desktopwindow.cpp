@@ -58,6 +58,9 @@
 #include "ui_about.h"
 #include "tabpage.h"
 #include "trash.h"
+#if defined(__AIRYX__)
+#include "airyx.h"
+#endif
 
 #include <QX11Info>
 #include <QScreen>
@@ -525,6 +528,10 @@ void DesktopWindow::onAbout()
       explicit AboutDialog(QWidget* parent = 0, Qt::WindowFlags f = 0) {
         ui.setupUi(this);
         ui.version->setText(tr("Version: %1").arg(PCMANFM_QT_VERSION));
+#if defined(__AIRYX__)
+      QIcon icon = getIconForBundle(getPathForMainBundle());
+      ui.label_4->setPixmap(icon.pixmap(icon.availableSizes().first()));
+#endif
       }
     private:
       Ui::AboutDialog ui;

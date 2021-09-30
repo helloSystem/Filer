@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>543</width>
-    <height>418</height>
+    <height>541</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,7 +24,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>icons/filer-256.png</pixmap>
+      <pixmap>./Resources/Icon.png</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -67,7 +67,7 @@
    <item>
     <widget class="QLabel" name="label_3">
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/probonopd/filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/probonopd/filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/mszoek/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/mszoek/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="textFormat">
       <enum>Qt::RichText</enum>
@@ -80,7 +80,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <property name="tabsClosable">
       <bool>false</bool>
@@ -97,6 +97,7 @@
          </property>
          <property name="plainText">
           <string>Programming:
+* Zoe Knox (mszoek)
 * Simon Peter (probono)
 * Chris Moore (moochris)
 * Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
@@ -124,6 +125,7 @@ Application icon:
          <property name="plainText">
           <string>Filer
 
+Copyright (C) 2021 Zoe Knox
 Copyright (C) 2020-21 Simon Peter
 Copyright (C) 2021 Chris Moore
 

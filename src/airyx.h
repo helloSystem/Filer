@@ -49,6 +49,7 @@ QString displayNameForBundle(QString path);
 // Returns an icon for a bundle or a generic default
 QIcon getIconForBundle(QString path);
 
+QString getPathForMainBundle();
 
 class AppHunter: public QThread {
     public:

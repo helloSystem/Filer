@@ -103,7 +103,18 @@ QString displayNameForBundle(QString path)
     return QFileInfo(path).baseName();
 }
 
-QIcon getIconForBundle(QString path)
+QString getPathForMainBundle()
+{
+    CFBundleRef mainBundle = CFBundleGetMainBundle();
+    CFURLRef url = CFBundleCopyBundleURL(mainBundle);
+    CFStringRef path = CFURLCopyFileSystemPath(url, kCFURLPOSIXPathStyle);
+    QString result(QString::fromUtf8(CFStringGetCStringPtr(path, kCFStringEncodingUTF8)));
+    CFRelease(path);
+    CFRelease(url);
+    return result;
+}
+
+QIcon getIconForBundle(QString path = NULL)
 {
     QIcon icon = QIcon::fromTheme("do"); // default "executable folder" icon
 
