@@ -147,7 +147,7 @@ MainWindow::MainWindow(FmPath* path):
   loadBookmarksMenu();
 
   // Fix the menu groups which is not done by Qt designer
-  // To my suprise, this was supported in Qt designer 3 :-(
+  // To my surprise, this was supported in Qt designer 3 :-(
   QActionGroup* group = new QActionGroup(ui.menu_View);
   group->setExclusive(true);
   group->addAction(ui.actionIconView);
@@ -780,7 +780,7 @@ void MainWindow::onTabBarCloseRequested(int index) {
 
 void MainWindow::onTabBarTabMoved(int from, int to) {
   // a tab in the tab bar is moved by the user, so we have to move the
-  //  corredponding tab page in the stacked widget to the new position, too.
+  //  corresponding tab page in the stacked widget to the new position, too.
   QWidget* page = ui.stackedWidget->widget(from);
   if(page) {
 	// we're not going to delete the tab page, so here we block signals
@@ -1032,7 +1032,7 @@ void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
     switch(type) {
     case TabPage::StatusTextNormal:
     case TabPage::StatusTextSelectedFiles: {
-      // FIXME: updating the status text so frequently is a little bit ineffiecient
+      // FIXME: updating the status text so frequently is a little bit inefficient
       QString text = statusText = tabPage->statusText(TabPage::StatusTextSelectedFiles);
       if(text.isEmpty()) {
         ui.statusbar->showMessage(tabPage->statusText(TabPage::StatusTextNormal));

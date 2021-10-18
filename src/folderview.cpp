@@ -79,7 +79,7 @@ QModelIndex FolderViewListView::indexAt(const QPoint& point) const {
     // Q_ASSERT(delegate != NULL);
     // We use the grid size - (2, 2) as the size of the bounding rectangle of the whole item.
     // The width of the text label hence is gridSize.width - 2, and the width and height of the icon is from iconSize().
-    QRect visRect = visualRect(index); // visibal area on the screen
+    QRect visRect = visualRect(index); // visible area on the screen
     QSize itemSize = gridSize();
     itemSize.setWidth(itemSize.width() - 2);
     itemSize.setHeight(itemSize.height() - 2);
@@ -99,7 +99,7 @@ QModelIndex FolderViewListView::indexAt(const QPoint& point) const {
 
 // NOTE:
 // QListView has a problem which I consider a bug or a design flaw.
-// When you set movement property to Static, theoratically the icons
+// When you set movement property to Static, theoretically the icons
 // should not be movable. However, if you turned on icon mode,
 // the icons becomes freely movable despite the value of movement is Static.
 // To overcome this bug, we override all drag handling methods, and
@@ -231,7 +231,7 @@ void FolderViewTreeView::dropEvent(QDropEvent* e) {
 
 // the default list mode of QListView handles column widths
 // very badly (worse than gtk+) and it's not very flexible.
-// so, let's handle column widths outselves.
+// so, let's handle column widths ourselves.
 void FolderViewTreeView::layoutColumns() {
   // qDebug("layoutColumns");
   if(!model())
@@ -256,7 +256,7 @@ void FolderViewTreeView::layoutColumns() {
     }
 
     int filenameColumn = headerView->visualIndex(FolderModel::ColumnFileName);
-    // if the total witdh we want exceeds the available space
+    // if the total width we want exceeds the available space
     if(desiredWidth > availWidth) {
       // Compute the width available for the filename column
       int filenameAvailWidth = availWidth - desiredWidth + widths[filenameColumn];
@@ -783,7 +783,7 @@ void FolderView::selectAll() {
   else {
     // NOTE: By default QListView::selectAll() selects all columns in the model.
     // However, QListView only show the first column. Normal selection by mouse
-    // can only select the first column of every row. I consider this discripancy yet
+    // can only select the first column of every row. I consider this discrepancy yet
     // another design flaw of Qt. To make them consistent, we do it ourselves by only
     // selecting the first column of every row and do not select all columns as Qt does.
     // This will trigger one selectionChanged event per row, which is very inefficient,
@@ -889,7 +889,7 @@ bool FolderView::eventFilter(QObject* watched, QEvent* event) {
       // This is to fix #85: Scrolling doesn't work in compact view
       // Actually, I think it's the bug of Qt, not ours.
       // When in compact mode, only the horizontal scroll bar is used and the vertical one is hidden.
-      // So, when a user scroll his mouse wheel, it's reasonable to scroll the horizontal scollbar.
+      // So, when a user scroll his mouse wheel, it's reasonable to scroll the horizontal scrollbar.
       // Qt does not implement such a simple feature, unfortunately.
       // We do it by forwarding the scroll event in the viewport to the horizontal scrollbar.
       // FIXME: if someday Qt supports this, we have to disable the workaround.

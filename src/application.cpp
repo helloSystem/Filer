@@ -80,7 +80,7 @@ Application::Application(int& argc, char** argv):
   volumeMonitor_(NULL),
   userDirsWatcher_(NULL),
   lxqtRunning_(false),
-  editBookmarksialog_() {
+  editBookmarksDialog_() {
 
   argc_ = argc;
   argv_ = argv;
@@ -251,7 +251,7 @@ bool Application::parseCommandLineArgs() {
       desktopManager(false);
 
     if(parser.isSet(desktopPrefOption)) { // desktop preference dialog
-      desktopPrefrences();
+      desktopPreferences();
       keepRunning = true;
     }
     else if(parser.isSet(findFilesOption)) { // file searching utility
@@ -292,7 +292,7 @@ bool Application::parseCommandLineArgs() {
       iface.call("desktopManager", false);
 
     if(parser.isSet(desktopPrefOption)) { // desktop preference dialog
-      iface.call("desktopPrefrences", parser.value(desktopPrefOption));
+      iface.call("desktopPreferences", parser.value(desktopPrefOption));
     }
     else if(parser.isSet(findFilesOption)) { // file searching utility
       iface.call("findFiles", parser.positionalArguments());
@@ -322,7 +322,7 @@ void Application::init() {
   qtTranslator.load("qt_" + QLocale::system().name(), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
   installTranslator(&qtTranslator);
 
-  // install our own tranlations
+  // install our own translation
   translator.load("filer-qt_" + QLocale::system().name(), PCMANFM_DATA_DIR "/translations");
   // qDebug("probono: Use relative path from main executable so that this works when it is not installed system-wide, too:");
   // qDebug((QCoreApplication::applicationDirPath() + QString("/../share/filer/translations/")).toUtf8()); // probono
@@ -340,7 +340,7 @@ int Application::exec() {
 
   volumeMonitor_ = g_volume_monitor_get();
   // delay the volume manager a little because in newer versions of glib/gio there's a problem.
-  // when the first volume monitor object is created, it discovers volumes asynchonously.
+  // when the first volume monitor object is created, it discovers volumes asynchronously.
   // g_volume_monitor_get() immediately returns while the monitor is still discovering devices.
   // So initially g_volume_monitor_get_volumes() returns nothing, but shortly after that
   // we get volume-added signals for all of the volumes. This is not what we want.
@@ -394,7 +394,7 @@ void Application::onSaveStateRequest(QSessionManager& manager) {
 }
 
 void Application::desktopManager(bool enabled) {
-  // TODO: turn on or turn off desktpo management (desktop icons & wallpaper)
+  // TODO: turn on or turn off desktop management (desktop icons & wallpaper)
   qDebug("desktopManager: %d", enabled);
   QDesktopWidget* desktopWidget = desktop();
   if(enabled) {
@@ -446,7 +446,7 @@ void Application::desktopManager(bool enabled) {
   enableDesktopManager_ = enabled;
 }
 
-void Application::desktopPrefrences() {
+void Application::desktopPreferences() {
   // show desktop preference window
   if(!desktopPreferencesDialog_) {
     desktopPreferencesDialog_ = new DesktopPreferencesDialog();
@@ -637,7 +637,7 @@ void Application::onScreenCountChanged(int newCount) {
   bool isVirtual = desktopWidget->isVirtualDesktop();
 
   if(oldVirtual && isVirtual) {
-    // if we are using virtual desktop mode previously, and the new mode is sitll virtual
+    // if we are using virtual desktop mode previously, and the new mode is still virtual
     // no further change is needed, only do relayout.
     desktopWindows_.at(0)->queueRelayout();
     return;
@@ -701,12 +701,12 @@ void Application::updateDesktopsFromSettings() {
 }
 
 void Application::editBookmarks() {
-  if(!editBookmarksialog_) {
+  if(!editBookmarksDialog_) {
     FmBookmarks* bookmarks = fm_bookmarks_dup();
-    editBookmarksialog_ = new Fm::EditBookmarksDialog(bookmarks);
+    editBookmarksDialog_ = new Fm::EditBookmarksDialog(bookmarks);
     g_object_unref(bookmarks);
   }
-  editBookmarksialog_.data()->show();
+  editBookmarksDialog_.data()->show();
 }
 
 void Application::initVolumeManager() {
@@ -785,7 +785,7 @@ void Application::onScreenDestroyed(QObject* screenObj) {
   // #40681: Regression bug: QWidget::winId() returns old value and QEvent::WinIdChange event is not emitted sometimes. (multihead setup)
   // #40791: Regression: QPlatformWindow, QWindow, and QWidget::winId() are out of sync.
   // Explanations for the workaround:
-  // Internally, Qt mantains a list of QScreens and update it when XRandR configuration changes.
+  // Internally, Qt maintains a list of QScreens and update it when XRandR configuration changes.
   // When the user turn off an monitor with xrandr --output <xxx> --off, this will destroy the QScreen
   // object which represent the output. If the QScreen being destroyed contains our panel widget,
   // Qt will call QWindow::setScreen(0) on the internal windowHandle() of our panel widget to move it
@@ -830,7 +830,7 @@ void Application::reloadDesktopsAsNeeded() {
   }
 }
 
-// This slot is for Qt 5 onlt, but the stupid Qt moc cannot do conditional compilation
+// This slot is for Qt 5 only, but the stupid Qt moc cannot do conditional compilation
 // so we have to define it for Qt 4 as well.
 void Application::onVirtualGeometryChanged(const QRect& rect) {
   // NOTE: the following is a workaround for Qt bug 32567.

@@ -9,8 +9,8 @@ Minimalistic simplicity, see [hello](https://github.com/probonopd/hello) for the
 * Appeal to users coming from macOS
 * Cross platform: Builds for Linux, FreeBSD
 * Spatial mode (each folder has its own window)
-* Can handle ROX AppDirs (work in progess)
-* Can handle GNUstep `.app` bundles (work in progess)
+* Can handle ROX AppDirs (work in progress)
+* Can handle GNUstep `.app` bundles (work in progress)
 * Can handle macOS `.app` bundles (not started yet)
 * Can handle ELF files that are lacking the executable bit (not started yet)
 * Can handle AppImages (not started yet)

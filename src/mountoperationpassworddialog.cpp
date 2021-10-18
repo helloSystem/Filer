@@ -41,7 +41,7 @@ MountOperationPasswordDialog::MountOperationPasswordDialog(MountOperation* op, G
   connect(ui->Anonymous, &QAbstractButton::toggled, this, &MountOperationPasswordDialog::onAnonymousToggled);
 
   if(canAnonymous) {
-    // select ananymous by default if applicable.
+    // select anonymous by default if applicable.
     ui->Anonymous->setChecked(true);
   }
   else {

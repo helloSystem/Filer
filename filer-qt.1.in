@@ -4,7 +4,7 @@ Filer-Qt \- A lightweight Qt based file manager for X Window.
 .SH SYNOPSIS
 filer\-qt [OPTION...] [FILE1, FILE2,...]
 .SH DESCRIPTION
-PCMan File Manager Qt (\fBFiler-Qt\fP) is an extremly fast, lightweight, yet
+PCMan File Manager Qt (\fBFiler-Qt\fP) is an extremely fast, lightweight, yet
 feature-rich file manager with tabbed browsing. It is the default file manager
 for the lightweight desktop environment, \fBLXQt\fP.
 .SH OPTIONS

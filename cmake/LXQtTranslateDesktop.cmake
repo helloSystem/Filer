@@ -1,10 +1,10 @@
 #=============================================================================
 # The lxqt_translate_desktop() function was copied from the the
-# LXQt LxQtTranste.cmake
+# LXQt LxQtTranslate.cmake
 #
 # Original Author: Alexander Sokolov <sokoloff.a@gmail.com>
 #
-# funtion lxqt_translate_desktop(_RESULT
+# function lxqt_translate_desktop(_RESULT
 #                           SOURCES <sources>
 #                           [TRANSLATION_DIR] translation_directory
 #                    )
@@ -13,7 +13,7 @@
 #
 #     Input:
 #
-#       SOURCES List of input desktop files (.destktop.in) to be translated
+#       SOURCES List of input desktop files (.desktop.in) to be translated
 #               (merged), relative to the CMakeList.txt.
 #
 #       TRANSLATION_DIR Optional path to the directory with the .ts files,
@@ -34,7 +34,7 @@ function(lxqt_translate_desktop _RESULT)
     if (NOT ${_UNPARSED_ARGS} STREQUAL "")
         MESSAGE(FATAL_ERROR
           "Unknown arguments '${_UNPARSED_ARGS}'.\n"
-          "See lxqt_translate_desktop() documenation for more information.\n"
+          "See lxqt_translate_desktop() documentation for more information.\n"
         )
     endif()
 

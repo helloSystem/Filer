@@ -17,8 +17,8 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-#ifndef __UTILITS_P_H__
-#define __UTILITS_P_H__
+#ifndef __UTILITIES_P_H__
+#define __UTILITIES_P_H__
 
 #include <QInputDialog>
 #include <QTimer>

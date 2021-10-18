@@ -278,7 +278,7 @@ void FileMenu::addCustomActionItem(QMenu* menu, FmFileActionItem* item) {
         }
     }
     else if(fm_file_action_item_is_action(item)) {
-        connect(action, &QAction::triggered, this, &FileMenu::onCustomActionTrigerred);
+        connect(action, &QAction::triggered, this, &FileMenu::onCustomActionTriggered);
     }
 }
 #endif
@@ -341,7 +341,7 @@ void FileMenu::onApplicationTriggered() {
 }
 
 #ifdef CUSTOM_ACTIONS
-void FileMenu::onCustomActionTrigerred() {
+void FileMenu::onCustomActionTriggered() {
     CustomAction* action = static_cast<CustomAction*>(sender());
     FmFileActionItem* item = action->item();
 

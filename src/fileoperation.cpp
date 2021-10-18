@@ -209,7 +209,7 @@ void FileOperation::handleFinish() {
   }
   Q_EMIT finished();
 
-  /* sepcial handling for trash
+  /* special handling for trash
    * FIXME: need to refactor this to use a more elegant way later. */
   if(job_->type == FM_FILE_OP_TRASH) { /* FIXME: direct access to job struct! */
     FmPathList* unable_to_trash = static_cast<FmPathList*>(g_object_get_data(G_OBJECT(job_), "trash-unsupported"));

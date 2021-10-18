@@ -40,7 +40,7 @@ IconTheme::IconTheme():
   currentThemeName_(QIcon::themeName()) {
   // NOTE: only one instance is allowed
   Q_ASSERT(theIconTheme == NULL);
-  Q_ASSERT(qApp != NULL); // QApplication should exists before contructing IconTheme.
+  Q_ASSERT(qApp != NULL); // QApplication should exists before constructing IconTheme.
 
   theIconTheme = this;
   fm_icon_set_user_data_destroy(reinterpret_cast<GDestroyNotify>(fmIconDataDestroy));

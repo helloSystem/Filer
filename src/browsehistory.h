@@ -77,7 +77,7 @@ public:
 private:
   FmPath* path_;
   int scrollPos_;
-  // TODO: we may need to store current selection as well. reserve room for furutre expansion.
+  // TODO: we may need to store current selection as well. reserve room for future expansion.
   // void* reserved1;
   // void* reserved2;
 };

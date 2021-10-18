@@ -48,7 +48,7 @@ ProxyFolderModel::~ProxyFolderModel() {
 
   if(showThumbnails_ && thumbnailSize_ != 0) {
     FolderModel* srcModel = static_cast<FolderModel*>(sourceModel());
-    // tell the source model that we don't need the thumnails anymore
+    // tell the source model that we don't need the thumbnails anymore
     if(srcModel) {
       srcModel->releaseThumbnails(thumbnailSize_);
       disconnect(srcModel, SIGNAL(thumbnailLoaded(QModelIndex,int)));

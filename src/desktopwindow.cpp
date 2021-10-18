@@ -152,7 +152,7 @@ DesktopWindow::DesktopWindow(int screenNum):
 
     /*
      * probono: Commenting these out
-     * for those that are alraedy defined in the Menu solves QAction::event: Ambiguous shortcut overload
+     * for those that are already defined in the Menu solves QAction::event: Ambiguous shortcut overload
 
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_X), this); // cut
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onCutActivated);
@@ -462,7 +462,7 @@ void DesktopWindow::prepareFolderMenu(Fm::FolderMenu* menu) {
 }
 
 void DesktopWindow::onDesktopPreferences() {
-    static_cast<Application* >(qApp)->desktopPrefrences();
+    static_cast<Application* >(qApp)->desktopPreferences();
 }
 
 void DesktopWindow::onFilerPreferences()
@@ -611,7 +611,7 @@ void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
     Q_FOREACH(const QModelIndex& index, indexes) {
         // Under some circumstances, Qt might emit indexMoved for
         // every single cells in the same row. (when QAbstractItemView::SelectItems is set)
-        // So indexes list may contain several indixes for the same row.
+        // So indexes list may contain several indexes for the same row.
         // Since we only care about rows, not individual cells,
         // let's handle column 0 of every row here.
         if(index.column() == 0) {
@@ -666,7 +666,7 @@ void DesktopWindow::relayoutItems() {
                 // qDebug() << "set custom pos:" << name << row << index << customPos;
                 continue;
             }
-            // check if the current pos is alredy occupied by a custom item
+            // check if the current pos is already occupied by a custom item
             bool used = false;
             for(it = customItemPos_.begin(); it != customItemPos_.end(); ++it) {
                 QPoint customPos = *it;

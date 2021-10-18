@@ -64,7 +64,7 @@ public:
   void launchFiles(QString cwd, QStringList paths, bool inNewWindow);
   void setWallpaper(QString path, QString modeString);
   void preferences(QString page);
-  void desktopPrefrences();
+  void desktopPreferences();
   void editBookmarks();
   void desktopManager(bool enabled);
   void findFiles(QStringList paths = QStringList());
@@ -130,7 +130,7 @@ private:
   QVector<DesktopWindow*> desktopWindows_;
   QPointer<PreferencesDialog> preferencesDialog_;
   QPointer<DesktopPreferencesDialog> desktopPreferencesDialog_;
-  QPointer<Fm::EditBookmarksDialog> editBookmarksialog_;
+  QPointer<Fm::EditBookmarksDialog> editBookmarksDialog_;
   QTranslator translator;
   QTranslator qtTranslator;
   GVolumeMonitor* volumeMonitor_;

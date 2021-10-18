@@ -4,7 +4,7 @@
     <method name="preferences">
       <arg type="s" direction="in"/>
     </method>
-    <method name="desktopPrefrences"/>
+    <method name="desktopPreferences"/>
     <method name="desktopManager">
       <arg type="b" direction="in"/>
     </method>

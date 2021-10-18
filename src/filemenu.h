@@ -157,7 +157,7 @@ protected Q_SLOTS:
   void onEmptyTrashTriggered();
   void onApplicationTriggered();
 #ifdef CUSTOM_ACTIONS
-  void onCustomActionTrigerred();
+  void onCustomActionTriggered();
 #endif
 /*
   void onCompress();

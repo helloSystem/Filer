@@ -25,7 +25,7 @@
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #=============================================================================
 #
-# funtion lxqt_translate_ts(qmFiles
+# function lxqt_translate_ts(qmFiles
 #                           [USE_QT5 [Yes | No]]
 #                           [UPDATE_TRANSLATIONS [Yes | No]]
 #                           SOURCES <sources>

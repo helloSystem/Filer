@@ -85,7 +85,7 @@ void PreferencesDialog::initIconThemes(Settings& settings) {
   if(settings.useFallbackIconTheme()) { // auto-detection failed
     // load xdg icon themes and select the current one
     QHash<QString, QString> iconThemes;
-    // user customed icon themes
+    // user customized icon themes
     findIconThemesInDir(iconThemes, QString(g_get_home_dir()) % "/.icons");
 
     // search for icons in system data dir

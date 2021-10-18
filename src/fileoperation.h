@@ -97,7 +97,7 @@ public:
     return (Type)job_->type;
   }
 
-  // convinient static functions
+  // convenient static functions
   static FileOperation* copyFiles(FmPathList* srcFiles, FmPath* dest, QWidget* parent = 0);
   static FileOperation* moveFiles(FmPathList* srcFiles, FmPath* dest, QWidget* parent = 0);
   static FileOperation* symlinkFiles(FmPathList* srcFiles, FmPath* dest, QWidget* parent = 0);

@@ -55,7 +55,7 @@ static const QString WINDOW_FILTER              = "WindowFilter";
 static const QString XATTR_NAMESPACE            = "user";
 
 /*
- * get the attibute value from the extended attribute for the path as int
+ * get the attribute value from the extended attribute for the path as int
  */
 int getAttributeValueInt(const QString& path, const QString& attribute, bool& ok) {
   int value = 0;
@@ -88,7 +88,7 @@ int getAttributeValueInt(const QString& path, const QString& attribute, bool& ok
 }
 
 /*
- * set the attibute value in the extended attribute for the path as int
+ * set the attribute value in the extended attribute for the path as int
  */
 bool setAttributeValueInt(const QString& path, const QString& attribute, int value) {
   // set the value from the extended attribute for the path

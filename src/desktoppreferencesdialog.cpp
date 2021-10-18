@@ -139,7 +139,7 @@ void DesktopPreferencesDialog::onBrowseClicked() {
   QFileDialog dlg;
   dlg.setAcceptMode(QFileDialog::AcceptOpen);
   dlg.setFileMode(QFileDialog::ExistingFile);
-  // compose a name fileter from QImageReader
+  // compose a name filter from QImageReader
   QString filter;
   filter.reserve(256);
   filter = tr("Image Files");

@@ -44,7 +44,7 @@ PlacesView::PlacesView(QWidget* parent):
 
   setIconSize(QSize(24, 24));
 
-  // FIXME: we may share this model amont all views
+  // FIXME: we may share this model among all views
   model_ = new PlacesModel(this);
   setModel(model_);
 
