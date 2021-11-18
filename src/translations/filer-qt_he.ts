@@ -537,7 +537,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../file-props.ui" line="60"/>
         <location filename="../../build/src/ui_file-props.h" line="363"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>טקסטבל</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="133"/>
@@ -2957,7 +2957,7 @@ Modified: %3</source>
     <message>
         <location filename="../utilities.cpp" line="237"/>
         <source>Enter a name for the new %1:</source>
-        <translation type="unfinished"></translation>
+        <translation>הזן שם עבור% 1 החדש:</translation>
     </message>
 </context>
 <context>
