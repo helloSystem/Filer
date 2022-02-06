@@ -7,7 +7,7 @@ RESOURCES=
 FRAMEWORKS=
 
 build: Filer.app
-	cp -fv ${.CURDIR}/src/icons/filer-256.png ${APP_DIR}/Contents/Resources/Icon.png
+	cp -fv ${.CURDIR}/airyxOSFiler.png ${APP_DIR}/Contents/Resources/Icon.png
 	cp -fv ${.CURDIR}/Info.plist ${APP_DIR}/Contents
 
 clean:
