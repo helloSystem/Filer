@@ -1042,6 +1042,11 @@ void DesktopWindow::onOpenFolderAndSelectItems(QString folder, QStringList items
       page->folderView()->selectFiles(items, false);
     }
 
+    // Raise the window if it's open by now
+    if (WindowRegistry::instance().checkPathAndRaise(fm_path_to_str(path))) {
+      return;
+    }
+
     fm_path_unref(path);
 }
 
