@@ -82,7 +82,7 @@ Settings::Settings():
   showHidden_(false),
   sortOrder_(Qt::AscendingOrder),
   sortColumn_(Fm::FolderModel::ColumnFileName),
-  sortFolderFirst_(true),
+  sortFolderFirst_(false),
   showFilter_(false),
   spatialMode_(false),
   dirInfoWrite_(true),
