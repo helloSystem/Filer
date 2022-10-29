@@ -151,6 +151,16 @@ Application::Application(int& argc, char** argv):
     // we're not the first instance
     isPrimaryInstance = false;
   }
+
+  if(! QProcessEnvironment::systemEnvironment().contains("LAUNCHED_BUNDLE")){
+      QMessageBox msgBox;
+      msgBox.setIcon(QMessageBox::Warning);
+      msgBox.setText(tr("%1 was not launched by the launch command.\n\n"
+                     "This is not how it should be launched.\n"
+                     "Functionality may be broken.").arg(qApp->applicationDisplayName()));
+      msgBox.exec();
+  }
+
 }
 
 Application::~Application() {
@@ -325,8 +335,9 @@ int Application::exec() {
   if(!parseCommandLineArgs())
     return 0;
 
-  if(daemonMode_) // keep running even when there is no window opened.
+  if(daemonMode_) { // keep running even when there is no window opened.
     setQuitOnLastWindowClosed(false);
+  }
 
   volumeMonitor_ = g_volume_monitor_get();
   // delay the volume manager a little because in newer versions of glib/gio there's a problem.

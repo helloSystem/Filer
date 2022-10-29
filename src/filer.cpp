@@ -3,6 +3,7 @@
 #include "libfmqt.h"
 #include <QDebug>
 #include <QLibraryInfo>
+#include <QMessageBox>
 
 int main(int argc, char** argv) {
   // ensure that glib integration of Qt is not turned off
@@ -41,7 +42,6 @@ int main(int argc, char** argv) {
       }
   }
 
-
-
   return app.exec();
+
 }

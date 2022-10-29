@@ -53,11 +53,6 @@ FileLauncher::~FileLauncher() {
 bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos, bool show_contents) {
     qDebug() << "probono: FileLauncher::launchFiles called";
     qDebug() << "probono: Determining whether it is an AppDir/.app bundle";
-
-    QProcessEnvironment q = QProcessEnvironment::systemEnvironment();
-    q.remove("LAUNCHED_BUNDLE");
-    q.remove("LAUNCHED_EXECUTABLE");
-
     // probono: This gets invoked when an icon is double clicked or "Open" is selected from the context menu
     // but not if "Open with..." is selected from the context menu
     // GAppLaunchContext is a concept from
