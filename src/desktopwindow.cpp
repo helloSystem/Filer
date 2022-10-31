@@ -83,6 +83,10 @@ DesktopWindow::DesktopWindow(int screenNum):
     setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
     setAttribute(Qt::WA_DeleteOnClose);
 
+    // Give Filer an icon, e.g., in the Windows menu
+    // DesktopWindow->setIcon(QIcon::fromTheme("desktop")); // This does not work because DesktopWindow is not a QWindow subclass
+    qApp->setWindowIcon(QIcon::fromTheme("desktop"));
+
     // probono: Show wallpaper immediately (before constructing the icons on the Desktop)
     Settings& settings = static_cast<Application* >(qApp)->settings();
     setWallpaperFile(settings.wallpaper());
