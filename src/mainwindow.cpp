@@ -67,7 +67,7 @@ MainWindow::MainWindow(FmPath* path):
   // setup user interface
   ui.setupUi(this);
 
-  qApp->setWindowIcon(QIcon::fromTheme("folder"));
+  this->setWindowIcon(QIcon::fromTheme("folder"));
 
   // hide menu items that are not usable
   //if(!uriExists("computer:///"))
@@ -345,7 +345,6 @@ MainWindow::MainWindow(FmPath* path):
 }
 
 MainWindow::~MainWindow() {
-  qApp->setWindowIcon(QIcon::fromTheme("desktop"));
   // update registry
   TabPage* page = currentPage();
   if(page) {
