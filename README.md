@@ -13,3 +13,23 @@ Minimalistic simplicity, see [hello](https://github.com/probonopd/hello) for the
 * Can handle ELF files that are lacking the executable bit (backlog)
 * Can handle AppImages (backlog)
 * Context menu can be extended using file manager actions
+
+## Dependencies
+
+On Alpine Linux:
+
+```
+apk add --no-cache qt5-qtbase-dev kwindowsystem-dev qt5-qttools-dev kdbusaddons-dev baloo-dev xcb-util-wm-dev libdbusmenu-qt-dev git cmake musl-dev alpine-sdk clang
+```
+
+Not all of the above may actually be required.
+
+## Build
+
+```
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+```
