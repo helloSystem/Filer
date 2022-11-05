@@ -679,22 +679,22 @@ Application icon:
 <context>
     <name>Filer::Application</name>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="204"/>
         <source>Name of configuration profile</source>
         <translation>配置設定檔名稱</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="189"/>
+        <location filename="../application.cpp" line="204"/>
         <source>PROFILE</source>
         <translation>設定檔</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="192"/>
+        <location filename="../application.cpp" line="207"/>
         <source>Run Filer as a daemon</source>
         <translation>將 Filer 作為守護行程</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="195"/>
+        <location filename="../application.cpp" line="210"/>
         <source>Quit Filer</source>
         <translation>關閉 Filer</translation>
     </message>
@@ -703,79 +703,87 @@ Application icon:
         <translation type="vanished">桌面管理程式</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="198"/>
+        <location filename="../application.cpp" line="158"/>
+        <source>%1 was not launched by the launch command.
+
+This is not how it should be launched.
+Functionality may be broken.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="213"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation>‎啟動桌面管理員（已棄用）</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="216"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>桌面管理程式如果正在執行，請關閉它</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="204"/>
+        <location filename="../application.cpp" line="219"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>在具有指定名稱的頁面上打開桌面偏好的對話框</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="204"/>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="235"/>
         <source>NAME</source>
         <translation>名稱</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="207"/>
+        <location filename="../application.cpp" line="222"/>
         <source>Open new window</source>
         <translation>開啟新視窗</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="210"/>
+        <location filename="../application.cpp" line="225"/>
         <source>Open Find Files utility</source>
         <translation>開啟搜尋檔案程式</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="228"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>從圖片檔案夾設置為桌面背景</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="228"/>
         <source>FILE</source>
         <translation>檔案夾</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="232"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>桌面背景的設置模式。 類別=(顏色|延展|縮放|置中|並排)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="232"/>
         <source>MODE</source>
         <translation>類別</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="235"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>使用指定名稱在頁面上打開偏好的對話框</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="223"/>
+        <location filename="../application.cpp" line="238"/>
         <source>Files or directories to open</source>
         <translation>要開啟的檔案以及目錄</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="223"/>
+        <location filename="../application.cpp" line="238"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[新增檔案夾1, 新增檔案夾2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="512"/>
-        <location filename="../application.cpp" line="519"/>
+        <location filename="../application.cpp" line="528"/>
+        <location filename="../application.cpp" line="535"/>
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="519"/>
+        <location filename="../application.cpp" line="535"/>
         <source>Terminal emulator is not set.</source>
         <translation>終端機模擬器尚未設定。</translation>
     </message>
@@ -834,17 +842,17 @@ Application icon:
 <context>
     <name>Filer::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="439"/>
+        <location filename="../desktopwindow.cpp" line="438"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>維持目前的位置(&amp;K)</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="461"/>
+        <location filename="../desktopwindow.cpp" line="460"/>
         <source>Desktop Preferences</source>
         <translation>桌面偏好設定</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="528"/>
+        <location filename="../desktopwindow.cpp" line="527"/>
         <source>Version: %1</source>
         <translation>版本：%1</translation>
     </message>
@@ -870,12 +878,12 @@ Application icon:
 <context>
     <name>Filer::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="210"/>
+        <location filename="../mainwindow.cpp" line="212"/>
         <source>Clear text (Ctrl+K)</source>
         <translation>清除文字 (Ctrl+K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="761"/>
+        <location filename="../mainwindow.cpp" line="763"/>
         <source>Version: %1</source>
         <translation>版本：%1</translation>
     </message>
@@ -888,13 +896,13 @@ Application icon:
         <translation type="vanished">刪除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1464"/>
-        <location filename="../mainwindow.cpp" line="1475"/>
+        <location filename="../mainwindow.cpp" line="1466"/>
+        <location filename="../mainwindow.cpp" line="1477"/>
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1475"/>
+        <location filename="../mainwindow.cpp" line="1477"/>
         <source>Switch user command is not set.</source>
         <translation>切換使用者指令尚未設定。</translation>
     </message>
@@ -2042,196 +2050,202 @@ Modified: %3</source>
         <translation>剪下(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="521"/>
-        <location filename="../../build/src/ui_main-win.h" line="678"/>
+        <location filename="../main-win.ui" line="516"/>
+        <location filename="../../build/src/ui_main-win.h" line="679"/>
+        <source>Ctrl+,</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="524"/>
+        <location filename="../../build/src/ui_main-win.h" line="681"/>
         <source>&amp;Ascending</source>
         <translation>遞增排列(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="529"/>
-        <location filename="../../build/src/ui_main-win.h" line="679"/>
+        <location filename="../main-win.ui" line="532"/>
+        <location filename="../../build/src/ui_main-win.h" line="682"/>
         <source>&amp;Descending</source>
         <translation>遞減排列(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="537"/>
-        <location filename="../../build/src/ui_main-win.h" line="680"/>
+        <location filename="../main-win.ui" line="540"/>
+        <location filename="../../build/src/ui_main-win.h" line="683"/>
         <source>&amp;By File Name</source>
         <translation>按檔案名稱(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="545"/>
-        <location filename="../../build/src/ui_main-win.h" line="681"/>
+        <location filename="../main-win.ui" line="548"/>
+        <location filename="../../build/src/ui_main-win.h" line="684"/>
         <source>By &amp;Modification Time</source>
         <translation>按修改時間(&amp;M)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="553"/>
-        <location filename="../../build/src/ui_main-win.h" line="682"/>
+        <location filename="../main-win.ui" line="556"/>
+        <location filename="../../build/src/ui_main-win.h" line="685"/>
         <source>By File &amp;Type</source>
         <translation>按檔案類型(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="561"/>
-        <location filename="../../build/src/ui_main-win.h" line="683"/>
+        <location filename="../main-win.ui" line="564"/>
+        <location filename="../../build/src/ui_main-win.h" line="686"/>
         <source>By &amp;Owner</source>
         <translation>按擁有者(&amp;O)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="569"/>
-        <location filename="../../build/src/ui_main-win.h" line="684"/>
+        <location filename="../main-win.ui" line="572"/>
+        <location filename="../../build/src/ui_main-win.h" line="687"/>
         <source>&amp;Folder First</source>
         <translation>檔案夾優先(&amp;F)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="640"/>
-        <location filename="../../build/src/ui_main-win.h" line="707"/>
+        <location filename="../main-win.ui" line="643"/>
+        <location filename="../../build/src/ui_main-win.h" line="710"/>
         <source>&amp;Move to Trash</source>
         <translation>移動到垃圾桶(&amp;M)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="643"/>
-        <location filename="../../build/src/ui_main-win.h" line="709"/>
+        <location filename="../main-win.ui" line="646"/>
+        <location filename="../../build/src/ui_main-win.h" line="712"/>
         <source>Ctrl+Backspace</source>
         <translation>Ctrl+Backspace</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="656"/>
-        <location filename="../../build/src/ui_main-win.h" line="715"/>
+        <location filename="../main-win.ui" line="659"/>
+        <location filename="../../build/src/ui_main-win.h" line="718"/>
         <source>C&amp;lose Tab</source>
         <translation>關閉(&amp;L)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="760"/>
-        <location filename="../../build/src/ui_main-win.h" line="746"/>
+        <location filename="../main-win.ui" line="763"/>
+        <location filename="../../build/src/ui_main-win.h" line="749"/>
         <source>&amp;Go To Folder</source>
         <translation>移至資料夾(&amp;G)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="763"/>
-        <location filename="../../build/src/ui_main-win.h" line="748"/>
+        <location filename="../main-win.ui" line="766"/>
+        <location filename="../../build/src/ui_main-win.h" line="751"/>
         <source>Go To Folder</source>
         <translation>移至資料夾‎</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="766"/>
-        <location filename="../../build/src/ui_main-win.h" line="751"/>
+        <location filename="../main-win.ui" line="769"/>
+        <location filename="../../build/src/ui_main-win.h" line="754"/>
         <source>Ctrl+Shift+G</source>
         <translation>Ctrl+Shift+G</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="771"/>
-        <location filename="../../build/src/ui_main-win.h" line="753"/>
+        <location filename="../main-win.ui" line="774"/>
+        <location filename="../../build/src/ui_main-win.h" line="756"/>
         <source>&amp;Downloads</source>
         <translation>‎下載‎(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="774"/>
-        <location filename="../../build/src/ui_main-win.h" line="755"/>
+        <location filename="../main-win.ui" line="777"/>
+        <location filename="../../build/src/ui_main-win.h" line="758"/>
         <source>Downloads</source>
         <translation>‎下載‎</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="777"/>
-        <location filename="../../build/src/ui_main-win.h" line="758"/>
+        <location filename="../main-win.ui" line="780"/>
+        <location filename="../../build/src/ui_main-win.h" line="761"/>
         <source>Ctrl+Shift+L</source>
         <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="785"/>
-        <location filename="../../build/src/ui_main-win.h" line="760"/>
+        <location filename="../main-win.ui" line="788"/>
+        <location filename="../../build/src/ui_main-win.h" line="763"/>
         <source>&amp;Utilities</source>
         <translation>工具程式(&amp;U)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="788"/>
-        <location filename="../../build/src/ui_main-win.h" line="762"/>
+        <location filename="../main-win.ui" line="791"/>
+        <location filename="../../build/src/ui_main-win.h" line="765"/>
         <source>Utilities</source>
         <translation>工具程式</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="791"/>
-        <location filename="../../build/src/ui_main-win.h" line="765"/>
+        <location filename="../main-win.ui" line="794"/>
+        <location filename="../../build/src/ui_main-win.h" line="768"/>
         <source>Ctrl+Shift+U</source>
         <translation>Ctrl+Shift+U</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="799"/>
-        <location filename="../../build/src/ui_main-win.h" line="767"/>
+        <location filename="../main-win.ui" line="802"/>
+        <location filename="../../build/src/ui_main-win.h" line="770"/>
         <source>&amp;Documents</source>
         <translation>文件(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="802"/>
-        <location filename="../../build/src/ui_main-win.h" line="769"/>
+        <location filename="../main-win.ui" line="805"/>
+        <location filename="../../build/src/ui_main-win.h" line="772"/>
         <source>Documents</source>
         <translation>文件</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="805"/>
-        <location filename="../../build/src/ui_main-win.h" line="772"/>
+        <location filename="../main-win.ui" line="808"/>
+        <location filename="../../build/src/ui_main-win.h" line="775"/>
         <source>Ctrl+Shift+O</source>
         <translation>Ctrl+Shift+O</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="813"/>
-        <location filename="../../build/src/ui_main-win.h" line="774"/>
+        <location filename="../main-win.ui" line="816"/>
+        <location filename="../../build/src/ui_main-win.h" line="777"/>
         <source>Open</source>
         <translation>開啟</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="816"/>
-        <location filename="../../build/src/ui_main-win.h" line="776"/>
+        <location filename="../main-win.ui" line="819"/>
+        <location filename="../../build/src/ui_main-win.h" line="779"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="821"/>
-        <location filename="../../build/src/ui_main-win.h" line="778"/>
+        <location filename="../main-win.ui" line="824"/>
+        <location filename="../../build/src/ui_main-win.h" line="781"/>
         <source>&amp;Duplicate</source>
         <translation>再製(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="824"/>
-        <location filename="../../build/src/ui_main-win.h" line="780"/>
+        <location filename="../main-win.ui" line="827"/>
+        <location filename="../../build/src/ui_main-win.h" line="783"/>
         <source>Ctrl+D</source>
         <translation>Ctrl+D</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="829"/>
-        <location filename="../../build/src/ui_main-win.h" line="782"/>
+        <location filename="../main-win.ui" line="832"/>
+        <location filename="../../build/src/ui_main-win.h" line="785"/>
         <source>Empty Trash</source>
         <translation>清空垃圾桶</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="832"/>
-        <location filename="../../build/src/ui_main-win.h" line="784"/>
+        <location filename="../main-win.ui" line="835"/>
+        <location filename="../../build/src/ui_main-win.h" line="787"/>
         <source>Ctrl+Alt+Backspace</source>
         <translation>Ctrl+Alt+Backspace</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="837"/>
-        <location filename="../../build/src/ui_main-win.h" line="786"/>
+        <location filename="../main-win.ui" line="840"/>
+        <location filename="../../build/src/ui_main-win.h" line="789"/>
         <source>Show Contents</source>
         <translation>‎顯示內容‎</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="840"/>
-        <location filename="../../build/src/ui_main-win.h" line="788"/>
+        <location filename="../main-win.ui" line="843"/>
+        <location filename="../../build/src/ui_main-win.h" line="791"/>
         <source>Ctrl+Alt+O</source>
         <translation>Ctrl+Alt+O</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="849"/>
         <location filename="../main-win.ui" line="852"/>
-        <location filename="../../build/src/ui_main-win.h" line="790"/>
-        <location filename="../../build/src/ui_main-win.h" line="792"/>
+        <location filename="../main-win.ui" line="855"/>
+        <location filename="../../build/src/ui_main-win.h" line="793"/>
+        <location filename="../../build/src/ui_main-win.h" line="795"/>
         <source>Go Up and Close Current</source>
         <translation>往上以及關閉目前的視窗</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="855"/>
-        <location filename="../../build/src/ui_main-win.h" line="795"/>
+        <location filename="../main-win.ui" line="858"/>
+        <location filename="../../build/src/ui_main-win.h" line="798"/>
         <source>Ctrl+Shift+Up</source>
         <translation>Ctrl+Shift+Up</translation>
     </message>
@@ -2244,28 +2258,28 @@ Modified: %3</source>
         <translation type="vanished">資料夾屬性(&amp;F)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="672"/>
-        <location filename="../../build/src/ui_main-win.h" line="720"/>
+        <location filename="../main-win.ui" line="675"/>
+        <location filename="../../build/src/ui_main-win.h" line="723"/>
         <source>&amp;Case Sensitive</source>
         <translation>區分大小寫(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="680"/>
-        <location filename="../../build/src/ui_main-win.h" line="721"/>
+        <location filename="../main-win.ui" line="683"/>
+        <location filename="../../build/src/ui_main-win.h" line="724"/>
         <source>By File &amp;Size</source>
         <translation>按檔案大小(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="685"/>
-        <location filename="../../build/src/ui_main-win.h" line="722"/>
+        <location filename="../main-win.ui" line="688"/>
+        <location filename="../../build/src/ui_main-win.h" line="725"/>
         <source>&amp;Close Window</source>
         <translation>關閉視窗(&amp;C)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="389"/>
-        <location filename="../main-win.ui" line="723"/>
+        <location filename="../main-win.ui" line="726"/>
         <location filename="../../build/src/ui_main-win.h" line="639"/>
-        <location filename="../../build/src/ui_main-win.h" line="735"/>
+        <location filename="../../build/src/ui_main-win.h" line="738"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Shift+N</translation>
     </message>
@@ -2276,50 +2290,50 @@ Modified: %3</source>
         <translation>關於 Filer(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="661"/>
-        <location filename="../../build/src/ui_main-win.h" line="716"/>
+        <location filename="../main-win.ui" line="664"/>
+        <location filename="../../build/src/ui_main-win.h" line="719"/>
         <source>Get &amp;Info</source>
         <translation>取得資訊(&amp;I)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="664"/>
-        <location filename="../../build/src/ui_main-win.h" line="718"/>
+        <location filename="../main-win.ui" line="667"/>
+        <location filename="../../build/src/ui_main-win.h" line="721"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="735"/>
-        <location filename="../../build/src/ui_main-win.h" line="739"/>
+        <location filename="../main-win.ui" line="738"/>
+        <location filename="../../build/src/ui_main-win.h" line="742"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="743"/>
-        <location filename="../../build/src/ui_main-win.h" line="743"/>
+        <location filename="../main-win.ui" line="746"/>
+        <location filename="../../build/src/ui_main-win.h" line="746"/>
         <source>Ctrl+F</source>
         <translation>Ctrl+F</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="751"/>
-        <location filename="../../build/src/ui_main-win.h" line="745"/>
+        <location filename="../main-win.ui" line="754"/>
+        <location filename="../../build/src/ui_main-win.h" line="748"/>
         <source>Filter</source>
         <translation>過濾</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="121"/>
-        <location filename="../../build/src/ui_main-win.h" line="799"/>
+        <location filename="../../build/src/ui_main-win.h" line="802"/>
         <source>C&amp;reate New</source>
         <translation>建立新的(&amp;L)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="150"/>
-        <location filename="../../build/src/ui_main-win.h" line="802"/>
+        <location filename="../../build/src/ui_main-win.h" line="805"/>
         <source>&amp;Sorting</source>
         <translation>排序(&amp;S)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="239"/>
-        <location filename="../../build/src/ui_main-win.h" line="807"/>
+        <location filename="../../build/src/ui_main-win.h" line="810"/>
         <source>Main Toolbar</source>
         <translation>工具列</translation>
     </message>
@@ -2386,8 +2400,8 @@ Modified: %3</source>
         <translation>偏好設定(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="631"/>
-        <location filename="../../build/src/ui_main-win.h" line="706"/>
+        <location filename="../main-win.ui" line="634"/>
+        <location filename="../../build/src/ui_main-win.h" line="709"/>
         <source>&amp;Invert Selection</source>
         <translation>反向選取(&amp;I)</translation>
     </message>
@@ -2396,8 +2410,8 @@ Modified: %3</source>
         <translation type="vanished">刪除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="648"/>
-        <location filename="../../build/src/ui_main-win.h" line="711"/>
+        <location filename="../main-win.ui" line="651"/>
+        <location filename="../../build/src/ui_main-win.h" line="714"/>
         <source>&amp;Rename</source>
         <translation>重新命名(&amp;R)</translation>
     </message>
@@ -2444,58 +2458,58 @@ Modified: %3</source>
         <translation type="vanished">資料夾優先</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="578"/>
-        <location filename="../../build/src/ui_main-win.h" line="685"/>
+        <location filename="../main-win.ui" line="581"/>
+        <location filename="../../build/src/ui_main-win.h" line="688"/>
         <source>New &amp;Tab</source>
         <translation>新分頁(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="581"/>
-        <location filename="../../build/src/ui_main-win.h" line="687"/>
+        <location filename="../main-win.ui" line="584"/>
+        <location filename="../../build/src/ui_main-win.h" line="690"/>
         <source>New Tab</source>
         <translation>新分頁</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="584"/>
-        <location filename="../main-win.ui" line="701"/>
-        <location filename="../../build/src/ui_main-win.h" line="690"/>
-        <location filename="../../build/src/ui_main-win.h" line="729"/>
+        <location filename="../main-win.ui" line="587"/>
+        <location filename="../main-win.ui" line="704"/>
+        <location filename="../../build/src/ui_main-win.h" line="693"/>
+        <location filename="../../build/src/ui_main-win.h" line="732"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="596"/>
-        <location filename="../../build/src/ui_main-win.h" line="692"/>
+        <location filename="../main-win.ui" line="599"/>
+        <location filename="../../build/src/ui_main-win.h" line="695"/>
         <source>Go &amp;Back</source>
         <translation>後退(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="599"/>
-        <location filename="../../build/src/ui_main-win.h" line="694"/>
+        <location filename="../main-win.ui" line="602"/>
+        <location filename="../../build/src/ui_main-win.h" line="697"/>
         <source>Go Back</source>
         <translation>後退</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="602"/>
-        <location filename="../../build/src/ui_main-win.h" line="697"/>
+        <location filename="../main-win.ui" line="605"/>
+        <location filename="../../build/src/ui_main-win.h" line="700"/>
         <source>Alt+Left</source>
         <translation>Alt+左鍵</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="611"/>
-        <location filename="../../build/src/ui_main-win.h" line="699"/>
+        <location filename="../main-win.ui" line="614"/>
+        <location filename="../../build/src/ui_main-win.h" line="702"/>
         <source>Go &amp;Forward</source>
         <translation>前進(&amp;F)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="614"/>
-        <location filename="../../build/src/ui_main-win.h" line="701"/>
+        <location filename="../main-win.ui" line="617"/>
+        <location filename="../../build/src/ui_main-win.h" line="704"/>
         <source>Go Forward</source>
         <translation>前進</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="617"/>
-        <location filename="../../build/src/ui_main-win.h" line="704"/>
+        <location filename="../main-win.ui" line="620"/>
+        <location filename="../../build/src/ui_main-win.h" line="707"/>
         <source>Alt+Right</source>
         <translation>Alt+右鍵</translation>
     </message>
@@ -2516,8 +2530,8 @@ Modified: %3</source>
         <translation type="obsolete">重新命名</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="651"/>
-        <location filename="../../build/src/ui_main-win.h" line="713"/>
+        <location filename="../main-win.ui" line="654"/>
+        <location filename="../../build/src/ui_main-win.h" line="716"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
@@ -2526,8 +2540,8 @@ Modified: %3</source>
         <translation type="obsolete">關閉分頁</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="688"/>
-        <location filename="../../build/src/ui_main-win.h" line="724"/>
+        <location filename="../main-win.ui" line="691"/>
+        <location filename="../../build/src/ui_main-win.h" line="727"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
@@ -2556,14 +2570,14 @@ Modified: %3</source>
         <translation type="vanished">關閉視窗</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="693"/>
-        <location filename="../../build/src/ui_main-win.h" line="726"/>
+        <location filename="../main-win.ui" line="696"/>
+        <location filename="../../build/src/ui_main-win.h" line="729"/>
         <source>Edit Bookmarks</source>
         <translation>編輯書籤</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="698"/>
-        <location filename="../../build/src/ui_main-win.h" line="727"/>
+        <location filename="../main-win.ui" line="701"/>
+        <location filename="../../build/src/ui_main-win.h" line="730"/>
         <source>Open &amp;Terminal</source>
         <translation>開啟終端機(&amp;T)</translation>
     </message>
@@ -2572,32 +2586,32 @@ Modified: %3</source>
         <translation type="vanished">F4</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="706"/>
-        <location filename="../../build/src/ui_main-win.h" line="731"/>
+        <location filename="../main-win.ui" line="709"/>
+        <location filename="../../build/src/ui_main-win.h" line="734"/>
         <source>Open as &amp;Root</source>
         <translation>以系統管理員權限開啟(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="711"/>
-        <location filename="../../build/src/ui_main-win.h" line="732"/>
+        <location filename="../main-win.ui" line="714"/>
+        <location filename="../../build/src/ui_main-win.h" line="735"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>編輯書籤(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="720"/>
-        <location filename="../../build/src/ui_main-win.h" line="733"/>
+        <location filename="../main-win.ui" line="723"/>
+        <location filename="../../build/src/ui_main-win.h" line="736"/>
         <source>&amp;Folder</source>
         <translation>資料夾 (&amp;F)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="732"/>
-        <location filename="../../build/src/ui_main-win.h" line="737"/>
+        <location filename="../main-win.ui" line="735"/>
+        <location filename="../../build/src/ui_main-win.h" line="740"/>
         <source>&amp;Blank File</source>
         <translation>空白檔案(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../main-win.ui" line="740"/>
-        <location filename="../../build/src/ui_main-win.h" line="741"/>
+        <location filename="../main-win.ui" line="743"/>
+        <location filename="../../build/src/ui_main-win.h" line="744"/>
         <source>&amp;Find Files</source>
         <translation>搜尋檔案(&amp;F)</translation>
     </message>
@@ -2607,25 +2621,25 @@ Modified: %3</source>
     </message>
     <message>
         <location filename="../main-win.ui" line="93"/>
-        <location filename="../../build/src/ui_main-win.h" line="797"/>
+        <location filename="../../build/src/ui_main-win.h" line="800"/>
         <source>Filter by string...</source>
         <translation>按字串過濾...</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="117"/>
-        <location filename="../../build/src/ui_main-win.h" line="798"/>
+        <location filename="../../build/src/ui_main-win.h" line="801"/>
         <source>&amp;File</source>
         <translation>檔案(&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="140"/>
-        <location filename="../../build/src/ui_main-win.h" line="800"/>
+        <location filename="../../build/src/ui_main-win.h" line="803"/>
         <source>&amp;Help</source>
         <translation>說明(&amp;H)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="146"/>
-        <location filename="../../build/src/ui_main-win.h" line="801"/>
+        <location filename="../../build/src/ui_main-win.h" line="804"/>
         <source>&amp;View</source>
         <translation>檢視(&amp;V)</translation>
     </message>
@@ -2635,25 +2649,25 @@ Modified: %3</source>
     </message>
     <message>
         <location filename="../main-win.ui" line="176"/>
-        <location filename="../../build/src/ui_main-win.h" line="803"/>
+        <location filename="../../build/src/ui_main-win.h" line="806"/>
         <source>&amp;Edit</source>
         <translation>編輯(&amp;E)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="194"/>
-        <location filename="../../build/src/ui_main-win.h" line="804"/>
+        <location filename="../../build/src/ui_main-win.h" line="807"/>
         <source>&amp;Bookmarks</source>
         <translation>書籤(&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="201"/>
-        <location filename="../../build/src/ui_main-win.h" line="805"/>
+        <location filename="../../build/src/ui_main-win.h" line="808"/>
         <source>&amp;Go</source>
         <translation>前往(&amp;G)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="222"/>
-        <location filename="../../build/src/ui_main-win.h" line="806"/>
+        <location filename="../../build/src/ui_main-win.h" line="809"/>
         <source>&amp;Tool</source>
         <translation>工具(&amp;T)</translation>
     </message>

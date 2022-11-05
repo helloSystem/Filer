@@ -161,6 +161,11 @@ Application::Application(int& argc, char** argv):
       msgBox.exec();
   }
 
+  // Remove the environment variables so that they can't leak into
+  // processes started by Filer
+  QProcessEnvironment::systemEnvironment().remove("LAUNCHED_BUNDLE");
+  QProcessEnvironment::systemEnvironment().remove("LAUNCHED_COMMAND");
+
 }
 
 Application::~Application() {

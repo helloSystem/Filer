@@ -3,20 +3,24 @@
 #include <sys/param.h> // for checking BSD definition
 #if defined(BSD)
 #include <sys/extattr.h>
-
-#include <QDebug>
-#include <QProcess>
-#include <QStandardPaths>
 #else
 #include <sys/types.h>
 #include <sys/xattr.h>
 #endif
 
+#include <QDebug>
+#include <QProcess>
+#include <QStandardPaths>
+
+#define XATTR_NAMESPACE "user"
+
 using namespace Fm;
 
 namespace Fm {
 
-static const int ATTR_VAL_SIZE = 256; // probono: Can we do without a predetermined size?
+static const int ATTR_VAL_SIZE = 2048; // probono: Can we do without a predetermined size?
+// If this size is too small, then reading extattr fails, leading to strange unexpected errors.
+// 256 was not enough to read, e.g., 'can-open' containing many MIME types
 
 /*
  * get the attibute value from the extended attribute for the path as int
