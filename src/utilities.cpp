@@ -180,7 +180,8 @@ void renameFile(FmFileInfo *file, QWidget *parent) {
         // Note: for sudo to work in a GUI, SUDO_ASKPASS=/usr/local/bin/askpass must be set as an environment variable
         diskutilArgs << "-E" << "launch" << "diskutil" << "rename" << mountpoint << new_name.toLocal8Bit().data();
         qDebug() << diskutilArgs;
-        p.start(program, diskutilArgs);
+        p.setArguments(diskutilArgs);
+        p.start();
         p.waitForFinished();
         p.setReadChannel(QProcess::StandardError);
         // TODO: Implement translatable error messages here.

@@ -79,7 +79,8 @@ FolderModelItem::FolderModelItem(const FolderModelItem& other) {
     QString program = "fstyp";
     QStringList arguments;
     arguments << "-l" << "/dev/" + displayName;
-    p.start(program, arguments);
+    p.setArguments(arguments);
+    p.start();
     p.waitForFinished();
     QString result(p.readAllStandardOutput());
     result.replace("\n", "");

@@ -190,7 +190,8 @@ void PlacesModelMountItem::update() {
   QString program = "fstyp";
   QStringList arguments;
   arguments << "-l" << "/dev/" + mount_name;
-  p.start(program, arguments);
+  p.setArguments(arguments);
+  p.start();
   p.waitForFinished();
   QString result(p.readAllStandardOutput());
   result.replace("\n", "");

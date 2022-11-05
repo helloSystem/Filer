@@ -32,7 +32,7 @@ FileSearchDialog::FileSearchDialog(QStringList paths, QWidget* parent, Qt::Windo
   ui->setupUi(this);
   ui->minSize->setMaximum(std::numeric_limits<int>().max());
   ui->maxSize->setMaximum(std::numeric_limits<int>().max());
-  Q_FOREACH(const QString& path, paths) {
+  for(const QString& path : paths) {
     ui->listView->addItem(path);
   }
 
