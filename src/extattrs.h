@@ -9,7 +9,7 @@ namespace Fm {
     int getAttributeValueInt(const QString& path, const QString& attribute, bool& ok);
     bool setAttributeValueInt(const QString& path, const QString& attribute, int value);
     QString getAttributeValueQString(const QString& path, const QString& attribute, bool& ok);
-    bool setAttributeValueQString(const QString& path, const QString& attribute, int value);
+    bool setAttributeValueQString(const QString& path, const QString& attribute, const QString& value);
 }
 
 #endif // EXTATTRS_H

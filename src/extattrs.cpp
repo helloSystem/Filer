@@ -3,6 +3,10 @@
 #include <sys/param.h> // for checking BSD definition
 #if defined(BSD)
 #include <sys/extattr.h>
+
+#include <QDebug>
+#include <QProcess>
+#include <QStandardPaths>
 #else
 #include <sys/types.h>
 #include <sys/xattr.h>
@@ -51,25 +55,10 @@ int getAttributeValueInt(const QString& path, const QString& attribute, bool& ok
  * set the attibute value in the extended attribute for the path as int
  */
 bool setAttributeValueInt(const QString& path, const QString& attribute, int value) {
-  // set the value from the extended attribute for the path
-  QString data = QString::number(value);
-#if defined(BSD)
-  ssize_t bytesSet = extattr_set_file(path.toLatin1().data(), EXTATTR_NAMESPACE_USER,
-                                      attribute.toLatin1().data(), data.toLatin1().data(),
-                                      data.length() + 1); // include \0 termination char
-  // check if we set the attribute value
-  return (bytesSet > 0);
-#else
-  QString namespacedAttr;
-  namespacedAttr.append(XATTR_NAMESPACE).append(".").append(attribute);
-  int success = setxattr(path.toLatin1().data(),
-                                      namespacedAttr.toLatin1().data(), data.toLatin1().data(),
-                                      data.length() + 1, 0); // include \0 termination char
-  // check if we set the attribute value
-  return (success == 0);
-#endif
+    // set the value from the extended attribute for the path
+    const QString data = QString::number(value);
+    return setAttributeValueQString(path, attribute, data);
 }
-
 
 /*
  * get the attibute value from the extended attribute for the path as QString
@@ -87,7 +76,7 @@ QString getAttributeValueQString(const QString& path, const QString& attribute, 
                                             namespacedAttr.toLatin1().data(), data, ATTR_VAL_SIZE);
 #endif
   // check if we got the attribute value
-  if (bytesRetrieved <= 0)
+  if (bytesRetrieved < 0) // If this is 0, then the value is empty but the extattr is set. If this is < 0, extattr is not set
     ok = false;
   else {
     // convert the value to QString
@@ -104,23 +93,44 @@ QString getAttributeValueQString(const QString& path, const QString& attribute, 
 /*
  * set the attibute value in the extended attribute for the path as QString
  */
-bool setAttributeValueQString(const QString& path, const QString& attribute, QString value) {
+bool setAttributeValueQString(const QString& path, const QString& attribute, const QString& value) {
   // set the value from the extended attribute for the path
-#if defined(BSD)
-  ssize_t bytesSet = extattr_set_file(path.toLatin1().data(), EXTATTR_NAMESPACE_USER,
-                                      attribute.toLatin1().data(), value.toLatin1().data(),
-                                      value.length() + 1); // include \0 termination char
-  // check if we set the attribute value
-  return (bytesSet > 0);
-#else
-  QString namespacedAttr;
-  namespacedAttr.append(XATTR_NAMESPACE).append(".").append(attribute);
-  int success = setxattr(path.toLatin1().data(),
-                                      namespacedAttr.toLatin1().data(), value.toLatin1().data(),
-                                      value.length() + 1, 0); // include \0 termination char
-  // check if we set the attribute value
-  return (success == 0);
-#endif
+
+    QString candidateProgram = QStandardPaths::findExecutable("setextattr"); // FreeBSD
+    if(candidateProgram.isEmpty())
+            QStandardPaths::findExecutable("setxattr"); // Linux
+    if(candidateProgram.isEmpty()) {
+        qCritical() << "Did not find setextattr nor setxattr, cannot set extended attribute";
+        return false;
+    }
+    QProcess p;
+    p.setProgram(QStandardPaths::findExecutable(candidateProgram));
+    p.setArguments({"user", attribute, value, path});
+    p.start();
+    p.waitForFinished();
+    if(p.exitCode() != 0) {
+        qCritical() << "Failed to run command:" << p.program() << p.arguments();
+        return false;
+    }
+    return true;
+
+//The following does not work on read-only files, e.g., at /usr
+//#if defined(BSD)
+//  ssize_t bytesSet = extattr_set_file(path.toLatin1().data(), EXTATTR_NAMESPACE_USER,
+//                                      attribute.toLatin1().data(), value.toLatin1().data(),
+//                                      value.length() + 1); // include \0 termination char
+//  // check if we set the attribute value
+//  return (bytesSet > 0);
+//#else
+//  QString namespacedAttr;
+//  namespacedAttr.append(XATTR_NAMESPACE).append(".").append(attribute);
+//  int success = setxattr(path.toLatin1().data(),
+//                                      namespacedAttr.toLatin1().data(), value.toLatin1().data(),
+//                                      value.length() + 1, 0); // include \0 termination char
+//  // check if we set the attribute value
+//  return (success == 0);
+//#endif
+
 }
 
 }
