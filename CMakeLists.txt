@@ -1,6 +1,11 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(Filer)
 
+# Do not put qDebug() into Release builds
+if(NOT CMAKE_BUILD_TYPE STREQUAL Debug)
+    add_definitions(-DQT_NO_DEBUG_OUTPUT)
+endif()
+
 set(FILER_VERSION_MAJOR 0)
 set(FILER_VERSION_MINOR 10)
 set(FILER_VERSION_PATCH 0)
