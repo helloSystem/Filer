@@ -16,16 +16,15 @@ task:
     - mkdir build ; cd build
     - cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
     - make -j$(sysctl -n hw.ncpu)
-    - make DESTDIR=Filer.AppDir -j$(sysctl -n hw.ncpu) install
-    - mkdir -p Filer.AppDir/usr/share/icons/hicolor/256x256/apps
-    - cp ../src/icons/filer-256.png Filer.AppDir/usr/share/icons/hicolor/256x256/apps/filer.png
-    - cp Filer.AppDir/usr/share/icons/hicolor/256x256/apps/filer.png Filer.AppDir/.DirIcon
-    - ( cd Filer.AppDir/ ; ln -s usr/bin/Filer AppRun )
-    - rm -rf Filer.AppDir/usr/include
-    - mkdir -p Filer.AppDir/usr/lib
-    - cp /usr/local/lib/libfm.so.4 Filer.AppDir/usr/lib
-    - find Filer.AppDir/
-    - zip --symlinks -r Filer_FreeBSD.zip Filer.AppDir/
+    - make DESTDIR=Filer.app -j$(sysctl -n hw.ncpu) install
+    - mkdir -p Filer.app/Resources
+    - cp ../src/icons/filer-256.png Filer.app/Resources/Filer.png
+    - ( cd Filer.app/ ; ln -s usr/bin/Filer Filer )
+    - rm -rf Filer.app/usr/include
+    - mkdir -p Filer.app/usr/lib
+    - cp /usr/local/lib/libfm.so.4 Filer.app/usr/lib
+    - find Filer.app/
+    - zip --symlinks -r Filer_FreeBSD.zip Filer.app/
     # curl --upload-file ./Filer_FreeBSD.zip https://transfer.sh/Filer_FreeBSD.zip
     - case "$CIRRUS_BRANCH" in *pull/*) echo skipping since PR ;; * ) wget https://github.com/tcnksm/ghr/files/5247714/ghr.zip ; unzip ghr.zip ; rm ghr.zip ; ./ghr -replace -t "${GITHUB_TOKEN}" -u "${CIRRUS_REPO_OWNER}" -r "${CIRRUS_REPO_NAME}" -c "${CIRRUS_CHANGE_IN_REPO}" continuous "${CIRRUS_WORKING_DIR}"/build/*zip ; esac
   only_if: $CIRRUS_TAG != 'continuous'

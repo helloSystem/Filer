@@ -2938,8 +2938,8 @@ Modified: %3</source>
         <location filename="../filelauncher.cpp" line="186"/>
         <location filename="../mountoperation.cpp" line="185"/>
         <location filename="../utilities.cpp" line="133"/>
-        <location filename="../utilities.cpp" line="209"/>
-        <location filename="../utilities.cpp" line="285"/>
+        <location filename="../utilities.cpp" line="210"/>
+        <location filename="../utilities.cpp" line="286"/>
         <source>Error</source>
         <translation>שגיאה</translation>
     </message>
@@ -2959,37 +2959,37 @@ Modified: %3</source>
         <translation>אי אפשר לשנות את שם כרך ההתחלה.</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="221"/>
+        <location filename="../utilities.cpp" line="222"/>
         <source>Create Folder</source>
         <translation>יצירת תיקייה</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="222"/>
+        <location filename="../utilities.cpp" line="223"/>
         <source>Create File</source>
         <translation>יצירת קובץ</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="226"/>
+        <location filename="../utilities.cpp" line="227"/>
         <source>Please enter a new file name:</source>
         <translation>נא למלא שם חדש לקובץ:</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="227"/>
+        <location filename="../utilities.cpp" line="228"/>
         <source>New text file</source>
         <translation>קובץ טקסט חדש</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="231"/>
+        <location filename="../utilities.cpp" line="232"/>
         <source>Please enter a new folder name:</source>
         <translation>נא למלא שם חדש לתיקייה:</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="232"/>
+        <location filename="../utilities.cpp" line="233"/>
         <source>New folder</source>
         <translation>תיקייה חדשה</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="237"/>
+        <location filename="../utilities.cpp" line="238"/>
         <source>Enter a name for the new %1:</source>
         <translation type="unfinished"></translation>
     </message>

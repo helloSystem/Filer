@@ -3125,8 +3125,8 @@ Modification : %3</translation>
         <location filename="../filelauncher.cpp" line="186"/>
         <location filename="../mountoperation.cpp" line="185"/>
         <location filename="../utilities.cpp" line="133"/>
-        <location filename="../utilities.cpp" line="209"/>
-        <location filename="../utilities.cpp" line="285"/>
+        <location filename="../utilities.cpp" line="210"/>
+        <location filename="../utilities.cpp" line="286"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
@@ -3150,37 +3150,37 @@ Modification : %3</translation>
         <translation>Le disque de démarrage ne peut être renommé.</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="221"/>
+        <location filename="../utilities.cpp" line="222"/>
         <source>Create Folder</source>
         <translation>Créer un dossier</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="226"/>
+        <location filename="../utilities.cpp" line="227"/>
         <source>Please enter a new file name:</source>
         <translation>Veuillez entrer un nouveau nom de fichier :</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="227"/>
+        <location filename="../utilities.cpp" line="228"/>
         <source>New text file</source>
         <translation>Nouveau fichier texte</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="231"/>
+        <location filename="../utilities.cpp" line="232"/>
         <source>Please enter a new folder name:</source>
         <translation>Veuillez entrer un nouveau nom de répertoire :</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="232"/>
+        <location filename="../utilities.cpp" line="233"/>
         <source>New folder</source>
         <translation>Nouveau répertoire</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="237"/>
+        <location filename="../utilities.cpp" line="238"/>
         <source>Enter a name for the new %1:</source>
         <translation>Entrez un nom pour le nouveau %1 :</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="222"/>
+        <location filename="../utilities.cpp" line="223"/>
         <source>Create File</source>
         <translation>Créer un fichier</translation>
     </message>

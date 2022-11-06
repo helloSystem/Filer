@@ -2743,8 +2743,8 @@ Modified: %3</source>
         <location filename="../filelauncher.cpp" line="186"/>
         <location filename="../mountoperation.cpp" line="185"/>
         <location filename="../utilities.cpp" line="133"/>
-        <location filename="../utilities.cpp" line="209"/>
-        <location filename="../utilities.cpp" line="285"/>
+        <location filename="../utilities.cpp" line="210"/>
+        <location filename="../utilities.cpp" line="286"/>
         <source>Error</source>
         <translation>Fejl</translation>
     </message>
@@ -2759,37 +2759,37 @@ Modified: %3</source>
         <translation>Opstartsdisken kan ikke omdøbes.</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="221"/>
+        <location filename="../utilities.cpp" line="222"/>
         <source>Create Folder</source>
         <translation>Lav mappe</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="222"/>
+        <location filename="../utilities.cpp" line="223"/>
         <source>Create File</source>
         <translation>Lav fil</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="226"/>
+        <location filename="../utilities.cpp" line="227"/>
         <source>Please enter a new file name:</source>
         <translation>Vær venlig at indtaste et nyt filnavn:</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="227"/>
+        <location filename="../utilities.cpp" line="228"/>
         <source>New text file</source>
         <translation>Ny tekst fil</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="231"/>
+        <location filename="../utilities.cpp" line="232"/>
         <source>Please enter a new folder name:</source>
         <translation>Vær venlig at indtaste et nyt mappe navn:</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="232"/>
+        <location filename="../utilities.cpp" line="233"/>
         <source>New folder</source>
         <translation>Ny mappe</translation>
     </message>
     <message>
-        <location filename="../utilities.cpp" line="237"/>
+        <location filename="../utilities.cpp" line="238"/>
         <source>Enter a name for the new %1:</source>
         <translation>Indtast et navn for den nye %1:</translation>
     </message>
