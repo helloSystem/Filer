@@ -147,9 +147,9 @@ void FolderViewListView::dropEvent(QDropEvent* e) {
 
 void FolderViewListView::mouseReleaseEvent(QMouseEvent* event) {
   bool activationWasAllowed = activationAllowed_;
-  if ((!style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, NULL, this)) || (event->button() != Qt::LeftButton)) {
-    activationAllowed_ = false;
-  }
+//  if ((!style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, NULL, this)) || (event->button() != Qt::LeftButton)) {
+//    activationAllowed_ = false;
+//  }
 
   QListView::mouseReleaseEvent(event);
 
@@ -158,9 +158,9 @@ void FolderViewListView::mouseReleaseEvent(QMouseEvent* event) {
 
 void FolderViewListView::mouseDoubleClickEvent(QMouseEvent* event) {
   bool activationWasAllowed = activationAllowed_;
-  if ((style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, NULL, this)) || (event->button() != Qt::LeftButton)) {
-    activationAllowed_ = false;
-  }
+//  if ((style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, NULL, this)) || (event->button() != Qt::LeftButton)) {
+//    activationAllowed_ = false;
+//  }
 
   QListView::mouseDoubleClickEvent(event);
 
@@ -344,9 +344,9 @@ void FolderViewTreeView::queueLayoutColumns() {
 
 void FolderViewTreeView::mouseReleaseEvent(QMouseEvent* event) {
   bool activationWasAllowed = activationAllowed_;
-  if ((!style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, NULL, this)) || (event->button() != Qt::LeftButton)) {
-    activationAllowed_ = false;
-  }
+//  if ((!style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, NULL, this)) || (event->button() != Qt::LeftButton)) {
+//    activationAllowed_ = false;
+//  }
 
   QTreeView::mouseReleaseEvent(event);
 
@@ -355,9 +355,9 @@ void FolderViewTreeView::mouseReleaseEvent(QMouseEvent* event) {
 
 void FolderViewTreeView::mouseDoubleClickEvent(QMouseEvent* event) {
   bool activationWasAllowed = activationAllowed_;
-  if ((style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, NULL, this)) || (event->button() != Qt::LeftButton)) {
-    activationAllowed_ = false;
-  }
+//  if ((style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, NULL, this)) || (event->button() != Qt::LeftButton)) {
+//    activationAllowed_ = false;
+//  }
 
   QTreeView::mouseDoubleClickEvent(event);
 
@@ -860,30 +860,31 @@ bool FolderView::eventFilter(QObject* watched, QEvent* event) {
     switch(event->type()) {
     case QEvent::HoverMove:
       // activate items on single click
-      if(style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick)) {
-        QHoverEvent* hoverEvent = static_cast<QHoverEvent*>(event);
-        QModelIndex index = view->indexAt(hoverEvent->pos()); // find out the hovered item
-        if(index.isValid()) { // change the cursor to a hand when hovering on an item
-          setCursor(Qt::PointingHandCursor);
-          if(!selectionModel()->hasSelection())
-            selectionModel()->setCurrentIndex(index, QItemSelectionModel::Current);
-        }
-        else
-          setCursor(Qt::ArrowCursor);
-        // turn on auto-selection for hovered item when single click mode is used.
-        if(autoSelectionDelay_ > 0 && model_) {
-          if(!autoSelectionTimer_) {
-            autoSelectionTimer_ = new QTimer(this);
-            connect(autoSelectionTimer_, &QTimer::timeout, this, &FolderView::onAutoSelectionTimeout);
-            lastAutoSelectionIndex_ = QModelIndex();
-          }
-          autoSelectionTimer_->start(autoSelectionDelay_);
-        }
-        break;
-      }
+      // probono: this is an anti-feature
+//      if(style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick)) {
+//        QHoverEvent* hoverEvent = static_cast<QHoverEvent*>(event);
+//        QModelIndex index = view->indexAt(hoverEvent->pos()); // find out the hovered item
+//        if(index.isValid()) { // change the cursor to a hand when hovering on an item
+//          setCursor(Qt::PointingHandCursor);
+//          if(!selectionModel()->hasSelection())
+//            selectionModel()->setCurrentIndex(index, QItemSelectionModel::Current);
+//        }
+//        else
+//          setCursor(Qt::ArrowCursor);
+//        // turn on auto-selection for hovered item when single click mode is used.
+//        if(autoSelectionDelay_ > 0 && model_) {
+//          if(!autoSelectionTimer_) {
+//            autoSelectionTimer_ = new QTimer(this);
+//            connect(autoSelectionTimer_, &QTimer::timeout, this, &FolderView::onAutoSelectionTimeout);
+//            lastAutoSelectionIndex_ = QModelIndex();
+//          }
+//          autoSelectionTimer_->start(autoSelectionDelay_);
+//        }
+//        break;
+//      }
     case QEvent::HoverLeave:
-      if(style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick))
-        setCursor(Qt::ArrowCursor);
+//      if(style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick))
+//        setCursor(Qt::ArrowCursor);
       break;
     case QEvent::Wheel:
       // This is to fix #85: Scrolling doesn't work in compact view

@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(Filer)
 
+set(CMAKE_INSTALL_PREFIX "/System/Filer.app")
+
 # Do not put qDebug() into Release builds
 if(NOT CMAKE_BUILD_TYPE STREQUAL Debug)
     add_definitions(-DQT_NO_DEBUG_OUTPUT)
@@ -48,9 +50,6 @@ pkg_check_modules(LIBFM REQUIRED libfm>=1.2.0)
 pkg_check_modules(LIBMENUCACHE REQUIRED libmenu-cache>=0.4.0)
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
-include(GNUInstallDirs)
-include(LXQtTranslateTs)
-include(LXQtTranslateDesktop)
 
 add_definitions(-DQT_NO_KEYWORDS)
 
@@ -70,43 +69,17 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 add_subdirectory(src)
 
 # manpage for filer-qt
-configure_file(
-    "${CMAKE_CURRENT_SOURCE_DIR}/filer-qt.1.in"
-    "${CMAKE_CURRENT_BINARY_DIR}/filer-qt.1"
-    @ONLY
-)
+#configure_file(
+#    "${CMAKE_CURRENT_SOURCE_DIR}/filer-qt.1.in"
+#    "${CMAKE_CURRENT_BINARY_DIR}/filer-qt.1"
+#    @ONLY
+#)
+#install(FILES
+#    "${CMAKE_CURRENT_BINARY_DIR}/filer-qt.1"
+#    DESTINATION "${CMAKE_INSTALL_MANDIR}/man1"
+#)
+
 install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/filer-qt.1"
-    DESTINATION "${CMAKE_INSTALL_MANDIR}/man1"
-)
-
-# add Doxygen support to generate API docs
-# References:
-# http://majewsky.wordpress.com/2010/08/14/tip-of-the-day-cmake-and-doxygen/
-# http://www.bluequartz.net/projects/EIM_Segmentation/SoftwareDocumentation/html/usewithcmakeproject.html
-option(BUILD_DOCUMENTATION "Use Doxygen to create the HTML based API documentation" OFF)
-if(BUILD_DOCUMENTATION)
-    find_package(Doxygen REQUIRED)
-    configure_file("${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile.in" "${CMAKE_CURRENT_BINARY_DIR}/Doxyfile" @ONLY)
-    add_custom_target(doc ALL
-        ${DOXYGEN_EXECUTABLE} "${CMAKE_CURRENT_BINARY_DIR}/Doxyfile"
-        WORKING_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}"
-        COMMENT "Generating API documentation with Doxygen" VERBATIM
-    )
-    install(DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/docs" DESTINATION "${CMAKE_INSTALL_DOCDIR}")
-endif()
-
-# building tarball with CPack -------------------------------------------------
-# To create a source distribution, type:
-# make package_source
-include(InstallRequiredSystemLibraries)
-set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/COPYING")
-set(CPACK_RESOURCE_FILE_README "${CMAKE_CURRENT_SOURCE_DIR}/README.md")
-set(CPACK_PACKAGE_VENDOR "")
-set(CPACK_PACKAGE_VERSION_MAJOR ${FILER_VERSION_MAJOR})
-set(CPACK_PACKAGE_VERSION_MINOR ${FILER_VERSION_MINOR})
-set(CPACK_PACKAGE_VERSION_PATCH ${FILER_VERSION_PATCH})
-set(CPACK_GENERATOR TBZ2)
-set(CPACK_SOURCE_GENERATOR TBZ2)
-set(CPACK_SOURCE_IGNORE_FILES /build/;.gitignore;.*~;.git;.kdev4;temp)
-include(CPack)
+    "src/icons/filer-128.png"
+    RENAME "Filer.png"
+    DESTINATION "${CMAKE_INSTALL_PREFIX}/Resources")

@@ -24,7 +24,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>icons/filer-256.png</pixmap>
+      <pixmap>Resources/Filer.png</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>

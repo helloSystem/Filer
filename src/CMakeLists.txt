@@ -112,10 +112,10 @@ set(filer_UIS
     autorun.ui
 )
 
-set(SOUND_FILES
-    sounds/rustle.wav
-    sounds/ffft.wav
-)
+#set(SOUND_FILES
+#    sounds/rustle.wav
+#    sounds/ffft.wav
+#)
 
 qt5_wrap_ui(filer_UIS_H ${filer_UIS})
 
@@ -134,7 +134,7 @@ add_custom_target(translations_update DEPENDS ${QM_FILES})
 add_custom_target(translations DEPENDS ${TRANSLATION_QM})
 
 # translate desktop entry files for Filer and desktop preferences
-lxqt_translate_desktop(DESKTOP_FILES
+qt5_create_translation(DESKTOP_FILES
     SOURCES
         filer-qt.desktop.in
         filer-qt-desktop-pref.desktop.in
@@ -145,11 +145,9 @@ lxqt_translate_desktop(DESKTOP_FILES
 if(APPLE)
     set(CMAKE_INSTALL_RPATH "@executable_path") # Darwin, macOS
 else()
-    set(CMAKE_INSTALL_RPATH "$ORIGIN/../lib") # FreeBSD
+    set(CMAKE_INSTALL_RPATH "$ORIGIN/Resources") # FreeBSD
 endif()
-if(NOT LINUX)
-  set(CMAKE_BUILD_WITH_INSTALL_RPATH ON) # On Linux we let appimagetool handle it
-endif()
+set(CMAKE_BUILD_WITH_INSTALL_RPATH ON)
 
 add_executable(Filer
     ${filer_SRCS}
@@ -161,7 +159,7 @@ set_property(
      TARGET Filer APPEND
      PROPERTY COMPILE_DEFINITIONS
      LIBFM_QT_API=Q_DECL_IMPORT
-     PCMANFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/share/filer"
+     PCMANFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/Resrouces"
      LIBFM_DATA_DIR="${LIBFM_PREFIX}/share/libfm" # This is a little bit dirty
      FILER_VERSION="${FILER_VERSION}"
 )
@@ -173,15 +171,11 @@ target_link_libraries(Filer
     ${SYSTEM_LIBS_LIBRARIES}
 )
 
-install(TARGETS Filer RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+install(TARGETS Filer RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX})
 
-# install a desktop entry file for Filer and desktop preferences
-install(FILES ${DESKTOP_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/applications"
-)
+install(FILES ${QM_FILES} DESTINATION "${CMAKE_INSTALL_PREFIX}/Resources/translations")
 
-install(FILES ${QM_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/filer/translations")
-
-install(FILES ${SOUND_FILES} DESTINATION "${CMAKE_INSTALL_DATADIR}/filer/sounds")
+install(FILES ${SOUND_FILES} DESTINATION "${CMAKE_INSTALL_PREFIX}/Resources")
 
 # prevent the generated files from being deleted during make clean
 set_directory_properties(PROPERTIES CLEAN_NO_CUSTOM true)

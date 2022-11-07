@@ -22,7 +22,7 @@ task:
     - ( cd Filer.app/ ; ln -s usr/bin/Filer Filer )
     - rm -rf Filer.app/usr/include
     - mkdir -p Filer.app/usr/lib
-    - cp /usr/local/lib/libfm.so.4 Filer.app/usr/lib
+    - cp /usr/local/lib/libfm.so.4 Filer.app/Resources
     - find Filer.app/
     - zip --symlinks -r Filer_FreeBSD.zip Filer.app/
     # curl --upload-file ./Filer_FreeBSD.zip https://transfer.sh/Filer_FreeBSD.zip

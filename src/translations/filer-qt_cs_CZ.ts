@@ -753,13 +753,13 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>&amp;Delete</source>
+        <translation type="obsolete">Smazat</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="763"/>
         <source>Version: %1</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&amp;Delete</source>
-        <translation type="obsolete">Smazat</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1466"/>

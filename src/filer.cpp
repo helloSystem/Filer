@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
   }
 
   // Install our own translations
-  if (! translator->load("filer-qt_" + QLocale::system().name(), QCoreApplication::applicationDirPath() + QString("/../share/filer/translations/"))) { // probono: FHS-like path relative to main binary
+  if (! translator->load("filer-qt_" + QLocale::system().name(), QCoreApplication::applicationDirPath() + QString("/Resoures/translations/"))) { // probono: .app bundle
       qDebug() << "probono: loading translations from FHS tree not successful";
       if (! translator->load("filer-qt_" + QLocale::system().name(), QCoreApplication::applicationDirPath())) { // probono: When qm files are next to the executable ("uninstalled"), useful during development
           qCritical() << "Failed translator->load";
