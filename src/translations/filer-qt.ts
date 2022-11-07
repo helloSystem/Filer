@@ -2723,55 +2723,46 @@ Modified: %3</source>
     <name>RenameDialog</name>
     <message>
         <location filename="../rename-dialog.ui" line="14"/>
-        <location filename="../../build/src/ui_rename-dialog.h" line="156"/>
         <source>Confirm to replace files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="35"/>
-        <location filename="../../build/src/ui_rename-dialog.h" line="157"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;There is already a file with the same name in this location.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Do you want to replace the existing file?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="56"/>
-        <location filename="../../build/src/ui_rename-dialog.h" line="158"/>
         <source>dest</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="63"/>
-        <location filename="../../build/src/ui_rename-dialog.h" line="159"/>
         <source>with the following file?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="76"/>
-        <location filename="../../build/src/ui_rename-dialog.h" line="160"/>
         <source>src file info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="89"/>
-        <location filename="../../build/src/ui_rename-dialog.h" line="161"/>
         <source>dest file info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="102"/>
-        <location filename="../../build/src/ui_rename-dialog.h" line="162"/>
         <source>src</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="122"/>
-        <location filename="../../build/src/ui_rename-dialog.h" line="163"/>
         <source>&amp;File name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="137"/>
-        <location filename="../../build/src/ui_rename-dialog.h" line="164"/>
         <source>Apply this option to all existing files</source>
         <translation type="unfinished"></translation>
     </message>
