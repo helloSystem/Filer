@@ -155,11 +155,11 @@ add_executable(Filer
     ${QM_FILES}
     ${DESKTOP_FILES}
 )
+
 set_property(
      TARGET Filer APPEND
      PROPERTY COMPILE_DEFINITIONS
-     LIBFM_QT_API=Q_DECL_IMPORT
-     PCMANFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/Resrouces"
+     PCMANFM_DATA_DIR="${CMAKE_INSTALL_PREFIX}/Resources"
      LIBFM_DATA_DIR="${LIBFM_PREFIX}/share/libfm" # This is a little bit dirty
      FILER_VERSION="${FILER_VERSION}"
 )
