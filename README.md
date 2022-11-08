@@ -19,7 +19,7 @@ Minimalistic simplicity, see [hello](https://github.com/probonopd/hello) for the
 On Alpine Linux:
 
 ```
-apk add --no-cache qt5-qtbase-dev kwindowsystem-dev qt5-qttools-dev kdbusaddons-dev baloo-dev xcb-util-wm-dev libdbusmenu-qt-dev git cmake musl-dev alpine-sdk clang
+apk add --no-cache qt5-qtbase-dev kwindowsystem-dev qt5-qttools-dev kdbusaddons-dev baloo-dev xcb-util-wm-dev libdbusmenu-qt-dev git cmake musl-dev alpine-sdk clang qt5-qtmultimedia-dev libfm-dev libfm-extra-dev menu-cache-dev
 ```
 
 Not all of the above may actually be required.
