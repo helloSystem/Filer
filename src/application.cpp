@@ -155,8 +155,9 @@ Application::Application(int& argc, char** argv):
   if(! QProcessEnvironment::systemEnvironment().contains("LAUNCHED_BUNDLE")){
       QMessageBox msgBox;
       msgBox.setIcon(QMessageBox::Warning);
-      msgBox.setText(tr("%1 was not launched by the launch command.\n\n"
-                     "This is not how it should be launched.\n"
+      msgBox.setText(tr("%1 was not launched by the launch command\n"
+                        "from an application bundle.\n\n"
+                     "This is not how it should be invoked.\n"
                      "Functionality may be broken.").arg(qApp->applicationDisplayName()));
       msgBox.exec();
   }

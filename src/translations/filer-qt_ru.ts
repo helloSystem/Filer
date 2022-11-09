@@ -681,22 +681,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
 <context>
     <name>Filer::Application</name>
     <message>
-        <location filename="../application.cpp" line="204"/>
+        <location filename="../application.cpp" line="205"/>
         <source>Name of configuration profile</source>
         <translation>Имя профиля конфигурации</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="204"/>
+        <location filename="../application.cpp" line="205"/>
         <source>PROFILE</source>
         <translation>ПРОФИЛЬ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="207"/>
+        <location filename="../application.cpp" line="208"/>
         <source>Run Filer as a daemon</source>
         <translation>Запустить Filer как демон</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="210"/>
+        <location filename="../application.cpp" line="211"/>
         <source>Quit Filer</source>
         <translation>Выйти из Filer</translation>
     </message>
@@ -705,87 +705,88 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
         <translation type="vanished">Запустить менеджер рабочего стола</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="216"/>
-        <source>Turn off desktop manager if it&apos;s running</source>
-        <translation>Отключить менеджер рабочего стола, если он запущен</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="219"/>
-        <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation>Открыть диалог настроек рабочего стола на странице с указанным именем</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="219"/>
-        <location filename="../application.cpp" line="235"/>
-        <source>NAME</source>
-        <translation>ИМЯ</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="228"/>
-        <source>Set desktop wallpaper from image FILE</source>
-        <translation>Выбрать обои рабочего стола из ФАЙЛА изображения</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="228"/>
-        <source>FILE</source>
-        <translation>ФАЙЛ</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="232"/>
-        <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation>Выбрать режим обоев рабочего стола. РЕЖИМ=(цвет|растянуть|вместить|по центру|черепицей)</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="232"/>
-        <source>MODE</source>
-        <translation>РЕЖИМ</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="235"/>
-        <source>Open Preferences dialog on the page with the specified name</source>
-        <translation>Открыть диалог настроек на странице с указанным именем</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="222"/>
-        <source>Open new window</source>
-        <translation>Открыть новое окно</translation>
-    </message>
-    <message>
         <location filename="../application.cpp" line="158"/>
-        <source>%1 was not launched by the launch command.
+        <source>%1 was not launched by the launch command
+from an application bundle.
 
-This is not how it should be launched.
+This is not how it should be invoked.
 Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="217"/>
+        <source>Turn off desktop manager if it&apos;s running</source>
+        <translation>Отключить менеджер рабочего стола, если он запущен</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="220"/>
+        <source>Open desktop preference dialog on the page with the specified name</source>
+        <translation>Открыть диалог настроек рабочего стола на странице с указанным именем</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="236"/>
+        <source>NAME</source>
+        <translation>ИМЯ</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="229"/>
+        <source>Set desktop wallpaper from image FILE</source>
+        <translation>Выбрать обои рабочего стола из ФАЙЛА изображения</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="229"/>
+        <source>FILE</source>
+        <translation>ФАЙЛ</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="233"/>
+        <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
+        <translation>Выбрать режим обоев рабочего стола. РЕЖИМ=(цвет|растянуть|вместить|по центру|черепицей)</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="233"/>
+        <source>MODE</source>
+        <translation>РЕЖИМ</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="236"/>
+        <source>Open Preferences dialog on the page with the specified name</source>
+        <translation>Открыть диалог настроек на странице с указанным именем</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="223"/>
+        <source>Open new window</source>
+        <translation>Открыть новое окно</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="214"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation>Запустить менеджер рабочего стола (устарело)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="225"/>
+        <location filename="../application.cpp" line="226"/>
         <source>Open Find Files utility</source>
         <translation>Открыть утилиту поиска файлов</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="238"/>
+        <location filename="../application.cpp" line="239"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[ФАЙЛ1, ФАЙЛ2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="238"/>
+        <location filename="../application.cpp" line="239"/>
         <source>Files or directories to open</source>
         <translation>Файлы или папки для открытия</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="528"/>
-        <location filename="../application.cpp" line="535"/>
+        <location filename="../application.cpp" line="529"/>
+        <location filename="../application.cpp" line="536"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="535"/>
+        <location filename="../application.cpp" line="536"/>
         <source>Terminal emulator is not set.</source>
         <translation>Эмулятор терминала не указан.</translation>
     </message>
@@ -844,17 +845,17 @@ Functionality may be broken.</source>
 <context>
     <name>Filer::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="438"/>
+        <location filename="../desktopwindow.cpp" line="439"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Прикрепить к текущему положению</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="460"/>
+        <location filename="../desktopwindow.cpp" line="461"/>
         <source>Desktop Preferences</source>
         <translation>Настройки рабочего стола</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="527"/>
+        <location filename="../desktopwindow.cpp" line="528"/>
         <source>Version: %1</source>
         <translation>Версия: %1</translation>
     </message>
@@ -880,12 +881,12 @@ Functionality may be broken.</source>
 <context>
     <name>Filer::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="212"/>
+        <location filename="../mainwindow.cpp" line="214"/>
         <source>Clear text (Ctrl+K)</source>
         <translation>Очистить текст (Ctrl+K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="763"/>
+        <location filename="../mainwindow.cpp" line="765"/>
         <source>Version: %1</source>
         <translation>Версия: %1</translation>
     </message>
@@ -898,13 +899,13 @@ Functionality may be broken.</source>
         <translation type="vanished">&amp;Удалить</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1466"/>
-        <location filename="../mainwindow.cpp" line="1477"/>
+        <location filename="../mainwindow.cpp" line="1468"/>
+        <location filename="../mainwindow.cpp" line="1479"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1477"/>
+        <location filename="../mainwindow.cpp" line="1479"/>
         <source>Switch user command is not set.</source>
         <translation>Команда переключения пользователя не задана.</translation>
     </message>

@@ -69,6 +69,8 @@ MainWindow::MainWindow(FmPath* path):
 
   this->setWindowIcon(QIcon::fromTheme("folder"));
 
+  this->raise();
+
   // hide menu items that are not usable
   //if(!uriExists("computer:///"))
   //  ui.actionComputer->setVisible(false);

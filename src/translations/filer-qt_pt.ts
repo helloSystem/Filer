@@ -697,22 +697,22 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
 <context>
     <name>Filer::Application</name>
     <message>
-        <location filename="../application.cpp" line="204"/>
+        <location filename="../application.cpp" line="205"/>
         <source>Name of configuration profile</source>
         <translation>Nome do perfil</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="204"/>
+        <location filename="../application.cpp" line="205"/>
         <source>PROFILE</source>
         <translation>Perfil</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="207"/>
+        <location filename="../application.cpp" line="208"/>
         <source>Run Filer as a daemon</source>
         <translation>Executar Filer como serviço</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="210"/>
+        <location filename="../application.cpp" line="211"/>
         <source>Quit Filer</source>
         <translation>Fechar Filer</translation>
     </message>
@@ -721,87 +721,88 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
         <translation type="vanished">Abrir gestor da área de trabalho</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="216"/>
-        <source>Turn off desktop manager if it&apos;s running</source>
-        <translation>Fechar gestor da área de trabalho se estiver em execução</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="219"/>
-        <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation>Abrir diálogo de preferências da área de trabalho na página especificada</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="219"/>
-        <location filename="../application.cpp" line="235"/>
-        <source>NAME</source>
-        <translation>Nome</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="228"/>
-        <source>Set desktop wallpaper from image FILE</source>
-        <translation>Definir papel de parede com base num ficheiro</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="228"/>
-        <source>FILE</source>
-        <translation>Ficheiro</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="232"/>
-        <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation>Definir modo do papel de parede. Modo =(color|stretch|fit|center|tile)</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="232"/>
-        <source>MODE</source>
-        <translation>Modo</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="235"/>
-        <source>Open Preferences dialog on the page with the specified name</source>
-        <translation>Abrir diálogo de preferências na página especificada</translation>
-    </message>
-    <message>
-        <location filename="../application.cpp" line="222"/>
-        <source>Open new window</source>
-        <translation>Abrir nova janela</translation>
-    </message>
-    <message>
         <location filename="../application.cpp" line="158"/>
-        <source>%1 was not launched by the launch command.
+        <source>%1 was not launched by the launch command
+from an application bundle.
 
-This is not how it should be launched.
+This is not how it should be invoked.
 Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="213"/>
+        <location filename="../application.cpp" line="217"/>
+        <source>Turn off desktop manager if it&apos;s running</source>
+        <translation>Fechar gestor da área de trabalho se estiver em execução</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="220"/>
+        <source>Open desktop preference dialog on the page with the specified name</source>
+        <translation>Abrir diálogo de preferências da área de trabalho na página especificada</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="236"/>
+        <source>NAME</source>
+        <translation>Nome</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="229"/>
+        <source>Set desktop wallpaper from image FILE</source>
+        <translation>Definir papel de parede com base num ficheiro</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="229"/>
+        <source>FILE</source>
+        <translation>Ficheiro</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="233"/>
+        <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
+        <translation>Definir modo do papel de parede. Modo =(color|stretch|fit|center|tile)</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="233"/>
+        <source>MODE</source>
+        <translation>Modo</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="236"/>
+        <source>Open Preferences dialog on the page with the specified name</source>
+        <translation>Abrir diálogo de preferências na página especificada</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="223"/>
+        <source>Open new window</source>
+        <translation>Abrir nova janela</translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="214"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="225"/>
+        <location filename="../application.cpp" line="226"/>
         <source>Open Find Files utility</source>
         <translation>Abrir utilitário de procura de ficheiros</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="238"/>
+        <location filename="../application.cpp" line="239"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[Ficheiro1, ficheiro2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="238"/>
+        <location filename="../application.cpp" line="239"/>
         <source>Files or directories to open</source>
         <translation>Ficheiros ou diretórios a abrir</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="528"/>
-        <location filename="../application.cpp" line="535"/>
+        <location filename="../application.cpp" line="529"/>
+        <location filename="../application.cpp" line="536"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="535"/>
+        <location filename="../application.cpp" line="536"/>
         <source>Terminal emulator is not set.</source>
         <translation>O emulador de terminal não está definido.</translation>
     </message>
@@ -860,17 +861,17 @@ Functionality may be broken.</source>
 <context>
     <name>Filer::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="438"/>
+        <location filename="../desktopwindow.cpp" line="439"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Fi&amp;xar na posiçao atual</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="460"/>
+        <location filename="../desktopwindow.cpp" line="461"/>
         <source>Desktop Preferences</source>
         <translation>Preferências da área de trabalho</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="527"/>
+        <location filename="../desktopwindow.cpp" line="528"/>
         <source>Version: %1</source>
         <translation type="unfinished">Versão: %1</translation>
     </message>
@@ -896,12 +897,12 @@ Functionality may be broken.</source>
 <context>
     <name>Filer::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="212"/>
+        <location filename="../mainwindow.cpp" line="214"/>
         <source>Clear text (Ctrl+K)</source>
         <translation>Limpar texto (Ctrl+K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="763"/>
+        <location filename="../mainwindow.cpp" line="765"/>
         <source>Version: %1</source>
         <translation>Versão: %1</translation>
     </message>
@@ -914,13 +915,13 @@ Functionality may be broken.</source>
         <translation type="vanished">&amp;Eliminar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1466"/>
-        <location filename="../mainwindow.cpp" line="1477"/>
+        <location filename="../mainwindow.cpp" line="1468"/>
+        <location filename="../mainwindow.cpp" line="1479"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1477"/>
+        <location filename="../mainwindow.cpp" line="1479"/>
         <source>Switch user command is not set.</source>
         <translation>O comando para trocar de utilizador não está definido.</translation>
     </message>
