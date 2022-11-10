@@ -1371,67 +1371,66 @@ Vil du slette dem i stedet ?</translation>
         <translation>Vælg &amp;alle</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="54"/>
         <source>Invert Selection</source>
-        <translation>Omvendt valg</translation>
+        <translation type="vanished">Omvendt valg</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="60"/>
+        <location filename="../foldermenu.cpp" line="56"/>
         <source>Sorting</source>
         <translation>Sorterer</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="65"/>
+        <location filename="../foldermenu.cpp" line="61"/>
         <source>Show Hidden</source>
         <translation>Vis skjulte</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="73"/>
+        <location filename="../foldermenu.cpp" line="69"/>
         <source>Get Info</source>
         <translation>Få oplysninger</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="99"/>
+        <location filename="../foldermenu.cpp" line="95"/>
         <source>By File Name</source>
         <translation>Efter fil navn</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="100"/>
+        <location filename="../foldermenu.cpp" line="96"/>
         <source>By Modification Time</source>
         <translation>Efter ændrings tidspunkt</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="101"/>
+        <location filename="../foldermenu.cpp" line="97"/>
         <source>By File Size</source>
         <translation>Efter fil størrelse</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="102"/>
+        <location filename="../foldermenu.cpp" line="98"/>
         <source>By File Type</source>
         <translation>Efter fil type</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="103"/>
+        <location filename="../foldermenu.cpp" line="99"/>
         <source>By File Owner</source>
         <translation>Efter fil ejer</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="115"/>
+        <location filename="../foldermenu.cpp" line="111"/>
         <source>Ascending</source>
         <translation>Stigende</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="120"/>
+        <location filename="../foldermenu.cpp" line="116"/>
         <source>Descending</source>
         <translation>Faldene</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="135"/>
+        <location filename="../foldermenu.cpp" line="131"/>
         <source>Folder First</source>
         <translation>Mappe(r) først</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="144"/>
+        <location filename="../foldermenu.cpp" line="140"/>
         <source>Case Sensitive</source>
         <translation>Versalfølsom</translation>
     </message>

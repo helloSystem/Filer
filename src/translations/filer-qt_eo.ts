@@ -1367,67 +1367,66 @@ Do you want to delete them instead?</source>
         <translation>&amp;Elekti ĉion</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="54"/>
         <source>Invert Selection</source>
-        <translation>Komplementigi elektitaĵaron</translation>
+        <translation type="vanished">Komplementigi elektitaĵaron</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="60"/>
+        <location filename="../foldermenu.cpp" line="56"/>
         <source>Sorting</source>
         <translation>Ordigado</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="65"/>
+        <location filename="../foldermenu.cpp" line="61"/>
         <source>Show Hidden</source>
         <translation>Montri kaŝitaĵojn</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="73"/>
+        <location filename="../foldermenu.cpp" line="69"/>
         <source>Get Info</source>
         <translation>Akiri informojn</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="99"/>
+        <location filename="../foldermenu.cpp" line="95"/>
         <source>By File Name</source>
         <translation>Laŭ dosiernomo</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="100"/>
+        <location filename="../foldermenu.cpp" line="96"/>
         <source>By Modification Time</source>
         <translation>Laŭ tempo de modifo</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="101"/>
+        <location filename="../foldermenu.cpp" line="97"/>
         <source>By File Size</source>
         <translation>Laŭ grando de dosiero</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="102"/>
+        <location filename="../foldermenu.cpp" line="98"/>
         <source>By File Type</source>
         <translation>Laŭ dosierformo</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="103"/>
+        <location filename="../foldermenu.cpp" line="99"/>
         <source>By File Owner</source>
         <translation>Laŭ posedanto</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="115"/>
+        <location filename="../foldermenu.cpp" line="111"/>
         <source>Ascending</source>
         <translation>Kreske</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="120"/>
+        <location filename="../foldermenu.cpp" line="116"/>
         <source>Descending</source>
         <translation>Malkreske</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="135"/>
+        <location filename="../foldermenu.cpp" line="131"/>
         <source>Folder First</source>
         <translation>Meti dosierujojn unue</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="144"/>
+        <location filename="../foldermenu.cpp" line="140"/>
         <source>Case Sensitive</source>
         <translation>Usklecdistinga</translation>
     </message>

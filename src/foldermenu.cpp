@@ -51,10 +51,6 @@ FolderMenu::FolderMenu(FolderView* view, QWidget* parent):
   addAction(selectAllAction_);
   connect(selectAllAction_, &QAction::triggered, this, &FolderMenu::onSelectAllActionTriggered);
 
-  invertSelectionAction_ = new QAction(tr("Invert Selection"), this);
-  addAction(invertSelectionAction_);
-  connect(invertSelectionAction_, &QAction::triggered, this, &FolderMenu::onInvertSelectionActionTriggered);
-
   separator3_ = addSeparator();
 
   sortAction_ = new QAction(tr("Sorting"), this);

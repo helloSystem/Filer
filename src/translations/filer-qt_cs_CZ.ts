@@ -1382,17 +1382,16 @@ Chceš je odstranit trvale?</translation>
         <translation>Vybr&amp;at všechno</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="54"/>
         <source>Invert Selection</source>
-        <translation>Invertovat výběr</translation>
+        <translation type="vanished">Invertovat výběr</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="60"/>
+        <location filename="../foldermenu.cpp" line="56"/>
         <source>Sorting</source>
         <translation>Řadit</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="65"/>
+        <location filename="../foldermenu.cpp" line="61"/>
         <source>Show Hidden</source>
         <translation>Zobrazit skryté</translation>
     </message>
@@ -1409,52 +1408,52 @@ Chceš je odstranit trvale?</translation>
         <translation type="vanished">Prázdný soubor</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="73"/>
+        <location filename="../foldermenu.cpp" line="69"/>
         <source>Get Info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="99"/>
+        <location filename="../foldermenu.cpp" line="95"/>
         <source>By File Name</source>
         <translation>Podle jména</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="100"/>
+        <location filename="../foldermenu.cpp" line="96"/>
         <source>By Modification Time</source>
         <translation>Podle času</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="101"/>
+        <location filename="../foldermenu.cpp" line="97"/>
         <source>By File Size</source>
         <translation>Podle velikosti</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="102"/>
+        <location filename="../foldermenu.cpp" line="98"/>
         <source>By File Type</source>
         <translation>Podle typu</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="103"/>
+        <location filename="../foldermenu.cpp" line="99"/>
         <source>By File Owner</source>
         <translation>Podle vlastníka</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="115"/>
+        <location filename="../foldermenu.cpp" line="111"/>
         <source>Ascending</source>
         <translation>Vzestupně</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="120"/>
+        <location filename="../foldermenu.cpp" line="116"/>
         <source>Descending</source>
         <translation>sestupně</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="135"/>
+        <location filename="../foldermenu.cpp" line="131"/>
         <source>Folder First</source>
         <translation>Adresáře jako první</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="144"/>
+        <location filename="../foldermenu.cpp" line="140"/>
         <source>Case Sensitive</source>
         <translation>Zohlednit velikost písmen</translation>
     </message>

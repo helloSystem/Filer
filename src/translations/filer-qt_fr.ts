@@ -1590,17 +1590,16 @@ Voulez-vous plutôt les supprimer ?</translation>
         <translation>Sélectionner &amp;tous</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="54"/>
         <source>Invert Selection</source>
-        <translation>Inverser la sélection</translation>
+        <translation type="vanished">Inverser la sélection</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="60"/>
+        <location filename="../foldermenu.cpp" line="56"/>
         <source>Sorting</source>
         <translation>Tri en cours</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="65"/>
+        <location filename="../foldermenu.cpp" line="61"/>
         <source>Show Hidden</source>
         <translation>Afficher les éléments cachés</translation>
     </message>
@@ -1617,52 +1616,52 @@ Voulez-vous plutôt les supprimer ?</translation>
         <translation type="vanished">Fichier</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="73"/>
+        <location filename="../foldermenu.cpp" line="69"/>
         <source>Get Info</source>
         <translation>Obtenir les informations</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="99"/>
+        <location filename="../foldermenu.cpp" line="95"/>
         <source>By File Name</source>
         <translation>Par nom de fichier</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="100"/>
+        <location filename="../foldermenu.cpp" line="96"/>
         <source>By Modification Time</source>
         <translation>Par date de modification</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="101"/>
+        <location filename="../foldermenu.cpp" line="97"/>
         <source>By File Size</source>
         <translation>Par taille de fichier</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="102"/>
+        <location filename="../foldermenu.cpp" line="98"/>
         <source>By File Type</source>
         <translation>Par type de fichier</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="103"/>
+        <location filename="../foldermenu.cpp" line="99"/>
         <source>By File Owner</source>
         <translation>Par propriétaire de fichier</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="115"/>
+        <location filename="../foldermenu.cpp" line="111"/>
         <source>Ascending</source>
         <translation>Ascendant</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="120"/>
+        <location filename="../foldermenu.cpp" line="116"/>
         <source>Descending</source>
         <translation>Descendant</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="135"/>
+        <location filename="../foldermenu.cpp" line="131"/>
         <source>Folder First</source>
         <translation>Dossier en premier</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="144"/>
+        <location filename="../foldermenu.cpp" line="140"/>
         <source>Case Sensitive</source>
         <translation>Sensible à la casse</translation>
     </message>
