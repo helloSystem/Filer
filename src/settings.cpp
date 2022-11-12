@@ -84,8 +84,8 @@ Settings::Settings():
   sortColumn_(Fm::FolderModel::ColumnFileName),
   sortFolderFirst_(false),
   showFilter_(false),
-  spatialMode_(false),
-  dirInfoWrite_(true),
+  spatialMode_(true),
+  dirInfoWrite_(false),
   // settings for use with libfm
   singleClick_(false),
   autoSelectionDelay_(600),
