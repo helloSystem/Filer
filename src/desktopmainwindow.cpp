@@ -18,6 +18,8 @@
 */
 
 #include <QDebug>
+#include <QProcess>
+#include <QStandardPaths>
 
 #include "desktopmainwindow.h"
 #include "bookmarkaction.h"
@@ -267,7 +269,8 @@ void DesktopMainWindow::on_actionTrash_triggered()
 
 void DesktopMainWindow::on_actionNetwork_triggered()
 {
-  Q_EMIT openFolder(QString("network:///"));
+    qDebug() << "Launching Zeroconf.app using the 'launch' command";
+    QProcess::startDetached("launch", {"Zeroconf"});
 }
 
 void DesktopMainWindow::on_actionDesktop_triggered()

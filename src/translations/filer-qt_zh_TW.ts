@@ -679,22 +679,22 @@ Application icon:
 <context>
     <name>Filer::Application</name>
     <message>
-        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="219"/>
         <source>Name of configuration profile</source>
         <translation>配置設定檔名稱</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="219"/>
         <source>PROFILE</source>
         <translation>設定檔</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="208"/>
+        <location filename="../application.cpp" line="222"/>
         <source>Run Filer as a daemon</source>
         <translation>將 Filer 作為守護行程</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="211"/>
+        <location filename="../application.cpp" line="225"/>
         <source>Quit Filer</source>
         <translation>關閉 Filer</translation>
     </message>
@@ -712,79 +712,89 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="168"/>
+        <source>The &apos;launch&apos; command is missing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="175"/>
+        <source>The &apos;open&apos; command is missing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="228"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation>‎啟動桌面管理員（已棄用）</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="231"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>桌面管理程式如果正在執行，請關閉它</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="234"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>在具有指定名稱的頁面上打開桌面偏好的對話框</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
-        <location filename="../application.cpp" line="236"/>
+        <location filename="../application.cpp" line="234"/>
+        <location filename="../application.cpp" line="250"/>
         <source>NAME</source>
         <translation>名稱</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="223"/>
+        <location filename="../application.cpp" line="237"/>
         <source>Open new window</source>
         <translation>開啟新視窗</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="226"/>
+        <location filename="../application.cpp" line="240"/>
         <source>Open Find Files utility</source>
         <translation>開啟搜尋檔案程式</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="229"/>
+        <location filename="../application.cpp" line="243"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>從圖片檔案夾設置為桌面背景</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="229"/>
+        <location filename="../application.cpp" line="243"/>
         <source>FILE</source>
         <translation>檔案夾</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="233"/>
+        <location filename="../application.cpp" line="247"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>桌面背景的設置模式。 類別=(顏色|延展|縮放|置中|並排)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="233"/>
+        <location filename="../application.cpp" line="247"/>
         <source>MODE</source>
         <translation>類別</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="236"/>
+        <location filename="../application.cpp" line="250"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>使用指定名稱在頁面上打開偏好的對話框</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="239"/>
+        <location filename="../application.cpp" line="253"/>
         <source>Files or directories to open</source>
         <translation>要開啟的檔案以及目錄</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="239"/>
+        <location filename="../application.cpp" line="253"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[新增檔案夾1, 新增檔案夾2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="529"/>
-        <location filename="../application.cpp" line="536"/>
+        <location filename="../application.cpp" line="543"/>
+        <location filename="../application.cpp" line="550"/>
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="536"/>
+        <location filename="../application.cpp" line="550"/>
         <source>Terminal emulator is not set.</source>
         <translation>終端機模擬器尚未設定。</translation>
     </message>
@@ -879,12 +889,12 @@ Functionality may be broken.</source>
 <context>
     <name>Filer::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="214"/>
+        <location filename="../mainwindow.cpp" line="209"/>
         <source>Clear text (Ctrl+K)</source>
         <translation>清除文字 (Ctrl+K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="765"/>
+        <location filename="../mainwindow.cpp" line="759"/>
         <source>Version: %1</source>
         <translation>版本：%1</translation>
     </message>
@@ -897,13 +907,13 @@ Functionality may be broken.</source>
         <translation type="vanished">刪除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1468"/>
-        <location filename="../mainwindow.cpp" line="1479"/>
+        <location filename="../mainwindow.cpp" line="1462"/>
+        <location filename="../mainwindow.cpp" line="1473"/>
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1479"/>
+        <location filename="../mainwindow.cpp" line="1473"/>
         <source>Switch user command is not set.</source>
         <translation>切換使用者指令尚未設定。</translation>
     </message>
@@ -1695,12 +1705,12 @@ Do you want to delete them instead?</source>
         <translation>桌面</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="212"/>
+        <location filename="../placesmodel.cpp" line="196"/>
         <source>Trash</source>
         <translation>垃圾桶</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="99"/>
+        <location filename="../placesmodel.cpp" line="98"/>
         <source>Computer</source>
         <translation>電腦</translation>
     </message>
@@ -1709,9 +1719,8 @@ Do you want to delete them instead?</source>
         <translation type="vanished">應用程式</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="126"/>
         <source>Network</source>
-        <translation>網路</translation>
+        <translation type="vanished">網路</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="40"/>
@@ -1719,7 +1728,7 @@ Do you want to delete them instead?</source>
         <translation>裝置</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="137"/>
+        <location filename="../placesmodel.cpp" line="121"/>
         <source>Bookmarks</source>
         <translation>書籤</translation>
     </message>
@@ -3149,7 +3158,7 @@ Modified: %3</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../filelauncher.cpp" line="186"/>
+        <location filename="../filelauncher.cpp" line="187"/>
         <location filename="../mountoperation.cpp" line="185"/>
         <location filename="../utilities.cpp" line="133"/>
         <location filename="../utilities.cpp" line="210"/>

@@ -587,22 +587,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
 <context>
     <name>Filer::Application</name>
     <message>
-        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="219"/>
         <source>Name of configuration profile</source>
         <translation>구성 프로필 이름</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="219"/>
         <source>PROFILE</source>
         <translation>프로필</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="208"/>
+        <location filename="../application.cpp" line="222"/>
         <source>Run Filer as a daemon</source>
         <translation>Filer 를 데몬으로 실행</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="211"/>
+        <location filename="../application.cpp" line="225"/>
         <source>Quit Filer</source>
         <translation>Filer 를 종료</translation>
     </message>
@@ -620,79 +620,89 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="168"/>
+        <source>The &apos;launch&apos; command is missing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="175"/>
+        <source>The &apos;open&apos; command is missing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="228"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="231"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>데스크톱 관리자가 실행중인 경우 끄기</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="234"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>지정된 이름으로 페이지에서 데스크탑 환경설정 대화 상자를 엽니 다</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
-        <location filename="../application.cpp" line="236"/>
+        <location filename="../application.cpp" line="234"/>
+        <location filename="../application.cpp" line="250"/>
         <source>NAME</source>
         <translation>이름</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="223"/>
+        <location filename="../application.cpp" line="237"/>
         <source>Open new window</source>
         <translation>새 창 열기</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="226"/>
+        <location filename="../application.cpp" line="240"/>
         <source>Open Find Files utility</source>
         <translation>파일 찾기 유틸리티 열기</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="229"/>
+        <location filename="../application.cpp" line="243"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>이미지 파일에서 설정 데스크톱 배경 화면</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="229"/>
+        <location filename="../application.cpp" line="243"/>
         <source>FILE</source>
         <translation>파일</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="233"/>
+        <location filename="../application.cpp" line="247"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>바탕 화면 배경 무늬의 모드를 설정합니다. MODE = (색상 | 늘이기 | 맞춤 | 중심 | 타일)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="233"/>
+        <location filename="../application.cpp" line="247"/>
         <source>MODE</source>
         <translation>모드</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="236"/>
+        <location filename="../application.cpp" line="250"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>지정된 이름으로 페이지에서 환경설정 대화 상자를 엽니 다</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="239"/>
+        <location filename="../application.cpp" line="253"/>
         <source>Files or directories to open</source>
         <translation>열 파일 또는 디렉토리</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="239"/>
+        <location filename="../application.cpp" line="253"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[새로운 폴더1, 새로운 폴더2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="529"/>
-        <location filename="../application.cpp" line="536"/>
+        <location filename="../application.cpp" line="543"/>
+        <location filename="../application.cpp" line="550"/>
         <source>Error</source>
         <translation>오류</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="536"/>
+        <location filename="../application.cpp" line="550"/>
         <source>Terminal emulator is not set.</source>
         <translation>터미널 에뮬레이터가 설정되지 않았습니다.</translation>
     </message>
@@ -787,12 +797,12 @@ Functionality may be broken.</source>
 <context>
     <name>Filer::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="214"/>
+        <location filename="../mainwindow.cpp" line="209"/>
         <source>Clear text (Ctrl+K)</source>
         <translation>텍스트 지우기 (Ctrl+K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="765"/>
+        <location filename="../mainwindow.cpp" line="759"/>
         <source>Version: %1</source>
         <translation>버전 : %1</translation>
     </message>
@@ -805,13 +815,13 @@ Functionality may be broken.</source>
         <translation type="vanished">삭제 (&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1468"/>
-        <location filename="../mainwindow.cpp" line="1479"/>
+        <location filename="../mainwindow.cpp" line="1462"/>
+        <location filename="../mainwindow.cpp" line="1473"/>
         <source>Error</source>
         <translation>오류</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1479"/>
+        <location filename="../mainwindow.cpp" line="1473"/>
         <source>Switch user command is not set.</source>
         <translation>사용자 전환 명령이 설정되지 않았습니다.</translation>
     </message>
@@ -1550,22 +1560,21 @@ Do you want to delete them instead?</source>
         <translation type="unfinished">데스크탑</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="99"/>
+        <location filename="../placesmodel.cpp" line="98"/>
         <source>Computer</source>
         <translation type="unfinished">컴퓨터</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="126"/>
         <source>Network</source>
-        <translation type="unfinished">네트워크</translation>
+        <translation type="obsolete">네트워크</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="137"/>
+        <location filename="../placesmodel.cpp" line="121"/>
         <source>Bookmarks</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="212"/>
+        <location filename="../placesmodel.cpp" line="196"/>
         <source>Trash</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2875,7 +2884,7 @@ Modified: %3</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../filelauncher.cpp" line="186"/>
+        <location filename="../filelauncher.cpp" line="187"/>
         <location filename="../mountoperation.cpp" line="185"/>
         <location filename="../utilities.cpp" line="133"/>
         <location filename="../utilities.cpp" line="210"/>

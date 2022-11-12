@@ -162,6 +162,20 @@ Application::Application(int& argc, char** argv):
       msgBox.exec();
   }
 
+  if(QStandardPaths::findExecutable("launch") == "") {
+      QMessageBox msgBox;
+      msgBox.setIcon(QMessageBox::Warning);
+      msgBox.setText(tr("The 'launch' command is missing.").arg(qApp->applicationDisplayName()));
+      msgBox.exec();
+  }
+
+  if(QStandardPaths::findExecutable("open") == "") {
+      QMessageBox msgBox;
+      msgBox.setIcon(QMessageBox::Warning);
+      msgBox.setText(tr("The 'open' command is missing.").arg(qApp->applicationDisplayName()));
+      msgBox.exec();
+  }
+
   // Remove the environment variables so that they can't leak into
   // processes started by Filer
   QProcessEnvironment::systemEnvironment().remove("LAUNCHED_BUNDLE");

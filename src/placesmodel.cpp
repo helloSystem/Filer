@@ -93,9 +93,8 @@ PlacesModel::PlacesModel(QObject* parent):
     createTrashItem();
 
     FmPath* path;
-    // FIXME: add an option to hide network:///
     if(false) {
-      path = fm_path_new_for_uri("computer:///");
+      path = fm_path_new_for_uri("file:///");
       computerItem = new PlacesModelItem("computer", tr("Computer"), path);
       fm_path_unref(path);
       placesRoot->appendRow(computerItem);
@@ -115,22 +114,7 @@ PlacesModel::PlacesModel(QObject* parent):
     //  fm_icon_unref(fmicon);
     // placesRoot->appendRow(applicationsItem);
 
-    // FIXME: add an option to hide network:///
-    if(true) {
-      const char* network_icon_names[] = {"network", "folder-network", "folder"};
-      // NOTE: g_themed_icon_new_from_names() accepts char**, but actually const char** is OK.
-      GIcon* gicon = g_themed_icon_new_from_names((char**)network_icon_names, G_N_ELEMENTS(network_icon_names));
-      FmIcon* fmicon = fm_icon_from_gicon(gicon);
-      g_object_unref(gicon);
-      path = fm_path_new_for_uri("network:///");
-      networkItem = new PlacesModelItem(fmicon, tr("Network"), path);
-      fm_icon_unref(fmicon);
-      fm_path_unref(path);
-      placesRoot->appendRow(networkItem);
-    }
-    else
-      networkItem = NULL;
-
+    networkItem = NULL; // probono: We are not using network:///
   }
 
   // bookmarks

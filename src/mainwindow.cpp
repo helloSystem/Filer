@@ -33,6 +33,7 @@
 #include <QCompleter>
 #include <QFileSystemModel>
 #include <QStandardPaths>
+#include <QProcess>
 
 #include "tabpage.h"
 #include "filelauncher.h"
@@ -76,12 +77,6 @@ MainWindow::MainWindow(FmPath* path):
   //  ui.actionComputer->setVisible(false);
   if(!settings.supportTrash())
     ui.actionTrash->setVisible(false);
-
-  // FIXME: add an option to hide network:///
-  // We cannot use uriExists() here since calling this on "network:///"
-  // is very slow and blocking.
-  //if(!uriExists("network:///"))
-  //  ui.actionNetwork->setVisible(false);
 
   // add a context menu for showing browse history to back and forward buttons
   QToolButton* forwardButton = static_cast<QToolButton*>(ui.toolBar->widgetForAction(ui.actionGoForward));
@@ -688,7 +683,7 @@ void MainWindow::on_actionFilter_triggered(bool checked) {
 }
 
 void MainWindow::on_actionComputer_triggered() {
-  FmPath* path = fm_path_new_for_uri("computer:///");
+  FmPath* path = fm_path_new_for_uri("file:/");
   chdir(path);
   fm_path_unref(path);
 }
@@ -728,9 +723,8 @@ void MainWindow::on_actionTrash_triggered() {
 }
 
 void MainWindow::on_actionNetwork_triggered() {
-  FmPath* path = fm_path_new_for_uri("network:///");
-  chdir(path);
-  fm_path_unref(path);
+    qDebug() << "Launching Zeroconf.app using the 'launch' command";
+    QProcess::startDetached("launch", {"Zeroconf"});
 }
 
 void MainWindow::on_actionDesktop_triggered() {

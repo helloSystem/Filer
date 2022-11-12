@@ -608,22 +608,22 @@ Application icon:
 <context>
     <name>Filer::Application</name>
     <message>
-        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="219"/>
         <source>Name of configuration profile</source>
         <translation>Beállítófájl neve</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="219"/>
         <source>PROFILE</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="208"/>
+        <location filename="../application.cpp" line="222"/>
         <source>Run Filer as a daemon</source>
         <translation>A Filer mint daemon fut</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="211"/>
+        <location filename="../application.cpp" line="225"/>
         <source>Quit Filer</source>
         <translation>Filer elhagyása</translation>
     </message>
@@ -641,79 +641,89 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="168"/>
+        <source>The &apos;launch&apos; command is missing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="175"/>
+        <source>The &apos;open&apos; command is missing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="228"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="231"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Futó asztalkezelő lekapcsolása</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="234"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Asztalbeállító nyitása a megadott nevű lapon</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
-        <location filename="../application.cpp" line="236"/>
+        <location filename="../application.cpp" line="234"/>
+        <location filename="../application.cpp" line="250"/>
         <source>NAME</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="223"/>
+        <location filename="../application.cpp" line="237"/>
         <source>Open new window</source>
         <translation>Új ablak nyitás</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="226"/>
+        <location filename="../application.cpp" line="240"/>
         <source>Open Find Files utility</source>
         <translation>Fájlkereső indítása</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="229"/>
+        <location filename="../application.cpp" line="243"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>A megadott FILE használata tapétaként</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="229"/>
+        <location filename="../application.cpp" line="243"/>
         <source>FILE</source>
         <translation>FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="233"/>
+        <location filename="../application.cpp" line="247"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Tapéta mód. MODE=(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="233"/>
+        <location filename="../application.cpp" line="247"/>
         <source>MODE</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="236"/>
+        <location filename="../application.cpp" line="250"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Beállító nyitása a megadott nevű lapon</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="239"/>
+        <location filename="../application.cpp" line="253"/>
         <source>Files or directories to open</source>
         <translation>Megnyitandó fájlok vagy mappák</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="239"/>
+        <location filename="../application.cpp" line="253"/>
         <source>[FILE1, FILE2,...]</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="529"/>
-        <location filename="../application.cpp" line="536"/>
+        <location filename="../application.cpp" line="543"/>
+        <location filename="../application.cpp" line="550"/>
         <source>Error</source>
         <translation>Hiba</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="536"/>
+        <location filename="../application.cpp" line="550"/>
         <source>Terminal emulator is not set.</source>
         <translation>A terminál emulátor beállítatlan.</translation>
     </message>
@@ -808,12 +818,12 @@ Functionality may be broken.</source>
 <context>
     <name>Filer::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="214"/>
+        <location filename="../mainwindow.cpp" line="209"/>
         <source>Clear text (Ctrl+K)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="765"/>
+        <location filename="../mainwindow.cpp" line="759"/>
         <source>Version: %1</source>
         <translation>Verzió: %1</translation>
     </message>
@@ -826,13 +836,13 @@ Functionality may be broken.</source>
         <translation type="vanished">&amp;Töröl</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1468"/>
-        <location filename="../mainwindow.cpp" line="1479"/>
+        <location filename="../mainwindow.cpp" line="1462"/>
+        <location filename="../mainwindow.cpp" line="1473"/>
         <source>Error</source>
         <translation>Hiba</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1479"/>
+        <location filename="../mainwindow.cpp" line="1473"/>
         <source>Switch user command is not set.</source>
         <translation>A felhasználót váltó alkalmazás beállítatlan.</translation>
     </message>
@@ -1605,12 +1615,12 @@ Töröljük őket véglegesen?</translation>
         <translation>Asztal</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="212"/>
+        <location filename="../placesmodel.cpp" line="196"/>
         <source>Trash</source>
         <translation>Kuka</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="99"/>
+        <location filename="../placesmodel.cpp" line="98"/>
         <source>Computer</source>
         <translation>Számítógép</translation>
     </message>
@@ -1619,9 +1629,8 @@ Töröljük őket véglegesen?</translation>
         <translation type="vanished">Alkalmazások</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="126"/>
         <source>Network</source>
-        <translation>Hálózat</translation>
+        <translation type="vanished">Hálózat</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="40"/>
@@ -1629,7 +1638,7 @@ Töröljük őket véglegesen?</translation>
         <translation>Eszközök</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="137"/>
+        <location filename="../placesmodel.cpp" line="121"/>
         <source>Bookmarks</source>
         <translation>Könyvjelzők</translation>
     </message>
@@ -2959,7 +2968,7 @@ Módosítva: %3</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../filelauncher.cpp" line="186"/>
+        <location filename="../filelauncher.cpp" line="187"/>
         <location filename="../mountoperation.cpp" line="185"/>
         <location filename="../utilities.cpp" line="133"/>
         <location filename="../utilities.cpp" line="210"/>

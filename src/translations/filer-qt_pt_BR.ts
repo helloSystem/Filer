@@ -552,99 +552,109 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="168"/>
+        <source>The &apos;launch&apos; command is missing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="175"/>
+        <source>The &apos;open&apos; command is missing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="219"/>
         <source>Name of configuration profile</source>
         <translation>Nome do perfil</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="219"/>
         <source>PROFILE</source>
         <translation>PERFIL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="208"/>
+        <location filename="../application.cpp" line="222"/>
         <source>Run Filer as a daemon</source>
         <translation>Executar Filer como serviço</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="211"/>
+        <location filename="../application.cpp" line="225"/>
         <source>Quit Filer</source>
         <translation>Fechar Filer</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="228"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation>Iniciar gerenciador da área de trabalho (obsoleto)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="231"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Fechar gerenciador da área de trabalho se estiver em execução</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="234"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Abrir diálogo de preferências da área de trabalho na página especificada</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
-        <location filename="../application.cpp" line="236"/>
+        <location filename="../application.cpp" line="234"/>
+        <location filename="../application.cpp" line="250"/>
         <source>NAME</source>
         <translation>NOME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="223"/>
+        <location filename="../application.cpp" line="237"/>
         <source>Open new window</source>
         <translation>Abrir nova janela</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="226"/>
+        <location filename="../application.cpp" line="240"/>
         <source>Open Find Files utility</source>
         <translation>Abrir o utilitário Procurar Arquivos</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="229"/>
+        <location filename="../application.cpp" line="243"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Definir papel de parede a partir de um arquivo</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="229"/>
+        <location filename="../application.cpp" line="243"/>
         <source>FILE</source>
         <translation>ARQUIVO</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="233"/>
+        <location filename="../application.cpp" line="247"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Definir modo do papel de parede. MODO=(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="233"/>
+        <location filename="../application.cpp" line="247"/>
         <source>MODE</source>
         <translation>MODO</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="236"/>
+        <location filename="../application.cpp" line="250"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Abrir diálogo de preferências na página especificada</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="239"/>
+        <location filename="../application.cpp" line="253"/>
         <source>Files or directories to open</source>
         <translation>Arquivos ou pastas para abrir</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="239"/>
+        <location filename="../application.cpp" line="253"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[ARQUIVO1, ARQUIVO2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="529"/>
-        <location filename="../application.cpp" line="536"/>
+        <location filename="../application.cpp" line="543"/>
+        <location filename="../application.cpp" line="550"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="536"/>
+        <location filename="../application.cpp" line="550"/>
         <source>Terminal emulator is not set.</source>
         <translation>O emulador de terminal não está definido.</translation>
     </message>
@@ -739,23 +749,23 @@ Functionality may be broken.</source>
 <context>
     <name>Filer::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="214"/>
+        <location filename="../mainwindow.cpp" line="209"/>
         <source>Clear text (Ctrl+K)</source>
         <translation>Limpar texto (Ctrl+K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="765"/>
+        <location filename="../mainwindow.cpp" line="759"/>
         <source>Version: %1</source>
         <translation>Versão: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1468"/>
-        <location filename="../mainwindow.cpp" line="1479"/>
+        <location filename="../mainwindow.cpp" line="1462"/>
+        <location filename="../mainwindow.cpp" line="1473"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1479"/>
+        <location filename="../mainwindow.cpp" line="1473"/>
         <source>Switch user command is not set.</source>
         <translation>O comando para trocar de usuário não está definido.</translation>
     </message>
@@ -1493,14 +1503,13 @@ Deseja excluí-los permanentemente?</translation>
         <translation>Área de trabalho</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="99"/>
+        <location filename="../placesmodel.cpp" line="98"/>
         <source>Computer</source>
         <translation>Computador</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="126"/>
         <source>Network</source>
-        <translation>Rede</translation>
+        <translation type="vanished">Rede</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="40"/>
@@ -1508,12 +1517,12 @@ Deseja excluí-los permanentemente?</translation>
         <translation>Dispositivos</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="137"/>
+        <location filename="../placesmodel.cpp" line="121"/>
         <source>Bookmarks</source>
         <translation>Favoritos</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="212"/>
+        <location filename="../placesmodel.cpp" line="196"/>
         <source>Trash</source>
         <translation>Lixeira</translation>
     </message>
@@ -2736,7 +2745,7 @@ Modificado: %3</translation>
         <translation>Por favor, insira um novo nome:</translation>
     </message>
     <message>
-        <location filename="../filelauncher.cpp" line="186"/>
+        <location filename="../filelauncher.cpp" line="187"/>
         <location filename="../mountoperation.cpp" line="185"/>
         <location filename="../utilities.cpp" line="133"/>
         <location filename="../utilities.cpp" line="210"/>

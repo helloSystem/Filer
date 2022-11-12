@@ -661,22 +661,22 @@ Application icon:
 <context>
     <name>Filer::Application</name>
     <message>
-        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="219"/>
         <source>Name of configuration profile</source>
         <translation>Nome del profilo di configurazione</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="205"/>
+        <location filename="../application.cpp" line="219"/>
         <source>PROFILE</source>
         <translation>PROFILO</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="208"/>
+        <location filename="../application.cpp" line="222"/>
         <source>Run Filer as a daemon</source>
         <translation>Esegue Filer come demone</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="211"/>
+        <location filename="../application.cpp" line="225"/>
         <source>Quit Filer</source>
         <translation>Esce da Filer</translation>
     </message>
@@ -694,80 +694,90 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="217"/>
+        <location filename="../application.cpp" line="168"/>
+        <source>The &apos;launch&apos; command is missing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="175"/>
+        <source>The &apos;open&apos; command is missing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../application.cpp" line="231"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Spegne il gestore della scrivania se è in esecuzione</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
+        <location filename="../application.cpp" line="234"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Apri le preferenze della scrivania alla pagina con il nome specificato</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="220"/>
-        <location filename="../application.cpp" line="236"/>
+        <location filename="../application.cpp" line="234"/>
+        <location filename="../application.cpp" line="250"/>
         <source>NAME</source>
         <translation>NOME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="229"/>
+        <location filename="../application.cpp" line="243"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Imposta lo sfondo della scrivania con l&apos;immagine dal FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="229"/>
+        <location filename="../application.cpp" line="243"/>
         <source>FILE</source>
         <translation>FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="233"/>
+        <location filename="../application.cpp" line="247"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Imposta la modalità dello sfondo della scrivania. MODO=(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="233"/>
+        <location filename="../application.cpp" line="247"/>
         <source>MODE</source>
         <translation>MODE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="236"/>
+        <location filename="../application.cpp" line="250"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translatorcomment>where is that?</translatorcomment>
         <translation>Apri le preferenze alla pagina con il nome specificato</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="223"/>
+        <location filename="../application.cpp" line="237"/>
         <source>Open new window</source>
         <translation>Apri una nuova finestra</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="228"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="226"/>
+        <location filename="../application.cpp" line="240"/>
         <source>Open Find Files utility</source>
         <translation>Apri l&apos;utilità di ricerca file</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="239"/>
+        <location filename="../application.cpp" line="253"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FILE1, FILE2, ...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="239"/>
+        <location filename="../application.cpp" line="253"/>
         <source>Files or directories to open</source>
         <translation>Cartelle o file da aprire</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="529"/>
-        <location filename="../application.cpp" line="536"/>
+        <location filename="../application.cpp" line="543"/>
+        <location filename="../application.cpp" line="550"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="536"/>
+        <location filename="../application.cpp" line="550"/>
         <source>Terminal emulator is not set.</source>
         <translation>L&apos;emulatore di terminale non è impostato.</translation>
     </message>
@@ -862,12 +872,12 @@ Functionality may be broken.</source>
 <context>
     <name>Filer::MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="214"/>
+        <location filename="../mainwindow.cpp" line="209"/>
         <source>Clear text (Ctrl+K)</source>
         <translation type="unfinished">Cancella testo (Ctrl+K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="765"/>
+        <location filename="../mainwindow.cpp" line="759"/>
         <source>Version: %1</source>
         <translation>Versione:%1</translation>
     </message>
@@ -880,13 +890,13 @@ Functionality may be broken.</source>
         <translation type="vanished">&amp;Rimuovi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1468"/>
-        <location filename="../mainwindow.cpp" line="1479"/>
+        <location filename="../mainwindow.cpp" line="1462"/>
+        <location filename="../mainwindow.cpp" line="1473"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1479"/>
+        <location filename="../mainwindow.cpp" line="1473"/>
         <source>Switch user command is not set.</source>
         <translation>Il comando per cambiare utente non è impostato.</translation>
     </message>
@@ -1672,12 +1682,12 @@ Vuoi invece eliminarli?</translation>
         <translation>Scrivania</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="212"/>
+        <location filename="../placesmodel.cpp" line="196"/>
         <source>Trash</source>
         <translation>Cestino</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="99"/>
+        <location filename="../placesmodel.cpp" line="98"/>
         <source>Computer</source>
         <translation>Computer</translation>
     </message>
@@ -1686,9 +1696,8 @@ Vuoi invece eliminarli?</translation>
         <translation type="vanished">Applicazioni</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="126"/>
         <source>Network</source>
-        <translation>Rete</translation>
+        <translation type="vanished">Rete</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="40"/>
@@ -1696,7 +1705,7 @@ Vuoi invece eliminarli?</translation>
         <translation>Periferiche</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="137"/>
+        <location filename="../placesmodel.cpp" line="121"/>
         <source>Bookmarks</source>
         <translation>Segnalibri</translation>
     </message>
@@ -3074,7 +3083,7 @@ Ultima modifica: %3</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../filelauncher.cpp" line="186"/>
+        <location filename="../filelauncher.cpp" line="187"/>
         <location filename="../mountoperation.cpp" line="185"/>
         <location filename="../utilities.cpp" line="133"/>
         <location filename="../utilities.cpp" line="210"/>

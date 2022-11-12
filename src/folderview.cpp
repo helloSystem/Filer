@@ -501,21 +501,25 @@ void FolderView::setViewMode(ViewMode _mode) {
     listView->setMovement(QListView::Static);
     listView->setResizeMode(QListView::Adjust);
     listView->setWrapping(true);
+    listView->setStyleSheet("padding-right: 0px;");
     switch(mode) {
       case IconMode: {
         listView->setViewMode(QListView::IconMode);
+        listView->setStyleSheet("padding-top: 10px;");
         listView->setWordWrap(true);
         listView->setFlow(QListView::LeftToRight);
         break;
       }
       case CompactMode: {
         listView->setViewMode(QListView::ListMode);
+        listView->setStyleSheet("padding-top: 0px;");
         listView->setWordWrap(false);
         listView->setFlow(QListView::QListView::TopToBottom);
         break;
       }
       case ThumbnailMode: {
         listView->setViewMode(QListView::IconMode);
+        listView->setStyleSheet("padding-top: 10px;");
         listView->setWordWrap(true);
         listView->setFlow(QListView::LeftToRight);
         break;

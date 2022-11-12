@@ -79,6 +79,7 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos, bool show_con
                 qDebug() << "probono: Not an .AppDir or .app bundle. TODO: Make it possible to use the 'launch' command for those, too";
                 // probono: URLs like network://, sftp:// and so on will continue to be handled like this in any case since they need GIO,
                 // but documents, non-bundle executables etc. could all be handled by 'launch' if we make 'launch' understand them
+                // or, even better, we elimiate those kinds of atrocities from the system altogether
                 itemsToBeLaunched = g_list_append(itemsToBeLaunched, l->data);
             } else {
                 QString launchableExecutable = getLaunchableExecutable(info);
