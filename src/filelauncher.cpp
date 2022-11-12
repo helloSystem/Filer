@@ -17,17 +17,18 @@
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-
 #include "filelauncher.h"
 #include "applaunchcontext.h"
 #include <QMessageBox>
 #include <QDebug>
 #include <QProcess>
 #include <QStandardPaths>
+#include <QDir>
 #include "execfiledialog_p.h"
 #include "appchooserdialog.h"
 #include "utilities.h"
 #include "bundle.h"
+#include "application.h"
 
 using namespace Fm;
 
@@ -55,29 +56,22 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos, bool show_con
     qDebug() << "probono: Determining whether it is an AppDir/.app bundle";
     // probono: This gets invoked when an icon is double clicked or "Open" is selected from the context menu
     // but not if "Open with..." is selected from the context menu
-    // GAppLaunchContext is a concept from
-    // GIO - GLib Input, Output and Streaming Library
-    // by Red Hat, Inc.
-    // https://developer.gnome.org/gio/stable/GAppInfo.html
-    // probono: Is there a way to get rid of any remnants of Red Hat and Gnome? This would mean replacing libfm and glib
-    // probono: file_infos is a GList of FileInfos. For each of the FileInfos we need to get the path and from that we need to determine whether we have an AppDir/.app bundle and if so, take action
-    // probono: Maybe instead of using fm_launch_files we should use fm_launch_desktop_entry to get things like "pin in Dock" which possibly only works when an application was launched through a desktop file?
-    //
-    // probono: Look at the implementations of fm_launch_files and fm_launch_desktop_entry to see what they are doing internally, and do similar things for AppDir/.app bundle
-    // probono: Interestingly, for the actual launching they call back to this file
-    // probono: See https://github.com/lxde/libfm/blob/master/src/base/fm-file-launcher.c
-
-    FmAppLaunchContext* context = fm_app_launch_context_new_for_widget(parent);
-    // Since fm_launch_files needs all items to be opened in multiple tabs at once, we need
-    // to construct a list that contains those that are not bundles
-    GList* itemsToBeLaunched = NULL;
+    // Here used to be a lot of libfm style code.
+    // If this code causes trouble, check this function in
+    // https://github.com/helloSystem/Filer/blob/c257312ca5b6039b21b32677a3b90bec6c34ee62/src/filelauncher.cpp#L53
     for(GList* l = file_infos; l; l = l->next) {
         FmFileInfo* info = FM_FILE_INFO(l->data);
-
         bool isAppDirOrBundle = checkWhetherAppDirOrBundle(info);
         QString path = QString(fm_path_to_str(fm_file_info_get_path(info)));
         if(isAppDirOrBundle == false && fm_file_info_is_dir(info) == true) {
-            itemsToBeLaunched = g_list_append(itemsToBeLaunched, l->data); // TODO: Replace this line with opening a Filer window at that location w/o going through itemsToBeLaunched/fm_launch_files
+            Filer::Application* app = static_cast<Filer::Application*>(qApp);
+            // Open folders directly; FIXME: Handle non-spatial mode and tabs approproately
+            if (app->settings().spatialMode()) {
+                app->launchFiles(NULL, {path}, true);
+            }  else {
+                qDebug() << "probono: FIXME: chdir instead of opening a new window; how?";
+                app->launchFiles(NULL, {path}, false);
+            }
         } else if(isAppDirOrBundle == false or (show_contents == true)) {
             qDebug() << "Opening using the 'open' command";
             QProcess::startDetached("open", {path});
@@ -86,23 +80,7 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos, bool show_con
             QProcess::startDetached("launch", {path});
         }
     }
-
-    // probono: Unlike PcManFM-Qt, we don't want that multiple selected files
-    // get opened in tabs. Instead, we want each to be opened inside its own window.
-    bool ret = true;
-    for(GList* l = itemsToBeLaunched; l; l = l->next) {
-        GList* itemToBeLaunched = NULL;
-        itemToBeLaunched = g_list_append(itemToBeLaunched, l->data);
-        bool result = fm_launch_files(nullptr, itemToBeLaunched, &funcs, this);
-        if (result == false) {
-            ret = false;
-        }
-        g_list_free(itemToBeLaunched);
-    }
-
-    g_list_free(itemsToBeLaunched);
-    g_object_unref(context);
-    return ret;
+    return true;
 }
 
 bool FileLauncher::launchPaths(QWidget* parent, GList* paths) {

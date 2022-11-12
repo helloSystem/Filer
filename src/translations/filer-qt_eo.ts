@@ -2745,7 +2745,7 @@ Tempo de modifo: %3</translation>
         <translation>Bonvolu tajpi novan nomon:</translation>
     </message>
     <message>
-        <location filename="../filelauncher.cpp" line="179"/>
+        <location filename="../filelauncher.cpp" line="158"/>
         <location filename="../mountoperation.cpp" line="185"/>
         <location filename="../utilities.cpp" line="133"/>
         <location filename="../utilities.cpp" line="210"/>
