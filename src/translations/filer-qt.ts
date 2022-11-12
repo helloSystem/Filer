@@ -2666,7 +2666,7 @@ Modified: %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../filelauncher.cpp" line="187"/>
+        <location filename="../filelauncher.cpp" line="179"/>
         <location filename="../mountoperation.cpp" line="185"/>
         <location filename="../utilities.cpp" line="133"/>
         <location filename="../utilities.cpp" line="210"/>

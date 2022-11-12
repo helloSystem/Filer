@@ -74,26 +74,17 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos, bool show_con
     for(GList* l = file_infos; l; l = l->next) {
         FmFileInfo* info = FM_FILE_INFO(l->data);
 
-            bool isAppDirOrBundle = checkWhetherAppDirOrBundle(info);
-            if(isAppDirOrBundle == false or (show_contents == true)) {
-                qDebug() << "probono: Not an .AppDir or .app bundle. TODO: Make it possible to use the 'launch' command for those, too";
-                // probono: URLs like network://, sftp:// and so on will continue to be handled like this in any case since they need GIO,
-                // but documents, non-bundle executables etc. could all be handled by 'launch' if we make 'launch' understand them
-                // or, even better, we elimiate those kinds of atrocities from the system altogether
-                itemsToBeLaunched = g_list_append(itemsToBeLaunched, l->data);
-            } else {
-                QString launchableExecutable = getLaunchableExecutable(info);
-                if(QStandardPaths::findExecutable("launch") != "") {
-                    qDebug() << "probono: Launching using the 'launch' command";
-                    QProcess::startDetached("launch", {launchableExecutable});
-                } else {
-                    qDebug() << "probono: The 'launch' command is not available on the $PATH, otherwise it would be used";
-                    qDebug() << "probono: Construct FmFileInfo* for" << launchableExecutable << "and add it to itemsToBeLaunched";
-                    FmFileInfo* launchableExecutableFileInfo = fm_file_info_new_from_native_file(nullptr, launchableExecutable.toUtf8(),nullptr);
-                    itemsToBeLaunched = g_list_append(itemsToBeLaunched, launchableExecutableFileInfo);
-                }
-            }
-
+        bool isAppDirOrBundle = checkWhetherAppDirOrBundle(info);
+        QString path = QString(fm_path_to_str(fm_file_info_get_path(info)));
+        if(isAppDirOrBundle == false && fm_file_info_is_dir(info) == true) {
+            itemsToBeLaunched = g_list_append(itemsToBeLaunched, l->data); // TODO: Replace this line with opening a Filer window at that location w/o going through itemsToBeLaunched/fm_launch_files
+        } else if(isAppDirOrBundle == false or (show_contents == true)) {
+            qDebug() << "Opening using the 'open' command";
+            QProcess::startDetached("open", {path});
+        } else {
+            qDebug() << "Launching using the 'launch' command";
+            QProcess::startDetached("launch", {path});
+        }
     }
 
     // probono: Unlike PcManFM-Qt, we don't want that multiple selected files
@@ -138,6 +129,7 @@ GAppInfo* FileLauncher::getApp(GList* file_infos, FmMimeType* mime_type, GError*
 
 bool FileLauncher::openFolder(GAppLaunchContext* ctx, GList* folder_infos, GError** err) {
     qDebug() << "probono: FileLauncher::openFolder called";
+
     for(GList* l = folder_infos; l; l = l->next) {
         FmFileInfo* fi = FM_FILE_INFO(l->data);
         qDebug() << "  folder:" << QString::fromUtf8(fm_file_info_get_disp_name(fi));
