@@ -59,12 +59,14 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos, bool show_con
     // Here used to be a lot of libfm style code.
     // If this code causes trouble, check this function in
     // https://github.com/helloSystem/Filer/blob/c257312ca5b6039b21b32677a3b90bec6c34ee62/src/filelauncher.cpp#L53
+    Filer::Application* app = static_cast<Filer::Application*>(qApp);
     for(GList* l = file_infos; l; l = l->next) {
         FmFileInfo* info = FM_FILE_INFO(l->data);
         bool isAppDirOrBundle = checkWhetherAppDirOrBundle(info);
         QString path = QString(fm_path_to_str(fm_file_info_get_path(info)));
-        if(isAppDirOrBundle == false && fm_file_info_is_dir(info) == true) {
-            Filer::Application* app = static_cast<Filer::Application*>(qApp);
+        if(QFileInfo(path).fileName() == "trash-can.desktop"){
+            app->launchFiles(NULL, {"trash:///"}, true);
+        } else if(isAppDirOrBundle == false && fm_file_info_is_dir(info) == true) {
             // Open folders directly; FIXME: Handle non-spatial mode and tabs approproately
             if (app->settings().spatialMode()) {
                 app->launchFiles(NULL, {path}, true);
@@ -72,7 +74,7 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos, bool show_con
                 qDebug() << "probono: FIXME: chdir instead of opening a new window; how?";
                 app->launchFiles(NULL, {path}, false);
             }
-        } else if(isAppDirOrBundle == false or (show_contents == true)) {
+        } else if((isAppDirOrBundle == false or (show_contents == true)) && (! path.endsWith(".desktop"))) {
             qDebug() << "Opening using the 'open' command";
             QProcess::startDetached("open", {path});
         } else {

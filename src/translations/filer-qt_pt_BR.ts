@@ -2745,7 +2745,7 @@ Modificado: %3</translation>
         <translation>Por favor, insira um novo nome:</translation>
     </message>
     <message>
-        <location filename="../filelauncher.cpp" line="158"/>
+        <location filename="../filelauncher.cpp" line="160"/>
         <location filename="../mountoperation.cpp" line="185"/>
         <location filename="../utilities.cpp" line="133"/>
         <location filename="../utilities.cpp" line="210"/>
