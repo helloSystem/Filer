@@ -66,6 +66,9 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos, bool show_con
         QString path = QString(fm_path_to_str(fm_file_info_get_path(info)));
         if(QFileInfo(path).fileName() == "trash-can.desktop"){
             app->launchFiles(NULL, {"trash:///"}, true);
+        } else if (QFileInfo(path).isExecutable() && QFileInfo(path).isFile()) {
+            qDebug() << "Launching using the 'launch' command";
+            QProcess::startDetached("launch", {path});
         } else if(isAppDirOrBundle == false && fm_file_info_is_dir(info) == true) {
             // Open folders directly; FIXME: Handle non-spatial mode and tabs approproately
             if (app->settings().spatialMode()) {
