@@ -81,8 +81,6 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   qDebug("wallpaper: %s", settings.wallpaper().toUtf8().data());
   ui.imageFile->setText(settings.wallpaper());
 
-  ui.font->setFont(settings.desktopFont());
-
   ui.backgroundColor->setColor(settings.desktopBgColor());
   ui.textColor->setColor(settings.desktopFgColor());
   ui.shadowColor->setColor(settings.desktopShadowColor());
@@ -93,8 +91,6 @@ DesktopPreferencesDialog::DesktopPreferencesDialog(QWidget* parent, Qt::WindowFl
   connect(ui.textColor, &Fm::ColorButton::changed,
           this, &DesktopPreferencesDialog::applySettings);
   connect(ui.shadowColor, &Fm::ColorButton::changed,
-          this, &DesktopPreferencesDialog::applySettings);
-  connect(ui.font, &Fm::FontButton::changed,
           this, &DesktopPreferencesDialog::applySettings);
 }
 
@@ -113,7 +109,6 @@ void DesktopPreferencesDialog::applySettings()
   settings.setWallpaper(ui.imageFile->text());
   int mode = ui.wallpaperMode->itemData(ui.wallpaperMode->currentIndex()).toInt();
   settings.setWallpaperMode(mode);
-  settings.setDesktopFont(ui.font->font());
   settings.setDesktopBgColor(ui.backgroundColor->color());
   settings.setDesktopFgColor(ui.textColor->color());
   settings.setDesktopShadowColor(ui.shadowColor->color());

@@ -29,6 +29,8 @@
 #include <QDebug>
 #include <QPainterPath>
 #include <QColor>
+#include <QFileInfo>
+#include <QProcess>
 
 # include "extattrs.h"
 
@@ -60,7 +62,7 @@ QSize FolderItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QMo
     // FIXME: there're some problems in this size hint calculation.
     Q_ASSERT(gridSize_ != QSize());
     QRectF textRect(0, 0, gridSize_.width() - 4, gridSize_.height() - opt.decorationSize.height() - 4);
-    drawText(NULL, opt, textRect); // passing NULL for painter will calculate the bounding rect only.
+    drawText(NULL, opt); // passing NULL for painter will calculate the bounding rect only.
     int width = qMax((int)textRect.width(), opt.decorationSize.width()) + 4;
     int height = opt.decorationSize.height() + textRect.height() + 4;
     return QSize(width, height);
@@ -126,8 +128,49 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
     if(isSymlink)
       painter->drawPixmap(symlinkPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));
 
-    // probono: Draw label emblems
     QString path = QString::fromUtf8(fm_path_to_str(fm_file_info_get_path(file))); // argh! So complicated!
+
+    // probono: git labels
+    // FIXME: Why doesn't this work?
+    // Fm::drawGitEmblem(path, painter, iconPos, opt, file ,iconMode);
+
+    // ======================================= Start ugly code duplication
+
+    // probono: git labels
+    QString mimetype = QString::fromUtf8(fm_mime_type_get_type(fm_mime_type_ref(fm_file_info_get_mime_type(file))));
+    if (mimetype == "inode/directory" && QFileInfo(path + "/.git").exists()) {
+        // Check git status
+        QProcess p;
+        QProcessEnvironment env;
+        env.insert("LANG", "C");
+        p.setProcessEnvironment(env);
+        p.setProgram("git");
+        p.setWorkingDirectory(path);
+        p.setArguments({"status", "-s"});
+        p.start();
+        p.waitForFinished();
+        bool gitHasChanges = p.readAllStandardOutput().length();
+
+        QIcon emblemIcon;
+        emblemIcon = QIcon::fromTheme("emblem-symbolic-git");
+//        if(gitHasChanges) {
+//            emblemIcon = QIcon::fromTheme("emblem-symbolic-git-red");
+//        }
+        QPoint emblemPos = iconPos;
+        emblemPos.setX(emblemPos.x() + opt.decorationSize.width()/4);
+        emblemPos.setY(emblemPos.y() + opt.decorationSize.height()/2.6);
+        if(! gitHasChanges) {
+             painter->setOpacity(0.5);
+        } else {
+            painter->setOpacity(0.1);
+        }
+        painter->drawPixmap(emblemPos, emblemIcon.pixmap(opt.decorationSize / 2, iconMode));
+        painter->setOpacity(1);
+    }
+
+    // ======================================= End ugly code duplication
+
+    // probono: Draw label emblems
     bool ok;
     QString emblem = Fm::getAttributeValueQString(path, "EMBLEM", ok);
     if (ok) {
@@ -137,8 +180,7 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
     }
 
     // draw the text
-    QRectF textRect(opt.rect.x(), opt.rect.y()+3 + opt.decorationSize.height(), opt.rect.width(), opt.rect.height() - opt.decorationSize.height());
-    drawText(painter, opt, textRect);
+    drawText(painter, opt);
     painter->restore();
   }
   else {
@@ -171,48 +213,58 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
   }
 }
 
-// if painter is NULL, the method calculate the bounding rectangle of the text and save it to textRect
-void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItem& opt, QRectF& textRect) const {
-  QTextLayout layout(opt.text, opt.font);
-  QTextOption textOption;
-  textOption.setAlignment(opt.displayAlignment);
-  textOption.setWrapMode(QTextOption::WrapAtWordBoundaryOrAnywhere);
-  textOption.setTextDirection(opt.direction);
-  layout.setTextOption(textOption);
-  qreal height = 0;
-  qreal width = 0;
-  int visibleLines = 0;
-  layout.beginLayout();
-  QString elidedText;
+void FolderItemDelegate::drawText(QPainter* painter, QStyleOptionViewItem& opt) const {
+
+    // Calculate size of textRect
+    int leftAndRightSpace = 20;
+    QRectF textRect(opt.rect.x() + leftAndRightSpace,
+                    opt.rect.y() + 3 + opt.decorationSize.height(),
+                    opt.rect.width() - leftAndRightSpace * 2,
+                    opt.rect.height() - opt.decorationSize.height());
+    QTextLayout layout(opt.text, opt.font);
+
+    QTextOption textOption;
+    textOption.setAlignment(opt.displayAlignment);
+    textOption.setWrapMode(QTextOption::WrapAtWordBoundaryOrAnywhere);
+    textOption.setTextDirection(opt.direction);
+    layout.setTextOption(textOption);
+    qreal height = 0;
+    qreal width = 0;
+    int visibleLines = 0;
+    layout.beginLayout();
+    QString elidedText;
+
   for(;;) {
     QTextLine line = layout.createLine();
     if(!line.isValid())
       break;
     line.setLineWidth(textRect.width());
-    height += opt.fontMetrics.leading();
+    QFontMetrics fontMetrics(opt.font);
+    height += fontMetrics.leading();
     line.setPosition(QPointF(0, height));
-    if((height + line.height() + textRect.y()) > textRect.bottom()) {
-      // if part of this line falls outside the textRect, ignore it and quit.
-      QTextLine lastLine = layout.lineAt(visibleLines - 1);
-      opt.textElideMode = Qt::ElideMiddle; // probono: Put ... in the middle, not at the end so that we can see the suffix
-      elidedText = opt.text.mid(lastLine.textStart());
-      elidedText = opt.fontMetrics.elidedText(elidedText, opt.textElideMode, textRect.width());
-      if(visibleLines == 1) // this is the only visible line
-        width = textRect.width();
-      break;
+    if((height + line.height() + textRect.y()) + 3 > textRect.bottom()) {
+        // if part of this line falls outside the textRect, ignore it and quit.
+        QTextLine lastLine = layout.lineAt(visibleLines - 1);
+        elidedText = opt.text.mid(lastLine.textStart());
+        opt.textElideMode = Qt::ElideMiddle; // probono: Put ... in the middle, not at the end so that we can see the suffix
+        elidedText = fontMetrics.elidedText(elidedText, opt.textElideMode, textRect.width());
+        break;
     }
     height += line.height();
-    width = qMax(width, line.naturalTextWidth());
     ++ visibleLines;
+    width = qMax(width, line.naturalTextWidth());
   }
   layout.endLayout();
 
   // probono: draw background rounded rect for selected item
   QRectF boundRect = layout.boundingRect();
   int additionalSpace = 1;
-  boundRect.setWidth(width + 16*additionalSpace);
-  boundRect.setHeight(boundRect.height() + 2*additionalSpace);
-  boundRect.moveTo(textRect.x() - 8*additionalSpace + (textRect.width() - width)/2, textRect.y() - additionalSpace);
+  boundRect.setWidth(width + 16 * additionalSpace);
+
+  // boundRect.setHeight(boundRect.height() + 2 * additionalSpace); // probono: This was wrong, resulting in some background rounded rects being too high
+  boundRect.setHeight(height + additionalSpace);
+  boundRect.moveTo(textRect.x() - 8*additionalSpace + (textRect.width() - width)/2,
+                   textRect.y() - additionalSpace);
 
   if(!painter) { // no painter, calculate the bounding rect only
     textRect = boundRect;

@@ -20,30 +20,7 @@
       <string>Background</string>
      </property>
      <layout class="QGridLayout" name="gridLayout">
-      <item row="2" column="1" colspan="2">
-       <widget class="QComboBox" name="wallpaperMode">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="label">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="text">
-         <string>Wallpaper mode:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
+      <item row="1" column="0">
        <widget class="QLabel" name="label_6">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
@@ -56,30 +33,36 @@
         </property>
        </widget>
       </item>
-      <item row="5" column="1">
-       <widget class="Fm::ColorButton" name="backgroundColor">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
         <property name="text">
-         <string/>
+         <string>Wallpaper mode:</string>
         </property>
        </widget>
       </item>
-      <item row="5" column="0">
-       <widget class="QLabel" name="label_5">
-        <property name="text">
-         <string>Background color:</string>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="wallpaperMode">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
         </property>
        </widget>
       </item>
-      <item row="4" column="0" colspan="3">
+      <item row="2" column="0" colspan="2">
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
          <widget class="QLineEdit" name="imageFile">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
           <property name="toolTip">
            <string>Image file</string>
           </property>
@@ -106,19 +89,19 @@
    <item>
     <widget class="QGroupBox" name="groupBox">
      <property name="title">
-      <string>Label Text</string>
+      <string>Colors</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_2">
-      <item row="1" column="1">
-       <widget class="Fm::ColorButton" name="textColor">
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_3">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
         <property name="text">
-         <string/>
+         <string>Text color:</string>
         </property>
        </widget>
       </item>
@@ -135,16 +118,16 @@
         </property>
        </widget>
       </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="label_3">
+      <item row="1" column="1">
+       <widget class="Fm::ColorButton" name="textColor">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
         <property name="text">
-         <string>Text color:</string>
+         <string/>
         </property>
        </widget>
       </item>
@@ -162,22 +145,16 @@
        </widget>
       </item>
       <item row="0" column="0">
-       <widget class="QLabel" name="label_2">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
+       <widget class="QLabel" name="label_5">
         <property name="text">
-         <string>Font:</string>
+         <string>Background color:</string>
         </property>
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="Fm::FontButton" name="font">
+       <widget class="Fm::ColorButton" name="backgroundColor">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
@@ -220,11 +197,6 @@
    <class>Fm::ColorButton</class>
    <extends>QPushButton</extends>
    <header>colorbutton.h</header>
-  </customwidget>
-  <customwidget>
-   <class>Fm::FontButton</class>
-   <extends>QPushButton</extends>
-   <header>fontbutton.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

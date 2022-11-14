@@ -34,6 +34,7 @@
 #include <QStorageInfo>
 
 #include "extattrs.h"
+#include "itemdelegatefunctions.h"
 
 using namespace Filer;
 
@@ -50,8 +51,20 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
   QStyleOptionViewItem opt = option;
   initStyleOption(&opt, index);
 
+  /*
+  // Draw shadow
+  // qDebug() << "index:" << index;
+  QPen origPen = painter->pen();
+  QRect shadowRect(QPoint(0, 0), QSize(1600, 33));
+  QLinearGradient linearGradient(0,0,0,33);
+  linearGradient.setColorAt(0.00, QColor::fromRgbF(0, 0, 0, 0.3));
+  linearGradient.setColorAt(0.33, QColor::fromRgbF(0, 0, 0, 0.2));
+  linearGradient.setColorAt(1.00, QColor::fromRgbF(0, 0, 0, 0.0));
+  painter->fillRect(shadowRect,  linearGradient);
+  painter->setPen(origPen);
   painter->save();
   painter->setClipRect(option.rect);
+  */
 
   opt.decorationAlignment = Qt::AlignHCenter | Qt::AlignTop;
   opt.displayAlignment = Qt::AlignTop | Qt::AlignHCenter;
@@ -79,14 +92,13 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
     painter->setRenderHint(QPainter::Antialiasing);
     QPainterPath path = QPainterPath();
     path.addRoundedRect(boundRect, 4, 4);
-    painter->fillPath(path, QColor(196, 196, 196)); // Light gray
+    painter->fillPath(path, QColor::fromRgbF(196, 196, 196, 0.5)); // Light gray, 50% alpha
   }
 
   FmFileInfo* file = static_cast<FmFileInfo*>(index.data(Fm::FolderModel::FileInfoRole).value<void*>());
 
   if(file) {
-      QString mimetype;
-      mimetype = QString::fromUtf8(fm_mime_type_get_type(fm_mime_type_ref(fm_file_info_get_mime_type(file))));
+      QString mimetype = QString::fromUtf8(fm_mime_type_get_type(fm_mime_type_ref(fm_file_info_get_mime_type(file))));
       if (mimetype == "inode/mount-point") {
           // QString path = QString(fm_path_to_str(fm_file_info_get_path(file)));
           // qDebug() << "probono: inode/mount-point, path:" << path;
@@ -118,8 +130,49 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
     }
   }
 
-  // probono: Draw label emblems
   QString path = QString::fromUtf8(fm_path_to_str(fm_file_info_get_path(file))); // argh! So complicated!
+
+  // probono: git labels
+  // FIXME: Why doesn't this work?
+  // Fm::drawGitEmblem(path, painter, iconPos, opt, file ,iconMode);
+
+  // ======================================= Start ugly code duplication
+
+  // probono: git labels
+  QString mimetype = QString::fromUtf8(fm_mime_type_get_type(fm_mime_type_ref(fm_file_info_get_mime_type(file))));
+  if (mimetype == "inode/directory" && QFileInfo(path + "/.git").exists()) {
+      // Check git status
+      QProcess p;
+      QProcessEnvironment env;
+      env.insert("LANG", "C");
+      p.setProcessEnvironment(env);
+      p.setProgram("git");
+      p.setWorkingDirectory(path);
+      p.setArguments({"status", "-s"});
+      p.start();
+      p.waitForFinished();
+      bool gitHasChanges = p.readAllStandardOutput().length();
+
+      QIcon emblemIcon;
+      emblemIcon = QIcon::fromTheme("emblem-symbolic-git");
+//        if(gitHasChanges) {
+//            emblemIcon = QIcon::fromTheme("emblem-symbolic-git-red");
+//        }
+      QPoint emblemPos = iconPos;
+      emblemPos.setX(emblemPos.x() + opt.decorationSize.width()/4);
+      emblemPos.setY(emblemPos.y() + opt.decorationSize.height()/2.6);
+      if(! gitHasChanges) {
+           painter->setOpacity(0.5);
+      } else {
+          painter->setOpacity(0.1);
+      }
+      painter->drawPixmap(emblemPos, emblemIcon.pixmap(opt.decorationSize / 2, iconMode));
+      painter->setOpacity(1);
+  }
+
+  // ======================================= End ugly code duplication
+
+  // probono: Draw label emblems
   bool ok;
   QString emblem = Fm::getAttributeValueQString(path, "EMBLEM", ok);
   if (ok) {
@@ -128,9 +181,15 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
       painter->drawPixmap(emblemIconPos, emblemIcon.pixmap(opt.decorationSize / 2, iconMode));
   }
 
-  // draw text
-  QRectF textRect(opt.rect.x(), opt.rect.y()+3 + opt.decorationSize.height(), opt.rect.width(), opt.rect.height() - opt.decorationSize.height());
-  QTextLayout layout(opt.text, font_);
+  // Calculate size of textRect
+  int leftAndRightSpace = 20;
+  QRectF textRect(opt.rect.x() + leftAndRightSpace,
+                  opt.rect.y() + 3 + opt.decorationSize.height(),
+                  opt.rect.width() - leftAndRightSpace * 2,
+                  opt.rect.height() - opt.decorationSize.height());
+  QFont desktopFont = opt.font;
+  desktopFont.setBold(true);
+  QTextLayout layout(opt.text, desktopFont);
 
   QTextOption textOption;
   textOption.setAlignment(opt.displayAlignment);
@@ -148,34 +207,36 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
     if(!line.isValid())
       break;
     line.setLineWidth(textRect.width());
-    QFontMetrics fontMetrics(font_);
+    QFontMetrics fontMetrics(desktopFont);
     height += fontMetrics.leading();
     line.setPosition(QPointF(0, height));
-    if((height + line.height() + textRect.y()) > textRect.bottom()) {
-      // if part of this line falls outside the textRect, ignore it and quit.
-      QTextLine lastLine = layout.lineAt(visibleLines - 1);
-      elidedText = opt.text.mid(lastLine.textStart());
-      opt.textElideMode = Qt::ElideMiddle; // probono: Put ... in the middle, not at the end so that we can see the suffix
-      elidedText = fontMetrics.elidedText(elidedText, opt.textElideMode, textRect.width());
-      break;
+    if((height + line.height() + textRect.y()) + 3 > textRect.bottom()) {
+        // if part of this line falls outside the textRect, ignore it and quit.
+        QTextLine lastLine = layout.lineAt(visibleLines - 1);
+        elidedText = opt.text.mid(lastLine.textStart());
+        opt.textElideMode = Qt::ElideMiddle; // probono: Put ... in the middle, not at the end so that we can see the suffix
+        elidedText = fontMetrics.elidedText(elidedText, opt.textElideMode, textRect.width());
+        break;
     }
     height += line.height();
-    width = qMax(width, line.naturalTextWidth());
     ++ visibleLines;
+    width = qMax(width, line.naturalTextWidth());
   }
   layout.endLayout();
 
   // probono: draw background rounded rect for selected item
   QRectF boundRect = layout.boundingRect();
   int additionalSpace = 1;
-  boundRect.setWidth(width + 16*additionalSpace);
-  boundRect.setHeight(boundRect.height() + 2*additionalSpace);
-  boundRect.moveTo(textRect.x() - 8*additionalSpace + (textRect.width() - width)/2, textRect.y() - additionalSpace);
+  boundRect.setWidth(width + 16 * additionalSpace);
+
+  // boundRect.setHeight(boundRect.height() + 2 * additionalSpace); // probono: This was wrong, resulting in some background rounded rects being too high
+  boundRect.setHeight(height + additionalSpace);
+  boundRect.moveTo(textRect.x() - 8*additionalSpace + (textRect.width() - width)/2,
+                   textRect.y() - additionalSpace);
 
   if((opt.state & QStyle::State_Selected) && opt.widget) {
-    QPalette palette = opt.widget->palette();
     // qDebug("w: %f, h:%f, m:%f", boundRect.width(), boundRect.height(), layout.minimumWidth());
-    painter->setFont(font_);
+    painter->setFont(desktopFont);
     // painter->fillRect(boundRect, opt.palette.highlight());
     painter->setRenderHint(QPainter::Antialiasing);
     QPainterPath path = QPainterPath();
@@ -191,7 +252,7 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
       QTextLine line = layout.lineAt(i);
       if(i == (visibleLines - 1) && !elidedText.isEmpty()) { // the last line, draw elided text
         QPointF pos(textRect.x() + line.position().x() + 1, textRect.y() + line.y() + line.ascent() + 1);
-        painter->setFont(font_);
+        painter->setFont(desktopFont);
         painter->drawText(pos, elidedText);
       }
       else {
@@ -219,7 +280,7 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
   if(opt.state & QStyle::State_HasFocus) {
     // FIXME: draw focus rect
   }
-  painter->restore();
+  // painter->restore();
 }
 
 QSize DesktopItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QModelIndex& index) const {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ka">
+<TS version="2.1" language="ka_GE">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -28,6 +28,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../about.ui" line="90"/>
+        <location filename="../../build/src/ui_about.h" line="153"/>
+        <source>Authors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../about.ui" line="99"/>
         <location filename="../../build/src/ui_about.h" line="146"/>
         <source>Programming:
@@ -37,6 +43,12 @@
 
 Application icon:
 * Raphael Lopes (https://raphaellopes.me/)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../about.ui" line="116"/>
+        <location filename="../../build/src/ui_about.h" line="184"/>
+        <source>License</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -71,18 +83,6 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
 Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
 
 Used with permission of the creator https://raphaellopes.me/</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../about.ui" line="90"/>
-        <location filename="../../build/src/ui_about.h" line="153"/>
-        <source>Authors</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../about.ui" line="116"/>
-        <location filename="../../build/src/ui_about.h" line="184"/>
-        <source>License</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -225,74 +225,68 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <name>DesktopPreferencesDialog</name>
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="205"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="186"/>
         <source>Desktop Preferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="20"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="206"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="187"/>
         <source>Background</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="42"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="207"/>
+        <location filename="../desktop-preferences.ui" line="45"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="189"/>
         <source>Wallpaper mode:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="55"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="208"/>
+        <location filename="../desktop-preferences.ui" line="32"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="188"/>
         <source>Wallpaper image file:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="75"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="210"/>
+        <location filename="../desktop-preferences.ui" line="92"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
+        <source>Colors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="150"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="203"/>
         <source>Background color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="147"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="222"/>
-        <source>Text color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../desktop-preferences.ui" line="160"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="223"/>
-        <source>Shadow color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../desktop-preferences.ui" line="173"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="224"/>
-        <source>Font:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../desktop-preferences.ui" line="84"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="212"/>
+        <location filename="../desktop-preferences.ui" line="67"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="191"/>
         <source>Image file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="90"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="217"/>
+        <location filename="../desktop-preferences.ui" line="73"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="196"/>
         <source>Image file path</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="97"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="218"/>
+        <location filename="../desktop-preferences.ui" line="80"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="197"/>
         <source>&amp;Browse</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="109"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="219"/>
-        <source>Label Text</source>
+        <location filename="../desktop-preferences.ui" line="104"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="199"/>
+        <source>Text color:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="143"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="202"/>
+        <source>Shadow color:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -404,9 +398,39 @@ Used with permission of the creator https://raphaellopes.me/</source>
 <context>
     <name>FilePropsDialog</name>
     <message>
+        <location filename="../file-props.ui" line="20"/>
+        <location filename="../../build/src/ui_file-props.h" line="362"/>
+        <source>Info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../file-props.ui" line="60"/>
+        <location filename="../../build/src/ui_file-props.h" line="363"/>
+        <source>TextLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../file-props.ui" line="133"/>
         <location filename="../../build/src/ui_file-props.h" line="365"/>
         <source>General</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../file-props.ui" line="139"/>
+        <location filename="../../build/src/ui_file-props.h" line="366"/>
+        <source>File type:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../file-props.ui" line="162"/>
+        <location filename="../../build/src/ui_file-props.h" line="368"/>
+        <source>File size:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../file-props.ui" line="185"/>
+        <location filename="../../build/src/ui_file-props.h" line="370"/>
+        <source>On-disk size:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -416,9 +440,21 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="139"/>
-        <location filename="../../build/src/ui_file-props.h" line="366"/>
-        <source>File type:</source>
+        <location filename="../file-props.ui" line="234"/>
+        <location filename="../../build/src/ui_file-props.h" line="374"/>
+        <source>Link target:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../file-props.ui" line="260"/>
+        <location filename="../../build/src/ui_file-props.h" line="376"/>
+        <source>Last modified:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../file-props.ui" line="283"/>
+        <location filename="../../build/src/ui_file-props.h" line="378"/>
+        <source>Last accessed:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -434,63 +470,21 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="162"/>
-        <location filename="../../build/src/ui_file-props.h" line="368"/>
-        <source>File size:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../file-props.ui" line="20"/>
-        <location filename="../../build/src/ui_file-props.h" line="362"/>
-        <source>Info</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../file-props.ui" line="60"/>
-        <location filename="../../build/src/ui_file-props.h" line="363"/>
-        <source>TextLabel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../file-props.ui" line="185"/>
-        <location filename="../../build/src/ui_file-props.h" line="370"/>
-        <source>On-disk size:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../file-props.ui" line="260"/>
-        <location filename="../../build/src/ui_file-props.h" line="376"/>
-        <source>Last modified:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../file-props.ui" line="423"/>
-        <location filename="../../build/src/ui_file-props.h" line="385"/>
-        <source>Everyone</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../file-props.ui" line="234"/>
-        <location filename="../../build/src/ui_file-props.h" line="374"/>
-        <source>Link target:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../file-props.ui" line="346"/>
         <location filename="../../build/src/ui_file-props.h" line="383"/>
         <source>Open With:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../file-props.ui" line="283"/>
-        <location filename="../../build/src/ui_file-props.h" line="378"/>
-        <source>Last accessed:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../file-props.ui" line="380"/>
         <location filename="../../build/src/ui_file-props.h" line="384"/>
         <source>Access Control</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../file-props.ui" line="423"/>
+        <location filename="../../build/src/ui_file-props.h" line="385"/>
+        <source>Everyone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -665,7 +659,7 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="145"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="140"/>
         <source>Image Files</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1057,6 +1051,16 @@ What do you want to do with it?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../filemenu.cpp" line="99"/>
+        <source>Show Contents</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../filemenu.cpp" line="128"/>
+        <source>&amp;Restore</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../filemenu.cpp" line="136"/>
         <source>Open With...</source>
         <translation type="unfinished"></translation>
@@ -1069,16 +1073,6 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="170"/>
         <source>Create &amp;New</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../filemenu.cpp" line="128"/>
-        <source>&amp;Restore</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../filemenu.cpp" line="99"/>
-        <source>Show Contents</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1426,6 +1420,11 @@ Do you want to delete them instead?</source>
 <context>
     <name>Fm::PlacesModel</name>
     <message>
+        <location filename="../placesmodel.cpp" line="40"/>
+        <source>Devices</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../placesmodel.cpp" line="82"/>
         <source>Places</source>
         <translation type="unfinished"></translation>
@@ -1438,11 +1437,6 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesmodel.cpp" line="98"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../placesmodel.cpp" line="40"/>
-        <source>Devices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1572,6 +1566,72 @@ Modified: %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../main-win.ui" line="93"/>
+        <location filename="../../build/src/ui_main-win.h" line="800"/>
+        <source>Filter by string...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="117"/>
+        <location filename="../../build/src/ui_main-win.h" line="801"/>
+        <source>&amp;File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="121"/>
+        <location filename="../../build/src/ui_main-win.h" line="802"/>
+        <source>C&amp;reate New</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="140"/>
+        <location filename="../../build/src/ui_main-win.h" line="803"/>
+        <source>&amp;Help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="146"/>
+        <location filename="../../build/src/ui_main-win.h" line="804"/>
+        <source>&amp;View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="150"/>
+        <location filename="../../build/src/ui_main-win.h" line="805"/>
+        <source>&amp;Sorting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="176"/>
+        <location filename="../../build/src/ui_main-win.h" line="806"/>
+        <source>&amp;Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="194"/>
+        <location filename="../../build/src/ui_main-win.h" line="807"/>
+        <source>&amp;Bookmarks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="201"/>
+        <location filename="../../build/src/ui_main-win.h" line="808"/>
+        <source>&amp;Go</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="222"/>
+        <location filename="../../build/src/ui_main-win.h" line="809"/>
+        <source>&amp;Tool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="239"/>
+        <location filename="../../build/src/ui_main-win.h" line="810"/>
+        <source>Main Toolbar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../main-win.ui" line="271"/>
         <location filename="../../build/src/ui_main-win.h" line="603"/>
         <source>Go &amp;Up</source>
@@ -1584,15 +1644,33 @@ Modified: %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../main-win.ui" line="277"/>
+        <location filename="../../build/src/ui_main-win.h" line="608"/>
+        <source>Ctrl+Up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../main-win.ui" line="286"/>
         <location filename="../../build/src/ui_main-win.h" line="610"/>
         <source>&amp;Home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../main-win.ui" line="289"/>
+        <location filename="../../build/src/ui_main-win.h" line="612"/>
+        <source>Ctrl+Shift+H</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../main-win.ui" line="298"/>
         <location filename="../../build/src/ui_main-win.h" line="614"/>
         <source>&amp;Reload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="301"/>
+        <location filename="../../build/src/ui_main-win.h" line="616"/>
+        <source>Ctrl+Shift+R</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1605,6 +1683,12 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="325"/>
         <location filename="../../build/src/ui_main-win.h" line="619"/>
         <source>Quit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="334"/>
+        <location filename="../../build/src/ui_main-win.h" line="620"/>
+        <source>&amp;About Filer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1659,6 +1743,14 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="386"/>
         <location filename="../../build/src/ui_main-win.h" line="637"/>
         <source>&amp;Network</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="389"/>
+        <location filename="../main-win.ui" line="726"/>
+        <location filename="../../build/src/ui_main-win.h" line="639"/>
+        <location filename="../../build/src/ui_main-win.h" line="738"/>
+        <source>Ctrl+Shift+N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1836,6 +1928,68 @@ Modified: %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../main-win.ui" line="581"/>
+        <location filename="../../build/src/ui_main-win.h" line="688"/>
+        <source>New &amp;Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="584"/>
+        <location filename="../../build/src/ui_main-win.h" line="690"/>
+        <source>New Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="587"/>
+        <location filename="../main-win.ui" line="704"/>
+        <location filename="../../build/src/ui_main-win.h" line="693"/>
+        <location filename="../../build/src/ui_main-win.h" line="732"/>
+        <source>Ctrl+T</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="599"/>
+        <location filename="../../build/src/ui_main-win.h" line="695"/>
+        <source>Go &amp;Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="602"/>
+        <location filename="../../build/src/ui_main-win.h" line="697"/>
+        <source>Go Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="605"/>
+        <location filename="../../build/src/ui_main-win.h" line="700"/>
+        <source>Alt+Left</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="614"/>
+        <location filename="../../build/src/ui_main-win.h" line="702"/>
+        <source>Go &amp;Forward</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="617"/>
+        <location filename="../../build/src/ui_main-win.h" line="704"/>
+        <source>Go Forward</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="620"/>
+        <location filename="../../build/src/ui_main-win.h" line="707"/>
+        <source>Alt+Right</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="634"/>
+        <location filename="../../build/src/ui_main-win.h" line="709"/>
+        <source>&amp;Invert Selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../main-win.ui" line="643"/>
         <location filename="../../build/src/ui_main-win.h" line="710"/>
         <source>&amp;Move to Trash</source>
@@ -1845,6 +1999,24 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="646"/>
         <location filename="../../build/src/ui_main-win.h" line="712"/>
         <source>Ctrl+Backspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="651"/>
+        <location filename="../../build/src/ui_main-win.h" line="714"/>
+        <source>&amp;Rename</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="654"/>
+        <location filename="../../build/src/ui_main-win.h" line="716"/>
+        <source>F2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="659"/>
+        <location filename="../../build/src/ui_main-win.h" line="718"/>
+        <source>C&amp;lose Tab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1878,6 +2050,36 @@ Modified: %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../main-win.ui" line="691"/>
+        <location filename="../../build/src/ui_main-win.h" line="727"/>
+        <source>Ctrl+W</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="696"/>
+        <location filename="../../build/src/ui_main-win.h" line="729"/>
+        <source>Edit Bookmarks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="701"/>
+        <location filename="../../build/src/ui_main-win.h" line="730"/>
+        <source>Open &amp;Terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="709"/>
+        <location filename="../../build/src/ui_main-win.h" line="734"/>
+        <source>Open as &amp;Root</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="714"/>
+        <location filename="../../build/src/ui_main-win.h" line="735"/>
+        <source>&amp;Edit Bookmarks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../main-win.ui" line="723"/>
         <location filename="../../build/src/ui_main-win.h" line="736"/>
         <source>&amp;Folder</source>
@@ -1890,9 +2092,27 @@ Modified: %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../main-win.ui" line="738"/>
+        <location filename="../../build/src/ui_main-win.h" line="742"/>
+        <source>Ctrl+Alt+N</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="743"/>
+        <location filename="../../build/src/ui_main-win.h" line="744"/>
+        <source>&amp;Find Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../main-win.ui" line="746"/>
         <location filename="../../build/src/ui_main-win.h" line="746"/>
         <source>Ctrl+F</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../main-win.ui" line="754"/>
+        <location filename="../../build/src/ui_main-win.h" line="748"/>
+        <source>Filter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2029,232 +2249,6 @@ Modified: %3</source>
         <source>Ctrl+Shift+Up</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <location filename="../main-win.ui" line="581"/>
-        <location filename="../../build/src/ui_main-win.h" line="688"/>
-        <source>New &amp;Tab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="277"/>
-        <location filename="../../build/src/ui_main-win.h" line="608"/>
-        <source>Ctrl+Up</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="289"/>
-        <location filename="../../build/src/ui_main-win.h" line="612"/>
-        <source>Ctrl+Shift+H</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="301"/>
-        <location filename="../../build/src/ui_main-win.h" line="616"/>
-        <source>Ctrl+Shift+R</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="334"/>
-        <location filename="../../build/src/ui_main-win.h" line="620"/>
-        <source>&amp;About Filer</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="584"/>
-        <location filename="../../build/src/ui_main-win.h" line="690"/>
-        <source>New Tab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="587"/>
-        <location filename="../main-win.ui" line="704"/>
-        <location filename="../../build/src/ui_main-win.h" line="693"/>
-        <location filename="../../build/src/ui_main-win.h" line="732"/>
-        <source>Ctrl+T</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="599"/>
-        <location filename="../../build/src/ui_main-win.h" line="695"/>
-        <source>Go &amp;Back</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="602"/>
-        <location filename="../../build/src/ui_main-win.h" line="697"/>
-        <source>Go Back</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="605"/>
-        <location filename="../../build/src/ui_main-win.h" line="700"/>
-        <source>Alt+Left</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="614"/>
-        <location filename="../../build/src/ui_main-win.h" line="702"/>
-        <source>Go &amp;Forward</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="617"/>
-        <location filename="../../build/src/ui_main-win.h" line="704"/>
-        <source>Go Forward</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="620"/>
-        <location filename="../../build/src/ui_main-win.h" line="707"/>
-        <source>Alt+Right</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="634"/>
-        <location filename="../../build/src/ui_main-win.h" line="709"/>
-        <source>&amp;Invert Selection</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="651"/>
-        <location filename="../../build/src/ui_main-win.h" line="714"/>
-        <source>&amp;Rename</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="654"/>
-        <location filename="../../build/src/ui_main-win.h" line="716"/>
-        <source>F2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="659"/>
-        <location filename="../../build/src/ui_main-win.h" line="718"/>
-        <source>C&amp;lose Tab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="691"/>
-        <location filename="../../build/src/ui_main-win.h" line="727"/>
-        <source>Ctrl+W</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="696"/>
-        <location filename="../../build/src/ui_main-win.h" line="729"/>
-        <source>Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="701"/>
-        <location filename="../../build/src/ui_main-win.h" line="730"/>
-        <source>Open &amp;Terminal</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="709"/>
-        <location filename="../../build/src/ui_main-win.h" line="734"/>
-        <source>Open as &amp;Root</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="714"/>
-        <location filename="../../build/src/ui_main-win.h" line="735"/>
-        <source>&amp;Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="389"/>
-        <location filename="../main-win.ui" line="726"/>
-        <location filename="../../build/src/ui_main-win.h" line="639"/>
-        <location filename="../../build/src/ui_main-win.h" line="738"/>
-        <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="738"/>
-        <location filename="../../build/src/ui_main-win.h" line="742"/>
-        <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="743"/>
-        <location filename="../../build/src/ui_main-win.h" line="744"/>
-        <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="754"/>
-        <location filename="../../build/src/ui_main-win.h" line="748"/>
-        <source>Filter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="93"/>
-        <location filename="../../build/src/ui_main-win.h" line="800"/>
-        <source>Filter by string...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="117"/>
-        <location filename="../../build/src/ui_main-win.h" line="801"/>
-        <source>&amp;File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="121"/>
-        <location filename="../../build/src/ui_main-win.h" line="802"/>
-        <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="140"/>
-        <location filename="../../build/src/ui_main-win.h" line="803"/>
-        <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="146"/>
-        <location filename="../../build/src/ui_main-win.h" line="804"/>
-        <source>&amp;View</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="150"/>
-        <location filename="../../build/src/ui_main-win.h" line="805"/>
-        <source>&amp;Sorting</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="176"/>
-        <location filename="../../build/src/ui_main-win.h" line="806"/>
-        <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="194"/>
-        <location filename="../../build/src/ui_main-win.h" line="807"/>
-        <source>&amp;Bookmarks</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="201"/>
-        <location filename="../../build/src/ui_main-win.h" line="808"/>
-        <source>&amp;Go</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="222"/>
-        <location filename="../../build/src/ui_main-win.h" line="809"/>
-        <source>&amp;Tool</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../main-win.ui" line="239"/>
-        <location filename="../../build/src/ui_main-win.h" line="810"/>
-        <source>Main Toolbar</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>MountOperationPasswordDialog</name>
@@ -2322,15 +2316,21 @@ Modified: %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="45"/>
-        <location filename="../../build/src/ui_preferences.h" line="650"/>
-        <source>User Interface</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../preferences.ui" line="35"/>
         <location filename="../../build/src/ui_preferences.h" line="646"/>
         <source>Behavior</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="40"/>
+        <location filename="../../build/src/ui_preferences.h" line="648"/>
+        <source>Display</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="45"/>
+        <location filename="../../build/src/ui_preferences.h" line="650"/>
+        <source>User Interface</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2348,6 +2348,18 @@ Modified: %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../preferences.ui" line="76"/>
+        <location filename="../../build/src/ui_preferences.h" line="657"/>
+        <source>Browsing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="82"/>
+        <location filename="../../build/src/ui_preferences.h" line="658"/>
+        <source>Default view mode:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../preferences.ui" line="92"/>
         <location filename="../../build/src/ui_preferences.h" line="659"/>
         <source>Save metadata to directories (.DirInfo files)</source>
@@ -2360,9 +2372,45 @@ Modified: %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../preferences.ui" line="112"/>
+        <location filename="../../build/src/ui_preferences.h" line="661"/>
+        <source>File Operations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="118"/>
+        <location filename="../../build/src/ui_preferences.h" line="662"/>
+        <source>Confirm before deleting files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="125"/>
+        <location filename="../../build/src/ui_preferences.h" line="663"/>
+        <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="132"/>
+        <location filename="../../build/src/ui_preferences.h" line="664"/>
+        <source>Confirm before moving files into &quot;trash can&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="139"/>
+        <location filename="../../build/src/ui_preferences.h" line="665"/>
+        <source>Don&apos;t ask options on launch executable file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../preferences.ui" line="166"/>
         <location filename="../../build/src/ui_preferences.h" line="666"/>
         <source>Icons</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="178"/>
+        <location filename="../../build/src/ui_preferences.h" line="667"/>
+        <source>Icon theme:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2390,9 +2438,33 @@ Modified: %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="178"/>
-        <location filename="../../build/src/ui_preferences.h" line="667"/>
-        <source>Icon theme:</source>
+        <location filename="../preferences.ui" line="238"/>
+        <location filename="../../build/src/ui_preferences.h" line="672"/>
+        <source>User interface</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="244"/>
+        <location filename="../../build/src/ui_preferences.h" line="673"/>
+        <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="251"/>
+        <location filename="../../build/src/ui_preferences.h" line="674"/>
+        <source>Treat backup files as hidden</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="261"/>
+        <location filename="../../build/src/ui_preferences.h" line="675"/>
+        <source>Always show full file names</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="271"/>
+        <location filename="../../build/src/ui_preferences.h" line="676"/>
+        <source>Show icons of hidden files shadowed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2417,90 +2489,6 @@ Modified: %3</source>
         <location filename="../preferences.ui" line="328"/>
         <location filename="../../build/src/ui_preferences.h" line="680"/>
         <source>Default height of new windows:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="76"/>
-        <location filename="../../build/src/ui_preferences.h" line="657"/>
-        <source>Browsing</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="82"/>
-        <location filename="../../build/src/ui_preferences.h" line="658"/>
-        <source>Default view mode:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="112"/>
-        <location filename="../../build/src/ui_preferences.h" line="661"/>
-        <source>File Operations</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="118"/>
-        <location filename="../../build/src/ui_preferences.h" line="662"/>
-        <source>Confirm before deleting files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="481"/>
-        <location filename="../../build/src/ui_preferences.h" line="705"/>
-        <source>Show thumbnails of files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="474"/>
-        <location filename="../../build/src/ui_preferences.h" line="704"/>
-        <source>Only show thumbnails for local files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="40"/>
-        <location filename="../../build/src/ui_preferences.h" line="648"/>
-        <source>Display</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="125"/>
-        <location filename="../../build/src/ui_preferences.h" line="663"/>
-        <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="132"/>
-        <location filename="../../build/src/ui_preferences.h" line="664"/>
-        <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="139"/>
-        <location filename="../../build/src/ui_preferences.h" line="665"/>
-        <source>Don&apos;t ask options on launch executable file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="238"/>
-        <location filename="../../build/src/ui_preferences.h" line="672"/>
-        <source>User interface</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="251"/>
-        <location filename="../../build/src/ui_preferences.h" line="674"/>
-        <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="261"/>
-        <location filename="../../build/src/ui_preferences.h" line="675"/>
-        <source>Always show full file names</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="271"/>
-        <location filename="../../build/src/ui_preferences.h" line="676"/>
-        <source>Show icons of hidden files shadowed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2564,45 +2552,15 @@ Modified: %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="605"/>
-        <location filename="../../build/src/ui_preferences.h" line="715"/>
-        <source>Auto Mount</source>
+        <location filename="../preferences.ui" line="474"/>
+        <location filename="../../build/src/ui_preferences.h" line="704"/>
+        <source>Only show thumbnails for local files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="611"/>
-        <location filename="../../build/src/ui_preferences.h" line="716"/>
-        <source>Mount mountable volumes automatically on program startup</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="618"/>
-        <location filename="../../build/src/ui_preferences.h" line="717"/>
-        <source>Mount removable media automatically when they are inserted</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="625"/>
-        <location filename="../../build/src/ui_preferences.h" line="718"/>
-        <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="635"/>
-        <location filename="../../build/src/ui_preferences.h" line="719"/>
-        <source>When removable medium unmounted:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="641"/>
-        <location filename="../../build/src/ui_preferences.h" line="720"/>
-        <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../preferences.ui" line="648"/>
-        <location filename="../../build/src/ui_preferences.h" line="721"/>
-        <source>Chan&amp;ge folder in the tab to home folder</source>
+        <location filename="../preferences.ui" line="481"/>
+        <location filename="../../build/src/ui_preferences.h" line="705"/>
+        <source>Show thumbnails of files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2655,19 +2613,50 @@ Modified: %3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="244"/>
-        <location filename="../../build/src/ui_preferences.h" line="673"/>
-        <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
+        <location filename="../preferences.ui" line="605"/>
+        <location filename="../../build/src/ui_preferences.h" line="715"/>
+        <source>Auto Mount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="611"/>
+        <location filename="../../build/src/ui_preferences.h" line="716"/>
+        <source>Mount mountable volumes automatically on program startup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="618"/>
+        <location filename="../../build/src/ui_preferences.h" line="717"/>
+        <source>Mount removable media automatically when they are inserted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="625"/>
+        <location filename="../../build/src/ui_preferences.h" line="718"/>
+        <source>Show available options for removable media when they are inserted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="635"/>
+        <location filename="../../build/src/ui_preferences.h" line="719"/>
+        <source>When removable medium unmounted:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="641"/>
+        <location filename="../../build/src/ui_preferences.h" line="720"/>
+        <source>Close &amp;tab containing removable medium</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="648"/>
+        <location filename="../../build/src/ui_preferences.h" line="721"/>
+        <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
-    <message>
-        <location filename="../utilities.cpp" line="128"/>
-        <source>Please enter a new name:</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <location filename="../filelauncher.cpp" line="162"/>
         <location filename="../mountoperation.cpp" line="185"/>
@@ -2680,6 +2669,11 @@ Modified: %3</source>
     <message>
         <location filename="../utilities.cpp" line="127"/>
         <source>Rename</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../utilities.cpp" line="128"/>
+        <source>Please enter a new name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -45,7 +45,7 @@ public:
   virtual void paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const;
 
 private:
-  void drawText(QPainter* painter, QStyleOptionViewItem& opt, QRectF& textRect) const;
+  void drawText(QPainter* painter, QStyleOptionViewItem& opt) const;
   static QIcon::Mode iconModeFromState(QStyle::State state);
 
 private:

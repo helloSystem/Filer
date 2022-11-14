@@ -182,10 +182,6 @@ bool Settings::loadFile(QString filePath) {
   desktopBgColor_.setNamedColor(settings.value("BgColor", "#4e7fb4").toString());
   desktopFgColor_.setNamedColor(settings.value("FgColor", "#ffffff").toString());
   desktopShadowColor_.setNamedColor(settings.value("ShadowColor", "#000000").toString());
-  if(settings.contains("Font"))
-    desktopFont_.fromString(settings.value("Font").toString());
-  else
-    desktopFont_ = QApplication::font();
   desktopShowHidden_ = settings.value("ShowHidden", false).toBool();
 
   desktopSortOrder_ = sortOrderFromString(settings.value("SortOrder").toString());
@@ -277,7 +273,6 @@ bool Settings::saveFile(QString filePath) {
   settings.setValue("BgColor", desktopBgColor_.name());
   settings.setValue("FgColor", desktopFgColor_.name());
   settings.setValue("ShadowColor", desktopShadowColor_.name());
-  settings.setValue("Font", desktopFont_.toString());
   settings.setValue("ShowHidden", desktopShowHidden_);
   settings.setValue("SortOrder", sortOrderToString(desktopSortOrder_));
   settings.setValue("SortColumn", sortColumnToString(desktopSortColumn_));

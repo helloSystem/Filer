@@ -231,74 +231,68 @@ Application icon:
     <name>DesktopPreferencesDialog</name>
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="205"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="186"/>
         <source>Desktop Preferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="20"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="206"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="187"/>
         <source>Background</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="42"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="207"/>
+        <location filename="../desktop-preferences.ui" line="45"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="189"/>
         <source>Wallpaper mode:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="55"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="208"/>
+        <location filename="../desktop-preferences.ui" line="32"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="188"/>
         <source>Wallpaper image file:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="75"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="210"/>
+        <location filename="../desktop-preferences.ui" line="92"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
+        <source>Colors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="150"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="203"/>
         <source>Background color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="147"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="222"/>
+        <location filename="../desktop-preferences.ui" line="104"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="199"/>
         <source>Text color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="160"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="223"/>
+        <location filename="../desktop-preferences.ui" line="143"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="202"/>
         <source>Shadow color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="173"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="224"/>
-        <source>Font:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../desktop-preferences.ui" line="84"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="212"/>
+        <location filename="../desktop-preferences.ui" line="67"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="191"/>
         <source>Image file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="90"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="217"/>
+        <location filename="../desktop-preferences.ui" line="73"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="196"/>
         <source>Image file path</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="97"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="218"/>
+        <location filename="../desktop-preferences.ui" line="80"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="197"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../desktop-preferences.ui" line="109"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="219"/>
-        <source>Label Text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -715,7 +709,7 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="145"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="140"/>
         <source>Image Files</source>
         <translation type="unfinished"></translation>
     </message>

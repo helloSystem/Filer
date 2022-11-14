@@ -333,50 +333,50 @@ GNU 一般公衆利用許諾契約書の複製物を1部
     <name>DesktopPreferencesDialog</name>
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="205"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="186"/>
         <source>Desktop Preferences</source>
         <translation>デスクトップの設定</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="20"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="206"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="187"/>
         <source>Background</source>
         <translation>背景</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="42"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="207"/>
+        <location filename="../desktop-preferences.ui" line="45"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="189"/>
         <source>Wallpaper mode:</source>
         <translation>壁紙のモード:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="55"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="208"/>
+        <location filename="../desktop-preferences.ui" line="32"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="188"/>
         <source>Wallpaper image file:</source>
         <translation>壁紙の画像ファイル:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="75"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="210"/>
+        <location filename="../desktop-preferences.ui" line="92"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
+        <source>Colors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../desktop-preferences.ui" line="150"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="203"/>
         <source>Background color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="147"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="222"/>
+        <location filename="../desktop-preferences.ui" line="104"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="199"/>
         <source>Text color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="160"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="223"/>
+        <location filename="../desktop-preferences.ui" line="143"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="202"/>
         <source>Shadow color:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../desktop-preferences.ui" line="173"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="224"/>
-        <source>Font:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -384,28 +384,26 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <translation type="vanished">背景色を選択:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="84"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="212"/>
+        <location filename="../desktop-preferences.ui" line="67"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="191"/>
         <source>Image file</source>
         <translation>画像ファイル</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="90"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="217"/>
+        <location filename="../desktop-preferences.ui" line="73"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="196"/>
         <source>Image file path</source>
         <translation>画像ファイルのパス</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="97"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="218"/>
+        <location filename="../desktop-preferences.ui" line="80"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="197"/>
         <source>&amp;Browse</source>
         <translation>参照(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="109"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="219"/>
         <source>Label Text</source>
-        <translation>ラベルテキスト</translation>
+        <translation type="vanished">ラベルテキスト</translation>
     </message>
     <message>
         <source>Select  text color:</source>
@@ -861,7 +859,7 @@ Functionality may be broken.</source>
         <translation>画面全体に並べる</translation>
     </message>
     <message>
-        <location filename="../desktoppreferencesdialog.cpp" line="145"/>
+        <location filename="../desktoppreferencesdialog.cpp" line="140"/>
         <source>Image Files</source>
         <translation>画像ファイル</translation>
     </message>
