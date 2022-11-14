@@ -355,20 +355,6 @@ int execModelessDialog(QDialog* dlg) {
   return dlg->result();
 }
 
-// check if GVFS can support this uri scheme (lower case)
-// NOTE: this does not work reliably due to some problems in gio/gvfs and causes bug lxde/lxqt#512
-// https://github.com/lxde/lxqt/issues/512
-// Use uriExists() whenever possible.
-bool isUriSchemeSupported(const char* uriScheme) {
-  const gchar * const * schemes = g_vfs_get_supported_uri_schemes(g_vfs_get_default());
-  if(Q_UNLIKELY(schemes == NULL))
-    return false;
-  for(const gchar * const * scheme = schemes; *scheme; ++scheme)
-    if(strcmp(uriScheme, *scheme) == 0)
-      return true;
-  return false;
-}
-
 // check if the URI exists.
 // NOTE: this is a blocking call possibly involving I/O.
 // So it's better to use it in limited cases, like checking trash:// or computer://.
