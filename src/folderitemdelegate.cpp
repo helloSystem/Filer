@@ -159,7 +159,7 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
         QPoint emblemPos = iconPos;
         emblemPos.setX(emblemPos.x() + opt.decorationSize.width()/4);
         emblemPos.setY(emblemPos.y() + opt.decorationSize.height()/2.6);
-        if(! gitHasChanges) {
+        if(gitHasChanges) {
              painter->setOpacity(0.5);
         } else {
             painter->setOpacity(0.1);
