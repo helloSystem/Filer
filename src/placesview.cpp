@@ -29,6 +29,7 @@
 #include <QHeaderView>
 #include <QDebug>
 #include <QGuiApplication>
+#include <QStandardPaths>
 #include "application.h"
 
 using namespace Fm;
@@ -358,11 +359,14 @@ void PlacesView::contextMenuEvent(QContextMenuEvent* event) {
     switch(item->type()) {
       case PlacesModelItem::Places: {
         FmPath* path = item->path();
-        if(path && fm_path_equal(fm_path_get_trash(), path)) {
+        FmPath* trashPath;
+        trashPath = fm_path_new_for_str(QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/Trash/files").toUtf8());
+        if(path && fm_path_equal(trashPath, path)) {
           action = new PlacesModel::ItemAction(item->index(), tr("Empty Trash"), menu);
           connect(action, &QAction::triggered, this, &Fm::Trash::emptyTrash);
           menu->addAction(action);
         }
+        fm_path_unref(trashPath);
         break;
       }
       case PlacesModelItem::Bookmark: {

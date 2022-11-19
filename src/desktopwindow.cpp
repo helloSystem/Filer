@@ -1050,7 +1050,11 @@ void DesktopWindow::onOpenFolderAndSelectItems(QString folder, QStringList items
 
 void DesktopWindow::onOpenTrash()
 {
-    onOpenDirRequested(fm_path_get_trash(), 0);
+    // onOpenDirRequested(fm_path_get_trash(), 0); // Do not use trash://
+    FmPath* path;
+    path = fm_path_new_for_str(QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/Trash/files").toUtf8());
+    onOpenDirRequested(path, 0);    // onOpenDirRequested(fm_path_get_trash(), 0); // Do not use trash://
+    fm_path_unref(path);
 }
 
 void DesktopWindow::onOpenDesktop()

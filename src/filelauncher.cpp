@@ -65,7 +65,8 @@ bool FileLauncher::launchFiles(QWidget* parent, GList* file_infos, bool show_con
         bool isAppDirOrBundle = checkWhetherAppDirOrBundle(info);
         QString path = QString(fm_path_to_str(fm_file_info_get_path(info)));
         if(QFileInfo(path).fileName() == "trash-can.desktop"){
-            app->launchFiles(NULL, {"trash:///"}, true);
+            // app->launchFiles(NULL, {"trash:///"}, true);
+            app->launchFiles(NULL, { QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/Trash/files"}, true); // TODO: Use QFileSystemEngine
         } else if (QFileInfo(path).isExecutable() && QFileInfo(path).isFile()) {
             qDebug() << "Launching using the 'launch' command";
             QProcess::startDetached("launch", {path});

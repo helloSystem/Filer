@@ -719,7 +719,11 @@ void MainWindow::on_actionDownloads_triggered() {
 }
 
 void MainWindow::on_actionTrash_triggered() {
-  chdir(fm_path_get_trash());
+    // chdir(fm_path_get_trash()); // Do not use trash://
+    FmPath* path;
+    path = fm_path_new_for_str(QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/Trash/files").toUtf8());
+    chdir(path);
+    fm_path_unref(path);
 }
 
 void MainWindow::on_actionNetwork_triggered() {

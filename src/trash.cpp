@@ -1,11 +1,24 @@
 #include "trash.h"
 #include "fileoperation.h"
+#include <QDir>
+#include <QDebug>
 #include <QFile>
+#include <QStandardPaths>
+#include <QString>
 #include "sound.h"
 
 void Fm::Trash::emptyTrash(){
-    FmPathList* files = fm_path_list_new();
-    fm_path_list_push_tail(files, fm_path_get_trash());
-    Fm::FileOperation::deleteFiles(files);
-    fm_path_list_unref(files);
+    QString path = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/Trash/files";
+    QDir dir(path);
+
+    dir.setFilter(QDir::NoDotAndDotDot | QDir::Files);
+    for(const QString dirItem : dir.entryList())
+        dir.remove( dirItem );
+
+    dir.setFilter(QDir::NoDotAndDotDot | QDir::Dirs);
+    for(const QString dirItem : dir.entryList())
+    {
+        QDir subDir(dir.absoluteFilePath(dirItem));
+        subDir.removeRecursively();
+    }
 }

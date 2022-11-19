@@ -259,7 +259,7 @@ void DesktopMainWindow::on_actionDownloads_triggered()
 
 void DesktopMainWindow::on_actionComputer_triggered()
 {
-  Q_EMIT openFolder(QString("computer:///"));
+  Q_EMIT openFolder(QString("/media"));
 }
 
 void DesktopMainWindow::on_actionTrash_triggered()

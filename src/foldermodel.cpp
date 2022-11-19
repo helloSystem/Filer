@@ -106,7 +106,7 @@ void FolderModel::setFolder(FmFolder* new_folder, bool add_devices) {
     folder_ = NULL;
 
   if (add_devices) {
-    computerFolder_ = fm_folder_from_path(fm_path_new_for_uri("computer://"));
+    computerFolder_ = fm_folder_from_path(fm_path_new_for_path("/media")); // No more computer:///
     if (computerFolder_) {
       g_signal_connect(computerFolder_, "start-loading", G_CALLBACK(onStartLoading), this);
       g_signal_connect(computerFolder_, "finish-loading", G_CALLBACK(onFinishLoading), this);

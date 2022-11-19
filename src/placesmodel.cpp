@@ -23,6 +23,7 @@
 #include <gio/gio.h>
 #include <QDebug>
 #include <QMimeData>
+#include <QStandardPaths>
 #include <QTimer>
 #include "utilities.h"
 #include "placesmodelitem.h"
@@ -168,7 +169,8 @@ void PlacesModel::onTrashChanged(GFileMonitor* monitor, GFile* gf, GFile* other,
 
 void PlacesModel::updateTrash() {
   if(trashItem_) {
-    GFile* gf = fm_file_new_for_uri("trash:///");
+    // GFile* gf = fm_file_new_for_uri("trash:///");
+    GFile* gf = fm_file_new_for_commandline_arg(QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/Trash/files").toUtf8());
     GFileInfo* inf = g_file_query_info(gf, G_FILE_ATTRIBUTE_TRASH_ITEM_COUNT, G_FILE_QUERY_INFO_NONE, NULL, NULL);
     g_object_unref(gf);
     if(inf) {
@@ -184,7 +186,8 @@ void PlacesModel::updateTrash() {
 
 void PlacesModel::createTrashItem() {
   GFile* gf;
-  gf = fm_file_new_for_uri("trash:///");
+  // gf = fm_file_new_for_uri("trash:///");
+  gf = fm_file_new_for_commandline_arg(QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/Trash/files").toUtf8());
   // check if trash is supported by the current vfs
   // if gvfs is not installed, this can be unavailable.
   if(!g_file_query_exists(gf, NULL)) {
@@ -193,7 +196,12 @@ void PlacesModel::createTrashItem() {
     trashMonitor_ = NULL;
     return;
   }
-  trashItem_ = new PlacesModelItem("user-trash", tr("Trash"), fm_path_get_trash());
+
+  FmPath* path;
+  path = fm_path_new_for_str(QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/Trash/files").toUtf8());
+  // trashItem_ = new PlacesModelItem("user-trash", tr("Trash"), fm_path_get_trash()); // Do not use trash://
+  trashItem_ = new PlacesModelItem("user-trash", tr("Trash"), path);
+  fm_path_unref(path);
 
   trashMonitor_ = fm_monitor_directory(gf, NULL);
   if(trashMonitor_)
