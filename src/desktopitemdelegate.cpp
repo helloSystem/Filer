@@ -98,31 +98,13 @@ void DesktopItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& o
   FmFileInfo* file = static_cast<FmFileInfo*>(index.data(Fm::FolderModel::FileInfoRole).value<void*>());
 
   if(file) {
-      QString mimetype = QString::fromUtf8(fm_mime_type_get_type(fm_mime_type_ref(fm_file_info_get_mime_type(file))));
-      if (mimetype == "inode/mount-point") {
-          // QString path = QString(fm_path_to_str(fm_file_info_get_path(file)));
-          // qDebug() << "probono: inode/mount-point, path:" << path;
-          QString mountpoint = QString::fromUtf8(fm_file_info_get_target(file));
-          // qDebug() << "probono: inode/mount-point, mountpoint:" << mountpoint;
-          if(mountpoint != nullptr) {
-              QPixmap pixmap = opt.icon.pixmap(opt.decorationSize, iconMode);
-              if(QFile::exists(mountpoint + "/.VolumeIcon.icns")){
-                  qDebug() << "probono:" << mountpoint + "/.VolumeIcon.icns" << "exists, use it";
-                  QIcon *myicon = new QIcon( mountpoint + "/.VolumeIcon.icns");
-                  pixmap = myicon->pixmap(opt.decorationSize, iconMode);
-              }
-              painter->drawPixmap(iconPos, pixmap);
-          }
-        } else {
-          // Draw the icon for everything else but mountpoints
-          QPixmap pixmap = opt.icon.pixmap(opt.decorationSize, iconMode);
-          painter->drawPixmap(iconPos, pixmap);
-        }
+      QPixmap pixmap = opt.icon.pixmap(opt.decorationSize, iconMode);
+      painter->drawPixmap(iconPos, pixmap);
   }
 
   if(file) {
-    if(fm_file_info_is_symlink(file)) {
-      // draw some emblems for the item if needed
+      if(fm_file_info_is_symlink(file)) {
+          // draw some emblems for the item if needed
       // we only support symlink emblem at the moment
       QPoint symlinkPos = iconPos;
       symlinkPos.setY(symlinkPos.y() + opt.decorationSize.height() / 2);

@@ -56,6 +56,11 @@ FolderModelItem::FolderModelItem(FmFileInfo* _info):
       g_list_free(l);
       g_list_free(vols);
       g_object_unref(volumeMonitor);
+
+      if(QFile::exists(path + "/.VolumeIcon.icns")){
+          qDebug() << "probono:" << path + "/.VolumeIcon.icns" << "exists, use it";
+          icon = QIcon( path + "/.VolumeIcon.icns");
+      }
   }
 
   // probono: Set some things differently for AppDir/app bundle than for normal folder
