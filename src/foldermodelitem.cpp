@@ -22,6 +22,7 @@
 #include <QFileInfo>
 #include <QDebug>
 #include <QProcess>
+#include <QDir>
 #include "bundle.h"
 
 using namespace Fm;
@@ -35,10 +36,17 @@ FolderModelItem::FolderModelItem(FmFileInfo* _info):
 
   icon = IconTheme::icon(fm_file_info_get_icon(_info));
 
+  QString path = QString(fm_path_to_str(fm_file_info_get_path(info)));
+
+  if(QFileInfo(path).dir() == QDir("/media")) {
+      // TODO: Get the proper icon from the evil side, like in the non-spatial sidebar
+      icon = QIcon::fromTheme("drive-harddisk");
+  }
+
   // probono: Set some things differently for AppDir/app bundle than for normal folder
   if(isAppDirOrBundle) {
 
-      QString path = QString(fm_path_to_str(fm_file_info_get_path(info)));
+
       QFileInfo fileInfo = QFileInfo(path);
       QString nameWithoutSuffix = QFileInfo(fileInfo.completeBaseName()).fileName();
 
