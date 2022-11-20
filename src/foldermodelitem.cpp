@@ -38,9 +38,24 @@ FolderModelItem::FolderModelItem(FmFileInfo* _info):
 
   QString path = QString(fm_path_to_str(fm_file_info_get_path(info)));
 
+  // For mountpoints, get icon from the dark side, TODO: Do this without glib/libfm
   if(QFileInfo(path).dir() == QDir("/media")) {
-      // TODO: Get the proper icon from the evil side, like in the non-spatial sidebar
-      icon = QIcon::fromTheme("drive-harddisk");
+      GVolumeMonitor* volumeMonitor;
+      volumeMonitor = g_volume_monitor_get();
+      GList* vols = g_volume_monitor_get_volumes(volumeMonitor);
+      qDebug() << "Alive?";
+      GList* l;
+      vols = g_volume_monitor_get_mounts(volumeMonitor);
+      for(l = vols; l; l = l->next) {
+          GMount* mount = G_MOUNT(l->data);
+          if(g_file_get_path(g_mount_get_root(mount)) == path) {
+              icon = IconTheme::icon(g_mount_get_icon(mount));
+          }
+          g_object_unref(mount);
+      }
+      g_list_free(l);
+      g_list_free(vols);
+      g_object_unref(volumeMonitor);
   }
 
   // probono: Set some things differently for AppDir/app bundle than for normal folder
