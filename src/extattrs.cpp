@@ -18,9 +18,11 @@ using namespace Fm;
 
 namespace Fm {
 
-static const int ATTR_VAL_SIZE = 2048; // probono: Can we do without a predetermined size?
-// If this size is too small, then reading extattr fails, leading to strange unexpected errors.
-// 256 was not enough to read, e.g., 'can-open' containing many MIME types
+static const int ATTR_VAL_SIZE = 20480; // FIXME: Can we do without a predetermined size?
+// If this size is too small, then reading extattr fails, leading to strange unexpected errors
+// including segfaults of 'launch', preventing the desktop from starting up
+// 256 was not enough to read, e.g., 'can-open' containing many MIME types;
+// 2048 was still not enough to handle, e.g., org.shotcut.Shotcut.desktop
 
 /*
  * get the attibute value from the extended attribute for the path as int
