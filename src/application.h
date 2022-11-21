@@ -60,6 +60,8 @@ public:
     return libFm_;
   }
 
+  GVolumeMonitor* volumeMonitor;
+
   // public interface exported via dbus
   void launchFiles(QString cwd, QStringList paths, bool inNewWindow);
   void setWallpaper(QString path, QString modeString);
@@ -133,7 +135,7 @@ private:
   QPointer<Fm::EditBookmarksDialog> editBookmarksialog_;
   QTranslator translator;
   QTranslator qtTranslator;
-  GVolumeMonitor* volumeMonitor_;
+
 
   QFileSystemWatcher *userDirsWatcher_;
   QString userDirsFile_;

@@ -68,7 +68,7 @@ Application::Application(int& argc, char** argv):
     desktopWindows_(),
     enableDesktopManager_(false),
     preferencesDialog_(),
-    volumeMonitor_(NULL),
+    volumeMonitor(NULL),
     userDirsWatcher_(NULL),
     lxqtRunning_(false),
     editBookmarksialog_() {
@@ -229,9 +229,9 @@ Application::Application(int& argc, char** argv):
 Application::~Application() {
     desktop()->removeEventFilter(this);
 
-    if(volumeMonitor_) {
-        g_signal_handlers_disconnect_by_func(volumeMonitor_, gpointer(onVolumeAdded), this);
-        g_object_unref(volumeMonitor_);
+    if(volumeMonitor) {
+        g_signal_handlers_disconnect_by_func(volumeMonitor, gpointer(onVolumeAdded), this);
+        g_object_unref(volumeMonitor);
     }
 
     // if(enableDesktopManager_)
@@ -402,7 +402,7 @@ int Application::exec() {
         setQuitOnLastWindowClosed(false);
     }
 
-    volumeMonitor_ = g_volume_monitor_get();
+    volumeMonitor = g_volume_monitor_get();
     // delay the volume manager a little because in newer versions of glib/gio there's a problem.
     // when the first volume monitor object is created, it discovers volumes asynchonously.
     // g_volume_monitor_get() immediately returns while the monitor is still discovering devices.
@@ -775,11 +775,11 @@ void Application::editBookmarks() {
 
 void Application::initVolumeManager() {
 
-    g_signal_connect(volumeMonitor_, "volume-added", G_CALLBACK(onVolumeAdded), this);
+    g_signal_connect(volumeMonitor, "volume-added", G_CALLBACK(onVolumeAdded), this);
 
     if(settings_.mountOnStartup()) {
         /* try to automount all volumes */
-        GList* vols = g_volume_monitor_get_volumes(volumeMonitor_);
+        GList* vols = g_volume_monitor_get_volumes(volumeMonitor);
         for(GList* l = vols; l; l = l->next) {
             GVolume* volume = G_VOLUME(l->data);
             if(g_volume_should_automount(volume))

@@ -497,7 +497,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
 <context>
     <name>Filer::Application</name>
     <message>
-        <location filename="../application.cpp" line="158"/>
+        <location filename="../application.cpp" line="201"/>
         <source>%1 was not launched by the launch command
 from an application bundle.
 
@@ -506,109 +506,109 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="211"/>
         <source>The &apos;launch&apos; command is missing.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="175"/>
+        <location filename="../application.cpp" line="218"/>
         <source>The &apos;open&apos; command is missing.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="262"/>
         <source>Name of configuration profile</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="262"/>
         <source>PROFILE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="265"/>
         <source>Run Filer as a daemon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="225"/>
+        <location filename="../application.cpp" line="268"/>
         <source>Quit Filer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="228"/>
+        <location filename="../application.cpp" line="271"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="231"/>
+        <location filename="../application.cpp" line="274"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="234"/>
+        <location filename="../application.cpp" line="277"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="234"/>
-        <location filename="../application.cpp" line="250"/>
+        <location filename="../application.cpp" line="277"/>
+        <location filename="../application.cpp" line="293"/>
         <source>NAME</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="237"/>
+        <location filename="../application.cpp" line="280"/>
         <source>Open new window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="240"/>
+        <location filename="../application.cpp" line="283"/>
         <source>Open Find Files utility</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="243"/>
+        <location filename="../application.cpp" line="286"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="243"/>
+        <location filename="../application.cpp" line="286"/>
         <source>FILE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="247"/>
+        <location filename="../application.cpp" line="290"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="247"/>
+        <location filename="../application.cpp" line="290"/>
         <source>MODE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="250"/>
+        <location filename="../application.cpp" line="293"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="253"/>
+        <location filename="../application.cpp" line="296"/>
         <source>Files or directories to open</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="253"/>
+        <location filename="../application.cpp" line="296"/>
         <source>[FILE1, FILE2,...]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="543"/>
-        <location filename="../application.cpp" line="550"/>
+        <location filename="../application.cpp" line="586"/>
+        <location filename="../application.cpp" line="593"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="550"/>
+        <location filename="../application.cpp" line="593"/>
         <source>Terminal emulator is not set.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -727,22 +727,22 @@ Functionality may be broken.</source>
 <context>
     <name>Filer::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="192"/>
+        <location filename="../preferencesdialog.cpp" line="190"/>
         <source>Icon View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="193"/>
+        <location filename="../preferencesdialog.cpp" line="191"/>
         <source>Compact Icon View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="194"/>
+        <location filename="../preferencesdialog.cpp" line="192"/>
         <source>Thumbnail View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="195"/>
+        <location filename="../preferencesdialog.cpp" line="193"/>
         <source>Detailed List View</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2308,346 +2308,352 @@ Modified: %3</source>
     <name>PreferencesDialog</name>
     <message>
         <location filename="../preferences.ui" line="14"/>
-        <location filename="../../build/src/ui_preferences.h" line="641"/>
+        <location filename="../../build/src/ui_preferences.h" line="616"/>
         <source>Preferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="45"/>
-        <location filename="../../build/src/ui_preferences.h" line="650"/>
+        <location filename="../preferences.ui" line="263"/>
+        <location filename="../../build/src/ui_preferences.h" line="663"/>
         <source>User Interface</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="35"/>
-        <location filename="../../build/src/ui_preferences.h" line="646"/>
+        <location filename="../../build/src/ui_preferences.h" line="626"/>
         <source>Behavior</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="451"/>
-        <location filename="../../build/src/ui_preferences.h" line="652"/>
-        <location filename="../../build/src/ui_preferences.h" line="701"/>
+        <location filename="../preferences.ui" line="419"/>
+        <location filename="../preferences.ui" line="425"/>
+        <location filename="../../build/src/ui_preferences.h" line="664"/>
+        <location filename="../../build/src/ui_preferences.h" line="669"/>
         <source>Thumbnail</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="55"/>
-        <location filename="../../build/src/ui_preferences.h" line="654"/>
+        <location filename="../preferences.ui" line="479"/>
+        <location filename="../../build/src/ui_preferences.h" line="679"/>
         <source>Advanced</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="92"/>
-        <location filename="../../build/src/ui_preferences.h" line="659"/>
+        <location filename="../preferences.ui" line="57"/>
+        <location filename="../../build/src/ui_preferences.h" line="619"/>
         <source>Save metadata to directories (.DirInfo files)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="102"/>
-        <location filename="../../build/src/ui_preferences.h" line="660"/>
+        <location filename="../preferences.ui" line="67"/>
+        <location filename="../../build/src/ui_preferences.h" line="620"/>
         <source>Spatial mode (folders open in a new window)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="166"/>
-        <location filename="../../build/src/ui_preferences.h" line="666"/>
+        <location filename="../preferences.ui" line="134"/>
+        <location filename="../../build/src/ui_preferences.h" line="627"/>
         <source>Icons</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="195"/>
-        <location filename="../../build/src/ui_preferences.h" line="668"/>
+        <location filename="../preferences.ui" line="163"/>
+        <location filename="../../build/src/ui_preferences.h" line="629"/>
         <source>Size of big icons:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="205"/>
-        <location filename="../../build/src/ui_preferences.h" line="669"/>
+        <location filename="../preferences.ui" line="173"/>
+        <location filename="../../build/src/ui_preferences.h" line="630"/>
         <source>Size of small icons:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="215"/>
-        <location filename="../../build/src/ui_preferences.h" line="670"/>
+        <location filename="../preferences.ui" line="183"/>
+        <location filename="../../build/src/ui_preferences.h" line="631"/>
         <source>Size of thumbnails:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="225"/>
-        <location filename="../../build/src/ui_preferences.h" line="671"/>
+        <location filename="../preferences.ui" line="193"/>
+        <location filename="../../build/src/ui_preferences.h" line="632"/>
         <source>Size of side pane icons:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="178"/>
-        <location filename="../../build/src/ui_preferences.h" line="667"/>
+        <location filename="../preferences.ui" line="146"/>
+        <location filename="../../build/src/ui_preferences.h" line="628"/>
         <source>Icon theme:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="298"/>
-        <location filename="../../build/src/ui_preferences.h" line="677"/>
+        <location filename="../preferences.ui" line="269"/>
+        <location filename="../../build/src/ui_preferences.h" line="639"/>
         <source>Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="307"/>
-        <location filename="../../build/src/ui_preferences.h" line="678"/>
+        <location filename="../preferences.ui" line="278"/>
+        <location filename="../../build/src/ui_preferences.h" line="640"/>
         <source>Remember the size of the last closed window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="314"/>
-        <location filename="../../build/src/ui_preferences.h" line="679"/>
+        <location filename="../preferences.ui" line="285"/>
+        <location filename="../../build/src/ui_preferences.h" line="641"/>
         <source>Default width of new windows:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="328"/>
-        <location filename="../../build/src/ui_preferences.h" line="680"/>
+        <location filename="../preferences.ui" line="299"/>
+        <location filename="../../build/src/ui_preferences.h" line="642"/>
         <source>Default height of new windows:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="76"/>
-        <location filename="../../build/src/ui_preferences.h" line="657"/>
+        <location filename="../preferences.ui" line="41"/>
+        <location filename="../../build/src/ui_preferences.h" line="617"/>
         <source>Browsing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="82"/>
-        <location filename="../../build/src/ui_preferences.h" line="658"/>
+        <location filename="../preferences.ui" line="47"/>
+        <location filename="../../build/src/ui_preferences.h" line="618"/>
         <source>Default view mode:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="112"/>
-        <location filename="../../build/src/ui_preferences.h" line="661"/>
+        <location filename="../preferences.ui" line="77"/>
+        <location filename="../../build/src/ui_preferences.h" line="621"/>
         <source>File Operations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="118"/>
-        <location filename="../../build/src/ui_preferences.h" line="662"/>
+        <location filename="../preferences.ui" line="83"/>
+        <location filename="../../build/src/ui_preferences.h" line="622"/>
         <source>Confirm before deleting files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="481"/>
-        <location filename="../../build/src/ui_preferences.h" line="705"/>
+        <location filename="../preferences.ui" line="455"/>
+        <location filename="../../build/src/ui_preferences.h" line="668"/>
         <source>Show thumbnails of files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="474"/>
-        <location filename="../../build/src/ui_preferences.h" line="704"/>
+        <location filename="../preferences.ui" line="448"/>
+        <location filename="../../build/src/ui_preferences.h" line="667"/>
         <source>Only show thumbnails for local files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="40"/>
-        <location filename="../../build/src/ui_preferences.h" line="648"/>
+        <location filename="../preferences.ui" line="128"/>
+        <location filename="../../build/src/ui_preferences.h" line="638"/>
         <source>Display</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="125"/>
-        <location filename="../../build/src/ui_preferences.h" line="663"/>
+        <location filename="../preferences.ui" line="90"/>
+        <location filename="../../build/src/ui_preferences.h" line="623"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="132"/>
-        <location filename="../../build/src/ui_preferences.h" line="664"/>
+        <location filename="../preferences.ui" line="97"/>
+        <location filename="../../build/src/ui_preferences.h" line="624"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="139"/>
-        <location filename="../../build/src/ui_preferences.h" line="665"/>
+        <location filename="../preferences.ui" line="104"/>
+        <location filename="../../build/src/ui_preferences.h" line="625"/>
         <source>Don&apos;t ask options on launch executable file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="238"/>
-        <location filename="../../build/src/ui_preferences.h" line="672"/>
+        <location filename="../preferences.ui" line="206"/>
+        <location filename="../../build/src/ui_preferences.h" line="633"/>
         <source>User interface</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="251"/>
-        <location filename="../../build/src/ui_preferences.h" line="674"/>
+        <location filename="../preferences.ui" line="219"/>
+        <location filename="../../build/src/ui_preferences.h" line="635"/>
         <source>Treat backup files as hidden</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="261"/>
-        <location filename="../../build/src/ui_preferences.h" line="675"/>
+        <location filename="../preferences.ui" line="229"/>
+        <location filename="../../build/src/ui_preferences.h" line="636"/>
         <source>Always show full file names</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="271"/>
-        <location filename="../../build/src/ui_preferences.h" line="676"/>
+        <location filename="../preferences.ui" line="239"/>
+        <location filename="../../build/src/ui_preferences.h" line="637"/>
         <source>Show icons of hidden files shadowed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="345"/>
-        <location filename="../../build/src/ui_preferences.h" line="681"/>
+        <location filename="../preferences.ui" line="316"/>
+        <location filename="../../build/src/ui_preferences.h" line="643"/>
         <source>Show in places</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="352"/>
-        <location filename="../../build/src/ui_preferences.h" line="686"/>
+        <location filename="../preferences.ui" line="323"/>
+        <location filename="../../build/src/ui_preferences.h" line="648"/>
         <source>Home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="364"/>
-        <location filename="../../build/src/ui_preferences.h" line="688"/>
+        <location filename="../preferences.ui" line="335"/>
+        <location filename="../../build/src/ui_preferences.h" line="650"/>
         <source>Desktop</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="376"/>
-        <location filename="../../build/src/ui_preferences.h" line="690"/>
+        <location filename="../preferences.ui" line="347"/>
+        <location filename="../../build/src/ui_preferences.h" line="652"/>
         <source>Trash can</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="388"/>
-        <location filename="../../build/src/ui_preferences.h" line="692"/>
+        <location filename="../preferences.ui" line="359"/>
+        <location filename="../../build/src/ui_preferences.h" line="654"/>
         <source>Computer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="400"/>
-        <location filename="../../build/src/ui_preferences.h" line="694"/>
+        <location filename="../preferences.ui" line="371"/>
+        <location filename="../../build/src/ui_preferences.h" line="656"/>
         <source>Applications</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="408"/>
-        <location filename="../../build/src/ui_preferences.h" line="696"/>
+        <location filename="../preferences.ui" line="379"/>
+        <location filename="../../build/src/ui_preferences.h" line="658"/>
         <source>Devices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="416"/>
-        <location filename="../../build/src/ui_preferences.h" line="698"/>
+        <location filename="../preferences.ui" line="387"/>
+        <location filename="../../build/src/ui_preferences.h" line="660"/>
         <source>Network</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="457"/>
-        <location filename="../../build/src/ui_preferences.h" line="702"/>
+        <location filename="../preferences.ui" line="431"/>
+        <location filename="../../build/src/ui_preferences.h" line="665"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="464"/>
-        <location filename="../../build/src/ui_preferences.h" line="703"/>
+        <location filename="../preferences.ui" line="438"/>
+        <location filename="../../build/src/ui_preferences.h" line="666"/>
         <source> KB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="605"/>
-        <location filename="../../build/src/ui_preferences.h" line="715"/>
+        <location filename="../preferences.ui" line="579"/>
+        <location filename="../../build/src/ui_preferences.h" line="687"/>
+        <source>Mount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="585"/>
+        <location filename="../../build/src/ui_preferences.h" line="680"/>
         <source>Auto Mount</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="611"/>
-        <location filename="../../build/src/ui_preferences.h" line="716"/>
+        <location filename="../preferences.ui" line="591"/>
+        <location filename="../../build/src/ui_preferences.h" line="681"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="618"/>
-        <location filename="../../build/src/ui_preferences.h" line="717"/>
+        <location filename="../preferences.ui" line="598"/>
+        <location filename="../../build/src/ui_preferences.h" line="682"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="625"/>
-        <location filename="../../build/src/ui_preferences.h" line="718"/>
+        <location filename="../preferences.ui" line="605"/>
+        <location filename="../../build/src/ui_preferences.h" line="683"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="635"/>
-        <location filename="../../build/src/ui_preferences.h" line="719"/>
+        <location filename="../preferences.ui" line="615"/>
+        <location filename="../../build/src/ui_preferences.h" line="684"/>
         <source>When removable medium unmounted:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="641"/>
-        <location filename="../../build/src/ui_preferences.h" line="720"/>
+        <location filename="../preferences.ui" line="621"/>
+        <location filename="../../build/src/ui_preferences.h" line="685"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="648"/>
-        <location filename="../../build/src/ui_preferences.h" line="721"/>
+        <location filename="../preferences.ui" line="628"/>
+        <location filename="../../build/src/ui_preferences.h" line="686"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="508"/>
-        <location filename="../../build/src/ui_preferences.h" line="706"/>
+        <location filename="../preferences.ui" line="485"/>
+        <location filename="../../build/src/ui_preferences.h" line="670"/>
         <source>Programs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="517"/>
-        <location filename="../../build/src/ui_preferences.h" line="707"/>
+        <location filename="../preferences.ui" line="494"/>
+        <location filename="../../build/src/ui_preferences.h" line="671"/>
         <source>Terminal emulator:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="524"/>
-        <location filename="../../build/src/ui_preferences.h" line="708"/>
+        <location filename="../preferences.ui" line="501"/>
+        <location filename="../../build/src/ui_preferences.h" line="672"/>
         <source>Switch &amp;user command:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="537"/>
-        <location filename="../../build/src/ui_preferences.h" line="709"/>
+        <location filename="../preferences.ui" line="511"/>
+        <location filename="../../build/src/ui_preferences.h" line="673"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="558"/>
-        <location filename="../../build/src/ui_preferences.h" line="711"/>
+        <location filename="../preferences.ui" line="532"/>
+        <location filename="../../build/src/ui_preferences.h" line="675"/>
         <source>Templates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="564"/>
-        <location filename="../../build/src/ui_preferences.h" line="712"/>
+        <location filename="../preferences.ui" line="538"/>
+        <location filename="../../build/src/ui_preferences.h" line="676"/>
         <source>Show only user defined templates in menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="571"/>
-        <location filename="../../build/src/ui_preferences.h" line="713"/>
+        <location filename="../preferences.ui" line="545"/>
+        <location filename="../../build/src/ui_preferences.h" line="677"/>
         <source>Show only one template for each MIME type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="578"/>
-        <location filename="../../build/src/ui_preferences.h" line="714"/>
+        <location filename="../preferences.ui" line="552"/>
+        <location filename="../../build/src/ui_preferences.h" line="678"/>
         <source>Run default application after creation from template</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="244"/>
-        <location filename="../../build/src/ui_preferences.h" line="673"/>
+        <location filename="../preferences.ui" line="212"/>
+        <location filename="../../build/src/ui_preferences.h" line="634"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation type="unfinished"></translation>
     </message>

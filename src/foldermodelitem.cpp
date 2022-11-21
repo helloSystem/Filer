@@ -23,7 +23,9 @@
 #include <QDebug>
 #include <QProcess>
 #include <QDir>
+#include <QThread>
 #include "bundle.h"
+#include "application.h"
 
 using namespace Fm;
 
@@ -40,12 +42,17 @@ FolderModelItem::FolderModelItem(FmFileInfo* _info):
 
   // For mountpoints, get icon from the dark side, TODO: Do this without glib/libfm
   if(QFileInfo(path).dir() == QDir("/media")) {
-      GVolumeMonitor* volumeMonitor;
-      volumeMonitor = g_volume_monitor_get();
-      GList* vols = g_volume_monitor_get_volumes(volumeMonitor);
-      qDebug() << "Alive?";
+      GList* vols;
       GList* l;
-      vols = g_volume_monitor_get_mounts(volumeMonitor);
+
+      // FIXME: At this point, a mountpoint has been created
+      // but most likely the volume is not mounted yet, which is why we won't
+      // get an icon yet. We should do more like placesmodel instead and
+      // do this when we get a onMountAdded callback telling us that a new partition
+      // has been mounted. Any help appreciated!
+      icon = QIcon::fromTheme("drive-harddisk"); // Fallback; better then "folder" icon!
+      Filer::Application* app = static_cast<Filer::Application*>(qApp);
+      vols = g_volume_monitor_get_mounts(app->volumeMonitor);
       for(l = vols; l; l = l->next) {
           GMount* mount = G_MOUNT(l->data);
           if(g_file_get_path(g_mount_get_root(mount)) == path) {
@@ -55,7 +62,6 @@ FolderModelItem::FolderModelItem(FmFileInfo* _info):
       }
       g_list_free(l);
       g_list_free(vols);
-      g_object_unref(volumeMonitor);
 
       if(QFile::exists(path + "/.VolumeIcon.icns")){
           qDebug() << "probono:" << path + "/.VolumeIcon.icns" << "exists, use it";

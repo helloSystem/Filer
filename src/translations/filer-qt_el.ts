@@ -5,26 +5,31 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../about.ui" line="14"/>
+        <location filename="../../build/src/ui_about.h" line="140"/>
         <source>About</source>
         <translation>Σχετικά</translation>
     </message>
     <message>
         <location filename="../about.ui" line="37"/>
+        <location filename="../../build/src/ui_about.h" line="142"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="60"/>
+        <location filename="../../build/src/ui_about.h" line="144"/>
         <source>The Desktop Experience</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about.ui" line="70"/>
+        <location filename="../../build/src/ui_about.h" line="145"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about.ui" line="99"/>
+        <location filename="../../build/src/ui_about.h" line="146"/>
         <source>Programming:
 * Simon Peter (probono)
 * Chris Moore (moochris)
@@ -36,6 +41,7 @@ Application icon:
     </message>
     <message>
         <location filename="../about.ui" line="125"/>
+        <location filename="../../build/src/ui_about.h" line="154"/>
         <source>Filer
 
 Copyright (C) 2020-21 Simon Peter
@@ -85,6 +91,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
     </message>
     <message>
         <location filename="../about.ui" line="90"/>
+        <location filename="../../build/src/ui_about.h" line="153"/>
         <source>Authors</source>
         <translation>Συγγραφείς</translation>
     </message>
@@ -128,6 +135,7 @@ USA.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="116"/>
+        <location filename="../../build/src/ui_about.h" line="184"/>
         <source>License</source>
         <translation>Άδεια χρήσης</translation>
     </message>
@@ -136,31 +144,37 @@ USA.</translation>
     <name>AppChooserDialog</name>
     <message>
         <location filename="../app-chooser-dialog.ui" line="14"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="150"/>
         <source>Choose an Application</source>
         <translation>Επιλέξτε μια εφαρμογή</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="36"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="151"/>
         <source>Installed Applications</source>
         <translation>Εγκατεστημένες εφαρμογές</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="46"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="163"/>
         <source>Custom Command</source>
         <translation>Προσαρμοσμένη εντολή</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="52"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="152"/>
         <source>Command line to execute:</source>
         <translation>Γραμμή εντολών προς εκτέλεση:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="62"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="153"/>
         <source>Application name:</source>
         <translation>Όνομα της εφαρμογής:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="72"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="154"/>
         <source>&lt;b&gt;These special codes can be used in the command line:&lt;/b&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;b&gt;%f&lt;/b&gt;: Represents a single file name&lt;/li&gt;
@@ -178,16 +192,19 @@ USA.</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="91"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="161"/>
         <source>Keep terminal window open after command execution</source>
         <translation>Διατήρηση του παραθύρου του τερματικού ανοιχτό μετά την εκτέλεση της εντολής</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="98"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="162"/>
         <source>Execute in terminal emulator</source>
         <translation>Εκτέλεση στον προσομοιωτή τερματικού</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="109"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="164"/>
         <source>Set selected application as default action of this file type</source>
         <translation>Ορίστε την επιλεγμένη εφαρμογή ως την εξ ορισμού ενέργεια για αυτού του τύπου αρχεία</translation>
     </message>
@@ -196,26 +213,31 @@ USA.</translation>
     <name>AutoRunDialog</name>
     <message>
         <location filename="../autorun.ui" line="14"/>
+        <location filename="../../build/src/ui_autorun.h" line="108"/>
         <source>Removable medium is inserted</source>
         <translation>Εισήχθη ένα αφαιρούμενο μέσο</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
+        <location filename="../../build/src/ui_autorun.h" line="110"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
         <translation>&lt;b&gt;Εισήχθη ένα αφαιρούμενο μέσο&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
+        <location filename="../../build/src/ui_autorun.h" line="111"/>
         <source>Type of medium:</source>
         <translation>Τύπος του μέσου:</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
+        <location filename="../../build/src/ui_autorun.h" line="112"/>
         <source>Detecting...</source>
         <translation>Εντοπισμός...</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
+        <location filename="../../build/src/ui_autorun.h" line="113"/>
         <source>Please select the action you want to perform:</source>
         <translation>Παρακαλώ επιλέξτε την ενέργεια που επιθυμείτε να πραγματοποιήσετε:</translation>
     </message>
@@ -224,31 +246,37 @@ USA.</translation>
     <name>DesktopFolder</name>
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
+        <location filename="../../build/src/ui_desktop-folder.h" line="72"/>
         <source>Form</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
+        <location filename="../../build/src/ui_desktop-folder.h" line="73"/>
         <source>Desktop</source>
         <translation type="unfinished">Επιφάνεια εργασίας</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
+        <location filename="../../build/src/ui_desktop-folder.h" line="74"/>
         <source>Desktop folder:</source>
         <translation type="unfinished">Φάκελος επιφάνειας εργασίας:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
+        <location filename="../../build/src/ui_desktop-folder.h" line="76"/>
         <source>Image file</source>
         <translation type="unfinished">Αρχείο εικόνας</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
+        <location filename="../../build/src/ui_desktop-folder.h" line="81"/>
         <source>Folder path</source>
         <translation type="unfinished">Διαδρομή του φακέλου</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
+        <location filename="../../build/src/ui_desktop-folder.h" line="82"/>
         <source>&amp;Browse</source>
         <translation type="unfinished">&amp;Περιήγηση</translation>
     </message>
@@ -257,41 +285,49 @@ USA.</translation>
     <name>DesktopPreferencesDialog</name>
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="186"/>
         <source>Desktop Preferences</source>
         <translation>Προτιμήσεις της επιφάνειας εργασίας</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="20"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="187"/>
         <source>Background</source>
         <translation>Παρασκήνιο</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="45"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="189"/>
         <source>Wallpaper mode:</source>
         <translation>Λειτουργία ταπετσαρίας:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="32"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="188"/>
         <source>Wallpaper image file:</source>
         <translation>Αρχείο εικόνας ταπετσαρίας:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="92"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
         <source>Colors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="150"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="203"/>
         <source>Background color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="104"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="199"/>
         <source>Text color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="143"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="202"/>
         <source>Shadow color:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -301,16 +337,19 @@ USA.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="67"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="191"/>
         <source>Image file</source>
         <translation>Αρχείο εικόνας</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="73"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="196"/>
         <source>Image file path</source>
         <translation>Διαδρομή αρχείου εικόνας</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="80"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="197"/>
         <source>&amp;Browse</source>
         <translation>&amp;Περιήγηση</translation>
     </message>
@@ -363,31 +402,37 @@ USA.</translation>
     <name>EditBookmarksDialog</name>
     <message>
         <location filename="../edit-bookmarks.ui" line="14"/>
+        <location filename="../../build/src/ui_edit-bookmarks.h" line="103"/>
         <source>Edit Bookmarks</source>
         <translation>Επεξεργασία σελιδοδεικτών</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="42"/>
+        <location filename="../../build/src/ui_edit-bookmarks.h" line="106"/>
         <source>Name</source>
         <translation>Όνομα</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="47"/>
+        <location filename="../../build/src/ui_edit-bookmarks.h" line="105"/>
         <source>Location</source>
         <translation>Τοποθεσία</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="67"/>
+        <location filename="../../build/src/ui_edit-bookmarks.h" line="107"/>
         <source>&amp;Add Item</source>
         <translation>&amp;Προσθήκη αντικειμένου</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="77"/>
+        <location filename="../../build/src/ui_edit-bookmarks.h" line="108"/>
         <source>&amp;Remove Item</source>
         <translation>&amp;Αφαίρεση αντικειμένου</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="102"/>
+        <location filename="../../build/src/ui_edit-bookmarks.h" line="109"/>
         <source>Use drag and drop to reorder the items</source>
         <translation>Χρησιμοποιήστε τη μεταφορά και απόθεση για αναδιάταξη των αντικειμένων</translation>
     </message>
@@ -396,26 +441,31 @@ USA.</translation>
     <name>ExecFileDialog</name>
     <message>
         <location filename="../exec-file.ui" line="14"/>
+        <location filename="../../build/src/ui_exec-file.h" line="114"/>
         <source>Execute file</source>
         <translation>Εκτέλεση του αρχείου</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="39"/>
+        <location filename="../../build/src/ui_exec-file.h" line="116"/>
         <source>&amp;Open</source>
         <translation>Ά&amp;νοιγμα</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="52"/>
+        <location filename="../../build/src/ui_exec-file.h" line="117"/>
         <source>E&amp;xecute</source>
         <translation>&amp;Εκτέλεση</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="62"/>
+        <location filename="../../build/src/ui_exec-file.h" line="118"/>
         <source>Execute in &amp;Terminal</source>
         <translation>Εκτέλεση στο &amp;τερματικό</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="85"/>
+        <location filename="../../build/src/ui_exec-file.h" line="119"/>
         <source>Cancel</source>
         <translation>Ακύρωση</translation>
     </message>
@@ -424,26 +474,31 @@ USA.</translation>
     <name>FileOperationDialog</name>
     <message>
         <location filename="../file-operation-dialog.ui" line="25"/>
+        <location filename="../../build/src/ui_file-operation-dialog.h" line="124"/>
         <source>Destination:</source>
         <translation>Προορισμός:</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="48"/>
+        <location filename="../../build/src/ui_file-operation-dialog.h" line="126"/>
         <source>Processing:</source>
         <translation>Επεξεργασία:</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="61"/>
+        <location filename="../../build/src/ui_file-operation-dialog.h" line="127"/>
         <source>Preparing...</source>
         <translation>Προετοιμασία...</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="68"/>
+        <location filename="../../build/src/ui_file-operation-dialog.h" line="128"/>
         <source>Progress</source>
         <translation>Πρόοδος</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="88"/>
+        <location filename="../../build/src/ui_file-operation-dialog.h" line="129"/>
         <source>Time remaining:</source>
         <translation>Υπολειπόμενος χρόνος:</translation>
     </message>
@@ -456,71 +511,85 @@ USA.</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="133"/>
+        <location filename="../../build/src/ui_file-props.h" line="365"/>
         <source>General</source>
         <translation>Γενικά</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="208"/>
+        <location filename="../../build/src/ui_file-props.h" line="372"/>
         <source>Location:</source>
         <translation>Τοποθεσία:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="139"/>
+        <location filename="../../build/src/ui_file-props.h" line="366"/>
         <source>File type:</source>
         <translation>Τύπος αρχείου:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="317"/>
+        <location filename="../../build/src/ui_file-props.h" line="380"/>
         <source>Open with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="323"/>
+        <location filename="../../build/src/ui_file-props.h" line="381"/>
         <source>Mime type:</source>
         <translation>Τύπος Mime:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="162"/>
+        <location filename="../../build/src/ui_file-props.h" line="368"/>
         <source>File size:</source>
         <translation>Μέγεθος αρχείου:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="20"/>
+        <location filename="../../build/src/ui_file-props.h" line="362"/>
         <source>Info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="60"/>
+        <location filename="../../build/src/ui_file-props.h" line="363"/>
         <source>TextLabel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="185"/>
+        <location filename="../../build/src/ui_file-props.h" line="370"/>
         <source>On-disk size:</source>
         <translation>Μέγεθος στον δίσκο:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="260"/>
+        <location filename="../../build/src/ui_file-props.h" line="376"/>
         <source>Last modified:</source>
         <translation>Τελευταία τροποποίηση:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="423"/>
+        <location filename="../../build/src/ui_file-props.h" line="385"/>
         <source>Everyone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="234"/>
+        <location filename="../../build/src/ui_file-props.h" line="374"/>
         <source>Link target:</source>
         <translation>Προορισμός συνδέσμου:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="346"/>
+        <location filename="../../build/src/ui_file-props.h" line="383"/>
         <source>Open With:</source>
         <translation>Άνοιγμα με:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="283"/>
+        <location filename="../../build/src/ui_file-props.h" line="378"/>
         <source>Last accessed:</source>
         <translation>Τελευταία προσπέλαση:</translation>
     </message>
@@ -542,6 +611,7 @@ USA.</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="380"/>
+        <location filename="../../build/src/ui_file-props.h" line="384"/>
         <source>Access Control</source>
         <translation>Έλεγχος πρόσβασης</translation>
     </message>
@@ -551,6 +621,7 @@ USA.</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="440"/>
+        <location filename="../../build/src/ui_file-props.h" line="386"/>
         <source>Make the file executable</source>
         <translation>Ορισμός ως εκτελέσιμο</translation>
     </message>
@@ -586,22 +657,22 @@ USA.</translation>
 <context>
     <name>Filer::Application</name>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="262"/>
         <source>Name of configuration profile</source>
         <translation>Όνομα διαμόρφωσης του προφίλ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="262"/>
         <source>PROFILE</source>
         <translation>ΠΡΟΦΙΛ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="265"/>
         <source>Run Filer as a daemon</source>
         <translation>Εκτέλεση του Filer ως δαίμονα</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="225"/>
+        <location filename="../application.cpp" line="268"/>
         <source>Quit Filer</source>
         <translation>Έξοδος του Filer</translation>
     </message>
@@ -610,7 +681,7 @@ USA.</translation>
         <translation type="vanished">Εκτέλεση διαχειριστή της επιφάνειας εργασίας</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="158"/>
+        <location filename="../application.cpp" line="201"/>
         <source>%1 was not launched by the launch command
 from an application bundle.
 
@@ -619,89 +690,89 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="211"/>
         <source>The &apos;launch&apos; command is missing.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="175"/>
+        <location filename="../application.cpp" line="218"/>
         <source>The &apos;open&apos; command is missing.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="228"/>
+        <location filename="../application.cpp" line="271"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="231"/>
+        <location filename="../application.cpp" line="274"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Τερματισμός του διαχειριστή της επιφάνειας εργασίας αν εκτελείται</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="234"/>
+        <location filename="../application.cpp" line="277"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Άνοιγμα του διαλόγου προτιμήσεων της επιφάνειας εργασίας στη σελίδα με το καθορισμένο όνομα</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="234"/>
-        <location filename="../application.cpp" line="250"/>
+        <location filename="../application.cpp" line="277"/>
+        <location filename="../application.cpp" line="293"/>
         <source>NAME</source>
         <translation>ΟΝΟΜΑ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="237"/>
+        <location filename="../application.cpp" line="280"/>
         <source>Open new window</source>
         <translation>Άνοιγμα νέου παραθύρου</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="240"/>
+        <location filename="../application.cpp" line="283"/>
         <source>Open Find Files utility</source>
         <translation>Άνοιγμα του εργαλείου αναζήτησης αρχείων</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="243"/>
+        <location filename="../application.cpp" line="286"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Ορισμός της ταπετσαρίας της επιφάνειας εργασίας από ΑΡΧΕΙΟ εικόνας</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="243"/>
+        <location filename="../application.cpp" line="286"/>
         <source>FILE</source>
         <translation>ΑΡΧΕΙΟ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="247"/>
+        <location filename="../application.cpp" line="290"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Ορισμός της λειτουργίας της επιφάνειας ΛΕΙΤΟΥΡΓΙΑ=(χρώμα|τέντωμα|προσαρμογή|κέντρο|παράθεση)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="247"/>
+        <location filename="../application.cpp" line="290"/>
         <source>MODE</source>
         <translation>ΛΕΙΤΟΥΡΓΙΑ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="250"/>
+        <location filename="../application.cpp" line="293"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Άνοιγμα του διαλόγου προτιμήσεων στη σελίδα με το καθορισμένο όνομα</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="253"/>
+        <location filename="../application.cpp" line="296"/>
         <source>Files or directories to open</source>
         <translation>Αρχεία ή κατάλογοι προς άνοιγμα</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="253"/>
+        <location filename="../application.cpp" line="296"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[ΑΡΧΕΙΟ1, ΑΡΧΕΙΟ2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="543"/>
-        <location filename="../application.cpp" line="550"/>
+        <location filename="../application.cpp" line="586"/>
+        <location filename="../application.cpp" line="593"/>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="550"/>
+        <location filename="../application.cpp" line="593"/>
         <source>Terminal emulator is not set.</source>
         <translation>Δεν έχει οριστεί ο προσομοιωτής τερματικού.</translation>
     </message>
@@ -828,22 +899,22 @@ Functionality may be broken.</source>
 <context>
     <name>Filer::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="192"/>
+        <location filename="../preferencesdialog.cpp" line="190"/>
         <source>Icon View</source>
         <translation>Προβολή εικονιδίων</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="193"/>
+        <location filename="../preferencesdialog.cpp" line="191"/>
         <source>Compact Icon View</source>
         <translation>Συμπαγής προβολή εικονιδίων</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="194"/>
+        <location filename="../preferencesdialog.cpp" line="192"/>
         <source>Thumbnail View</source>
         <translation>Προβολή εικόνων επισκόπησης</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="195"/>
+        <location filename="../preferencesdialog.cpp" line="193"/>
         <source>Detailed List View</source>
         <translation>Αναλυτική προβολή λίστας</translation>
     </message>
@@ -1749,16 +1820,19 @@ Modified: %3</source>
     <name>MainWindow</name>
     <message>
         <location filename="../main-win.ui" line="14"/>
+        <location filename="../../build/src/ui_main-win.h" line="602"/>
         <source>File Manager</source>
         <translation>Διαχειριστής αρχείων</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="271"/>
+        <location filename="../../build/src/ui_main-win.h" line="603"/>
         <source>Go &amp;Up</source>
         <translation>Μετάβαση &amp;πάνω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="274"/>
+        <location filename="../../build/src/ui_main-win.h" line="605"/>
         <source>Go Up</source>
         <translation>Μετάβαση πάνω</translation>
     </message>
@@ -1772,6 +1846,7 @@ Modified: %3</source>
     </message>
     <message>
         <location filename="../main-win.ui" line="286"/>
+        <location filename="../../build/src/ui_main-win.h" line="610"/>
         <source>&amp;Home</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1781,6 +1856,7 @@ Modified: %3</source>
     </message>
     <message>
         <location filename="../main-win.ui" line="298"/>
+        <location filename="../../build/src/ui_main-win.h" line="614"/>
         <source>&amp;Reload</source>
         <translation>&amp;Επαναφόρτωση</translation>
     </message>
@@ -1790,11 +1866,13 @@ Modified: %3</source>
     </message>
     <message>
         <location filename="../main-win.ui" line="313"/>
+        <location filename="../../build/src/ui_main-win.h" line="618"/>
         <source>Go</source>
         <translation>Μετάβαση</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="325"/>
+        <location filename="../../build/src/ui_main-win.h" line="619"/>
         <source>Quit</source>
         <translation>Έξοδος</translation>
     </message>
@@ -1804,21 +1882,25 @@ Modified: %3</source>
     </message>
     <message>
         <location filename="../main-win.ui" line="343"/>
+        <location filename="../../build/src/ui_main-win.h" line="621"/>
         <source>&amp;New Window</source>
         <translation>&amp;Νέο παράθυρο</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="346"/>
+        <location filename="../../build/src/ui_main-win.h" line="623"/>
         <source>New Window</source>
         <translation>Νέο παράθυρο</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="349"/>
+        <location filename="../../build/src/ui_main-win.h" line="626"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="357"/>
+        <location filename="../../build/src/ui_main-win.h" line="628"/>
         <source>Show &amp;Hidden</source>
         <translation>Εμφάνιση των &amp;κρυφών</translation>
     </message>
@@ -1828,352 +1910,423 @@ Modified: %3</source>
     </message>
     <message>
         <location filename="../main-win.ui" line="277"/>
+        <location filename="../../build/src/ui_main-win.h" line="608"/>
         <source>Ctrl+Up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="289"/>
+        <location filename="../../build/src/ui_main-win.h" line="612"/>
         <source>Ctrl+Shift+H</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="301"/>
+        <location filename="../../build/src/ui_main-win.h" line="616"/>
         <source>Ctrl+Shift+R</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="334"/>
+        <location filename="../../build/src/ui_main-win.h" line="620"/>
         <source>&amp;About Filer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="366"/>
+        <location filename="../../build/src/ui_main-win.h" line="629"/>
         <source>&amp;Computer</source>
         <translation>&amp;Υπολογιστής</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="369"/>
+        <location filename="../../build/src/ui_main-win.h" line="631"/>
         <source>Ctrl+Shift+C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="378"/>
+        <location filename="../../build/src/ui_main-win.h" line="633"/>
         <source>&amp;Trash</source>
         <translation>&amp;Απορρίμματα</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="381"/>
+        <location filename="../../build/src/ui_main-win.h" line="635"/>
         <source>Ctrl+Shift+T</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="386"/>
+        <location filename="../../build/src/ui_main-win.h" line="637"/>
         <source>&amp;Network</source>
         <translation>&amp;Δίκτυο</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="398"/>
+        <location filename="../../build/src/ui_main-win.h" line="641"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Επιφάνεια εργασίας</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="401"/>
+        <location filename="../../build/src/ui_main-win.h" line="643"/>
         <source>Ctrl+Shift+D</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="410"/>
+        <location filename="../../build/src/ui_main-win.h" line="645"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>&amp;Προσθήκη στους σελιδοδείκτες</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="415"/>
+        <location filename="../../build/src/ui_main-win.h" line="646"/>
         <source>&amp;Applications</source>
         <translation>Ε&amp;φαρμογές</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="418"/>
+        <location filename="../../build/src/ui_main-win.h" line="648"/>
         <source>Ctrl+Shift+A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="426"/>
+        <location filename="../../build/src/ui_main-win.h" line="650"/>
         <source>Reload</source>
         <translation>Επαναφόρτωση</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="434"/>
+        <location filename="../../build/src/ui_main-win.h" line="651"/>
         <source>&amp;Icon View</source>
         <translation>&amp;Εικονιδία</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="437"/>
+        <location filename="../../build/src/ui_main-win.h" line="653"/>
         <source>Ctrl+1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="445"/>
+        <location filename="../../build/src/ui_main-win.h" line="655"/>
         <source>&amp;Compact View</source>
         <translation>&amp;Συμπαγής</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="453"/>
+        <location filename="../../build/src/ui_main-win.h" line="656"/>
         <source>&amp;Detailed List</source>
         <translation>&amp;Λεπτομερής λίστα</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="456"/>
+        <location filename="../../build/src/ui_main-win.h" line="658"/>
         <source>Ctrl+2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="464"/>
+        <location filename="../../build/src/ui_main-win.h" line="660"/>
         <source>&amp;Thumbnail View</source>
         <translation>&amp;Εικόνες επισκόπησης</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="473"/>
+        <location filename="../../build/src/ui_main-win.h" line="661"/>
         <source>Cu&amp;t</source>
         <translation>Α&amp;ποκοπή</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="476"/>
+        <location filename="../../build/src/ui_main-win.h" line="663"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="485"/>
+        <location filename="../../build/src/ui_main-win.h" line="665"/>
         <source>&amp;Copy</source>
         <translation>&amp;Αντιγραφή</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="488"/>
+        <location filename="../../build/src/ui_main-win.h" line="667"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="497"/>
+        <location filename="../../build/src/ui_main-win.h" line="669"/>
         <source>&amp;Paste</source>
         <translation>Επι&amp;κόλληση</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="500"/>
+        <location filename="../../build/src/ui_main-win.h" line="671"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
+        <location filename="../../build/src/ui_main-win.h" line="673"/>
         <source>Select &amp;All</source>
         <translation>Επιλογή ό&amp;λων</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="508"/>
+        <location filename="../../build/src/ui_main-win.h" line="675"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="513"/>
+        <location filename="../../build/src/ui_main-win.h" line="677"/>
         <source>Pr&amp;eferences</source>
         <translation>&amp;Προτιμήσεις</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="516"/>
+        <location filename="../../build/src/ui_main-win.h" line="679"/>
         <source>Ctrl+,</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="524"/>
+        <location filename="../../build/src/ui_main-win.h" line="681"/>
         <source>&amp;Ascending</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="532"/>
+        <location filename="../../build/src/ui_main-win.h" line="682"/>
         <source>&amp;Descending</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="540"/>
+        <location filename="../../build/src/ui_main-win.h" line="683"/>
         <source>&amp;By File Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="548"/>
+        <location filename="../../build/src/ui_main-win.h" line="684"/>
         <source>By &amp;Modification Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="556"/>
+        <location filename="../../build/src/ui_main-win.h" line="685"/>
         <source>By File &amp;Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="564"/>
+        <location filename="../../build/src/ui_main-win.h" line="686"/>
         <source>By &amp;Owner</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="572"/>
+        <location filename="../../build/src/ui_main-win.h" line="687"/>
         <source>&amp;Folder First</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="643"/>
+        <location filename="../../build/src/ui_main-win.h" line="710"/>
         <source>&amp;Move to Trash</source>
         <translation type="unfinished">&amp;Μετακίνηση στα απορρίμματα</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="646"/>
+        <location filename="../../build/src/ui_main-win.h" line="712"/>
         <source>Ctrl+Backspace</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="664"/>
+        <location filename="../../build/src/ui_main-win.h" line="719"/>
         <source>Get &amp;Info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="667"/>
+        <location filename="../../build/src/ui_main-win.h" line="721"/>
         <source>Ctrl+I</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="675"/>
+        <location filename="../../build/src/ui_main-win.h" line="723"/>
         <source>&amp;Case Sensitive</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="683"/>
+        <location filename="../../build/src/ui_main-win.h" line="724"/>
         <source>By File &amp;Size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="688"/>
+        <location filename="../../build/src/ui_main-win.h" line="725"/>
         <source>&amp;Close Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="723"/>
+        <location filename="../../build/src/ui_main-win.h" line="736"/>
         <source>&amp;Folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="735"/>
+        <location filename="../../build/src/ui_main-win.h" line="740"/>
         <source>&amp;Blank File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="746"/>
+        <location filename="../../build/src/ui_main-win.h" line="746"/>
         <source>Ctrl+F</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="763"/>
+        <location filename="../../build/src/ui_main-win.h" line="749"/>
         <source>&amp;Go To Folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="766"/>
+        <location filename="../../build/src/ui_main-win.h" line="751"/>
         <source>Go To Folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="769"/>
+        <location filename="../../build/src/ui_main-win.h" line="754"/>
         <source>Ctrl+Shift+G</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="774"/>
+        <location filename="../../build/src/ui_main-win.h" line="756"/>
         <source>&amp;Downloads</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="777"/>
+        <location filename="../../build/src/ui_main-win.h" line="758"/>
         <source>Downloads</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="780"/>
+        <location filename="../../build/src/ui_main-win.h" line="761"/>
         <source>Ctrl+Shift+L</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="788"/>
+        <location filename="../../build/src/ui_main-win.h" line="763"/>
         <source>&amp;Utilities</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="791"/>
+        <location filename="../../build/src/ui_main-win.h" line="765"/>
         <source>Utilities</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="794"/>
+        <location filename="../../build/src/ui_main-win.h" line="768"/>
         <source>Ctrl+Shift+U</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="802"/>
+        <location filename="../../build/src/ui_main-win.h" line="770"/>
         <source>&amp;Documents</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="805"/>
+        <location filename="../../build/src/ui_main-win.h" line="772"/>
         <source>Documents</source>
         <translation type="unfinished">Έγγραφα</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="808"/>
+        <location filename="../../build/src/ui_main-win.h" line="775"/>
         <source>Ctrl+Shift+O</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="816"/>
+        <location filename="../../build/src/ui_main-win.h" line="777"/>
         <source>Open</source>
         <translation type="unfinished">Άνοιγμα</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="819"/>
+        <location filename="../../build/src/ui_main-win.h" line="779"/>
         <source>Ctrl+O</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
+        <location filename="../../build/src/ui_main-win.h" line="781"/>
         <source>&amp;Duplicate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="827"/>
+        <location filename="../../build/src/ui_main-win.h" line="783"/>
         <source>Ctrl+D</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="832"/>
+        <location filename="../../build/src/ui_main-win.h" line="785"/>
         <source>Empty Trash</source>
         <translation type="unfinished">Άδειασμα των απορριμμάτων</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="835"/>
+        <location filename="../../build/src/ui_main-win.h" line="787"/>
         <source>Ctrl+Alt+Backspace</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="840"/>
+        <location filename="../../build/src/ui_main-win.h" line="789"/>
         <source>Show Contents</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="843"/>
+        <location filename="../../build/src/ui_main-win.h" line="791"/>
         <source>Ctrl+Alt+O</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="852"/>
         <location filename="../main-win.ui" line="855"/>
+        <location filename="../../build/src/ui_main-win.h" line="793"/>
+        <location filename="../../build/src/ui_main-win.h" line="795"/>
         <source>Go Up and Close Current</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="858"/>
+        <location filename="../../build/src/ui_main-win.h" line="798"/>
         <source>Ctrl+Shift+Up</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2207,52 +2360,63 @@ Modified: %3</source>
     </message>
     <message>
         <location filename="../main-win.ui" line="581"/>
+        <location filename="../../build/src/ui_main-win.h" line="688"/>
         <source>New &amp;Tab</source>
         <translation>Νέα &amp;καρτέλα</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="584"/>
+        <location filename="../../build/src/ui_main-win.h" line="690"/>
         <source>New Tab</source>
         <translation>Νέα καρτέλα</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="587"/>
         <location filename="../main-win.ui" line="704"/>
+        <location filename="../../build/src/ui_main-win.h" line="693"/>
+        <location filename="../../build/src/ui_main-win.h" line="732"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="599"/>
+        <location filename="../../build/src/ui_main-win.h" line="695"/>
         <source>Go &amp;Back</source>
         <translation>Μετάβαση &amp;πίσω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="602"/>
+        <location filename="../../build/src/ui_main-win.h" line="697"/>
         <source>Go Back</source>
         <translation>Μετάβαση πίσω</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="605"/>
+        <location filename="../../build/src/ui_main-win.h" line="700"/>
         <source>Alt+Left</source>
         <translation>Alt+Αριστερά</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="614"/>
+        <location filename="../../build/src/ui_main-win.h" line="702"/>
         <source>Go &amp;Forward</source>
         <translation>Μετάβαση &amp;εμπρός</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="617"/>
+        <location filename="../../build/src/ui_main-win.h" line="704"/>
         <source>Go Forward</source>
         <translation>Μετάβαση εμπρός</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="620"/>
+        <location filename="../../build/src/ui_main-win.h" line="707"/>
         <source>Alt+Right</source>
         <translation>Alt+Δεξιά</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
+        <location filename="../../build/src/ui_main-win.h" line="709"/>
         <source>&amp;Invert Selection</source>
         <translation>Αντιστρο&amp;φή επιλογής</translation>
     </message>
@@ -2266,21 +2430,25 @@ Modified: %3</source>
     </message>
     <message>
         <location filename="../main-win.ui" line="651"/>
+        <location filename="../../build/src/ui_main-win.h" line="714"/>
         <source>&amp;Rename</source>
         <translation>&amp;Μετονομασία</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="654"/>
+        <location filename="../../build/src/ui_main-win.h" line="716"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="659"/>
+        <location filename="../../build/src/ui_main-win.h" line="718"/>
         <source>C&amp;lose Tab</source>
         <translation>Κλείσιμο καρ&amp;τέλας</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="691"/>
+        <location filename="../../build/src/ui_main-win.h" line="727"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
@@ -2310,11 +2478,13 @@ Modified: %3</source>
     </message>
     <message>
         <location filename="../main-win.ui" line="696"/>
+        <location filename="../../build/src/ui_main-win.h" line="729"/>
         <source>Edit Bookmarks</source>
         <translation>Επεξεργασία σελιδοδεικτών</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="701"/>
+        <location filename="../../build/src/ui_main-win.h" line="730"/>
         <source>Open &amp;Terminal</source>
         <translation>Άνοιγμα του &amp;τερματικού</translation>
     </message>
@@ -2324,11 +2494,13 @@ Modified: %3</source>
     </message>
     <message>
         <location filename="../main-win.ui" line="709"/>
+        <location filename="../../build/src/ui_main-win.h" line="734"/>
         <source>Open as &amp;Root</source>
         <translation>Άνοιγμα ως δια&amp;χειριστής</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="714"/>
+        <location filename="../../build/src/ui_main-win.h" line="735"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>Επε&amp;ξεργασία σελιδοδεικτών</translation>
     </message>
@@ -2339,6 +2511,8 @@ Modified: %3</source>
     <message>
         <location filename="../main-win.ui" line="389"/>
         <location filename="../main-win.ui" line="726"/>
+        <location filename="../../build/src/ui_main-win.h" line="639"/>
+        <location filename="../../build/src/ui_main-win.h" line="738"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Shift+N</translation>
     </message>
@@ -2348,11 +2522,13 @@ Modified: %3</source>
     </message>
     <message>
         <location filename="../main-win.ui" line="738"/>
+        <location filename="../../build/src/ui_main-win.h" line="742"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="743"/>
+        <location filename="../../build/src/ui_main-win.h" line="744"/>
         <source>&amp;Find Files</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2362,61 +2538,73 @@ Modified: %3</source>
     </message>
     <message>
         <location filename="../main-win.ui" line="754"/>
+        <location filename="../../build/src/ui_main-win.h" line="748"/>
         <source>Filter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="93"/>
+        <location filename="../../build/src/ui_main-win.h" line="800"/>
         <source>Filter by string...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="117"/>
+        <location filename="../../build/src/ui_main-win.h" line="801"/>
         <source>&amp;File</source>
         <translation>&amp;Αρχείο</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="121"/>
+        <location filename="../../build/src/ui_main-win.h" line="802"/>
         <source>C&amp;reate New</source>
         <translation>&amp;Δημιουργία νέου</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="140"/>
+        <location filename="../../build/src/ui_main-win.h" line="803"/>
         <source>&amp;Help</source>
         <translation>&amp;Βοήθεια</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="146"/>
+        <location filename="../../build/src/ui_main-win.h" line="804"/>
         <source>&amp;View</source>
         <translation>&amp;Προβολή</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="150"/>
+        <location filename="../../build/src/ui_main-win.h" line="805"/>
         <source>&amp;Sorting</source>
         <translation>&amp;Ταξινόμηση</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="176"/>
+        <location filename="../../build/src/ui_main-win.h" line="806"/>
         <source>&amp;Edit</source>
         <translation>&amp;Επεξεργασία</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="194"/>
+        <location filename="../../build/src/ui_main-win.h" line="807"/>
         <source>&amp;Bookmarks</source>
         <translation>&amp;Σελιδοδείκτες</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="201"/>
+        <location filename="../../build/src/ui_main-win.h" line="808"/>
         <source>&amp;Go</source>
         <translation>&amp;Μετάβαση</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="222"/>
+        <location filename="../../build/src/ui_main-win.h" line="809"/>
         <source>&amp;Tool</source>
         <translation>&amp;Εργαλεία</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="239"/>
+        <location filename="../../build/src/ui_main-win.h" line="810"/>
         <source>Main Toolbar</source>
         <translation>Κύρια γραμμή εργαλείων</translation>
     </message>
@@ -2425,46 +2613,55 @@ Modified: %3</source>
     <name>MountOperationPasswordDialog</name>
     <message>
         <location filename="../mount-operation-password.ui" line="20"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="172"/>
         <source>Mount</source>
         <translation>Προσάρτηση</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="48"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="174"/>
         <source>Connect &amp;anonymously</source>
         <translation>&amp;Ανώνυμη σύνδεση</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="58"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="175"/>
         <source>Connect as u&amp;ser:</source>
         <translation>Σύνδεση ως &amp;χρήστης:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="79"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="176"/>
         <source>&amp;Username:</source>
         <translation>Όνομα χ&amp;ρήστη:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="102"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="177"/>
         <source>&amp;Password:</source>
         <translation>&amp;Κωδικός πρόσβασης:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="112"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="178"/>
         <source>&amp;Domain:</source>
         <translation>&amp;Τομέας:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="127"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="179"/>
         <source>Forget password &amp;immediately</source>
         <translation>&amp;Λήθη του κωδικού πρόσβασης άμεσα</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="137"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="180"/>
         <source>Remember password until you &amp;logout</source>
         <translation>Απομνημόνευση του κωδικού πρόσβασης &amp;μέχρι να αποσυνδεθείτε</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="147"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="181"/>
         <source>Remember &amp;forever</source>
         <translation>Απομνημόνευση ε&amp;σαεί</translation>
     </message>
@@ -2473,22 +2670,27 @@ Modified: %3</source>
     <name>PreferencesDialog</name>
     <message>
         <location filename="../preferences.ui" line="14"/>
+        <location filename="../../build/src/ui_preferences.h" line="616"/>
         <source>Preferences</source>
         <translation>Προτιμήσεις</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="45"/>
+        <location filename="../preferences.ui" line="263"/>
+        <location filename="../../build/src/ui_preferences.h" line="663"/>
         <source>User Interface</source>
         <translation>Περιβάλλον χρήστη</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="35"/>
+        <location filename="../../build/src/ui_preferences.h" line="626"/>
         <source>Behavior</source>
         <translation>Συμπεριφορά</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="451"/>
+        <location filename="../preferences.ui" line="419"/>
+        <location filename="../preferences.ui" line="425"/>
+        <location filename="../../build/src/ui_preferences.h" line="664"/>
+        <location filename="../../build/src/ui_preferences.h" line="669"/>
         <source>Thumbnail</source>
         <translation>Εικόνες επισκόπησης</translation>
     </message>
@@ -2497,52 +2699,62 @@ Modified: %3</source>
         <translation type="vanished">Χώροι αποθήκευσης</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="55"/>
+        <location filename="../preferences.ui" line="479"/>
+        <location filename="../../build/src/ui_preferences.h" line="679"/>
         <source>Advanced</source>
         <translation>Προηγμένα</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="92"/>
+        <location filename="../preferences.ui" line="57"/>
+        <location filename="../../build/src/ui_preferences.h" line="619"/>
         <source>Save metadata to directories (.DirInfo files)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="102"/>
+        <location filename="../preferences.ui" line="67"/>
+        <location filename="../../build/src/ui_preferences.h" line="620"/>
         <source>Spatial mode (folders open in a new window)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="166"/>
+        <location filename="../preferences.ui" line="134"/>
+        <location filename="../../build/src/ui_preferences.h" line="627"/>
         <source>Icons</source>
         <translation>Εικονίδια</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="195"/>
+        <location filename="../preferences.ui" line="163"/>
+        <location filename="../../build/src/ui_preferences.h" line="629"/>
         <source>Size of big icons:</source>
         <translation>Το μέγεθος των μεγάλων εικονιδίων:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="205"/>
+        <location filename="../preferences.ui" line="173"/>
+        <location filename="../../build/src/ui_preferences.h" line="630"/>
         <source>Size of small icons:</source>
         <translation>Το μέγεθος των μικρών εικονιδίων:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="215"/>
+        <location filename="../preferences.ui" line="183"/>
+        <location filename="../../build/src/ui_preferences.h" line="631"/>
         <source>Size of thumbnails:</source>
         <translation>Το μέγεθος των εικόνων επισκόπησης:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="225"/>
+        <location filename="../preferences.ui" line="193"/>
+        <location filename="../../build/src/ui_preferences.h" line="632"/>
         <source>Size of side pane icons:</source>
         <translation>Το μέγεθος των εικονιδίων του πλευρικού πίνακα:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="178"/>
+        <location filename="../preferences.ui" line="146"/>
+        <location filename="../../build/src/ui_preferences.h" line="628"/>
         <source>Icon theme:</source>
         <translation>Θέματα εικονιδίων:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="298"/>
+        <location filename="../preferences.ui" line="269"/>
+        <location filename="../../build/src/ui_preferences.h" line="639"/>
         <source>Window</source>
         <translation>Παράθυρο</translation>
     </message>
@@ -2555,22 +2767,26 @@ Modified: %3</source>
         <translation type="vanished">Εμφάνιση του κουμπιού κλεισίματος στις καρτέλες</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="307"/>
+        <location filename="../preferences.ui" line="278"/>
+        <location filename="../../build/src/ui_preferences.h" line="640"/>
         <source>Remember the size of the last closed window</source>
         <translation>Απομνημόνευση του μεγέθους του τελευταία κλεισμένου παραθύρου</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="314"/>
+        <location filename="../preferences.ui" line="285"/>
+        <location filename="../../build/src/ui_preferences.h" line="641"/>
         <source>Default width of new windows:</source>
         <translation>Πλάτος εξ ορισμού των νέων παραθύρων:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="328"/>
+        <location filename="../preferences.ui" line="299"/>
+        <location filename="../../build/src/ui_preferences.h" line="642"/>
         <source>Default height of new windows:</source>
         <translation>Ύψος εξ ορισμού των νέων παραθύρων:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="76"/>
+        <location filename="../preferences.ui" line="41"/>
+        <location filename="../../build/src/ui_preferences.h" line="617"/>
         <source>Browsing</source>
         <translation>Εξερεύνηση</translation>
     </message>
@@ -2583,7 +2799,8 @@ Modified: %3</source>
         <translation type="vanished">Καθυστέρηση της αυτόματης επιλογής στη λειτουργία μονού κλικ (0 για απενεργοποίηση)</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="82"/>
+        <location filename="../preferences.ui" line="47"/>
+        <location filename="../../build/src/ui_preferences.h" line="618"/>
         <source>Default view mode:</source>
         <translation>Λειτουργία προβολής εξ ορισμού:</translation>
     </message>
@@ -2592,12 +2809,14 @@ Modified: %3</source>
         <translation type="vanished"> δευτ</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="112"/>
+        <location filename="../preferences.ui" line="77"/>
+        <location filename="../../build/src/ui_preferences.h" line="621"/>
         <source>File Operations</source>
         <translation>Λειτουργίες αρχείων</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="118"/>
+        <location filename="../preferences.ui" line="83"/>
+        <location filename="../../build/src/ui_preferences.h" line="622"/>
         <source>Confirm before deleting files</source>
         <translation>Επιβεβαίωση πριν τη διαγραφή των αρχείων</translation>
     </message>
@@ -2606,17 +2825,20 @@ Modified: %3</source>
         <translation type="vanished">Μετακίνηση των διαγραμμένων αρχείων στον κάδο των απορριμμάτων αντί τη διαγραφή τους από το δίσκο. </translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="481"/>
+        <location filename="../preferences.ui" line="455"/>
+        <location filename="../../build/src/ui_preferences.h" line="668"/>
         <source>Show thumbnails of files</source>
         <translation>Εμφάνιση εικόνων επισκόπησης των αρχείων</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="474"/>
+        <location filename="../preferences.ui" line="448"/>
+        <location filename="../../build/src/ui_preferences.h" line="667"/>
         <source>Only show thumbnails for local files</source>
         <translation>Εμφάνιση των εικόνων επισκόπησης μόνο για τα τοπικά αρχεία</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="40"/>
+        <location filename="../preferences.ui" line="128"/>
+        <location filename="../../build/src/ui_preferences.h" line="638"/>
         <source>Display</source>
         <translation>Εμφάνιση</translation>
     </message>
@@ -2637,142 +2859,176 @@ Modified: %3</source>
         <translation type="vanished">Άνοιγμα σε νέο παράθυρο</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="125"/>
+        <location filename="../preferences.ui" line="90"/>
+        <location filename="../../build/src/ui_preferences.h" line="623"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
         <translation>Διαγραφή των αρχείων των αφαιρούμενων συσκευών αντί για τη δημιουργία ενός κάδου απορριμμάτων</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="132"/>
+        <location filename="../preferences.ui" line="97"/>
+        <location filename="../../build/src/ui_preferences.h" line="624"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
         <translation>Επιβεβαίωση πριν την μετακίνηση των αρχείων στον κάδο απορριμμάτων</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="139"/>
+        <location filename="../preferences.ui" line="104"/>
+        <location filename="../../build/src/ui_preferences.h" line="625"/>
         <source>Don&apos;t ask options on launch executable file</source>
         <translation>Να μην ερωτώνται ενέργειες κατά το άνοιγμα ενός εκτελέσιμου αρχείου</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="238"/>
+        <location filename="../preferences.ui" line="206"/>
+        <location filename="../../build/src/ui_preferences.h" line="633"/>
         <source>User interface</source>
         <translation>Περιβάλλον χρήστη</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="251"/>
+        <location filename="../preferences.ui" line="219"/>
+        <location filename="../../build/src/ui_preferences.h" line="635"/>
         <source>Treat backup files as hidden</source>
         <translation>Διαχείριση των αρχείων αντιγράφων ασφαλείας ως κρυφά</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="261"/>
+        <location filename="../preferences.ui" line="229"/>
+        <location filename="../../build/src/ui_preferences.h" line="636"/>
         <source>Always show full file names</source>
         <translation>Να εμφανίζονται πάντα τα πλήρη ονόματα των αρχείων</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="271"/>
+        <location filename="../preferences.ui" line="239"/>
+        <location filename="../../build/src/ui_preferences.h" line="637"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>Εμφάνιση των εικονιδίων των κρυφών αρχείων σε σκίαση</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="345"/>
+        <location filename="../preferences.ui" line="316"/>
+        <location filename="../../build/src/ui_preferences.h" line="643"/>
         <source>Show in places</source>
         <translation>Εμφάνιση στις τοποθεσίες</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="352"/>
+        <location filename="../preferences.ui" line="323"/>
+        <location filename="../../build/src/ui_preferences.h" line="648"/>
         <source>Home</source>
         <translation>Προσωπικός φάκελος</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="364"/>
+        <location filename="../preferences.ui" line="335"/>
+        <location filename="../../build/src/ui_preferences.h" line="650"/>
         <source>Desktop</source>
         <translation>Επιφάνεια εργασίας</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="376"/>
+        <location filename="../preferences.ui" line="347"/>
+        <location filename="../../build/src/ui_preferences.h" line="652"/>
         <source>Trash can</source>
         <translation>Απορρίμματα</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="388"/>
+        <location filename="../preferences.ui" line="359"/>
+        <location filename="../../build/src/ui_preferences.h" line="654"/>
         <source>Computer</source>
         <translation>Υπολογιστής</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="400"/>
+        <location filename="../preferences.ui" line="371"/>
+        <location filename="../../build/src/ui_preferences.h" line="656"/>
         <source>Applications</source>
         <translation>Εφαρμογές</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="408"/>
+        <location filename="../preferences.ui" line="379"/>
+        <location filename="../../build/src/ui_preferences.h" line="658"/>
         <source>Devices</source>
         <translation>Συσκευές</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="416"/>
+        <location filename="../preferences.ui" line="387"/>
+        <location filename="../../build/src/ui_preferences.h" line="660"/>
         <source>Network</source>
         <translation>Δίκτυο</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="457"/>
+        <location filename="../preferences.ui" line="431"/>
+        <location filename="../../build/src/ui_preferences.h" line="665"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>Να μην δημιουργούνται εικόνες επισκόπησης για αρχεία εικόνων που υπερβαίνουν αυτό το το μέγεθος:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="464"/>
+        <location filename="../preferences.ui" line="438"/>
+        <location filename="../../build/src/ui_preferences.h" line="666"/>
         <source> KB</source>
         <translation> KB</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="605"/>
+        <location filename="../preferences.ui" line="579"/>
+        <location filename="../../build/src/ui_preferences.h" line="687"/>
+        <source>Mount</source>
+        <translation type="unfinished">Προσάρτηση</translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="585"/>
+        <location filename="../../build/src/ui_preferences.h" line="680"/>
         <source>Auto Mount</source>
         <translation>Αυτόματη προσάρτηση</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="611"/>
+        <location filename="../preferences.ui" line="591"/>
+        <location filename="../../build/src/ui_preferences.h" line="681"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Αυτόματη προσάρτηση των διαθέσιμων χώρων αποθήκευσης κατά την έναρξη του προγράμματος</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="618"/>
+        <location filename="../preferences.ui" line="598"/>
+        <location filename="../../build/src/ui_preferences.h" line="682"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Αυτόματη προσάρτηση των αφαιρούμενων μέσων κατά την εισαγωγή τους</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="625"/>
+        <location filename="../preferences.ui" line="605"/>
+        <location filename="../../build/src/ui_preferences.h" line="683"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Εμφάνιση των διαθέσιμων επιλογών των αφαιρούμενων μέσων κατά την εισαγωγή τους</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="635"/>
+        <location filename="../preferences.ui" line="615"/>
+        <location filename="../../build/src/ui_preferences.h" line="684"/>
         <source>When removable medium unmounted:</source>
         <translation>Κατά την αποπροσάρτηση ενός αφαιρουμένου μέσου:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="641"/>
+        <location filename="../preferences.ui" line="621"/>
+        <location filename="../../build/src/ui_preferences.h" line="685"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>Κλείσιμο της καρ&amp;τέλας που περιέχει το αφαιρούμενο μέσο</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="648"/>
+        <location filename="../preferences.ui" line="628"/>
+        <location filename="../../build/src/ui_preferences.h" line="686"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>Α&amp;λλαγή του φακέλου της καρτέλα στον προσωπικό κατάλογο</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="508"/>
+        <location filename="../preferences.ui" line="485"/>
+        <location filename="../../build/src/ui_preferences.h" line="670"/>
         <source>Programs</source>
         <translation>Προγράμματα</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="517"/>
+        <location filename="../preferences.ui" line="494"/>
+        <location filename="../../build/src/ui_preferences.h" line="671"/>
         <source>Terminal emulator:</source>
         <translation>Προσομοιωτής τερματικού:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="524"/>
+        <location filename="../preferences.ui" line="501"/>
+        <location filename="../../build/src/ui_preferences.h" line="672"/>
         <source>Switch &amp;user command:</source>
         <translation>Εντολή εναλλαγής &amp;χρήστη:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="537"/>
+        <location filename="../preferences.ui" line="511"/>
+        <location filename="../../build/src/ui_preferences.h" line="673"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>Παραδείγματα: &quot;xterm -e %s&quot; για το τερματικό ή &quot;gksu %s&quot; για την αλλαγή χρήστη.
@@ -2783,27 +3039,32 @@ Modified: %3</source>
         <translation type="vanished">Ενσωμάτωση αρ&amp;χειοθέτησης:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="558"/>
+        <location filename="../preferences.ui" line="532"/>
+        <location filename="../../build/src/ui_preferences.h" line="675"/>
         <source>Templates</source>
         <translation>Πρότυπα</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="564"/>
+        <location filename="../preferences.ui" line="538"/>
+        <location filename="../../build/src/ui_preferences.h" line="676"/>
         <source>Show only user defined templates in menu</source>
         <translation>Εμφάνιση στο μενού μόνο των πρότυπων που έχουν καθοριστεί από τον χρήστη</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="571"/>
+        <location filename="../preferences.ui" line="545"/>
+        <location filename="../../build/src/ui_preferences.h" line="677"/>
         <source>Show only one template for each MIME type</source>
         <translation>Εμφάνιση μόνο ενός πρότυπου για έκαστον τύπο MIME</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="578"/>
+        <location filename="../preferences.ui" line="552"/>
+        <location filename="../../build/src/ui_preferences.h" line="678"/>
         <source>Run default application after creation from template</source>
         <translation>Εκτέλεση της εξ ορισμού εφαρμογής μετά τη δημιουργία από το πρότυπο</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="244"/>
+        <location filename="../preferences.ui" line="212"/>
+        <location filename="../../build/src/ui_preferences.h" line="634"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>Χρήση προθεμάτων δεκαδικών SI αντί για δυαδικά προθέματα IEC</translation>
     </message>
@@ -2878,46 +3139,55 @@ Modified: %3</source>
     <name>RenameDialog</name>
     <message>
         <location filename="../rename-dialog.ui" line="14"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="156"/>
         <source>Confirm to replace files</source>
         <translation>Επιβεβαίωση αντικατάστασης των αρχείων</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="35"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="157"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;There is already a file with the same name in this location.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Do you want to replace the existing file?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Υπάρχει ήδη ένα αρχείο με το ίδιο όνομα στην συγκεκριμένη τοποθεσία.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Θέλετε να αντικαταστήσετε το υπάρχον αρχείο;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="56"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="158"/>
         <source>dest</source>
         <translation>προορισμός</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="63"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="159"/>
         <source>with the following file?</source>
         <translation>με το παρακάτω αρχείο;</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="76"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="160"/>
         <source>src file info</source>
         <translation>πληροφορίες αρχείου πηγής</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="89"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="161"/>
         <source>dest file info</source>
         <translation>πληροφορίες αρχείου προορισμού</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="102"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="162"/>
         <source>src</source>
         <translation>πηγή</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="122"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="163"/>
         <source>&amp;File name:</source>
         <translation>&amp;Όνομα αρχείου:</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="137"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="164"/>
         <source>Apply this option to all existing files</source>
         <translation>Εφαρμογή της επιλογής σε όλα τα υπάρχοντα αρχεία</translation>
     </message>
@@ -2926,175 +3196,213 @@ Modified: %3</source>
     <name>SearchDialog</name>
     <message>
         <location filename="../filesearch.ui" line="14"/>
+        <location filename="../../build/src/ui_filesearch.h" line="398"/>
         <source>Search Files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="29"/>
+        <location filename="../../build/src/ui_filesearch.h" line="408"/>
         <source>Name/Location</source>
         <translation type="unfinished">Όνομα/Τοποθεσία</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="35"/>
+        <location filename="../../build/src/ui_filesearch.h" line="399"/>
         <source>File Name Patterns:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="41"/>
+        <location filename="../../build/src/ui_filesearch.h" line="400"/>
         <source>*</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="48"/>
+        <location filename="../../build/src/ui_filesearch.h" line="401"/>
         <source>Case insensitive</source>
         <translation type="unfinished">Δίχως διάκριση πεζών/κεφαλαίων</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="55"/>
+        <location filename="../../build/src/ui_filesearch.h" line="402"/>
         <source>Use regular expression</source>
         <translation type="unfinished">Χρήση κανονικής έκφρασης</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="65"/>
+        <location filename="../../build/src/ui_filesearch.h" line="403"/>
         <source>Places to Search:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="78"/>
+        <location filename="../../build/src/ui_filesearch.h" line="404"/>
         <source>&amp;Add</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="90"/>
+        <location filename="../../build/src/ui_filesearch.h" line="405"/>
         <source>&amp;Remove</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="119"/>
+        <location filename="../../build/src/ui_filesearch.h" line="406"/>
         <source>Search in sub directories</source>
         <translation type="unfinished">Αναζήτηση σε υποφακέλους</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="126"/>
+        <location filename="../../build/src/ui_filesearch.h" line="407"/>
         <source>Search for hidden files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="137"/>
+        <location filename="../../build/src/ui_filesearch.h" line="416"/>
         <source>File Type</source>
         <translation type="unfinished">Τύπος αρχείου</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="143"/>
+        <location filename="../../build/src/ui_filesearch.h" line="409"/>
         <source>Only search for files of following types:</source>
         <translation type="unfinished">Αναζήτηση αρχείων μόνο για τους ακόλουθους τύπους:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="149"/>
+        <location filename="../../build/src/ui_filesearch.h" line="410"/>
         <source>Text files</source>
         <translation type="unfinished">Αρχεία κειμένου</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="156"/>
+        <location filename="../../build/src/ui_filesearch.h" line="411"/>
         <source>Image files</source>
         <translation type="unfinished">Αρχεία εικόνων</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="163"/>
+        <location filename="../../build/src/ui_filesearch.h" line="412"/>
         <source>Audio files</source>
         <translation type="unfinished">Αρχεία ήχου</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="170"/>
+        <location filename="../../build/src/ui_filesearch.h" line="413"/>
         <source>Video files</source>
         <translation type="unfinished">Αρχεία βίντεο</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="177"/>
+        <location filename="../../build/src/ui_filesearch.h" line="414"/>
         <source>Documents</source>
         <translation type="unfinished">Έγγραφα</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="184"/>
+        <location filename="../../build/src/ui_filesearch.h" line="415"/>
         <source>Folders</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="208"/>
+        <location filename="../../build/src/ui_filesearch.h" line="420"/>
         <source>Content</source>
         <translation type="unfinished">Περιεχόμενο</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="214"/>
+        <location filename="../../build/src/ui_filesearch.h" line="417"/>
         <source>File contains:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="223"/>
+        <location filename="../../build/src/ui_filesearch.h" line="418"/>
         <source>Case insensiti&amp;ve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="230"/>
+        <location filename="../../build/src/ui_filesearch.h" line="419"/>
         <source>&amp;Use regular expression</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="254"/>
+        <location filename="../../build/src/ui_filesearch.h" line="437"/>
         <source>Properties</source>
         <translation type="unfinished">Ιδιότητες</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="260"/>
+        <location filename="../../build/src/ui_filesearch.h" line="421"/>
         <source>File Size:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="266"/>
+        <location filename="../../build/src/ui_filesearch.h" line="422"/>
         <source>Larger than:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="282"/>
         <location filename="../filesearch.ui" line="323"/>
+        <location filename="../../build/src/ui_filesearch.h" line="423"/>
+        <location filename="../../build/src/ui_filesearch.h" line="429"/>
         <source>Bytes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="287"/>
         <location filename="../filesearch.ui" line="328"/>
+        <location filename="../../build/src/ui_filesearch.h" line="424"/>
+        <location filename="../../build/src/ui_filesearch.h" line="430"/>
         <source>KiB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="292"/>
         <location filename="../filesearch.ui" line="333"/>
+        <location filename="../../build/src/ui_filesearch.h" line="425"/>
+        <location filename="../../build/src/ui_filesearch.h" line="431"/>
         <source>MiB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="297"/>
         <location filename="../filesearch.ui" line="338"/>
+        <location filename="../../build/src/ui_filesearch.h" line="426"/>
+        <location filename="../../build/src/ui_filesearch.h" line="432"/>
         <source>GiB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="307"/>
+        <location filename="../../build/src/ui_filesearch.h" line="428"/>
         <source>Smaller than:</source>
         <translation type="unfinished">Μικρότερο από:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="351"/>
+        <location filename="../../build/src/ui_filesearch.h" line="434"/>
         <source>Last Modified Time:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="357"/>
+        <location filename="../../build/src/ui_filesearch.h" line="435"/>
         <source>Earlier than:</source>
         <translation type="unfinished">Προγενέστερα από:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="364"/>
+        <location filename="../../build/src/ui_filesearch.h" line="436"/>
         <source>Later than:</source>
         <translation type="unfinished">Αργότερα από:</translation>
     </message>

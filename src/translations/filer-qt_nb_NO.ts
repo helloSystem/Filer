@@ -5,26 +5,31 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../about.ui" line="14"/>
+        <location filename="../../build/src/ui_about.h" line="140"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
         <location filename="../about.ui" line="37"/>
+        <location filename="../../build/src/ui_about.h" line="142"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="60"/>
+        <location filename="../../build/src/ui_about.h" line="144"/>
         <source>The Desktop Experience</source>
         <translation>Skrivebordsopplevelsen</translation>
     </message>
     <message>
         <location filename="../about.ui" line="70"/>
+        <location filename="../../build/src/ui_about.h" line="145"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="99"/>
+        <location filename="../../build/src/ui_about.h" line="146"/>
         <source>Programming:
 * Simon Peter (probono)
 * Chris Moore (moochris)
@@ -42,6 +47,7 @@ Programikon:
     </message>
     <message>
         <location filename="../about.ui" line="125"/>
+        <location filename="../../build/src/ui_about.h" line="154"/>
         <source>Filer
 
 Copyright (C) 2020-21 Simon Peter
@@ -91,6 +97,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
     </message>
     <message>
         <location filename="../about.ui" line="90"/>
+        <location filename="../../build/src/ui_about.h" line="153"/>
         <source>Authors</source>
         <translation>Utviklere</translation>
     </message>
@@ -132,6 +139,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     </message>
     <message>
         <location filename="../about.ui" line="116"/>
+        <location filename="../../build/src/ui_about.h" line="184"/>
         <source>License</source>
         <translation>Lisens</translation>
     </message>
@@ -140,31 +148,37 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <name>AppChooserDialog</name>
     <message>
         <location filename="../app-chooser-dialog.ui" line="14"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="150"/>
         <source>Choose an Application</source>
         <translation>Velg et program</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="36"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="151"/>
         <source>Installed Applications</source>
         <translation>Installerte programmer</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="46"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="163"/>
         <source>Custom Command</source>
         <translation>Egendefinert kommando</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="52"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="152"/>
         <source>Command line to execute:</source>
         <translation>Kommando å kjøre:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="62"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="153"/>
         <source>Application name:</source>
         <translation>Programnavn:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="72"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="154"/>
         <source>&lt;b&gt;These special codes can be used in the command line:&lt;/b&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;b&gt;%f&lt;/b&gt;: Represents a single file name&lt;/li&gt;
@@ -182,16 +196,19 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="91"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="161"/>
         <source>Keep terminal window open after command execution</source>
         <translation>Hold terminalvindu åpent etter kjøring av kommando</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="98"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="162"/>
         <source>Execute in terminal emulator</source>
         <translation>Kjør i terminalemulator</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="109"/>
+        <location filename="../../build/src/ui_app-chooser-dialog.h" line="164"/>
         <source>Set selected application as default action of this file type</source>
         <translation>Sett valgt program som forvalgt handling for denne filtypen</translation>
     </message>
@@ -200,26 +217,31 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <name>AutoRunDialog</name>
     <message>
         <location filename="../autorun.ui" line="14"/>
+        <location filename="../../build/src/ui_autorun.h" line="108"/>
         <source>Removable medium is inserted</source>
         <translation>Flyttbart medium satt inn</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
+        <location filename="../../build/src/ui_autorun.h" line="110"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
         <translation>&lt;b&gt;Flyttbart medium satt inn&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
+        <location filename="../../build/src/ui_autorun.h" line="111"/>
         <source>Type of medium:</source>
         <translation>Type medium:</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
+        <location filename="../../build/src/ui_autorun.h" line="112"/>
         <source>Detecting...</source>
         <translation>Oppdager …</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
+        <location filename="../../build/src/ui_autorun.h" line="113"/>
         <source>Please select the action you want to perform:</source>
         <translation>Velg handlingen du ønske rå utføre:</translation>
     </message>
@@ -228,31 +250,37 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <name>DesktopFolder</name>
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
+        <location filename="../../build/src/ui_desktop-folder.h" line="72"/>
         <source>Form</source>
         <translation>Skjema</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
+        <location filename="../../build/src/ui_desktop-folder.h" line="73"/>
         <source>Desktop</source>
         <translation>Skrivebord</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
+        <location filename="../../build/src/ui_desktop-folder.h" line="74"/>
         <source>Desktop folder:</source>
         <translation>Skrivebordsmappe:</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
+        <location filename="../../build/src/ui_desktop-folder.h" line="76"/>
         <source>Image file</source>
         <translation type="unfinished">Bildefil</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
+        <location filename="../../build/src/ui_desktop-folder.h" line="81"/>
         <source>Folder path</source>
         <translation>Mappesti</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
+        <location filename="../../build/src/ui_desktop-folder.h" line="82"/>
         <source>&amp;Browse</source>
         <translation>&amp;Utforsk</translation>
     </message>
@@ -261,41 +289,49 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <name>DesktopPreferencesDialog</name>
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="186"/>
         <source>Desktop Preferences</source>
         <translation>Skrivebordsinnstillinger</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="20"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="187"/>
         <source>Background</source>
         <translation>Bakgrunn</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="45"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="189"/>
         <source>Wallpaper mode:</source>
         <translation>Bakgrunnsbildemodus:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="32"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="188"/>
         <source>Wallpaper image file:</source>
         <translation>Bakgrunnsbildefil:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="92"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
         <source>Colors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="150"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="203"/>
         <source>Background color:</source>
         <translation>Bakgrunnsfarge:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="104"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="199"/>
         <source>Text color:</source>
         <translation>Tekstfarge:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="143"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="202"/>
         <source>Shadow color:</source>
         <translation>Skyggefarge:</translation>
     </message>
@@ -309,16 +345,19 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="67"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="191"/>
         <source>Image file</source>
         <translation>Bildefil</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="73"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="196"/>
         <source>Image file path</source>
         <translation>Bildefil-sti</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="80"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="197"/>
         <source>&amp;Browse</source>
         <translation>&amp;Utforsk</translation>
     </message>
@@ -359,31 +398,37 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <name>EditBookmarksDialog</name>
     <message>
         <location filename="../edit-bookmarks.ui" line="14"/>
+        <location filename="../../build/src/ui_edit-bookmarks.h" line="103"/>
         <source>Edit Bookmarks</source>
         <translation type="unfinished">Rediger bokmerker</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="42"/>
+        <location filename="../../build/src/ui_edit-bookmarks.h" line="106"/>
         <source>Name</source>
         <translation>Navn</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="47"/>
+        <location filename="../../build/src/ui_edit-bookmarks.h" line="105"/>
         <source>Location</source>
         <translation>Sted</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="67"/>
+        <location filename="../../build/src/ui_edit-bookmarks.h" line="107"/>
         <source>&amp;Add Item</source>
         <translation>&amp;Legg til element</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="77"/>
+        <location filename="../../build/src/ui_edit-bookmarks.h" line="108"/>
         <source>&amp;Remove Item</source>
         <translation>&amp;Fjern element</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="102"/>
+        <location filename="../../build/src/ui_edit-bookmarks.h" line="109"/>
         <source>Use drag and drop to reorder the items</source>
         <translation>Bruk dra-og-slipp for å omorganisere elementene</translation>
     </message>
@@ -392,26 +437,31 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <name>ExecFileDialog</name>
     <message>
         <location filename="../exec-file.ui" line="14"/>
+        <location filename="../../build/src/ui_exec-file.h" line="114"/>
         <source>Execute file</source>
         <translation>Kjør fil</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="39"/>
+        <location filename="../../build/src/ui_exec-file.h" line="116"/>
         <source>&amp;Open</source>
         <translation>&amp;Åpne</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="52"/>
+        <location filename="../../build/src/ui_exec-file.h" line="117"/>
         <source>E&amp;xecute</source>
         <translation>K&amp;jør</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="62"/>
+        <location filename="../../build/src/ui_exec-file.h" line="118"/>
         <source>Execute in &amp;Terminal</source>
         <translation>Kjør i &amp;terminal</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="85"/>
+        <location filename="../../build/src/ui_exec-file.h" line="119"/>
         <source>Cancel</source>
         <translation>Avbryt</translation>
     </message>
@@ -420,26 +470,31 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <name>FileOperationDialog</name>
     <message>
         <location filename="../file-operation-dialog.ui" line="25"/>
+        <location filename="../../build/src/ui_file-operation-dialog.h" line="124"/>
         <source>Destination:</source>
         <translation>Mål:</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="48"/>
+        <location filename="../../build/src/ui_file-operation-dialog.h" line="126"/>
         <source>Processing:</source>
         <translation type="unfinished">Behandler:</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="61"/>
+        <location filename="../../build/src/ui_file-operation-dialog.h" line="127"/>
         <source>Preparing...</source>
         <translation>Forbereder …</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="68"/>
+        <location filename="../../build/src/ui_file-operation-dialog.h" line="128"/>
         <source>Progress</source>
         <translation>Framdrift</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="88"/>
+        <location filename="../../build/src/ui_file-operation-dialog.h" line="129"/>
         <source>Time remaining:</source>
         <translation>Gjenstående tid:</translation>
     </message>
@@ -448,81 +503,97 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</translation>
     <name>FilePropsDialog</name>
     <message>
         <location filename="../file-props.ui" line="20"/>
+        <location filename="../../build/src/ui_file-props.h" line="362"/>
         <source>Info</source>
         <translation>Info</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="60"/>
+        <location filename="../../build/src/ui_file-props.h" line="363"/>
         <source>TextLabel</source>
         <translation>TekstEtikett</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="133"/>
+        <location filename="../../build/src/ui_file-props.h" line="365"/>
         <source>General</source>
         <translation type="unfinished">Generelt</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="139"/>
+        <location filename="../../build/src/ui_file-props.h" line="366"/>
         <source>File type:</source>
         <translation>Filtype:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="162"/>
+        <location filename="../../build/src/ui_file-props.h" line="368"/>
         <source>File size:</source>
         <translation>Filstørrelse:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="185"/>
+        <location filename="../../build/src/ui_file-props.h" line="370"/>
         <source>On-disk size:</source>
         <translation>Størrelse på disk:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="208"/>
+        <location filename="../../build/src/ui_file-props.h" line="372"/>
         <source>Location:</source>
         <translation>Sted:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="234"/>
+        <location filename="../../build/src/ui_file-props.h" line="374"/>
         <source>Link target:</source>
         <translation>Lenkemål:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="260"/>
+        <location filename="../../build/src/ui_file-props.h" line="376"/>
         <source>Last modified:</source>
         <translation>Sist endret:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="283"/>
+        <location filename="../../build/src/ui_file-props.h" line="378"/>
         <source>Last accessed:</source>
         <translation>Sist brukt:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="317"/>
+        <location filename="../../build/src/ui_file-props.h" line="380"/>
         <source>Open with</source>
         <translation>Åpne med</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="323"/>
+        <location filename="../../build/src/ui_file-props.h" line="381"/>
         <source>Mime type:</source>
         <translation type="unfinished">Media-type:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="346"/>
+        <location filename="../../build/src/ui_file-props.h" line="383"/>
         <source>Open With:</source>
         <translation>Åpne med:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="380"/>
+        <location filename="../../build/src/ui_file-props.h" line="384"/>
         <source>Access Control</source>
         <translation>Tilgangskontroll</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="423"/>
+        <location filename="../../build/src/ui_file-props.h" line="385"/>
         <source>Everyone</source>
         <translation>Alle</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="440"/>
+        <location filename="../../build/src/ui_file-props.h" line="386"/>
         <source>Make the file executable</source>
         <translation>Gjør filen kjørbar</translation>
     </message>
@@ -530,22 +601,22 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</translation>
 <context>
     <name>Filer::Application</name>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="262"/>
         <source>Name of configuration profile</source>
         <translation>Navn på oppsettsprofil</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="219"/>
+        <location filename="../application.cpp" line="262"/>
         <source>PROFILE</source>
         <translation>Profil</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="222"/>
+        <location filename="../application.cpp" line="265"/>
         <source>Run Filer as a daemon</source>
         <translation>Kjør Filer som nisse</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="225"/>
+        <location filename="../application.cpp" line="268"/>
         <source>Quit Filer</source>
         <translation>Avslutt Filer</translation>
     </message>
@@ -554,7 +625,7 @@ Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</translation>
         <translation type="vanished">Kjør skrivebordsbehandler</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="158"/>
+        <location filename="../application.cpp" line="201"/>
         <source>%1 was not launched by the launch command
 from an application bundle.
 
@@ -563,89 +634,89 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="168"/>
+        <location filename="../application.cpp" line="211"/>
         <source>The &apos;launch&apos; command is missing.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="175"/>
+        <location filename="../application.cpp" line="218"/>
         <source>The &apos;open&apos; command is missing.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="228"/>
+        <location filename="../application.cpp" line="271"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation>Start skrivebordsbehandler (foreldet)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="231"/>
+        <location filename="../application.cpp" line="274"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Skru av skrivebordsbehandler hvis den kjører</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="234"/>
+        <location filename="../application.cpp" line="277"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Åpne skrivebordinnstillingsdialogen på siden med angitt navn</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="234"/>
-        <location filename="../application.cpp" line="250"/>
+        <location filename="../application.cpp" line="277"/>
+        <location filename="../application.cpp" line="293"/>
         <source>NAME</source>
         <translation>Navn</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="237"/>
+        <location filename="../application.cpp" line="280"/>
         <source>Open new window</source>
         <translation>Åpne nytt vindu</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="240"/>
+        <location filename="../application.cpp" line="283"/>
         <source>Open Find Files utility</source>
         <translation type="unfinished">Åpne søkeverktøyet</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="243"/>
+        <location filename="../application.cpp" line="286"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation type="unfinished">Sett bakgrunnsbilde fra bildefil</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="243"/>
+        <location filename="../application.cpp" line="286"/>
         <source>FILE</source>
         <translation>Fil</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="247"/>
+        <location filename="../application.cpp" line="290"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Sett modus for bakgrunnen. MODE=(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="247"/>
+        <location filename="../application.cpp" line="290"/>
         <source>MODE</source>
         <translation>Modus</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="250"/>
+        <location filename="../application.cpp" line="293"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Åpne innstillingsdialogen på side med angitt navn.</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="253"/>
+        <location filename="../application.cpp" line="296"/>
         <source>Files or directories to open</source>
         <translation>Filer eller mapper å åpne</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="253"/>
+        <location filename="../application.cpp" line="296"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[Fil1, fil2, …]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="543"/>
-        <location filename="../application.cpp" line="550"/>
+        <location filename="../application.cpp" line="586"/>
+        <location filename="../application.cpp" line="593"/>
         <source>Error</source>
         <translation>Feil</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="550"/>
+        <location filename="../application.cpp" line="593"/>
         <source>Terminal emulator is not set.</source>
         <translation>Terminalemulator er ikke satt.</translation>
     </message>
@@ -772,22 +843,22 @@ Functionality may be broken.</source>
 <context>
     <name>Filer::PreferencesDialog</name>
     <message>
-        <location filename="../preferencesdialog.cpp" line="192"/>
+        <location filename="../preferencesdialog.cpp" line="190"/>
         <source>Icon View</source>
         <translation>Ikonvisning</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="193"/>
+        <location filename="../preferencesdialog.cpp" line="191"/>
         <source>Compact Icon View</source>
         <translation>Kompakt ikonvisning</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="194"/>
+        <location filename="../preferencesdialog.cpp" line="192"/>
         <source>Thumbnail View</source>
         <translation>Miniatyrbildevisning</translation>
     </message>
     <message>
-        <location filename="../preferencesdialog.cpp" line="195"/>
+        <location filename="../preferencesdialog.cpp" line="193"/>
         <source>Detailed List View</source>
         <translation>Detaljert listevisning</translation>
     </message>
@@ -1649,16 +1720,19 @@ Endret: %3</translation>
     <name>MainWindow</name>
     <message>
         <location filename="../main-win.ui" line="14"/>
+        <location filename="../../build/src/ui_main-win.h" line="602"/>
         <source>File Manager</source>
         <translation>Filbehandler</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="271"/>
+        <location filename="../../build/src/ui_main-win.h" line="603"/>
         <source>Go &amp;Up</source>
         <translation>Gå &amp;oppover</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="274"/>
+        <location filename="../../build/src/ui_main-win.h" line="605"/>
         <source>Go Up</source>
         <translation>Gå oppover</translation>
     </message>
@@ -1668,6 +1742,7 @@ Endret: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="286"/>
+        <location filename="../../build/src/ui_main-win.h" line="610"/>
         <source>&amp;Home</source>
         <translation></translation>
     </message>
@@ -1677,6 +1752,7 @@ Endret: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="298"/>
+        <location filename="../../build/src/ui_main-win.h" line="614"/>
         <source>&amp;Reload</source>
         <translation>&amp;Last inn igjen</translation>
     </message>
@@ -1686,11 +1762,13 @@ Endret: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="313"/>
+        <location filename="../../build/src/ui_main-win.h" line="618"/>
         <source>Go</source>
         <translation>Start</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="325"/>
+        <location filename="../../build/src/ui_main-win.h" line="619"/>
         <source>Quit</source>
         <translation>Avslutt</translation>
     </message>
@@ -1700,21 +1778,25 @@ Endret: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="343"/>
+        <location filename="../../build/src/ui_main-win.h" line="621"/>
         <source>&amp;New Window</source>
         <translation>&amp;Nytt vindu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="346"/>
+        <location filename="../../build/src/ui_main-win.h" line="623"/>
         <source>New Window</source>
         <translation>Nytt vindu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="349"/>
+        <location filename="../../build/src/ui_main-win.h" line="626"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="357"/>
+        <location filename="../../build/src/ui_main-win.h" line="628"/>
         <source>Show &amp;Hidden</source>
         <translation>Vis &amp;skjulte</translation>
     </message>
@@ -1724,403 +1806,485 @@ Endret: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="366"/>
+        <location filename="../../build/src/ui_main-win.h" line="629"/>
         <source>&amp;Computer</source>
         <translation>&amp;Datamaskin</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="369"/>
+        <location filename="../../build/src/ui_main-win.h" line="631"/>
         <source>Ctrl+Shift+C</source>
         <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="378"/>
+        <location filename="../../build/src/ui_main-win.h" line="633"/>
         <source>&amp;Trash</source>
         <translation>&amp;Papirkurv</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="381"/>
+        <location filename="../../build/src/ui_main-win.h" line="635"/>
         <source>Ctrl+Shift+T</source>
         <translation>Ctrl+Shift+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="386"/>
+        <location filename="../../build/src/ui_main-win.h" line="637"/>
         <source>&amp;Network</source>
         <translation>&amp;Nettverk</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="398"/>
+        <location filename="../../build/src/ui_main-win.h" line="641"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Skrivebord</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="401"/>
+        <location filename="../../build/src/ui_main-win.h" line="643"/>
         <source>Ctrl+Shift+D</source>
         <translation>Ctrl+Shift+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="410"/>
+        <location filename="../../build/src/ui_main-win.h" line="645"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>&amp;Legg til som bokmerke</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="415"/>
+        <location filename="../../build/src/ui_main-win.h" line="646"/>
         <source>&amp;Applications</source>
         <translation>&amp;Programmer</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="418"/>
+        <location filename="../../build/src/ui_main-win.h" line="648"/>
         <source>Ctrl+Shift+A</source>
         <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="426"/>
+        <location filename="../../build/src/ui_main-win.h" line="650"/>
         <source>Reload</source>
         <translation>Last inn igjen</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="434"/>
+        <location filename="../../build/src/ui_main-win.h" line="651"/>
         <source>&amp;Icon View</source>
         <translation>&amp;Ikonvisning</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="437"/>
+        <location filename="../../build/src/ui_main-win.h" line="653"/>
         <source>Ctrl+1</source>
         <translation>Ctrl+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="445"/>
+        <location filename="../../build/src/ui_main-win.h" line="655"/>
         <source>&amp;Compact View</source>
         <translation>&amp;Kompakt visning</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="453"/>
+        <location filename="../../build/src/ui_main-win.h" line="656"/>
         <source>&amp;Detailed List</source>
         <translation>&amp;Detaljert liste</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="456"/>
+        <location filename="../../build/src/ui_main-win.h" line="658"/>
         <source>Ctrl+2</source>
         <translation>Ctrl+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="464"/>
+        <location filename="../../build/src/ui_main-win.h" line="660"/>
         <source>&amp;Thumbnail View</source>
         <translation>&amp;Miniatyrbildevisning</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="473"/>
+        <location filename="../../build/src/ui_main-win.h" line="661"/>
         <source>Cu&amp;t</source>
         <translation>&amp;Klipp ut</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="476"/>
+        <location filename="../../build/src/ui_main-win.h" line="663"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="485"/>
+        <location filename="../../build/src/ui_main-win.h" line="665"/>
         <source>&amp;Copy</source>
         <translation>&amp;Kopier</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="488"/>
+        <location filename="../../build/src/ui_main-win.h" line="667"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="497"/>
+        <location filename="../../build/src/ui_main-win.h" line="669"/>
         <source>&amp;Paste</source>
         <translation>&amp;Lim inn</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="500"/>
+        <location filename="../../build/src/ui_main-win.h" line="671"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="505"/>
+        <location filename="../../build/src/ui_main-win.h" line="673"/>
         <source>Select &amp;All</source>
         <translation>Velg &amp;alt</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="508"/>
+        <location filename="../../build/src/ui_main-win.h" line="675"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="513"/>
+        <location filename="../../build/src/ui_main-win.h" line="677"/>
         <source>Pr&amp;eferences</source>
         <translation>&amp;Innstillinger</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="516"/>
+        <location filename="../../build/src/ui_main-win.h" line="679"/>
         <source>Ctrl+,</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="524"/>
+        <location filename="../../build/src/ui_main-win.h" line="681"/>
         <source>&amp;Ascending</source>
         <translation>&amp;Stigende</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="532"/>
+        <location filename="../../build/src/ui_main-win.h" line="682"/>
         <source>&amp;Descending</source>
         <translation>&amp;Synkende</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="540"/>
+        <location filename="../../build/src/ui_main-win.h" line="683"/>
         <source>&amp;By File Name</source>
         <translation>&amp;Etter filnavn</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="548"/>
+        <location filename="../../build/src/ui_main-win.h" line="684"/>
         <source>By &amp;Modification Time</source>
         <translation>Etter &amp;endringsdato</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="556"/>
+        <location filename="../../build/src/ui_main-win.h" line="685"/>
         <source>By File &amp;Type</source>
         <translation>Etter fil&amp;type</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="564"/>
+        <location filename="../../build/src/ui_main-win.h" line="686"/>
         <source>By &amp;Owner</source>
         <translation>Etter &amp;eier</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="572"/>
+        <location filename="../../build/src/ui_main-win.h" line="687"/>
         <source>&amp;Folder First</source>
         <translation>&amp;Mapper først</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="643"/>
+        <location filename="../../build/src/ui_main-win.h" line="710"/>
         <source>&amp;Move to Trash</source>
         <translation type="unfinished">&amp;Flytt til papirkurv</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="646"/>
+        <location filename="../../build/src/ui_main-win.h" line="712"/>
         <source>Ctrl+Backspace</source>
         <translation>Ctrl+Rettetast</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="664"/>
+        <location filename="../../build/src/ui_main-win.h" line="719"/>
         <source>Get &amp;Info</source>
         <translation>Hent &amp;info</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="667"/>
+        <location filename="../../build/src/ui_main-win.h" line="721"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="675"/>
+        <location filename="../../build/src/ui_main-win.h" line="723"/>
         <source>&amp;Case Sensitive</source>
         <translation>&amp;Forskjell på små og store bokstaver</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="683"/>
+        <location filename="../../build/src/ui_main-win.h" line="724"/>
         <source>By File &amp;Size</source>
         <translation>Etter fil&amp;størrelse</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="688"/>
+        <location filename="../../build/src/ui_main-win.h" line="725"/>
         <source>&amp;Close Window</source>
         <translation>&amp;Lukk vindu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="723"/>
+        <location filename="../../build/src/ui_main-win.h" line="736"/>
         <source>&amp;Folder</source>
         <translation>&amp;Mappe</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="735"/>
+        <location filename="../../build/src/ui_main-win.h" line="740"/>
         <source>&amp;Blank File</source>
         <translation>&amp;Blank fil</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="746"/>
+        <location filename="../../build/src/ui_main-win.h" line="746"/>
         <source>Ctrl+F</source>
         <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="763"/>
+        <location filename="../../build/src/ui_main-win.h" line="749"/>
         <source>&amp;Go To Folder</source>
         <translation>&amp;Gå til mappe</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="766"/>
+        <location filename="../../build/src/ui_main-win.h" line="751"/>
         <source>Go To Folder</source>
         <translation>Gå til mappe</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="769"/>
+        <location filename="../../build/src/ui_main-win.h" line="754"/>
         <source>Ctrl+Shift+G</source>
         <translation>Ctrl+Shift+G</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="774"/>
+        <location filename="../../build/src/ui_main-win.h" line="756"/>
         <source>&amp;Downloads</source>
         <translation>&amp;Nedlastinger</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="777"/>
+        <location filename="../../build/src/ui_main-win.h" line="758"/>
         <source>Downloads</source>
         <translation>Nedlastinger</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="780"/>
+        <location filename="../../build/src/ui_main-win.h" line="761"/>
         <source>Ctrl+Shift+L</source>
         <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="788"/>
+        <location filename="../../build/src/ui_main-win.h" line="763"/>
         <source>&amp;Utilities</source>
         <translation>&amp;Verktøy</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="791"/>
+        <location filename="../../build/src/ui_main-win.h" line="765"/>
         <source>Utilities</source>
         <translation>Verktøy</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="794"/>
+        <location filename="../../build/src/ui_main-win.h" line="768"/>
         <source>Ctrl+Shift+U</source>
         <translation>Ctrl+Shift+U</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="802"/>
+        <location filename="../../build/src/ui_main-win.h" line="770"/>
         <source>&amp;Documents</source>
         <translation>&amp;Dokumenter</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="805"/>
+        <location filename="../../build/src/ui_main-win.h" line="772"/>
         <source>Documents</source>
         <translation>Dokumenter</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="808"/>
+        <location filename="../../build/src/ui_main-win.h" line="775"/>
         <source>Ctrl+Shift+O</source>
         <translation>Ctrl+Shift+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="816"/>
+        <location filename="../../build/src/ui_main-win.h" line="777"/>
         <source>Open</source>
         <translation>Åpne</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="819"/>
+        <location filename="../../build/src/ui_main-win.h" line="779"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="824"/>
+        <location filename="../../build/src/ui_main-win.h" line="781"/>
         <source>&amp;Duplicate</source>
         <translation>&amp;Dupliser</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="827"/>
+        <location filename="../../build/src/ui_main-win.h" line="783"/>
         <source>Ctrl+D</source>
         <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="832"/>
+        <location filename="../../build/src/ui_main-win.h" line="785"/>
         <source>Empty Trash</source>
         <translation>Tøm papirkurv</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="835"/>
+        <location filename="../../build/src/ui_main-win.h" line="787"/>
         <source>Ctrl+Alt+Backspace</source>
         <translation>Ctrl+Alt+Rettetast</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="840"/>
+        <location filename="../../build/src/ui_main-win.h" line="789"/>
         <source>Show Contents</source>
         <translation type="unfinished">Vis innhold</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="843"/>
+        <location filename="../../build/src/ui_main-win.h" line="791"/>
         <source>Ctrl+Alt+O</source>
         <translation>Ctrl+Alt+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="852"/>
         <location filename="../main-win.ui" line="855"/>
+        <location filename="../../build/src/ui_main-win.h" line="793"/>
+        <location filename="../../build/src/ui_main-win.h" line="795"/>
         <source>Go Up and Close Current</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="858"/>
+        <location filename="../../build/src/ui_main-win.h" line="798"/>
         <source>Ctrl+Shift+Up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="581"/>
+        <location filename="../../build/src/ui_main-win.h" line="688"/>
         <source>New &amp;Tab</source>
         <translation>Ny &amp;fane</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="277"/>
+        <location filename="../../build/src/ui_main-win.h" line="608"/>
         <source>Ctrl+Up</source>
         <translation type="unfinished">Ctrl+↑</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="289"/>
+        <location filename="../../build/src/ui_main-win.h" line="612"/>
         <source>Ctrl+Shift+H</source>
         <translation>Ctrl+Shift+H</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="301"/>
+        <location filename="../../build/src/ui_main-win.h" line="616"/>
         <source>Ctrl+Shift+R</source>
         <translation>Ctrl+Shift+R</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="334"/>
+        <location filename="../../build/src/ui_main-win.h" line="620"/>
         <source>&amp;About Filer</source>
         <translation>&amp;Om Filer</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="584"/>
+        <location filename="../../build/src/ui_main-win.h" line="690"/>
         <source>New Tab</source>
         <translation>Ny fane</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="587"/>
         <location filename="../main-win.ui" line="704"/>
+        <location filename="../../build/src/ui_main-win.h" line="693"/>
+        <location filename="../../build/src/ui_main-win.h" line="732"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="599"/>
+        <location filename="../../build/src/ui_main-win.h" line="695"/>
         <source>Go &amp;Back</source>
         <translation>Gå &amp;tilbake</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="602"/>
+        <location filename="../../build/src/ui_main-win.h" line="697"/>
         <source>Go Back</source>
         <translation>Gå tilbake</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="605"/>
+        <location filename="../../build/src/ui_main-win.h" line="700"/>
         <source>Alt+Left</source>
         <translation>Alt+←</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="614"/>
+        <location filename="../../build/src/ui_main-win.h" line="702"/>
         <source>Go &amp;Forward</source>
         <translation>Gå &amp;forover</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="617"/>
+        <location filename="../../build/src/ui_main-win.h" line="704"/>
         <source>Go Forward</source>
         <translation>Gå forover</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="620"/>
+        <location filename="../../build/src/ui_main-win.h" line="707"/>
         <source>Alt+Right</source>
         <translation>Alt+→</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="634"/>
+        <location filename="../../build/src/ui_main-win.h" line="709"/>
         <source>&amp;Invert Selection</source>
         <translation>&amp;Inverter utvalg</translation>
     </message>
@@ -2134,21 +2298,25 @@ Endret: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="651"/>
+        <location filename="../../build/src/ui_main-win.h" line="714"/>
         <source>&amp;Rename</source>
         <translation>&amp;Gi nytt navn</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="654"/>
+        <location filename="../../build/src/ui_main-win.h" line="716"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="659"/>
+        <location filename="../../build/src/ui_main-win.h" line="718"/>
         <source>C&amp;lose Tab</source>
         <translation>&amp;Lukk fane</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="691"/>
+        <location filename="../../build/src/ui_main-win.h" line="727"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
@@ -2166,11 +2334,13 @@ Endret: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="696"/>
+        <location filename="../../build/src/ui_main-win.h" line="729"/>
         <source>Edit Bookmarks</source>
         <translation>Rediger bokmerker</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="701"/>
+        <location filename="../../build/src/ui_main-win.h" line="730"/>
         <source>Open &amp;Terminal</source>
         <translation>Åpne &amp;terminal</translation>
     </message>
@@ -2180,27 +2350,33 @@ Endret: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="709"/>
+        <location filename="../../build/src/ui_main-win.h" line="734"/>
         <source>Open as &amp;Root</source>
         <translation>Åpne som &amp;rot</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="714"/>
+        <location filename="../../build/src/ui_main-win.h" line="735"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>&amp;Rediger bokmerker</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="389"/>
         <location filename="../main-win.ui" line="726"/>
+        <location filename="../../build/src/ui_main-win.h" line="639"/>
+        <location filename="../../build/src/ui_main-win.h" line="738"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="738"/>
+        <location filename="../../build/src/ui_main-win.h" line="742"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="743"/>
+        <location filename="../../build/src/ui_main-win.h" line="744"/>
         <source>&amp;Find Files</source>
         <translation>&amp;Finn filer</translation>
     </message>
@@ -2210,61 +2386,73 @@ Endret: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="754"/>
+        <location filename="../../build/src/ui_main-win.h" line="748"/>
         <source>Filter</source>
         <translation>Filter</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="93"/>
+        <location filename="../../build/src/ui_main-win.h" line="800"/>
         <source>Filter by string...</source>
         <translation>Filtrer etter streng …</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="117"/>
+        <location filename="../../build/src/ui_main-win.h" line="801"/>
         <source>&amp;File</source>
         <translation>&amp;Fil</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="121"/>
+        <location filename="../../build/src/ui_main-win.h" line="802"/>
         <source>C&amp;reate New</source>
         <translation>&amp;Opprett ny</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="140"/>
+        <location filename="../../build/src/ui_main-win.h" line="803"/>
         <source>&amp;Help</source>
         <translation>&amp;Hjelp</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="146"/>
+        <location filename="../../build/src/ui_main-win.h" line="804"/>
         <source>&amp;View</source>
         <translation>&amp;Vis</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="150"/>
+        <location filename="../../build/src/ui_main-win.h" line="805"/>
         <source>&amp;Sorting</source>
         <translation>&amp;Sortering</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="176"/>
+        <location filename="../../build/src/ui_main-win.h" line="806"/>
         <source>&amp;Edit</source>
         <translation>&amp;Rediger</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="194"/>
+        <location filename="../../build/src/ui_main-win.h" line="807"/>
         <source>&amp;Bookmarks</source>
         <translation>&amp;Bokmerker</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="201"/>
+        <location filename="../../build/src/ui_main-win.h" line="808"/>
         <source>&amp;Go</source>
         <translation>&amp;Start</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="222"/>
+        <location filename="../../build/src/ui_main-win.h" line="809"/>
         <source>&amp;Tool</source>
         <translation>&amp;Verktøy</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="239"/>
+        <location filename="../../build/src/ui_main-win.h" line="810"/>
         <source>Main Toolbar</source>
         <translation>Hovedverktøylinje</translation>
     </message>
@@ -2273,46 +2461,55 @@ Endret: %3</translation>
     <name>MountOperationPasswordDialog</name>
     <message>
         <location filename="../mount-operation-password.ui" line="20"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="172"/>
         <source>Mount</source>
         <translation type="unfinished">Monter</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="48"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="174"/>
         <source>Connect &amp;anonymously</source>
         <translation>Koble til &amp;anonymt</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="58"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="175"/>
         <source>Connect as u&amp;ser:</source>
         <translation>Koble til som &amp;bruker:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="79"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="176"/>
         <source>&amp;Username:</source>
         <translation>&amp;Brukernavn:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="102"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="177"/>
         <source>&amp;Password:</source>
         <translation>&amp;Passord:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="112"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="178"/>
         <source>&amp;Domain:</source>
         <translation>&amp;Domene:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="127"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="179"/>
         <source>Forget password &amp;immediately</source>
         <translation>Glem passord &amp;umiddelbart</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="137"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="180"/>
         <source>Remember password until you &amp;logout</source>
         <translation type="unfinished">Husk passord til neste &amp;utlogging</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="147"/>
+        <location filename="../../build/src/ui_mount-operation-password.h" line="181"/>
         <source>Remember &amp;forever</source>
         <translation>Husk &amp;for alltid</translation>
     </message>
@@ -2321,22 +2518,27 @@ Endret: %3</translation>
     <name>PreferencesDialog</name>
     <message>
         <location filename="../preferences.ui" line="14"/>
+        <location filename="../../build/src/ui_preferences.h" line="616"/>
         <source>Preferences</source>
         <translation>Innstillinger</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="45"/>
+        <location filename="../preferences.ui" line="263"/>
+        <location filename="../../build/src/ui_preferences.h" line="663"/>
         <source>User Interface</source>
         <translation>Brukergrensesnitt</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="35"/>
+        <location filename="../../build/src/ui_preferences.h" line="626"/>
         <source>Behavior</source>
         <translation>Oppførsel</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="50"/>
-        <location filename="../preferences.ui" line="451"/>
+        <location filename="../preferences.ui" line="419"/>
+        <location filename="../preferences.ui" line="425"/>
+        <location filename="../../build/src/ui_preferences.h" line="664"/>
+        <location filename="../../build/src/ui_preferences.h" line="669"/>
         <source>Thumbnail</source>
         <translation>Miniatyrbilde</translation>
     </message>
@@ -2345,52 +2547,62 @@ Endret: %3</translation>
         <translation type="vanished">Lydstyrke</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="55"/>
+        <location filename="../preferences.ui" line="479"/>
+        <location filename="../../build/src/ui_preferences.h" line="679"/>
         <source>Advanced</source>
         <translation>Avansert</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="92"/>
+        <location filename="../preferences.ui" line="57"/>
+        <location filename="../../build/src/ui_preferences.h" line="619"/>
         <source>Save metadata to directories (.DirInfo files)</source>
         <translation>Lagre metadata i mapper (.DirInfo-filer)</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="102"/>
+        <location filename="../preferences.ui" line="67"/>
+        <location filename="../../build/src/ui_preferences.h" line="620"/>
         <source>Spatial mode (folders open in a new window)</source>
         <translation>Spesialmodus (mapper åpnes i et nytt vindu)</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="166"/>
+        <location filename="../preferences.ui" line="134"/>
+        <location filename="../../build/src/ui_preferences.h" line="627"/>
         <source>Icons</source>
         <translation>Ikoner</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="195"/>
+        <location filename="../preferences.ui" line="163"/>
+        <location filename="../../build/src/ui_preferences.h" line="629"/>
         <source>Size of big icons:</source>
         <translation>Stor ikonstørrelse:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="205"/>
+        <location filename="../preferences.ui" line="173"/>
+        <location filename="../../build/src/ui_preferences.h" line="630"/>
         <source>Size of small icons:</source>
         <translation>Liten ikonstørrelse:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="215"/>
+        <location filename="../preferences.ui" line="183"/>
+        <location filename="../../build/src/ui_preferences.h" line="631"/>
         <source>Size of thumbnails:</source>
         <translation>Miniatyrbildestørrelse:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="225"/>
+        <location filename="../preferences.ui" line="193"/>
+        <location filename="../../build/src/ui_preferences.h" line="632"/>
         <source>Size of side pane icons:</source>
         <translation>Sidefeltsikonstørrelse:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="178"/>
+        <location filename="../preferences.ui" line="146"/>
+        <location filename="../../build/src/ui_preferences.h" line="628"/>
         <source>Icon theme:</source>
         <translation>Ikondrakt:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="298"/>
+        <location filename="../preferences.ui" line="269"/>
+        <location filename="../../build/src/ui_preferences.h" line="639"/>
         <source>Window</source>
         <translation>Vindu</translation>
     </message>
@@ -2403,22 +2615,26 @@ Endret: %3</translation>
         <translation type="vanished">Vis «Lukk»-knaper i faner	</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="307"/>
+        <location filename="../preferences.ui" line="278"/>
+        <location filename="../../build/src/ui_preferences.h" line="640"/>
         <source>Remember the size of the last closed window</source>
         <translation>Husk størrelsen av sist lukkede vindu</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="314"/>
+        <location filename="../preferences.ui" line="285"/>
+        <location filename="../../build/src/ui_preferences.h" line="641"/>
         <source>Default width of new windows:</source>
         <translation>Forvalgt bredde for nye vinduer:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="328"/>
+        <location filename="../preferences.ui" line="299"/>
+        <location filename="../../build/src/ui_preferences.h" line="642"/>
         <source>Default height of new windows:</source>
         <translation>Forvalgt høyde på nye vinduer:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="76"/>
+        <location filename="../preferences.ui" line="41"/>
+        <location filename="../../build/src/ui_preferences.h" line="617"/>
         <source>Browsing</source>
         <translation>Utforskning</translation>
     </message>
@@ -2431,7 +2647,8 @@ Endret: %3</translation>
         <translation type="vanished">Forsinkelse på auto-velging i enkeltklikksmodus (0 for å skru av)</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="82"/>
+        <location filename="../preferences.ui" line="47"/>
+        <location filename="../../build/src/ui_preferences.h" line="618"/>
         <source>Default view mode:</source>
         <translation>Forvalgt visningsmodus:</translation>
     </message>
@@ -2440,12 +2657,14 @@ Endret: %3</translation>
         <translation type="vanished"> sek</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="112"/>
+        <location filename="../preferences.ui" line="77"/>
+        <location filename="../../build/src/ui_preferences.h" line="621"/>
         <source>File Operations</source>
         <translation>Filoperasjoner</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="118"/>
+        <location filename="../preferences.ui" line="83"/>
+        <location filename="../../build/src/ui_preferences.h" line="622"/>
         <source>Confirm before deleting files</source>
         <translation>Bekreft før sletting av filer</translation>
     </message>
@@ -2454,17 +2673,20 @@ Endret: %3</translation>
         <translation type="vanished">Flytt slettede filer til papirkurv istedenfor å slette dem fra disken.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="481"/>
+        <location filename="../preferences.ui" line="455"/>
+        <location filename="../../build/src/ui_preferences.h" line="668"/>
         <source>Show thumbnails of files</source>
         <translation>Vis miniatyrbilder av filer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="474"/>
+        <location filename="../preferences.ui" line="448"/>
+        <location filename="../../build/src/ui_preferences.h" line="667"/>
         <source>Only show thumbnails for local files</source>
         <translation>Kun vis miniatyrbilder for lokale filer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="40"/>
+        <location filename="../preferences.ui" line="128"/>
+        <location filename="../../build/src/ui_preferences.h" line="638"/>
         <source>Display</source>
         <translation type="unfinished">Skjerm</translation>
     </message>
@@ -2485,169 +2707,208 @@ Endret: %3</translation>
         <translation type="vanished">Åpne i nytt vindu</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="125"/>
+        <location filename="../preferences.ui" line="90"/>
+        <location filename="../../build/src/ui_preferences.h" line="623"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
         <translation>Slett filer på flyttbare media istedenfor «papirkurv»-opprettelse</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="132"/>
+        <location filename="../preferences.ui" line="97"/>
+        <location filename="../../build/src/ui_preferences.h" line="624"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
         <translation type="unfinished">Bekreft før flytting av filer til papirkurv</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="139"/>
+        <location filename="../preferences.ui" line="104"/>
+        <location filename="../../build/src/ui_preferences.h" line="625"/>
         <source>Don&apos;t ask options on launch executable file</source>
         <translation type="unfinished">Ikke spør om valg ved start av kjørbar fil</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="238"/>
+        <location filename="../preferences.ui" line="206"/>
+        <location filename="../../build/src/ui_preferences.h" line="633"/>
         <source>User interface</source>
         <translation>Brukergrensesnitt</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="251"/>
+        <location filename="../preferences.ui" line="219"/>
+        <location filename="../../build/src/ui_preferences.h" line="635"/>
         <source>Treat backup files as hidden</source>
         <translation>Behandle sikkerhetskopifiler som skjulte</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="261"/>
+        <location filename="../preferences.ui" line="229"/>
+        <location filename="../../build/src/ui_preferences.h" line="636"/>
         <source>Always show full file names</source>
         <translation type="unfinished">Alltid vis fullstendige filnavn</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="271"/>
+        <location filename="../preferences.ui" line="239"/>
+        <location filename="../../build/src/ui_preferences.h" line="637"/>
         <source>Show icons of hidden files shadowed</source>
         <translation>Vis ikoner av skjulte filer skyggelagt</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="345"/>
+        <location filename="../preferences.ui" line="316"/>
+        <location filename="../../build/src/ui_preferences.h" line="643"/>
         <source>Show in places</source>
         <translation type="unfinished">Vis i Steder</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="352"/>
+        <location filename="../preferences.ui" line="323"/>
+        <location filename="../../build/src/ui_preferences.h" line="648"/>
         <source>Home</source>
         <translation>Hjem</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="364"/>
+        <location filename="../preferences.ui" line="335"/>
+        <location filename="../../build/src/ui_preferences.h" line="650"/>
         <source>Desktop</source>
         <translation>Skrivebord</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="376"/>
+        <location filename="../preferences.ui" line="347"/>
+        <location filename="../../build/src/ui_preferences.h" line="652"/>
         <source>Trash can</source>
         <translation>Papirkurv</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="388"/>
+        <location filename="../preferences.ui" line="359"/>
+        <location filename="../../build/src/ui_preferences.h" line="654"/>
         <source>Computer</source>
         <translation>Datamaskin</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="400"/>
+        <location filename="../preferences.ui" line="371"/>
+        <location filename="../../build/src/ui_preferences.h" line="656"/>
         <source>Applications</source>
         <translation>Programmer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="408"/>
+        <location filename="../preferences.ui" line="379"/>
+        <location filename="../../build/src/ui_preferences.h" line="658"/>
         <source>Devices</source>
         <translation>Enheter</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="416"/>
+        <location filename="../preferences.ui" line="387"/>
+        <location filename="../../build/src/ui_preferences.h" line="660"/>
         <source>Network</source>
         <translation>Nettverker</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="457"/>
+        <location filename="../preferences.ui" line="431"/>
+        <location filename="../../build/src/ui_preferences.h" line="665"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation>Ikke generer miniatyrbilder for bildefiler som overstiger denne størrelsen:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="464"/>
+        <location filename="../preferences.ui" line="438"/>
+        <location filename="../../build/src/ui_preferences.h" line="666"/>
         <source> KB</source>
         <translation> KB</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="605"/>
+        <location filename="../preferences.ui" line="579"/>
+        <location filename="../../build/src/ui_preferences.h" line="687"/>
+        <source>Mount</source>
+        <translation type="unfinished">Monter</translation>
+    </message>
+    <message>
+        <location filename="../preferences.ui" line="585"/>
+        <location filename="../../build/src/ui_preferences.h" line="680"/>
         <source>Auto Mount</source>
         <translation>Auto-montering</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="611"/>
+        <location filename="../preferences.ui" line="591"/>
+        <location filename="../../build/src/ui_preferences.h" line="681"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation>Monter monterbare volum automatisk ved programoppstart</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="618"/>
+        <location filename="../preferences.ui" line="598"/>
+        <location filename="../../build/src/ui_preferences.h" line="682"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation>Monter flyttbare media automatisk når de settes inn</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="625"/>
+        <location filename="../preferences.ui" line="605"/>
+        <location filename="../../build/src/ui_preferences.h" line="683"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation>Vis tilgjengelige valg for flyttbar media når de settes inn</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="635"/>
+        <location filename="../preferences.ui" line="615"/>
+        <location filename="../../build/src/ui_preferences.h" line="684"/>
         <source>When removable medium unmounted:</source>
         <translation>Når flyttbare media avmonteres:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="641"/>
+        <location filename="../preferences.ui" line="621"/>
+        <location filename="../../build/src/ui_preferences.h" line="685"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation>Lukk &amp;fane inneholdende flyttbart medium</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="648"/>
+        <location filename="../preferences.ui" line="628"/>
+        <location filename="../../build/src/ui_preferences.h" line="686"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation>En&amp;dre mappe i fanen til hjemmemappe</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="508"/>
+        <location filename="../preferences.ui" line="485"/>
+        <location filename="../../build/src/ui_preferences.h" line="670"/>
         <source>Programs</source>
         <translation>Programmer</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="517"/>
+        <location filename="../preferences.ui" line="494"/>
+        <location filename="../../build/src/ui_preferences.h" line="671"/>
         <source>Terminal emulator:</source>
         <translation>Terminalemulator:</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="524"/>
+        <location filename="../preferences.ui" line="501"/>
+        <location filename="../../build/src/ui_preferences.h" line="672"/>
         <source>Switch &amp;user command:</source>
         <translation>Kommando for &amp;bytting av bruker.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="537"/>
+        <location filename="../preferences.ui" line="511"/>
+        <location filename="../../build/src/ui_preferences.h" line="673"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>Eksempler: &quot;xterm -e %s&quot; for terminal, eller &quot;gksu %s&quot; for bytting av bruker.
 %s = kommandolinjen du ønsker å kjøre med terminal eller su.</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="558"/>
+        <location filename="../preferences.ui" line="532"/>
+        <location filename="../../build/src/ui_preferences.h" line="675"/>
         <source>Templates</source>
         <translation>Maler</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="564"/>
+        <location filename="../preferences.ui" line="538"/>
+        <location filename="../../build/src/ui_preferences.h" line="676"/>
         <source>Show only user defined templates in menu</source>
         <translation>Vis kun brukerdefinerte maler i meny</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="571"/>
+        <location filename="../preferences.ui" line="545"/>
+        <location filename="../../build/src/ui_preferences.h" line="677"/>
         <source>Show only one template for each MIME type</source>
         <translation type="unfinished">Vis kun én mal for hver mediatype</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="578"/>
+        <location filename="../preferences.ui" line="552"/>
+        <location filename="../../build/src/ui_preferences.h" line="678"/>
         <source>Run default application after creation from template</source>
         <translation>Kjør forvalgt program etter opprettelse fra mal</translation>
     </message>
     <message>
-        <location filename="../preferences.ui" line="244"/>
+        <location filename="../preferences.ui" line="212"/>
+        <location filename="../../build/src/ui_preferences.h" line="634"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation>Bruk SI-desimalprefiks istedenfor IEC</translation>
     </message>
@@ -2718,46 +2979,55 @@ Endret: %3</translation>
     <name>RenameDialog</name>
     <message>
         <location filename="../rename-dialog.ui" line="14"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="156"/>
         <source>Confirm to replace files</source>
         <translation>Bekreft for å erstatte filer</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="35"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="157"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;There is already a file with the same name in this location.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Do you want to replace the existing file?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Det finnes allerede en fil med samme navn her.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Vil du erstatte eksisterende fil?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="56"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="158"/>
         <source>dest</source>
         <translation>mål</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="63"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="159"/>
         <source>with the following file?</source>
         <translation>med følgende fil?</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="76"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="160"/>
         <source>src file info</source>
         <translation>kildefilsinfo</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="89"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="161"/>
         <source>dest file info</source>
         <translation>målfilsinfo</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="102"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="162"/>
         <source>src</source>
         <translation>kilde</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="122"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="163"/>
         <source>&amp;File name:</source>
         <translation type="unfinished">&amp;Filnavn:</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="137"/>
+        <location filename="../../build/src/ui_rename-dialog.h" line="164"/>
         <source>Apply this option to all existing files</source>
         <translation>Bruk dette valget for alle eksisterende filer</translation>
     </message>
@@ -2766,175 +3036,213 @@ Endret: %3</translation>
     <name>SearchDialog</name>
     <message>
         <location filename="../filesearch.ui" line="14"/>
+        <location filename="../../build/src/ui_filesearch.h" line="398"/>
         <source>Search Files</source>
         <translation>Søk i filer</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="29"/>
+        <location filename="../../build/src/ui_filesearch.h" line="408"/>
         <source>Name/Location</source>
         <translation>Navn/sted</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="35"/>
+        <location filename="../../build/src/ui_filesearch.h" line="399"/>
         <source>File Name Patterns:</source>
         <translation>Filnavnsmønster:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="41"/>
+        <location filename="../../build/src/ui_filesearch.h" line="400"/>
         <source>*</source>
         <translation>*</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="48"/>
+        <location filename="../../build/src/ui_filesearch.h" line="401"/>
         <source>Case insensitive</source>
         <translation>Ingen forskjell på små og store bokstaver</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="55"/>
+        <location filename="../../build/src/ui_filesearch.h" line="402"/>
         <source>Use regular expression</source>
         <translation>Bruk regulært uttrykk</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="65"/>
+        <location filename="../../build/src/ui_filesearch.h" line="403"/>
         <source>Places to Search:</source>
         <translation>Steder å søke:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="78"/>
+        <location filename="../../build/src/ui_filesearch.h" line="404"/>
         <source>&amp;Add</source>
         <translation>&amp;Legg til</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="90"/>
+        <location filename="../../build/src/ui_filesearch.h" line="405"/>
         <source>&amp;Remove</source>
         <translation>&amp;Fjern</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="119"/>
+        <location filename="../../build/src/ui_filesearch.h" line="406"/>
         <source>Search in sub directories</source>
         <translation>Søk i undermapper</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="126"/>
+        <location filename="../../build/src/ui_filesearch.h" line="407"/>
         <source>Search for hidden files</source>
         <translation>Søk etter skjulte filer</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="137"/>
+        <location filename="../../build/src/ui_filesearch.h" line="416"/>
         <source>File Type</source>
         <translation>Filtype</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="143"/>
+        <location filename="../../build/src/ui_filesearch.h" line="409"/>
         <source>Only search for files of following types:</source>
         <translation>Kun søk etter filer av følgende typer:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="149"/>
+        <location filename="../../build/src/ui_filesearch.h" line="410"/>
         <source>Text files</source>
         <translation>Tekstfiler</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="156"/>
+        <location filename="../../build/src/ui_filesearch.h" line="411"/>
         <source>Image files</source>
         <translation>Bildefiler</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="163"/>
+        <location filename="../../build/src/ui_filesearch.h" line="412"/>
         <source>Audio files</source>
         <translation>Lydfiler</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="170"/>
+        <location filename="../../build/src/ui_filesearch.h" line="413"/>
         <source>Video files</source>
         <translation>Videofiler</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="177"/>
+        <location filename="../../build/src/ui_filesearch.h" line="414"/>
         <source>Documents</source>
         <translation>Dokumenter</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="184"/>
+        <location filename="../../build/src/ui_filesearch.h" line="415"/>
         <source>Folders</source>
         <translation>Mapper</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="208"/>
+        <location filename="../../build/src/ui_filesearch.h" line="420"/>
         <source>Content</source>
         <translation>Innhold</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="214"/>
+        <location filename="../../build/src/ui_filesearch.h" line="417"/>
         <source>File contains:</source>
         <translation type="unfinished">Filinnhold:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="223"/>
+        <location filename="../../build/src/ui_filesearch.h" line="418"/>
         <source>Case insensiti&amp;ve</source>
         <translation>&amp;Ingen forskjell på små og store bokstaver</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="230"/>
+        <location filename="../../build/src/ui_filesearch.h" line="419"/>
         <source>&amp;Use regular expression</source>
         <translation>&amp;Bruk regulært uttrykk</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="254"/>
+        <location filename="../../build/src/ui_filesearch.h" line="437"/>
         <source>Properties</source>
         <translation>Egenskaper</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="260"/>
+        <location filename="../../build/src/ui_filesearch.h" line="421"/>
         <source>File Size:</source>
         <translation>Filstørrelse:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="266"/>
+        <location filename="../../build/src/ui_filesearch.h" line="422"/>
         <source>Larger than:</source>
         <translation>Større enn:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="282"/>
         <location filename="../filesearch.ui" line="323"/>
+        <location filename="../../build/src/ui_filesearch.h" line="423"/>
+        <location filename="../../build/src/ui_filesearch.h" line="429"/>
         <source>Bytes</source>
         <translation>Byte</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="287"/>
         <location filename="../filesearch.ui" line="328"/>
+        <location filename="../../build/src/ui_filesearch.h" line="424"/>
+        <location filename="../../build/src/ui_filesearch.h" line="430"/>
         <source>KiB</source>
         <translation>KiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="292"/>
         <location filename="../filesearch.ui" line="333"/>
+        <location filename="../../build/src/ui_filesearch.h" line="425"/>
+        <location filename="../../build/src/ui_filesearch.h" line="431"/>
         <source>MiB</source>
         <translation>MiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="297"/>
         <location filename="../filesearch.ui" line="338"/>
+        <location filename="../../build/src/ui_filesearch.h" line="426"/>
+        <location filename="../../build/src/ui_filesearch.h" line="432"/>
         <source>GiB</source>
         <translation>GiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="307"/>
+        <location filename="../../build/src/ui_filesearch.h" line="428"/>
         <source>Smaller than:</source>
         <translation>Mindre enn:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="351"/>
+        <location filename="../../build/src/ui_filesearch.h" line="434"/>
         <source>Last Modified Time:</source>
         <translation>Sist endret:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="357"/>
+        <location filename="../../build/src/ui_filesearch.h" line="435"/>
         <source>Earlier than:</source>
         <translation>Tidligere enn:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="364"/>
+        <location filename="../../build/src/ui_filesearch.h" line="436"/>
         <source>Later than:</source>
         <translation>Senere enn:</translation>
     </message>
