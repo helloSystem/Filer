@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>701</width>
-    <height>440</height>
+    <width>524</width>
+    <height>402</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,50 +15,12 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0">
      <item>
-      <widget class="QListWidget" name="listWidget">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="enabled">
+        <bool>true</bool>
        </property>
-       <property name="horizontalScrollBarPolicy">
-        <enum>Qt::ScrollBarAlwaysOff</enum>
-       </property>
-       <property name="currentRow">
-        <number>-1</number>
-       </property>
-       <item>
-        <property name="text">
-         <string>Behavior</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Display</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>User Interface</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Thumbnail</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Advanced</string>
-        </property>
-       </item>
-      </widget>
-     </item>
-     <item>
-      <widget class="QStackedWidget" name="stackedWidget">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
@@ -66,9 +28,12 @@
         </sizepolicy>
        </property>
        <property name="currentIndex">
-        <number>2</number>
+        <number>4</number>
        </property>
-       <widget class="QWidget" name="behaviorPage">
+       <widget class="QWidget" name="tabWidgetPage1">
+        <attribute name="title">
+         <string>Behavior</string>
+        </attribute>
         <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,1">
          <item>
           <widget class="QGroupBox" name="groupBox_4">
@@ -158,7 +123,10 @@
          </item>
         </layout>
        </widget>
-       <widget class="QWidget" name="displayPage">
+       <widget class="QWidget" name="tabWidgetPage2">
+        <attribute name="title">
+         <string>Display</string>
+        </attribute>
         <layout class="QVBoxLayout" name="verticalLayout_7" stretch="0,0,1">
          <item>
           <widget class="QGroupBox" name="groupBox_2">
@@ -290,7 +258,10 @@
          </item>
         </layout>
        </widget>
-       <widget class="QWidget" name="uiPage">
+       <widget class="QWidget" name="tabWidgetPage3">
+        <attribute name="title">
+         <string>User Interface</string>
+        </attribute>
         <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,0,1">
          <item>
           <widget class="QGroupBox" name="groupBox_5">
@@ -443,7 +414,10 @@
          </item>
         </layout>
        </widget>
-       <widget class="QWidget" name="thumbnailPage">
+       <widget class="QWidget" name="tabWidgetPage4">
+        <attribute name="title">
+         <string>Thumbnail</string>
+        </attribute>
         <layout class="QVBoxLayout" name="verticalLayout_11">
          <item>
           <widget class="QGroupBox" name="groupBox_8">
@@ -500,10 +474,13 @@
          </item>
         </layout>
        </widget>
-       <widget class="QWidget" name="advancedPage">
+       <widget class="QWidget" name="tabWidgetPage5">
+        <attribute name="title">
+         <string>Advanced</string>
+        </attribute>
         <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,1">
          <item>
-          <widget class="QGroupBox" name="groupBox">
+          <widget class="QGroupBox" name="programsGroupBox">
            <property name="title">
             <string>Programs</string>
            </property>
@@ -522,9 +499,6 @@
              <widget class="QLabel" name="label_3">
               <property name="text">
                <string>Switch &amp;user command:</string>
-              </property>
-              <property name="buddy">
-               <cstring>suCommand</cstring>
               </property>
              </widget>
             </item>
@@ -597,7 +571,13 @@
          </item>
         </layout>
        </widget>
-       <widget class="QWidget" name="volumePage">
+       <widget class="QWidget" name="tabWidgetPage6">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <attribute name="title">
+         <string>Mount</string>
+        </attribute>
         <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,0,1">
          <item>
           <widget class="QGroupBox" name="groupBox_3">
@@ -684,7 +664,6 @@
   </layout>
  </widget>
  <tabstops>
-  <tabstop>listWidget</tabstop>
   <tabstop>rememberWindowSize</tabstop>
   <tabstop>fixedWindowWidth</tabstop>
   <tabstop>fixedWindowHeight</tabstop>
@@ -728,86 +707,6 @@
     <hint type="destinationlabel">
      <x>286</x>
      <y>274</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>rememberWindowSize</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>label_13</receiver>
-   <slot>setDisabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>183</x>
-     <y>338</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>187</x>
-     <y>404</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>rememberWindowSize</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>fixedWindowHeight</receiver>
-   <slot>setDisabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>549</x>
-     <y>351</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>462</x>
-     <y>421</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>listWidget</sender>
-   <signal>currentRowChanged(int)</signal>
-   <receiver>stackedWidget</receiver>
-   <slot>setCurrentIndex(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>94</x>
-     <y>157</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>359</x>
-     <y>145</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>rememberWindowSize</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>label_12</receiver>
-   <slot>setDisabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>211</x>
-     <y>342</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>211</x>
-     <y>374</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>rememberWindowSize</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>fixedWindowWidth</receiver>
-   <slot>setDisabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>506</x>
-     <y>351</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>462</x>
-     <y>386</y>
     </hint>
    </hints>
   </connection>

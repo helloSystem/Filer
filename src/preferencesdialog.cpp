@@ -30,7 +30,7 @@
 
 using namespace Filer;
 
-static int bigIconSizes[] = {96, 72, 64, 48, 36, 32, 24, 20};
+static int bigIconSizes[] = {128, 96, 72, 64, 48, 36, 32, 24, 20};
 static int smallIconSizes[] = {48, 36, 32, 24, 20, 16, 12};
 static int thumbnailIconSizes[] = {256, 224, 192, 160, 128, 96, 64};
 
@@ -39,17 +39,15 @@ PreferencesDialog::PreferencesDialog (QString activePage, QWidget* parent):
   ui.setupUi(this);
   setAttribute(Qt::WA_DeleteOnClose);
 
-  // resize the list widget according to the width of its content.
-  ui.listWidget->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
-  ui.listWidget->setMaximumWidth(ui.listWidget->sizeHintForColumn(0) + ui.listWidget->frameWidth() * 2 + 4);
-
   initFromSettings();
+
+  ui.tabWidget->setTabVisible(4, false); // Hide advanced options
+  ui.tabWidget->setTabVisible(5, false); // Hide mount options
 
   if(!activePage.isEmpty()) {
     QWidget* page = findChild<QWidget*>(activePage + "Page");
     if(page) {
-      int index = ui.stackedWidget->indexOf(page);
-      ui.listWidget->setCurrentRow(index);
+      int index = ui.tabWidget->indexOf(page);
     }
   }
   adjustSize();
