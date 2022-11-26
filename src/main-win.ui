@@ -125,6 +125,7 @@
     </widget>
     <addaction name="actionNewTab"/>
     <addaction name="actionOpen"/>
+    <addaction name="actionOpenWith"/>
     <addaction name="actionShowContents"/>
     <addaction name="separator"/>
     <addaction name="actionNewWin"/>
@@ -840,7 +841,7 @@
     <string>Show Contents</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+Alt+O</string>
+    <string>Ctrl+Alt+Shift+O</string>
    </property>
   </action>
   <action name="actionGoUpAndCloseCurrentWindow">
@@ -856,6 +857,14 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+Up</string>
+   </property>
+  </action>
+  <action name="actionOpenWith">
+   <property name="text">
+    <string>Open With...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+O</string>
    </property>
   </action>
  </widget>

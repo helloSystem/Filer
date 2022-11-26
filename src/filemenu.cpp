@@ -31,6 +31,7 @@
 #include <QDebug>
 #include <QProcess>
 #include <QStorageInfo>
+#include <QAction>
 #include "filemenu_p.h"
 #include "trash.h"
 
@@ -63,7 +64,7 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
     confirmTrash_ = false; // Confirm before moving files into "trash can"
 
     openAction_ = NULL;
-    openWithMenuAction_ = NULL;
+    // openWithMenuAction_ = NULL;
     openWithAction_ = NULL;
     separator1_ = NULL;
     cutAction_ = NULL;
@@ -90,11 +91,17 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
     // check if the files are all virtual
     allVirtual_ = sameFilesystem_ && fm_path_is_virtual(path);
     // check if the files are all in the trash can
-    allTrash_ =  sameFilesystem_ && fm_path_is_trash(path);
+    allTrash_ =  sameFilesystem_ && QFileInfo(fm_path_to_str(path)).path().endsWith("share/Trash/files"); // probono: was: fm_path_is_trash(path);
 
     openAction_ = new QAction(QIcon::fromTheme("document-open"), tr("Open"), this);
     connect(openAction_ , &QAction::triggered, this, &FileMenu::onOpenTriggered);
     addAction(openAction_);
+
+    if (QString(fm_mime_type_get_type(mime_type)) != "inode/directory") {
+        QAction* openWithAction = new QAction(tr("Open With..."), this);
+        connect(openWithAction, &QAction::triggered, this, &FileMenu::onOpenWithTriggered);
+        addAction(openWithAction);
+    }
 
     // probono: Show Contents for application bundles
     if (QString(fm_path_to_str(path)).endsWith(".app") or QString(fm_path_to_str(path)).endsWith(".AppDir")) {
@@ -115,57 +122,43 @@ void FileMenu::createMenu(FmFileInfoList* files, FmFileInfo* info, FmPath* cwd) 
         }
     }
 
-    if(allTrash_) { // all selected files are in trash:///
-        bool can_restore = true;
-        /* only immediate children of trash:/// can be restored. */
-        for(GList* l = fm_file_info_list_peek_head_link(files_); l; l=l->next) {
-            FmPath *trash_path = fm_file_info_get_path(FM_FILE_INFO(l->data));
-            if(!fm_path_get_parent(trash_path) ||
-                    !fm_path_is_trash_root(fm_path_get_parent(trash_path))) {
-                can_restore = false;
-                break;
-            }
-        }
-        if(can_restore) {
-            unTrashAction_ = new QAction(tr("&Restore"), this);
-            connect(unTrashAction_, &QAction::triggered, this, &FileMenu::onUnTrashTriggered);
-            addAction(unTrashAction_);
-        }
-    }
-    else { // ordinary files
+    // probono: Here used to be code to unTrash files, but that likely required gvfs to work properly;
+    // hence it was removed. TODO: Implement unTrash using Qt
+    if(! allTrash_) { // not all selected files are in trash
         if(contains_trashcan == false){
 
-            openWithMenuAction_ = new QAction(tr("Open With..."), this);
-            addAction(openWithMenuAction_);
-            // create the "Open with..." sub menu
-            QMenu* menu = new QMenu();
-            openWithMenuAction_->setMenu(menu);
+//            // probono: Legacy xdg. Candidate for removal
+//            openWithMenuAction_ = new QAction(tr("Open With"), this);
+//            addAction(openWithMenuAction_);
+//            // create the "Open with..." sub menu
+//            QMenu* menu = new QMenu();
+//            openWithMenuAction_->setMenu(menu);
 
-            if(sameType_) { /* add specific menu items for this mime type */
-                if(mime_type && !allVirtual_) { /* the file has a valid mime-type and its not virtual */
-                    GList* apps = g_app_info_get_all_for_type(fm_mime_type_get_type(mime_type));
-                    GList* l;
-                    for(l=apps;l;l=l->next) {
-                        GAppInfo* app = G_APP_INFO(l->data);
+//            if(sameType_) { /* add specific menu items for this mime type */
+//                if(mime_type && !allVirtual_) { /* the file has a valid mime-type and its not virtual */
+//                    GList* apps = g_app_info_get_all_for_type(fm_mime_type_get_type(mime_type));
+//                    GList* l;
+//                    for(l=apps;l;l=l->next) {
+//                        GAppInfo* app = G_APP_INFO(l->data);
 
-                        // check if the command really exists
-                        gchar * program_path = g_find_program_in_path(g_app_info_get_executable(app));
-                        if (!program_path)
-                            continue;
-                        g_free(program_path);
+//                        // check if the command really exists
+//                        gchar * program_path = g_find_program_in_path(g_app_info_get_executable(app));
+//                        if (!program_path)
+//                            continue;
+//                        g_free(program_path);
 
-                        // create a QAction for the application.
-                        AppInfoAction* action = new AppInfoAction(app);
-                        connect(action, &QAction::triggered, this, &FileMenu::onApplicationTriggered);
-                        menu->addAction(action);
-                    }
-                    g_list_free(apps); /* don't unref GAppInfos now */
-                }
-            }
-            menu->addSeparator();
-            openWithAction_ = new QAction(tr("Other Applications"), this);
-            connect(openWithAction_ , &QAction::triggered, this, &FileMenu::onOpenWithTriggered);
-            menu->addAction(openWithAction_);
+//                        // create a QAction for the application.
+//                        AppInfoAction* action = new AppInfoAction(app);
+//                        connect(action, &QAction::triggered, this, &FileMenu::onApplicationTriggered);
+//                        menu->addAction(action);
+//                    }
+//                    g_list_free(apps); /* don't unref GAppInfos now */
+//                }
+//            }
+//            menu->addSeparator();
+//            openWithAction_ = new QAction(tr("Other Applications"), this);
+//            connect(openWithAction_ , &QAction::triggered, this, &FileMenu::onOpenWithTriggered);
+//            menu->addAction(openWithAction_);
 
             separator1_ = addSeparator();
 
@@ -292,17 +285,29 @@ void FileMenu::onOpenTriggered() {
     }
 }
 
-void FileMenu::onShowContentsTriggered() {
-    qDebug() << "FileMenu::onShowContentsTriggered()";
-    if(fileLauncher_) {
-        fileLauncher_->launchFiles(NULL, files_, true);
+void FileMenu::onOpenWithTriggered() {
+    qDebug() << "FileMenu::onOpenWithTriggered()";
+    FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
+    for(GList* l = fm_path_list_peek_head_link(paths); l; l = l->next) {
+        FmPath* path = FM_PATH(l->data);
+        QString sourcePathStr =  QString(fm_path_to_str(path));
+        qDebug() << "probono: pathStr" << sourcePathStr;
+        QProcess p;
+        p.setProgram("open");
+        p.setArguments({"--chooser", sourcePathStr});
+        qDebug() << p.program() << p.arguments();
+        p.start();
+        p.waitForFinished();
+        qDebug() <<  "p.exitCode():" << p.exitCode();
+        if(p.exitCode() != 0) {
+            QMessageBox::warning(nullptr, " ", QString("Cannot open %1, 'open' command line tool missing or returned an error.").arg(sourcePathStr));
+        }
     }
-    else { // use the default launcher
-        Fm::FileLauncher launcher;
-        launcher.launchFiles(NULL, files_, true);
-    }
+    fm_path_list_unref(paths);
 }
 
+/*
+ * This was the implementation built into Filer before we replaced it by the external 'launch' command line tool
 void FileMenu::onOpenWithTriggered() {
     qDebug() << "FileMenu::onOpenWithTriggered()";
     AppChooserDialog dlg(NULL);
@@ -319,6 +324,18 @@ void FileMenu::onOpenWithTriggered() {
             openFilesWithApp(app);
             g_object_unref(app);
         }
+    }
+}
+*/
+
+void FileMenu::onShowContentsTriggered() {
+    qDebug() << "FileMenu::onShowContentsTriggered()";
+    if(fileLauncher_) {
+        fileLauncher_->launchFiles(NULL, files_, true);
+    }
+    else { // use the default launcher
+        Fm::FileLauncher launcher;
+        launcher.launchFiles(NULL, files_, true);
     }
 }
 

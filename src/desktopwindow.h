@@ -108,6 +108,7 @@ protected Q_SLOTS:
   void onFilerPreferences();
   void onGoUp();
   void onOpenActivated(); // probono
+  void onOpenWithActivated(); // probono
   void onShowContentsActivated(); // probono
   void onNewFolder();
   void onNewBlankFile();

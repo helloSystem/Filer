@@ -193,6 +193,9 @@ MainWindow::MainWindow(FmPath* path):
   shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_Down), this); // pronono: open
   connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionOpen_triggered); // probono
 
+  shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::CTRL + Qt::Key_Down), this); // pronono: open
+  connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionOpenWith_triggered); // probono
+
   shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_Down), this); // pronono: open and close current window
   connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionOpenAndCloseCurrentWindow_triggered); // probono
 
@@ -519,6 +522,38 @@ void MainWindow::on_actionOpen_triggered() {
                 Fm::FileLauncher launcher;
                 launcher.launchFiles(NULL, files);
             }
+        }
+    }
+}
+
+// probono
+void MainWindow::on_actionOpenWith_triggered() {
+    TabPage* page = currentPage();
+
+    if(page) {
+        FmFileInfoList* files = page->selectedFiles();
+
+        if(files) {
+
+
+            FmPathList* paths = fm_path_list_new_from_file_info_list(files);
+            for(GList* l = fm_path_list_peek_head_link(paths); l; l = l->next) {
+                FmPath* path = FM_PATH(l->data);
+                QString sourcePathStr =  QString(fm_path_to_str(path));
+                qDebug() << "probono: pathStr" << sourcePathStr;
+                QProcess p;
+                p.setProgram("open");
+                p.setArguments({"--chooser", sourcePathStr});
+                qDebug() << p.program() << p.arguments();
+                p.start();
+                p.waitForFinished();
+                qDebug() <<  "p.exitCode():" << p.exitCode();
+                if(p.exitCode() != 0) {
+                    QMessageBox::warning(nullptr, " ", QString("Cannot open %1, 'open' command line tool missing or returned an error.").arg(sourcePathStr));
+                }
+            }
+            fm_path_list_unref(paths);
+
         }
     }
 }
@@ -1049,6 +1084,7 @@ void Filer::MainWindow::disableMenuItems()
     // probono: No object has been selected by the user, so disable the actions that work on filesystem objects
     // qDebug() << "probono: disableMenuItems";
     ui.actionOpen->setEnabled(false);
+    ui.actionOpenWith->setEnabled(false);
     ui.actionFileProperties->setEnabled(false);
     ui.actionCut->setEnabled(false);
     ui.actionCopy->setEnabled(false);
@@ -1063,6 +1099,7 @@ void Filer::MainWindow::enableMenuItems()
     // probono: At least one object has been selected, so enable the actions that work on filesystem objects
     // qDebug() << "probono: enableMenuItems";
     ui.actionOpen->setEnabled(true);
+    ui.actionOpenWith->setEnabled(true);
     ui.actionFileProperties->setEnabled(true);
     ui.actionCut->setEnabled(true);
     ui.actionCopy->setEnabled(true);

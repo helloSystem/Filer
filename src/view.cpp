@@ -97,7 +97,7 @@ void View::prepareFileMenu(Fm::FileMenu* menu) {
   }
 
   // hide "Open with" for selected dirs
-  menu->openWithMenuAction()->setVisible(false);
+  // menu->openWithMenuAction()->setVisible(false);
 
   QAction* action;
 

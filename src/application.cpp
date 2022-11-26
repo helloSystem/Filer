@@ -205,6 +205,9 @@ Application::Application(int& argc, char** argv):
         msgBox.exec();
     }
 
+    // probono: Do some sanity checks to see whether key components of helloDesktop are available;
+    // this is mainly for users running Filer outside of helloSystem
+
     if(QStandardPaths::findExecutable("launch") == "") {
         QMessageBox msgBox;
         msgBox.setIcon(QMessageBox::Warning);
@@ -216,6 +219,16 @@ Application::Application(int& argc, char** argv):
         QMessageBox msgBox;
         msgBox.setIcon(QMessageBox::Warning);
         msgBox.setText(tr("The 'open' command is missing.").arg(qApp->applicationDisplayName()));
+        msgBox.exec();
+    }
+
+    // This command ejects/unmounts a mountpoint and removes the mountpoint directory
+    // TODO: Remove the need for this simple external helper by internalizing its code;
+    // It shouldn't be all to hard: unmount the mountpoint, check whether the directory is empty, and delete it
+    if(QStandardPaths::findExecutable("eject-and-clean") == "") {
+        QMessageBox msgBox;
+        msgBox.setIcon(QMessageBox::Warning);
+        msgBox.setText(tr("The 'eject-and-clean' command is missing.").arg(qApp->applicationDisplayName()));
         msgBox.exec();
     }
 

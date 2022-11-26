@@ -157,6 +157,9 @@ DesktopWindow::DesktopWindow(int screenNum):
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_Down), this); // pronono: open
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onOpenActivated); // probono
 
+    shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::ALT + Qt::Key_Down), this); // pronono: open
+    connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onOpenWithActivated); // probono
+
     /*
      * probono: Commenting these out
      * for those that are alraedy defined in the Menu solves QAction::event: Ambiguous shortcut overload
@@ -196,6 +199,7 @@ DesktopWindow::DesktopWindow(int screenNum):
     updateMenu();
 
     connect(desktopMainWindow_, &DesktopMainWindow::open, this, &DesktopWindow::onOpenActivated);
+    connect(desktopMainWindow_, &DesktopMainWindow::openWith, this, &DesktopWindow::onOpenWithActivated);
     connect(desktopMainWindow_, &DesktopMainWindow::fileProperties, this, &DesktopWindow::onFilePropertiesActivated);
     connect(desktopMainWindow_, &DesktopMainWindow::preferences, this, &DesktopWindow::onFilerPreferences);
     connect(desktopMainWindow_, &DesktopMainWindow::openFolder, this, &DesktopWindow::onOpenFolder);
@@ -889,6 +893,31 @@ void DesktopWindow::onOpenActivated()
             Fm::FileLauncher launcher;
             launcher.launchFiles(NULL, files);
         }
+    }
+}
+
+// probono
+void DesktopWindow::onOpenWithActivated()
+{
+    qDebug() << "DesktopWindow::onOpenWithActivated()";
+    if(FmFileInfoList* files = selectedFiles()) {
+        FmPathList* paths = fm_path_list_new_from_file_info_list(files);
+        for(GList* l = fm_path_list_peek_head_link(paths); l; l = l->next) {
+            FmPath* path = FM_PATH(l->data);
+            QString sourcePathStr =  QString(fm_path_to_str(path));
+            qDebug() << "probono: pathStr" << sourcePathStr;
+            QProcess p;
+            p.setProgram("open");
+            p.setArguments({"--chooser", sourcePathStr});
+            qDebug() << p.program() << p.arguments();
+            p.start();
+            p.waitForFinished();
+            qDebug() <<  "p.exitCode():" << p.exitCode();
+            if(p.exitCode() != 0) {
+                QMessageBox::warning(nullptr, " ", QString("Cannot open %1, 'open' command line tool missing or returned an error.").arg(sourcePathStr));
+            }
+        }
+        fm_path_list_unref(paths);
     }
 }
 

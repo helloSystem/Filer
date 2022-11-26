@@ -54,9 +54,9 @@ public:
     return openAction_;
   }
 
-  QAction* openWithMenuAction() {
-    return openWithMenuAction_;
-  }
+//  QAction* openWithMenuAction() {
+//    return openWithMenuAction_;
+//  }
 
   QAction* openWithAction() {
     return openWithAction_;
@@ -149,8 +149,8 @@ protected:
 
 protected Q_SLOTS:
   void onOpenTriggered();
-  void onShowContentsTriggered();
   void onOpenWithTriggered();
+  void onShowContentsTriggered();
   void onFilePropertiesTriggered();
   void onEmptyTrashTriggered();
   void onApplicationTriggered();
@@ -181,7 +181,7 @@ private:
 
   QAction* openAction_;
   QAction* showContentsAction_;
-  QAction* openWithMenuAction_;
+  // QAction* openWithMenuAction_;
   QAction* openWithAction_;
   QAction* separator1_;
   QAction* cutAction_;
