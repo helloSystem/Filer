@@ -40,6 +40,7 @@
 #include <QList>
 #include <QStringList>
 #include <QFileInfo>
+#include <QDir>
 #include "folderview_p.h"
 
 Q_DECLARE_OPAQUE_POINTER(FmFileInfo*)
@@ -508,9 +509,11 @@ void FolderView::setViewMode(ViewMode _mode) {
     switch(mode) {
       case IconMode: {
         listView->setViewMode(QListView::IconMode);
-        listView->setStyleSheet("padding-top: 10px;");
+        // probono: Make objects (icons) freely movable. TODO: Could also snap to grid using QListView::Snap
+        listView->setMovement(QListView::Free); // probono: https://doc.qt.io/qt-5/qlistview.html#Movement-enum
+        listView->setStyleSheet("padding-top: 10px;"); // probono: FIXME: This is wrong, as can be seen when scrolling
         listView->setWordWrap(true);
-        listView->setFlow(QListView::LeftToRight);
+        listView->setFlow(QListView::LeftToRight); // probono: Why is there RightToLeft? We'd need it for the Desktop
         break;
       }
       case CompactMode: {
@@ -522,6 +525,8 @@ void FolderView::setViewMode(ViewMode _mode) {
       }
       case ThumbnailMode: {
         listView->setViewMode(QListView::IconMode);
+        // probono: Make objects (icons) freely movable. TODO: Could also snap to grid using QListView::Snap
+        listView->setMovement(QListView::Free); // probono: https://doc.qt.io/qt-5/qlistview.html#Movement-enum
         listView->setStyleSheet("padding-top: 10px;");
         listView->setWordWrap(true);
         listView->setFlow(QListView::LeftToRight);
@@ -845,30 +850,77 @@ void FolderView::childDropEvent(QDropEvent* e) {
   QStringList sourcePaths = {};
   QString destinationPath = "";
   const QMimeData *mimeData = e->mimeData();
-  if(mimeData->hasFormat("application/x-qabstractitemmodeldatalist")) {
-      QModelIndex dropIndex = view->indexAt(e->pos()); // the item dropped on (destination)
-      if(dropIndex.isValid()) { // drop on an item
-          QModelIndex index = model_->index(dropIndex.row(), 0);
-          FmFileInfo* info = model_->fileInfoFromIndex(index);
-          destinationPath = QString(fm_path_to_str(fm_file_info_get_path(info)));
-          qDebug() << "destinationPath" << destinationPath;
-          QModelIndexList sourceIndexes = selectedIndexes(); // the dragged items (source)
-          qDebug() << "len:" << sourceIndexes.length();
-          for (const QModelIndex index : sourceIndexes) {
-              FmFileInfo* info = model_->fileInfoFromIndex(index);
-              sourcePaths.append(QString(fm_path_to_str(fm_file_info_get_path(info))));
+
+  qDebug() << "MIME dropped:" << mimeData->formats();
+
+  // probono: Find out the source path (where objects are coming from)
+  QModelIndexList sourceIndexes = selectedIndexes(); // the dragged items (source)
+  if(mimeData->hasFormat("text/uri-list")) {
+      for ( const QUrl  url : mimeData->urls()) {
+          qDebug() << "url from MIME data:" << url;
+          if(url.scheme() == "file" && url.toLocalFile() != "") {
+              sourcePaths.append(QString(url.toLocalFile()));
+          } else {
+              // A URL was dropped that is not a local file (e.g., from a web browser)
+              // Let's assume we want to link those (which needs to be implemented elsewhere)
+              e->setDropAction(Qt::LinkAction);
+              return;
           }
-          qDebug() << "sourcePaths" << sourcePaths;
+      }
+  } else if(mimeData->hasFormat("application/x-qabstractitemmodeldatalist")) {
+      for (const QModelIndex index : sourceIndexes) {
+          FmFileInfo* info = model_->fileInfoFromIndex(index);
+          sourcePaths.append(QString(fm_path_to_str(fm_file_info_get_path(info))));
       }
   }
+  qDebug() << "sourcePaths" << sourcePaths;
+
+  // probono: Find out the destination path (where objects have been dropped)
+  QModelIndex dropIndex = view->indexAt(e->pos()); // the item dropped on (destination)
+  if(dropIndex.isValid()){
+      // Dropped on an object (e.g., a folder or a document)
+      QModelIndex index = model_->index(dropIndex.row(), 0);
+      FmFileInfo* info = model_->fileInfoFromIndex(index);
+      destinationPath = QString(fm_path_to_str(fm_file_info_get_path(info)));
+  } else {
+      // Dropped onto whitespace (e.g., inside a folder), not onto an icon
+      QModelIndex index = model_->index(0, 0);
+      FmFileInfo* info = model_->fileInfoFromIndex(index);
+      // probono: This is a very hackish way. Not clear whether it always gives the correct result
+      destinationPath = QFileInfo(QString(fm_path_to_str(fm_file_info_get_path(info)))).dir().path();
+  }
+  qDebug() << "destinationPath" << destinationPath;
 
   // probono: TODO: Check whether the destination is an application,
   // if so, launch it and open the dropped document
   // (optionally: check whether the application 'can-open' the document)
 
+  // probono: If parent directory of all source objects and destination are the same,
+  // do not ask which action to take
+  bool sourceAndDestinationDirsEqual = true;
+  for(const QString sourcePath : sourcePaths) {
+    if(QFileInfo(sourcePath).dir() != destinationPath) {
+        sourceAndDestinationDirsEqual = false;
+    }
+  }
+  if(sourceAndDestinationDirsEqual == true){
+      e->setDropAction(Qt::MoveAction);
+      return;
+  }
+
+  // probono: If item dropped on itself, do not ask which action to take
+  if(sourcePaths.length() == 1 && sourcePaths[0] == destinationPath){
+      e->setDropAction(Qt::MoveAction);
+      return;
+  }
+
+  // probono: If dropped on Trash, do not ask which action to take
   if(QFileInfo(destinationPath).fileName() == "trash-can.desktop"){
       e->setDropAction(Qt::MoveAction);
-  } else if(e->keyboardModifiers() == Qt::NoModifier) {
+      return;
+  }
+
+  if(e->keyboardModifiers() == Qt::NoModifier) {
     // if no key modifiers are used, popup a menu
     // to ask the user for the action he/she wants to perform.
     Qt::DropAction action = DndActionMenu::askUser(QCursor::pos());
