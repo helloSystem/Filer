@@ -724,22 +724,22 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
 <context>
     <name>Filer::Application</name>
     <message>
-        <location filename="../application.cpp" line="262"/>
+        <location filename="../application.cpp" line="263"/>
         <source>Name of configuration profile</source>
         <translation>Nom du profil de configuration</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="262"/>
+        <location filename="../application.cpp" line="263"/>
         <source>PROFILE</source>
         <translation>PROFIL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="265"/>
+        <location filename="../application.cpp" line="266"/>
         <source>Run Filer as a daemon</source>
         <translation>Lancer Filer comme démon</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="268"/>
+        <location filename="../application.cpp" line="269"/>
         <source>Quit Filer</source>
         <translation>Quitter Filer</translation>
     </message>
@@ -767,79 +767,79 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="274"/>
+        <location filename="../application.cpp" line="275"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Éteindre le gestionnaire de bureau s&apos;il fonctionne</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="277"/>
+        <location filename="../application.cpp" line="278"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Ouvrir la boîte de dialogue des préférences du bureau sur la page avec le nom spécifié</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="277"/>
-        <location filename="../application.cpp" line="293"/>
+        <location filename="../application.cpp" line="278"/>
+        <location filename="../application.cpp" line="294"/>
         <source>NAME</source>
         <translation>NAME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="286"/>
+        <location filename="../application.cpp" line="287"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Définir le fond d&apos;écran de bureau depuis l&apos;image FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="286"/>
+        <location filename="../application.cpp" line="287"/>
         <source>FILE</source>
         <translation>FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="290"/>
+        <location filename="../application.cpp" line="291"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Définir le mode de fond d&apos;écran de bureau. MODE=(couleur|étirer|ajuster|centrer|découper)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="290"/>
+        <location filename="../application.cpp" line="291"/>
         <source>MODE</source>
         <translation>MODE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="293"/>
+        <location filename="../application.cpp" line="294"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Ouvrir la boîte de dialogue des préférences sur la page avec le nom spécifié</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="280"/>
+        <location filename="../application.cpp" line="281"/>
         <source>Open new window</source>
         <translation>Ouvrir une nouvelle fenêtre</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="271"/>
+        <location filename="../application.cpp" line="272"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation>Démarrer le gestionnaire du bureau (obsolète)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="283"/>
+        <location filename="../application.cpp" line="284"/>
         <source>Open Find Files utility</source>
         <translation>Ouvrir l&apos;utilitaire de recherche de fichiers</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="296"/>
+        <location filename="../application.cpp" line="297"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FILE1, FILE2, etc.]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="296"/>
+        <location filename="../application.cpp" line="297"/>
         <source>Files or directories to open</source>
         <translation>Fichiers ou répertoires à ouvrir</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="586"/>
-        <location filename="../application.cpp" line="593"/>
+        <location filename="../application.cpp" line="587"/>
+        <location filename="../application.cpp" line="594"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="593"/>
+        <location filename="../application.cpp" line="594"/>
         <source>Terminal emulator is not set.</source>
         <translation>L&apos;émulateur de terminal n&apos;est pas défini.</translation>
     </message>
@@ -898,17 +898,17 @@ Functionality may be broken.</source>
 <context>
     <name>Filer::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="439"/>
+        <location filename="../desktopwindow.cpp" line="441"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Res&amp;ter à la position actuelle</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="461"/>
+        <location filename="../desktopwindow.cpp" line="463"/>
         <source>Desktop Preferences</source>
         <translation>Préférences du bureau</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="528"/>
+        <location filename="../desktopwindow.cpp" line="530"/>
         <source>Version: %1</source>
         <translation>Version : %1</translation>
     </message>
@@ -1315,7 +1315,7 @@ Que voulez-vous faire avec ?</translation>
 <context>
     <name>Fm::FileMenu</name>
     <message>
-        <location filename="../filemenu.cpp" line="93"/>
+        <location filename="../filemenu.cpp" line="95"/>
         <source>Open</source>
         <translation>Ouvrir</translation>
     </message>
@@ -1324,37 +1324,37 @@ Que voulez-vous faire avec ?</translation>
         <translation type="vanished">OpenWith</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="177"/>
+        <location filename="../filemenu.cpp" line="179"/>
         <source>Cut</source>
         <translation>Couper</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="181"/>
+        <location filename="../filemenu.cpp" line="183"/>
         <source>Copy</source>
         <translation>Copier</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="185"/>
+        <location filename="../filemenu.cpp" line="187"/>
         <source>Paste</source>
         <translation>Coller</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="190"/>
+        <location filename="../filemenu.cpp" line="192"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mettre à la corbeille</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="242"/>
+        <location filename="../filemenu.cpp" line="244"/>
         <source>Get Info</source>
         <translation>Obtenir des informations</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="247"/>
+        <location filename="../filemenu.cpp" line="249"/>
         <source>&amp;Empty Trash</source>
         <translation>&amp;Vider la corbeille</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="349"/>
+        <location filename="../filemenu.cpp" line="357"/>
         <source>Output</source>
         <translation>Sortie</translation>
     </message>
@@ -1363,32 +1363,32 @@ Que voulez-vous faire avec ?</translation>
         <translation type="vanished">&amp;Supprimer</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="194"/>
+        <location filename="../filemenu.cpp" line="196"/>
         <source>Rename</source>
         <translation>Renommer</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="136"/>
+        <location filename="../filemenu.cpp" line="138"/>
         <source>Open With...</source>
         <translation>Ouvrir avec...</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="99"/>
+        <location filename="../filemenu.cpp" line="101"/>
         <source>Show Contents</source>
         <translation>Afficher le contenu</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="164"/>
+        <location filename="../filemenu.cpp" line="166"/>
         <source>Other Applications</source>
         <translation>Autre applications</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="170"/>
+        <location filename="../filemenu.cpp" line="172"/>
         <source>Create &amp;New</source>
         <translation>Créer un &amp;nouveau</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="128"/>
+        <location filename="../filemenu.cpp" line="130"/>
         <source>&amp;Restore</source>
         <translation>&amp;Restaurer</translation>
     </message>
@@ -1681,27 +1681,27 @@ Voulez-vous plutôt les supprimer ?</translation>
 <context>
     <name>Fm::FolderModel</name>
     <message>
-        <location filename="../foldermodel.cpp" line="313"/>
+        <location filename="../foldermodel.cpp" line="321"/>
         <source>Name</source>
         <translation>Nom</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="316"/>
+        <location filename="../foldermodel.cpp" line="324"/>
         <source>Type</source>
         <translation>Type</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="319"/>
+        <location filename="../foldermodel.cpp" line="327"/>
         <source>Size</source>
         <translation>Taille</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="322"/>
+        <location filename="../foldermodel.cpp" line="330"/>
         <source>Modified</source>
         <translation>Modifié</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="325"/>
+        <location filename="../foldermodel.cpp" line="333"/>
         <source>Owner</source>
         <translation>Propriétaire</translation>
     </message>
@@ -1740,7 +1740,7 @@ Voulez-vous plutôt les supprimer ?</translation>
         <translation>Bureau</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="203"/>
+        <location filename="../placesmodel.cpp" line="204"/>
         <source>Trash</source>
         <translation>Corbeille</translation>
     </message>

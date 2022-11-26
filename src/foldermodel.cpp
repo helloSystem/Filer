@@ -153,6 +153,7 @@ void FolderModel::wantToSelect(QStringList files, bool add, void *view) {
 }
 
 void FolderModel::onFilesAdded(FmFolder* folder, GSList* files, gpointer user_data) {
+  qDebug() << "FolderModel::onFilesAdded";
   FolderModel* model = static_cast<FolderModel*>(user_data);
 
   // OK, in this very specific case where the files are refreshed
@@ -189,6 +190,7 @@ void FolderModel::onFilesAdded(FmFolder* folder, GSList* files, gpointer user_da
 
 //static
 void FolderModel::onFilesChanged(FmFolder* folder, GSList* files, gpointer user_data) {
+  qDebug() << "FolderModel::onFilesChanged";
   FolderModel* model = static_cast<FolderModel*>(user_data);
   for(GSList* l = files; l; l = l->next) {
     FmFileInfo* info = FM_FILE_INFO(l->data);
@@ -207,7 +209,8 @@ void FolderModel::onFilesChanged(FmFolder* folder, GSList* files, gpointer user_
 }
 
 //static
-void FolderModel::onFilesRemoved(FmFolder* folder, GSList* files, gpointer user_data) {
+void FolderModel::onFilesRemoved(FmFolder* folder, GSList* files, gpointer user_data) {  
+  qDebug() << "FolderModel::onFilesRemoved";
   FolderModel* model = static_cast<FolderModel*>(user_data);
   for(GSList* l = files; l; l = l->next) {
     FmFileInfo* info = FM_FILE_INFO(l->data);
@@ -536,6 +539,7 @@ bool FolderModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int
                   FileOperation::trashFiles(srcPaths, app->settings().confirmTrash());
                   return true;
               } else {
+                  // Similar code is in filemenu.cpp
                   // Do the unmounting natively in Qt without the need for an external program
                   // The dark side does this with something like
                   // GVolume* volume = volumeItem->volume();

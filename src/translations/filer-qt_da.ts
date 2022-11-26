@@ -564,99 +564,99 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="262"/>
+        <location filename="../application.cpp" line="263"/>
         <source>Name of configuration profile</source>
         <translation>Navnet på konfigurations profilen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="262"/>
+        <location filename="../application.cpp" line="263"/>
         <source>PROFILE</source>
         <translation>PROFILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="265"/>
+        <location filename="../application.cpp" line="266"/>
         <source>Run Filer as a daemon</source>
         <translation>Kør Filer som en dæmon</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="268"/>
+        <location filename="../application.cpp" line="269"/>
         <source>Quit Filer</source>
         <translation>Afslut Filer</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="271"/>
+        <location filename="../application.cpp" line="272"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation>Åbn skrivebords styring (forældet)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="274"/>
+        <location filename="../application.cpp" line="275"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Sluk for skrivebords styring hvis den kører</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="277"/>
+        <location filename="../application.cpp" line="278"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Åbn skrivebords indstillinger på den side med det angivne navn</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="277"/>
-        <location filename="../application.cpp" line="293"/>
+        <location filename="../application.cpp" line="278"/>
+        <location filename="../application.cpp" line="294"/>
         <source>NAME</source>
         <translation>NAME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="280"/>
+        <location filename="../application.cpp" line="281"/>
         <source>Open new window</source>
         <translation>Åbn et nyt vindue</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="283"/>
+        <location filename="../application.cpp" line="284"/>
         <source>Open Find Files utility</source>
         <translation>Åbn Find fil værktøjet</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="286"/>
+        <location filename="../application.cpp" line="287"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Brug filen FILE som skrivebords baggrund</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="286"/>
+        <location filename="../application.cpp" line="287"/>
         <source>FILE</source>
         <translation>FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="290"/>
+        <location filename="../application.cpp" line="291"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Indstil opførsel af skrivebordets baggrund. MODE=(farve|stræk|tilpas|centrer|fliselæg)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="290"/>
+        <location filename="../application.cpp" line="291"/>
         <source>MODE</source>
         <translation>MODE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="293"/>
+        <location filename="../application.cpp" line="294"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Åbn indstillings menuen på siden med det angivne navn</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="296"/>
+        <location filename="../application.cpp" line="297"/>
         <source>Files or directories to open</source>
         <translation>Filer eller mapper at åbne</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="296"/>
+        <location filename="../application.cpp" line="297"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FILE1, FILE2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="586"/>
-        <location filename="../application.cpp" line="593"/>
+        <location filename="../application.cpp" line="587"/>
+        <location filename="../application.cpp" line="594"/>
         <source>Error</source>
         <translation>Fejl</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="593"/>
+        <location filename="../application.cpp" line="594"/>
         <source>Terminal emulator is not set.</source>
         <translation>Terminal emulator er ikke angivet.</translation>
     </message>
@@ -715,17 +715,17 @@ Functionality may be broken.</source>
 <context>
     <name>Filer::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="439"/>
+        <location filename="../desktopwindow.cpp" line="441"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>Sæ&amp;t til nuværende position</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="461"/>
+        <location filename="../desktopwindow.cpp" line="463"/>
         <source>Desktop Preferences</source>
         <translation>Skrivebords indstilinger</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="528"/>
+        <location filename="../desktopwindow.cpp" line="530"/>
         <source>Version: %1</source>
         <translation>Version: %1</translation>
     </message>
@@ -1120,72 +1120,72 @@ Hvad vil du gøre med det?</translation>
 <context>
     <name>Fm::FileMenu</name>
     <message>
-        <location filename="../filemenu.cpp" line="93"/>
+        <location filename="../filemenu.cpp" line="95"/>
         <source>Open</source>
         <translation>Åbn</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="136"/>
+        <location filename="../filemenu.cpp" line="138"/>
         <source>Open With...</source>
         <translation>Åbn med...</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="164"/>
+        <location filename="../filemenu.cpp" line="166"/>
         <source>Other Applications</source>
         <translation>Andre programmer</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="170"/>
+        <location filename="../filemenu.cpp" line="172"/>
         <source>Create &amp;New</source>
         <translation>Lav &amp;ny</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="128"/>
+        <location filename="../filemenu.cpp" line="130"/>
         <source>&amp;Restore</source>
         <translation>&amp;Genskab</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="99"/>
+        <location filename="../filemenu.cpp" line="101"/>
         <source>Show Contents</source>
         <translation>Vis indhold</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="177"/>
+        <location filename="../filemenu.cpp" line="179"/>
         <source>Cut</source>
         <translation>Klip</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="181"/>
+        <location filename="../filemenu.cpp" line="183"/>
         <source>Copy</source>
         <translation>Kopier</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="185"/>
+        <location filename="../filemenu.cpp" line="187"/>
         <source>Paste</source>
         <translation>Indsæt</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="190"/>
+        <location filename="../filemenu.cpp" line="192"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Flyt til papirkurv</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="194"/>
+        <location filename="../filemenu.cpp" line="196"/>
         <source>Rename</source>
         <translation>Omdøb</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="242"/>
+        <location filename="../filemenu.cpp" line="244"/>
         <source>Get Info</source>
         <translation>Få information</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="247"/>
+        <location filename="../filemenu.cpp" line="249"/>
         <source>&amp;Empty Trash</source>
         <translation>&amp;Tøm papirkurv</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="349"/>
+        <location filename="../filemenu.cpp" line="357"/>
         <source>Output</source>
         <translation>Output</translation>
     </message>
@@ -1450,27 +1450,27 @@ Vil du slette dem i stedet ?</translation>
 <context>
     <name>Fm::FolderModel</name>
     <message>
-        <location filename="../foldermodel.cpp" line="313"/>
+        <location filename="../foldermodel.cpp" line="321"/>
         <source>Name</source>
         <translation>Navn</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="316"/>
+        <location filename="../foldermodel.cpp" line="324"/>
         <source>Type</source>
         <translation>Type</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="319"/>
+        <location filename="../foldermodel.cpp" line="327"/>
         <source>Size</source>
         <translation>Størrelse</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="322"/>
+        <location filename="../foldermodel.cpp" line="330"/>
         <source>Modified</source>
         <translation>Ændret</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="325"/>
+        <location filename="../foldermodel.cpp" line="333"/>
         <source>Owner</source>
         <translation>Ejer</translation>
     </message>
@@ -1528,7 +1528,7 @@ Vil du slette dem i stedet ?</translation>
         <translation>Bogmærker</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="203"/>
+        <location filename="../placesmodel.cpp" line="204"/>
         <source>Trash</source>
         <translation>Papirkurv</translation>
     </message>

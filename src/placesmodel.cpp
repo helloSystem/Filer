@@ -163,6 +163,7 @@ PlacesModel::~PlacesModel() {
 }
 
 // static
+// probno: TODO: Replace GFileMonitor with QFileSystemWatcher
 void PlacesModel::onTrashChanged(GFileMonitor* monitor, GFile* gf, GFile* other, GFileMonitorEvent evt, PlacesModel* pThis) {
   QTimer::singleShot(0, pThis, SLOT(updateTrash()));
 }

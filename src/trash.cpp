@@ -14,8 +14,9 @@ void Fm::Trash::emptyTrash(){
     // as per https://specifications.freedesktop.org/trash-spec/trashspec-1.0.html
     // Possibly there was never code for this in PCManFM-Qt for this because it was reyling on gvfs-trash
     // With xdg, everything is complicated. Even emptying the Trash.
-    // Because it never stores information on the objects themselves (i.e., in extattrs).
+    // This is because it never stores information on the objects themselves (i.e., in extattrs).
     // Is there a Qt function that we could call to empty the Trash for us?
+    // Or https://github.com/marcusbritanicus/NewBreeze/tree/master/app/Gui/Widgets/TrashManager?
     // Or, as a last resort, a libfm function?
 
     QString trashPath = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/Trash";

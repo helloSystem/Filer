@@ -29,6 +29,8 @@
 #include <libfm/fm-actions.h>
 #include <QMessageBox>
 #include <QDebug>
+#include <QProcess>
+#include <QStorageInfo>
 #include "filemenu_p.h"
 #include "trash.h"
 
@@ -280,6 +282,7 @@ void FileMenu::addCustomActionItem(QMenu* menu, FmFileActionItem* item) {
 }
 
 void FileMenu::onOpenTriggered() {
+    qDebug() << "FileMenu::onOpenTriggered()";
     if(fileLauncher_) {
         fileLauncher_->launchFiles(NULL, files_);
     }
@@ -290,6 +293,7 @@ void FileMenu::onOpenTriggered() {
 }
 
 void FileMenu::onShowContentsTriggered() {
+    qDebug() << "FileMenu::onShowContentsTriggered()";
     if(fileLauncher_) {
         fileLauncher_->launchFiles(NULL, files_, true);
     }
@@ -300,6 +304,7 @@ void FileMenu::onShowContentsTriggered() {
 }
 
 void FileMenu::onOpenWithTriggered() {
+    qDebug() << "FileMenu::onOpenWithTriggered()";
     AppChooserDialog dlg(NULL);
     if(sameType_) {
         dlg.setMimeType(fm_file_info_get_mime_type(info_));
@@ -318,6 +323,7 @@ void FileMenu::onOpenWithTriggered() {
 }
 
 void FileMenu::openFilesWithApp(GAppInfo* app) {
+    qDebug() << "FileMenu::openFilesWithApp(GAppInfo* app)";
     FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
     GList* uris = NULL;
     for(GList* l = fm_path_list_peek_head_link(paths); l; l = l->next) {
@@ -332,11 +338,13 @@ void FileMenu::openFilesWithApp(GAppInfo* app) {
 }
 
 void FileMenu::onApplicationTriggered() {
+    qDebug() << "FileMenu::onApplicationTriggered()";
     AppInfoAction* action = static_cast<AppInfoAction*>(sender());
     openFilesWithApp(action->appInfo());
 }
 
 void FileMenu::onCustomActionTrigerred() {
+    qDebug() << "FileMenu::onCustomActionTrigerred()";
     CustomAction* action = static_cast<CustomAction*>(sender());
     FmFileActionItem* item = action->item();
 
@@ -352,41 +360,91 @@ void FileMenu::onCustomActionTrigerred() {
 }
 
 void FileMenu::onFilePropertiesTriggered() {
+    qDebug() << "FileMenu::onFilePropertiesTriggered()";
     FilePropsDialog::showForFiles(files_);
 }
 
 void FileMenu::onEmptyTrashTriggered() {
+    qDebug() << "FileMenu::onEmptyTrashTriggered()";
     Fm::Trash::emptyTrash();
 }
 
 void FileMenu::onCopyTriggered() {
+    qDebug() << "FileMenu::onCopyTriggered()";
     FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
     Fm::copyFilesToClipboard(paths);
     fm_path_list_unref(paths);
 }
 
 void FileMenu::onCutTriggered() {
+    qDebug() << "FileMenu::onCutTriggered()";
     FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
     Fm::cutFilesToClipboard(paths);
     fm_path_list_unref(paths);
 }
 
 void FileMenu::onDeleteTriggered() {
+    qDebug() << "FileMenu::onDeleteTriggered()";
+
     FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
-    FileOperation::trashFiles(paths, confirmTrash_);
+
+    // probono: Check if mountpoints are contained
+    bool sourcePathsContainMountpoints = false;
+    for(GList* l = fm_path_list_peek_head_link(paths); l; l = l->next) {
+        FmPath* path = FM_PATH(l->data);
+        QString sourcePathStr =  QString(fm_path_to_str(path));
+        qDebug() << "probono: pathStr" << sourcePathStr;
+
+        for (const QStorageInfo storageInfo : QStorageInfo::mountedVolumes()) {
+            if(storageInfo.rootPath() == sourcePathStr) {
+                qDebug() << sourcePathStr << "is a mountpoint";
+                sourcePathsContainMountpoints = true;
+                break;
+            }
+        }
+    }
+
+    qDebug() << "sourcePathsContainMountpoints:" << sourcePathsContainMountpoints;
+    if(sourcePathsContainMountpoints == false) {
+        FileOperation::trashFiles(paths, confirmTrash_);
+    } else {
+        // Similar code is in foldermodel.cpp
+        // Do the unmounting natively in Qt without the need for an external program
+        // The dark side does this with something like
+        // GVolume* volume = volumeItem->volume();
+        // op->unmount(volumeItem->volume());
+        for(GList* l = fm_path_list_peek_head_link(paths); l; l = l->next) {
+            FmPath* path = FM_PATH(l->data);
+            QString sourcePathStr =  QString(fm_path_to_str(path));
+            QProcess p;
+            p.setProgram("eject-and-clean");
+            p.setArguments({sourcePathStr});
+            qDebug() << p.program() << p.arguments();
+            p.start();
+            p.waitForFinished();
+            qDebug() <<  "p.exitCode():" << p.exitCode();
+            if(p.exitCode() != 0) {
+                QMessageBox::warning(nullptr, " ", QString("Cannot eject %1, 'eject-and-clean' command line tool missing or returned an error.").arg(sourcePathStr));
+            }
+        }
+    }
+
     fm_path_list_unref(paths);
 }
 
 void FileMenu::onUnTrashTriggered() {
+    qDebug() << "FileMenu::onUnTrashTriggered()";
     FmPathList* paths = fm_path_list_new_from_file_info_list(files_);
     FileOperation::unTrashFiles(paths);
 }
 
 void FileMenu::onPasteTriggered() {
+    qDebug() << "FileMenu::onPasteTriggered()";
     Fm::pasteFilesFromClipboard(cwd_);
 }
 
 void FileMenu::onRenameTriggered() {
+    qDebug() << "FileMenu::onRenameTriggered()";
     for(GList* l = fm_file_info_list_peek_head_link(files_); l; l = l->next) {
         FmFileInfo* info = FM_FILE_INFO(l->data);
         Fm::renameFile(info, NULL);

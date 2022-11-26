@@ -693,22 +693,22 @@ GNU 一般公衆利用許諾契約書の複製物を1部
 <context>
     <name>Filer::Application</name>
     <message>
-        <location filename="../application.cpp" line="262"/>
+        <location filename="../application.cpp" line="263"/>
         <source>Name of configuration profile</source>
         <translation>設定プロファイルの名前</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="262"/>
+        <location filename="../application.cpp" line="263"/>
         <source>PROFILE</source>
         <translation>PROFILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="265"/>
+        <location filename="../application.cpp" line="266"/>
         <source>Run Filer as a daemon</source>
         <translation>Filerをデーモンとして実行</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="268"/>
+        <location filename="../application.cpp" line="269"/>
         <source>Quit Filer</source>
         <translation>Filerを終了</translation>
     </message>
@@ -736,79 +736,79 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="274"/>
+        <location filename="../application.cpp" line="275"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>実行中のデスクトップマネージャーを終了</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="277"/>
+        <location filename="../application.cpp" line="278"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>特定の名前のページ上でデスクトップ設定ダイアログを開く</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="277"/>
-        <location filename="../application.cpp" line="293"/>
+        <location filename="../application.cpp" line="278"/>
+        <location filename="../application.cpp" line="294"/>
         <source>NAME</source>
         <translation>NAME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="286"/>
+        <location filename="../application.cpp" line="287"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>画像ファイルからデスクトップの壁紙を設定</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="286"/>
+        <location filename="../application.cpp" line="287"/>
         <source>FILE</source>
         <translation>FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="290"/>
+        <location filename="../application.cpp" line="291"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>デスクトップの壁紙のモードを設定する。MODE=(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="290"/>
+        <location filename="../application.cpp" line="291"/>
         <source>MODE</source>
         <translation>MODE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="293"/>
+        <location filename="../application.cpp" line="294"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>特定の名前のページで設定ダイアログを開く</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="280"/>
+        <location filename="../application.cpp" line="281"/>
         <source>Open new window</source>
         <translation>新しいウインドウを開く</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="271"/>
+        <location filename="../application.cpp" line="272"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="283"/>
+        <location filename="../application.cpp" line="284"/>
         <source>Open Find Files utility</source>
         <translation>ファイル検索ユーティリティーを開く</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="296"/>
+        <location filename="../application.cpp" line="297"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FILE1, FILE2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="296"/>
+        <location filename="../application.cpp" line="297"/>
         <source>Files or directories to open</source>
         <translation>開くファイルまたはディレクトリー</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="586"/>
-        <location filename="../application.cpp" line="593"/>
+        <location filename="../application.cpp" line="587"/>
+        <location filename="../application.cpp" line="594"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="593"/>
+        <location filename="../application.cpp" line="594"/>
         <source>Terminal emulator is not set.</source>
         <translation>端末エミュレーターを未設定です</translation>
     </message>
@@ -867,17 +867,17 @@ Functionality may be broken.</source>
 <context>
     <name>Filer::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="439"/>
+        <location filename="../desktopwindow.cpp" line="441"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>現在の場所に固定</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="461"/>
+        <location filename="../desktopwindow.cpp" line="463"/>
         <source>Desktop Preferences</source>
         <translation>デスクトップ設定</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="528"/>
+        <location filename="../desktopwindow.cpp" line="530"/>
         <source>Version: %1</source>
         <translation type="unfinished">バージョン: %1</translation>
     </message>
@@ -1283,7 +1283,7 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::FileMenu</name>
     <message>
-        <location filename="../filemenu.cpp" line="93"/>
+        <location filename="../filemenu.cpp" line="95"/>
         <source>Open</source>
         <translation>開く</translation>
     </message>
@@ -1292,37 +1292,37 @@ What do you want to do with it?</source>
         <translation type="vanished">アプリケーションで開く</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="177"/>
+        <location filename="../filemenu.cpp" line="179"/>
         <source>Cut</source>
         <translation>切り取り</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="181"/>
+        <location filename="../filemenu.cpp" line="183"/>
         <source>Copy</source>
         <translation>コピー</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="185"/>
+        <location filename="../filemenu.cpp" line="187"/>
         <source>Paste</source>
         <translation>貼り付け</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="190"/>
+        <location filename="../filemenu.cpp" line="192"/>
         <source>&amp;Move to Trash</source>
         <translation>ゴミ箱へ移動(&amp;M)</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="242"/>
+        <location filename="../filemenu.cpp" line="244"/>
         <source>Get Info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="247"/>
+        <location filename="../filemenu.cpp" line="249"/>
         <source>&amp;Empty Trash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="349"/>
+        <location filename="../filemenu.cpp" line="357"/>
         <source>Output</source>
         <translation>出力</translation>
     </message>
@@ -1331,32 +1331,32 @@ What do you want to do with it?</source>
         <translation type="vanished">削除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="194"/>
+        <location filename="../filemenu.cpp" line="196"/>
         <source>Rename</source>
         <translation>名前を変更する</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="136"/>
+        <location filename="../filemenu.cpp" line="138"/>
         <source>Open With...</source>
         <translation>アプリケーションで開く</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="99"/>
+        <location filename="../filemenu.cpp" line="101"/>
         <source>Show Contents</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="164"/>
+        <location filename="../filemenu.cpp" line="166"/>
         <source>Other Applications</source>
         <translation>その他のアプリケーション</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="170"/>
+        <location filename="../filemenu.cpp" line="172"/>
         <source>Create &amp;New</source>
         <translation type="unfinished">新規作成 (&amp;N)</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="128"/>
+        <location filename="../filemenu.cpp" line="130"/>
         <source>&amp;Restore</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1653,27 +1653,27 @@ Do you want to delete them instead?</source>
 <context>
     <name>Fm::FolderModel</name>
     <message>
-        <location filename="../foldermodel.cpp" line="313"/>
+        <location filename="../foldermodel.cpp" line="321"/>
         <source>Name</source>
         <translation>名前</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="316"/>
+        <location filename="../foldermodel.cpp" line="324"/>
         <source>Type</source>
         <translation>種類</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="319"/>
+        <location filename="../foldermodel.cpp" line="327"/>
         <source>Size</source>
         <translation>サイズ</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="322"/>
+        <location filename="../foldermodel.cpp" line="330"/>
         <source>Modified</source>
         <translation>更新日時</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="325"/>
+        <location filename="../foldermodel.cpp" line="333"/>
         <source>Owner</source>
         <translation>所有者</translation>
     </message>
@@ -1712,7 +1712,7 @@ Do you want to delete them instead?</source>
         <translation>デスクトップ</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="203"/>
+        <location filename="../placesmodel.cpp" line="204"/>
         <source>Trash</source>
         <translation>ゴミ箱</translation>
     </message>

@@ -629,22 +629,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 <context>
     <name>Filer::Application</name>
     <message>
-        <location filename="../application.cpp" line="262"/>
+        <location filename="../application.cpp" line="263"/>
         <source>Name of configuration profile</source>
         <translation>שם פרופיל התצורה</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="262"/>
+        <location filename="../application.cpp" line="263"/>
         <source>PROFILE</source>
         <translation>פרופיל</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="265"/>
+        <location filename="../application.cpp" line="266"/>
         <source>Run Filer as a daemon</source>
         <translation>הפעלת Filer כסוכן</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="268"/>
+        <location filename="../application.cpp" line="269"/>
         <source>Quit Filer</source>
         <translation>יציאה מ־Filer</translation>
     </message>
@@ -672,79 +672,79 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="271"/>
+        <location filename="../application.cpp" line="272"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation>הפעלת מנהל שולחן העבודה (לא בשימוש עוד)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="274"/>
+        <location filename="../application.cpp" line="275"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>כיבוי מנהל שולחן עבודה אם הוא פעיל</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="277"/>
+        <location filename="../application.cpp" line="278"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>פתיחת דו־שיח העדפות שולחן עבודה בעמוד עם השם שמצוין</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="277"/>
-        <location filename="../application.cpp" line="293"/>
+        <location filename="../application.cpp" line="278"/>
+        <location filename="../application.cpp" line="294"/>
         <source>NAME</source>
         <translation>שם</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="280"/>
+        <location filename="../application.cpp" line="281"/>
         <source>Open new window</source>
         <translation>פתיחת חלון חדש</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="283"/>
+        <location filename="../application.cpp" line="284"/>
         <source>Open Find Files utility</source>
         <translation>פתיחת כלי חיפוש קבצים</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="286"/>
+        <location filename="../application.cpp" line="287"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>הגדרת רקע שולחן עבודה מקובץ תמונה</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="286"/>
+        <location filename="../application.cpp" line="287"/>
         <source>FILE</source>
         <translation>קובץ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="290"/>
+        <location filename="../application.cpp" line="291"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>הגדרת מצב רקע שולחן העבודה. MODE=(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="290"/>
+        <location filename="../application.cpp" line="291"/>
         <source>MODE</source>
         <translation>מצב</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="293"/>
+        <location filename="../application.cpp" line="294"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>פתח את דו־שיח ההעדפות בעמוד עם השם שצויין</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="296"/>
+        <location filename="../application.cpp" line="297"/>
         <source>Files or directories to open</source>
         <translation>קבצים או תיקיות לפתיחה</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="296"/>
+        <location filename="../application.cpp" line="297"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[קובץ1, קובץ2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="586"/>
-        <location filename="../application.cpp" line="593"/>
+        <location filename="../application.cpp" line="587"/>
+        <location filename="../application.cpp" line="594"/>
         <source>Error</source>
         <translation>שגיאה</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="593"/>
+        <location filename="../application.cpp" line="594"/>
         <source>Terminal emulator is not set.</source>
         <translation>מדמה המסוף לא הוגדר.</translation>
     </message>
@@ -803,17 +803,17 @@ Functionality may be broken.</source>
 <context>
     <name>Filer::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="439"/>
+        <location filename="../desktopwindow.cpp" line="441"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>היצמדו&amp;ת לאזור הנוכחי</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="461"/>
+        <location filename="../desktopwindow.cpp" line="463"/>
         <source>Desktop Preferences</source>
         <translation>העדפות שולחן העבודה</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="528"/>
+        <location filename="../desktopwindow.cpp" line="530"/>
         <source>Version: %1</source>
         <translation>גרסה: %1</translation>
     </message>
@@ -1220,72 +1220,72 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::FileMenu</name>
     <message>
-        <location filename="../filemenu.cpp" line="93"/>
+        <location filename="../filemenu.cpp" line="95"/>
         <source>Open</source>
         <translation>פתיחה</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="99"/>
+        <location filename="../filemenu.cpp" line="101"/>
         <source>Show Contents</source>
         <translation>הצגת התוכן</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="128"/>
+        <location filename="../filemenu.cpp" line="130"/>
         <source>&amp;Restore</source>
         <translation>&amp;שחזור</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="136"/>
+        <location filename="../filemenu.cpp" line="138"/>
         <source>Open With...</source>
         <translation>פתיחה עם…</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="164"/>
+        <location filename="../filemenu.cpp" line="166"/>
         <source>Other Applications</source>
         <translation>יישומים אחרים</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="170"/>
+        <location filename="../filemenu.cpp" line="172"/>
         <source>Create &amp;New</source>
         <translation>יצירת &amp;חדש</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="177"/>
+        <location filename="../filemenu.cpp" line="179"/>
         <source>Cut</source>
         <translation>גזירה</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="181"/>
+        <location filename="../filemenu.cpp" line="183"/>
         <source>Copy</source>
         <translation>העתקה</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="185"/>
+        <location filename="../filemenu.cpp" line="187"/>
         <source>Paste</source>
         <translation>הדבקה</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="190"/>
+        <location filename="../filemenu.cpp" line="192"/>
         <source>&amp;Move to Trash</source>
         <translation>העברה ל&amp;אשפה</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="194"/>
+        <location filename="../filemenu.cpp" line="196"/>
         <source>Rename</source>
         <translation>שינוי שם</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="242"/>
+        <location filename="../filemenu.cpp" line="244"/>
         <source>Get Info</source>
         <translation>קבלת מידע</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="247"/>
+        <location filename="../filemenu.cpp" line="249"/>
         <source>&amp;Empty Trash</source>
         <translation>&amp;פינוי אשפה</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="349"/>
+        <location filename="../filemenu.cpp" line="357"/>
         <source>Output</source>
         <translation>פלט</translation>
     </message>
@@ -1550,27 +1550,27 @@ Do you want to delete them instead?</source>
 <context>
     <name>Fm::FolderModel</name>
     <message>
-        <location filename="../foldermodel.cpp" line="313"/>
+        <location filename="../foldermodel.cpp" line="321"/>
         <source>Name</source>
         <translation>שם</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="316"/>
+        <location filename="../foldermodel.cpp" line="324"/>
         <source>Type</source>
         <translation>סוג</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="319"/>
+        <location filename="../foldermodel.cpp" line="327"/>
         <source>Size</source>
         <translation>גודל</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="322"/>
+        <location filename="../foldermodel.cpp" line="330"/>
         <source>Modified</source>
         <translation>שינוי</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="325"/>
+        <location filename="../foldermodel.cpp" line="333"/>
         <source>Owner</source>
         <translation>בעלים</translation>
     </message>
@@ -1628,7 +1628,7 @@ Do you want to delete them instead?</source>
         <translation>סימניות</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="203"/>
+        <location filename="../placesmodel.cpp" line="204"/>
         <source>Trash</source>
         <translation>אשפה</translation>
     </message>

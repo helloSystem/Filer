@@ -240,6 +240,7 @@ Application::~Application() {
 
 void Application::initWatch()
 {
+    // probono: Obscure functionality from XDG; remove? https://wiki.archlinux.org/title/XDG_user_directories
     QFile file_ (QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + QStringLiteral("/user-dirs.dirs"));
     if(! file_.open(QIODevice::ReadOnly | QIODevice::Text)) {
         qDebug() << Q_FUNC_INFO << "Could not read: " << userDirsFile_;

@@ -564,99 +564,99 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="262"/>
+        <location filename="../application.cpp" line="263"/>
         <source>Name of configuration profile</source>
         <translation>Назва профілю налаштувань</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="262"/>
+        <location filename="../application.cpp" line="263"/>
         <source>PROFILE</source>
         <translation>ПРОФІЛЬ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="265"/>
+        <location filename="../application.cpp" line="266"/>
         <source>Run Filer as a daemon</source>
         <translation>Запустити Filer як службу</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="268"/>
+        <location filename="../application.cpp" line="269"/>
         <source>Quit Filer</source>
         <translation>Вийти з Filer</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="271"/>
+        <location filename="../application.cpp" line="272"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation>Запустити менеджер стільниці (більше не підтримується)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="274"/>
+        <location filename="../application.cpp" line="275"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Вимкнути диспетчер стільниці, якщо він запущений</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="277"/>
+        <location filename="../application.cpp" line="278"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Відкрити діалогове вікно налаштувань стільниці на сторінці із вказаною назвою</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="277"/>
-        <location filename="../application.cpp" line="293"/>
+        <location filename="../application.cpp" line="278"/>
+        <location filename="../application.cpp" line="294"/>
         <source>NAME</source>
         <translation>ІМ&apos;Я</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="280"/>
+        <location filename="../application.cpp" line="281"/>
         <source>Open new window</source>
         <translation>Відкрити нове вікно</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="283"/>
+        <location filename="../application.cpp" line="284"/>
         <source>Open Find Files utility</source>
         <translation>Відкрити засіб пошуку файлів</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="286"/>
+        <location filename="../application.cpp" line="287"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Встановити шпалери для стільниці з ФАЙЛу зображення</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="286"/>
+        <location filename="../application.cpp" line="287"/>
         <source>FILE</source>
         <translation>ФАЙЛ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="290"/>
+        <location filename="../application.cpp" line="291"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Встановити режим шпалер стільниці. РЕЖИМ=(color|stretch|fit|center|tile)(укр.: колір|розтягнути|підігнати|по центру|плиткою)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="290"/>
+        <location filename="../application.cpp" line="291"/>
         <source>MODE</source>
         <translation>РЕЖИМ</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="293"/>
+        <location filename="../application.cpp" line="294"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Відкрити діалогове вікно налаштувань на сторінці із вказаною назвою</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="296"/>
+        <location filename="../application.cpp" line="297"/>
         <source>Files or directories to open</source>
         <translation>Файли або теки для відкриття</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="296"/>
+        <location filename="../application.cpp" line="297"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[ФАЙЛ1, ФАЙЛ2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="586"/>
-        <location filename="../application.cpp" line="593"/>
+        <location filename="../application.cpp" line="587"/>
+        <location filename="../application.cpp" line="594"/>
         <source>Error</source>
         <translation>Помилка</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="593"/>
+        <location filename="../application.cpp" line="594"/>
         <source>Terminal emulator is not set.</source>
         <translation>Емулятор терміналу не визначено.</translation>
     </message>
@@ -715,17 +715,17 @@ Functionality may be broken.</source>
 <context>
     <name>Filer::DesktopWindow</name>
     <message>
-        <location filename="../desktopwindow.cpp" line="439"/>
+        <location filename="../desktopwindow.cpp" line="441"/>
         <source>Stic&amp;k to Current Position</source>
         <translation>&amp;Дотримуватись поточної позиції</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="461"/>
+        <location filename="../desktopwindow.cpp" line="463"/>
         <source>Desktop Preferences</source>
         <translation>Налаштування стільниці</translation>
     </message>
     <message>
-        <location filename="../desktopwindow.cpp" line="528"/>
+        <location filename="../desktopwindow.cpp" line="530"/>
         <source>Version: %1</source>
         <translation>Версія: %1</translation>
     </message>
@@ -1122,72 +1122,72 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::FileMenu</name>
     <message>
-        <location filename="../filemenu.cpp" line="93"/>
+        <location filename="../filemenu.cpp" line="95"/>
         <source>Open</source>
         <translation>Відкрити</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="136"/>
+        <location filename="../filemenu.cpp" line="138"/>
         <source>Open With...</source>
         <translation>Відкрити з...</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="164"/>
+        <location filename="../filemenu.cpp" line="166"/>
         <source>Other Applications</source>
         <translation>Інші застосунки</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="170"/>
+        <location filename="../filemenu.cpp" line="172"/>
         <source>Create &amp;New</source>
         <translation>Створити &amp;новий</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="128"/>
+        <location filename="../filemenu.cpp" line="130"/>
         <source>&amp;Restore</source>
         <translation>&amp;Відновити</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="99"/>
+        <location filename="../filemenu.cpp" line="101"/>
         <source>Show Contents</source>
         <translation>Показати вміст</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="177"/>
+        <location filename="../filemenu.cpp" line="179"/>
         <source>Cut</source>
         <translation>Вирізати</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="181"/>
+        <location filename="../filemenu.cpp" line="183"/>
         <source>Copy</source>
         <translation>Копіювати</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="185"/>
+        <location filename="../filemenu.cpp" line="187"/>
         <source>Paste</source>
         <translation>Вставити</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="190"/>
+        <location filename="../filemenu.cpp" line="192"/>
         <source>&amp;Move to Trash</source>
         <translation>Пере&amp;містити до смітника</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="194"/>
+        <location filename="../filemenu.cpp" line="196"/>
         <source>Rename</source>
         <translation>Перейменувати</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="242"/>
+        <location filename="../filemenu.cpp" line="244"/>
         <source>Get Info</source>
         <translation>Отримати інформацію</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="247"/>
+        <location filename="../filemenu.cpp" line="249"/>
         <source>&amp;Empty Trash</source>
         <translation>&amp;Спорожнити смітник</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="349"/>
+        <location filename="../filemenu.cpp" line="357"/>
         <source>Output</source>
         <translation>Виведення</translation>
     </message>
@@ -1452,27 +1452,27 @@ Do you want to delete them instead?</source>
 <context>
     <name>Fm::FolderModel</name>
     <message>
-        <location filename="../foldermodel.cpp" line="313"/>
+        <location filename="../foldermodel.cpp" line="321"/>
         <source>Name</source>
         <translation>Ім&apos;я</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="316"/>
+        <location filename="../foldermodel.cpp" line="324"/>
         <source>Type</source>
         <translation>Тип</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="319"/>
+        <location filename="../foldermodel.cpp" line="327"/>
         <source>Size</source>
         <translation>Розмір</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="322"/>
+        <location filename="../foldermodel.cpp" line="330"/>
         <source>Modified</source>
         <translation>Змінений</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="325"/>
+        <location filename="../foldermodel.cpp" line="333"/>
         <source>Owner</source>
         <translation>Власник</translation>
     </message>
@@ -1530,7 +1530,7 @@ Do you want to delete them instead?</source>
         <translation>Закладки</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="203"/>
+        <location filename="../placesmodel.cpp" line="204"/>
         <source>Trash</source>
         <translation>Смітник</translation>
     </message>

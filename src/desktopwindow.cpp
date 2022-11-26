@@ -62,6 +62,8 @@
 #include <QX11Info>
 #include <QScreen>
 #include <QStandardPaths>
+#include <QProcess>
+#include <QStorageInfo>
 #include <xcb/xcb.h>
 #include <X11/Xlib.h>
 
@@ -812,8 +814,48 @@ void DesktopWindow::onEmptyTrashActivated() {
 
 void DesktopWindow::onDeleteActivated() {
     if(FmPathList* paths = selectedFilePaths()) {
-        Settings& settings = static_cast<Application*>(qApp)->settings();
-        Fm::FileOperation::trashFiles(paths, settings.confirmTrash());
+
+        // probono: Check if mountpoints are contained
+        bool sourcePathsContainMountpoints = false;
+        for(GList* l = fm_path_list_peek_head_link(paths); l; l = l->next) {
+            FmPath* path = FM_PATH(l->data);
+            QString sourcePathStr =  QString(fm_path_to_str(path));
+            qDebug() << "probono: pathStr" << sourcePathStr;
+
+            for (const QStorageInfo storageInfo : QStorageInfo::mountedVolumes()) {
+                if(storageInfo.rootPath() == sourcePathStr) {
+                    qDebug() << sourcePathStr << "is a mountpoint";
+                    sourcePathsContainMountpoints = true;
+                    break;
+                }
+            }
+        }
+
+        qDebug() << "sourcePathsContainMountpoints:" << sourcePathsContainMountpoints;
+        if(sourcePathsContainMountpoints == false) {
+            Filer::Application* app = static_cast<Filer::Application*>(qApp);
+            Fm::FileOperation::trashFiles(paths, app->settings().confirmTrash());
+        } else {
+            // Similar code is in foldermodel.cpp
+            // Do the unmounting natively in Qt without the need for an external program
+            // The dark side does this with something like
+            // GVolume* volume = volumeItem->volume();
+            // op->unmount(volumeItem->volume());
+            for(GList* l = fm_path_list_peek_head_link(paths); l; l = l->next) {
+                FmPath* path = FM_PATH(l->data);
+                QString sourcePathStr =  QString(fm_path_to_str(path));
+                QProcess p;
+                p.setProgram("eject-and-clean");
+                p.setArguments({sourcePathStr});
+                qDebug() << p.program() << p.arguments();
+                p.start();
+                p.waitForFinished();
+                qDebug() <<  "p.exitCode():" << p.exitCode();
+                if(p.exitCode() != 0) {
+                    QMessageBox::warning(nullptr, " ", QString("Cannot eject %1, 'eject-and-clean' command line tool missing or returned an error.").arg(sourcePathStr));
+                }
+            }
+        }
         fm_path_list_unref(paths);
     }
 }
