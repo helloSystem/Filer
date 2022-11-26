@@ -100,6 +100,14 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
     opt.decorationAlignment = Qt::AlignHCenter|Qt::AlignTop;
     opt.displayAlignment = Qt::AlignTop|Qt::AlignHCenter;
 
+    QString path = QString::fromUtf8(fm_path_to_str(fm_file_info_get_path(file))); // probono: rgh! So complicated! TODO: Get rid of libfm
+
+    // If the trash is full, use a different icon for the trash can
+    if(QFileInfo(path).fileName() == "trash-can.desktop") {
+
+    }
+
+
     // draw the icon
     QIcon::Mode iconMode = iconModeFromState(opt.state);
     QPoint iconPos(opt.rect.x() + (opt.rect.width() - opt.decorationSize.width()) / 2, opt.rect.y());
@@ -127,8 +135,6 @@ void FolderItemDelegate::paint(QPainter* painter, const QStyleOptionViewItem& op
     // we only support symlink emblem at the moment
     if(isSymlink)
       painter->drawPixmap(symlinkPos, symlinkIcon_.pixmap(opt.decorationSize / 2, iconMode));
-
-    QString path = QString::fromUtf8(fm_path_to_str(fm_file_info_get_path(file))); // argh! So complicated!
 
     // probono: git labels
     // FIXME: Why doesn't this work?

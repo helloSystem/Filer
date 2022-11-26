@@ -29,11 +29,16 @@
 #include <QPixmap>
 #include <QPainter>
 #include <QDebug>
+#include <QFileInfo>
+#include <QStorageInfo>
+#include <QProcess>
+#include <QMessageBox>
 #include "utilities.h"
 #include "fileoperation.h"
 #include "thumbnailloader.h"
 #include "folderview.h"
 
+#include "application.h"
 #include "fm-path.h"
 
 using namespace Fm;
@@ -464,69 +469,110 @@ bool FolderModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int
 
   // FIXME: should we put this in dropEvent handler of FolderView instead?
   if(data->hasUrls()) {
-    qDebug("drop action: %d", action);
-    FmPathList* srcPaths = pathListFromQUrls(data->urls());
-    bool identicalLocations = false;
-    switch(action) {
+      qDebug("drop outside of an item, action: %d", action);
+      FmPathList* srcPaths = pathListFromQUrls(data->urls());
+      bool identicalLocations = false;
       GList* l;
-      case Qt::CopyAction:
-        // probono: Do not attempt to do a copy in the filesystem if source and destination paths are identical
-        // This is important for the Desktop, where apparently moving things on the desktop defaults to copying
-        // FIXME: Replace things like FmPathList* with QList.
-        // Why is it so complicated to do "For each in srcPaths, do..."?
-        // This is the issue I have with C++. Instead of a list being a list, we have now a "list of paths" that behaves unlike any other list.
-        // C++ is ok as long as one limits oneself to using what Qt provides.
-        // But as soon as other libraries such as libfm creep in, it becomes insanely cumbersome.
-        // We should drop all remnants of glib and libfm and do everything natively in Qt. Volunteers?
-        for(l = fm_path_list_peek_head_link(srcPaths); l; l = l->next) {
-          FmPath* path = FM_PATH(l->data);
-          QString pathStr = QString::fromUtf8(fm_path_display_name(path, false)); // Unlike for MoveAction, do not use fm_path_get_parent here
-          QString destPathStr = QString::fromUtf8(fm_path_display_name(destPath, false));
-          qDebug() << "probono: pathStr" << pathStr;
-          qDebug() << "probono: destPathStr" << destPathStr;
-          if (pathStr == destPathStr){
-              identicalLocations = true;
-              break;
+      if (action == Qt::CopyAction) {
+          // probono: Do not attempt to do a copy in the filesystem if source and destination paths are identical
+          // This is important for the Desktop, where apparently moving things on the desktop defaults to copying
+          // FIXME: Replace things like FmPathList* with QList.
+          // Why is it so complicated to do "For each in srcPaths, do..."?
+          // This is the issue I have with C++. Instead of a list being a list, we have now a "list of paths" that behaves unlike any other list.
+          // C++ is ok as long as one limits oneself to using what Qt provides.
+          // But as soon as other libraries such as libfm creep in, it becomes insanely cumbersome.
+          // We should drop all remnants of glib and libfm and do everything natively in Qt. Volunteers?
+          for(l = fm_path_list_peek_head_link(srcPaths); l; l = l->next) {
+              FmPath* path = FM_PATH(l->data);
+              QString pathStr = QString::fromUtf8(fm_path_display_name(path, false)); // Unlike for MoveAction, do not use fm_path_get_parent here
+              QString destPathStr = QString::fromUtf8(fm_path_display_name(destPath, false));
+              qDebug() << "probono: pathStr" << pathStr;
+              qDebug() << "probono: destPathStr" << destPathStr;
+
+              if (pathStr == destPathStr){
+                  identicalLocations = true;
+                  break;
+              }
           }
-        }
-        if(identicalLocations == true) {
-            qDebug() << "probono: Source and destination paths are identical";
-        } else {
-            FileOperation::copyFiles(srcPaths, destPath);
-        }
-        break;
-      case Qt::MoveAction:
-        // probono: Do not attempt to do a move in the filesystem if source and destination paths are identical.
-        // This is important for Filer windows
-        // FIXME: Same as above in "case Qt::CopyAction"
-        for(l = fm_path_list_peek_head_link(srcPaths); l; l = l->next) {
-          FmPath* path = FM_PATH(l->data);
-          QString pathStr = QString::fromUtf8(fm_path_display_name(fm_path_get_parent(path), false)); // Do use fm_path_get_parent here
-          QString destPathStr = QString::fromUtf8(fm_path_display_name(destPath, false));
-          qDebug() << "probono: pathStr" << pathStr;
-          qDebug() << "probono: destPathStr" << destPathStr;
-          if (pathStr == destPathStr){
-              identicalLocations = true;
-              break;
+          if(identicalLocations == true) {
+              qDebug() << "probono: Source and destination paths are identical";
+          } else {
+              FileOperation::copyFiles(srcPaths, destPath);
           }
-        }
-        if(identicalLocations == true) {
-            qDebug() << "probono: Source and destination paths are identical";
-        } else {
-            FileOperation::moveFiles(srcPaths, destPath);
-        }
-        break;
-      case Qt::LinkAction:
-        FileOperation::symlinkFiles(srcPaths, destPath);
-      default:
-        fm_path_list_unref(srcPaths);
-        return false;
-    }
-    fm_path_list_unref(srcPaths);
-    return true;
+      } else if (action == Qt::MoveAction) {
+          bool sourcePathsContainMountpoints = false;
+          // Bevore we move anything, do a couple of checks:
+          // Are source and target identical? Are objects being moved to the Trash?
+          for(l = fm_path_list_peek_head_link(srcPaths); l; l = l->next) {
+              FmPath* path = FM_PATH(l->data);
+              QString sourcePathStr =  QString(fm_path_to_str(path));
+              QString destPathStr = QString(fm_path_to_str(destPath));
+              qDebug() << "probono: pathStr" << sourcePathStr;
+              qDebug() << "probono: destPathStr" << destPathStr;
+              if (sourcePathStr == destPathStr){
+                  // probono: Do not attempt to do a move in the filesystem if source and destination paths are identical.
+                  // This is important for Filer windows
+                  // FIXME: Same as above in "case Qt::CopyAction"
+                  qDebug() << "probono: Source and destination paths are identical";
+                  return false;
+              }
+              // probono: If destination is trash-can.desktop, then move to trash
+              // using the proper facility
+              if (QFileInfo(destPathStr).fileName() == "trash-can.desktop"){
+                  for (const QStorageInfo storageInfo : QStorageInfo::mountedVolumes()) {
+                      if(storageInfo.rootPath() == sourcePathStr) {
+                          qDebug() << sourcePathStr << "is a mountpoint";
+                          sourcePathsContainMountpoints = true;
+                          break;
+                      }
+                  }
+              }
+          }
+          qDebug() << "sourcePathsContainMountpoints:" << sourcePathsContainMountpoints;
+          if(sourcePathsContainMountpoints == false) {
+              Filer::Application* app = static_cast<Filer::Application*>(qApp);
+              FileOperation::trashFiles(srcPaths, app->settings().confirmTrash());
+              return true;
+          } else {
+              // Do the unmounting natively in Qt without the need for an external program
+              // The dark side does this with something like
+              // GVolume* volume = volumeItem->volume();
+              // op->unmount(volumeItem->volume());
+              for(l = fm_path_list_peek_head_link(srcPaths); l; l = l->next) {
+                  FmPath* path = FM_PATH(l->data);
+                  QString sourcePathStr =  QString(fm_path_to_str(path));
+                  QProcess p;
+                  p.setProgram("eject-and-clean");
+                  p.setArguments({sourcePathStr});
+                  qDebug() << p.program() << p.arguments();
+                  p.start();
+                  p.waitForFinished();
+                  qDebug() <<  "p.exitCode():" << p.exitCode();
+                  if(p.exitCode() == 0) {
+                      return true;
+                  }
+                  else {
+                      QMessageBox::warning(nullptr, " ", QString("Cannot eject %1, 'eject-and-clean' command line tool missing or returned an error.").arg(sourcePathStr));
+                      return false;
+                  }
+              }
+          }
+
+          FileOperation::moveFiles(srcPaths, destPath);
+          return true;
+      } else if (action == Qt::LinkAction) {
+          FileOperation::symlinkFiles(srcPaths, destPath);
+      } else {
+
+          fm_path_list_unref(srcPaths);
+          return false;
+
+      }
+      fm_path_list_unref(srcPaths);
+      return true;
   }
   else if(data->hasFormat("application/x-qabstractitemmodeldatalist")) {
-    return true;
+      return true;
   }
   return QAbstractListModel::dropMimeData(data, action, row, column, parent);
 }

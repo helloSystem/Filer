@@ -37,6 +37,9 @@
 #include <QApplication>
 #include <QScrollBar>
 #include <QMetaType>
+#include <QList>
+#include <QStringList>
+#include <QFileInfo>
 #include "folderview_p.h"
 
 Q_DECLARE_OPAQUE_POINTER(FmFileInfo*)
@@ -818,7 +821,7 @@ void FolderView::invertSelection() {
 }
 
 void FolderView::childDragEnterEvent(QDragEnterEvent* event) {
-  qDebug("drag enter");
+  qDebug("FolderView::childDragEnterEvent(QDragEnterEvent* event) = drag enter");
   if(event->mimeData()->hasFormat("text/uri-list")) {
     event->accept();
   }
@@ -827,17 +830,45 @@ void FolderView::childDragEnterEvent(QDragEnterEvent* event) {
 }
 
 void FolderView::childDragLeaveEvent(QDragLeaveEvent* e) {
-  qDebug("drag leave");
+  qDebug("FolderView::childDragLeaveEvent(QDragLeaveEvent* e) = drag leave");
   e->accept();
 }
 
 void FolderView::childDragMoveEvent(QDragMoveEvent* e) {
-  qDebug("drag move");
+  qDebug("FolderView::childDragMoveEvent(QDragMoveEvent* e) = drag move");
 }
 
 void FolderView::childDropEvent(QDropEvent* e) {
-  qDebug("drop");
-  if(e->keyboardModifiers() == Qt::NoModifier) {
+  qDebug("FolderView::childDropEvent(QDropEvent* e) = drop onto item");
+
+  // Find out what has been dragged onto what
+  QStringList sourcePaths = {};
+  QString destinationPath = "";
+  const QMimeData *mimeData = e->mimeData();
+  if(mimeData->hasFormat("application/x-qabstractitemmodeldatalist")) {
+      QModelIndex dropIndex = view->indexAt(e->pos()); // the item dropped on (destination)
+      if(dropIndex.isValid()) { // drop on an item
+          QModelIndex index = model_->index(dropIndex.row(), 0);
+          FmFileInfo* info = model_->fileInfoFromIndex(index);
+          destinationPath = QString(fm_path_to_str(fm_file_info_get_path(info)));
+          qDebug() << "destinationPath" << destinationPath;
+          QModelIndexList sourceIndexes = selectedIndexes(); // the dragged items (source)
+          qDebug() << "len:" << sourceIndexes.length();
+          for (const QModelIndex index : sourceIndexes) {
+              FmFileInfo* info = model_->fileInfoFromIndex(index);
+              sourcePaths.append(QString(fm_path_to_str(fm_file_info_get_path(info))));
+          }
+          qDebug() << "sourcePaths" << sourcePaths;
+      }
+  }
+
+  // probono: TODO: Check whether the destination is an application,
+  // if so, launch it and open the dropped document
+  // (optionally: check whether the application 'can-open' the document)
+
+  if(QFileInfo(destinationPath).fileName() == "trash-can.desktop"){
+      e->setDropAction(Qt::MoveAction);
+  } else if(e->keyboardModifiers() == Qt::NoModifier) {
     // if no key modifiers are used, popup a menu
     // to ask the user for the action he/she wants to perform.
     Qt::DropAction action = DndActionMenu::askUser(QCursor::pos());

@@ -106,7 +106,7 @@ FolderModelItem::FolderModelItem(const FolderModelItem& other) {
   if (mimetype == "inode/mount-point") {
     qDebug() << "probono: Get the 'Volume label' for the volume";
 #ifdef __FreeBSD__
-    qDebug() << "probono: Using 'fstyp -l /dev/" + displayName + "' on FreeBSD";
+    qDebug() << "probono: Using 'fstyp -l /dev/" + displayName + "' on FreeBSD. TODO: Use QStorageInfo::name() instead";
     // NOTE: placesmodelitem.cpp has similar code for what gets shown in the sidebar
     // NOTE: Alternatively, we could just use mountpoints that have the volume label as their name
     QProcess p;
@@ -132,7 +132,7 @@ FolderModelItem::FolderModelItem(const FolderModelItem& other) {
         }
     }
 #else
-    qDebug() << "probono: TODO: To be implemented for this OS";
+    qDebug() << "probono: TODO: To be implemented for this OS. TODO: Use QStorageInfo::name()";
 #endif
   }
 

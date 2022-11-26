@@ -22,6 +22,8 @@
 #include "fileoperation.h"
 #include "utilities.h"
 
+#include <QDebug>
+
 using namespace Fm;
 
 const char* supportedMimeTypes[] = {
@@ -40,6 +42,7 @@ DndDest::~DndDest() {
 
 bool DndDest::dropMimeData(const QMimeData* data, Qt::DropAction action) {
   // FIXME: should we put this in dropEvent handler of FolderView instead?
+  qDebug() << "DndDest::dropMimeData";
   if(data->hasUrls()) {
     qDebug("drop action: %d", action);
     FmPathList* srcPaths = pathListFromQUrls(data->urls());
