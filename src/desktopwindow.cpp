@@ -981,6 +981,7 @@ bool DesktopWindow::eventFilter(QObject * watched, QEvent * event) {
 }
 
 void DesktopWindow::childDropEvent(QDropEvent* e) {
+    qDebug() << "DesktopWindow::childDropEvent(QDropEvent* e)";
     bool moveItem = false;
     if(e->source() == listView_ && e->keyboardModifiers() == Qt::NoModifier) {
         // drag source is our list view, and no other modifier keys are pressed

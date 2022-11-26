@@ -503,10 +503,10 @@ bool FolderModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int
           bool sourcePathsContainMountpoints = false;
           // Bevore we move anything, do a couple of checks:
           // Are source and target identical? Are objects being moved to the Trash?
+          QString destPathStr = QString(fm_path_to_str(destPath));
           for(l = fm_path_list_peek_head_link(srcPaths); l; l = l->next) {
               FmPath* path = FM_PATH(l->data);
               QString sourcePathStr =  QString(fm_path_to_str(path));
-              QString destPathStr = QString(fm_path_to_str(destPath));
               qDebug() << "probono: pathStr" << sourcePathStr;
               qDebug() << "probono: destPathStr" << destPathStr;
               if (sourcePathStr == destPathStr){
@@ -528,32 +528,35 @@ bool FolderModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int
                   }
               }
           }
-          qDebug() << "sourcePathsContainMountpoints:" << sourcePathsContainMountpoints;
-          if(sourcePathsContainMountpoints == false) {
-              Filer::Application* app = static_cast<Filer::Application*>(qApp);
-              FileOperation::trashFiles(srcPaths, app->settings().confirmTrash());
-              return true;
-          } else {
-              // Do the unmounting natively in Qt without the need for an external program
-              // The dark side does this with something like
-              // GVolume* volume = volumeItem->volume();
-              // op->unmount(volumeItem->volume());
-              for(l = fm_path_list_peek_head_link(srcPaths); l; l = l->next) {
-                  FmPath* path = FM_PATH(l->data);
-                  QString sourcePathStr =  QString(fm_path_to_str(path));
-                  QProcess p;
-                  p.setProgram("eject-and-clean");
-                  p.setArguments({sourcePathStr});
-                  qDebug() << p.program() << p.arguments();
-                  p.start();
-                  p.waitForFinished();
-                  qDebug() <<  "p.exitCode():" << p.exitCode();
-                  if(p.exitCode() == 0) {
-                      return true;
-                  }
-                  else {
-                      QMessageBox::warning(nullptr, " ", QString("Cannot eject %1, 'eject-and-clean' command line tool missing or returned an error.").arg(sourcePathStr));
-                      return false;
+
+          if (QFileInfo(destPathStr).fileName() == "trash-can.desktop"){
+              qDebug() << "sourcePathsContainMountpoints:" << sourcePathsContainMountpoints;
+              if(sourcePathsContainMountpoints == false) {
+                  Filer::Application* app = static_cast<Filer::Application*>(qApp);
+                  FileOperation::trashFiles(srcPaths, app->settings().confirmTrash());
+                  return true;
+              } else {
+                  // Do the unmounting natively in Qt without the need for an external program
+                  // The dark side does this with something like
+                  // GVolume* volume = volumeItem->volume();
+                  // op->unmount(volumeItem->volume());
+                  for(l = fm_path_list_peek_head_link(srcPaths); l; l = l->next) {
+                      FmPath* path = FM_PATH(l->data);
+                      QString sourcePathStr =  QString(fm_path_to_str(path));
+                      QProcess p;
+                      p.setProgram("eject-and-clean");
+                      p.setArguments({sourcePathStr});
+                      qDebug() << p.program() << p.arguments();
+                      p.start();
+                      p.waitForFinished();
+                      qDebug() <<  "p.exitCode():" << p.exitCode();
+                      if(p.exitCode() == 0) {
+                          return true;
+                      }
+                      else {
+                          QMessageBox::warning(nullptr, " ", QString("Cannot eject %1, 'eject-and-clean' command line tool missing or returned an error.").arg(sourcePathStr));
+                          return false;
+                      }
                   }
               }
           }
