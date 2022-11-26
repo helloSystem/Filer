@@ -41,7 +41,9 @@
 #include <QStringList>
 #include <QFileInfo>
 #include <QDir>
+#include <QProcess>
 #include "folderview_p.h"
+#include "bundle.h"
 
 Q_DECLARE_OPAQUE_POINTER(FmFileInfo*)
 
@@ -891,9 +893,19 @@ void FolderView::childDropEvent(QDropEvent* e) {
   }
   qDebug() << "destinationPath" << destinationPath;
 
-  // probono: TODO: Check whether the destination is an application,
+  // probono: Check whether the destination is an application,
   // if so, launch it and open the dropped document
-  // (optionally: check whether the application 'can-open' the document)
+  // TODO: check whether the application 'can-open' the document and if not,
+  // only open the documents with the application if a modifier key is hold down
+  FmFileInfo *fileInfo = fm_file_info_new_from_native_file(nullptr, destinationPath.toUtf8(), nullptr);
+  bool isAppDirOrBundle = checkWhetherAppDirOrBundle(fileInfo);
+  fm_file_info_unref(fileInfo);
+  if(isAppDirOrBundle) {
+      e->setDropAction(Qt::IgnoreAction);
+      qDebug() << "Opening using the 'launch' command";
+      QProcess::startDetached("launch", QStringList({destinationPath}) + sourcePaths);
+      return;
+  }
 
   // probono: If parent directory of all source objects and destination are the same,
   // do not ask which action to take

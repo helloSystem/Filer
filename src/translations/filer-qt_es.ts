@@ -1639,27 +1639,27 @@ Do you want to delete them instead?</source>
 <context>
     <name>Fm::FolderModel</name>
     <message>
-        <location filename="../foldermodel.cpp" line="321"/>
+        <location filename="../foldermodel.cpp" line="330"/>
         <source>Name</source>
         <translation>Nombre</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="324"/>
+        <location filename="../foldermodel.cpp" line="333"/>
         <source>Type</source>
         <translation>Tipo</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="327"/>
+        <location filename="../foldermodel.cpp" line="336"/>
         <source>Size</source>
         <translation>Tamaño</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="330"/>
+        <location filename="../foldermodel.cpp" line="339"/>
         <source>Modified</source>
         <translation>Modificado</translation>
     </message>
     <message>
-        <location filename="../foldermodel.cpp" line="333"/>
+        <location filename="../foldermodel.cpp" line="342"/>
         <source>Owner</source>
         <translation>Dueño</translation>
     </message>
@@ -1849,51 +1849,51 @@ Modificado: %3</translation>
     <name>MainWindow</name>
     <message>
         <location filename="../main-win.ui" line="14"/>
-        <location filename="../../build/src/ui_main-win.h" line="602"/>
+        <location filename="../../build/src/ui_main-win.h" line="606"/>
         <source>File Manager</source>
         <translation>Administrador de archivos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="278"/>
-        <location filename="../../build/src/ui_main-win.h" line="608"/>
+        <location filename="../../build/src/ui_main-win.h" line="612"/>
         <source>Ctrl+Up</source>
         <translation>Ctrl+Arriba</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="290"/>
-        <location filename="../../build/src/ui_main-win.h" line="612"/>
+        <location filename="../../build/src/ui_main-win.h" line="616"/>
         <source>Ctrl+Shift+H</source>
         <translation>Ctrl+Mayúsc+H</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="302"/>
-        <location filename="../../build/src/ui_main-win.h" line="616"/>
+        <location filename="../../build/src/ui_main-win.h" line="620"/>
         <source>Ctrl+Shift+R</source>
         <translation>Ctrl+Mayúsc+R</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="335"/>
-        <location filename="../../build/src/ui_main-win.h" line="620"/>
+        <location filename="../../build/src/ui_main-win.h" line="624"/>
         <source>&amp;About Filer</source>
         <translation>&amp;Sobre Filer</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="390"/>
         <location filename="../main-win.ui" line="727"/>
-        <location filename="../../build/src/ui_main-win.h" line="639"/>
-        <location filename="../../build/src/ui_main-win.h" line="738"/>
+        <location filename="../../build/src/ui_main-win.h" line="643"/>
+        <location filename="../../build/src/ui_main-win.h" line="742"/>
         <source>Ctrl+Shift+N</source>
         <translation>Ctrl+Mayúsc+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="739"/>
-        <location filename="../../build/src/ui_main-win.h" line="742"/>
+        <location filename="../../build/src/ui_main-win.h" line="746"/>
         <source>Ctrl+Alt+N</source>
         <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="744"/>
-        <location filename="../../build/src/ui_main-win.h" line="744"/>
+        <location filename="../../build/src/ui_main-win.h" line="748"/>
         <source>&amp;Find Files</source>
         <translation>&amp;Buscar Archivos</translation>
     </message>
@@ -1903,85 +1903,85 @@ Modificado: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="755"/>
-        <location filename="../../build/src/ui_main-win.h" line="748"/>
+        <location filename="../../build/src/ui_main-win.h" line="752"/>
         <source>Filter</source>
         <translation>Filtrar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="93"/>
-        <location filename="../../build/src/ui_main-win.h" line="800"/>
+        <location filename="../../build/src/ui_main-win.h" line="808"/>
         <source>Filter by string...</source>
         <translation>Filtrar por texto...</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="117"/>
-        <location filename="../../build/src/ui_main-win.h" line="801"/>
+        <location filename="../../build/src/ui_main-win.h" line="809"/>
         <source>&amp;File</source>
         <translation>&amp;Archivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="121"/>
-        <location filename="../../build/src/ui_main-win.h" line="802"/>
+        <location filename="../../build/src/ui_main-win.h" line="810"/>
         <source>C&amp;reate New</source>
         <translation>C&amp;rear Nueva</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="141"/>
-        <location filename="../../build/src/ui_main-win.h" line="803"/>
+        <location filename="../../build/src/ui_main-win.h" line="811"/>
         <source>&amp;Help</source>
         <translation>Ay&amp;uda</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="147"/>
-        <location filename="../../build/src/ui_main-win.h" line="804"/>
+        <location filename="../../build/src/ui_main-win.h" line="812"/>
         <source>&amp;View</source>
         <translation>&amp;Ver</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="151"/>
-        <location filename="../../build/src/ui_main-win.h" line="805"/>
+        <location filename="../../build/src/ui_main-win.h" line="813"/>
         <source>&amp;Sorting</source>
         <translation>&amp;Ordenar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="177"/>
-        <location filename="../../build/src/ui_main-win.h" line="806"/>
+        <location filename="../../build/src/ui_main-win.h" line="814"/>
         <source>&amp;Edit</source>
         <translation>&amp;Editar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="195"/>
-        <location filename="../../build/src/ui_main-win.h" line="807"/>
+        <location filename="../../build/src/ui_main-win.h" line="815"/>
         <source>&amp;Bookmarks</source>
         <translation>&amp;Marcadores</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="202"/>
-        <location filename="../../build/src/ui_main-win.h" line="808"/>
+        <location filename="../../build/src/ui_main-win.h" line="816"/>
         <source>&amp;Go</source>
         <translation>&amp;Ir</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="223"/>
-        <location filename="../../build/src/ui_main-win.h" line="809"/>
+        <location filename="../../build/src/ui_main-win.h" line="817"/>
         <source>&amp;Tool</source>
         <translation>&amp;Herramientas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="240"/>
-        <location filename="../../build/src/ui_main-win.h" line="810"/>
+        <location filename="../../build/src/ui_main-win.h" line="818"/>
         <source>Main Toolbar</source>
         <translation>Barra de Herramientas Principal</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="272"/>
-        <location filename="../../build/src/ui_main-win.h" line="603"/>
+        <location filename="../../build/src/ui_main-win.h" line="607"/>
         <source>Go &amp;Up</source>
         <translation>S&amp;ubir</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="275"/>
-        <location filename="../../build/src/ui_main-win.h" line="605"/>
+        <location filename="../../build/src/ui_main-win.h" line="609"/>
         <source>Go Up</source>
         <translation>Subir</translation>
     </message>
@@ -1995,7 +1995,7 @@ Modificado: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="287"/>
-        <location filename="../../build/src/ui_main-win.h" line="610"/>
+        <location filename="../../build/src/ui_main-win.h" line="614"/>
         <source>&amp;Home</source>
         <translation>&amp;Inicio</translation>
     </message>
@@ -2005,7 +2005,7 @@ Modificado: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="299"/>
-        <location filename="../../build/src/ui_main-win.h" line="614"/>
+        <location filename="../../build/src/ui_main-win.h" line="618"/>
         <source>&amp;Reload</source>
         <translation>&amp;Recargar</translation>
     </message>
@@ -2015,13 +2015,13 @@ Modificado: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="314"/>
-        <location filename="../../build/src/ui_main-win.h" line="618"/>
+        <location filename="../../build/src/ui_main-win.h" line="622"/>
         <source>Go</source>
         <translation>Ir</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="326"/>
-        <location filename="../../build/src/ui_main-win.h" line="619"/>
+        <location filename="../../build/src/ui_main-win.h" line="623"/>
         <source>Quit</source>
         <translation>Salir</translation>
     </message>
@@ -2031,25 +2031,25 @@ Modificado: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="344"/>
-        <location filename="../../build/src/ui_main-win.h" line="621"/>
+        <location filename="../../build/src/ui_main-win.h" line="625"/>
         <source>&amp;New Window</source>
         <translation>&amp;Nueva ventana</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="347"/>
-        <location filename="../../build/src/ui_main-win.h" line="623"/>
+        <location filename="../../build/src/ui_main-win.h" line="627"/>
         <source>New Window</source>
         <translation>Nueva ventana</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="350"/>
-        <location filename="../../build/src/ui_main-win.h" line="626"/>
+        <location filename="../../build/src/ui_main-win.h" line="630"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="358"/>
-        <location filename="../../build/src/ui_main-win.h" line="628"/>
+        <location filename="../../build/src/ui_main-win.h" line="632"/>
         <source>Show &amp;Hidden</source>
         <translation>Mo&amp;strar ocultos</translation>
     </message>
@@ -2059,409 +2059,411 @@ Modificado: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="367"/>
-        <location filename="../../build/src/ui_main-win.h" line="629"/>
+        <location filename="../../build/src/ui_main-win.h" line="633"/>
         <source>&amp;Computer</source>
         <translation>&amp;Sistema</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="370"/>
-        <location filename="../../build/src/ui_main-win.h" line="631"/>
+        <location filename="../../build/src/ui_main-win.h" line="635"/>
         <source>Ctrl+Shift+C</source>
         <translation>Ctrl+Mayúsc+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="379"/>
-        <location filename="../../build/src/ui_main-win.h" line="633"/>
+        <location filename="../../build/src/ui_main-win.h" line="637"/>
         <source>&amp;Trash</source>
         <translation>&amp;Papelera</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="382"/>
-        <location filename="../../build/src/ui_main-win.h" line="635"/>
+        <location filename="../../build/src/ui_main-win.h" line="639"/>
         <source>Ctrl+Shift+T</source>
         <translation>Ctrl+Mayúsc+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="387"/>
-        <location filename="../../build/src/ui_main-win.h" line="637"/>
+        <location filename="../../build/src/ui_main-win.h" line="641"/>
         <source>&amp;Network</source>
         <translation>&amp;Red</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="399"/>
-        <location filename="../../build/src/ui_main-win.h" line="641"/>
+        <location filename="../../build/src/ui_main-win.h" line="645"/>
         <source>&amp;Desktop</source>
         <translation>&amp;Escritorio</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="402"/>
-        <location filename="../../build/src/ui_main-win.h" line="643"/>
+        <location filename="../../build/src/ui_main-win.h" line="647"/>
         <source>Ctrl+Shift+D</source>
         <translation>Ctrl+Mayúsc+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="411"/>
-        <location filename="../../build/src/ui_main-win.h" line="645"/>
+        <location filename="../../build/src/ui_main-win.h" line="649"/>
         <source>&amp;Add to Bookmarks</source>
         <translation>&amp;Agregar a marcadores</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="416"/>
-        <location filename="../../build/src/ui_main-win.h" line="646"/>
+        <location filename="../../build/src/ui_main-win.h" line="650"/>
         <source>&amp;Applications</source>
         <translation>&amp;Aplicaciones</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="419"/>
-        <location filename="../../build/src/ui_main-win.h" line="648"/>
+        <location filename="../../build/src/ui_main-win.h" line="652"/>
         <source>Ctrl+Shift+A</source>
         <translation>Ctrl+Mayúsc+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="427"/>
-        <location filename="../../build/src/ui_main-win.h" line="650"/>
+        <location filename="../../build/src/ui_main-win.h" line="654"/>
         <source>Reload</source>
         <translation>Recargar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="435"/>
-        <location filename="../../build/src/ui_main-win.h" line="651"/>
+        <location filename="../../build/src/ui_main-win.h" line="655"/>
         <source>&amp;Icon View</source>
         <translation>V&amp;ista de Íconos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="438"/>
-        <location filename="../../build/src/ui_main-win.h" line="653"/>
+        <location filename="../../build/src/ui_main-win.h" line="657"/>
         <source>Ctrl+1</source>
         <translation>Ctrl+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="446"/>
-        <location filename="../../build/src/ui_main-win.h" line="655"/>
+        <location filename="../../build/src/ui_main-win.h" line="659"/>
         <source>&amp;Compact View</source>
         <translation>Vista &amp;Compacta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="454"/>
-        <location filename="../../build/src/ui_main-win.h" line="656"/>
+        <location filename="../../build/src/ui_main-win.h" line="660"/>
         <source>&amp;Detailed List</source>
         <translation>Lista &amp;Detallada</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="457"/>
-        <location filename="../../build/src/ui_main-win.h" line="658"/>
+        <location filename="../../build/src/ui_main-win.h" line="662"/>
         <source>Ctrl+2</source>
         <translation>Ctrl+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="465"/>
-        <location filename="../../build/src/ui_main-win.h" line="660"/>
+        <location filename="../../build/src/ui_main-win.h" line="664"/>
         <source>&amp;Thumbnail View</source>
         <translation>Vista de &amp;Miniaturas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="474"/>
-        <location filename="../../build/src/ui_main-win.h" line="661"/>
+        <location filename="../../build/src/ui_main-win.h" line="665"/>
         <source>Cu&amp;t</source>
         <translation>Cor&amp;tar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="477"/>
-        <location filename="../../build/src/ui_main-win.h" line="663"/>
+        <location filename="../../build/src/ui_main-win.h" line="667"/>
         <source>Ctrl+X</source>
         <translation>Ctrl+X</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="486"/>
-        <location filename="../../build/src/ui_main-win.h" line="665"/>
+        <location filename="../../build/src/ui_main-win.h" line="669"/>
         <source>&amp;Copy</source>
         <translation>&amp;Copiar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="489"/>
-        <location filename="../../build/src/ui_main-win.h" line="667"/>
+        <location filename="../../build/src/ui_main-win.h" line="671"/>
         <source>Ctrl+C</source>
         <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="498"/>
-        <location filename="../../build/src/ui_main-win.h" line="669"/>
+        <location filename="../../build/src/ui_main-win.h" line="673"/>
         <source>&amp;Paste</source>
         <translation>&amp;Pegar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="501"/>
-        <location filename="../../build/src/ui_main-win.h" line="671"/>
+        <location filename="../../build/src/ui_main-win.h" line="675"/>
         <source>Ctrl+V</source>
         <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="506"/>
-        <location filename="../../build/src/ui_main-win.h" line="673"/>
+        <location filename="../../build/src/ui_main-win.h" line="677"/>
         <source>Select &amp;All</source>
         <translation>Seleccion&amp;ar Todo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="509"/>
-        <location filename="../../build/src/ui_main-win.h" line="675"/>
+        <location filename="../../build/src/ui_main-win.h" line="679"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="514"/>
-        <location filename="../../build/src/ui_main-win.h" line="677"/>
+        <location filename="../../build/src/ui_main-win.h" line="681"/>
         <source>Pr&amp;eferences</source>
         <translation>Pr&amp;eferencias</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="517"/>
-        <location filename="../../build/src/ui_main-win.h" line="679"/>
+        <location filename="../../build/src/ui_main-win.h" line="683"/>
         <source>Ctrl+,</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
-        <location filename="../../build/src/ui_main-win.h" line="681"/>
+        <location filename="../../build/src/ui_main-win.h" line="685"/>
         <source>&amp;Ascending</source>
         <translation>&amp;Ascendiente</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="533"/>
-        <location filename="../../build/src/ui_main-win.h" line="682"/>
+        <location filename="../../build/src/ui_main-win.h" line="686"/>
         <source>&amp;Descending</source>
         <translation>&amp;Descendiente</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="541"/>
-        <location filename="../../build/src/ui_main-win.h" line="683"/>
+        <location filename="../../build/src/ui_main-win.h" line="687"/>
         <source>&amp;By File Name</source>
         <translation>&amp;Por Nombre de Archivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
-        <location filename="../../build/src/ui_main-win.h" line="684"/>
+        <location filename="../../build/src/ui_main-win.h" line="688"/>
         <source>By &amp;Modification Time</source>
         <translation>Por &amp;Fecha de Modificación</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="557"/>
-        <location filename="../../build/src/ui_main-win.h" line="685"/>
+        <location filename="../../build/src/ui_main-win.h" line="689"/>
         <source>By File &amp;Type</source>
         <translation>Por &amp;Tipo de Archivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="565"/>
-        <location filename="../../build/src/ui_main-win.h" line="686"/>
+        <location filename="../../build/src/ui_main-win.h" line="690"/>
         <source>By &amp;Owner</source>
         <translation>Por &amp;Propietario</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="573"/>
-        <location filename="../../build/src/ui_main-win.h" line="687"/>
+        <location filename="../../build/src/ui_main-win.h" line="691"/>
         <source>&amp;Folder First</source>
         <translation>&amp;Carpetas Primero</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="644"/>
-        <location filename="../../build/src/ui_main-win.h" line="710"/>
+        <location filename="../../build/src/ui_main-win.h" line="714"/>
         <source>&amp;Move to Trash</source>
         <translation>&amp;Mover a la Papelera</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="647"/>
-        <location filename="../../build/src/ui_main-win.h" line="712"/>
+        <location filename="../../build/src/ui_main-win.h" line="716"/>
         <source>Ctrl+Backspace</source>
         <translation>Ctrl + Retroceso</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="665"/>
-        <location filename="../../build/src/ui_main-win.h" line="719"/>
+        <location filename="../../build/src/ui_main-win.h" line="723"/>
         <source>Get &amp;Info</source>
         <translation>Obtener Info</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
-        <location filename="../../build/src/ui_main-win.h" line="721"/>
+        <location filename="../../build/src/ui_main-win.h" line="725"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="676"/>
-        <location filename="../../build/src/ui_main-win.h" line="723"/>
+        <location filename="../../build/src/ui_main-win.h" line="727"/>
         <source>&amp;Case Sensitive</source>
         <translation>&amp;Distingue mayúsculas y minúsculas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="684"/>
-        <location filename="../../build/src/ui_main-win.h" line="724"/>
+        <location filename="../../build/src/ui_main-win.h" line="728"/>
         <source>By File &amp;Size</source>
         <translation>Por &amp;Tamaño de Archivo</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="689"/>
-        <location filename="../../build/src/ui_main-win.h" line="725"/>
+        <location filename="../../build/src/ui_main-win.h" line="729"/>
         <source>&amp;Close Window</source>
         <translation>&amp;Cerrar Ventana</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="724"/>
-        <location filename="../../build/src/ui_main-win.h" line="736"/>
+        <location filename="../../build/src/ui_main-win.h" line="740"/>
         <source>&amp;Folder</source>
         <translation>&amp;Carpeta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="736"/>
-        <location filename="../../build/src/ui_main-win.h" line="740"/>
+        <location filename="../../build/src/ui_main-win.h" line="744"/>
         <source>&amp;Blank File</source>
         <translation>&amp;Archivo Vacío</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="747"/>
-        <location filename="../../build/src/ui_main-win.h" line="746"/>
+        <location filename="../../build/src/ui_main-win.h" line="750"/>
         <source>Ctrl+F</source>
         <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="764"/>
-        <location filename="../../build/src/ui_main-win.h" line="749"/>
+        <location filename="../../build/src/ui_main-win.h" line="753"/>
         <source>&amp;Go To Folder</source>
         <translation>&amp;Ir a la Carpeta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="767"/>
-        <location filename="../../build/src/ui_main-win.h" line="751"/>
+        <location filename="../../build/src/ui_main-win.h" line="755"/>
         <source>Go To Folder</source>
         <translation>Ir a la Carpeta</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="770"/>
-        <location filename="../../build/src/ui_main-win.h" line="754"/>
+        <location filename="../../build/src/ui_main-win.h" line="758"/>
         <source>Ctrl+Shift+G</source>
         <translation>Ctrl+Mayúsc+G</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="775"/>
-        <location filename="../../build/src/ui_main-win.h" line="756"/>
+        <location filename="../../build/src/ui_main-win.h" line="760"/>
         <source>&amp;Downloads</source>
         <translation>&amp;Descargas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="778"/>
-        <location filename="../../build/src/ui_main-win.h" line="758"/>
+        <location filename="../../build/src/ui_main-win.h" line="762"/>
         <source>Downloads</source>
         <translation>Descargas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="781"/>
-        <location filename="../../build/src/ui_main-win.h" line="761"/>
+        <location filename="../../build/src/ui_main-win.h" line="765"/>
         <source>Ctrl+Shift+L</source>
         <translation>Ctrl+Mayúsc+L</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="789"/>
-        <location filename="../../build/src/ui_main-win.h" line="763"/>
+        <location filename="../../build/src/ui_main-win.h" line="767"/>
         <source>&amp;Utilities</source>
         <translation>&amp;Utilidades</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="792"/>
-        <location filename="../../build/src/ui_main-win.h" line="765"/>
+        <location filename="../../build/src/ui_main-win.h" line="769"/>
         <source>Utilities</source>
         <translation>Utilidades</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="795"/>
-        <location filename="../../build/src/ui_main-win.h" line="768"/>
+        <location filename="../../build/src/ui_main-win.h" line="772"/>
         <source>Ctrl+Shift+U</source>
         <translation>Ctrl+Mayúsc+U</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="803"/>
-        <location filename="../../build/src/ui_main-win.h" line="770"/>
+        <location filename="../../build/src/ui_main-win.h" line="774"/>
         <source>&amp;Documents</source>
         <translation>&amp;Documentos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="806"/>
-        <location filename="../../build/src/ui_main-win.h" line="772"/>
+        <location filename="../../build/src/ui_main-win.h" line="776"/>
         <source>Documents</source>
         <translation>Documentos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="809"/>
-        <location filename="../../build/src/ui_main-win.h" line="775"/>
+        <location filename="../../build/src/ui_main-win.h" line="779"/>
         <source>Ctrl+Shift+O</source>
         <translation>Ctrl+Mayúsc+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="817"/>
-        <location filename="../../build/src/ui_main-win.h" line="777"/>
+        <location filename="../../build/src/ui_main-win.h" line="781"/>
         <source>Open</source>
         <translation>Abrir</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="820"/>
-        <location filename="../../build/src/ui_main-win.h" line="779"/>
+        <location filename="../../build/src/ui_main-win.h" line="783"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="825"/>
-        <location filename="../../build/src/ui_main-win.h" line="781"/>
+        <location filename="../../build/src/ui_main-win.h" line="785"/>
         <source>&amp;Duplicate</source>
         <translation>&amp;Duplicar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="828"/>
-        <location filename="../../build/src/ui_main-win.h" line="783"/>
+        <location filename="../../build/src/ui_main-win.h" line="787"/>
         <source>Ctrl+D</source>
         <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="833"/>
-        <location filename="../../build/src/ui_main-win.h" line="785"/>
+        <location filename="../../build/src/ui_main-win.h" line="789"/>
         <source>Empty Trash</source>
         <translation>Vaciar Papelera</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="836"/>
-        <location filename="../../build/src/ui_main-win.h" line="787"/>
+        <location filename="../../build/src/ui_main-win.h" line="791"/>
         <source>Ctrl+Alt+Backspace</source>
         <translation>Ctrl+Alt+Retroceso</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="841"/>
-        <location filename="../../build/src/ui_main-win.h" line="789"/>
+        <location filename="../../build/src/ui_main-win.h" line="793"/>
         <source>Show Contents</source>
         <translation>Mostrar Contenidos</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="844"/>
+        <location filename="../../build/src/ui_main-win.h" line="795"/>
         <source>Ctrl+Alt+Shift+O</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
-        <location filename="../../build/src/ui_main-win.h" line="791"/>
+        <location filename="../../build/src/ui_main-win.h" line="806"/>
         <source>Ctrl+Alt+O</source>
         <translation>Ctrl+Alt+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="853"/>
         <location filename="../main-win.ui" line="856"/>
-        <location filename="../../build/src/ui_main-win.h" line="793"/>
-        <location filename="../../build/src/ui_main-win.h" line="795"/>
+        <location filename="../../build/src/ui_main-win.h" line="797"/>
+        <location filename="../../build/src/ui_main-win.h" line="799"/>
         <source>Go Up and Close Current</source>
         <translation>Subir y cerrar actual</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="859"/>
-        <location filename="../../build/src/ui_main-win.h" line="798"/>
+        <location filename="../../build/src/ui_main-win.h" line="802"/>
         <source>Ctrl+Shift+Up</source>
         <translation>Ctrl+Mayúsc+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="864"/>
+        <location filename="../../build/src/ui_main-win.h" line="804"/>
         <source>Open With...</source>
         <translation type="unfinished">Abrir con...</translation>
     </message>
@@ -2495,63 +2497,63 @@ Modificado: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="582"/>
-        <location filename="../../build/src/ui_main-win.h" line="688"/>
+        <location filename="../../build/src/ui_main-win.h" line="692"/>
         <source>New &amp;Tab</source>
         <translation>Nueva &amp;Pestaña</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="585"/>
-        <location filename="../../build/src/ui_main-win.h" line="690"/>
+        <location filename="../../build/src/ui_main-win.h" line="694"/>
         <source>New Tab</source>
         <translation>Nueva Pestaña</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="588"/>
         <location filename="../main-win.ui" line="705"/>
-        <location filename="../../build/src/ui_main-win.h" line="693"/>
-        <location filename="../../build/src/ui_main-win.h" line="732"/>
+        <location filename="../../build/src/ui_main-win.h" line="697"/>
+        <location filename="../../build/src/ui_main-win.h" line="736"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="600"/>
-        <location filename="../../build/src/ui_main-win.h" line="695"/>
+        <location filename="../../build/src/ui_main-win.h" line="699"/>
         <source>Go &amp;Back</source>
         <translation>Re&amp;troceder</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="603"/>
-        <location filename="../../build/src/ui_main-win.h" line="697"/>
+        <location filename="../../build/src/ui_main-win.h" line="701"/>
         <source>Go Back</source>
         <translation>Retroceder</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="606"/>
-        <location filename="../../build/src/ui_main-win.h" line="700"/>
+        <location filename="../../build/src/ui_main-win.h" line="704"/>
         <source>Alt+Left</source>
         <translation>Alt+Izquierda</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="615"/>
-        <location filename="../../build/src/ui_main-win.h" line="702"/>
+        <location filename="../../build/src/ui_main-win.h" line="706"/>
         <source>Go &amp;Forward</source>
         <translation>A&amp;vanzar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="618"/>
-        <location filename="../../build/src/ui_main-win.h" line="704"/>
+        <location filename="../../build/src/ui_main-win.h" line="708"/>
         <source>Go Forward</source>
         <translation>Avanzar</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="621"/>
-        <location filename="../../build/src/ui_main-win.h" line="707"/>
+        <location filename="../../build/src/ui_main-win.h" line="711"/>
         <source>Alt+Right</source>
         <translation>Alt+Derecha</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="635"/>
-        <location filename="../../build/src/ui_main-win.h" line="709"/>
+        <location filename="../../build/src/ui_main-win.h" line="713"/>
         <source>&amp;Invert Selection</source>
         <translation>&amp;Invertir Selección</translation>
     </message>
@@ -2565,25 +2567,25 @@ Modificado: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="652"/>
-        <location filename="../../build/src/ui_main-win.h" line="714"/>
+        <location filename="../../build/src/ui_main-win.h" line="718"/>
         <source>&amp;Rename</source>
         <translation>Cambia&amp;r Nombre</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="655"/>
-        <location filename="../../build/src/ui_main-win.h" line="716"/>
+        <location filename="../../build/src/ui_main-win.h" line="720"/>
         <source>F2</source>
         <translation>F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="660"/>
-        <location filename="../../build/src/ui_main-win.h" line="718"/>
+        <location filename="../../build/src/ui_main-win.h" line="722"/>
         <source>C&amp;lose Tab</source>
         <translation>&amp;Cerrar Pestaña</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="692"/>
-        <location filename="../../build/src/ui_main-win.h" line="727"/>
+        <location filename="../../build/src/ui_main-win.h" line="731"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
@@ -2613,13 +2615,13 @@ Modificado: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="697"/>
-        <location filename="../../build/src/ui_main-win.h" line="729"/>
+        <location filename="../../build/src/ui_main-win.h" line="733"/>
         <source>Edit Bookmarks</source>
         <translation>Editar Marcadores</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="702"/>
-        <location filename="../../build/src/ui_main-win.h" line="730"/>
+        <location filename="../../build/src/ui_main-win.h" line="734"/>
         <source>Open &amp;Terminal</source>
         <translation>Abrir &amp;terminal</translation>
     </message>
@@ -2629,13 +2631,13 @@ Modificado: %3</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="710"/>
-        <location filename="../../build/src/ui_main-win.h" line="734"/>
+        <location filename="../../build/src/ui_main-win.h" line="738"/>
         <source>Open as &amp;Root</source>
         <translation>Abrir como &amp;root</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="715"/>
-        <location filename="../../build/src/ui_main-win.h" line="735"/>
+        <location filename="../../build/src/ui_main-win.h" line="739"/>
         <source>&amp;Edit Bookmarks</source>
         <translation>&amp;Editar Marcadores</translation>
     </message>

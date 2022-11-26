@@ -33,6 +33,7 @@
 #include <QStorageInfo>
 #include <QProcess>
 #include <QMessageBox>
+#include <QThread>
 #include "utilities.h"
 #include "fileoperation.h"
 #include "thumbnailloader.h"
@@ -154,6 +155,14 @@ void FolderModel::wantToSelect(QStringList files, bool add, void *view) {
 
 void FolderModel::onFilesAdded(FmFolder* folder, GSList* files, gpointer user_data) {
   qDebug() << "FolderModel::onFilesAdded";
+
+  // probono: When we are copying a large AppDir or .app bundle, this may not be sufficient;
+  // it would be better if onFilesAdded was called only after no file copying/moving operations
+  // are taking place anymore - or is it like this already?
+  qDebug() << "Waiting 300ms for icons to appear";
+  QThread::msleep(300);
+  QCoreApplication::processEvents();
+
   FolderModel* model = static_cast<FolderModel*>(user_data);
 
   // OK, in this very specific case where the files are refreshed
