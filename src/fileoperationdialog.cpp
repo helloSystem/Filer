@@ -34,6 +34,8 @@ FileOperationDialog::FileOperationDialog(FileOperation* _operation):
   ui = new Ui::FileOperationDialog();
   ui->setupUi(this);
 
+  this->setFixedSize(this->width(),this->height());
+
   QString title;
   QString message;
   switch(_operation->type()) {
