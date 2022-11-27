@@ -484,7 +484,7 @@ void FolderView::setViewMode(ViewMode _mode) {
     // What is missing? Do we need another model than a ProxyFolderModel?
     treeView->setItemsExpandable(true); // probono: was: false; but this seems to have no effect. QUESTION: Why?
     treeView->setRootIsDecorated(true); // probono: was: false; but this seems to have no effect. QUESTION: Why?
-    treeView->isAnimated(true); // probono
+    treeView->setAnimated(true); // probono
     treeView->setAutoExpandDelay(2000); // probono: ms until items in a tree are opened during a drag and drop operation
     treeView->setAllColumnsShowFocus(true); // probono: was: false
 
