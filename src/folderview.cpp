@@ -117,6 +117,7 @@ QModelIndex FolderViewListView::indexAt(const QPoint& point) const {
 // TODO: I really should file a bug report to Qt developers.
 
 void FolderViewListView::dragEnterEvent(QDragEnterEvent* event) {
+  qDebug() << "FolderViewListView::dragEnterEvent(QDragEnterEvent* event)";
   if(movement() != Static)
     QListView::dragEnterEvent(event);
   else
@@ -126,6 +127,7 @@ void FolderViewListView::dragEnterEvent(QDragEnterEvent* event) {
 }
 
 void FolderViewListView::dragLeaveEvent(QDragLeaveEvent* e) {
+  qDebug() << "FolderViewListView::dragLeaveEvent(QDragLeaveEvent* e)";
   if(movement() != Static)
     QListView::dragLeaveEvent(e);
   else
@@ -134,6 +136,14 @@ void FolderViewListView::dragLeaveEvent(QDragLeaveEvent* e) {
 }
 
 void FolderViewListView::dragMoveEvent(QDragMoveEvent* e) {
+  // dragMove is called while you are moving over the target widget,
+  // it doesn't replace dropEvent which is for when you drop on your target
+  qDebug() << "FolderViewListView::dragMoveEvent(QDragMoveEvent* e)";
+
+  if(this->dropIndicatorPosition() == QAbstractItemView::OnItem){
+      qDebug() << "Drag and drop hovering over an item" ;
+  }
+
   if(movement() != Static)
     QListView::dragMoveEvent(e);
   else
@@ -142,7 +152,7 @@ void FolderViewListView::dragMoveEvent(QDragMoveEvent* e) {
 }
 
 void FolderViewListView::dropEvent(QDropEvent* e) {
-
+  qDebug() << "FolderViewListView::dropEvent(QDropEvent* e)";
   static_cast<FolderView*>(parent())->childDropEvent(e);
 
   if(movement() != Static)
@@ -152,6 +162,7 @@ void FolderViewListView::dropEvent(QDropEvent* e) {
 }
 
 void FolderViewListView::mouseReleaseEvent(QMouseEvent* event) {
+  qDebug() << "FolderViewListView::mouseReleaseEvent(QMouseEvent* event)";
   bool activationWasAllowed = activationAllowed_;
 //  if ((!style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, NULL, this)) || (event->button() != Qt::LeftButton)) {
 //    activationAllowed_ = false;
@@ -163,6 +174,7 @@ void FolderViewListView::mouseReleaseEvent(QMouseEvent* event) {
 }
 
 void FolderViewListView::mouseDoubleClickEvent(QMouseEvent* event) {
+  qDebug() << "FolderViewListView::mouseDoubleClickEvent(QMouseEvent* event)";
   bool activationWasAllowed = activationAllowed_;
 //  if ((style()->styleHint(QStyle::SH_ItemView_ActivateItemOnSingleClick, NULL, this)) || (event->button() != Qt::LeftButton)) {
 //    activationAllowed_ = false;
@@ -849,6 +861,8 @@ void FolderView::childDragLeaveEvent(QDragLeaveEvent* e) {
 }
 
 void FolderView::childDragMoveEvent(QDragMoveEvent* e) {
+  // dragMove is called while you are moving over the target widget,
+  // it doesn't replace dropEvent which is for when you drop on your target
   qDebug("FolderView::childDragMoveEvent(QDragMoveEvent* e) = drag move");
 }
 
@@ -906,6 +920,13 @@ void FolderView::childDropEvent(QDropEvent* e) {
   // TODO: check whether the application 'can-open' the document and if not,
   // only open the documents with the application if a modifier key is hold down
   // and animate the application icon with a "shake" animation otherwise
+  // or at least change the cursor to a red X
+  // See
+  // void DesktopWindow::childDropEvent(QDropEvent* e) {
+
+  if(e->keyboardModifiers() != Qt::NoModifier) {
+      qDebug() << "Modifier key pressed. TODO: Implement opening all MIME types only in this case";
+  }
   FmFileInfo *fileInfo = fm_file_info_new_from_native_file(nullptr, destinationPath.toUtf8(), nullptr);
   bool isAppDirOrBundle = checkWhetherAppDirOrBundle(fileInfo);
   fm_file_info_unref(fileInfo);
