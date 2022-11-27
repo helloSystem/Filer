@@ -545,12 +545,7 @@ void MainWindow::on_actionOpenWith_triggered() {
                 p.setProgram("open");
                 p.setArguments({"--chooser", sourcePathStr});
                 qDebug() << p.program() << p.arguments();
-                p.start();
-                p.waitForFinished();
-                qDebug() <<  "p.exitCode():" << p.exitCode();
-                if(p.exitCode() != 0) {
-                    QMessageBox::warning(nullptr, " ", QString("Cannot open %1, 'open' command line tool missing or returned an error.").arg(sourcePathStr));
-                }
+                p.startDetached();
             }
             fm_path_list_unref(paths);
 
