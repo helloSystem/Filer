@@ -60,7 +60,7 @@ QSize FolderItemDelegate::sizeHint(const QStyleOptionViewItem& option, const QMo
     opt.displayAlignment = Qt::AlignTop|Qt::AlignHCenter;
 
     // FIXME: there're some problems in this size hint calculation.
-    Q_ASSERT(gridSize_ != QSize());
+    // Q_ASSERT(gridSize_ != QSize()); // probono: Commented this out since it can cause crashes
     QRectF textRect(0, 0, gridSize_.width() - 4, gridSize_.height() - opt.decorationSize.height() - 4);
     drawText(NULL, opt); // passing NULL for painter will calculate the bounding rect only.
     int width = qMax((int)textRect.width(), opt.decorationSize.width()) + 4;

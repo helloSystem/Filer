@@ -480,9 +480,13 @@ void FolderView::setViewMode(ViewMode _mode) {
     treeView->setFrameStyle(QFrame::NoFrame); // probono: No border
 
     view = treeView;
-    treeView->setItemsExpandable(false);
-    treeView->setRootIsDecorated(false);
-    treeView->setAllColumnsShowFocus(false);
+    // FIXME: Make folders expandable; https://github.com/helloSystem/Filer/issues/115
+    // What is missing? Do we need another model than a ProxyFolderModel?
+    treeView->setItemsExpandable(true); // probono: was: false; but this seems to have no effect. QUESTION: Why?
+    treeView->setRootIsDecorated(true); // probono: was: false; but this seems to have no effect. QUESTION: Why?
+    treeView->isAnimated(true); // probono
+    treeView->setAutoExpandDelay(2000); // probono: ms until items in a tree are opened during a drag and drop operation
+    treeView->setAllColumnsShowFocus(true); // probono: was: false
 
     // set our own custom delegate
     FolderItemDelegate* delegate = new FolderItemDelegate(treeView);
@@ -511,6 +515,7 @@ void FolderView::setViewMode(ViewMode _mode) {
     switch(mode) {
       case IconMode: {
         listView->setViewMode(QListView::IconMode);
+        listView->setDropIndicatorShown(false); // probono
         // probono: Make objects (icons) freely movable. TODO: Could also snap to grid using QListView::Snap
         listView->setMovement(QListView::Free); // probono: https://doc.qt.io/qt-5/qlistview.html#Movement-enum
         listView->setStyleSheet("padding-top: 10px;"); // probono: FIXME: This is wrong, as can be seen when scrolling
@@ -520,6 +525,7 @@ void FolderView::setViewMode(ViewMode _mode) {
       }
       case CompactMode: {
         listView->setViewMode(QListView::ListMode);
+        listView->setDropIndicatorShown(true); // probono
         listView->setStyleSheet("padding-top: 0px;");
         listView->setWordWrap(false);
         listView->setFlow(QListView::QListView::TopToBottom);
@@ -527,6 +533,7 @@ void FolderView::setViewMode(ViewMode _mode) {
       }
       case ThumbnailMode: {
         listView->setViewMode(QListView::IconMode);
+        listView->setDropIndicatorShown(false); // probono
         // probono: Make objects (icons) freely movable. TODO: Could also snap to grid using QListView::Snap
         listView->setMovement(QListView::Free); // probono: https://doc.qt.io/qt-5/qlistview.html#Movement-enum
         listView->setStyleSheet("padding-top: 10px;");
@@ -883,12 +890,13 @@ void FolderView::childDropEvent(QDropEvent* e) {
       // Dropped on an object (e.g., a folder or a document)
       QModelIndex index = model_->index(dropIndex.row(), 0);
       FmFileInfo* info = model_->fileInfoFromIndex(index);
+      // animate...
       destinationPath = QString(fm_path_to_str(fm_file_info_get_path(info)));
   } else {
       // Dropped onto whitespace (e.g., inside a folder), not onto an icon
+      // probono: This is a very hackish way. Not clear whether it always gives the correct result
       QModelIndex index = model_->index(0, 0);
       FmFileInfo* info = model_->fileInfoFromIndex(index);
-      // probono: This is a very hackish way. Not clear whether it always gives the correct result
       destinationPath = QFileInfo(QString(fm_path_to_str(fm_file_info_get_path(info)))).dir().path();
   }
   qDebug() << "destinationPath" << destinationPath;
@@ -897,6 +905,7 @@ void FolderView::childDropEvent(QDropEvent* e) {
   // if so, launch it and open the dropped document
   // TODO: check whether the application 'can-open' the document and if not,
   // only open the documents with the application if a modifier key is hold down
+  // and animate the application icon with a "shake" animation otherwise
   FmFileInfo *fileInfo = fm_file_info_new_from_native_file(nullptr, destinationPath.toUtf8(), nullptr);
   bool isAppDirOrBundle = checkWhetherAppDirOrBundle(fileInfo);
   fm_file_info_unref(fileInfo);
