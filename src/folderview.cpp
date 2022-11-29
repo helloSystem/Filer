@@ -454,6 +454,11 @@ void FolderView::onSelChangedTimeout() {
   }
   // qDebug()<<"selected:" << nSel;
   Q_EMIT selChanged(nSel); // FIXME: this is inefficient
+
+  // probono: Scroll to the first selected item
+  if(nSel)
+      view->scrollTo(selModel->selectedIndexes().first(), QAbstractItemView::EnsureVisible);
+
 }
 
 void FolderView::onSelectionChanged(const QItemSelection& selected, const QItemSelection& deselected) {
