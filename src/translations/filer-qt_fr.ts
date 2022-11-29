@@ -622,7 +622,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
         <location filename="../file-props.ui" line="60"/>
         <location filename="../../build/src/ui_file-props.h" line="363"/>
         <source>TextLabel</source>
-        <translation>TextLabel</translation>
+        <translation>Étiquette de texte</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="185"/>
@@ -1942,7 +1942,7 @@ Modification : %3</translation>
         <location filename="../main-win.ui" line="314"/>
         <location filename="../../build/src/ui_main-win.h" line="622"/>
         <source>Go</source>
-        <translation>Aller à…</translation>
+        <translation>Aller</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="326"/>
@@ -2678,7 +2678,7 @@ Modification : %3</translation>
         <location filename="../main-win.ui" line="202"/>
         <location filename="../../build/src/ui_main-win.h" line="816"/>
         <source>&amp;Go</source>
-        <translation>A&amp;ller à…</translation>
+        <translation>A&amp;ller</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="223"/>

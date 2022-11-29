@@ -82,30 +82,30 @@ Used with permission of the creator https://raphaellopes.me/</source>
 Copyright (C) 2020-21 Simon Peter
 Copyright (C) 2021 Chris Moore
 
-Originally based on PCMan File Manager
-Portions Copyright (C) 2009-14 洪任諭 (Hong Jen Yee)
+Oprindeligt baseret på PCMan File Manager
+Portioner Copyright (C) 2009-14 洪任諭 (Hong Jen Yee)
 
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
+Dette program er fri software; du kan videredistribuere det og/eller
+ændre det i henhold til vilkårene i GNU General Public License
+som udgivet af Free Software Foundation; enten version 2
+af licensen, eller (efter eget valg) en senere version.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+Dette program distribueres i håb om, at det vil være nyttigt,
+men UDEN NOGEN GARANTI; uden selv den underforståede garanti for
+MERCHANTABILITET eller egnethed til et bestemt formål.  Se den
+GNU General Public License for flere detaljer.
 
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+Du bør have modtaget en kopi af GNU General Public License
+sammen med dette program; hvis ikke, skal du skrive til Free Software
+Foundation, Inc. 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
-Application icon
+Programikon
 
 https://dribbble.com/shots/2541211--Pirate-Finder-icon#
 
 Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
 
-Used with permission of the creator https://raphaellopes.me/</translation>
+Brugt med tilladelse fra ophavsmanden https://raphaellopes.me/</translation>
     </message>
     <message>
         <location filename="../about.ui" line="90"/>
