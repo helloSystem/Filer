@@ -343,7 +343,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
         <location filename="../desktop-preferences.ui" line="92"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
         <source>Colors</source>
-        <translation type="unfinished"></translation>
+        <translation>צבעים</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="150"/>
@@ -659,22 +659,26 @@ from an application bundle.
 
 This is not how it should be invoked.
 Functionality may be broken.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 לא הופעל על ידי פקודת launch
+ממאגד היישומים.
+
+לא ככה צריך להפעיל את זה.
+יכול להיות שהתפעול נפגם.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="214"/>
         <source>The &apos;launch&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>הפקודה ‚launch’ חסרה.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="221"/>
         <source>The &apos;open&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>הפקודה ‚open’ חסרה.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="231"/>
         <source>The &apos;eject-and-clean&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>הפקודה ‚eject-and-clean’ חסרה.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="285"/>
@@ -906,30 +910,36 @@ Functionality may be broken.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="278"/>
         <source>%n items</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
+            <numerusform>%n פריטים</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="280"/>
         <source>1 item</source>
-        <translation type="unfinished"></translation>
+        <translation>פריט אחד</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="436"/>
         <source>%1 items selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 פריטים נבחרו</numerusform>
+            <numerusform>%1 פריטים נבחרו</numerusform>
+            <numerusform>%1 פריטים נבחרו</numerusform>
+            <numerusform>%1 פריטים נבחרו</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="440"/>
         <source>%1 item selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>פריט אחד נבחר</numerusform>
+            <numerusform>פריט אחד נבחר</numerusform>
+            <numerusform>פריט אחד נבחר</numerusform>
+            <numerusform>פריט אחד נבחר</numerusform>
         </translation>
     </message>
     <message>
@@ -1995,7 +2005,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="517"/>
         <location filename="../../build/src/ui_main-win.h" line="683"/>
         <source>Ctrl+,</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+,</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -2217,7 +2227,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="844"/>
         <location filename="../../build/src/ui_main-win.h" line="795"/>
         <source>Ctrl+Alt+Shift+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+Shift+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
@@ -2243,7 +2253,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="864"/>
         <location filename="../../build/src/ui_main-win.h" line="804"/>
         <source>Open With...</source>
-        <translation type="unfinished">פתיחה עם…</translation>
+        <translation>פתיחה עם…</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="582"/>
@@ -2859,7 +2869,7 @@ Modified: %3</source>
         <location filename="../preferences.ui" line="579"/>
         <location filename="../../build/src/ui_preferences.h" line="687"/>
         <source>Mount</source>
-        <translation type="unfinished">עיגון</translation>
+        <translation>עיגון</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="585"/>
