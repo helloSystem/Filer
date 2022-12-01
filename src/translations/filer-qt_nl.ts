@@ -312,14 +312,12 @@ Gebruikt met toestemming van de maker https://raphaellopes.me/</translation>
         <translation>Schaduwkleur:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="173"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="224"/>
         <source>Font:</source>
-        <translation>Lettertype:</translation>
+        <translation type="vanished">Lettertype:</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="84"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="212"/>
+        <location filename="../desktop-preferences.ui" line="67"/>
+        <location filename="../../build/src/ui_desktop-preferences.h" line="191"/>
         <source>Image file</source>
         <translation>Afbeeldingsbestand</translation>
     </message>
@@ -336,10 +334,8 @@ Gebruikt met toestemming van de maker https://raphaellopes.me/</translation>
         <translation>&amp;Bladeren</translation>
     </message>
     <message>
-        <location filename="../desktop-preferences.ui" line="109"/>
-        <location filename="../../build/src/ui_desktop-preferences.h" line="219"/>
         <source>Label Text</source>
-        <translation>Labeltekst</translation>
+        <translation type="vanished">Labeltekst</translation>
     </message>
 </context>
 <context>
@@ -765,18 +761,18 @@ Functionality may be broken.</source>
         <translation>Tekst wissen (Ctrl+K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="798"/>
+        <location filename="../mainwindow.cpp" line="793"/>
         <source>Version: %1</source>
         <translation>Versie: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1503"/>
-        <location filename="../mainwindow.cpp" line="1514"/>
+        <location filename="../mainwindow.cpp" line="1498"/>
+        <location filename="../mainwindow.cpp" line="1509"/>
         <source>Error</source>
         <translation>Fout</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1514"/>
+        <location filename="../mainwindow.cpp" line="1509"/>
         <source>Switch user command is not set.</source>
         <translation>Opdracht gebruiker wisselen is niet ingesteld.</translation>
     </message>
@@ -817,25 +813,51 @@ Functionality may be broken.</source>
         <translation>%1 beschikbaar</translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="277"/>
+        <location filename="../tabpage.cpp" line="278"/>
+        <source>%n items</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../tabpage.cpp" line="280"/>
+        <source>1 item</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../tabpage.cpp" line="436"/>
+        <source>%1 items selected</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../tabpage.cpp" line="440"/>
+        <source>%1 item selected</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
         <source>%n item(s)</source>
-        <translation>
+        <translation type="vanished">
             <numerusform>%n item</numerusform>
             <numerusform>%n items</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="279"/>
         <source> (%n hidden)</source>
-        <translation>
+        <translation type="vanished">
             <numerusform> (%n verborgen)</numerusform>
             <numerusform> (%n verborgen)</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../tabpage.cpp" line="431"/>
         <source>%1 item(s) selected</source>
-        <translation>
+        <translation type="vanished">
             <numerusform>%1 item geselecteerd</numerusform>
             <numerusform>%1 items geselecteerd</numerusform>
         </translation>
@@ -1109,22 +1131,20 @@ Wat wilt u ermee doen?</translation>
         <translation>Openen met...</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="166"/>
         <source>Other Applications</source>
-        <translation>Andere toepassingen</translation>
+        <translation type="vanished">Andere toepassingen</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="172"/>
+        <location filename="../filemenu.cpp" line="165"/>
         <source>Create &amp;New</source>
         <translation>&amp;Creëer nieuw</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="130"/>
         <source>&amp;Restore</source>
-        <translation>&amp;Herstellen</translation>
+        <translation type="vanished">&amp;Herstellen</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="101"/>
+        <location filename="../filemenu.cpp" line="108"/>
         <source>Show Contents</source>
         <translation>Toon inhoud</translation>
     </message>
@@ -1164,7 +1184,7 @@ Wat wilt u ermee doen?</translation>
         <translation>&amp;Prullenbak legen</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="374"/>
+        <location filename="../filemenu.cpp" line="369"/>
         <source>Output</source>
         <translation>Uitvoer</translation>
     </message>
@@ -1362,12 +1382,11 @@ Wilt u ze in plaats daarvan verwijderen?</translation>
         <translation>Selecteer &amp;alles</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="54"/>
         <source>Invert Selection</source>
-        <translation>Selectie omkeren</translation>
+        <translation type="vanished">Selectie omkeren</translation>
     </message>
     <message>
-        <location filename="../foldermenu.cpp" line="60"/>
+        <location filename="../foldermenu.cpp" line="56"/>
         <source>Sorting</source>
         <translation>Sorteren</translation>
     </message>
@@ -1494,12 +1513,11 @@ Wilt u ze in plaats daarvan verwijderen?</translation>
         <translation>Computer</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="126"/>
         <source>Network</source>
-        <translation>Netwerk</translation>
+        <translation type="vanished">Netwerk</translation>
     </message>
     <message>
-        <location filename="../placesmodel.cpp" line="40"/>
+        <location filename="../placesmodel.cpp" line="41"/>
         <source>Devices</source>
         <translation>Apparaten</translation>
     </message>
@@ -2101,7 +2119,7 @@ Gewijzigd: %3</translation>
         <location filename="../main-win.ui" line="864"/>
         <location filename="../../build/src/ui_main-win.h" line="804"/>
         <source>Open With...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Openen met...</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="582"/>
@@ -2641,7 +2659,7 @@ Gewijzigd: %3</translation>
         <location filename="../preferences.ui" line="579"/>
         <location filename="../../build/src/ui_preferences.h" line="687"/>
         <source>Mount</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Koppelen</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="585"/>

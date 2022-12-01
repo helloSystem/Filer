@@ -839,7 +839,7 @@ Functionality may be broken.</source>
         <translation>Wyczyść tekst (Ctrl+K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="798"/>
+        <location filename="../mainwindow.cpp" line="793"/>
         <source>Version: %1</source>
         <translation>Wersja: %1</translation>
     </message>
@@ -852,13 +852,13 @@ Functionality may be broken.</source>
         <translation type="vanished">&amp;Usuń</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1503"/>
-        <location filename="../mainwindow.cpp" line="1514"/>
+        <location filename="../mainwindow.cpp" line="1498"/>
+        <location filename="../mainwindow.cpp" line="1509"/>
         <source>Error</source>
         <translation>Błąd</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1514"/>
+        <location filename="../mainwindow.cpp" line="1509"/>
         <source>Switch user command is not set.</source>
         <translation>Nie ustawiono polecenia do przełączania użytkowników.</translation>
     </message>
@@ -1274,7 +1274,7 @@ Co chcesz zrobić z tym plikiem?</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="374"/>
+        <location filename="../filemenu.cpp" line="369"/>
         <source>Output</source>
         <translation>Wyjście</translation>
     </message>

@@ -805,7 +805,7 @@ Functionality may be broken.</source>
         <translation>텍스트 지우기 (Ctrl+K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="798"/>
+        <location filename="../mainwindow.cpp" line="793"/>
         <source>Version: %1</source>
         <translation>버전 : %1</translation>
     </message>
@@ -818,13 +818,13 @@ Functionality may be broken.</source>
         <translation type="vanished">삭제 (&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1503"/>
-        <location filename="../mainwindow.cpp" line="1514"/>
+        <location filename="../mainwindow.cpp" line="1498"/>
+        <location filename="../mainwindow.cpp" line="1509"/>
         <source>Error</source>
         <translation>오류</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1514"/>
+        <location filename="../mainwindow.cpp" line="1509"/>
         <source>Switch user command is not set.</source>
         <translation>사용자 전환 명령이 설정되지 않았습니다.</translation>
     </message>
@@ -1229,7 +1229,7 @@ What do you want to do with it?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="374"/>
+        <location filename="../filemenu.cpp" line="369"/>
         <source>Output</source>
         <translation type="unfinished"></translation>
     </message>

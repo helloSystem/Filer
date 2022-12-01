@@ -849,7 +849,7 @@ Functionality may be broken.</source>
         <translation>פינוי הטקסט (Ctrl+K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="798"/>
+        <location filename="../mainwindow.cpp" line="793"/>
         <source>Version: %1</source>
         <translation>גרסה: %1</translation>
     </message>
@@ -862,13 +862,13 @@ Functionality may be broken.</source>
         <translation type="vanished">מ&amp;חיקה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1503"/>
-        <location filename="../mainwindow.cpp" line="1514"/>
+        <location filename="../mainwindow.cpp" line="1498"/>
+        <location filename="../mainwindow.cpp" line="1509"/>
         <source>Error</source>
         <translation>שגיאה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1514"/>
+        <location filename="../mainwindow.cpp" line="1509"/>
         <source>Switch user command is not set.</source>
         <translation>פקודת החלפת המשתמש לא נקבעה.</translation>
     </message>
@@ -1288,7 +1288,7 @@ What do you want to do with it?</source>
         <translation>&amp;פינוי אשפה</translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="374"/>
+        <location filename="../filemenu.cpp" line="369"/>
         <source>Output</source>
         <translation>פלט</translation>
     </message>

@@ -826,7 +826,7 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="798"/>
+        <location filename="../mainwindow.cpp" line="793"/>
         <source>Version: %1</source>
         <translation>Verzió: %1</translation>
     </message>
@@ -839,13 +839,13 @@ Functionality may be broken.</source>
         <translation type="vanished">&amp;Töröl</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1503"/>
-        <location filename="../mainwindow.cpp" line="1514"/>
+        <location filename="../mainwindow.cpp" line="1498"/>
+        <location filename="../mainwindow.cpp" line="1509"/>
         <source>Error</source>
         <translation>Hiba</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1514"/>
+        <location filename="../mainwindow.cpp" line="1509"/>
         <source>Switch user command is not set.</source>
         <translation>A felhasználót váltó alkalmazás beállítatlan.</translation>
     </message>
@@ -1245,7 +1245,7 @@ Mi legyen vele?</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../filemenu.cpp" line="374"/>
+        <location filename="../filemenu.cpp" line="369"/>
         <source>Output</source>
         <translation>Kimenet</translation>
     </message>
