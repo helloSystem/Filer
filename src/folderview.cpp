@@ -414,7 +414,6 @@ FolderView::FolderView(ViewMode _mode, QWidget* parent):
   autoSelectionTimer_(NULL),
   selChangedTimer_(NULL),
   springLoadedFolderPath(""),
-  springLoadedFolderOpened(""),
   springLoadedFolderTimer_(NULL),
   fileLauncher_(NULL),
   model_(NULL) {
@@ -949,13 +948,17 @@ void FolderView::childDragMoveEvent(QDragMoveEvent* e) {
 void FolderView::onSpringLoadedFolderTimeout() {
     qDebug() << __func__;
 
-    if(springLoadedFolderOpened != "")
-        qDebug() << "TODO: Close:" << springLoadedFolderOpened; // How can we close the window at springLoadedFolderOpened?
+    Filer::Application* app = static_cast<Filer::Application*>(qApp);
+
+    if((app->springLoadedFolderPreviouslyOpened != "") && (app->springLoadedFolderPreviouslyOpened != springLoadedFolderPath)){
+        qDebug() << "TODO: Close:" << app->springLoadedFolderPreviouslyOpened;
+        // FIXME: It would be nice to close the window after some time; could not achieve this with QTimer. How to do this?
+        // WindowRegistry::instance().checkPathAndClose(app->springLoadedFolderPreviouslyOpened);
+    }
 
     bool isAlreadyOpen = WindowRegistry::instance().checkPathAndRaise(springLoadedFolderPath);
     if(!isAlreadyOpen){
-        springLoadedFolderOpened = springLoadedFolderPath;
-        Filer::Application* app = static_cast<Filer::Application*>(qApp);
+        app->springLoadedFolderPreviouslyOpened = springLoadedFolderPath;
         app->launchFiles(NULL, {springLoadedFolderPath}, true);
     }
 }

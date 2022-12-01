@@ -619,22 +619,22 @@ Application icon:
 <context>
     <name>Filer::Application</name>
     <message>
-        <location filename="../application.cpp" line="276"/>
+        <location filename="../application.cpp" line="277"/>
         <source>Name of configuration profile</source>
         <translation>Nazwa profilu konfiguracji</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="276"/>
+        <location filename="../application.cpp" line="277"/>
         <source>PROFILE</source>
         <translation>PROFIL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="279"/>
+        <location filename="../application.cpp" line="280"/>
         <source>Run Filer as a daemon</source>
         <translation>Uruchom Filer jako daemon</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="282"/>
+        <location filename="../application.cpp" line="283"/>
         <source>Quit Filer</source>
         <translation>Zakończ Filer</translation>
     </message>
@@ -643,7 +643,7 @@ Application icon:
         <translation type="vanished">Uruchom menedżera pulpitu</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="202"/>
         <source>%1 was not launched by the launch command
 from an application bundle.
 
@@ -652,94 +652,94 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="215"/>
         <source>The &apos;launch&apos; command is missing.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="221"/>
+        <location filename="../application.cpp" line="222"/>
         <source>The &apos;open&apos; command is missing.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="231"/>
+        <location filename="../application.cpp" line="232"/>
         <source>The &apos;eject-and-clean&apos; command is missing.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="285"/>
+        <location filename="../application.cpp" line="286"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="288"/>
+        <location filename="../application.cpp" line="289"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Wyłądż menedżera pulpitu jeżeli jest uruchomiony</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="291"/>
+        <location filename="../application.cpp" line="292"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Otwórz okno dialogowe ustawień pulpitu na stronie o określonej nazwie</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="291"/>
-        <location filename="../application.cpp" line="307"/>
+        <location filename="../application.cpp" line="292"/>
+        <location filename="../application.cpp" line="308"/>
         <source>NAME</source>
         <translation>NAZWA</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="294"/>
+        <location filename="../application.cpp" line="295"/>
         <source>Open new window</source>
         <translation>Otwórz nowe okno</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="297"/>
+        <location filename="../application.cpp" line="298"/>
         <source>Open Find Files utility</source>
         <translation>Otwórz narzędzie &quot;Szukaj plików&quot;</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="300"/>
+        <location filename="../application.cpp" line="301"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Ustaw tło pulpitu z obrazka PLIK</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="300"/>
+        <location filename="../application.cpp" line="301"/>
         <source>FILE</source>
         <translation>PLIK</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="304"/>
+        <location filename="../application.cpp" line="305"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Ustaw tryb tapety pulpitu. TRYB=(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="304"/>
+        <location filename="../application.cpp" line="305"/>
         <source>MODE</source>
         <translation>TRYB</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="307"/>
+        <location filename="../application.cpp" line="308"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Otwórz okno dialogowe Ustawień na stronie o określonej nazwie</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="310"/>
+        <location filename="../application.cpp" line="311"/>
         <source>Files or directories to open</source>
         <translation>Pliki lub katalogi do otwarcia</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="310"/>
+        <location filename="../application.cpp" line="311"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[PLIK1, PLIK2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="600"/>
-        <location filename="../application.cpp" line="607"/>
+        <location filename="../application.cpp" line="601"/>
+        <location filename="../application.cpp" line="608"/>
         <source>Error</source>
         <translation>Błąd</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="607"/>
+        <location filename="../application.cpp" line="608"/>
         <source>Terminal emulator is not set.</source>
         <translation>Nie ustawiono emulatora terminala.</translation>
     </message>
@@ -839,7 +839,7 @@ Functionality may be broken.</source>
         <translation>Wyczyść tekst (Ctrl+K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="793"/>
+        <location filename="../mainwindow.cpp" line="795"/>
         <source>Version: %1</source>
         <translation>Wersja: %1</translation>
     </message>
@@ -852,13 +852,13 @@ Functionality may be broken.</source>
         <translation type="vanished">&amp;Usuń</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1498"/>
-        <location filename="../mainwindow.cpp" line="1509"/>
+        <location filename="../mainwindow.cpp" line="1521"/>
+        <location filename="../mainwindow.cpp" line="1532"/>
         <source>Error</source>
         <translation>Błąd</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1509"/>
+        <location filename="../mainwindow.cpp" line="1532"/>
         <source>Switch user command is not set.</source>
         <translation>Nie ustawiono polecenia do przełączania użytkowników.</translation>
     </message>

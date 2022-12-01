@@ -679,22 +679,22 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
 <context>
     <name>Filer::Application</name>
     <message>
-        <location filename="../application.cpp" line="276"/>
+        <location filename="../application.cpp" line="277"/>
         <source>Name of configuration profile</source>
         <translation>Nombre del perfil ce configuración</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="276"/>
+        <location filename="../application.cpp" line="277"/>
         <source>PROFILE</source>
         <translation>PERFIL</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="279"/>
+        <location filename="../application.cpp" line="280"/>
         <source>Run Filer as a daemon</source>
         <translation>Ejecutar Filer como un servicio</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="282"/>
+        <location filename="../application.cpp" line="283"/>
         <source>Quit Filer</source>
         <translation>Cerrar Filer</translation>
     </message>
@@ -703,7 +703,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <translation type="vanished">Abrir administrador de escritorio</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="202"/>
         <source>%1 was not launched by the launch command
 from an application bundle.
 
@@ -712,94 +712,94 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="215"/>
         <source>The &apos;launch&apos; command is missing.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="221"/>
+        <location filename="../application.cpp" line="222"/>
         <source>The &apos;open&apos; command is missing.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="231"/>
+        <location filename="../application.cpp" line="232"/>
         <source>The &apos;eject-and-clean&apos; command is missing.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="285"/>
+        <location filename="../application.cpp" line="286"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation>Lanzar gestor de escritorio (obsoleto)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="288"/>
+        <location filename="../application.cpp" line="289"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Cerrar administrador de escritorio si está en ejecución</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="291"/>
+        <location filename="../application.cpp" line="292"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Abrir diálogo de preferencias de escritorio en la página especificada</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="291"/>
-        <location filename="../application.cpp" line="307"/>
+        <location filename="../application.cpp" line="292"/>
+        <location filename="../application.cpp" line="308"/>
         <source>NAME</source>
         <translation>NOMBRE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="294"/>
+        <location filename="../application.cpp" line="295"/>
         <source>Open new window</source>
         <translation>Abrir nueva ventana</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="297"/>
+        <location filename="../application.cpp" line="298"/>
         <source>Open Find Files utility</source>
         <translation>Abrir búsqueda de archivos</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="300"/>
+        <location filename="../application.cpp" line="301"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Configurar papel tapiz desde un archivo</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="300"/>
+        <location filename="../application.cpp" line="301"/>
         <source>FILE</source>
         <translation>ARCHIVO</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="304"/>
+        <location filename="../application.cpp" line="305"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Definir modo de papel tapiz. MODO =(color|estirar|ajustar|centrar|repetir)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="304"/>
+        <location filename="../application.cpp" line="305"/>
         <source>MODE</source>
         <translation>MODO</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="307"/>
+        <location filename="../application.cpp" line="308"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Abrir diálogo de preferencias en la página especificada</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="310"/>
+        <location filename="../application.cpp" line="311"/>
         <source>Files or directories to open</source>
         <translation>Archivos o directorios a abrir</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="310"/>
+        <location filename="../application.cpp" line="311"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[Archivo 1, Archivo 2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="600"/>
-        <location filename="../application.cpp" line="607"/>
+        <location filename="../application.cpp" line="601"/>
+        <location filename="../application.cpp" line="608"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="607"/>
+        <location filename="../application.cpp" line="608"/>
         <source>Terminal emulator is not set.</source>
         <translation>El emulador de terminal no está configurado.</translation>
     </message>
@@ -899,7 +899,7 @@ Functionality may be broken.</source>
         <translation>Eliminar texto (Ctrl+K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="793"/>
+        <location filename="../mainwindow.cpp" line="795"/>
         <source>Version: %1</source>
         <translation>Versión: %1</translation>
     </message>
@@ -912,13 +912,13 @@ Functionality may be broken.</source>
         <translation type="vanished">&amp;Eliminar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1498"/>
-        <location filename="../mainwindow.cpp" line="1509"/>
+        <location filename="../mainwindow.cpp" line="1521"/>
+        <location filename="../mainwindow.cpp" line="1532"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1509"/>
+        <location filename="../mainwindow.cpp" line="1532"/>
         <source>Switch user command is not set.</source>
         <translation>El comando para cambiar de usuario no está definido.</translation>
     </message>

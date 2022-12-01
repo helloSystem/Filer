@@ -342,6 +342,8 @@ MainWindow::MainWindow(FmPath* path):
           this, &MainWindow::onRaiseWindow);
   connect(&WindowRegistry::instance(), &WindowRegistry::raiseWindowAndSelectItems,
           this, &MainWindow::onRaiseWindowAndSelectItems);
+  connect(&WindowRegistry::instance(), &WindowRegistry::closeWindow,
+          this, &MainWindow::onCloseWindow);
 }
 
 MainWindow::~MainWindow() {
@@ -1414,6 +1416,27 @@ void MainWindow::onRaiseWindow(const QString& path)
         break;
       }
     }
+  }
+}
+
+void MainWindow::onCloseWindow(const QString& path)
+{
+  // all tab pages
+  int n = ui.stackedWidget->count();
+  for(int i = 0; i < n; ++i) {
+    TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(i));
+    if (page) {
+      QString ourPath = page->pathName();
+      if (path == ourPath) {
+        page->close();
+      }
+    }
+  }
+  n = ui.stackedWidget->count();
+  qDebug() << "Widgets left:" << n;
+  if(n=1){
+      // qDebug() << "No more tabs left. Now close the whole window";
+      close();
   }
 }
 

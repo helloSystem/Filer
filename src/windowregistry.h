@@ -46,11 +46,18 @@ public:
    */
   bool checkPathAndRaise(const QString& path);
 
+  /*
+   * if the window is in the registry, close the window
+   * and return true; otherwise return false
+   */
+  bool checkPathAndClose(const QString& path);
+
   // for ShowItems, we need to select items in the raised window
   bool checkPathAndSelectItems(const QString& path, const QStringList& items);
 
 Q_SIGNALS:
   void raiseWindow(const QString& path);
+  void closeWindow(const QString& path);
   void raiseWindowAndSelectItems(const QString& path, const QStringList& items);
 
 private: // functions

@@ -693,22 +693,22 @@ GNU 一般公衆利用許諾契約書の複製物を1部
 <context>
     <name>Filer::Application</name>
     <message>
-        <location filename="../application.cpp" line="276"/>
+        <location filename="../application.cpp" line="277"/>
         <source>Name of configuration profile</source>
         <translation>設定プロファイルの名前</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="276"/>
+        <location filename="../application.cpp" line="277"/>
         <source>PROFILE</source>
         <translation>PROFILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="279"/>
+        <location filename="../application.cpp" line="280"/>
         <source>Run Filer as a daemon</source>
         <translation>Filerをデーモンとして実行</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="282"/>
+        <location filename="../application.cpp" line="283"/>
         <source>Quit Filer</source>
         <translation>Filerを終了</translation>
     </message>
@@ -717,7 +717,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <translation type="vanished">デスクトップマネージャーを起動</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="202"/>
         <source>%1 was not launched by the launch command
 from an application bundle.
 
@@ -726,94 +726,94 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="215"/>
         <source>The &apos;launch&apos; command is missing.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="221"/>
+        <location filename="../application.cpp" line="222"/>
         <source>The &apos;open&apos; command is missing.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="231"/>
+        <location filename="../application.cpp" line="232"/>
         <source>The &apos;eject-and-clean&apos; command is missing.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="288"/>
+        <location filename="../application.cpp" line="289"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>実行中のデスクトップマネージャーを終了</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="291"/>
+        <location filename="../application.cpp" line="292"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>特定の名前のページ上でデスクトップ設定ダイアログを開く</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="291"/>
-        <location filename="../application.cpp" line="307"/>
+        <location filename="../application.cpp" line="292"/>
+        <location filename="../application.cpp" line="308"/>
         <source>NAME</source>
         <translation>NAME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="300"/>
+        <location filename="../application.cpp" line="301"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>画像ファイルからデスクトップの壁紙を設定</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="300"/>
+        <location filename="../application.cpp" line="301"/>
         <source>FILE</source>
         <translation>FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="304"/>
+        <location filename="../application.cpp" line="305"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>デスクトップの壁紙のモードを設定する。MODE=(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="304"/>
+        <location filename="../application.cpp" line="305"/>
         <source>MODE</source>
         <translation>MODE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="307"/>
+        <location filename="../application.cpp" line="308"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>特定の名前のページで設定ダイアログを開く</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="294"/>
+        <location filename="../application.cpp" line="295"/>
         <source>Open new window</source>
         <translation>新しいウインドウを開く</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="285"/>
+        <location filename="../application.cpp" line="286"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="297"/>
+        <location filename="../application.cpp" line="298"/>
         <source>Open Find Files utility</source>
         <translation>ファイル検索ユーティリティーを開く</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="310"/>
+        <location filename="../application.cpp" line="311"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FILE1, FILE2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="310"/>
+        <location filename="../application.cpp" line="311"/>
         <source>Files or directories to open</source>
         <translation>開くファイルまたはディレクトリー</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="600"/>
-        <location filename="../application.cpp" line="607"/>
+        <location filename="../application.cpp" line="601"/>
+        <location filename="../application.cpp" line="608"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="607"/>
+        <location filename="../application.cpp" line="608"/>
         <source>Terminal emulator is not set.</source>
         <translation>端末エミュレーターを未設定です</translation>
     </message>
@@ -913,7 +913,7 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="793"/>
+        <location filename="../mainwindow.cpp" line="795"/>
         <source>Version: %1</source>
         <translation>バージョン: %1</translation>
     </message>
@@ -926,13 +926,13 @@ Functionality may be broken.</source>
         <translation type="vanished">削除(&amp;D)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1498"/>
-        <location filename="../mainwindow.cpp" line="1509"/>
+        <location filename="../mainwindow.cpp" line="1521"/>
+        <location filename="../mainwindow.cpp" line="1532"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1509"/>
+        <location filename="../mainwindow.cpp" line="1532"/>
         <source>Switch user command is not set.</source>
         <translation>ユーザー切替コマンドを未設定です</translation>
     </message>

@@ -545,7 +545,7 @@ Brugt med tilladelse fra ophavsmanden https://raphaellopes.me/</translation>
 <context>
     <name>Filer::Application</name>
     <message>
-        <location filename="../application.cpp" line="201"/>
+        <location filename="../application.cpp" line="202"/>
         <source>%1 was not launched by the launch command
 from an application bundle.
 
@@ -554,114 +554,114 @@ Functionality may be broken.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="214"/>
+        <location filename="../application.cpp" line="215"/>
         <source>The &apos;launch&apos; command is missing.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="221"/>
+        <location filename="../application.cpp" line="222"/>
         <source>The &apos;open&apos; command is missing.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="231"/>
+        <location filename="../application.cpp" line="232"/>
         <source>The &apos;eject-and-clean&apos; command is missing.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="276"/>
+        <location filename="../application.cpp" line="277"/>
         <source>Name of configuration profile</source>
         <translation>Navnet på konfigurations profilen</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="276"/>
+        <location filename="../application.cpp" line="277"/>
         <source>PROFILE</source>
         <translation>PROFILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="279"/>
+        <location filename="../application.cpp" line="280"/>
         <source>Run Filer as a daemon</source>
         <translation>Kør Filer som en dæmon</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="282"/>
+        <location filename="../application.cpp" line="283"/>
         <source>Quit Filer</source>
         <translation>Afslut Filer</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="285"/>
+        <location filename="../application.cpp" line="286"/>
         <source>Launch desktop manager (deprecated)</source>
         <translation>Åbn skrivebords styring (forældet)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="288"/>
+        <location filename="../application.cpp" line="289"/>
         <source>Turn off desktop manager if it&apos;s running</source>
         <translation>Sluk for skrivebords styring hvis den kører</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="291"/>
+        <location filename="../application.cpp" line="292"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
         <translation>Åbn skrivebords indstillinger på den side med det angivne navn</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="291"/>
-        <location filename="../application.cpp" line="307"/>
+        <location filename="../application.cpp" line="292"/>
+        <location filename="../application.cpp" line="308"/>
         <source>NAME</source>
         <translation>NAME</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="294"/>
+        <location filename="../application.cpp" line="295"/>
         <source>Open new window</source>
         <translation>Åbn et nyt vindue</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="297"/>
+        <location filename="../application.cpp" line="298"/>
         <source>Open Find Files utility</source>
         <translation>Åbn Find fil værktøjet</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="300"/>
+        <location filename="../application.cpp" line="301"/>
         <source>Set desktop wallpaper from image FILE</source>
         <translation>Brug filen FILE som skrivebords baggrund</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="300"/>
+        <location filename="../application.cpp" line="301"/>
         <source>FILE</source>
         <translation>FILE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="304"/>
+        <location filename="../application.cpp" line="305"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
         <translation>Indstil opførsel af skrivebordets baggrund. MODE=(farve|stræk|tilpas|centrer|fliselæg)</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="304"/>
+        <location filename="../application.cpp" line="305"/>
         <source>MODE</source>
         <translation>MODE</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="307"/>
+        <location filename="../application.cpp" line="308"/>
         <source>Open Preferences dialog on the page with the specified name</source>
         <translation>Åbn indstillings menuen på siden med det angivne navn</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="310"/>
+        <location filename="../application.cpp" line="311"/>
         <source>Files or directories to open</source>
         <translation>Filer eller mapper at åbne</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="310"/>
+        <location filename="../application.cpp" line="311"/>
         <source>[FILE1, FILE2,...]</source>
         <translation>[FILE1, FILE2,...]</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="600"/>
-        <location filename="../application.cpp" line="607"/>
+        <location filename="../application.cpp" line="601"/>
+        <location filename="../application.cpp" line="608"/>
         <source>Error</source>
         <translation>Fejl</translation>
     </message>
     <message>
-        <location filename="../application.cpp" line="607"/>
+        <location filename="../application.cpp" line="608"/>
         <source>Terminal emulator is not set.</source>
         <translation>Terminal emulator er ikke angivet.</translation>
     </message>
@@ -761,18 +761,18 @@ Functionality may be broken.</source>
         <translation>Ryd tekst (Ctrl+K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="793"/>
+        <location filename="../mainwindow.cpp" line="795"/>
         <source>Version: %1</source>
         <translation>Version: %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1498"/>
-        <location filename="../mainwindow.cpp" line="1509"/>
+        <location filename="../mainwindow.cpp" line="1521"/>
+        <location filename="../mainwindow.cpp" line="1532"/>
         <source>Error</source>
         <translation>Fejl</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1509"/>
+        <location filename="../mainwindow.cpp" line="1532"/>
         <source>Switch user command is not set.</source>
         <translation>Skift bruger kommandoen er ikke aktiv.</translation>
     </message>

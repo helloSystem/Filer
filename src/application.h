@@ -88,6 +88,8 @@ public:
     return profileName_;
   }
 
+  QString springLoadedFolderPreviouslyOpened;
+
 Q_SIGNALS:
   void openFolderAndSelectItems(QString folder, QStringList items);
 
@@ -135,7 +137,6 @@ private:
   QPointer<Fm::EditBookmarksDialog> editBookmarksialog_;
   QTranslator translator;
   QTranslator qtTranslator;
-
 
   QFileSystemWatcher *userDirsWatcher_;
   QString userDirsFile_;

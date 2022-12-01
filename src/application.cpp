@@ -71,6 +71,7 @@ Application::Application(int& argc, char** argv):
     volumeMonitor(NULL),
     userDirsWatcher_(NULL),
     lxqtRunning_(false),
+    springLoadedFolderPreviouslyOpened(""),
     editBookmarksialog_() {
 
     argc_ = argc;

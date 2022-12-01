@@ -165,7 +165,6 @@ private:
   QTimer* selChangedTimer_;
   QTimer* springLoadedFolderTimer_;
   QString springLoadedFolderPath;
-  QString springLoadedFolderOpened;
   void onSpringLoadedFolderTimeout();
 };
 
