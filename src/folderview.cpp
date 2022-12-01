@@ -20,6 +20,7 @@
 
 #include "folderview.h"
 #include "foldermodel.h"
+#include "mainwindow.h"
 #include <QHeaderView>
 #include <QVBoxLayout>
 #include <QContextMenuEvent>
@@ -44,6 +45,10 @@
 #include <QProcess>
 #include "folderview_p.h"
 #include "bundle.h"
+#include "desktopwindow.h"
+#include "desktopmainwindow.h"
+#include "application.h"
+#include "windowregistry.h"
 
 Q_DECLARE_OPAQUE_POINTER(FmFileInfo*)
 
@@ -141,7 +146,7 @@ void FolderViewListView::dragMoveEvent(QDragMoveEvent* e) {
   qDebug() << "FolderViewListView::dragMoveEvent(QDragMoveEvent* e)";
 
   if(this->dropIndicatorPosition() == QAbstractItemView::OnItem){
-      qDebug() << "Drag and drop hovering over an item" ;
+      qDebug() << "Drag and drop hovering over an item";
   }
 
   if(movement() != Static)
@@ -408,6 +413,9 @@ FolderView::FolderView(ViewMode _mode, QWidget* parent):
   autoSelectionDelay_(600),
   autoSelectionTimer_(NULL),
   selChangedTimer_(NULL),
+  springLoadedFolderPath(""),
+  springLoadedFolderOpened(""),
+  springLoadedFolderTimer_(NULL),
   fileLauncher_(NULL),
   model_(NULL) {
 
@@ -869,6 +877,87 @@ void FolderView::childDragMoveEvent(QDragMoveEvent* e) {
   // dragMove is called while you are moving over the target widget,
   // it doesn't replace dropEvent which is for when you drop on your target
   qDebug("FolderView::childDragMoveEvent(QDragMoveEvent* e) = drag move");
+
+  springLoadedFolderTimer_->deleteLater();
+  springLoadedFolderTimer_ = NULL;
+  springLoadedFolderPath = "";
+
+  // Find out what has been dragged onto what
+  QStringList sourcePaths = {};
+  QString destinationPath = "";
+  const QMimeData *mimeData = e->mimeData();
+
+  qDebug() << "MIME dropped:" << mimeData->formats();
+
+  // probono: Find out the source path (where objects are coming from)
+  QModelIndexList sourceIndexes = selectedIndexes(); // the dragged items (source)
+  if(mimeData->hasFormat("text/uri-list")) {
+      for ( const QUrl  url : mimeData->urls()) {
+          qDebug() << "url from MIME data:" << url;
+          if(url.scheme() == "file" && url.toLocalFile() != "") {
+              sourcePaths.append(QString(url.toLocalFile()));
+          } else {
+              // A URL was dropped that is not a local file (e.g., from a web browser)
+              // Let's assume we want to link those (which needs to be implemented elsewhere)
+              e->setDropAction(Qt::LinkAction);
+              return;
+          }
+      }
+  } else if(mimeData->hasFormat("application/x-qabstractitemmodeldatalist")) {
+      for (const QModelIndex index : sourceIndexes) {
+          FmFileInfo* info = model_->fileInfoFromIndex(index);
+          sourcePaths.append(QString(fm_path_to_str(fm_file_info_get_path(info))));
+      }
+  }
+  qDebug() << "sourcePaths" << sourcePaths;
+
+
+
+  // probono: Find out the destination path (where objects have been dropped)
+  QModelIndex dropIndex = view->indexAt(e->pos()); // the item dropped on (destination)
+  if(dropIndex.isValid()){
+      // Dropped on an object (e.g., a folder or a document)
+      QModelIndex index = model_->index(dropIndex.row(), 0);
+      FmFileInfo* info = model_->fileInfoFromIndex(index);
+      // animate...
+      destinationPath = QString(fm_path_to_str(fm_file_info_get_path(info)));
+  }
+
+  if(destinationPath == "")
+      return;
+
+  qDebug() << "destinationPath" << destinationPath;
+
+  FmFileInfo *fileInfo = fm_file_info_new_from_native_file(nullptr, destinationPath.toUtf8(), nullptr);
+  bool isAppDirOrBundle = Fm::checkWhetherAppDirOrBundle(fileInfo);
+  fm_file_info_unref(fileInfo);
+
+  if(QFileInfo(destinationPath).isDir() && ! isAppDirOrBundle && QFileInfo(sourcePaths.first()).dir() != destinationPath && sourcePaths.contains(destinationPath) == false) {
+      qDebug() << "proboo: Open spring-loaded folder:" << destinationPath;
+      if(!springLoadedFolderTimer_) {
+          springLoadedFolderTimer_ = new QTimer(this);
+          springLoadedFolderTimer_->setSingleShot(true);
+
+          springLoadedFolderPath = destinationPath;
+
+          connect(springLoadedFolderTimer_, &QTimer::timeout, this, &FolderView::onSpringLoadedFolderTimeout);
+          springLoadedFolderTimer_->start(500);
+      }
+  }
+}
+
+void FolderView::onSpringLoadedFolderTimeout() {
+    qDebug() << __func__;
+
+    if(springLoadedFolderOpened != "")
+        qDebug() << "TODO: Close:" << springLoadedFolderOpened; // How can we close the window at springLoadedFolderOpened?
+
+    bool isAlreadyOpen = WindowRegistry::instance().checkPathAndRaise(springLoadedFolderPath);
+    if(!isAlreadyOpen){
+        springLoadedFolderOpened = springLoadedFolderPath;
+        Filer::Application* app = static_cast<Filer::Application*>(qApp);
+        app->launchFiles(NULL, {springLoadedFolderPath}, true);
+    }
 }
 
 void FolderView::childDropEvent(QDropEvent* e) {
@@ -933,7 +1022,7 @@ void FolderView::childDropEvent(QDropEvent* e) {
       qDebug() << "Modifier key pressed. TODO: Implement opening all MIME types only in this case";
   }
   FmFileInfo *fileInfo = fm_file_info_new_from_native_file(nullptr, destinationPath.toUtf8(), nullptr);
-  bool isAppDirOrBundle = checkWhetherAppDirOrBundle(fileInfo);
+  bool isAppDirOrBundle = Fm::checkWhetherAppDirOrBundle(fileInfo);
   fm_file_info_unref(fileInfo);
   if(isAppDirOrBundle) {
       e->setDropAction(Qt::IgnoreAction);

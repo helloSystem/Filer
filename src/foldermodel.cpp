@@ -507,7 +507,7 @@ bool FolderModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int
               }
           }
           if(identicalLocations == true) {
-              qDebug() << "probono: Source and destination paths are identical";
+              qDebug() << "probono: Copy: Source and destination paths are identical";
           } else {
               FileOperation::copyFiles(srcPaths, destPath);
           }
@@ -525,7 +525,7 @@ bool FolderModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int
                   // probono: Do not attempt to do a move in the filesystem if source and destination paths are identical.
                   // This is important for Filer windows
                   // FIXME: Same as above in "case Qt::CopyAction"
-                  qDebug() << "probono: Source and destination paths are identical";
+                  qDebug() << "probono: Move: Source and destination paths are identical";
                   return false;
               }
               // probono: If destination is trash-can.desktop, then move to trash

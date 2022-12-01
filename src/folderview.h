@@ -163,6 +163,10 @@ private:
   QTimer* autoSelectionTimer_;
   QModelIndex lastAutoSelectionIndex_;
   QTimer* selChangedTimer_;
+  QTimer* springLoadedFolderTimer_;
+  QString springLoadedFolderPath;
+  QString springLoadedFolderOpened;
+  void onSpringLoadedFolderTimeout();
 };
 
 }
