@@ -25,6 +25,7 @@
 #include <QMessageBox>
 #include <QDebug>
 #include <sound.h>
+#include "darksideconverter.h"
 
 using namespace Fm;
 
@@ -259,6 +260,22 @@ FileOperation* FileOperation::symlinkFiles(FmPathList* srcFiles, FmPath* dest, Q
 
 //static
 FileOperation* FileOperation::deleteFiles(FmPathList* srcFiles, bool prompt, QWidget* parent) {
+
+    QStringList pathsToBeDeleted = DarkSideConverter::qStringListFromFmPathList(srcFiles);
+
+    qDebug() << "pathsToBeDeleted:" << pathsToBeDeleted;
+
+    // Disallow crucial directories in / needed by the system
+    for(QString pathToBeDeleted : pathsToBeDeleted) {
+        if (protectedPaths.contains(pathToBeDeleted)) {
+            QMessageBox::warning(parent, tr(" "),
+                                 tr("%1 is required by the system and cannot be deleted.").arg(pathToBeDeleted),
+                                 QMessageBox::Cancel);
+            return NULL;
+            break;
+        }
+    }
+
   if(prompt) {
     int result = QMessageBox::warning(parent, tr("Confirm"),
                                       tr("Do you want to delete the selected files?"),
@@ -275,20 +292,63 @@ FileOperation* FileOperation::deleteFiles(FmPathList* srcFiles, bool prompt, QWi
 
 //static
 FileOperation* FileOperation::trashFiles(FmPathList* srcFiles, bool prompt, QWidget* parent) {
-  if(prompt) {
-    int result = QMessageBox::warning(parent, tr("Confirm"),
-                                      tr("Do you want to move the selected files to trash can?"),
-                                      QMessageBox::Yes|QMessageBox::No,
-                                      QMessageBox::No);
-    if(result != QMessageBox::Yes)
-      return NULL;
-  }
 
-  FileOperation* op = new FileOperation(FileOperation::Trash, srcFiles);
-  op->run();
-  sound::playSound("ffft.wav");
-  return op;
+    QStringList pathsToBeDeleted = DarkSideConverter::qStringListFromFmPathList(srcFiles);
+
+    qDebug() << "pathsToBeDeleted:" << pathsToBeDeleted;
+
+    // Disallow crucial directories in / needed by the system
+    for(QString pathToBeDeleted : pathsToBeDeleted) {
+        if (protectedPaths.contains(pathToBeDeleted)) {
+            QMessageBox::warning(parent, tr(" "),
+                                 tr("%1 is required by the system and cannot be moved to the Trash.").arg(pathToBeDeleted),
+                                 QMessageBox::Cancel);
+            return NULL;
+            break;
+        }
+    }
+
+    if(prompt) {
+        int result = QMessageBox::warning(parent, tr("Confirm"),
+                                          tr("Do you want to move the selected files to trash can?"),
+                                          QMessageBox::Yes|QMessageBox::No,
+                                          QMessageBox::No);
+        if(result != QMessageBox::Yes)
+            return NULL;
+    }
+
+    FileOperation* op = new FileOperation(FileOperation::Trash, srcFiles);
+    op->run();
+    sound::playSound("ffft.wav");
+    return op;
+
 }
+
+const QStringList FileOperation::protectedPaths = {"/Applications",
+        "/COPYRIGHT",
+        "/System",
+        "/Users",
+        "/bin",
+        "/boot",
+        "/compat",
+        "/dev",
+        "/entropy",
+        "/etc",
+        "/home",
+        "/lib",
+        "/libexec",
+        "/media",
+        "/mnt",
+        "/net",
+        "/proc",
+        "/rescue",
+        "/root",
+        "/sbin",
+        "/sys",
+        "/tmp",
+        "/usr",
+        "/var",
+        "/zroot"};
 
 //static
 FileOperation* FileOperation::unTrashFiles(FmPathList* srcFiles, QWidget* parent) {

@@ -48,6 +48,8 @@ public:
 public:
   explicit FileOperation(Type type, FmPathList* srcFiles, QObject* parent = 0);
   virtual ~FileOperation();
+  const static QStringList protectedPaths;
+
 
   void setDestination(FmPath* dest) {
     destPath = fm_path_ref(dest);

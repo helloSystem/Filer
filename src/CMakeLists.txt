@@ -86,6 +86,7 @@ set(filer_SRCS
     sound.cpp # probono
     extattrs.cpp # probono
     itemdelegatefunctions.cpp # probono
+    darksideconverter.h darksideconverter.cpp # probono
 )
 
 qt5_add_dbus_adaptor(filer_SRCS

@@ -1384,30 +1384,46 @@ What do you want to do with it?</source>
 <context>
     <name>Fm::FileOperation</name>
     <message>
-        <location filename="../fileoperation.cpp" line="221"/>
+        <location filename="../fileoperation.cpp" line="222"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="222"/>
+        <location filename="../fileoperation.cpp" line="223"/>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
         <translation>Некоторые файлы не могут быть помещены в корзину, поскольку файловая система не поддерживает эту операцию.
 Вы всё равно хотите их удалить?</translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="263"/>
-        <location filename="../fileoperation.cpp" line="279"/>
+        <location filename="../fileoperation.cpp" line="272"/>
+        <source>%1 is required by the system and cannot be deleted.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fileoperation.cpp" line="280"/>
+        <location filename="../fileoperation.cpp" line="312"/>
         <source>Confirm</source>
         <translation>Подтвердить</translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="264"/>
+        <location filename="../fileoperation.cpp" line="281"/>
         <source>Do you want to delete the selected files?</source>
         <translation>Вы действительно хотите удалить выбранные файлы?</translation>
     </message>
     <message>
-        <location filename="../fileoperation.cpp" line="280"/>
+        <location filename="../fileoperation.cpp" line="271"/>
+        <location filename="../fileoperation.cpp" line="303"/>
+        <source> </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fileoperation.cpp" line="304"/>
+        <source>%1 is required by the system and cannot be moved to the Trash.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fileoperation.cpp" line="313"/>
         <source>Do you want to move the selected files to trash can?</source>
         <translation>Переместить выбранные файлы в корзину?</translation>
     </message>
