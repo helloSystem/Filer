@@ -267,7 +267,7 @@ FileOperation* FileOperation::deleteFiles(FmPathList* srcFiles, bool prompt, QWi
 
     // Disallow crucial directories in / needed by the system
     for(QString pathToBeDeleted : pathsToBeDeleted) {
-        if (protectedPaths.contains(pathToBeDeleted)) {
+        if (protectedPaths.contains(pathToBeDeleted) || QFileInfo(pathToBeDeleted).fileName() == "trash-can.desktop") {
             QMessageBox::warning(parent, tr(" "),
                                  tr("%1 is required by the system and cannot be deleted.").arg(pathToBeDeleted),
                                  QMessageBox::Cancel);
@@ -299,7 +299,7 @@ FileOperation* FileOperation::trashFiles(FmPathList* srcFiles, bool prompt, QWid
 
     // Disallow crucial directories in / needed by the system
     for(QString pathToBeDeleted : pathsToBeDeleted) {
-        if (protectedPaths.contains(pathToBeDeleted)) {
+        if (protectedPaths.contains(pathToBeDeleted) || QFileInfo(pathToBeDeleted).fileName() == "trash-can.desktop") {
             QMessageBox::warning(parent, tr(" "),
                                  tr("%1 is required by the system and cannot be moved to the Trash.").arg(pathToBeDeleted),
                                  QMessageBox::Cancel);
@@ -324,31 +324,32 @@ FileOperation* FileOperation::trashFiles(FmPathList* srcFiles, bool prompt, QWid
 
 }
 
-const QStringList FileOperation::protectedPaths = {"/Applications",
-        "/COPYRIGHT",
-        "/System",
-        "/Users",
-        "/bin",
-        "/boot",
-        "/compat",
-        "/dev",
-        "/entropy",
-        "/etc",
-        "/home",
-        "/lib",
-        "/libexec",
-        "/media",
-        "/mnt",
-        "/net",
-        "/proc",
-        "/rescue",
-        "/root",
-        "/sbin",
-        "/sys",
-        "/tmp",
-        "/usr",
-        "/var",
-        "/zroot"};
+const QStringList FileOperation::protectedPaths = {"/",
+                                                   "/Applications",
+                                                   "/COPYRIGHT",
+                                                   "/System",
+                                                   "/Users",
+                                                   "/bin",
+                                                   "/boot",
+                                                   "/compat",
+                                                   "/dev",
+                                                   "/entropy",
+                                                   "/etc",
+                                                   "/home",
+                                                   "/lib",
+                                                   "/libexec",
+                                                   "/media",
+                                                   "/mnt",
+                                                   "/net",
+                                                   "/proc",
+                                                   "/rescue",
+                                                   "/root",
+                                                   "/sbin",
+                                                   "/sys",
+                                                   "/tmp",
+                                                   "/usr",
+                                                   "/var",
+                                                   "/zroot"};
 
 //static
 FileOperation* FileOperation::unTrashFiles(FmPathList* srcFiles, QWidget* parent) {
