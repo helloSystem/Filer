@@ -343,7 +343,7 @@ Application icon:
         <location filename="../desktop-preferences.ui" line="92"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
         <source>Colors</source>
-        <translation type="unfinished"></translation>
+        <translation>色彩</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="150"/>
@@ -716,17 +716,17 @@ Functionality may be broken.</source>
     <message>
         <location filename="../application.cpp" line="215"/>
         <source>The &apos;launch&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>缺少「啟動」命令。</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="222"/>
         <source>The &apos;open&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>缺少「打開」命令。</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="232"/>
         <source>The &apos;eject-and-clean&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">缺少「彈出並清理」命令。</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="286"/>
@@ -963,26 +963,26 @@ Functionality may be broken.</source>
         <location filename="../tabpage.cpp" line="278"/>
         <source>%n items</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
+            <numerusform>%n 項</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="280"/>
         <source>1 item</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">1 項</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="436"/>
         <source>%1 items selected</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
+            <numerusform>已選擇 %1 個項目</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="440"/>
         <source>%1 item selected</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
+            <numerusform>已選擇 %1 項</numerusform>
         </translation>
     </message>
     <message>
@@ -2289,7 +2289,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="864"/>
         <location filename="../../build/src/ui_main-win.h" line="804"/>
         <source>Open With...</source>
-        <translation type="unfinished">用其他程式開啟...</translation>
+        <translation>開啟方式...</translation>
     </message>
     <message>
         <source>File &amp;Properties</source>
