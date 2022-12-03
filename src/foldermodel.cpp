@@ -529,9 +529,9 @@ bool FolderModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int
               file.setPermissions(QFile::ReadOwner | QFile::WriteOwner | QFile::ExeOwner |
                                   QFile::ReadGroup | QFile::ExeGroup |
                                   QFile::ReadOther | QFile::ExeOther);
+              return true;
           }
       }
-      return true;
   }
 
 
