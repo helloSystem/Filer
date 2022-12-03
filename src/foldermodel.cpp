@@ -457,10 +457,24 @@ QMimeData* FolderModel::mimeData(const QModelIndexList& indexes) const {
   return data;
 }
 
+QString FolderModel::makeFilenameSafe(const QString& input)
+{
+    QString output = input;
+    // Convert the string to lowercase
+    output = output.toLower();
+    // Replace all non-alphanumeric characters with a hyphen
+    output = output.replace(QRegExp("[^a-z0-9]"), "-");
+    // Remove any leading or trailing hyphens
+    output = output.replace(QRegExp("^-"), "");
+    output = output.replace(QRegExp("-$"), "");
+    return output;
+}
+
 bool FolderModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int row, int column, const QModelIndex& parent) {
   qDebug("FolderModel::dropMimeData");
   if(!folder_)
     return false;
+
   FmPath* destPath;
   if(parent.isValid()) { // drop on an item
     FmFileInfo* info;
@@ -478,6 +492,48 @@ bool FolderModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int
   else { // drop on blank area of the folder
     destPath = path();
   }
+
+  QString destPathStr = QString(fm_path_to_str(destPath));
+
+  // Handle URLs dropped onto the desktop from a browser
+  if(data->hasUrls()){
+
+      QString titleText = "Link";
+      if(data->hasText()) {
+          titleText = data->text();
+      }
+
+      if( data->urls().first().toString().startsWith("http")) {
+          /* We could get an icon, but the ones from Falkon are empty and Chrome doesn't seem to give us one...
+          if (data->hasImage()) {
+              QImage image = qvariant_cast<QImage>(data->imageData());
+              image.save(destPathStr + "/" + makeFilenameSafe(titleText) + ".png", "PNG");
+              if(QFileInfo(destPathStr + "/" + makeFilenameSafe(titleText) + ".png").exists()) {
+                  qDebug() << "Icon file created";
+              }
+          }
+          */
+
+          QFile file(destPathStr + "/" + makeFilenameSafe(titleText) + ".desktop");
+          QString titleTextShort = titleText.split("/").last();
+          if (file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+              QTextStream stream(&file);
+              stream << "[Desktop Entry]\n";
+              stream << "Name=" + titleTextShort + "\n";
+              stream << "Exec=open " << "\"" + data->urls().first().toString(QUrl::FullyEncoded) + "\"\n";
+              // stream << "URL=" << "\"" + data->urls().first().toString(QUrl::FullyEncoded) + "\"\n";
+              stream << "Type=Application\n";
+              stream << "Icon=gnome-globe\n";
+              file.close();
+              // chmod 0755 equivalent
+              file.setPermissions(QFile::ReadOwner | QFile::WriteOwner | QFile::ExeOwner |
+                                  QFile::ReadGroup | QFile::ExeGroup |
+                                  QFile::ReadOther | QFile::ExeOther);
+          }
+      }
+      return true;
+  }
+
 
   // FIXME: should we put this in dropEvent handler of FolderView instead?
   if(data->hasUrls()) {
@@ -497,7 +553,7 @@ bool FolderModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int
           for(l = fm_path_list_peek_head_link(srcPaths); l; l = l->next) {
               FmPath* path = FM_PATH(l->data);
               QString pathStr = QString::fromUtf8(fm_path_display_name(path, false)); // Unlike for MoveAction, do not use fm_path_get_parent here
-              QString destPathStr = QString::fromUtf8(fm_path_display_name(destPath, false));
+
               qDebug() << "probono: pathStr" << pathStr;
               qDebug() << "probono: destPathStr" << destPathStr;
 
@@ -515,7 +571,7 @@ bool FolderModel::dropMimeData(const QMimeData* data, Qt::DropAction action, int
           bool sourcePathsContainMountpoints = false;
           // Bevore we move anything, do a couple of checks:
           // Are source and target identical? Are objects being moved to the Trash?
-          QString destPathStr = QString(fm_path_to_str(destPath));
+
           for(l = fm_path_list_peek_head_link(srcPaths); l; l = l->next) {
               FmPath* path = FM_PATH(l->data);
               QString sourcePathStr =  QString(fm_path_to_str(path));

@@ -128,6 +128,7 @@ private:
   QStringList filesToSelect;
   bool filesToSelectAdd;
   void *filesToSelectView;
+  QString makeFilenameSafe(const QString &input);
 };
 
 }
