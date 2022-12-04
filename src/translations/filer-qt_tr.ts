@@ -1308,7 +1308,7 @@ Bunun yerine onları silmek ister misiniz?</translation>
     <message>
         <location filename="../fileoperation.cpp" line="273"/>
         <source>%1 is required by the system and cannot be deleted.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 sistem için gereklidir ve silinemez.</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="281"/>
@@ -1325,12 +1325,12 @@ Bunun yerine onları silmek ister misiniz?</translation>
         <location filename="../fileoperation.cpp" line="272"/>
         <location filename="../fileoperation.cpp" line="304"/>
         <source> </source>
-        <translation type="unfinished"></translation>
+        <translation> </translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="305"/>
         <source>%1 is required by the system and cannot be moved to the Trash.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 sistem için gereklidir ve çöp kutusuna taşınamaz.</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="314"/>
