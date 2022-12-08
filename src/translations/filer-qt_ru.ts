@@ -377,7 +377,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Бостон, MA  02110-1301,
         <location filename="../desktop-preferences.ui" line="92"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
         <source>Colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Цвета</translation>
     </message>
     <message>
         <source>Label Text</source>
@@ -713,22 +713,26 @@ from an application bundle.
 
 This is not how it should be invoked.
 Functionality may be broken.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 не удалось запустить командой 
+из сборки приложения.
+
+Вызов должен быть выполнен не так.
+Функционал может быть нарушен.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="215"/>
         <source>The &apos;launch&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Команда &apos;запустить&apos; не найдена.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="222"/>
         <source>The &apos;open&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Команда &apos;открыть&apos; не найдена.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="232"/>
         <source>The &apos;eject-and-clean&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Команда &apos;извлечь-и-очистить&apos; не найдена.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="289"/>
@@ -960,33 +964,33 @@ Functionality may be broken.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="278"/>
         <source>%n items</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n объект</numerusform>
+            <numerusform>%n объекта</numerusform>
+            <numerusform>%n объектов</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="280"/>
         <source>1 item</source>
-        <translation type="unfinished"></translation>
+        <translation>1 объект</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="436"/>
         <source>%1 items selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 объект выбран</numerusform>
+            <numerusform>%1 объекта выбраны</numerusform>
+            <numerusform>%1 объектов выбрано</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="440"/>
         <source>%1 item selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 объект выбран</numerusform>
+            <numerusform>%1 объекта выбрано</numerusform>
+            <numerusform>%1 объектов выбрано</numerusform>
         </translation>
     </message>
     <message>
@@ -1398,7 +1402,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperation.cpp" line="273"/>
         <source>%1 is required by the system and cannot be deleted.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 необходим системе и поэтому не может быть удален.</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="281"/>
@@ -1415,12 +1419,12 @@ Do you want to delete them instead?</source>
         <location filename="../fileoperation.cpp" line="272"/>
         <location filename="../fileoperation.cpp" line="304"/>
         <source> </source>
-        <translation type="unfinished"></translation>
+        <translation> </translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="305"/>
         <source>%1 is required by the system and cannot be moved to the Trash.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 необходим системе и не может быть отправлен в корзину.</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="314"/>
@@ -2211,7 +2215,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="517"/>
         <location filename="../../build/src/ui_main-win.h" line="683"/>
         <source>Ctrl+,</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+,</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -2433,7 +2437,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="844"/>
         <location filename="../../build/src/ui_main-win.h" line="795"/>
         <source>Ctrl+Alt+Shift+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+Shift+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
@@ -2459,7 +2463,7 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="864"/>
         <location filename="../../build/src/ui_main-win.h" line="804"/>
         <source>Open With...</source>
-        <translation type="unfinished">Открыть с помощью...</translation>
+        <translation>Открыть с помощью...</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="582"/>
@@ -2939,13 +2943,13 @@ Modified: %3</source>
         <location filename="../preferences.ui" line="579"/>
         <location filename="../../build/src/ui_preferences.h" line="687"/>
         <source>Mount</source>
-        <translation type="unfinished">Подключить</translation>
+        <translation>Монтировать</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="585"/>
         <location filename="../../build/src/ui_preferences.h" line="680"/>
         <source>Auto Mount</source>
-        <translation>Автоподключение</translation>
+        <translation>Автомонтирование</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="591"/>
