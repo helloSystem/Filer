@@ -414,7 +414,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="198"/>
         <source>Colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Colores</translation>
     </message>
     <message>
         <source>Label Text</source>
@@ -780,22 +780,26 @@ from an application bundle.
 
 This is not how it should be invoked.
 Functionality may be broken.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 no fue lanzado por el comando launch
+desde un paquete de aplicaciones.
+
+No es así como debe invocarse.
+La funcionalidad puede estar rota.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="215"/>
         <source>The &apos;launch&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Falta el comando &apos;launch&apos;.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="222"/>
         <source>The &apos;open&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Falta el comando &apos;open&apos;.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="232"/>
         <source>The &apos;eject-and-clean&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Falta el comando &apos;eject-and-clean&apos;.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="286"/>
@@ -1027,30 +1031,30 @@ Functionality may be broken.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="278"/>
         <source>%n items</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n elemento</numerusform>
+            <numerusform>%n elementos</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="280"/>
         <source>1 item</source>
-        <translation type="unfinished"></translation>
+        <translation>1 articulo</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="436"/>
         <source>%1 items selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 elemento seleccionado</numerusform>
+            <numerusform>%1 elementos seleccionados</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="440"/>
         <source>%1 item selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 elemento seleccionado</numerusform>
+            <numerusform>%1 elementos seleccionados</numerusform>
         </translation>
     </message>
     <message>
@@ -1455,7 +1459,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperation.cpp" line="273"/>
         <source>%1 is required by the system and cannot be deleted.</source>
-        <translation type="unfinished"></translation>
+        <translation>El %1 es requerido por el sistema y no puede ser eliminado.</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="281"/>
@@ -1472,12 +1476,12 @@ Do you want to delete them instead?</source>
         <location filename="../fileoperation.cpp" line="272"/>
         <location filename="../fileoperation.cpp" line="304"/>
         <source> </source>
-        <translation type="unfinished"></translation>
+        <translation> </translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="305"/>
         <source>%1 is required by the system and cannot be moved to the Trash.</source>
-        <translation type="unfinished"></translation>
+        <translation>El %1 es requerido por el sistema y no puede ser movido a la Papelera.</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="314"/>
@@ -2362,7 +2366,7 @@ Modificado: %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="683"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="683"/>
         <source>Ctrl+,</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+,</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -2621,7 +2625,7 @@ Modificado: %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="795"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="795"/>
         <source>Ctrl+Alt+Shift+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+Shift+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
@@ -2652,7 +2656,7 @@ Modificado: %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="804"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="804"/>
         <source>Open With...</source>
-        <translation type="unfinished">Abrir con...</translation>
+        <translation>Abrir con...</translation>
     </message>
     <message>
         <source>Ascending</source>
@@ -3239,7 +3243,7 @@ Modificado: %3</translation>
         <location filename="../../build/src/ui_preferences.h" line="687"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="687"/>
         <source>Mount</source>
-        <translation type="unfinished">Montar</translation>
+        <translation>Aumentar</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="585"/>
