@@ -24,6 +24,7 @@
 #include <QElapsedTimer>
 #include <QMessageBox>
 #include <QDebug>
+#include <QFileInfo>
 #include <sound.h>
 #include "darksideconverter.h"
 
