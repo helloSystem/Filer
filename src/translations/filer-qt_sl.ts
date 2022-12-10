@@ -6,30 +6,35 @@
     <message>
         <location filename="../about.ui" line="14"/>
         <location filename="../../build/src/ui_about.h" line="140"/>
+        <location filename="../../cmake-build-debug/src/ui_about.h" line="140"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about.ui" line="37"/>
         <location filename="../../build/src/ui_about.h" line="142"/>
+        <location filename="../../cmake-build-debug/src/ui_about.h" line="142"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about.ui" line="60"/>
         <location filename="../../build/src/ui_about.h" line="144"/>
+        <location filename="../../cmake-build-debug/src/ui_about.h" line="144"/>
         <source>The Desktop Experience</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about.ui" line="70"/>
         <location filename="../../build/src/ui_about.h" line="145"/>
+        <location filename="../../cmake-build-debug/src/ui_about.h" line="145"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about.ui" line="99"/>
         <location filename="../../build/src/ui_about.h" line="146"/>
+        <location filename="../../cmake-build-debug/src/ui_about.h" line="146"/>
         <source>Programming:
 * Simon Peter (probono)
 * Chris Moore (moochris)
@@ -42,6 +47,7 @@ Application icon:
     <message>
         <location filename="../about.ui" line="125"/>
         <location filename="../../build/src/ui_about.h" line="154"/>
+        <location filename="../../cmake-build-debug/src/ui_about.h" line="154"/>
         <source>Filer
 
 Copyright (C) 2020-21 Simon Peter
@@ -76,12 +82,14 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../about.ui" line="90"/>
         <location filename="../../build/src/ui_about.h" line="153"/>
+        <location filename="../../cmake-build-debug/src/ui_about.h" line="153"/>
         <source>Authors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../about.ui" line="116"/>
         <location filename="../../build/src/ui_about.h" line="184"/>
+        <location filename="../../cmake-build-debug/src/ui_about.h" line="184"/>
         <source>License</source>
         <translation type="unfinished"></translation>
     </message>
@@ -91,36 +99,42 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../app-chooser-dialog.ui" line="14"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="150"/>
+        <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="150"/>
         <source>Choose an Application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="36"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="151"/>
+        <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="151"/>
         <source>Installed Applications</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="46"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="163"/>
+        <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="163"/>
         <source>Custom Command</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="52"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="152"/>
+        <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="152"/>
         <source>Command line to execute:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="62"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="153"/>
+        <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="153"/>
         <source>Application name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="72"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="154"/>
+        <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="154"/>
         <source>&lt;b&gt;These special codes can be used in the command line:&lt;/b&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;b&gt;%f&lt;/b&gt;: Represents a single file name&lt;/li&gt;
@@ -133,18 +147,21 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../app-chooser-dialog.ui" line="91"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="161"/>
+        <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="161"/>
         <source>Keep terminal window open after command execution</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="98"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="162"/>
+        <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="162"/>
         <source>Execute in terminal emulator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="109"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="164"/>
+        <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="164"/>
         <source>Set selected application as default action of this file type</source>
         <translation type="unfinished"></translation>
     </message>
@@ -154,30 +171,35 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../autorun.ui" line="14"/>
         <location filename="../../build/src/ui_autorun.h" line="108"/>
+        <location filename="../../cmake-build-debug/src/ui_autorun.h" line="108"/>
         <source>Removable medium is inserted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <location filename="../../build/src/ui_autorun.h" line="110"/>
+        <location filename="../../cmake-build-debug/src/ui_autorun.h" line="110"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
         <location filename="../../build/src/ui_autorun.h" line="111"/>
+        <location filename="../../cmake-build-debug/src/ui_autorun.h" line="111"/>
         <source>Type of medium:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
         <location filename="../../build/src/ui_autorun.h" line="112"/>
+        <location filename="../../cmake-build-debug/src/ui_autorun.h" line="112"/>
         <source>Detecting...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <location filename="../../build/src/ui_autorun.h" line="113"/>
+        <location filename="../../cmake-build-debug/src/ui_autorun.h" line="113"/>
         <source>Please select the action you want to perform:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -187,36 +209,42 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../desktop-folder.ui" line="14"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="72"/>
+        <location filename="../../cmake-build-debug/src/ui_desktop-folder.h" line="72"/>
         <source>Form</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="73"/>
+        <location filename="../../cmake-build-debug/src/ui_desktop-folder.h" line="73"/>
         <source>Desktop</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="74"/>
+        <location filename="../../cmake-build-debug/src/ui_desktop-folder.h" line="74"/>
         <source>Desktop folder:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="76"/>
+        <location filename="../../cmake-build-debug/src/ui_desktop-folder.h" line="76"/>
         <source>Image file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="81"/>
+        <location filename="../../cmake-build-debug/src/ui_desktop-folder.h" line="81"/>
         <source>Folder path</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="82"/>
+        <location filename="../../cmake-build-debug/src/ui_desktop-folder.h" line="82"/>
         <source>&amp;Browse</source>
         <translation type="unfinished"></translation>
     </message>
@@ -226,66 +254,77 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../desktop-preferences.ui" line="14"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="186"/>
+        <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="186"/>
         <source>Desktop Preferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="20"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="187"/>
+        <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="187"/>
         <source>Background</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="45"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="189"/>
+        <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="189"/>
         <source>Wallpaper mode:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="32"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="188"/>
+        <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="188"/>
         <source>Wallpaper image file:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="92"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
+        <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="198"/>
         <source>Colors</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="150"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="203"/>
+        <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="203"/>
         <source>Background color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="104"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="199"/>
+        <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="199"/>
         <source>Text color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="143"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="202"/>
+        <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="202"/>
         <source>Shadow color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="67"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="191"/>
+        <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="191"/>
         <source>Image file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="73"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="196"/>
+        <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="196"/>
         <source>Image file path</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="80"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="197"/>
+        <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="197"/>
         <source>&amp;Browse</source>
         <translation type="unfinished"></translation>
     </message>
@@ -295,36 +334,42 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../edit-bookmarks.ui" line="14"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="103"/>
+        <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="103"/>
         <source>Edit Bookmarks</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="42"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="106"/>
+        <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="106"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="47"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="105"/>
+        <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="105"/>
         <source>Location</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="67"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="107"/>
+        <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="107"/>
         <source>&amp;Add Item</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="77"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="108"/>
+        <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="108"/>
         <source>&amp;Remove Item</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="102"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="109"/>
+        <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="109"/>
         <source>Use drag and drop to reorder the items</source>
         <translation type="unfinished"></translation>
     </message>
@@ -334,30 +379,35 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../exec-file.ui" line="14"/>
         <location filename="../../build/src/ui_exec-file.h" line="114"/>
+        <location filename="../../cmake-build-debug/src/ui_exec-file.h" line="114"/>
         <source>Execute file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="39"/>
         <location filename="../../build/src/ui_exec-file.h" line="116"/>
+        <location filename="../../cmake-build-debug/src/ui_exec-file.h" line="116"/>
         <source>&amp;Open</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="52"/>
         <location filename="../../build/src/ui_exec-file.h" line="117"/>
+        <location filename="../../cmake-build-debug/src/ui_exec-file.h" line="117"/>
         <source>E&amp;xecute</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="62"/>
         <location filename="../../build/src/ui_exec-file.h" line="118"/>
+        <location filename="../../cmake-build-debug/src/ui_exec-file.h" line="118"/>
         <source>Execute in &amp;Terminal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="85"/>
         <location filename="../../build/src/ui_exec-file.h" line="119"/>
+        <location filename="../../cmake-build-debug/src/ui_exec-file.h" line="119"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
@@ -367,30 +417,35 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../file-operation-dialog.ui" line="25"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="124"/>
+        <location filename="../../cmake-build-debug/src/ui_file-operation-dialog.h" line="124"/>
         <source>Destination:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="48"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="126"/>
+        <location filename="../../cmake-build-debug/src/ui_file-operation-dialog.h" line="126"/>
         <source>Processing:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="61"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="127"/>
+        <location filename="../../cmake-build-debug/src/ui_file-operation-dialog.h" line="127"/>
         <source>Preparing...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="68"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="128"/>
+        <location filename="../../cmake-build-debug/src/ui_file-operation-dialog.h" line="128"/>
         <source>Progress</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="88"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="129"/>
+        <location filename="../../cmake-build-debug/src/ui_file-operation-dialog.h" line="129"/>
         <source>Time remaining:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -400,96 +455,112 @@ Used with permission of the creator https://raphaellopes.me/</source>
     <message>
         <location filename="../file-props.ui" line="133"/>
         <location filename="../../build/src/ui_file-props.h" line="365"/>
+        <location filename="../../cmake-build-debug/src/ui_file-props.h" line="365"/>
         <source>General</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="208"/>
         <location filename="../../build/src/ui_file-props.h" line="372"/>
+        <location filename="../../cmake-build-debug/src/ui_file-props.h" line="372"/>
         <source>Location:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="139"/>
         <location filename="../../build/src/ui_file-props.h" line="366"/>
+        <location filename="../../cmake-build-debug/src/ui_file-props.h" line="366"/>
         <source>File type:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="317"/>
         <location filename="../../build/src/ui_file-props.h" line="380"/>
+        <location filename="../../cmake-build-debug/src/ui_file-props.h" line="380"/>
         <source>Open with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="323"/>
         <location filename="../../build/src/ui_file-props.h" line="381"/>
+        <location filename="../../cmake-build-debug/src/ui_file-props.h" line="381"/>
         <source>Mime type:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="162"/>
         <location filename="../../build/src/ui_file-props.h" line="368"/>
+        <location filename="../../cmake-build-debug/src/ui_file-props.h" line="368"/>
         <source>File size:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="20"/>
         <location filename="../../build/src/ui_file-props.h" line="362"/>
+        <location filename="../../cmake-build-debug/src/ui_file-props.h" line="362"/>
         <source>Info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="60"/>
         <location filename="../../build/src/ui_file-props.h" line="363"/>
+        <location filename="../../cmake-build-debug/src/ui_file-props.h" line="363"/>
         <source>TextLabel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="185"/>
         <location filename="../../build/src/ui_file-props.h" line="370"/>
+        <location filename="../../cmake-build-debug/src/ui_file-props.h" line="370"/>
         <source>On-disk size:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="260"/>
         <location filename="../../build/src/ui_file-props.h" line="376"/>
+        <location filename="../../cmake-build-debug/src/ui_file-props.h" line="376"/>
         <source>Last modified:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="423"/>
         <location filename="../../build/src/ui_file-props.h" line="385"/>
+        <location filename="../../cmake-build-debug/src/ui_file-props.h" line="385"/>
         <source>Everyone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="234"/>
         <location filename="../../build/src/ui_file-props.h" line="374"/>
+        <location filename="../../cmake-build-debug/src/ui_file-props.h" line="374"/>
         <source>Link target:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="346"/>
         <location filename="../../build/src/ui_file-props.h" line="383"/>
+        <location filename="../../cmake-build-debug/src/ui_file-props.h" line="383"/>
         <source>Open With:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="283"/>
         <location filename="../../build/src/ui_file-props.h" line="378"/>
+        <location filename="../../cmake-build-debug/src/ui_file-props.h" line="378"/>
         <source>Last accessed:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="380"/>
         <location filename="../../build/src/ui_file-props.h" line="384"/>
+        <location filename="../../cmake-build-debug/src/ui_file-props.h" line="384"/>
         <source>Access Control</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="440"/>
         <location filename="../../build/src/ui_file-props.h" line="386"/>
+        <location filename="../../cmake-build-debug/src/ui_file-props.h" line="386"/>
         <source>Make the file executable</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1579,456 +1650,532 @@ Modified: %3</source>
     <message>
         <location filename="../main-win.ui" line="14"/>
         <location filename="../../build/src/ui_main-win.h" line="606"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="606"/>
         <source>File Manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="272"/>
         <location filename="../../build/src/ui_main-win.h" line="607"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="607"/>
         <source>Go &amp;Up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="275"/>
         <location filename="../../build/src/ui_main-win.h" line="609"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="609"/>
         <source>Go Up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="287"/>
         <location filename="../../build/src/ui_main-win.h" line="614"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="614"/>
         <source>&amp;Home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="299"/>
         <location filename="../../build/src/ui_main-win.h" line="618"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="618"/>
         <source>&amp;Reload</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="314"/>
         <location filename="../../build/src/ui_main-win.h" line="622"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="622"/>
         <source>Go</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="326"/>
         <location filename="../../build/src/ui_main-win.h" line="623"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="623"/>
         <source>Quit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="344"/>
         <location filename="../../build/src/ui_main-win.h" line="625"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="625"/>
         <source>&amp;New Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="347"/>
         <location filename="../../build/src/ui_main-win.h" line="627"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="627"/>
         <source>New Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="350"/>
         <location filename="../../build/src/ui_main-win.h" line="630"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="630"/>
         <source>Ctrl+N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="358"/>
         <location filename="../../build/src/ui_main-win.h" line="632"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="632"/>
         <source>Show &amp;Hidden</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="367"/>
         <location filename="../../build/src/ui_main-win.h" line="633"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="633"/>
         <source>&amp;Computer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="370"/>
         <location filename="../../build/src/ui_main-win.h" line="635"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="635"/>
         <source>Ctrl+Shift+C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="379"/>
         <location filename="../../build/src/ui_main-win.h" line="637"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="637"/>
         <source>&amp;Trash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="382"/>
         <location filename="../../build/src/ui_main-win.h" line="639"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="639"/>
         <source>Ctrl+Shift+T</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="387"/>
         <location filename="../../build/src/ui_main-win.h" line="641"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="641"/>
         <source>&amp;Network</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="399"/>
         <location filename="../../build/src/ui_main-win.h" line="645"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="645"/>
         <source>&amp;Desktop</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="402"/>
         <location filename="../../build/src/ui_main-win.h" line="647"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="647"/>
         <source>Ctrl+Shift+D</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="411"/>
         <location filename="../../build/src/ui_main-win.h" line="649"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="649"/>
         <source>&amp;Add to Bookmarks</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="416"/>
         <location filename="../../build/src/ui_main-win.h" line="650"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="650"/>
         <source>&amp;Applications</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="419"/>
         <location filename="../../build/src/ui_main-win.h" line="652"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="652"/>
         <source>Ctrl+Shift+A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="427"/>
         <location filename="../../build/src/ui_main-win.h" line="654"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="654"/>
         <source>Reload</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="435"/>
         <location filename="../../build/src/ui_main-win.h" line="655"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="655"/>
         <source>&amp;Icon View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="438"/>
         <location filename="../../build/src/ui_main-win.h" line="657"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="657"/>
         <source>Ctrl+1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="446"/>
         <location filename="../../build/src/ui_main-win.h" line="659"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="659"/>
         <source>&amp;Compact View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="454"/>
         <location filename="../../build/src/ui_main-win.h" line="660"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="660"/>
         <source>&amp;Detailed List</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="457"/>
         <location filename="../../build/src/ui_main-win.h" line="662"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="662"/>
         <source>Ctrl+2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="465"/>
         <location filename="../../build/src/ui_main-win.h" line="664"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="664"/>
         <source>&amp;Thumbnail View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="474"/>
         <location filename="../../build/src/ui_main-win.h" line="665"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="665"/>
         <source>Cu&amp;t</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="477"/>
         <location filename="../../build/src/ui_main-win.h" line="667"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="667"/>
         <source>Ctrl+X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="486"/>
         <location filename="../../build/src/ui_main-win.h" line="669"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="669"/>
         <source>&amp;Copy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="489"/>
         <location filename="../../build/src/ui_main-win.h" line="671"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="671"/>
         <source>Ctrl+C</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="498"/>
         <location filename="../../build/src/ui_main-win.h" line="673"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="673"/>
         <source>&amp;Paste</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="501"/>
         <location filename="../../build/src/ui_main-win.h" line="675"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="675"/>
         <source>Ctrl+V</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="506"/>
         <location filename="../../build/src/ui_main-win.h" line="677"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="677"/>
         <source>Select &amp;All</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="509"/>
         <location filename="../../build/src/ui_main-win.h" line="679"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="679"/>
         <source>Ctrl+A</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="514"/>
         <location filename="../../build/src/ui_main-win.h" line="681"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="681"/>
         <source>Pr&amp;eferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="517"/>
         <location filename="../../build/src/ui_main-win.h" line="683"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="683"/>
         <source>Ctrl+,</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
         <location filename="../../build/src/ui_main-win.h" line="685"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="685"/>
         <source>&amp;Ascending</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="533"/>
         <location filename="../../build/src/ui_main-win.h" line="686"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="686"/>
         <source>&amp;Descending</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <location filename="../../build/src/ui_main-win.h" line="687"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="687"/>
         <source>&amp;By File Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
         <location filename="../../build/src/ui_main-win.h" line="688"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="688"/>
         <source>By &amp;Modification Time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="557"/>
         <location filename="../../build/src/ui_main-win.h" line="689"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="689"/>
         <source>By File &amp;Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="565"/>
         <location filename="../../build/src/ui_main-win.h" line="690"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="690"/>
         <source>By &amp;Owner</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="573"/>
         <location filename="../../build/src/ui_main-win.h" line="691"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="691"/>
         <source>&amp;Folder First</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="644"/>
         <location filename="../../build/src/ui_main-win.h" line="714"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="714"/>
         <source>&amp;Move to Trash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="647"/>
         <location filename="../../build/src/ui_main-win.h" line="716"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="716"/>
         <source>Ctrl+Backspace</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="665"/>
         <location filename="../../build/src/ui_main-win.h" line="723"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="723"/>
         <source>Get &amp;Info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
         <location filename="../../build/src/ui_main-win.h" line="725"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="725"/>
         <source>Ctrl+I</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="676"/>
         <location filename="../../build/src/ui_main-win.h" line="727"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="727"/>
         <source>&amp;Case Sensitive</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="684"/>
         <location filename="../../build/src/ui_main-win.h" line="728"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="728"/>
         <source>By File &amp;Size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="689"/>
         <location filename="../../build/src/ui_main-win.h" line="729"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="729"/>
         <source>&amp;Close Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="724"/>
         <location filename="../../build/src/ui_main-win.h" line="740"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="740"/>
         <source>&amp;Folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="736"/>
         <location filename="../../build/src/ui_main-win.h" line="744"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="744"/>
         <source>&amp;Blank File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="747"/>
         <location filename="../../build/src/ui_main-win.h" line="750"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="750"/>
         <source>Ctrl+F</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="764"/>
         <location filename="../../build/src/ui_main-win.h" line="753"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="753"/>
         <source>&amp;Go To Folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="767"/>
         <location filename="../../build/src/ui_main-win.h" line="755"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="755"/>
         <source>Go To Folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="770"/>
         <location filename="../../build/src/ui_main-win.h" line="758"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="758"/>
         <source>Ctrl+Shift+G</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="775"/>
         <location filename="../../build/src/ui_main-win.h" line="760"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="760"/>
         <source>&amp;Downloads</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="778"/>
         <location filename="../../build/src/ui_main-win.h" line="762"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="762"/>
         <source>Downloads</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="781"/>
         <location filename="../../build/src/ui_main-win.h" line="765"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="765"/>
         <source>Ctrl+Shift+L</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="789"/>
         <location filename="../../build/src/ui_main-win.h" line="767"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="767"/>
         <source>&amp;Utilities</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="792"/>
         <location filename="../../build/src/ui_main-win.h" line="769"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="769"/>
         <source>Utilities</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="795"/>
         <location filename="../../build/src/ui_main-win.h" line="772"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="772"/>
         <source>Ctrl+Shift+U</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="803"/>
         <location filename="../../build/src/ui_main-win.h" line="774"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="774"/>
         <source>&amp;Documents</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="806"/>
         <location filename="../../build/src/ui_main-win.h" line="776"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="776"/>
         <source>Documents</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="809"/>
         <location filename="../../build/src/ui_main-win.h" line="779"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="779"/>
         <source>Ctrl+Shift+O</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="817"/>
         <location filename="../../build/src/ui_main-win.h" line="781"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="781"/>
         <source>Open</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="820"/>
         <location filename="../../build/src/ui_main-win.h" line="783"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="783"/>
         <source>Ctrl+O</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="825"/>
         <location filename="../../build/src/ui_main-win.h" line="785"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="785"/>
         <source>&amp;Duplicate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="828"/>
         <location filename="../../build/src/ui_main-win.h" line="787"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="787"/>
         <source>Ctrl+D</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="833"/>
         <location filename="../../build/src/ui_main-win.h" line="789"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="789"/>
         <source>Empty Trash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="836"/>
         <location filename="../../build/src/ui_main-win.h" line="791"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="791"/>
         <source>Ctrl+Alt+Backspace</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <location filename="../../build/src/ui_main-win.h" line="793"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="793"/>
         <source>Show Contents</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="844"/>
         <location filename="../../build/src/ui_main-win.h" line="795"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="795"/>
         <source>Ctrl+Alt+Shift+O</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
         <location filename="../../build/src/ui_main-win.h" line="806"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="806"/>
         <source>Ctrl+Alt+O</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2037,54 +2184,64 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="856"/>
         <location filename="../../build/src/ui_main-win.h" line="797"/>
         <location filename="../../build/src/ui_main-win.h" line="799"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="797"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="799"/>
         <source>Go Up and Close Current</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="859"/>
         <location filename="../../build/src/ui_main-win.h" line="802"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="802"/>
         <source>Ctrl+Shift+Up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="864"/>
         <location filename="../../build/src/ui_main-win.h" line="804"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="804"/>
         <source>Open With...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="582"/>
         <location filename="../../build/src/ui_main-win.h" line="692"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="692"/>
         <source>New &amp;Tab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="278"/>
         <location filename="../../build/src/ui_main-win.h" line="612"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="612"/>
         <source>Ctrl+Up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="290"/>
         <location filename="../../build/src/ui_main-win.h" line="616"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="616"/>
         <source>Ctrl+Shift+H</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="302"/>
         <location filename="../../build/src/ui_main-win.h" line="620"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="620"/>
         <source>Ctrl+Shift+R</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="335"/>
         <location filename="../../build/src/ui_main-win.h" line="624"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="624"/>
         <source>&amp;About Filer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="585"/>
         <location filename="../../build/src/ui_main-win.h" line="694"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="694"/>
         <source>New Tab</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2093,96 +2250,113 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="705"/>
         <location filename="../../build/src/ui_main-win.h" line="697"/>
         <location filename="../../build/src/ui_main-win.h" line="736"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="697"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="736"/>
         <source>Ctrl+T</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="600"/>
         <location filename="../../build/src/ui_main-win.h" line="699"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="699"/>
         <source>Go &amp;Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="603"/>
         <location filename="../../build/src/ui_main-win.h" line="701"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="701"/>
         <source>Go Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="606"/>
         <location filename="../../build/src/ui_main-win.h" line="704"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="704"/>
         <source>Alt+Left</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="615"/>
         <location filename="../../build/src/ui_main-win.h" line="706"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="706"/>
         <source>Go &amp;Forward</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="618"/>
         <location filename="../../build/src/ui_main-win.h" line="708"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="708"/>
         <source>Go Forward</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="621"/>
         <location filename="../../build/src/ui_main-win.h" line="711"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="711"/>
         <source>Alt+Right</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="635"/>
         <location filename="../../build/src/ui_main-win.h" line="713"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="713"/>
         <source>&amp;Invert Selection</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="652"/>
         <location filename="../../build/src/ui_main-win.h" line="718"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="718"/>
         <source>&amp;Rename</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="655"/>
         <location filename="../../build/src/ui_main-win.h" line="720"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="720"/>
         <source>F2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="660"/>
         <location filename="../../build/src/ui_main-win.h" line="722"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="722"/>
         <source>C&amp;lose Tab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="692"/>
         <location filename="../../build/src/ui_main-win.h" line="731"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="731"/>
         <source>Ctrl+W</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="697"/>
         <location filename="../../build/src/ui_main-win.h" line="733"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="733"/>
         <source>Edit Bookmarks</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="702"/>
         <location filename="../../build/src/ui_main-win.h" line="734"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="734"/>
         <source>Open &amp;Terminal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="710"/>
         <location filename="../../build/src/ui_main-win.h" line="738"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="738"/>
         <source>Open as &amp;Root</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="715"/>
         <location filename="../../build/src/ui_main-win.h" line="739"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="739"/>
         <source>&amp;Edit Bookmarks</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2191,90 +2365,106 @@ Modified: %3</source>
         <location filename="../main-win.ui" line="727"/>
         <location filename="../../build/src/ui_main-win.h" line="643"/>
         <location filename="../../build/src/ui_main-win.h" line="742"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="643"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="742"/>
         <source>Ctrl+Shift+N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="739"/>
         <location filename="../../build/src/ui_main-win.h" line="746"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="746"/>
         <source>Ctrl+Alt+N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="744"/>
         <location filename="../../build/src/ui_main-win.h" line="748"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="748"/>
         <source>&amp;Find Files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="755"/>
         <location filename="../../build/src/ui_main-win.h" line="752"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="752"/>
         <source>Filter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="93"/>
         <location filename="../../build/src/ui_main-win.h" line="808"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="808"/>
         <source>Filter by string...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="117"/>
         <location filename="../../build/src/ui_main-win.h" line="809"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="809"/>
         <source>&amp;File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="121"/>
         <location filename="../../build/src/ui_main-win.h" line="810"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="810"/>
         <source>C&amp;reate New</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="141"/>
         <location filename="../../build/src/ui_main-win.h" line="811"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="811"/>
         <source>&amp;Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="147"/>
         <location filename="../../build/src/ui_main-win.h" line="812"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="812"/>
         <source>&amp;View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="151"/>
         <location filename="../../build/src/ui_main-win.h" line="813"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="813"/>
         <source>&amp;Sorting</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="177"/>
         <location filename="../../build/src/ui_main-win.h" line="814"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="814"/>
         <source>&amp;Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="195"/>
         <location filename="../../build/src/ui_main-win.h" line="815"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="815"/>
         <source>&amp;Bookmarks</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="202"/>
         <location filename="../../build/src/ui_main-win.h" line="816"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="816"/>
         <source>&amp;Go</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="223"/>
         <location filename="../../build/src/ui_main-win.h" line="817"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="817"/>
         <source>&amp;Tool</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="240"/>
         <location filename="../../build/src/ui_main-win.h" line="818"/>
+        <location filename="../../cmake-build-debug/src/ui_main-win.h" line="818"/>
         <source>Main Toolbar</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2284,54 +2474,63 @@ Modified: %3</source>
     <message>
         <location filename="../mount-operation-password.ui" line="20"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="172"/>
+        <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="172"/>
         <source>Mount</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="48"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="174"/>
+        <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="174"/>
         <source>Connect &amp;anonymously</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="58"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="175"/>
+        <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="175"/>
         <source>Connect as u&amp;ser:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="79"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="176"/>
+        <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="176"/>
         <source>&amp;Username:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="102"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="177"/>
+        <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="177"/>
         <source>&amp;Password:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="112"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="178"/>
+        <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="178"/>
         <source>&amp;Domain:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="127"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="179"/>
+        <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="179"/>
         <source>Forget password &amp;immediately</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="137"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="180"/>
+        <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="180"/>
         <source>Remember password until you &amp;logout</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="147"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="181"/>
+        <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="181"/>
         <source>Remember &amp;forever</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2341,18 +2540,21 @@ Modified: %3</source>
     <message>
         <location filename="../preferences.ui" line="14"/>
         <location filename="../../build/src/ui_preferences.h" line="616"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="616"/>
         <source>Preferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="263"/>
         <location filename="../../build/src/ui_preferences.h" line="663"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="663"/>
         <source>User Interface</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="35"/>
         <location filename="../../build/src/ui_preferences.h" line="626"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="626"/>
         <source>Behavior</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2361,300 +2563,351 @@ Modified: %3</source>
         <location filename="../preferences.ui" line="425"/>
         <location filename="../../build/src/ui_preferences.h" line="664"/>
         <location filename="../../build/src/ui_preferences.h" line="669"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="664"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="669"/>
         <source>Thumbnail</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="479"/>
         <location filename="../../build/src/ui_preferences.h" line="679"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="679"/>
         <source>Advanced</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="57"/>
         <location filename="../../build/src/ui_preferences.h" line="619"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="619"/>
         <source>Save metadata to directories (.DirInfo files)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="67"/>
         <location filename="../../build/src/ui_preferences.h" line="620"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="620"/>
         <source>Spatial mode (folders open in a new window)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="134"/>
         <location filename="../../build/src/ui_preferences.h" line="627"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="627"/>
         <source>Icons</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="163"/>
         <location filename="../../build/src/ui_preferences.h" line="629"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="629"/>
         <source>Size of big icons:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="173"/>
         <location filename="../../build/src/ui_preferences.h" line="630"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="630"/>
         <source>Size of small icons:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="183"/>
         <location filename="../../build/src/ui_preferences.h" line="631"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="631"/>
         <source>Size of thumbnails:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="193"/>
         <location filename="../../build/src/ui_preferences.h" line="632"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="632"/>
         <source>Size of side pane icons:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="146"/>
         <location filename="../../build/src/ui_preferences.h" line="628"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="628"/>
         <source>Icon theme:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="269"/>
         <location filename="../../build/src/ui_preferences.h" line="639"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="639"/>
         <source>Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="278"/>
         <location filename="../../build/src/ui_preferences.h" line="640"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="640"/>
         <source>Remember the size of the last closed window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="285"/>
         <location filename="../../build/src/ui_preferences.h" line="641"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="641"/>
         <source>Default width of new windows:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="299"/>
         <location filename="../../build/src/ui_preferences.h" line="642"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="642"/>
         <source>Default height of new windows:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="41"/>
         <location filename="../../build/src/ui_preferences.h" line="617"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="617"/>
         <source>Browsing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="47"/>
         <location filename="../../build/src/ui_preferences.h" line="618"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="618"/>
         <source>Default view mode:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="77"/>
         <location filename="../../build/src/ui_preferences.h" line="621"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="621"/>
         <source>File Operations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="83"/>
         <location filename="../../build/src/ui_preferences.h" line="622"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="622"/>
         <source>Confirm before deleting files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="455"/>
         <location filename="../../build/src/ui_preferences.h" line="668"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="668"/>
         <source>Show thumbnails of files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="448"/>
         <location filename="../../build/src/ui_preferences.h" line="667"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="667"/>
         <source>Only show thumbnails for local files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="128"/>
         <location filename="../../build/src/ui_preferences.h" line="638"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="638"/>
         <source>Display</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <location filename="../../build/src/ui_preferences.h" line="623"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="623"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="97"/>
         <location filename="../../build/src/ui_preferences.h" line="624"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="624"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="104"/>
         <location filename="../../build/src/ui_preferences.h" line="625"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="625"/>
         <source>Don&apos;t ask options on launch executable file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="206"/>
         <location filename="../../build/src/ui_preferences.h" line="633"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="633"/>
         <source>User interface</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <location filename="../../build/src/ui_preferences.h" line="635"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="635"/>
         <source>Treat backup files as hidden</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <location filename="../../build/src/ui_preferences.h" line="636"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="636"/>
         <source>Always show full file names</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="239"/>
         <location filename="../../build/src/ui_preferences.h" line="637"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="637"/>
         <source>Show icons of hidden files shadowed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="316"/>
         <location filename="../../build/src/ui_preferences.h" line="643"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="643"/>
         <source>Show in places</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="323"/>
         <location filename="../../build/src/ui_preferences.h" line="648"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="648"/>
         <source>Home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="335"/>
         <location filename="../../build/src/ui_preferences.h" line="650"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="650"/>
         <source>Desktop</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="347"/>
         <location filename="../../build/src/ui_preferences.h" line="652"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="652"/>
         <source>Trash can</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="359"/>
         <location filename="../../build/src/ui_preferences.h" line="654"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="654"/>
         <source>Computer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="371"/>
         <location filename="../../build/src/ui_preferences.h" line="656"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="656"/>
         <source>Applications</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="379"/>
         <location filename="../../build/src/ui_preferences.h" line="658"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="658"/>
         <source>Devices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="387"/>
         <location filename="../../build/src/ui_preferences.h" line="660"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="660"/>
         <source>Network</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="431"/>
         <location filename="../../build/src/ui_preferences.h" line="665"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="665"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="438"/>
         <location filename="../../build/src/ui_preferences.h" line="666"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="666"/>
         <source> KB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="579"/>
         <location filename="../../build/src/ui_preferences.h" line="687"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="687"/>
         <source>Mount</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="585"/>
         <location filename="../../build/src/ui_preferences.h" line="680"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="680"/>
         <source>Auto Mount</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="591"/>
         <location filename="../../build/src/ui_preferences.h" line="681"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="681"/>
         <source>Mount mountable volumes automatically on program startup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="598"/>
         <location filename="../../build/src/ui_preferences.h" line="682"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="682"/>
         <source>Mount removable media automatically when they are inserted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="605"/>
         <location filename="../../build/src/ui_preferences.h" line="683"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="683"/>
         <source>Show available options for removable media when they are inserted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="615"/>
         <location filename="../../build/src/ui_preferences.h" line="684"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="684"/>
         <source>When removable medium unmounted:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="621"/>
         <location filename="../../build/src/ui_preferences.h" line="685"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="685"/>
         <source>Close &amp;tab containing removable medium</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="628"/>
         <location filename="../../build/src/ui_preferences.h" line="686"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="686"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="485"/>
         <location filename="../../build/src/ui_preferences.h" line="670"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="670"/>
         <source>Programs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="494"/>
         <location filename="../../build/src/ui_preferences.h" line="671"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="671"/>
         <source>Terminal emulator:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="501"/>
         <location filename="../../build/src/ui_preferences.h" line="672"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="672"/>
         <source>Switch &amp;user command:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="511"/>
         <location filename="../../build/src/ui_preferences.h" line="673"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="673"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation type="unfinished"></translation>
@@ -2662,30 +2915,35 @@ Modified: %3</source>
     <message>
         <location filename="../preferences.ui" line="532"/>
         <location filename="../../build/src/ui_preferences.h" line="675"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="675"/>
         <source>Templates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="538"/>
         <location filename="../../build/src/ui_preferences.h" line="676"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="676"/>
         <source>Show only user defined templates in menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="545"/>
         <location filename="../../build/src/ui_preferences.h" line="677"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="677"/>
         <source>Show only one template for each MIME type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="552"/>
         <location filename="../../build/src/ui_preferences.h" line="678"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="678"/>
         <source>Run default application after creation from template</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="212"/>
         <location filename="../../build/src/ui_preferences.h" line="634"/>
+        <location filename="../../cmake-build-debug/src/ui_preferences.h" line="634"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2757,54 +3015,63 @@ Modified: %3</source>
     <message>
         <location filename="../rename-dialog.ui" line="14"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="156"/>
+        <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="156"/>
         <source>Confirm to replace files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="35"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="157"/>
+        <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="157"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;There is already a file with the same name in this location.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Do you want to replace the existing file?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="56"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="158"/>
+        <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="158"/>
         <source>dest</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="63"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="159"/>
+        <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="159"/>
         <source>with the following file?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="76"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="160"/>
+        <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="160"/>
         <source>src file info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="89"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="161"/>
+        <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="161"/>
         <source>dest file info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="102"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="162"/>
+        <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="162"/>
         <source>src</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="122"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="163"/>
+        <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="163"/>
         <source>&amp;File name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="137"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="164"/>
+        <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="164"/>
         <source>Apply this option to all existing files</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2814,156 +3081,182 @@ Modified: %3</source>
     <message>
         <location filename="../filesearch.ui" line="14"/>
         <location filename="../../build/src/ui_filesearch.h" line="398"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="398"/>
         <source>Search Files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="29"/>
         <location filename="../../build/src/ui_filesearch.h" line="408"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="408"/>
         <source>Name/Location</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="35"/>
         <location filename="../../build/src/ui_filesearch.h" line="399"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="399"/>
         <source>File Name Patterns:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="41"/>
         <location filename="../../build/src/ui_filesearch.h" line="400"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="400"/>
         <source>*</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="48"/>
         <location filename="../../build/src/ui_filesearch.h" line="401"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="401"/>
         <source>Case insensitive</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="55"/>
         <location filename="../../build/src/ui_filesearch.h" line="402"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="402"/>
         <source>Use regular expression</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="65"/>
         <location filename="../../build/src/ui_filesearch.h" line="403"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="403"/>
         <source>Places to Search:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="78"/>
         <location filename="../../build/src/ui_filesearch.h" line="404"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="404"/>
         <source>&amp;Add</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="90"/>
         <location filename="../../build/src/ui_filesearch.h" line="405"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="405"/>
         <source>&amp;Remove</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="119"/>
         <location filename="../../build/src/ui_filesearch.h" line="406"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="406"/>
         <source>Search in sub directories</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="126"/>
         <location filename="../../build/src/ui_filesearch.h" line="407"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="407"/>
         <source>Search for hidden files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="137"/>
         <location filename="../../build/src/ui_filesearch.h" line="416"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="416"/>
         <source>File Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="143"/>
         <location filename="../../build/src/ui_filesearch.h" line="409"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="409"/>
         <source>Only search for files of following types:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="149"/>
         <location filename="../../build/src/ui_filesearch.h" line="410"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="410"/>
         <source>Text files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="156"/>
         <location filename="../../build/src/ui_filesearch.h" line="411"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="411"/>
         <source>Image files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="163"/>
         <location filename="../../build/src/ui_filesearch.h" line="412"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="412"/>
         <source>Audio files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="170"/>
         <location filename="../../build/src/ui_filesearch.h" line="413"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="413"/>
         <source>Video files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="177"/>
         <location filename="../../build/src/ui_filesearch.h" line="414"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="414"/>
         <source>Documents</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="184"/>
         <location filename="../../build/src/ui_filesearch.h" line="415"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="415"/>
         <source>Folders</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="208"/>
         <location filename="../../build/src/ui_filesearch.h" line="420"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="420"/>
         <source>Content</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="214"/>
         <location filename="../../build/src/ui_filesearch.h" line="417"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="417"/>
         <source>File contains:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="223"/>
         <location filename="../../build/src/ui_filesearch.h" line="418"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="418"/>
         <source>Case insensiti&amp;ve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="230"/>
         <location filename="../../build/src/ui_filesearch.h" line="419"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="419"/>
         <source>&amp;Use regular expression</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="254"/>
         <location filename="../../build/src/ui_filesearch.h" line="437"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="437"/>
         <source>Properties</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="260"/>
         <location filename="../../build/src/ui_filesearch.h" line="421"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="421"/>
         <source>File Size:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="266"/>
         <location filename="../../build/src/ui_filesearch.h" line="422"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="422"/>
         <source>Larger than:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2972,6 +3265,8 @@ Modified: %3</source>
         <location filename="../filesearch.ui" line="323"/>
         <location filename="../../build/src/ui_filesearch.h" line="423"/>
         <location filename="../../build/src/ui_filesearch.h" line="429"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="423"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="429"/>
         <source>Bytes</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2980,6 +3275,8 @@ Modified: %3</source>
         <location filename="../filesearch.ui" line="328"/>
         <location filename="../../build/src/ui_filesearch.h" line="424"/>
         <location filename="../../build/src/ui_filesearch.h" line="430"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="424"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="430"/>
         <source>KiB</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2988,6 +3285,8 @@ Modified: %3</source>
         <location filename="../filesearch.ui" line="333"/>
         <location filename="../../build/src/ui_filesearch.h" line="425"/>
         <location filename="../../build/src/ui_filesearch.h" line="431"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="425"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="431"/>
         <source>MiB</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2996,30 +3295,36 @@ Modified: %3</source>
         <location filename="../filesearch.ui" line="338"/>
         <location filename="../../build/src/ui_filesearch.h" line="426"/>
         <location filename="../../build/src/ui_filesearch.h" line="432"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="426"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="432"/>
         <source>GiB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="307"/>
         <location filename="../../build/src/ui_filesearch.h" line="428"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="428"/>
         <source>Smaller than:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="351"/>
         <location filename="../../build/src/ui_filesearch.h" line="434"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="434"/>
         <source>Last Modified Time:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="357"/>
         <location filename="../../build/src/ui_filesearch.h" line="435"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="435"/>
         <source>Earlier than:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="364"/>
         <location filename="../../build/src/ui_filesearch.h" line="436"/>
+        <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="436"/>
         <source>Later than:</source>
         <translation type="unfinished"></translation>
     </message>

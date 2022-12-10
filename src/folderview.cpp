@@ -418,6 +418,8 @@ FolderView::FolderView(ViewMode _mode, QWidget* parent):
   fileLauncher_(NULL),
   model_(NULL) {
 
+  springLoadedFolderTimer_ = new QTimer();
+
   iconSize_[IconMode - FirstViewMode] = QSize(48, 48);
   iconSize_[CompactMode - FirstViewMode] = QSize(24, 24);
   iconSize_[ThumbnailMode - FirstViewMode] = QSize(128, 128);
@@ -877,16 +879,29 @@ void FolderView::childDragMoveEvent(QDragMoveEvent* e) {
   // it doesn't replace dropEvent which is for when you drop on your target
   qDebug("FolderView::childDragMoveEvent(QDragMoveEvent* e) = drag move");
 
-  springLoadedFolderTimer_->deleteLater();
+  qDebug() << "Alive? 1";
+  // Here we got: QCoreApplication::postEvent: Unexpected null receiver
+  // We need to check whether springLoadedFolderTimer_ is still alive
+    // before we use it.
+    if(springLoadedFolderTimer_ && springLoadedFolderTimer_->isActive()) {
+        springLoadedFolderTimer_->stop();
+        springLoadedFolderTimer_->deleteLater();
+    }
+  qDebug() << "Alive? 2";
   springLoadedFolderTimer_ = NULL;
+
   springLoadedFolderPath = "";
+  qDebug() << "Alive? 4";
 
   // Find out what has been dragged onto what
   QStringList sourcePaths = {};
+  qDebug() << "Alive? 5";
   QString destinationPath = "";
   const QMimeData *mimeData = e->mimeData();
 
   qDebug() << "MIME dropped:" << mimeData->formats();
+
+  qDebug() << "Alive? 6";
 
   // probono: Find out the source path (where objects are coming from)
   QModelIndexList sourceIndexes = selectedIndexes(); // the dragged items (source)

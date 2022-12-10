@@ -5,3 +5,5 @@ CMakeLists.txt.user*
 *.diff
 *.autosave
 *.DirInfo
+.idea
+cmake-build-debug/
