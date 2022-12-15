@@ -935,10 +935,9 @@ void FolderView::childDragMoveEvent(QDragMoveEvent* e) {
       FmFileInfo* info = model_->fileInfoFromIndex(index);
       // animate...
       destinationPath = QString(fm_path_to_str(fm_file_info_get_path(info)));
+  } else {
+       return;
   }
-
-  if(destinationPath == "")
-      return;
 
   qDebug() << "destinationPath" << destinationPath;
 
@@ -1017,14 +1016,22 @@ void FolderView::childDropEvent(QDropEvent* e) {
       QModelIndex index = model_->index(dropIndex.row(), 0);
       FmFileInfo* info = model_->fileInfoFromIndex(index);
       // animate...
+      if (info == nullptr)
+          return;
       destinationPath = QString(fm_path_to_str(fm_file_info_get_path(info)));
   } else {
-      // Dropped onto whitespace (e.g., inside a folder), not onto an icon
-      // probono: This is a very hackish way. Not clear whether it always gives the correct result
-      QModelIndex index = model_->index(0, 0);
-      FmFileInfo* info = model_->fileInfoFromIndex(index);
-      destinationPath = QFileInfo(QString(fm_path_to_str(fm_file_info_get_path(info)))).dir().path();
+      qDebug("drop");
+      if(e->keyboardModifiers() == Qt::NoModifier) {
+        // if no key modifiers are used, popup a menu
+        // to ask the user for the action he/she wants to perform.
+        Qt::DropAction action = DndActionMenu::askUser(QCursor::pos());
+        e->setDropAction(action);
+      }
+      return;
   }
+
+  if (destinationPath == nullptr)
+      return;
   qDebug() << "destinationPath" << destinationPath;
 
   // probono: Check whether the destination is an application,
