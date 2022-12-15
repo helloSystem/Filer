@@ -22,14 +22,14 @@
         <location filename="../../build/src/ui_about.h" line="144"/>
         <location filename="../../cmake-build-debug/src/ui_about.h" line="144"/>
         <source>The Desktop Experience</source>
-        <translation type="unfinished"></translation>
+        <translation>デスクトップでの体験</translation>
     </message>
     <message>
         <location filename="../about.ui" line="70"/>
         <location filename="../../build/src/ui_about.h" line="145"/>
         <location filename="../../cmake-build-debug/src/ui_about.h" line="145"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="99"/>
@@ -77,7 +77,35 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
 Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
 
 Used with permission of the creator https://raphaellopes.me/</source>
-        <translation type="unfinished"></translation>
+        <translation>フィラー
+
+Copyright (C) 2020-21 Simon Peter（サイモン・ピーター
+著作権(C) 2021 Chris Moore
+
+元々はPCManファイルマネージャがベース
+部分的な著作権 (C) 2009-14 洪任諭 (Hong Jen Yee)
+
+このプログラムはフリーソフトウェアです。
+このプログラムはフリー・ソフトウェアです。あなたは、Free Software Foundation が発行した GNU General Public License の条項に従って、このプログラムを再配布および/または変更することができます。
+あなたは、Free Software Foundation が発行した GNU 一般公衆利用許諾契約書 (バージョン2) の定める条件の下で本プログラムを再配布、あるいは変更することができます。
+あなたは、フリーソフトウェア財団が公表したGNU一般公衆利用許諾書バージョン2、またはそれ以降のバージョンのいずれかに従い、本プログラムを再配布または変更することができます。
+
+このプログラムは、有用であることを願って配布されています。
+このプログラムは、有用であることを願って配布されますが、以下のような暗黙の保証も含めて、いかなる保証も行ないません。
+商品性または特定目的への適合性についての暗黙の保証もありません。 詳細は
+詳細はGNU 一般公衆利用許諾契約書をご覧ください。
+
+あなたはこのプログラムと一緒にGNU一般公衆利用許諾書の複製物を受け取っているはずです。
+このプログラムと一緒にGNU一般公衆利用許諾書のコピーを受け取っているはずです。
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USAに連絡してください。
+
+アプリケーションアイコン
+
+https://dribbble.com/shots/2541211--Pirate-Finder-icon#
+
+著作権 (C) 2016 ラファエル・ロペス &lt;raphaellopes8@gmail.com&gt;
+
+作成者の許可を得て使用しています https://raphaellopes.me/</translation>
     </message>
     <message>
         <source>Lightweight file manager</source>
@@ -109,19 +137,19 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 
 Copyright (C) 2009 - 2013 洪任諭 (Hong Jen Yee)
 
-&#x3000;このプログラムはフリーソフトウェアです。
+　このプログラムはフリーソフトウェアです。
 あなたはこれを、フリーソフトウェア財団によって発行された
 GNU 一般公衆利用許諾契約書(バージョン2か、希望によっては
 それ以降のバージョンのうちどれか)の定める条件の下で
 再頒布または改変することができます。
 
-&#x3000;このプログラムは有用であることを願って頒布されますが、
+　このプログラムは有用であることを願って頒布されますが、
 *全くの無保証* です。
 商業可能性の保証や特定の目的への適合性は、
 言外に示されたものも含め全く存在しません。
 詳しくはGNU 一般公衆利用許諾契約書をご覧ください。
 
-&#x3000;あなたはこのプログラムとともに、
+　あなたはこのプログラムとともに、
 GNU 一般公衆利用許諾契約書の複製物を1部
 受け取ったはずです。もし受け取っていなければ、
 フリーソフトウェア財団まで請求してください。
@@ -169,19 +197,19 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.<
 
 Copyright (C) 2009 - 2013 洪任諭 (Hong Jen Yee)
 
-&#x3000;このプログラムはフリーソフトウェアです。
+　このプログラムはフリーソフトウェアです。
 あなたはこれを、フリーソフトウェア財団によって発行された
 GNU 一般公衆利用許諾契約書(バージョン2か、希望によっては
 それ以降のバージョンのうちどれか)の定める条件の下で
 再頒布または改変することができます。
 
-&#x3000;このプログラムは有用であることを願って頒布されますが、
+　このプログラムは有用であることを願って頒布されますが、
 *全くの無保証* です。
 商業可能性の保証や特定の目的への適合性は、
 言外に示されたものも含め全く存在しません。
 詳しくはGNU 一般公衆利用許諾契約書をご覧ください。
 
-&#x3000;あなたはこのプログラムとともに、
+　あなたはこのプログラムとともに、
 GNU 一般公衆利用許諾契約書の複製物を1部
 受け取ったはずです。もし受け取っていなければ、
 フリーソフトウェア財団まで請求してください。
@@ -319,7 +347,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <location filename="../../build/src/ui_desktop-folder.h" line="72"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-folder.h" line="72"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>フォーム</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
@@ -347,14 +375,14 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <location filename="../../build/src/ui_desktop-folder.h" line="81"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-folder.h" line="81"/>
         <source>Folder path</source>
-        <translation type="unfinished">フォルダパス</translation>
+        <translation>フォルダーのパス</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="82"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-folder.h" line="82"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished">参照(&amp;B)</translation>
+        <translation>参照(&amp;B)</translation>
     </message>
 </context>
 <context>
@@ -392,28 +420,28 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="198"/>
         <source>Colors</source>
-        <translation type="unfinished"></translation>
+        <translation>カラー</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="150"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="203"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="203"/>
         <source>Background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>背景の色</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="104"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="199"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="199"/>
         <source>Text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>テキストの色</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="143"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="202"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="202"/>
         <source>Shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>シャドウの色:</translation>
     </message>
     <message>
         <source>Select background color:</source>
@@ -626,7 +654,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <location filename="../../build/src/ui_file-props.h" line="380"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="380"/>
         <source>Open with</source>
-        <translation type="unfinished"></translation>
+        <translation>開く</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="323"/>
@@ -647,14 +675,14 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <location filename="../../build/src/ui_file-props.h" line="362"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="362"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>インフォメーション</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="60"/>
         <location filename="../../build/src/ui_file-props.h" line="363"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="363"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>テキストのラベル</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="185"/>
@@ -675,7 +703,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <location filename="../../build/src/ui_file-props.h" line="385"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="385"/>
         <source>Everyone</source>
-        <translation type="unfinished"></translation>
+        <translation>全て</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="234"/>
@@ -860,7 +888,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../application.cpp" line="286"/>
         <source>Launch desktop manager (deprecated)</source>
-        <translation type="unfinished"></translation>
+        <translation>デスクトップマネージャーを起動する（非推奨）</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="298"/>
@@ -912,7 +940,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="50"/>
         <source>Transparent</source>
-        <translation type="unfinished"></translation>
+        <translation>トランスペアレント</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="51"/>
@@ -955,7 +983,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="534"/>
         <source>Version: %1</source>
-        <translation type="unfinished">バージョン: %1</translation>
+        <translation>バージョン: %1</translation>
     </message>
 </context>
 <context>
@@ -963,17 +991,17 @@ Functionality may be broken.</source>
     <message>
         <location filename="../gotofolderwindow.cpp" line="47"/>
         <source>Go</source>
-        <translation type="unfinished">開く</translation>
+        <translation>開く</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="48"/>
         <source>Cancel</source>
-        <translation type="unfinished">キャンセル</translation>
+        <translation>キャンセル</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="59"/>
         <source>Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>開くフォルダ</translation>
     </message>
 </context>
 <context>
@@ -981,7 +1009,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../mainwindow.cpp" line="212"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>テキストを全て削除  (Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="795"/>
@@ -1275,12 +1303,12 @@ Functionality may be broken.</source>
     <message>
         <location filename="../createnewmenu.cpp" line="29"/>
         <source>Folder</source>
-        <translation type="unfinished">フォルダー</translation>
+        <translation>フォルダー</translation>
     </message>
     <message>
         <location filename="../createnewmenu.cpp" line="33"/>
         <source>Blank File</source>
-        <translation type="unfinished">空のファイル</translation>
+        <translation>空のファイル</translation>
     </message>
 </context>
 <context>
@@ -1301,12 +1329,12 @@ Functionality may be broken.</source>
     <message>
         <location filename="../dirtreeview.cpp" line="220"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished">新しいウインドウを開く(&amp;D)</translation>
+        <translation>新しいウインドウを開く(&amp;D)</translation>
     </message>
     <message>
         <location filename="../dirtreeview.cpp" line="226"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished">端末内で開く(&amp;L)</translation>
+        <translation>端末内で開く(&amp;L)</translation>
     </message>
 </context>
 <context>
@@ -1428,7 +1456,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="165"/>
         <source>Create &amp;New</source>
-        <translation type="unfinished">新規作成 (&amp;N)</translation>
+        <translation>新規作成 (&amp;N)</translation>
     </message>
     <message>
         <source>Extract to...</source>
@@ -1452,7 +1480,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../fileoperation.cpp" line="223"/>
         <source>Error</source>
-        <translation type="unfinished">エラー</translation>
+        <translation>エラー</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="224"/>
@@ -1625,7 +1653,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>Error</source>
-        <translation type="unfinished">エラー</translation>
+        <translation>エラー</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
@@ -2326,7 +2354,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="781"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="781"/>
         <source>Open</source>
-        <translation type="unfinished">開く</translation>
+        <translation>開く</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="820"/>
@@ -2354,7 +2382,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="789"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="789"/>
         <source>Empty Trash</source>
-        <translation type="unfinished">ゴミ箱を空にする</translation>
+        <translation>ゴミ箱を空にする</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="836"/>
@@ -2406,7 +2434,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="804"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="804"/>
         <source>Open With...</source>
-        <translation type="unfinished">アプリケーションで開く</translation>
+        <translation>アプリケーションで開く</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
@@ -2701,7 +2729,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="714"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="714"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished">ゴミ箱へ移動(&amp;M)</translation>
+        <translation>ゴミ箱へ移動(&amp;M)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="647"/>
@@ -3175,14 +3203,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="648"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="648"/>
         <source>Home</source>
-        <translation type="unfinished">ホーム</translation>
+        <translation>ホーム</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="335"/>
         <location filename="../../build/src/ui_preferences.h" line="650"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="650"/>
         <source>Desktop</source>
-        <translation type="unfinished">デスクトップ</translation>
+        <translation>デスクトップ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="347"/>
@@ -3196,28 +3224,28 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="654"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="654"/>
         <source>Computer</source>
-        <translation type="unfinished">コンピューター</translation>
+        <translation>コンピューター</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="371"/>
         <location filename="../../build/src/ui_preferences.h" line="656"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="656"/>
         <source>Applications</source>
-        <translation type="unfinished">アプリケーション</translation>
+        <translation>アプリケーション</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="379"/>
         <location filename="../../build/src/ui_preferences.h" line="658"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="658"/>
         <source>Devices</source>
-        <translation type="unfinished">デバイス</translation>
+        <translation>デバイス</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="387"/>
         <location filename="../../build/src/ui_preferences.h" line="660"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="660"/>
         <source>Network</source>
-        <translation type="unfinished">ネットワーク</translation>
+        <translation>ネットワーク</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="455"/>
@@ -3280,7 +3308,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="687"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="687"/>
         <source>Mount</source>
-        <translation type="unfinished">マウント</translation>
+        <translation>マウント</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="615"/>
@@ -3697,7 +3725,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="437"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="437"/>
         <source>Properties</source>
-        <translation type="unfinished">プロパティー</translation>
+        <translation>プロパティー</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="260"/>
@@ -3779,7 +3807,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="436"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="436"/>
         <source>Later than:</source>
-        <translation type="unfinished"></translation>
+        <translation>以前の:</translation>
     </message>
 </context>
 </TS>
