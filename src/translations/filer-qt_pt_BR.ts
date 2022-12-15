@@ -324,7 +324,7 @@ Usado com permissão do criador https://raphaellopes.me/</translation>
         <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="198"/>
         <source>Colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Cores</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="150"/>
@@ -622,7 +622,12 @@ from an application bundle.
 
 This is not how it should be invoked.
 Functionality may be broken.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 não foi iniciado pelo comando launch
+de um pacote de aplicativos.
+
+Não é assim que deve ser chamado.
+
+A funcionalidade pode estar quebrada.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="215"/>
