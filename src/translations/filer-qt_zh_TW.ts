@@ -782,7 +782,11 @@ from an application bundle.
 
 This is not how it should be invoked.
 Functionality may be broken.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 未由應用程式捆綁包中的
+啟動命令啟動。
+
+這不是應該提取它的方式。
+功能可能已損毀。</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="215"/>
@@ -797,7 +801,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../application.cpp" line="232"/>
         <source>The &apos;eject-and-clean&apos; command is missing.</source>
-        <translation type="unfinished">缺少「彈出並清理」命令。</translation>
+        <translation>缺少「退出並清理」命令。</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="286"/>
@@ -1033,27 +1037,27 @@ Functionality may be broken.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="278"/>
         <source>%n items</source>
-        <translation type="unfinished">
-            <numerusform>%n 項</numerusform>
+        <translation>
+            <numerusform>%n 個項目</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="280"/>
         <source>1 item</source>
-        <translation type="unfinished">1 項</translation>
+        <translation>1 個項目</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="436"/>
         <source>%1 items selected</source>
-        <translation type="unfinished">
-            <numerusform>已選擇 %1 個項目</numerusform>
+        <translation>
+            <numerusform>已選取 %1 個項目</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="440"/>
         <source>%1 item selected</source>
-        <translation type="unfinished">
-            <numerusform>已選擇 %1 項</numerusform>
+        <translation>
+            <numerusform>已選取 %1 個項目</numerusform>
         </translation>
     </message>
     <message>
@@ -1463,7 +1467,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperation.cpp" line="273"/>
         <source>%1 is required by the system and cannot be deleted.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 是系統必要檔案，無法刪除。</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="281"/>
@@ -1485,7 +1489,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperation.cpp" line="305"/>
         <source>%1 is required by the system and cannot be moved to the Trash.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 是系統必要檔案，無法移動到垃圾桶。</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="314"/>
@@ -1878,7 +1882,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesview.cpp" line="400"/>
         <source>Mount</source>
-        <translation>掛載</translation>
+        <translation>裝載</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="406"/>
@@ -2187,7 +2191,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="683"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="683"/>
         <source>Ctrl+,</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+,</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -2397,7 +2401,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="795"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="795"/>
         <source>Ctrl+Alt+Shift+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+Shift+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
@@ -2911,7 +2915,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_mount-operation-password.h" line="172"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="172"/>
         <source>Mount</source>
-        <translation>掛載</translation>
+        <translation>裝載</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="48"/>
@@ -3339,14 +3343,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="687"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="687"/>
         <source>Mount</source>
-        <translation type="unfinished">掛載</translation>
+        <translation>裝載</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="615"/>
         <location filename="../../build/src/ui_preferences.h" line="684"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="684"/>
         <source>When removable medium unmounted:</source>
-        <translation>退出外接儲存裝置時:</translation>
+        <translation>卸載外接儲存裝置時:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="501"/>
@@ -3375,21 +3379,21 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="680"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="680"/>
         <source>Auto Mount</source>
-        <translation>自動掛載</translation>
+        <translation>自動裝載</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="591"/>
         <location filename="../../build/src/ui_preferences.h" line="681"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="681"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation>掛載可掛載的磁碟</translation>
+        <translation>裝載可裝載的磁碟</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="598"/>
         <location filename="../../build/src/ui_preferences.h" line="682"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="682"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation>插入外接媒體時自動掛載</translation>
+        <translation>插入外接媒體時自動裝載</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="605"/>
