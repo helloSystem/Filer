@@ -15,7 +15,7 @@
         <location filename="../../build/src/ui_about.h" line="142"/>
         <location filename="../../cmake-build-debug/src/ui_about.h" line="142"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Filer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="60"/>
@@ -29,7 +29,7 @@
         <location filename="../../build/src/ui_about.h" line="145"/>
         <location filename="../../cmake-build-debug/src/ui_about.h" line="145"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="99"/>
@@ -42,13 +42,14 @@
 
 Application icon:
 * Raphael Lopes (https://raphaellopes.me/)</source>
-        <translation>Programming:
+        <translation>编程：
 * Simon Peter (probono)
 * Chris Moore (moochris)
-* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+* Hong Jen Yee (PCMan)
+&lt;pcman.tw@gmail.com&gt;
 
-Application icon:
-* Raphael Lopes (https://raphaellopes.me/)</translation>
+应用程序图标：
+Raphael Lopes （https://raphaellopes.me/）</translation>
     </message>
     <message>
         <location filename="../about.ui" line="125"/>
@@ -83,7 +84,36 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
 Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
 
 Used with permission of the creator https://raphaellopes.me/</source>
-        <translation type="unfinished"></translation>
+        <translation>文件管理器
+
+版权所有 （C） 2020-21 Simon Peter
+版权所有 （C） 2021 Chris Moore
+
+最初基于 PCMan 文件管理器
+部分 版权所有 （C） 2009-14 洪任諭
+
+该程序是免费软件;您可以重新分发它和/或
+根据 GNU 通用公共许可证的条款对其进行修改
+由自由软件基金会发布;任一版本 2
+或（根据您的选择）任何更高版本。
+
+分发该程序是希望它有用，
+但没有任何保证;甚至没有默示的保证
+适销性或特定用途的适用性。 请参阅的
+GNU 通用公共许可证 了解更多详情。
+
+您应该已经收到 GNU 通用公共许可证的副本
+以及该程序;如果没有，请写信给自由软件
+基金会公司，富兰克林街 51 号，五楼，波士顿，马萨诸塞州 02110-1301，美国。
+
+应用程序图标
+
+https://dribbble.com/shots/2541211--Pirate-Finder-icon#
+
+版权所有 （C） 2016 Raphael Lopes
+&lt;raphaellopes8@gmail.com&gt;
+
+经创作者许可使用 https://raphaellopes.me/</translation>
     </message>
     <message>
         <source>Lightweight file manager</source>
@@ -113,7 +143,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../../build/src/ui_about.h" line="184"/>
         <location filename="../../cmake-build-debug/src/ui_about.h" line="184"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>许可证</translation>
     </message>
 </context>
 <context>
@@ -123,35 +153,35 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="150"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="150"/>
         <source>Choose an Application</source>
-        <translation type="unfinished"></translation>
+        <translation>选择应用程序</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="36"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="151"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="151"/>
         <source>Installed Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>已安装的应用程序</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="46"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="163"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="163"/>
         <source>Custom Command</source>
-        <translation type="unfinished"></translation>
+        <translation>自定义命令</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="52"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="152"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="152"/>
         <source>Command line to execute:</source>
-        <translation type="unfinished"></translation>
+        <translation>要执行的命令行：</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="62"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="153"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="153"/>
         <source>Application name:</source>
-        <translation type="unfinished"></translation>
+        <translation>应用程序名称：</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="72"/>
@@ -164,28 +194,34 @@ Used with permission of the creator https://raphaellopes.me/</source>
 &lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: Represents a single URI of the file&lt;/li&gt;
 &lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: Represents multiple URIs&lt;/li&gt;
 &lt;/ul&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;这些特殊代码可以在命令行中使用：&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;%f&lt;/b&gt;：表示单个文件名&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%F&lt;/b&gt;：表示多个文件名&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%u&lt;/b&gt;：表示文件的单个 URI&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%U&lt;/b&gt;：表示多个 URI&lt;/li&gt;
+&lt;/ul&gt;</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="91"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="161"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="161"/>
         <source>Keep terminal window open after command execution</source>
-        <translation type="unfinished"></translation>
+        <translation>命令执行后保持终端窗口打开</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="98"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="162"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="162"/>
         <source>Execute in terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>在终端模拟器中执行</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="109"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="164"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="164"/>
         <source>Set selected application as default action of this file type</source>
-        <translation type="unfinished"></translation>
+        <translation>将所选应用程序设置为此文件类型的默认操作</translation>
     </message>
 </context>
 <context>
@@ -195,35 +231,35 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../../build/src/ui_autorun.h" line="108"/>
         <location filename="../../cmake-build-debug/src/ui_autorun.h" line="108"/>
         <source>Removable medium is inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>插入可移动媒体</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <location filename="../../build/src/ui_autorun.h" line="110"/>
         <location filename="../../cmake-build-debug/src/ui_autorun.h" line="110"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;插入可移动媒体&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
         <location filename="../../build/src/ui_autorun.h" line="111"/>
         <location filename="../../cmake-build-debug/src/ui_autorun.h" line="111"/>
         <source>Type of medium:</source>
-        <translation type="unfinished"></translation>
+        <translation>媒体类型：</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="47"/>
         <location filename="../../build/src/ui_autorun.h" line="112"/>
         <location filename="../../cmake-build-debug/src/ui_autorun.h" line="112"/>
         <source>Detecting...</source>
-        <translation type="unfinished"></translation>
+        <translation>检测中…</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="56"/>
         <location filename="../../build/src/ui_autorun.h" line="113"/>
         <location filename="../../cmake-build-debug/src/ui_autorun.h" line="113"/>
         <source>Please select the action you want to perform:</source>
-        <translation type="unfinished"></translation>
+        <translation>请选择您要执行的操作：</translation>
     </message>
 </context>
 <context>
@@ -233,42 +269,42 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../../build/src/ui_desktop-folder.h" line="72"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-folder.h" line="72"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>从</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="23"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="73"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-folder.h" line="73"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>桌面</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="29"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="74"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-folder.h" line="74"/>
         <source>Desktop folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>桌面文件夹：</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="36"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="76"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-folder.h" line="76"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>图像文件</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="42"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="81"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-folder.h" line="81"/>
         <source>Folder path</source>
-        <translation type="unfinished"></translation>
+        <translation>文件夹路径</translation>
     </message>
     <message>
         <location filename="../desktop-folder.ui" line="49"/>
         <location filename="../../build/src/ui_desktop-folder.h" line="82"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-folder.h" line="82"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>浏览(_B)</translation>
     </message>
 </context>
 <context>
@@ -278,77 +314,77 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../../build/src/ui_desktop-preferences.h" line="186"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="186"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>桌面首选项</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="20"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="187"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="187"/>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation>背景</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="45"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="189"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="189"/>
         <source>Wallpaper mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>壁纸模式：</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="32"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="188"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="188"/>
         <source>Wallpaper image file:</source>
-        <translation type="unfinished"></translation>
+        <translation>壁纸图像文件：</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="92"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="198"/>
         <source>Colors</source>
-        <translation type="unfinished"></translation>
+        <translation>颜色</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="150"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="203"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="203"/>
         <source>Background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>背景颜色：</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="104"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="199"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="199"/>
         <source>Text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>文本颜色：</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="143"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="202"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="202"/>
         <source>Shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>阴影颜色：</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="67"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="191"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="191"/>
         <source>Image file</source>
-        <translation type="unfinished"></translation>
+        <translation>图像文件</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="73"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="196"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="196"/>
         <source>Image file path</source>
-        <translation type="unfinished"></translation>
+        <translation>图像文件路径</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="80"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="197"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="197"/>
         <source>&amp;Browse</source>
-        <translation type="unfinished"></translation>
+        <translation>浏览(_B)</translation>
     </message>
 </context>
 <context>
@@ -358,21 +394,21 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="103"/>
         <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="103"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑书签</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="42"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="106"/>
         <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="106"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>名称</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="47"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="105"/>
         <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="105"/>
         <source>Location</source>
-        <translation type="unfinished"></translation>
+        <translation>位置</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="67"/>
@@ -3311,35 +3347,35 @@ Modified: %3</source>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="426"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="432"/>
         <source>GiB</source>
-        <translation type="unfinished"></translation>
+        <translation>GiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="307"/>
         <location filename="../../build/src/ui_filesearch.h" line="428"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="428"/>
         <source>Smaller than:</source>
-        <translation type="unfinished"></translation>
+        <translation>小于：</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="351"/>
         <location filename="../../build/src/ui_filesearch.h" line="434"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="434"/>
         <source>Last Modified Time:</source>
-        <translation type="unfinished"></translation>
+        <translation>上次修改时间：</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="357"/>
         <location filename="../../build/src/ui_filesearch.h" line="435"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="435"/>
         <source>Earlier than:</source>
-        <translation type="unfinished"></translation>
+        <translation>早于：</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="364"/>
         <location filename="../../build/src/ui_filesearch.h" line="436"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="436"/>
         <source>Later than:</source>
-        <translation type="unfinished"></translation>
+        <translation>晚于：</translation>
     </message>
 </context>
 </TS>
