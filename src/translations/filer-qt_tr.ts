@@ -112,7 +112,7 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
 
 Telif hakkı (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
 
-Sanatçının izni ile kullanılmıştır (https://raphaellopes.me/).</translation>
+Sanatçının izni ile kullanılmıştır (https://raphaellopes.me/)</translation>
     </message>
     <message>
         <source>Lightweight file manager</source>
@@ -241,7 +241,7 @@ yazın: Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="161"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="161"/>
         <source>Keep terminal window open after command execution</source>
-        <translation>Komutun çalıştırılmasından sonra uçbirim penceresini açık tut</translation>
+        <translation>Komut yürütülmesi sonrası uçbirim penceresini açık tut</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="98"/>
@@ -983,6 +983,7 @@ Bunun böyle çağrılmaması gerekir.
         <source>%n items</source>
         <translation>
             <numerusform>%n öge</numerusform>
+            <numerusform>%n öge</numerusform>
         </translation>
     </message>
     <message>
@@ -995,12 +996,14 @@ Bunun böyle çağrılmaması gerekir.
         <source>%1 items selected</source>
         <translation>
             <numerusform>%1 öge seçili</numerusform>
+            <numerusform>%1 öge seçili</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="440"/>
         <source>%1 item selected</source>
         <translation>
+            <numerusform>%1 öge seçili</numerusform>
             <numerusform>%1 öge seçili</numerusform>
         </translation>
     </message>
@@ -1373,7 +1376,7 @@ Bununla ne yapmak istersiniz?</translation>
         <location filename="../fileoperation.cpp" line="224"/>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
-        <translation>Bazı dosyalar çöpe taşınamıyor; çünkü kullanılan dosya sistemi bu işlemi desteklemiyor.
+        <translation>Bazı dosyalar çöpe atılamıyor; çünkü kullanılan dosya sistemi bu işlemi desteklemiyor.
 Bunun yerine onları silmek ister misiniz?</translation>
     </message>
     <message>
@@ -1401,12 +1404,12 @@ Bunun yerine onları silmek ister misiniz?</translation>
     <message>
         <location filename="../fileoperation.cpp" line="305"/>
         <source>%1 is required by the system and cannot be moved to the Trash.</source>
-        <translation>%1 sistem için gereklidir ve çöp kutusuna taşınamaz.</translation>
+        <translation>%1 sistem için gereklidir ve çöpe atılamaz.</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="314"/>
         <source>Do you want to move the selected files to trash can?</source>
-        <translation>Seçili dosyaları çöp kutusuna taşımak istiyor musunuz?</translation>
+        <translation>Seçili dosyaları çöp kutusuna atmak istiyor musunuz?</translation>
     </message>
 </context>
 <context>
@@ -2992,14 +2995,14 @@ Değiştirme: %3</translation>
         <location filename="../../build/src/ui_preferences.h" line="623"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="623"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation>Çıkarılabilir ortamdaki dosyaları bir &quot;çöp&quot;e taşımak yerine hemen sil</translation>
+        <translation>Çıkarılabilir ortamdaki dosyaları bir &quot;çöp&quot;e atmak yerine hemen sil</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="97"/>
         <location filename="../../build/src/ui_preferences.h" line="624"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="624"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation>Dosyaları &quot;çöp&quot;e taşımadan önce onayla</translation>
+        <translation>Dosyaları &quot;çöp&quot;e atmadan önce onayla</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="104"/>
