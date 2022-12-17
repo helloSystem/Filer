@@ -3578,7 +3578,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="399"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="399"/>
         <source>File Name Patterns:</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイル名パターン:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="41"/>
