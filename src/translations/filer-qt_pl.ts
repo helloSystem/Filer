@@ -22,14 +22,14 @@
         <location filename="../../build/src/ui_about.h" line="144"/>
         <location filename="../../cmake-build-debug/src/ui_about.h" line="144"/>
         <source>The Desktop Experience</source>
-        <translation type="unfinished"></translation>
+        <translation>Doświadczenie z Pulpitu</translation>
     </message>
     <message>
         <location filename="../about.ui" line="70"/>
         <location filename="../../build/src/ui_about.h" line="145"/>
         <location filename="../../cmake-build-debug/src/ui_about.h" line="145"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/helloSystem/Filer/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/helloSystem/Filer/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../about.ui" line="125"/>
@@ -306,28 +306,28 @@ Application icon:
         <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="198"/>
         <source>Colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Kolory</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="150"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="203"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="203"/>
         <source>Background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kolor tła:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="104"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="199"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="199"/>
         <source>Text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kolor tekstu:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="143"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="202"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="202"/>
         <source>Shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kolor cienia:</translation>
     </message>
     <message>
         <source>Select background color:</source>
@@ -552,7 +552,7 @@ Application icon:
         <location filename="../../build/src/ui_file-props.h" line="380"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="380"/>
         <source>Open with</source>
-        <translation type="unfinished"></translation>
+        <translation>Otwórz za pomocą</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="323"/>
@@ -573,14 +573,14 @@ Application icon:
         <location filename="../../build/src/ui_file-props.h" line="362"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="362"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Informacje</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="60"/>
         <location filename="../../build/src/ui_file-props.h" line="363"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="363"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>Miejsce na tekst</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="185"/>
@@ -601,7 +601,7 @@ Application icon:
         <location filename="../../build/src/ui_file-props.h" line="385"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="385"/>
         <source>Everyone</source>
-        <translation type="unfinished"></translation>
+        <translation>Wszyscy</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="234"/>
@@ -725,12 +725,12 @@ Functionality may be broken.</source>
     <message>
         <location filename="../application.cpp" line="215"/>
         <source>The &apos;launch&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Brak polecenia &apos;launch&apos;.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="222"/>
         <source>The &apos;open&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Brakuje polecenia &apos;open&apos;.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="232"/>
