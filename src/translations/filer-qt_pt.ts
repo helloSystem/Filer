@@ -2908,7 +2908,7 @@ Modificado: %3</translation>
         <location filename="../../build/src/ui_mount-operation-password.h" line="177"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="177"/>
         <source>&amp;Password:</source>
-        <translation>&amp;Senha:</translation>
+        <translation>&amp;Palavra-passe:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="112"/>
@@ -2922,7 +2922,7 @@ Modificado: %3</translation>
         <location filename="../../build/src/ui_mount-operation-password.h" line="179"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="179"/>
         <source>Forget password &amp;immediately</source>
-        <translation>Esquecer senha &amp;imediatamente</translation>
+        <translation>Esquecer palavra-passe &amp;imediatamente</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="137"/>
