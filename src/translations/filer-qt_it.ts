@@ -22,7 +22,7 @@
         <location filename="../../build/src/ui_about.h" line="144"/>
         <location filename="../../cmake-build-debug/src/ui_about.h" line="144"/>
         <source>The Desktop Experience</source>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;esperienza desktop</translation>
     </message>
     <message>
         <location filename="../about.ui" line="70"/>
