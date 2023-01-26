@@ -622,7 +622,11 @@ from an application bundle.
 
 This is not how it should be invoked.
 Functionality may be broken.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 ne estis lanĉita per la lanĉa komando
+en programpakaĵo.
+
+Oni ne tiel lanĉu ĝin.
+La programo eble funkcios neplene.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="215"/>
@@ -899,17 +903,17 @@ Functionality may be broken.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="436"/>
         <source>%1 items selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 ero elektita</numerusform>
+            <numerusform>%1 eroj elektitaj</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="440"/>
         <source>%1 item selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 ero elektita</numerusform>
+            <numerusform>%1 eroj elektitaj</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1277,7 +1281,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperation.cpp" line="273"/>
         <source>%1 is required by the system and cannot be deleted.</source>
-        <translation type="unfinished"></translation>
+        <translation>% 1 estas postulata de la sistemo kaj ne estas forviŝebla.</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="281"/>
@@ -1299,12 +1303,12 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperation.cpp" line="305"/>
         <source>%1 is required by the system and cannot be moved to the Trash.</source>
-        <translation type="unfinished"></translation>
+        <translation>% 1 estas postulata de la sistemo kaj ne estas movebla rubujen.</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="314"/>
         <source>Do you want to move the selected files to trash can?</source>
-        <translation>Ĉu movi la elektitajn dosierojn en la rubujon?</translation>
+        <translation>Ĉu movi la elektitajn dosierojn rubujen?</translation>
     </message>
 </context>
 <context>
@@ -2255,7 +2259,7 @@ Tempo de modifo: %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="795"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="795"/>
         <source>Ctrl+Alt+Shift+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Stir+Alt+Maj+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
