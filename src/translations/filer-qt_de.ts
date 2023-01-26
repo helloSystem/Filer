@@ -127,7 +127,13 @@ Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Prog
 
 Application icon:
 * Raphael Lopes (https://raphaellopes.me/)</source>
-        <translation type="unfinished"></translation>
+        <translation>Programmierung:
+* Simon Peter (probono)
+* Chris Moore (moochris)
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+
+Anwendungssymbol:
+* Raphael Lopes (https://raphaellopes.me/)</translation>
     </message>
     <message>
         <location filename="../about.ui" line="116"/>
@@ -333,28 +339,28 @@ Application icon:
         <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="198"/>
         <source>Colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Farben</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="150"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="203"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="203"/>
         <source>Background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hintergrundfarbe:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="104"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="199"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="199"/>
         <source>Text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Textfarbe:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="143"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="202"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="202"/>
         <source>Shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Schattenfarbe:</translation>
     </message>
     <message>
         <source>Select background color:</source>
@@ -580,7 +586,7 @@ Application icon:
         <location filename="../../build/src/ui_file-props.h" line="380"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="380"/>
         <source>Open with</source>
-        <translation type="unfinished"></translation>
+        <translation>Öffnen mit</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="323"/>
@@ -601,7 +607,7 @@ Application icon:
         <location filename="../../build/src/ui_file-props.h" line="362"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="362"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Information</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="60"/>
