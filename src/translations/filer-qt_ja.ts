@@ -42,7 +42,13 @@
 
 Application icon:
 * Raphael Lopes (https://raphaellopes.me/)</source>
-        <translation type="unfinished"></translation>
+        <translation>プログラミング:
+* Simon Peter (probono)
+* Chris Moore (moochris)
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+
+アプリケーションアイコン:
+* Raphael Lopes (https://raphaellopes.me/)</translation>
     </message>
     <message>
         <location filename="../about.ui" line="125"/>
@@ -259,7 +265,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="153"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="153"/>
         <source>Application name:</source>
-        <translation>アプリケーション名</translation>
+        <translation>アプリケーション名:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="72"/>
@@ -337,7 +343,7 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <location filename="../../build/src/ui_autorun.h" line="113"/>
         <location filename="../../cmake-build-debug/src/ui_autorun.h" line="113"/>
         <source>Please select the action you want to perform:</source>
-        <translation>実行させる処理を選んでください</translation>
+        <translation>実行させる処理を選んでください:</translation>
     </message>
 </context>
 <context>
@@ -427,14 +433,14 @@ GNU 一般公衆利用許諾契約書の複製物を1部
         <location filename="../../build/src/ui_desktop-preferences.h" line="203"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="203"/>
         <source>Background color:</source>
-        <translation>背景の色</translation>
+        <translation>背景の色:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="104"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="199"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="199"/>
         <source>Text color:</source>
-        <translation>テキストの色</translation>
+        <translation>テキストの色:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="143"/>
@@ -822,22 +828,26 @@ from an application bundle.
 
 This is not how it should be invoked.
 Functionality may be broken.</source>
-        <translation type="unfinished"></translation>
+        <translation>アプリケーションバンドルの %1 は、launchコマンドで起動しませんでした。
+
+
+これは、起動されるべき方法ではありません。
+機能が壊れている可能性があります。</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="215"/>
         <source>The &apos;launch&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;launch&apos;コマンドがありません。</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="222"/>
         <source>The &apos;open&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;open&apos;コマンドがありません。</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="232"/>
         <source>The &apos;eject-and-clean&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;eject-and-clean&apos;コマンドがありません。</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="289"/>
@@ -914,7 +924,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../application.cpp" line="608"/>
         <source>Terminal emulator is not set.</source>
-        <translation>端末エミュレーターを未設定です</translation>
+        <translation>端末エミュレーターはセットされていません。</translation>
     </message>
 </context>
 <context>
@@ -1009,7 +1019,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../mainwindow.cpp" line="212"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation>テキストを全て削除  (Ctrl+K)</translation>
+        <translation>テキストを全て削除 (Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="795"/>
@@ -1033,7 +1043,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../mainwindow.cpp" line="1532"/>
         <source>Switch user command is not set.</source>
-        <translation>ユーザー切替コマンドを未設定です</translation>
+        <translation>ユーザー切り替えのコマンドが設定されていません。</translation>
     </message>
     <message>
         <source>Terminal emulator is not set.</source>
@@ -1073,27 +1083,27 @@ Functionality may be broken.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="278"/>
         <source>%n items</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n アイテム</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="280"/>
         <source>1 item</source>
-        <translation type="unfinished"></translation>
+        <translation>1 アイテム</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="436"/>
         <source>%1 items selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 アイテムが選択されました</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="440"/>
         <source>%1 item selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 アイテムが選択されました</numerusform>
         </translation>
     </message>
     <message>
@@ -1103,7 +1113,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../tabpage.cpp" line="265"/>
         <source>%1 available</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 が利用可能</translation>
     </message>
     <message numerus="yes">
         <source>%n item(s)</source>
@@ -1146,140 +1156,140 @@ Functionality may be broken.</source>
     <message>
         <location filename="../file-search.ui" line="14"/>
         <source>Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルの検索</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="24"/>
         <source>Name/Location</source>
-        <translation type="unfinished"></translation>
+        <translation>名前/ロケーション</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="30"/>
         <source>File name patterns</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイル名のパターン</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="36"/>
         <source>Pattern:</source>
-        <translation type="unfinished"></translation>
+        <translation>パターン:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="46"/>
         <location filename="../file-search.ui" line="221"/>
         <source>Case insensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>大文字・小文字を区別しない</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="53"/>
         <location filename="../file-search.ui" line="228"/>
         <source>Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>正規表現を使用する</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="63"/>
         <source>Places to search</source>
-        <translation type="unfinished"></translation>
+        <translation>検索対象箇所</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="76"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>追加する</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="88"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>消去</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="117"/>
         <source>Search in sub directories</source>
-        <translation type="unfinished"></translation>
+        <translation>サブディレクトリ内を検索</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="124"/>
         <source>Search hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>隠しファイルを検索</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="135"/>
         <location filename="../file-search.ui" line="141"/>
         <source>File Type</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルの種類</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="147"/>
         <source>Only search for files of following types:</source>
-        <translation type="unfinished"></translation>
+        <translation>以下の種類のファイルのみを検索します:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="154"/>
         <source>Text files</source>
-        <translation type="unfinished"></translation>
+        <translation>テキストファイル</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="161"/>
         <source>Image files</source>
-        <translation type="unfinished"></translation>
+        <translation>画像ファイル</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="168"/>
         <source>Audio files</source>
-        <translation type="unfinished"></translation>
+        <translation>オーディオファイル</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="175"/>
         <source>Video files</source>
-        <translation type="unfinished"></translation>
+        <translation>動画ファイル</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="182"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>ドキュメント</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="206"/>
         <source>Content</source>
-        <translation type="unfinished"></translation>
+        <translation>コンテンツ</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="212"/>
         <source>File contains</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルの内容</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="252"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>情報</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="258"/>
         <source>File Size</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイル サイズ</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="264"/>
         <source>Bigger than:</source>
-        <translation type="unfinished"></translation>
+        <translation>より大きい:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="289"/>
         <source>Smaller than:</source>
-        <translation type="unfinished"></translation>
+        <translation>より小さい:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="317"/>
         <source>Last Modified Time</source>
-        <translation type="unfinished"></translation>
+        <translation>最終更新時刻</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="323"/>
         <source>Earlier than:</source>
-        <translation type="unfinished"></translation>
+        <translation>より前:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="340"/>
         <source>Later than:</source>
-        <translation type="unfinished"></translation>
+        <translation>より後:</translation>
     </message>
 </context>
 <context>
@@ -1380,8 +1390,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../execfiledialog.cpp" line="45"/>
         <source>This file &apos;%1&apos; is executable. Do you want to execute it?</source>
-        <translation>このファイル &apos;%1&apos; は実行可能です。
-実行しますか？</translation>
+        <translation>このファイル &apos;%1&apos; は実行可能です。実行しますか?</translation>
     </message>
 </context>
 <context>
@@ -1418,12 +1427,12 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="237"/>
         <source>Get Info</source>
-        <translation type="unfinished"></translation>
+        <translation>入手方法</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="242"/>
         <source>&amp;Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;ごみ箱を空にする</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="369"/>
@@ -1442,12 +1451,12 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="101"/>
         <source>Open With...</source>
-        <translation>アプリケーションで開く</translation>
+        <translation>アプリケーションを選択...</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="108"/>
         <source>Show Contents</source>
-        <translation type="unfinished"></translation>
+        <translation>コンテンツを表示する</translation>
     </message>
     <message>
         <source>Other Applications</source>
@@ -1492,7 +1501,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperation.cpp" line="273"/>
         <source>%1 is required by the system and cannot be deleted.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 はシステムに必要であり、削除できません。</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="281"/>
@@ -1509,12 +1518,12 @@ Do you want to delete them instead?</source>
         <location filename="../fileoperation.cpp" line="272"/>
         <location filename="../fileoperation.cpp" line="304"/>
         <source> </source>
-        <translation type="unfinished"></translation>
+        <translation> </translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="305"/>
         <source>%1 is required by the system and cannot be moved to the Trash.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 はシステムに必要であり、ごみ箱に移動できません。</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="314"/>
@@ -1658,12 +1667,12 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>You should add at least add one directory to search.</source>
-        <translation type="unfinished"></translation>
+        <translation>少なくとも1つのディレクトリを検索対象に追加する必要があります。</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="127"/>
         <source>Select a folder</source>
-        <translation type="unfinished"></translation>
+        <translation>フォルダーを選択</translation>
     </message>
 </context>
 <context>
@@ -1716,7 +1725,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../foldermenu.cpp" line="69"/>
         <source>Get Info</source>
-        <translation type="unfinished"></translation>
+        <translation>情報を取得</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="95"/>
@@ -1872,27 +1881,27 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesview.cpp" line="352"/>
         <source>Open in New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>新しいウィンドウを開く</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="375"/>
         <source>Move Bookmark Up</source>
-        <translation type="unfinished"></translation>
+        <translation>ブックマークを上に移動する</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="380"/>
         <source>Move Bookmark Down</source>
-        <translation type="unfinished"></translation>
+        <translation>ブックマークを下に移動する</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="384"/>
         <source>Rename Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>ブックマークの名前を変更</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="387"/>
         <source>Remove Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>ブックマークを削除</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="396"/>
@@ -2017,7 +2026,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="614"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="614"/>
         <source>&amp;Home</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;ホーム</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="299"/>
@@ -2081,7 +2090,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="635"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="635"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="379"/>
@@ -2095,7 +2104,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="639"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="639"/>
         <source>Ctrl+Shift+T</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="387"/>
@@ -2116,7 +2125,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="647"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="647"/>
         <source>Ctrl+Shift+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="411"/>
@@ -2137,21 +2146,21 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="652"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="652"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="438"/>
         <location filename="../../build/src/ui_main-win.h" line="657"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="657"/>
         <source>Ctrl+1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="457"/>
         <location filename="../../build/src/ui_main-win.h" line="662"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="662"/>
         <source>Ctrl+2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="477"/>
@@ -2207,56 +2216,56 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="683"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="683"/>
         <source>Ctrl+,</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+,</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
         <location filename="../../build/src/ui_main-win.h" line="685"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="685"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;昇順</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="533"/>
         <location filename="../../build/src/ui_main-win.h" line="686"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="686"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;降順</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <location filename="../../build/src/ui_main-win.h" line="687"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="687"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;ファイル名</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
         <location filename="../../build/src/ui_main-win.h" line="688"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="688"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>更新時刻</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="557"/>
         <location filename="../../build/src/ui_main-win.h" line="689"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="689"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>種類</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="565"/>
         <location filename="../../build/src/ui_main-win.h" line="690"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="690"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>所有者別</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="573"/>
         <location filename="../../build/src/ui_main-win.h" line="691"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="691"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;フォルダーを先に</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="635"/>
@@ -2270,84 +2279,84 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="753"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="753"/>
         <source>&amp;Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;フォルダを開く</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="767"/>
         <location filename="../../build/src/ui_main-win.h" line="755"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="755"/>
         <source>Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>フォルダを開く</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="770"/>
         <location filename="../../build/src/ui_main-win.h" line="758"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="758"/>
         <source>Ctrl+Shift+G</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+G</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="775"/>
         <location filename="../../build/src/ui_main-win.h" line="760"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="760"/>
         <source>&amp;Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Downloads</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="778"/>
         <location filename="../../build/src/ui_main-win.h" line="762"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="762"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Downloads</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="781"/>
         <location filename="../../build/src/ui_main-win.h" line="765"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="765"/>
         <source>Ctrl+Shift+L</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="789"/>
         <location filename="../../build/src/ui_main-win.h" line="767"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="767"/>
         <source>&amp;Utilities</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;ユーティリティ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="792"/>
         <location filename="../../build/src/ui_main-win.h" line="769"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="769"/>
         <source>Utilities</source>
-        <translation type="unfinished"></translation>
+        <translation>ユーティリティ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="795"/>
         <location filename="../../build/src/ui_main-win.h" line="772"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="772"/>
         <source>Ctrl+Shift+U</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+U</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="803"/>
         <location filename="../../build/src/ui_main-win.h" line="774"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="774"/>
         <source>&amp;Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;ドキュメント</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="806"/>
         <location filename="../../build/src/ui_main-win.h" line="776"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="776"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>ドキュメント</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="809"/>
         <location filename="../../build/src/ui_main-win.h" line="779"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="779"/>
         <source>Ctrl+Shift+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="817"/>
@@ -2361,21 +2370,21 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="783"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="783"/>
         <source>Ctrl+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="825"/>
         <location filename="../../build/src/ui_main-win.h" line="785"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="785"/>
         <source>&amp;Duplicate</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;コピー</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="828"/>
         <location filename="../../build/src/ui_main-win.h" line="787"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="787"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="833"/>
@@ -2389,28 +2398,28 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="791"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="791"/>
         <source>Ctrl+Alt+Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+Backspace</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <location filename="../../build/src/ui_main-win.h" line="793"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="793"/>
         <source>Show Contents</source>
-        <translation type="unfinished"></translation>
+        <translation>コンテンツを表示</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="844"/>
         <location filename="../../build/src/ui_main-win.h" line="795"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="795"/>
         <source>Ctrl+Alt+Shift+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+Shift+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
         <location filename="../../build/src/ui_main-win.h" line="806"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="806"/>
         <source>Ctrl+Alt+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="853"/>
@@ -2420,21 +2429,21 @@ Modified: %3</source>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="797"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="799"/>
         <source>Go Up and Close Current</source>
-        <translation type="unfinished"></translation>
+        <translation>上に移動して現在を閉じる</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="859"/>
         <location filename="../../build/src/ui_main-win.h" line="802"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="802"/>
         <source>Ctrl+Shift+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="864"/>
         <location filename="../../build/src/ui_main-win.h" line="804"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="804"/>
         <source>Open With...</source>
-        <translation>アプリケーションで開く</translation>
+        <translation>アプリケーションを選択...</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
@@ -2452,21 +2461,21 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="727"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="727"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;大文字小文字を区別</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="684"/>
         <location filename="../../build/src/ui_main-win.h" line="728"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="728"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルサイズ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="689"/>
         <location filename="../../build/src/ui_main-win.h" line="729"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="729"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;ウィンドウを閉じる</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="509"/>
@@ -2487,28 +2496,28 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="612"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="612"/>
         <source>Ctrl+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="290"/>
         <location filename="../../build/src/ui_main-win.h" line="616"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="616"/>
         <source>Ctrl+Shift+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+H</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="302"/>
         <location filename="../../build/src/ui_main-win.h" line="620"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="620"/>
         <source>Ctrl+Shift+R</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+R</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="335"/>
         <location filename="../../build/src/ui_main-win.h" line="624"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="624"/>
         <source>&amp;About Filer</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Filerについて</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="344"/>
@@ -2623,7 +2632,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="704"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="704"/>
         <source>Alt+Left</source>
-        <translation>Alt+Left</translation>
+        <translation>Alt+左</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="615"/>
@@ -2680,35 +2689,35 @@ Modified: %3</source>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="643"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="742"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="739"/>
         <location filename="../../build/src/ui_main-win.h" line="746"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="746"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="747"/>
         <location filename="../../build/src/ui_main-win.h" line="750"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="750"/>
         <source>Ctrl+F</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="755"/>
         <location filename="../../build/src/ui_main-win.h" line="752"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="752"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>フィルター</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="121"/>
         <location filename="../../build/src/ui_main-win.h" line="810"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="810"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>新規作成</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="151"/>
@@ -2736,21 +2745,21 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="716"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="716"/>
         <source>Ctrl+Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Backspace</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="665"/>
         <location filename="../../build/src/ui_main-win.h" line="723"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="723"/>
         <source>Get &amp;Info</source>
-        <translation type="unfinished"></translation>
+        <translation>情報を取得</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
         <location filename="../../build/src/ui_main-win.h" line="725"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="725"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="692"/>
@@ -2812,21 +2821,21 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="740"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="740"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;フォルダ</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="736"/>
         <location filename="../../build/src/ui_main-win.h" line="744"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="744"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;空のファイル</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="744"/>
         <location filename="../../build/src/ui_main-win.h" line="748"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="748"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;ファイル検索</translation>
     </message>
     <message>
         <source>F3</source>
@@ -2837,7 +2846,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="808"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="808"/>
         <source>Filter by string...</source>
-        <translation type="unfinished"></translation>
+        <translation>文字列で絞り込む...</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="117"/>
@@ -2910,7 +2919,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_mount-operation-password.h" line="175"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="175"/>
         <source>Connect as u&amp;ser:</source>
-        <translation>ユーザーとして接続(&amp;U)</translation>
+        <translation>u&amp;serとして接続:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="79"/>
@@ -2983,7 +2992,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="638"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="638"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>ディスプレィ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="419"/>
@@ -3011,21 +3020,21 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="623"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="623"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;ゴミ箱&quot;への移動ではなく、リムーバブルメディア上のファイルを消去する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="97"/>
         <location filename="../../build/src/ui_preferences.h" line="624"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="624"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルを &quot;ゴミ箱 &quot;に移動する前に確認する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="104"/>
         <location filename="../../build/src/ui_preferences.h" line="625"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="625"/>
         <source>Don&apos;t ask options on launch executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>実行ファイルの起動時にオプションを確認しない</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="134"/>
@@ -3060,7 +3069,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="632"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="632"/>
         <source>Size of side pane icons:</source>
-        <translation>サイドペインのアイコンの大きさ</translation>
+        <translation>サイドペインのアイコンの大きさ:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="146"/>
@@ -3074,14 +3083,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="619"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="619"/>
         <source>Save metadata to directories (.DirInfo files)</source>
-        <translation type="unfinished"></translation>
+        <translation>メタデータをディレクトリ (.ディレクトリ情報ファイル)に保存</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="67"/>
         <location filename="../../build/src/ui_preferences.h" line="620"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="620"/>
         <source>Spatial mode (folders open in a new window)</source>
-        <translation type="unfinished"></translation>
+        <translation>空間モード（フォルダーが別ウィンドウで開きます）</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="269"/>
@@ -3095,14 +3104,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="641"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="641"/>
         <source>Default width of new windows:</source>
-        <translation>新しいウインドウのデフォルト幅</translation>
+        <translation>新しいウインドウのデフォルト幅:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="299"/>
         <location filename="../../build/src/ui_preferences.h" line="642"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="642"/>
         <source>Default height of new windows:</source>
-        <translation>新しいウインドウのデフォルトの高さ</translation>
+        <translation>新しいウインドウのデフォルトの高さ:</translation>
     </message>
     <message>
         <source>Always show the tab bar</source>
@@ -3139,7 +3148,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="618"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="618"/>
         <source>Default view mode:</source>
-        <translation>デフォルトの表示モード</translation>
+        <translation>デフォルトの表示モード:</translation>
     </message>
     <message>
         <source> sec</source>
@@ -3168,35 +3177,35 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="633"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="633"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>ユーザー インターフェイス</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <location filename="../../build/src/ui_preferences.h" line="635"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="635"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>バックアップファイルを隠しファイルとして扱う</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <location filename="../../build/src/ui_preferences.h" line="636"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="636"/>
         <source>Always show full file names</source>
-        <translation type="unfinished"></translation>
+        <translation>常に完全なファイル名を表示</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="239"/>
         <location filename="../../build/src/ui_preferences.h" line="637"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="637"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>隠しファイルのアイコンを影で表示する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="316"/>
         <location filename="../../build/src/ui_preferences.h" line="643"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="643"/>
         <source>Show in places</source>
-        <translation type="unfinished"></translation>
+        <translation>場所を表示</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="323"/>
@@ -3217,7 +3226,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="652"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="652"/>
         <source>Trash can</source>
-        <translation type="unfinished"></translation>
+        <translation>ごみ箱</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="359"/>
@@ -3259,28 +3268,28 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="675"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="675"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>テンプレート</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="538"/>
         <location filename="../../build/src/ui_preferences.h" line="676"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="676"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>メニューにユーザー定義のテンプレートだけを表示する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="545"/>
         <location filename="../../build/src/ui_preferences.h" line="677"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="677"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>各MIMEタイプに対して1つのテンプレートのみを表示する</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="552"/>
         <location filename="../../build/src/ui_preferences.h" line="678"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="678"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>テンプレートから作成後、デフォルトのアプリケーションを実行</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="448"/>
@@ -3322,7 +3331,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="672"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="672"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>スイッチとユーザーコマンド:</translation>
     </message>
     <message>
         <source>Close tab containing removable medium</source>
@@ -3376,14 +3385,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="685"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="685"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>リムーバブルメディアのあるタブを閉じる</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="628"/>
         <location filename="../../build/src/ui_preferences.h" line="686"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="686"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>タブ内のChan&amp;geフォルダーをホームフォルダーへ</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="485"/>
@@ -3407,7 +3416,7 @@ Modified: %3</source>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
         <translation>例: 端末に &quot;xterm -e %s&quot; 、ユーザー切替に &quot;gksu %s&quot;
-%s には、端末やsuで実行するコマンドが代入されます</translation>
+%s には、端末やsuで実行するコマンドが代入されます。</translation>
     </message>
     <message>
         <source>Archiver integration:</source>
@@ -3443,7 +3452,7 @@ Modified: %3</source>
     <message>
         <location filename="../utilities.cpp" line="127"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>名前を変更</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="128"/>
@@ -3453,12 +3462,12 @@ Modified: %3</source>
     <message>
         <location filename="../utilities.cpp" line="133"/>
         <source>The startvolume cannot be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>開始ボリュームの名前を変更することはできません。</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="222"/>
         <source>Create Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>フォルダを作成</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="227"/>
@@ -3526,7 +3535,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_rename-dialog.h" line="160"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="160"/>
         <source>src file info</source>
-        <translation></translation>
+        <translation>src ファイル情報</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="89"/>
@@ -3564,14 +3573,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="398"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="398"/>
         <source>Search Files</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイル検索</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="29"/>
         <location filename="../../build/src/ui_filesearch.h" line="408"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="408"/>
         <source>Name/Location</source>
-        <translation type="unfinished"></translation>
+        <translation>名前/ロケーション</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="35"/>
@@ -3585,140 +3594,140 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="400"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="400"/>
         <source>*</source>
-        <translation type="unfinished"></translation>
+        <translation>*</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="48"/>
         <location filename="../../build/src/ui_filesearch.h" line="401"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="401"/>
         <source>Case insensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>大文字・小文字を区別しない</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="55"/>
         <location filename="../../build/src/ui_filesearch.h" line="402"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="402"/>
         <source>Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>正規表現を使う</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="65"/>
         <location filename="../../build/src/ui_filesearch.h" line="403"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="403"/>
         <source>Places to Search:</source>
-        <translation type="unfinished"></translation>
+        <translation>検索する場所:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="78"/>
         <location filename="../../build/src/ui_filesearch.h" line="404"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="404"/>
         <source>&amp;Add</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;追加</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="90"/>
         <location filename="../../build/src/ui_filesearch.h" line="405"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="405"/>
         <source>&amp;Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>＆削除</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="119"/>
         <location filename="../../build/src/ui_filesearch.h" line="406"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="406"/>
         <source>Search in sub directories</source>
-        <translation type="unfinished"></translation>
+        <translation>サブディレクトリ内を検索</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="126"/>
         <location filename="../../build/src/ui_filesearch.h" line="407"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="407"/>
         <source>Search for hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>隠しファイル検索</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="137"/>
         <location filename="../../build/src/ui_filesearch.h" line="416"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="416"/>
         <source>File Type</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルの種類</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="143"/>
         <location filename="../../build/src/ui_filesearch.h" line="409"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="409"/>
         <source>Only search for files of following types:</source>
-        <translation type="unfinished"></translation>
+        <translation>以下の種類のファイルのみを検索します:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="149"/>
         <location filename="../../build/src/ui_filesearch.h" line="410"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="410"/>
         <source>Text files</source>
-        <translation type="unfinished"></translation>
+        <translation>テキストファイル</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="156"/>
         <location filename="../../build/src/ui_filesearch.h" line="411"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="411"/>
         <source>Image files</source>
-        <translation type="unfinished"></translation>
+        <translation>画像ファイル</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="163"/>
         <location filename="../../build/src/ui_filesearch.h" line="412"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="412"/>
         <source>Audio files</source>
-        <translation type="unfinished"></translation>
+        <translation>音声ファイル</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="170"/>
         <location filename="../../build/src/ui_filesearch.h" line="413"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="413"/>
         <source>Video files</source>
-        <translation type="unfinished"></translation>
+        <translation>動画ファイル</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="177"/>
         <location filename="../../build/src/ui_filesearch.h" line="414"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="414"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>ドキュメント</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="184"/>
         <location filename="../../build/src/ui_filesearch.h" line="415"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="415"/>
         <source>Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>フォルダー</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="208"/>
         <location filename="../../build/src/ui_filesearch.h" line="420"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="420"/>
         <source>Content</source>
-        <translation type="unfinished"></translation>
+        <translation>コンテンツ</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="214"/>
         <location filename="../../build/src/ui_filesearch.h" line="417"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="417"/>
         <source>File contains:</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルが含まれています:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="223"/>
         <location filename="../../build/src/ui_filesearch.h" line="418"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="418"/>
         <source>Case insensiti&amp;ve</source>
-        <translation type="unfinished"></translation>
+        <translation>大文字・小文字を区別しない</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="230"/>
         <location filename="../../build/src/ui_filesearch.h" line="419"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="419"/>
         <source>&amp;Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>正規表現を使う</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="254"/>
@@ -3732,14 +3741,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="421"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="421"/>
         <source>File Size:</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルサイズ:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="266"/>
         <location filename="../../build/src/ui_filesearch.h" line="422"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="422"/>
         <source>Larger than:</source>
-        <translation type="unfinished"></translation>
+        <translation>よりも大きい:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="282"/>
@@ -3749,7 +3758,7 @@ Modified: %3</source>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="423"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="429"/>
         <source>Bytes</source>
-        <translation type="unfinished"></translation>
+        <translation>Bytes</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="287"/>
@@ -3759,7 +3768,7 @@ Modified: %3</source>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="424"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="430"/>
         <source>KiB</source>
-        <translation type="unfinished"></translation>
+        <translation>KiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="292"/>
@@ -3769,7 +3778,7 @@ Modified: %3</source>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="425"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="431"/>
         <source>MiB</source>
-        <translation type="unfinished"></translation>
+        <translation>MiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="297"/>
@@ -3779,28 +3788,28 @@ Modified: %3</source>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="426"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="432"/>
         <source>GiB</source>
-        <translation type="unfinished"></translation>
+        <translation>GiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="307"/>
         <location filename="../../build/src/ui_filesearch.h" line="428"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="428"/>
         <source>Smaller than:</source>
-        <translation type="unfinished"></translation>
+        <translation>より小さい:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="351"/>
         <location filename="../../build/src/ui_filesearch.h" line="434"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="434"/>
         <source>Last Modified Time:</source>
-        <translation type="unfinished"></translation>
+        <translation>最終更新時刻:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="357"/>
         <location filename="../../build/src/ui_filesearch.h" line="435"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="435"/>
         <source>Earlier than:</source>
-        <translation type="unfinished"></translation>
+        <translation>より前:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="364"/>
