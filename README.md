@@ -1,4 +1,4 @@
-# Filer [![Build Status](https://api.cirrus-ci.com/github/helloSystem/Filer.svg)](https://cirrus-ci.com/github/helloSystem/Filer) [![Translation status](https://hosted.weblate.org/widgets/hellosystem/-/filer/svg-badge.svg)](https://hosted.weblate.org/engage/hellosystem/)
+# Filer [![Build Status](https://api.cirrus-ci.com/github/helloSystem/Filer.svg)](https://cirrus-ci.com/github/helloSystem/Filer) [![Translation status](https://hosted.weblate.org/widgets/hellosystem/-/filer/svg-badge.svg)](https://hosted.weblate.org/engage/hellosystem/) [![Help Wanted Issues](https://img.shields.io/github/issues/helloSystem/Filer/help%20wanted)](https://github.com/helloSystem/Filer/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 
 A file manager that also renders the desktop. A key component of [helloSystem](https://hellosystem.github.io/docs/).
 
