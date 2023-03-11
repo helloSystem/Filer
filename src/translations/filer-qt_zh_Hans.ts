@@ -808,7 +808,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="467"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">桌面首选项</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="534"/>
@@ -1056,7 +1056,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../file-search.ui" line="289"/>
         <source>Smaller than:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">小于：</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="317"/>
@@ -1066,12 +1066,12 @@ Functionality may be broken.</source>
     <message>
         <location filename="../file-search.ui" line="323"/>
         <source>Earlier than:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">早于：</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="340"/>
         <source>Later than:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">晚于：</translation>
     </message>
 </context>
 <context>
@@ -1510,7 +1510,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../foldermodel.cpp" line="330"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">名称</translation>
     </message>
     <message>
         <location filename="../foldermodel.cpp" line="333"/>
@@ -1569,7 +1569,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesmodel.cpp" line="91"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">桌面</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="99"/>
@@ -2386,7 +2386,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="733"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="733"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">编辑书签</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="702"/>
@@ -2825,7 +2825,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="650"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="650"/>
         <source>Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">桌面</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="347"/>

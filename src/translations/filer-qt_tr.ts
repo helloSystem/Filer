@@ -983,7 +983,6 @@ Bunun böyle çağrılmaması gerekir.
         <source>%n items</source>
         <translation>
             <numerusform>%n öge</numerusform>
-            <numerusform>%n öge</numerusform>
         </translation>
     </message>
     <message>
@@ -996,14 +995,12 @@ Bunun böyle çağrılmaması gerekir.
         <source>%1 items selected</source>
         <translation>
             <numerusform>%1 öge seçili</numerusform>
-            <numerusform>%1 öge seçili</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="440"/>
         <source>%1 item selected</source>
         <translation>
-            <numerusform>%1 öge seçili</numerusform>
             <numerusform>%1 öge seçili</numerusform>
         </translation>
     </message>

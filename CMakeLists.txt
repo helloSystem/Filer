@@ -3,6 +3,10 @@ project(Filer)
 
 set(CMAKE_INSTALL_PREFIX "/System/Filer.app")
 
+# Do not show deprecated warnings
+add_definitions(-DQT_NO_DEPRECATED_WARNINGS)
+add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x000000)
+
 # Do not put qDebug() into Release builds
 if(NOT CMAKE_BUILD_TYPE STREQUAL Debug)
     add_definitions(-DQT_NO_DEBUG_OUTPUT)
