@@ -12,6 +12,7 @@ task:
   setup_script:
     - pkg install -y git-lite curl wget zip cmake pkgconf libfm qt5-core qt5-x11extras qt5-widgets qt5-qmake qt5-buildtools qt5-linguisttools qt5-multimedia
   test_script:
+    - git config --global http.sslVerify false # Workaround for: fatal: unable to access 'https://github.com/helloSystem/Sounds.git/': SSL certificate problem: unable to get local issuer certificate
     - git submodule update --init --recursive
     - mkdir build ; cd build
     - cmake .. -DCMAKE_BUILD_TYPE=Release
