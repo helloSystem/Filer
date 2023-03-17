@@ -690,7 +690,7 @@ Se tal facto não ocorreu, escreva para a Free Software Foundation, Inc.,
         <location filename="../../build/src/ui_file-props.h" line="363"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="363"/>
         <source>TextLabel</source>
-        <translation type="unfinished">TextLabel</translation>
+        <translation>Rótulo do texto</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="185"/>
