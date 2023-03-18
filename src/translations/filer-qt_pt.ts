@@ -2313,14 +2313,14 @@ Modificado: %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="760"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="760"/>
         <source>&amp;Downloads</source>
-        <translation>&amp;Downloads</translation>
+        <translation>&amp;Descargas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="778"/>
         <location filename="../../build/src/ui_main-win.h" line="762"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="762"/>
         <source>Downloads</source>
-        <translation>Downloads</translation>
+        <translation>Descargas</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="781"/>
