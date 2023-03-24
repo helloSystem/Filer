@@ -881,7 +881,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="534"/>
         <source>Version: %1</source>
-        <translation type="unfinished">Wersja: %1</translation>
+        <translation>Wersja: %1</translation>
     </message>
 </context>
 <context>
@@ -889,17 +889,17 @@ Functionality may be broken.</source>
     <message>
         <location filename="../gotofolderwindow.cpp" line="47"/>
         <source>Go</source>
-        <translation type="unfinished">Przejdź</translation>
+        <translation>Przejdź</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="48"/>
         <source>Cancel</source>
-        <translation type="unfinished">Anuluj</translation>
+        <translation>Anuluj</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="59"/>
         <source>Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Przejdź do katalogu</translation>
     </message>
 </context>
 <context>
@@ -967,16 +967,16 @@ Functionality may be broken.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="278"/>
         <source>%n items</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n element</numerusform>
+            <numerusform>%n elementy</numerusform>
+            <numerusform>%n elementów</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="280"/>
         <source>1 item</source>
-        <translation type="unfinished"></translation>
+        <translation>1 element</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="436"/>
@@ -1003,7 +1003,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../tabpage.cpp" line="265"/>
         <source>%1 available</source>
-        <translation type="unfinished"></translation>
+        <translation>dostępne %1</translation>
     </message>
     <message numerus="yes">
         <source>%n item(s)</source>
@@ -1155,7 +1155,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../file-search.ui" line="252"/>
         <source>Info</source>
-        <translation type="unfinished">Informacje</translation>
+        <translation>Informacje</translation>
     </message>
     <message>
         <source>Properties</source>
@@ -1213,12 +1213,12 @@ Functionality may be broken.</source>
     <message>
         <location filename="../createnewmenu.cpp" line="29"/>
         <source>Folder</source>
-        <translation type="unfinished">Katalog</translation>
+        <translation>Katalog</translation>
     </message>
     <message>
         <location filename="../createnewmenu.cpp" line="33"/>
         <source>Blank File</source>
-        <translation type="unfinished">Pusty plik</translation>
+        <translation>Pusty plik</translation>
     </message>
 </context>
 <context>
@@ -1239,12 +1239,12 @@ Functionality may be broken.</source>
     <message>
         <location filename="../dirtreeview.cpp" line="220"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished">Otwórz w nowym &amp;oknie</translation>
+        <translation>Otwórz w nowym oknie (&amp;d)</translation>
     </message>
     <message>
         <location filename="../dirtreeview.cpp" line="226"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished">Otwórz w &amp;terminalu</translation>
+        <translation>Otwórz w termina%lu</translation>
     </message>
 </context>
 <context>
@@ -1303,7 +1303,7 @@ Co chcesz zrobić z tym plikiem?</translation>
     <message>
         <location filename="../filemenu.cpp" line="165"/>
         <source>Create &amp;New</source>
-        <translation type="unfinished">Utwórz &amp;nowy</translation>
+        <translation>Utwórz &amp;nowy</translation>
     </message>
     <message>
         <source>&amp;Restore</source>
@@ -1312,7 +1312,7 @@ Co chcesz zrobić z tym plikiem?</translation>
     <message>
         <location filename="../filemenu.cpp" line="108"/>
         <source>Show Contents</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokaż zawartość</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="172"/>
@@ -1337,12 +1337,12 @@ Co chcesz zrobić z tym plikiem?</translation>
     <message>
         <location filename="../filemenu.cpp" line="237"/>
         <source>Get Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Uzyskaj informacje</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="242"/>
         <source>&amp;Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Opróżnij kosz (%E)</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="369"/>
@@ -1418,7 +1418,7 @@ Czy zamiast tego usunąć te pliki?</translation>
         <location filename="../fileoperation.cpp" line="272"/>
         <location filename="../fileoperation.cpp" line="304"/>
         <source> </source>
-        <translation type="unfinished"></translation>
+        <translation> </translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="305"/>
@@ -1562,7 +1562,7 @@ Czy zamiast tego usunąć te pliki?</translation>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>Error</source>
-        <translation type="unfinished">Błąd</translation>
+        <translation>Błąd</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
@@ -1572,7 +1572,7 @@ Czy zamiast tego usunąć te pliki?</translation>
     <message>
         <location filename="../filesearchdialog.cpp" line="127"/>
         <source>Select a folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Wybierz katalog</translation>
     </message>
 </context>
 <context>
@@ -1621,7 +1621,7 @@ Czy zamiast tego usunąć te pliki?</translation>
     <message>
         <location filename="../foldermenu.cpp" line="69"/>
         <source>Get Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Uzyskaj informacje</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="95"/>
@@ -1792,12 +1792,12 @@ Czy zamiast tego usunąć te pliki?</translation>
     <message>
         <location filename="../placesview.cpp" line="384"/>
         <source>Rename Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmień nazwę zakaładki</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="387"/>
         <source>Remove Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuń zakładkę</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="396"/>
@@ -1986,7 +1986,7 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="635"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="635"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="379"/>
@@ -2000,7 +2000,7 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="639"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="639"/>
         <source>Ctrl+Shift+T</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="387"/>
@@ -2021,7 +2021,7 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="647"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="647"/>
         <source>Ctrl+Shift+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="411"/>
@@ -2042,21 +2042,21 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="652"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="652"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="438"/>
         <location filename="../../build/src/ui_main-win.h" line="657"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="657"/>
         <source>Ctrl+1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="457"/>
         <location filename="../../build/src/ui_main-win.h" line="662"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="662"/>
         <source>Ctrl+2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="477"/>
@@ -2112,7 +2112,7 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="683"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="683"/>
         <source>Ctrl+,</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+,</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -2175,126 +2175,126 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="750"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="750"/>
         <source>Ctrl+F</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="764"/>
         <location filename="../../build/src/ui_main-win.h" line="753"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="753"/>
         <source>&amp;Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Przejdź do katalo&amp;gu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="767"/>
         <location filename="../../build/src/ui_main-win.h" line="755"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="755"/>
         <source>Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Przejdź do katalogu</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="770"/>
         <location filename="../../build/src/ui_main-win.h" line="758"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="758"/>
         <source>Ctrl+Shift+G</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+G</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="775"/>
         <location filename="../../build/src/ui_main-win.h" line="760"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="760"/>
         <source>&amp;Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Pobrane (&amp;D)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="778"/>
         <location filename="../../build/src/ui_main-win.h" line="762"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="762"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Pobrane</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="781"/>
         <location filename="../../build/src/ui_main-win.h" line="765"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="765"/>
         <source>Ctrl+Shift+L</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="789"/>
         <location filename="../../build/src/ui_main-win.h" line="767"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="767"/>
         <source>&amp;Utilities</source>
-        <translation type="unfinished"></translation>
+        <translation>Narzędzia (&amp;U)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="792"/>
         <location filename="../../build/src/ui_main-win.h" line="769"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="769"/>
         <source>Utilities</source>
-        <translation type="unfinished"></translation>
+        <translation>Narzędzia</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="795"/>
         <location filename="../../build/src/ui_main-win.h" line="772"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="772"/>
         <source>Ctrl+Shift+U</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+U</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="803"/>
         <location filename="../../build/src/ui_main-win.h" line="774"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="774"/>
         <source>&amp;Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Dokumenty</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="806"/>
         <location filename="../../build/src/ui_main-win.h" line="776"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="776"/>
         <source>Documents</source>
-        <translation type="unfinished">Dokumenty</translation>
+        <translation>Dokumenty</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="809"/>
         <location filename="../../build/src/ui_main-win.h" line="779"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="779"/>
         <source>Ctrl+Shift+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="817"/>
         <location filename="../../build/src/ui_main-win.h" line="781"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="781"/>
         <source>Open</source>
-        <translation type="unfinished">Otwórz</translation>
+        <translation>Otwórz</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="820"/>
         <location filename="../../build/src/ui_main-win.h" line="783"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="783"/>
         <source>Ctrl+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="825"/>
         <location filename="../../build/src/ui_main-win.h" line="785"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="785"/>
         <source>&amp;Duplicate</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Duplikuj</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="828"/>
         <location filename="../../build/src/ui_main-win.h" line="787"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="787"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="833"/>
         <location filename="../../build/src/ui_main-win.h" line="789"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="789"/>
         <source>Empty Trash</source>
-        <translation type="unfinished">Opróżnij kosz</translation>
+        <translation>Opróżnij kosz</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="836"/>
@@ -2308,21 +2308,21 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="793"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="793"/>
         <source>Show Contents</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokaż zawartość</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="844"/>
         <location filename="../../build/src/ui_main-win.h" line="795"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="795"/>
         <source>Ctrl+Alt+Shift+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+Shift+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
         <location filename="../../build/src/ui_main-win.h" line="806"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="806"/>
         <source>Ctrl+Alt+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="853"/>
@@ -2339,14 +2339,14 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="802"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="802"/>
         <source>Ctrl+Shift+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="864"/>
         <location filename="../../build/src/ui_main-win.h" line="804"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="804"/>
         <source>Open With...</source>
-        <translation type="unfinished">Otwórz za pomocą...</translation>
+        <translation>Otwórz za pomocą...</translation>
     </message>
     <message>
         <source>&amp;Delete</source>
@@ -2399,28 +2399,28 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="612"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="612"/>
         <source>Ctrl+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Strzałka w górę</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="290"/>
         <location filename="../../build/src/ui_main-win.h" line="616"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="616"/>
         <source>Ctrl+Shift+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+H</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="302"/>
         <location filename="../../build/src/ui_main-win.h" line="620"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="620"/>
         <source>Ctrl+Shift+R</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+R</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="335"/>
         <location filename="../../build/src/ui_main-win.h" line="624"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="624"/>
         <source>&amp;About Filer</source>
-        <translation type="unfinished"></translation>
+        <translation>O Filer (&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="344"/>
@@ -2635,28 +2635,28 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="714"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="714"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>Przenieś do kosza (&amp;M)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="647"/>
         <location filename="../../build/src/ui_main-win.h" line="716"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="716"/>
         <source>Ctrl+Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Backspace</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="665"/>
         <location filename="../../build/src/ui_main-win.h" line="723"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="723"/>
         <source>Get &amp;Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Uzyskaj &amp;informacje</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
         <location filename="../../build/src/ui_main-win.h" line="725"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="725"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="692"/>
@@ -3209,7 +3209,7 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_preferences.h" line="687"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="687"/>
         <source>Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>Zamontuj</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="585"/>
@@ -3364,7 +3364,7 @@ Zmodyfikowany: %3</translation>
     <message>
         <location filename="../utilities.cpp" line="127"/>
         <source>Rename</source>
-        <translation type="unfinished">Zmień nazwę</translation>
+        <translation>Zmień nazwę</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="128"/>
@@ -3379,7 +3379,7 @@ Zmodyfikowany: %3</translation>
     <message>
         <location filename="../utilities.cpp" line="222"/>
         <source>Create Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Utwórz katalog</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="227"/>
@@ -3461,7 +3461,7 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_rename-dialog.h" line="162"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="162"/>
         <source>src</source>
-        <translation type="unfinished"></translation>
+        <translation>źródło</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="122"/>
@@ -3485,14 +3485,14 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_filesearch.h" line="398"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="398"/>
         <source>Search Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Wyszukaj pliki</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="29"/>
         <location filename="../../build/src/ui_filesearch.h" line="408"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="408"/>
         <source>Name/Location</source>
-        <translation type="unfinished">Nazwa/Lokalizacja</translation>
+        <translation>Nazwa/Lokalizacja</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="35"/>
@@ -3506,49 +3506,49 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_filesearch.h" line="400"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="400"/>
         <source>*</source>
-        <translation type="unfinished"></translation>
+        <translation>*</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="48"/>
         <location filename="../../build/src/ui_filesearch.h" line="401"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="401"/>
         <source>Case insensitive</source>
-        <translation type="unfinished">Ignoruj wielkość liter</translation>
+        <translation>Ignoruj wielkość liter</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="55"/>
         <location filename="../../build/src/ui_filesearch.h" line="402"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="402"/>
         <source>Use regular expression</source>
-        <translation type="unfinished">Użyj wyrażeń regularnych</translation>
+        <translation>Użyj wyrażeń regularnych</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="65"/>
         <location filename="../../build/src/ui_filesearch.h" line="403"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="403"/>
         <source>Places to Search:</source>
-        <translation type="unfinished"></translation>
+        <translation>Miejsca do przeszukania:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="78"/>
         <location filename="../../build/src/ui_filesearch.h" line="404"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="404"/>
         <source>&amp;Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Dodaj (&amp;A)</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="90"/>
         <location filename="../../build/src/ui_filesearch.h" line="405"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="405"/>
         <source>&amp;Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuń (&amp;R)</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="119"/>
         <location filename="../../build/src/ui_filesearch.h" line="406"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="406"/>
         <source>Search in sub directories</source>
-        <translation type="unfinished">Szukaj w podkatalogach</translation>
+        <translation>Szukaj w podkatalogach</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="126"/>
@@ -3562,70 +3562,70 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_filesearch.h" line="416"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="416"/>
         <source>File Type</source>
-        <translation type="unfinished">Typ pliku</translation>
+        <translation>Typ pliku</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="143"/>
         <location filename="../../build/src/ui_filesearch.h" line="409"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="409"/>
         <source>Only search for files of following types:</source>
-        <translation type="unfinished">Szukaj tylko plików o podanym typie:</translation>
+        <translation>Szukaj tylko plików o podanym typie:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="149"/>
         <location filename="../../build/src/ui_filesearch.h" line="410"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="410"/>
         <source>Text files</source>
-        <translation type="unfinished">Pliki tekstowe</translation>
+        <translation>Pliki tekstowe</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="156"/>
         <location filename="../../build/src/ui_filesearch.h" line="411"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="411"/>
         <source>Image files</source>
-        <translation type="unfinished">Obrazy</translation>
+        <translation>Obrazy</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="163"/>
         <location filename="../../build/src/ui_filesearch.h" line="412"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="412"/>
         <source>Audio files</source>
-        <translation type="unfinished">Pliki dźwiękowe</translation>
+        <translation>Pliki dźwiękowe</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="170"/>
         <location filename="../../build/src/ui_filesearch.h" line="413"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="413"/>
         <source>Video files</source>
-        <translation type="unfinished">Pliki wideo</translation>
+        <translation>Pliki wideo</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="177"/>
         <location filename="../../build/src/ui_filesearch.h" line="414"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="414"/>
         <source>Documents</source>
-        <translation type="unfinished">Dokumenty</translation>
+        <translation>Dokumenty</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="184"/>
         <location filename="../../build/src/ui_filesearch.h" line="415"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="415"/>
         <source>Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>Katalogi</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="208"/>
         <location filename="../../build/src/ui_filesearch.h" line="420"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="420"/>
         <source>Content</source>
-        <translation type="unfinished">Zawartość</translation>
+        <translation>Zawartość</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="214"/>
         <location filename="../../build/src/ui_filesearch.h" line="417"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="417"/>
         <source>File contains:</source>
-        <translation type="unfinished"></translation>
+        <translation>Plik zawiera:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="223"/>
@@ -3646,21 +3646,21 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_filesearch.h" line="437"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="437"/>
         <source>Properties</source>
-        <translation type="unfinished">Właściwości</translation>
+        <translation>Właściwości</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="260"/>
         <location filename="../../build/src/ui_filesearch.h" line="421"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="421"/>
         <source>File Size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozmiar pliku:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="266"/>
         <location filename="../../build/src/ui_filesearch.h" line="422"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="422"/>
         <source>Larger than:</source>
-        <translation type="unfinished"></translation>
+        <translation>Większe niż:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="282"/>
@@ -3670,7 +3670,7 @@ Zmodyfikowany: %3</translation>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="423"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="429"/>
         <source>Bytes</source>
-        <translation type="unfinished"></translation>
+        <translation>Bajtów</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="287"/>
@@ -3680,7 +3680,7 @@ Zmodyfikowany: %3</translation>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="424"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="430"/>
         <source>KiB</source>
-        <translation type="unfinished"></translation>
+        <translation>KiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="292"/>
@@ -3690,7 +3690,7 @@ Zmodyfikowany: %3</translation>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="425"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="431"/>
         <source>MiB</source>
-        <translation type="unfinished"></translation>
+        <translation>MiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="297"/>
@@ -3700,14 +3700,14 @@ Zmodyfikowany: %3</translation>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="426"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="432"/>
         <source>GiB</source>
-        <translation type="unfinished"></translation>
+        <translation>GiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="307"/>
         <location filename="../../build/src/ui_filesearch.h" line="428"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="428"/>
         <source>Smaller than:</source>
-        <translation type="unfinished">Mniejszy niż:</translation>
+        <translation>Mniejszy niż:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="351"/>
@@ -3721,14 +3721,14 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_filesearch.h" line="435"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="435"/>
         <source>Earlier than:</source>
-        <translation type="unfinished">Wcześniejszy niż:</translation>
+        <translation>Wcześniejszy niż:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="364"/>
         <location filename="../../build/src/ui_filesearch.h" line="436"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="436"/>
         <source>Later than:</source>
-        <translation type="unfinished">Późniejszy niż:</translation>
+        <translation>Późniejszy niż:</translation>
     </message>
 </context>
 </TS>
