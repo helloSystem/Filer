@@ -415,21 +415,21 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
         <location filename="../../build/src/ui_edit-bookmarks.h" line="107"/>
         <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="107"/>
         <source>&amp;Add Item</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;添加项目</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="77"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="108"/>
         <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="108"/>
         <source>&amp;Remove Item</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;移除项目</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="102"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="109"/>
         <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="109"/>
         <source>Use drag and drop to reorder the items</source>
-        <translation type="unfinished"></translation>
+        <translation>使用拖放来重新排列项目</translation>
     </message>
 </context>
 <context>
@@ -439,35 +439,35 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
         <location filename="../../build/src/ui_exec-file.h" line="114"/>
         <location filename="../../cmake-build-debug/src/ui_exec-file.h" line="114"/>
         <source>Execute file</source>
-        <translation type="unfinished"></translation>
+        <translation>执行文件</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="39"/>
         <location filename="../../build/src/ui_exec-file.h" line="116"/>
         <location filename="../../cmake-build-debug/src/ui_exec-file.h" line="116"/>
         <source>&amp;Open</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;打开</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="52"/>
         <location filename="../../build/src/ui_exec-file.h" line="117"/>
         <location filename="../../cmake-build-debug/src/ui_exec-file.h" line="117"/>
         <source>E&amp;xecute</source>
-        <translation type="unfinished"></translation>
+        <translation>执行</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="62"/>
         <location filename="../../build/src/ui_exec-file.h" line="118"/>
         <location filename="../../cmake-build-debug/src/ui_exec-file.h" line="118"/>
         <source>Execute in &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>在 &amp;终端中执行</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="85"/>
         <location filename="../../build/src/ui_exec-file.h" line="119"/>
         <location filename="../../cmake-build-debug/src/ui_exec-file.h" line="119"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>取消</translation>
     </message>
 </context>
 <context>
@@ -477,35 +477,35 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
         <location filename="../../build/src/ui_file-operation-dialog.h" line="124"/>
         <location filename="../../cmake-build-debug/src/ui_file-operation-dialog.h" line="124"/>
         <source>Destination:</source>
-        <translation type="unfinished"></translation>
+        <translation>目的地：</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="48"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="126"/>
         <location filename="../../cmake-build-debug/src/ui_file-operation-dialog.h" line="126"/>
         <source>Processing:</source>
-        <translation type="unfinished"></translation>
+        <translation>处理：</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="61"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="127"/>
         <location filename="../../cmake-build-debug/src/ui_file-operation-dialog.h" line="127"/>
         <source>Preparing...</source>
-        <translation type="unfinished"></translation>
+        <translation>准备中...</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="68"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="128"/>
         <location filename="../../cmake-build-debug/src/ui_file-operation-dialog.h" line="128"/>
         <source>Progress</source>
-        <translation type="unfinished"></translation>
+        <translation>完成度</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="88"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="129"/>
         <location filename="../../cmake-build-debug/src/ui_file-operation-dialog.h" line="129"/>
         <source>Time remaining:</source>
-        <translation type="unfinished"></translation>
+        <translation>剩下的时间:</translation>
     </message>
 </context>
 <context>
@@ -515,112 +515,112 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
         <location filename="../../build/src/ui_file-props.h" line="362"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="362"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>详情</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="60"/>
         <location filename="../../build/src/ui_file-props.h" line="363"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="363"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="133"/>
         <location filename="../../build/src/ui_file-props.h" line="365"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="365"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>一般</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="139"/>
         <location filename="../../build/src/ui_file-props.h" line="366"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="366"/>
         <source>File type:</source>
-        <translation type="unfinished"></translation>
+        <translation>文件类型：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="162"/>
         <location filename="../../build/src/ui_file-props.h" line="368"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="368"/>
         <source>File size:</source>
-        <translation type="unfinished"></translation>
+        <translation>文件大小：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="185"/>
         <location filename="../../build/src/ui_file-props.h" line="370"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="370"/>
         <source>On-disk size:</source>
-        <translation type="unfinished"></translation>
+        <translation>磁盘大小：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="208"/>
         <location filename="../../build/src/ui_file-props.h" line="372"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="372"/>
         <source>Location:</source>
-        <translation type="unfinished"></translation>
+        <translation>位置：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="234"/>
         <location filename="../../build/src/ui_file-props.h" line="374"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="374"/>
         <source>Link target:</source>
-        <translation type="unfinished"></translation>
+        <translation>链接目标：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="260"/>
         <location filename="../../build/src/ui_file-props.h" line="376"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="376"/>
         <source>Last modified:</source>
-        <translation type="unfinished"></translation>
+        <translation>最后更改：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="283"/>
         <location filename="../../build/src/ui_file-props.h" line="378"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="378"/>
         <source>Last accessed:</source>
-        <translation type="unfinished"></translation>
+        <translation>最后访问：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="317"/>
         <location filename="../../build/src/ui_file-props.h" line="380"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="380"/>
         <source>Open with</source>
-        <translation type="unfinished"></translation>
+        <translation>用…打开</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="323"/>
         <location filename="../../build/src/ui_file-props.h" line="381"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="381"/>
         <source>Mime type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mime类型：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="346"/>
         <location filename="../../build/src/ui_file-props.h" line="383"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="383"/>
         <source>Open With:</source>
-        <translation type="unfinished"></translation>
+        <translation>打开方式：</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="380"/>
         <location filename="../../build/src/ui_file-props.h" line="384"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="384"/>
         <source>Access Control</source>
-        <translation type="unfinished"></translation>
+        <translation>访问控制</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="423"/>
         <location filename="../../build/src/ui_file-props.h" line="385"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="385"/>
         <source>Everyone</source>
-        <translation type="unfinished"></translation>
+        <translation>任何人</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="440"/>
         <location filename="../../build/src/ui_file-props.h" line="386"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="386"/>
         <source>Make the file executable</source>
-        <translation type="unfinished"></translation>
+        <translation>使该文件可执行</translation>
     </message>
 </context>
 <context>
@@ -632,103 +632,109 @@ from an application bundle.
 
 This is not how it should be invoked.
 Functionality may be broken.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1没有被启动命令启动
+从一个
+应用程序包中启动。
+
+这不是它应该被调用的方式。
+
+功能可能被破坏。</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="215"/>
         <source>The &apos;launch&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>缺少&apos;启动&apos;命令。</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="222"/>
         <source>The &apos;open&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>缺少&apos;打开&apos;命令。</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="232"/>
         <source>The &apos;eject-and-clean&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>缺少&apos;弹出并清理&apos;命令。</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="277"/>
         <source>Name of configuration profile</source>
-        <translation type="unfinished"></translation>
+        <translation>配置描述文件的名称</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="277"/>
         <source>PROFILE</source>
-        <translation type="unfinished"></translation>
+        <translation>简介</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="280"/>
         <source>Run Filer as a daemon</source>
-        <translation type="unfinished"></translation>
+        <translation>将Filer作为一个守护程序运行</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="283"/>
         <source>Quit Filer</source>
-        <translation type="unfinished"></translation>
+        <translation>退出 Filer</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="286"/>
         <source>Launch desktop manager (deprecated)</source>
-        <translation type="unfinished"></translation>
+        <translation>启动桌面管理器（已废弃）</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="289"/>
         <source>Turn off desktop manager if it&apos;s running</source>
-        <translation type="unfinished"></translation>
+        <translation>关掉正在运行的桌面管理器</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="292"/>
         <source>Open desktop preference dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>在具有指定名称的页面上打开桌面偏好对话框</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="292"/>
         <location filename="../application.cpp" line="308"/>
         <source>NAME</source>
-        <translation type="unfinished"></translation>
+        <translation>名字</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="295"/>
         <source>Open new window</source>
-        <translation type="unfinished"></translation>
+        <translation>打开新窗口</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="298"/>
         <source>Open Find Files utility</source>
-        <translation type="unfinished"></translation>
+        <translation>打开查找文件工具</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="301"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>从图像文件中设置桌面墙纸</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="301"/>
         <source>FILE</source>
-        <translation type="unfinished"></translation>
+        <translation>文件</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="305"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation type="unfinished"></translation>
+        <translation>设置桌面墙纸的模式. MODE=(color|stretch|fit|center|tile)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="305"/>
         <source>MODE</source>
-        <translation type="unfinished"></translation>
+        <translation>MODE</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="308"/>
         <source>Open Preferences dialog on the page with the specified name</source>
-        <translation type="unfinished"></translation>
+        <translation>在具有指定名称的页面上打开首选项对话框</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="311"/>
         <source>Files or directories to open</source>
-        <translation type="unfinished"></translation>
+        <translation>要打开的文件或目录</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="311"/>
@@ -739,12 +745,12 @@ Functionality may be broken.</source>
         <location filename="../application.cpp" line="601"/>
         <location filename="../application.cpp" line="608"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="608"/>
         <source>Terminal emulator is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>未设置终端仿真器。</translation>
     </message>
 </context>
 <context>
@@ -752,12 +758,12 @@ Functionality may be broken.</source>
     <message>
         <location filename="../autorundialog.cpp" line="43"/>
         <source>Open in file manager</source>
-        <translation type="unfinished"></translation>
+        <translation>在文件管理器中打开</translation>
     </message>
     <message>
         <location filename="../autorundialog.cpp" line="133"/>
         <source>Removable Disk</source>
-        <translation type="unfinished"></translation>
+        <translation>可移动磁盘</translation>
     </message>
 </context>
 <context>
@@ -765,37 +771,37 @@ Functionality may be broken.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="49"/>
         <source>Fill with background color only</source>
-        <translation type="unfinished"></translation>
+        <translation>只填充背景色</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="50"/>
         <source>Transparent</source>
-        <translation type="unfinished"></translation>
+        <translation>透明</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="51"/>
         <source>Stretch to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>拉伸至充满整个屏幕</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="52"/>
         <source>Stretch to fit the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>拉伸以适应屏幕</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="53"/>
         <source>Center on the screen</source>
-        <translation type="unfinished"></translation>
+        <translation>在屏幕上居中</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>将图像平铺以填满整个屏幕</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="140"/>
         <source>Image Files</source>
-        <translation type="unfinished"></translation>
+        <translation>图片文件</translation>
     </message>
 </context>
 <context>
@@ -813,7 +819,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="534"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>版本： %1</translation>
     </message>
 </context>
 <context>
@@ -821,17 +827,17 @@ Functionality may be broken.</source>
     <message>
         <location filename="../gotofolderwindow.cpp" line="47"/>
         <source>Go</source>
-        <translation type="unfinished"></translation>
+        <translation>去往</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="48"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="59"/>
         <source>Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>去往文件夹</translation>
     </message>
 </context>
 <context>
@@ -839,23 +845,23 @@ Functionality may be broken.</source>
     <message>
         <location filename="../mainwindow.cpp" line="212"/>
         <source>Clear text (Ctrl+K)</source>
-        <translation type="unfinished"></translation>
+        <translation>清除文本(Ctrl+K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="795"/>
         <source>Version: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>版本： %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1521"/>
         <location filename="../mainwindow.cpp" line="1532"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="1532"/>
         <source>Switch user command is not set.</source>
-        <translation type="unfinished"></translation>
+        <translation>未设置切换用户命令。</translation>
     </message>
 </context>
 <context>
@@ -863,22 +869,22 @@ Functionality may be broken.</source>
     <message>
         <location filename="../preferencesdialog.cpp" line="190"/>
         <source>Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>图标视图</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="191"/>
         <source>Compact Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>紧凑的图标视图</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="192"/>
         <source>Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>缩略视图</translation>
     </message>
     <message>
         <location filename="../preferencesdialog.cpp" line="193"/>
         <source>Detailed List View</source>
-        <translation type="unfinished"></translation>
+        <translation>详细列表视图</translation>
     </message>
 </context>
 <context>
@@ -886,37 +892,37 @@ Functionality may be broken.</source>
     <message>
         <location filename="../tabpage.cpp" line="246"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="265"/>
         <source>%1 available</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 可用</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="278"/>
         <source>%n items</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n 个项目</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="280"/>
         <source>1 item</source>
-        <translation type="unfinished"></translation>
+        <translation>1 个项目</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="436"/>
         <source>%1 items selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 项目已被选定</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="440"/>
         <source>%1 item selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 项目已被选定</numerusform>
         </translation>
     </message>
 </context>
@@ -925,12 +931,12 @@ Functionality may be broken.</source>
     <message>
         <location filename="../view.cpp" line="111"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>在新窗口中打开</translation>
     </message>
     <message>
         <location filename="../view.cpp" line="119"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>在终端中打开</translation>
     </message>
 </context>
 <context>
@@ -938,140 +944,140 @@ Functionality may be broken.</source>
     <message>
         <location filename="../file-search.ui" line="14"/>
         <source>Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>查找文件</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="24"/>
         <source>Name/Location</source>
-        <translation type="unfinished"></translation>
+        <translation>名称/位置</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="30"/>
         <source>File name patterns</source>
-        <translation type="unfinished"></translation>
+        <translation>文件名模式</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="36"/>
         <source>Pattern:</source>
-        <translation type="unfinished"></translation>
+        <translation>非法参数：</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="46"/>
         <location filename="../file-search.ui" line="221"/>
         <source>Case insensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>不区分大小写</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="53"/>
         <location filename="../file-search.ui" line="228"/>
         <source>Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>使用正则表达式</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="63"/>
         <source>Places to search</source>
-        <translation type="unfinished"></translation>
+        <translation>要搜索的地点</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="76"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>添加</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="88"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>移除</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="117"/>
         <source>Search in sub directories</source>
-        <translation type="unfinished"></translation>
+        <translation>在子目录中搜索</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="124"/>
         <source>Search hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>搜索隐藏文件</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="135"/>
         <location filename="../file-search.ui" line="141"/>
         <source>File Type</source>
-        <translation type="unfinished"></translation>
+        <translation>文件类型</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="147"/>
         <source>Only search for files of following types:</source>
-        <translation type="unfinished"></translation>
+        <translation>只搜索以下类型的文件：</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="154"/>
         <source>Text files</source>
-        <translation type="unfinished"></translation>
+        <translation>文本文件</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="161"/>
         <source>Image files</source>
-        <translation type="unfinished"></translation>
+        <translation>图像文件</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="168"/>
         <source>Audio files</source>
-        <translation type="unfinished"></translation>
+        <translation>音频文件</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="175"/>
         <source>Video files</source>
-        <translation type="unfinished"></translation>
+        <translation>视频文件</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="182"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>文档</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="206"/>
         <source>Content</source>
-        <translation type="unfinished"></translation>
+        <translation>内容</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="212"/>
         <source>File contains</source>
-        <translation type="unfinished"></translation>
+        <translation>文件容器</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="252"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>详情</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="258"/>
         <source>File Size</source>
-        <translation type="unfinished"></translation>
+        <translation>文件大小</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="264"/>
         <source>Bigger than:</source>
-        <translation type="unfinished"></translation>
+        <translation>大于：</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="289"/>
         <source>Smaller than:</source>
-        <translation type="unfinished">小于：</translation>
+        <translation>小于：</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="317"/>
         <source>Last Modified Time</source>
-        <translation type="unfinished"></translation>
+        <translation>上次修改时间</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="323"/>
         <source>Earlier than:</source>
-        <translation type="unfinished">早于：</translation>
+        <translation>早于：</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="340"/>
         <source>Later than:</source>
-        <translation type="unfinished">晚于：</translation>
+        <translation>晚于：</translation>
     </message>
 </context>
 <context>
@@ -1079,7 +1085,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../appchoosercombobox.cpp" line="79"/>
         <source>Customize</source>
-        <translation type="unfinished"></translation>
+        <translation>自定义</translation>
     </message>
 </context>
 <context>
@@ -1087,7 +1093,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../appchooserdialog.cpp" line="262"/>
         <source>Select an application to open &quot;%1&quot; files</source>
-        <translation type="unfinished"></translation>
+        <translation>选择一个应用程序来打开&quot;%1 &quot;文件</translation>
     </message>
 </context>
 <context>
@@ -1095,12 +1101,12 @@ Functionality may be broken.</source>
     <message>
         <location filename="../createnewmenu.cpp" line="29"/>
         <source>Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>文件夹</translation>
     </message>
     <message>
         <location filename="../createnewmenu.cpp" line="33"/>
         <source>Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>空白文件</translation>
     </message>
 </context>
 <context>
@@ -1108,12 +1114,12 @@ Functionality may be broken.</source>
     <message>
         <location filename="../dirtreemodelitem.cpp" line="77"/>
         <source>Loading...</source>
-        <translation type="unfinished"></translation>
+        <translation>加载中...</translation>
     </message>
     <message>
         <location filename="../dirtreemodelitem.cpp" line="208"/>
         <source>&lt;No sub folders&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;没有子文件夹</translation>
     </message>
 </context>
 <context>
@@ -1121,12 +1127,12 @@ Functionality may be broken.</source>
     <message>
         <location filename="../dirtreeview.cpp" line="220"/>
         <source>Open in New Win&amp;dow</source>
-        <translation type="unfinished"></translation>
+        <translation>在新窗口中打开</translation>
     </message>
     <message>
         <location filename="../dirtreeview.cpp" line="226"/>
         <source>Open in Termina&amp;l</source>
-        <translation type="unfinished"></translation>
+        <translation>在终端中打开</translation>
     </message>
 </context>
 <context>
@@ -1134,22 +1140,22 @@ Functionality may be broken.</source>
     <message>
         <location filename="../dndactionmenu.cpp" line="26"/>
         <source>Copy here</source>
-        <translation type="unfinished"></translation>
+        <translation>复制到这里</translation>
     </message>
     <message>
         <location filename="../dndactionmenu.cpp" line="27"/>
         <source>Move here</source>
-        <translation type="unfinished"></translation>
+        <translation>移动到这里</translation>
     </message>
     <message>
         <location filename="../dndactionmenu.cpp" line="28"/>
         <source>Create symlink here</source>
-        <translation type="unfinished"></translation>
+        <translation>在此创建符号链接</translation>
     </message>
     <message>
         <location filename="../dndactionmenu.cpp" line="30"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>取消</translation>
     </message>
 </context>
 <context>
@@ -1157,7 +1163,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../editbookmarksdialog.cpp" line="96"/>
         <source>New bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>新书签</translation>
     </message>
 </context>
 <context>
@@ -1166,12 +1172,13 @@ Functionality may be broken.</source>
         <location filename="../execfiledialog.cpp" line="40"/>
         <source>This text file &apos;%1&apos; seems to be an executable script.
 What do you want to do with it?</source>
-        <translation type="unfinished"></translation>
+        <translation>这个文本文件&apos;%1&apos;似乎是一个可执行的脚本。
+你想用它做什么？</translation>
     </message>
     <message>
         <location filename="../execfiledialog.cpp" line="45"/>
         <source>This file &apos;%1&apos; is executable. Do you want to execute it?</source>
-        <translation type="unfinished"></translation>
+        <translation>这个文件&apos;%1&apos;是可执行的。你想执行它吗？</translation>
     </message>
 </context>
 <context>
@@ -1179,62 +1186,62 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="96"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>打开</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="108"/>
         <source>Show Contents</source>
-        <translation type="unfinished"></translation>
+        <translation>显示内容</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="101"/>
         <source>Open With...</source>
-        <translation type="unfinished"></translation>
+        <translation>打开方式...</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="165"/>
         <source>Create &amp;New</source>
-        <translation type="unfinished"></translation>
+        <translation>新建</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="172"/>
         <source>Cut</source>
-        <translation type="unfinished"></translation>
+        <translation>剪切</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="176"/>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>复制</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="180"/>
         <source>Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>粘帖</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="185"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>移动到垃圾桶</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="189"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>重命名</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="237"/>
         <source>Get Info</source>
-        <translation type="unfinished"></translation>
+        <translation>获取信息</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="242"/>
         <source>&amp;Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>清空垃圾桶</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="369"/>
         <source>Output</source>
-        <translation type="unfinished"></translation>
+        <translation>输出</translation>
     </message>
 </context>
 <context>
@@ -1242,29 +1249,30 @@ What do you want to do with it?</source>
     <message>
         <location filename="../fileoperation.cpp" line="223"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="224"/>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
-        <translation type="unfinished"></translation>
+        <translation>有些文件不能被移到垃圾桶，因为底层文件系统不支持这种操作。
+你想删除它们吗？</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="273"/>
         <source>%1 is required by the system and cannot be deleted.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1是系统所需要的，不能被删除。</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="281"/>
         <location filename="../fileoperation.cpp" line="313"/>
         <source>Confirm</source>
-        <translation type="unfinished"></translation>
+        <translation>确定</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="282"/>
         <source>Do you want to delete the selected files?</source>
-        <translation type="unfinished"></translation>
+        <translation>你想删除选定的文件吗？</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="272"/>
@@ -1275,12 +1283,12 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperation.cpp" line="305"/>
         <source>%1 is required by the system and cannot be moved to the Trash.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1是系统需要的，不能移到垃圾桶。</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="314"/>
         <source>Do you want to move the selected files to trash can?</source>
-        <translation type="unfinished"></translation>
+        <translation>你想把选定的文件移到垃圾桶吗？</translation>
     </message>
 </context>
 <context>
@@ -1288,37 +1296,37 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="43"/>
         <source>Move files</source>
-        <translation type="unfinished"></translation>
+        <translation>移动文件</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="44"/>
         <source>Moving the following files to destination folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>将以下文件移至目标文件夹：</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="47"/>
         <source>Copy Files</source>
-        <translation type="unfinished"></translation>
+        <translation>复制文件</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="48"/>
         <source>Copying the following files to destination folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>将以下文件复制到目标文件夹：</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="51"/>
         <source>Trash Files</source>
-        <translation type="unfinished"></translation>
+        <translation>垃圾文件</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="52"/>
         <source>Moving the following files to trash can:</source>
-        <translation type="unfinished"></translation>
+        <translation>将以下文件移至垃圾桶：</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="55"/>
         <source>Delete Files</source>
-        <translation type="unfinished"></translation>
+        <translation>删除文件</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="56"/>
