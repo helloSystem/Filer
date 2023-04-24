@@ -64,7 +64,35 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
 Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
 
 Used with permission of the creator https://raphaellopes.me/</source>
-        <translation type="unfinished"></translation>
+        <translation>Wypełniacz
+
+Copyright (C) 2020-21 Simon Peter
+Copyright (C) 2021 Chris Moore
+
+Originally based on PCMan File Manager
+Pierwotnie oparty na nenedżerze plików PCMan File Manager
+Portions Copyright (C) 2009-14 洪任諭 (Hong Jen Yee)
+
+Ten program jest wolnym oprogramowaniem; możesz go redystrybuować i/lub
+modyfikować go zgodnie z warunkami Powszechnej Licencji Publicznej GNU
+opublikowane przez Free Software Foundation; albo wersja 2
+Licencji lub (według uznania użytkownika) dowolnej późniejszej wersji.
+
+Ten program jest rozpowszechniany w nadziei, że będzie użyteczny,
+ale BEZ JAKIEJKOLWIEK GWARANCJI; nawet bez domniemanej gwarancji
+PRZYDATNOŚĆ HANDLOWA lub PRZYDATNOŚĆ DO OKREŚLONEGO CELU. Zobacz
+Więcej informacji można znaleźć w Powszechnej Licencji Publicznej GNU.
+
+Powinieneś otrzymać kopię GNU General Public License
+wraz z tym programem; jeśli nie napisz do Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+Ikona aplikacji
+
+https://dribbble.com/shots/2541211--Pirate-Finder-icon#
+
+Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
+Wykorzystane za zgodą twórcy https://raphaellopes.me/</translation>
     </message>
     <message>
         <source>Lightweight file manager</source>
@@ -100,7 +128,13 @@ Used with permission of the creator https://raphaellopes.me/</source>
 
 Application icon:
 * Raphael Lopes (https://raphaellopes.me/)</source>
-        <translation type="unfinished"></translation>
+        <translation>Programowanie:
+* Simon Peter (probono)
+* Chris Moore (moochris)
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+
+Ikona aplikacji:
+* Raphael Lopes (https://raphaellopes.me/)</translation>
     </message>
     <message>
         <location filename="../about.ui" line="116"/>
@@ -720,7 +754,11 @@ from an application bundle.
 
 This is not how it should be invoked.
 Functionality may be broken.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 nie został uruchomiony poleceniem uruchomienia
+z pakietu aplikacji.
+
+Nie powinno się uruchamiać w ten sposób.
+Funkcjonalność może zostać uszkodzona.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="215"/>
@@ -735,12 +773,12 @@ Functionality may be broken.</source>
     <message>
         <location filename="../application.cpp" line="232"/>
         <source>The &apos;eject-and-clean&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Brak polecenia &apos;eject-and-clean&apos;.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="286"/>
         <source>Launch desktop manager (deprecated)</source>
-        <translation type="unfinished"></translation>
+        <translation>Uruchamianie desktop managera (przestarzałe)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="289"/>
@@ -838,7 +876,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="50"/>
         <source>Transparent</source>
-        <translation type="unfinished"></translation>
+        <translation>Przeźroczysty</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="51"/>
@@ -981,19 +1019,19 @@ Functionality may be broken.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="436"/>
         <source>%1 items selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>wybrano %1 element</numerusform>
+            <numerusform>wybrano %1 elementów</numerusform>
+            <numerusform>wybrano %1 elementów</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="440"/>
         <source>%1 item selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>wybrano %1 element</numerusform>
+            <numerusform>wybrano %1 elementów</numerusform>
+            <numerusform>wybrano %1 elementów</numerusform>
         </translation>
     </message>
     <message>
@@ -1401,7 +1439,7 @@ Czy zamiast tego usunąć te pliki?</translation>
     <message>
         <location filename="../fileoperation.cpp" line="273"/>
         <source>%1 is required by the system and cannot be deleted.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 jest wymagany przez system i nie może być usunięte.</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="281"/>
@@ -1423,7 +1461,7 @@ Czy zamiast tego usunąć te pliki?</translation>
     <message>
         <location filename="../fileoperation.cpp" line="305"/>
         <source>%1 is required by the system and cannot be moved to the Trash.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 jest wymagane przez system i nie może być wrzucone do Kosza.</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="314"/>
@@ -1567,7 +1605,7 @@ Czy zamiast tego usunąć te pliki?</translation>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>You should add at least add one directory to search.</source>
-        <translation type="unfinished"></translation>
+        <translation>Należy dodać co najmniej jeden katalog do wyszukiwania.</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="127"/>
@@ -1777,17 +1815,17 @@ Czy zamiast tego usunąć te pliki?</translation>
     <message>
         <location filename="../placesview.cpp" line="352"/>
         <source>Open in New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Otwórz w nowym oknie</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="375"/>
         <source>Move Bookmark Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Przesuń zakładkę w górę</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="380"/>
         <source>Move Bookmark Down</source>
-        <translation type="unfinished"></translation>
+        <translation>Przesuń zakładkę w dół</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="384"/>
@@ -2301,7 +2339,7 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_main-win.h" line="791"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="791"/>
         <source>Ctrl+Alt+Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+Backspace</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="841"/>
@@ -2332,7 +2370,7 @@ Zmodyfikowany: %3</translation>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="797"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="799"/>
         <source>Go Up and Close Current</source>
-        <translation type="unfinished"></translation>
+        <translation>Idź w górę i zamknij bieżący</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="859"/>
@@ -2917,14 +2955,14 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_preferences.h" line="619"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="619"/>
         <source>Save metadata to directories (.DirInfo files)</source>
-        <translation type="unfinished"></translation>
+        <translation>Zapisz metadane w katalogach (pliki .DirInfo)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="67"/>
         <location filename="../../build/src/ui_preferences.h" line="620"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="620"/>
         <source>Spatial mode (folders open in a new window)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tryb przestrzenny (foldery otwierają się w nowym oknie)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="134"/>
@@ -3374,7 +3412,7 @@ Zmodyfikowany: %3</translation>
     <message>
         <location filename="../utilities.cpp" line="133"/>
         <source>The startvolume cannot be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nie można zmienić nazwy woluminu początkowego.</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="222"/>
@@ -3433,7 +3471,7 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_rename-dialog.h" line="158"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="158"/>
         <source>dest</source>
-        <translation type="unfinished"></translation>
+        <translation>docelowy</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="63"/>
@@ -3447,14 +3485,14 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_rename-dialog.h" line="160"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="160"/>
         <source>src file info</source>
-        <translation type="unfinished"></translation>
+        <translation>informacje o pliku źródłowym</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="89"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="161"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="161"/>
         <source>dest file info</source>
-        <translation type="unfinished"></translation>
+        <translation>Informacje o pliku docelowym</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="102"/>
@@ -3499,7 +3537,7 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_filesearch.h" line="399"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="399"/>
         <source>File Name Patterns:</source>
-        <translation type="unfinished"></translation>
+        <translation>Wzorce nazw plików:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="41"/>
@@ -3555,7 +3593,7 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_filesearch.h" line="407"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="407"/>
         <source>Search for hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>Wyszukaj ukryte pliki</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="137"/>
@@ -3632,14 +3670,14 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_filesearch.h" line="418"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="418"/>
         <source>Case insensiti&amp;ve</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozróżnianie &amp;vielkości liter</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="230"/>
         <location filename="../../build/src/ui_filesearch.h" line="419"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="419"/>
         <source>&amp;Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Użyj wyrażeń regularnych</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="254"/>
@@ -3714,7 +3752,7 @@ Zmodyfikowany: %3</translation>
         <location filename="../../build/src/ui_filesearch.h" line="434"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="434"/>
         <source>Last Modified Time:</source>
-        <translation type="unfinished"></translation>
+        <translation>Czas ostatniej modyfikacji:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="357"/>
