@@ -739,7 +739,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../application.cpp" line="311"/>
         <source>[FILE1, FILE2,...]</source>
-        <translation type="unfinished"></translation>
+        <translation>[FILE1, FILE2,...]</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="601"/>
@@ -809,12 +809,12 @@ Functionality may be broken.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="445"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Stic&amp;k 到当前位置</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="467"/>
         <source>Desktop Preferences</source>
-        <translation type="unfinished">桌面首选项</translation>
+        <translation>桌面首选项</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="534"/>
@@ -1278,7 +1278,7 @@ Do you want to delete them instead?</source>
         <location filename="../fileoperation.cpp" line="272"/>
         <location filename="../fileoperation.cpp" line="304"/>
         <source> </source>
-        <translation type="unfinished"></translation>
+        <translation> </translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="305"/>
@@ -1331,42 +1331,42 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="56"/>
         <source>Deleting the following files</source>
-        <translation type="unfinished"></translation>
+        <translation>删除以下文件</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="61"/>
         <source>Create Symlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>创建符号链接</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="62"/>
         <source>Creating symlinks for the following files:</source>
-        <translation type="unfinished"></translation>
+        <translation>为以下文件创建符号链接：</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="65"/>
         <source>Change Attributes</source>
-        <translation type="unfinished"></translation>
+        <translation>更改属性</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="66"/>
         <source>Changing attributes of the following files:</source>
-        <translation type="unfinished"></translation>
+        <translation>改变以下文件的属性：</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="71"/>
         <source>Restore Trashed Files</source>
-        <translation type="unfinished"></translation>
+        <translation>恢复已回收的文件</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="72"/>
         <source>Restoring the following files from trash can:</source>
-        <translation type="unfinished"></translation>
+        <translation>从废纸篓中恢复以下文件：</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="141"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>错误</translation>
     </message>
 </context>
 <context>
@@ -1374,47 +1374,47 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../filepropsdialog.cpp" line="148"/>
         <source>View folder content</source>
-        <translation type="unfinished"></translation>
+        <translation>查看文件夹内容</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="149"/>
         <source>View and modify folder content</source>
-        <translation type="unfinished"></translation>
+        <translation>查看和修改文件夹内容</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="153"/>
         <source>Read</source>
-        <translation type="unfinished"></translation>
+        <translation>读取</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="154"/>
         <source>Read and write</source>
-        <translation type="unfinished"></translation>
+        <translation>读取和写入</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="156"/>
         <source>Forbidden</source>
-        <translation type="unfinished"></translation>
+        <translation>禁止</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="274"/>
         <source>Files of different types</source>
-        <translation type="unfinished"></translation>
+        <translation>不同类型的文件</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="304"/>
         <source>Multiple Files</source>
-        <translation type="unfinished"></translation>
+        <translation>多个文件</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="432"/>
         <source>Apply changes</source>
-        <translation type="unfinished"></translation>
+        <translation>应用修改</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="433"/>
         <source>Do you want to recursively apply these changes to all files and sub-folders?</source>
-        <translation type="unfinished"></translation>
+        <translation>你想在所有文件和子文件夹中递归应用这些变化吗？</translation>
     </message>
 </context>
 <context>
@@ -1422,17 +1422,17 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>You should add at least add one directory to search.</source>
-        <translation type="unfinished"></translation>
+        <translation>你应该至少添加一个目录来搜索。</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="127"/>
         <source>Select a folder</source>
-        <translation type="unfinished"></translation>
+        <translation>选择一个文件夹</translation>
     </message>
 </context>
 <context>
@@ -1440,77 +1440,77 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../foldermenu.cpp" line="37"/>
         <source>Create &amp;New</source>
-        <translation type="unfinished"></translation>
+        <translation>创建&amp;一个新的</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="44"/>
         <source>&amp;Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;粘贴</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="50"/>
         <source>Select &amp;All</source>
-        <translation type="unfinished"></translation>
+        <translation>选择&amp;全部</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="56"/>
         <source>Sorting</source>
-        <translation type="unfinished"></translation>
+        <translation>排序</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="61"/>
         <source>Show Hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>显示隐藏项</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="69"/>
         <source>Get Info</source>
-        <translation type="unfinished"></translation>
+        <translation>获取信息</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="95"/>
         <source>By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>按文件名</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="96"/>
         <source>By Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>按修改时间</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="97"/>
         <source>By File Size</source>
-        <translation type="unfinished"></translation>
+        <translation>按文件大小</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="98"/>
         <source>By File Type</source>
-        <translation type="unfinished"></translation>
+        <translation>按文件类型</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="99"/>
         <source>By File Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>按文件所有者</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="111"/>
         <source>Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>升序</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="116"/>
         <source>Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>降序</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="131"/>
         <source>Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>文件夹优先</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="140"/>
         <source>Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>区分大小写</translation>
     </message>
 </context>
 <context>
@@ -1518,27 +1518,27 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../foldermodel.cpp" line="330"/>
         <source>Name</source>
-        <translation type="unfinished">名称</translation>
+        <translation>名称</translation>
     </message>
     <message>
         <location filename="../foldermodel.cpp" line="333"/>
         <source>Type</source>
-        <translation type="unfinished"></translation>
+        <translation>类别</translation>
     </message>
     <message>
         <location filename="../foldermodel.cpp" line="336"/>
         <source>Size</source>
-        <translation type="unfinished"></translation>
+        <translation>大小</translation>
     </message>
     <message>
         <location filename="../foldermodel.cpp" line="339"/>
         <source>Modified</source>
-        <translation type="unfinished"></translation>
+        <translation>更改日期</translation>
     </message>
     <message>
         <location filename="../foldermodel.cpp" line="342"/>
         <source>Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>所有者</translation>
     </message>
 </context>
 <context>
@@ -1546,12 +1546,12 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fontbutton.cpp" line="46"/>
         <source>Bold</source>
-        <translation type="unfinished"></translation>
+        <translation>加粗</translation>
     </message>
     <message>
         <location filename="../fontbutton.cpp" line="50"/>
         <source>Italic</source>
-        <translation type="unfinished"></translation>
+        <translation>斜体</translation>
     </message>
 </context>
 <context>
@@ -1559,7 +1559,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../mountoperationpassworddialog.cpp" line="40"/>
         <source>&amp;Connect</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;连接</translation>
     </message>
 </context>
 <context>
@@ -1567,32 +1567,32 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesmodel.cpp" line="41"/>
         <source>Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>设备</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="83"/>
         <source>Places</source>
-        <translation type="unfinished"></translation>
+        <translation>位置</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="91"/>
         <source>Desktop</source>
-        <translation type="unfinished">桌面</translation>
+        <translation>桌面</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="99"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>电脑</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="122"/>
         <source>Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>书签</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="204"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>废纸篓</translation>
     </message>
 </context>
 <context>
@@ -1600,48 +1600,48 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesview.cpp" line="352"/>
         <source>Open in New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>在新窗口中打开</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="365"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>清空废纸篓</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="375"/>
         <source>Move Bookmark Up</source>
-        <translation type="unfinished"></translation>
+        <translation>向上移动书签</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="380"/>
         <source>Move Bookmark Down</source>
-        <translation type="unfinished"></translation>
+        <translation>向下移动书签</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="384"/>
         <source>Rename Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>重命名书签</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="387"/>
         <source>Remove Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>删除书签</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="396"/>
         <location filename="../placesview.cpp" line="413"/>
         <source>Unmount</source>
-        <translation type="unfinished"></translation>
+        <translation>卸载</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="400"/>
         <source>Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>挂载</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="406"/>
         <source>Eject</source>
-        <translation type="unfinished"></translation>
+        <translation>弹出</translation>
     </message>
 </context>
 <context>
@@ -1652,29 +1652,33 @@ Do you want to delete them instead?</source>
         <source>Type: %1
 Size: %2
 Modified: %3</source>
-        <translation type="unfinished"></translation>
+        <translation>类型: %1
+大小: %2
+修改: %3</translation>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="56"/>
         <source>Type: %1
 Modified: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>类型: %1
+修改: %2</translation>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="75"/>
         <source>Type: %1
 Modified: %3</source>
-        <translation type="unfinished"></translation>
+        <translation>类型 %1
+修改: %3</translation>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="89"/>
         <source>&amp;Overwrite</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;覆盖</translation>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="91"/>
         <source>&amp;Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;重命名</translation>
     </message>
 </context>
 <context>
@@ -1683,23 +1687,23 @@ Modified: %3</source>
         <location filename="../sidepane.cpp" line="49"/>
         <location filename="../sidepane.cpp" line="133"/>
         <source>Places</source>
-        <translation type="unfinished"></translation>
+        <translation>位置</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="50"/>
         <location filename="../sidepane.cpp" line="135"/>
         <source>Directory Tree</source>
-        <translation type="unfinished"></translation>
+        <translation>目录树</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="143"/>
         <source>Shows list of common places, devices, and bookmarks in sidebar</source>
-        <translation type="unfinished"></translation>
+        <translation>在侧边栏显示常用位置、设备和书签的列表</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="145"/>
         <source>Shows tree of directories in sidebar</source>
-        <translation type="unfinished"></translation>
+        <translation>在侧边栏显示目录树</translation>
     </message>
 </context>
 <context>
@@ -1709,532 +1713,532 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="606"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="606"/>
         <source>File Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>文件管理器</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="272"/>
         <location filename="../../build/src/ui_main-win.h" line="607"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="607"/>
         <source>Go &amp;Up</source>
-        <translation type="unfinished"></translation>
+        <translation>向上&amp;一级</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="275"/>
         <location filename="../../build/src/ui_main-win.h" line="609"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="609"/>
         <source>Go Up</source>
-        <translation type="unfinished"></translation>
+        <translation>向上一级</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="287"/>
         <location filename="../../build/src/ui_main-win.h" line="614"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="614"/>
         <source>&amp;Home</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;主页</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="299"/>
         <location filename="../../build/src/ui_main-win.h" line="618"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="618"/>
         <source>&amp;Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;重新加载</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="314"/>
         <location filename="../../build/src/ui_main-win.h" line="622"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="622"/>
         <source>Go</source>
-        <translation type="unfinished"></translation>
+        <translation>去往</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="326"/>
         <location filename="../../build/src/ui_main-win.h" line="623"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="623"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>退出</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="344"/>
         <location filename="../../build/src/ui_main-win.h" line="625"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="625"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;新窗口</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="347"/>
         <location filename="../../build/src/ui_main-win.h" line="627"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="627"/>
         <source>New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>新窗口</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="350"/>
         <location filename="../../build/src/ui_main-win.h" line="630"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="630"/>
         <source>Ctrl+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="358"/>
         <location filename="../../build/src/ui_main-win.h" line="632"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="632"/>
         <source>Show &amp;Hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>显示&amp;隐蔽项</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="367"/>
         <location filename="../../build/src/ui_main-win.h" line="633"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="633"/>
         <source>&amp;Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;电脑</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="370"/>
         <location filename="../../build/src/ui_main-win.h" line="635"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="635"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="379"/>
         <location filename="../../build/src/ui_main-win.h" line="637"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="637"/>
         <source>&amp;Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;废纸篓</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="382"/>
         <location filename="../../build/src/ui_main-win.h" line="639"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="639"/>
         <source>Ctrl+Shift+T</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="387"/>
         <location filename="../../build/src/ui_main-win.h" line="641"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="641"/>
         <source>&amp;Network</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;网络</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="399"/>
         <location filename="../../build/src/ui_main-win.h" line="645"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="645"/>
         <source>&amp;Desktop</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;桌面</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="402"/>
         <location filename="../../build/src/ui_main-win.h" line="647"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="647"/>
         <source>Ctrl+Shift+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="411"/>
         <location filename="../../build/src/ui_main-win.h" line="649"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="649"/>
         <source>&amp;Add to Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;添加到书签</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="416"/>
         <location filename="../../build/src/ui_main-win.h" line="650"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="650"/>
         <source>&amp;Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;应用程序</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="419"/>
         <location filename="../../build/src/ui_main-win.h" line="652"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="652"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="427"/>
         <location filename="../../build/src/ui_main-win.h" line="654"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="654"/>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>刷新</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="435"/>
         <location filename="../../build/src/ui_main-win.h" line="655"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="655"/>
         <source>&amp;Icon View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;图标视图</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="438"/>
         <location filename="../../build/src/ui_main-win.h" line="657"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="657"/>
         <source>Ctrl+1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+1</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="446"/>
         <location filename="../../build/src/ui_main-win.h" line="659"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="659"/>
         <source>&amp;Compact View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;紧凑视图</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="454"/>
         <location filename="../../build/src/ui_main-win.h" line="660"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="660"/>
         <source>&amp;Detailed List</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;详细列表</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="457"/>
         <location filename="../../build/src/ui_main-win.h" line="662"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="662"/>
         <source>Ctrl+2</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="465"/>
         <location filename="../../build/src/ui_main-win.h" line="664"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="664"/>
         <source>&amp;Thumbnail View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;缩略视图</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="474"/>
         <location filename="../../build/src/ui_main-win.h" line="665"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="665"/>
         <source>Cu&amp;t</source>
-        <translation type="unfinished"></translation>
+        <translation>剪&amp;切</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="477"/>
         <location filename="../../build/src/ui_main-win.h" line="667"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="667"/>
         <source>Ctrl+X</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+X</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="486"/>
         <location filename="../../build/src/ui_main-win.h" line="669"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="669"/>
         <source>&amp;Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;复制</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="489"/>
         <location filename="../../build/src/ui_main-win.h" line="671"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="671"/>
         <source>Ctrl+C</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="498"/>
         <location filename="../../build/src/ui_main-win.h" line="673"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="673"/>
         <source>&amp;Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;粘贴</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="501"/>
         <location filename="../../build/src/ui_main-win.h" line="675"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="675"/>
         <source>Ctrl+V</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+V</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="506"/>
         <location filename="../../build/src/ui_main-win.h" line="677"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="677"/>
         <source>Select &amp;All</source>
-        <translation type="unfinished"></translation>
+        <translation>选择&amp;全部</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="509"/>
         <location filename="../../build/src/ui_main-win.h" line="679"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="679"/>
         <source>Ctrl+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="514"/>
         <location filename="../../build/src/ui_main-win.h" line="681"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="681"/>
         <source>Pr&amp;eferences</source>
-        <translation type="unfinished"></translation>
+        <translation>个性&amp;化</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="517"/>
         <location filename="../../build/src/ui_main-win.h" line="683"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="683"/>
         <source>Ctrl+,</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+,</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
         <location filename="../../build/src/ui_main-win.h" line="685"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="685"/>
         <source>&amp;Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;升序</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="533"/>
         <location filename="../../build/src/ui_main-win.h" line="686"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="686"/>
         <source>&amp;Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;降序</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="541"/>
         <location filename="../../build/src/ui_main-win.h" line="687"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="687"/>
         <source>&amp;By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;按文件名</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
         <location filename="../../build/src/ui_main-win.h" line="688"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="688"/>
         <source>By &amp;Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>按&amp;修改时间</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="557"/>
         <location filename="../../build/src/ui_main-win.h" line="689"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="689"/>
         <source>By File &amp;Type</source>
-        <translation type="unfinished"></translation>
+        <translation>按文件&amp;类型</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="565"/>
         <location filename="../../build/src/ui_main-win.h" line="690"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="690"/>
         <source>By &amp;Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>按&amp;所有者</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="573"/>
         <location filename="../../build/src/ui_main-win.h" line="691"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="691"/>
         <source>&amp;Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;文件夹优先</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="644"/>
         <location filename="../../build/src/ui_main-win.h" line="714"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="714"/>
         <source>&amp;Move to Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;移动到废纸篓</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="647"/>
         <location filename="../../build/src/ui_main-win.h" line="716"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="716"/>
         <source>Ctrl+Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Backspace</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="665"/>
         <location filename="../../build/src/ui_main-win.h" line="723"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="723"/>
         <source>Get &amp;Info</source>
-        <translation type="unfinished"></translation>
+        <translation>获取&amp;信息</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
         <location filename="../../build/src/ui_main-win.h" line="725"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="725"/>
         <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+I</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="676"/>
         <location filename="../../build/src/ui_main-win.h" line="727"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="727"/>
         <source>&amp;Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;区分大小写</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="684"/>
         <location filename="../../build/src/ui_main-win.h" line="728"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="728"/>
         <source>By File &amp;Size</source>
-        <translation type="unfinished"></translation>
+        <translation>按文件&amp;大小</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="689"/>
         <location filename="../../build/src/ui_main-win.h" line="729"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="729"/>
         <source>&amp;Close Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;关闭窗口</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="724"/>
         <location filename="../../build/src/ui_main-win.h" line="740"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="740"/>
         <source>&amp;Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;文件夹</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="736"/>
         <location filename="../../build/src/ui_main-win.h" line="744"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="744"/>
         <source>&amp;Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;空白文件</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="747"/>
         <location filename="../../build/src/ui_main-win.h" line="750"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="750"/>
         <source>Ctrl+F</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+F</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="764"/>
         <location filename="../../build/src/ui_main-win.h" line="753"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="753"/>
         <source>&amp;Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;去往文件夹</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="767"/>
         <location filename="../../build/src/ui_main-win.h" line="755"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="755"/>
         <source>Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>去往文件夹</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="770"/>
         <location filename="../../build/src/ui_main-win.h" line="758"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="758"/>
         <source>Ctrl+Shift+G</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+G</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="775"/>
         <location filename="../../build/src/ui_main-win.h" line="760"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="760"/>
         <source>&amp;Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;下载</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="778"/>
         <location filename="../../build/src/ui_main-win.h" line="762"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="762"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>下载</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="781"/>
         <location filename="../../build/src/ui_main-win.h" line="765"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="765"/>
         <source>Ctrl+Shift+L</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+L</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="789"/>
         <location filename="../../build/src/ui_main-win.h" line="767"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="767"/>
         <source>&amp;Utilities</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;实用工具</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="792"/>
         <location filename="../../build/src/ui_main-win.h" line="769"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="769"/>
         <source>Utilities</source>
-        <translation type="unfinished"></translation>
+        <translation>实用工具</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="795"/>
         <location filename="../../build/src/ui_main-win.h" line="772"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="772"/>
         <source>Ctrl+Shift+U</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+U</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="803"/>
         <location filename="../../build/src/ui_main-win.h" line="774"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="774"/>
         <source>&amp;Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;文档</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="806"/>
         <location filename="../../build/src/ui_main-win.h" line="776"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="776"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>文档</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="809"/>
         <location filename="../../build/src/ui_main-win.h" line="779"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="779"/>
         <source>Ctrl+Shift+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="817"/>
         <location filename="../../build/src/ui_main-win.h" line="781"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="781"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>打开</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="820"/>
         <location filename="../../build/src/ui_main-win.h" line="783"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="783"/>
         <source>Ctrl+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="825"/>
         <location filename="../../build/src/ui_main-win.h" line="785"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="785"/>
         <source>&amp;Duplicate</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;复制</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="828"/>
         <location filename="../../build/src/ui_main-win.h" line="787"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="787"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="833"/>
         <location filename="../../build/src/ui_main-win.h" line="789"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="789"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>清空废纸篓</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="836"/>
         <location filename="../../build/src/ui_main-win.h" line="791"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="791"/>
         <source>Ctrl+Alt+Backspace</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+Backspace</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="841"/>
         <location filename="../../build/src/ui_main-win.h" line="793"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="793"/>
         <source>Show Contents</source>
-        <translation type="unfinished"></translation>
+        <translation>显示内容</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="844"/>
         <location filename="../../build/src/ui_main-win.h" line="795"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="795"/>
         <source>Ctrl+Alt+Shift+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+Shift+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
         <location filename="../../build/src/ui_main-win.h" line="806"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="806"/>
         <source>Ctrl+Alt+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="853"/>
@@ -2244,63 +2248,63 @@ Modified: %3</source>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="797"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="799"/>
         <source>Go Up and Close Current</source>
-        <translation type="unfinished"></translation>
+        <translation>回退和关闭连接</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="859"/>
         <location filename="../../build/src/ui_main-win.h" line="802"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="802"/>
         <source>Ctrl+Shift+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="864"/>
         <location filename="../../build/src/ui_main-win.h" line="804"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="804"/>
         <source>Open With...</source>
-        <translation type="unfinished"></translation>
+        <translation>打开为...</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="582"/>
         <location filename="../../build/src/ui_main-win.h" line="692"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="692"/>
         <source>New &amp;Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>新&amp;标签</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="278"/>
         <location filename="../../build/src/ui_main-win.h" line="612"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="612"/>
         <source>Ctrl+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Up</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="290"/>
         <location filename="../../build/src/ui_main-win.h" line="616"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="616"/>
         <source>Ctrl+Shift+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+H</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="302"/>
         <location filename="../../build/src/ui_main-win.h" line="620"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="620"/>
         <source>Ctrl+Shift+R</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+R</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="335"/>
         <location filename="../../build/src/ui_main-win.h" line="624"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="624"/>
         <source>&amp;About Filer</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;关于 Filer</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="585"/>
         <location filename="../../build/src/ui_main-win.h" line="694"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="694"/>
         <source>New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>新标签</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="588"/>
@@ -2310,35 +2314,35 @@ Modified: %3</source>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="697"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="736"/>
         <source>Ctrl+T</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="600"/>
         <location filename="../../build/src/ui_main-win.h" line="699"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="699"/>
         <source>Go &amp;Back</source>
-        <translation type="unfinished"></translation>
+        <translation>回&amp;退</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="603"/>
         <location filename="../../build/src/ui_main-win.h" line="701"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="701"/>
         <source>Go Back</source>
-        <translation type="unfinished"></translation>
+        <translation>回退</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="606"/>
         <location filename="../../build/src/ui_main-win.h" line="704"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="704"/>
         <source>Alt+Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+左键</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="615"/>
         <location filename="../../build/src/ui_main-win.h" line="706"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="706"/>
         <source>Go &amp;Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>向&amp;前</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="618"/>
