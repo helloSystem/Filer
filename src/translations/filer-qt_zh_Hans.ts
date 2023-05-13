@@ -2349,49 +2349,49 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="708"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="708"/>
         <source>Go Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>向前</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="621"/>
         <location filename="../../build/src/ui_main-win.h" line="711"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="711"/>
         <source>Alt+Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+右</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="635"/>
         <location filename="../../build/src/ui_main-win.h" line="713"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="713"/>
         <source>&amp;Invert Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;反选</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="652"/>
         <location filename="../../build/src/ui_main-win.h" line="718"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="718"/>
         <source>&amp;Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;重命名</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="655"/>
         <location filename="../../build/src/ui_main-win.h" line="720"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="720"/>
         <source>F2</source>
-        <translation type="unfinished"></translation>
+        <translation>F2</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="660"/>
         <location filename="../../build/src/ui_main-win.h" line="722"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="722"/>
         <source>C&amp;lose Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>关闭&amp;选项卡</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="692"/>
         <location filename="../../build/src/ui_main-win.h" line="731"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="731"/>
         <source>Ctrl+W</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+W</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="697"/>
