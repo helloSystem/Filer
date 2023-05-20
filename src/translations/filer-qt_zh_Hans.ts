@@ -2398,28 +2398,28 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="733"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="733"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished">编辑书签</translation>
+        <translation>编辑书签</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="702"/>
         <location filename="../../build/src/ui_main-win.h" line="734"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="734"/>
         <source>Open &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>打开&amp;命令环境</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="710"/>
         <location filename="../../build/src/ui_main-win.h" line="738"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="738"/>
         <source>Open as &amp;Root</source>
-        <translation type="unfinished"></translation>
+        <translation>以&amp;Root身份打开</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="715"/>
         <location filename="../../build/src/ui_main-win.h" line="739"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="739"/>
         <source>&amp;Edit Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;编辑书签</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="390"/>
@@ -2429,105 +2429,105 @@ Modified: %3</source>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="643"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="742"/>
         <source>Ctrl+Shift+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="739"/>
         <location filename="../../build/src/ui_main-win.h" line="746"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="746"/>
         <source>Ctrl+Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Alt+N</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="744"/>
         <location filename="../../build/src/ui_main-win.h" line="748"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="748"/>
         <source>&amp;Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;查找文件</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="755"/>
         <location filename="../../build/src/ui_main-win.h" line="752"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="752"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>过滤器</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="93"/>
         <location filename="../../build/src/ui_main-win.h" line="808"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="808"/>
         <source>Filter by string...</source>
-        <translation type="unfinished"></translation>
+        <translation>通过字符串过滤...</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="117"/>
         <location filename="../../build/src/ui_main-win.h" line="809"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="809"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;文件</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="121"/>
         <location filename="../../build/src/ui_main-win.h" line="810"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="810"/>
         <source>C&amp;reate New</source>
-        <translation type="unfinished"></translation>
+        <translation>新&amp;建</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="141"/>
         <location filename="../../build/src/ui_main-win.h" line="811"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="811"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;帮助</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="147"/>
         <location filename="../../build/src/ui_main-win.h" line="812"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="812"/>
         <source>&amp;View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;查看</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="151"/>
         <location filename="../../build/src/ui_main-win.h" line="813"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="813"/>
         <source>&amp;Sorting</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;排序</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="177"/>
         <location filename="../../build/src/ui_main-win.h" line="814"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="814"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;编辑</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="195"/>
         <location filename="../../build/src/ui_main-win.h" line="815"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="815"/>
         <source>&amp;Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;书签</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="202"/>
         <location filename="../../build/src/ui_main-win.h" line="816"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="816"/>
         <source>&amp;Go</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;去往</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="223"/>
         <location filename="../../build/src/ui_main-win.h" line="817"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="817"/>
         <source>&amp;Tool</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;工具</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="240"/>
         <location filename="../../build/src/ui_main-win.h" line="818"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="818"/>
         <source>Main Toolbar</source>
-        <translation type="unfinished"></translation>
+        <translation>主工具栏</translation>
     </message>
 </context>
 <context>
@@ -2537,63 +2537,63 @@ Modified: %3</source>
         <location filename="../../build/src/ui_mount-operation-password.h" line="172"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="172"/>
         <source>Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>挂载</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="48"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="174"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="174"/>
         <source>Connect &amp;anonymously</source>
-        <translation type="unfinished"></translation>
+        <translation>连接&amp;匿名</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="58"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="175"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="175"/>
         <source>Connect as u&amp;ser:</source>
-        <translation type="unfinished"></translation>
+        <translation>连接&amp;为用户:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="79"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="176"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="176"/>
         <source>&amp;Username:</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;用户名:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="102"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="177"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="177"/>
         <source>&amp;Password:</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;密码:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="112"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="178"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="178"/>
         <source>&amp;Domain:</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;网络区域名:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="127"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="179"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="179"/>
         <source>Forget password &amp;immediately</source>
-        <translation type="unfinished"></translation>
+        <translation>忘记密码并&amp;立即执行</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="137"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="180"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="180"/>
         <source>Remember password until you &amp;logout</source>
-        <translation type="unfinished"></translation>
+        <translation>记住密码，直到你&amp;退出</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="147"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="181"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="181"/>
         <source>Remember &amp;forever</source>
-        <translation type="unfinished"></translation>
+        <translation>永久&amp;记住</translation>
     </message>
 </context>
 <context>
@@ -2603,21 +2603,21 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="616"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="616"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>首选项</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="263"/>
         <location filename="../../build/src/ui_preferences.h" line="663"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="663"/>
         <source>User Interface</source>
-        <translation type="unfinished"></translation>
+        <translation>用户界面</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="35"/>
         <location filename="../../build/src/ui_preferences.h" line="626"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="626"/>
         <source>Behavior</source>
-        <translation type="unfinished"></translation>
+        <translation>行为</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="419"/>
@@ -2627,343 +2627,343 @@ Modified: %3</source>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="664"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="669"/>
         <source>Thumbnail</source>
-        <translation type="unfinished"></translation>
+        <translation>缩略图</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="479"/>
         <location filename="../../build/src/ui_preferences.h" line="679"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="679"/>
         <source>Advanced</source>
-        <translation type="unfinished"></translation>
+        <translation>高级</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="57"/>
         <location filename="../../build/src/ui_preferences.h" line="619"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="619"/>
         <source>Save metadata to directories (.DirInfo files)</source>
-        <translation type="unfinished"></translation>
+        <translation>将元数据保存到目录中（.DirInfo文件）</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="67"/>
         <location filename="../../build/src/ui_preferences.h" line="620"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="620"/>
         <source>Spatial mode (folders open in a new window)</source>
-        <translation type="unfinished"></translation>
+        <translation>空间模式（文件夹在新窗口中打开）</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="134"/>
         <location filename="../../build/src/ui_preferences.h" line="627"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="627"/>
         <source>Icons</source>
-        <translation type="unfinished"></translation>
+        <translation>图标</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="163"/>
         <location filename="../../build/src/ui_preferences.h" line="629"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="629"/>
         <source>Size of big icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>大图标的尺寸：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="173"/>
         <location filename="../../build/src/ui_preferences.h" line="630"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="630"/>
         <source>Size of small icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>小图标的尺寸：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="183"/>
         <location filename="../../build/src/ui_preferences.h" line="631"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="631"/>
         <source>Size of thumbnails:</source>
-        <translation type="unfinished"></translation>
+        <translation>缩略图的大小：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="193"/>
         <location filename="../../build/src/ui_preferences.h" line="632"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="632"/>
         <source>Size of side pane icons:</source>
-        <translation type="unfinished"></translation>
+        <translation>侧面窗格图标的尺寸：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="146"/>
         <location filename="../../build/src/ui_preferences.h" line="628"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="628"/>
         <source>Icon theme:</source>
-        <translation type="unfinished"></translation>
+        <translation>图标主题：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="269"/>
         <location filename="../../build/src/ui_preferences.h" line="639"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="639"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>窗口</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="278"/>
         <location filename="../../build/src/ui_preferences.h" line="640"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="640"/>
         <source>Remember the size of the last closed window</source>
-        <translation type="unfinished"></translation>
+        <translation>记住最后关闭的窗口的大小</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="285"/>
         <location filename="../../build/src/ui_preferences.h" line="641"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="641"/>
         <source>Default width of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>新窗口的默认宽度：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="299"/>
         <location filename="../../build/src/ui_preferences.h" line="642"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="642"/>
         <source>Default height of new windows:</source>
-        <translation type="unfinished"></translation>
+        <translation>新窗口的默认高度：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="41"/>
         <location filename="../../build/src/ui_preferences.h" line="617"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="617"/>
         <source>Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation>浏览</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="47"/>
         <location filename="../../build/src/ui_preferences.h" line="618"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="618"/>
         <source>Default view mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>默认视图模式：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="77"/>
         <location filename="../../build/src/ui_preferences.h" line="621"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="621"/>
         <source>File Operations</source>
-        <translation type="unfinished"></translation>
+        <translation>文件操作</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="83"/>
         <location filename="../../build/src/ui_preferences.h" line="622"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="622"/>
         <source>Confirm before deleting files</source>
-        <translation type="unfinished"></translation>
+        <translation>在删除文件前确认</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="455"/>
         <location filename="../../build/src/ui_preferences.h" line="668"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="668"/>
         <source>Show thumbnails of files</source>
-        <translation type="unfinished"></translation>
+        <translation>显示文件的缩略图</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="448"/>
         <location filename="../../build/src/ui_preferences.h" line="667"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="667"/>
         <source>Only show thumbnails for local files</source>
-        <translation type="unfinished"></translation>
+        <translation>只显示本地文件的缩略图</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="128"/>
         <location filename="../../build/src/ui_preferences.h" line="638"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="638"/>
         <source>Display</source>
-        <translation type="unfinished"></translation>
+        <translation>显示</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="90"/>
         <location filename="../../build/src/ui_preferences.h" line="623"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="623"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>擦除可移动媒体上的文件，而不是创建 &quot;废纸篓&quot;</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="97"/>
         <location filename="../../build/src/ui_preferences.h" line="624"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="624"/>
         <source>Confirm before moving files into &quot;trash can&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>在将文件移入 &quot;废纸篓 &quot;之前，请确认一下</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="104"/>
         <location filename="../../build/src/ui_preferences.h" line="625"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="625"/>
         <source>Don&apos;t ask options on launch executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>在启动可执行文件时不询问选项</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="206"/>
         <location filename="../../build/src/ui_preferences.h" line="633"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="633"/>
         <source>User interface</source>
-        <translation type="unfinished"></translation>
+        <translation>用户界面</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="219"/>
         <location filename="../../build/src/ui_preferences.h" line="635"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="635"/>
         <source>Treat backup files as hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>将备份文件视为隐藏文件</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="229"/>
         <location filename="../../build/src/ui_preferences.h" line="636"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="636"/>
         <source>Always show full file names</source>
-        <translation type="unfinished"></translation>
+        <translation>始终显示完整的文件名</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="239"/>
         <location filename="../../build/src/ui_preferences.h" line="637"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="637"/>
         <source>Show icons of hidden files shadowed</source>
-        <translation type="unfinished"></translation>
+        <translation>显示隐藏文件的阴影图标</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="316"/>
         <location filename="../../build/src/ui_preferences.h" line="643"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="643"/>
         <source>Show in places</source>
-        <translation type="unfinished"></translation>
+        <translation>显示位置</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="323"/>
         <location filename="../../build/src/ui_preferences.h" line="648"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="648"/>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>主页</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="335"/>
         <location filename="../../build/src/ui_preferences.h" line="650"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="650"/>
         <source>Desktop</source>
-        <translation type="unfinished">桌面</translation>
+        <translation>桌面</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="347"/>
         <location filename="../../build/src/ui_preferences.h" line="652"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="652"/>
         <source>Trash can</source>
-        <translation type="unfinished"></translation>
+        <translation>废纸篓</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="359"/>
         <location filename="../../build/src/ui_preferences.h" line="654"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="654"/>
         <source>Computer</source>
-        <translation type="unfinished"></translation>
+        <translation>计算机</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="371"/>
         <location filename="../../build/src/ui_preferences.h" line="656"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="656"/>
         <source>Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>应用程序</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="379"/>
         <location filename="../../build/src/ui_preferences.h" line="658"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="658"/>
         <source>Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>设备</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="387"/>
         <location filename="../../build/src/ui_preferences.h" line="660"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="660"/>
         <source>Network</source>
-        <translation type="unfinished"></translation>
+        <translation>网络</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="431"/>
         <location filename="../../build/src/ui_preferences.h" line="665"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="665"/>
         <source>Do not generate thumbnails for image files exceeding this size:</source>
-        <translation type="unfinished"></translation>
+        <translation>对于超过这个尺寸的图像文件，不要生成缩略图：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="438"/>
         <location filename="../../build/src/ui_preferences.h" line="666"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="666"/>
         <source> KB</source>
-        <translation type="unfinished"></translation>
+        <translation> KB</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="579"/>
         <location filename="../../build/src/ui_preferences.h" line="687"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="687"/>
         <source>Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>挂载</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="585"/>
         <location filename="../../build/src/ui_preferences.h" line="680"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="680"/>
         <source>Auto Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>自动挂载</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="591"/>
         <location filename="../../build/src/ui_preferences.h" line="681"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="681"/>
         <source>Mount mountable volumes automatically on program startup</source>
-        <translation type="unfinished"></translation>
+        <translation>在程序启动时自动挂载可挂载的卷</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="598"/>
         <location filename="../../build/src/ui_preferences.h" line="682"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="682"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>在插入可移动媒体时自动挂载它们</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="605"/>
         <location filename="../../build/src/ui_preferences.h" line="683"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="683"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>插入可移动媒体时显示可用选项</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="615"/>
         <location filename="../../build/src/ui_preferences.h" line="684"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="684"/>
         <source>When removable medium unmounted:</source>
-        <translation type="unfinished"></translation>
+        <translation>当可移动媒体被卸载时：</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="621"/>
         <location filename="../../build/src/ui_preferences.h" line="685"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="685"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>关闭&amp;包含可移动介质的选项卡</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="628"/>
         <location filename="../../build/src/ui_preferences.h" line="686"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="686"/>
         <source>Chan&amp;ge folder in the tab to home folder</source>
-        <translation type="unfinished"></translation>
+        <translation>将选项卡&amp;中的文件夹更改为主文件夹(&amp;G)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="485"/>
         <location filename="../../build/src/ui_preferences.h" line="670"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="670"/>
         <source>Programs</source>
-        <translation type="unfinished"></translation>
+        <translation>程序</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="494"/>
         <location filename="../../build/src/ui_preferences.h" line="671"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="671"/>
         <source>Terminal emulator:</source>
-        <translation type="unfinished"></translation>
+        <translation>高级指令工具仿真器:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="501"/>
         <location filename="../../build/src/ui_preferences.h" line="672"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="672"/>
         <source>Switch &amp;user command:</source>
-        <translation type="unfinished"></translation>
+        <translation>切换&amp;用户命令:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="511"/>
@@ -2971,42 +2971,43 @@ Modified: %3</source>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="673"/>
         <source>Examples: &quot;xterm -e %s&quot; for terminal or &quot;gksu %s&quot; for switching user.
 %s = the command line you want to execute with terminal or su.</source>
-        <translation type="unfinished"></translation>
+        <translation>例如: &quot;xterm -e %s&quot;用于高级命令工具或&quot;gksu %s&quot; 在切换用户时。
+%s = 要使用高级命令工具或 su 执行的命令。</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="532"/>
         <location filename="../../build/src/ui_preferences.h" line="675"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="675"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>模板</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="538"/>
         <location filename="../../build/src/ui_preferences.h" line="676"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="676"/>
         <source>Show only user defined templates in menu</source>
-        <translation type="unfinished"></translation>
+        <translation>在菜单中只显示用户定义的模板</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="545"/>
         <location filename="../../build/src/ui_preferences.h" line="677"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="677"/>
         <source>Show only one template for each MIME type</source>
-        <translation type="unfinished"></translation>
+        <translation>每个MIME类型只显示一个模板</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="552"/>
         <location filename="../../build/src/ui_preferences.h" line="678"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="678"/>
         <source>Run default application after creation from template</source>
-        <translation type="unfinished"></translation>
+        <translation>从模板创建后运行默认应用程序</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="212"/>
         <location filename="../../build/src/ui_preferences.h" line="634"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="634"/>
         <source>Use SI decimal prefixes instead of IEC binary prefixes</source>
-        <translation type="unfinished"></translation>
+        <translation>使用SI十进制前缀而不是IEC二进制前缀</translation>
     </message>
 </context>
 <context>
@@ -3018,57 +3019,57 @@ Modified: %3</source>
         <location filename="../utilities.cpp" line="210"/>
         <location filename="../utilities.cpp" line="286"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>错误</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="127"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>重命名</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="128"/>
         <source>Please enter a new name:</source>
-        <translation type="unfinished"></translation>
+        <translation>请输入一个新的名字：</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="133"/>
         <source>The startvolume cannot be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation>startvolume不能被重新命名。</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="222"/>
         <source>Create Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>创建文件夹</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="223"/>
         <source>Create File</source>
-        <translation type="unfinished"></translation>
+        <translation>创建文件</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="227"/>
         <source>Please enter a new file name:</source>
-        <translation type="unfinished"></translation>
+        <translation>请输入新文件的名称：</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="228"/>
         <source>New text file</source>
-        <translation type="unfinished"></translation>
+        <translation>新的文本文件</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="232"/>
         <source>Please enter a new folder name:</source>
-        <translation type="unfinished"></translation>
+        <translation>请输入新文件夹的名称：</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="233"/>
         <source>New folder</source>
-        <translation type="unfinished"></translation>
+        <translation>新建文件夹</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="238"/>
         <source>Enter a name for the new %1:</source>
-        <translation type="unfinished"></translation>
+        <translation>为%1输入一个新名称:</translation>
     </message>
 </context>
 <context>
@@ -3078,63 +3079,63 @@ Modified: %3</source>
         <location filename="../../build/src/ui_rename-dialog.h" line="156"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="156"/>
         <source>Confirm to replace files</source>
-        <translation type="unfinished"></translation>
+        <translation>确认替换文件</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="35"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="157"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="157"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;There is already a file with the same name in this location.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Do you want to replace the existing file?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;此位置中已存在同名文件。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;是否要替换现有文件&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="56"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="158"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="158"/>
         <source>dest</source>
-        <translation type="unfinished"></translation>
+        <translation>目的地</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="63"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="159"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="159"/>
         <source>with the following file?</source>
-        <translation type="unfinished"></translation>
+        <translation>使用以下文件？</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="76"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="160"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="160"/>
         <source>src file info</source>
-        <translation type="unfinished"></translation>
+        <translation>src文件信息</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="89"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="161"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="161"/>
         <source>dest file info</source>
-        <translation type="unfinished"></translation>
+        <translation>目标文件信息</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="102"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="162"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="162"/>
         <source>src</source>
-        <translation type="unfinished"></translation>
+        <translation>来源</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="122"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="163"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="163"/>
         <source>&amp;File name:</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;文件名:</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="137"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="164"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="164"/>
         <source>Apply this option to all existing files</source>
-        <translation type="unfinished"></translation>
+        <translation>将此选项应用于所有现有文件</translation>
     </message>
 </context>
 <context>
@@ -3144,49 +3145,49 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="398"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="398"/>
         <source>Search Files</source>
-        <translation type="unfinished"></translation>
+        <translation>搜索文件</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="29"/>
         <location filename="../../build/src/ui_filesearch.h" line="408"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="408"/>
         <source>Name/Location</source>
-        <translation type="unfinished"></translation>
+        <translation>名称/位置</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="35"/>
         <location filename="../../build/src/ui_filesearch.h" line="399"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="399"/>
         <source>File Name Patterns:</source>
-        <translation type="unfinished"></translation>
+        <translation>文件名模式：</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="41"/>
         <location filename="../../build/src/ui_filesearch.h" line="400"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="400"/>
         <source>*</source>
-        <translation type="unfinished"></translation>
+        <translation>*</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="48"/>
         <location filename="../../build/src/ui_filesearch.h" line="401"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="401"/>
         <source>Case insensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>不区分大小写</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="55"/>
         <location filename="../../build/src/ui_filesearch.h" line="402"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="402"/>
         <source>Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>使用正则表达式</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="65"/>
         <location filename="../../build/src/ui_filesearch.h" line="403"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="403"/>
         <source>Places to Search:</source>
-        <translation type="unfinished"></translation>
+        <translation>搜索地点：</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="78"/>
@@ -3291,7 +3292,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="418"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="418"/>
         <source>Case insensiti&amp;ve</source>
-        <translation type="unfinished">不区分大小写</translation>
+        <translation>不区分&amp;大小写</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="230"/>
