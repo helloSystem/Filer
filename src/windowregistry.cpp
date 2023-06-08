@@ -18,55 +18,106 @@
 
 #include "windowregistry.h"
 
+#include <QDebug>
+#include <QGuiApplication>
+#include <QWindow>
+#include <QX11Info>
+#include <X11/Xatom.h>
+#include <X11/Xlib.h>
+#include <xcb/xcb.h>
+#include <xcb/xcb_atom.h>
+
 WindowRegistry::~WindowRegistry() {
   // do nothing
 }
 
-void WindowRegistry::registerPath(const QString& path)
-{
-  registry_.insert(path);
-}
+bool WindowRegistry::checkPathAndRaise(const QString &path) {
+  qDebug() << "probono: WindowRegistry::checkPathAndRaise(" << path << ")";
 
-void WindowRegistry::updatePath(const QString& fromPath, const QString& toPath)
-{
-  registry_.remove(fromPath);
-  registry_.insert(toPath);
-}
+  QList<QWindow *> windows = QGuiApplication::topLevelWindows();
 
-void WindowRegistry::deregisterPath(const QString& path)
-{
-  registry_.remove(path);
-}
-
-bool WindowRegistry::checkPathAndRaise(const QString& path)
-{
-  if (registry_.contains(path)) {
-    Q_EMIT raiseWindow(path);
-    return true;
+  // Iterate through the windows and check if the "_FILER_PATH" atom is set
+  for (QWindow *window : windows) {
+    if (checkWindowAtomValue(window, "_FILER_PATH",
+                             path.toUtf8().constData())) {
+      qDebug() << "Window" << window << "has a matching _FILER_PATH atom set.";
+      Q_EMIT raiseWindow(path);
+      return true;
+    }
   }
   return false;
 }
 
-bool WindowRegistry::checkPathAndClose(const QString& path)
-{
-  if (registry_.contains(path)) {
-    registry_.remove(path);
-    Q_EMIT closeWindow(path);
-    return true;
+bool WindowRegistry::checkPathAndClose(const QString &path) {
+
+  qDebug() << "probono: WindowRegistry::checkPathAndClose(" << path << ")";
+
+  QList<QWindow *> windows = QGuiApplication::topLevelWindows();
+
+  // Iterate through the windows and check if the "_FILER_PATH" atom is set
+  for (QWindow *window : windows) {
+    if (checkWindowAtomValue(window, "_FILER_PATH",
+                             path.toUtf8().constData())) {
+      qDebug() << "Window" << window << "has a matching _FILER_PATH atom set.";
+      Q_EMIT closeWindow(path);
+      return true;
+    }
   }
   return false;
 }
 
-bool WindowRegistry::checkPathAndSelectItems(const QString& path, const QStringList& items) {
-  if (registry_.contains(path)) {
-    Q_EMIT raiseWindowAndSelectItems(path, items);
-    return true;
+bool WindowRegistry::checkPathAndSelectItems(const QString &path,
+                                             const QStringList &items) {
+
+  qDebug() << "probono: WindowRegistry::checkPathAndSelectItems(" << path
+           << ", " << items << ")";
+
+  QList<QWindow *> windows = QGuiApplication::topLevelWindows();
+
+  // Iterate through the windows and check if the "_FILER_PATH" atom is set
+  for (QWindow *window : windows) {
+    if (checkWindowAtomValue(window, "_FILER_PATH",
+                             path.toUtf8().constData())) {
+      qDebug() << "Window" << window << "has a matching _FILER_PATH atom set.";
+      Q_EMIT raiseWindowAndSelectItems(path, items);
+      return true;
+    }
   }
   return false;
 }
 
-WindowRegistry::WindowRegistry(QObject* parent):
-  QObject(),
-  registry_() {
+WindowRegistry::WindowRegistry(QObject *parent) : QObject() {
   // do nothing
+}
+
+// Check if the given window has the given atom set to the given value
+// Returns true if the atom is set and the value matches
+bool WindowRegistry::checkWindowAtomValue(QWindow *window,
+                                          const QString &atomName,
+                                          const QString &atomValue) {
+  Display *display = QX11Info::display();
+  WId x11Window = window->winId();
+
+  // Get the atom for the given name
+  Atom atom = XInternAtom(display, atomName.toUtf8().constData(), false);
+
+  // Check if the atom is set on the window
+  Atom actualType;
+  int actualFormat;
+  unsigned long numItems, bytesAfter;
+  unsigned char *propValue = nullptr;
+
+  int result = XGetWindowProperty(display, x11Window, atom, 0, 1024, false,
+                                  XCB_ATOM_STRING, &actualType, &actualFormat,
+                                  &numItems, &bytesAfter, &propValue);
+
+  if (result == Success && propValue) {
+    // Compare the atom value and return true if it matches
+    if (atomValue.isEmpty() || atomValue == QString((char *)propValue)) {
+      XFree(propValue);
+      return true;
+    }
+  }
+
+  return false;
 }

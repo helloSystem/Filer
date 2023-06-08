@@ -22,6 +22,10 @@
 #include <QObject>
 #include <QSet>
 #include <QString>
+#include <QWindow>
+
+#include <QX11Info>
+#include <xcb/xcb.h>
 
 class WindowRegistry : public QObject {
   Q_OBJECT
@@ -30,41 +34,36 @@ public:
   virtual ~WindowRegistry();
 
   // singleton function
-  static WindowRegistry& instance()
-  {
+  static WindowRegistry &instance() {
     static WindowRegistry instance;
     return instance;
   }
-
-  void registerPath(const QString& path);
-  void updatePath(const QString& fromPath, const QString& toPath);
-  void deregisterPath(const QString& path);
 
   /*
    * if the window is in the registry, raise the window
    * and return true; otherwise return false
    */
-  bool checkPathAndRaise(const QString& path);
+  bool checkPathAndRaise(const QString &path);
 
   /*
    * if the window is in the registry, close the window
    * and return true; otherwise return false
    */
-  bool checkPathAndClose(const QString& path);
+  bool checkPathAndClose(const QString &path);
 
   // for ShowItems, we need to select items in the raised window
-  bool checkPathAndSelectItems(const QString& path, const QStringList& items);
+  bool checkPathAndSelectItems(const QString &path, const QStringList &items);
+
+  bool checkWindowAtomValue(QWindow *window, const QString &atomName,
+                            const QString &atomValue);
 
 Q_SIGNALS:
-  void raiseWindow(const QString& path);
-  void closeWindow(const QString& path);
-  void raiseWindowAndSelectItems(const QString& path, const QStringList& items);
+  void raiseWindow(const QString &path);
+  void closeWindow(const QString &path);
+  void raiseWindowAndSelectItems(const QString &path, const QStringList &items);
 
 private: // functions
-  explicit WindowRegistry(QObject* parent = nullptr);
-
-private: // data
-  QSet<QString> registry_; // set of paths of open windows
+  explicit WindowRegistry(QObject *parent = nullptr);
 };
 
 #endif // WINDOWREGISTRY_H

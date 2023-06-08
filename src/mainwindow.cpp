@@ -19,37 +19,41 @@
 
 #include "mainwindow.h"
 
+#include <QAction>
+#include <QCompleter>
+#include <QDebug>
+#include <QFileSystemModel>
+#include <QKeySequence>
 #include <QLabel>
 #include <QMenu>
 #include <QMenuBar>
-#include <QAction>
-#include <QVBoxLayout>
 #include <QMessageBox>
-#include <QSplitter>
-#include <QToolButton>
-#include <QShortcut>
-#include <QKeySequence>
-#include <QDebug>
-#include <QCompleter>
-#include <QFileSystemModel>
-#include <QStandardPaths>
 #include <QProcess>
+#include <QShortcut>
+#include <QSplitter>
+#include <QStandardPaths>
+#include <QToolButton>
+#include <QVBoxLayout>
 
-#include "tabpage.h"
+#include <QX11Info>
+#include <cstring>
+#include <xcb/xcb.h>
+
+#include "application.h"
+#include "bookmarkaction.h"
 #include "filelauncher.h"
 #include "filemenu.h"
-#include "bookmarkaction.h"
 #include "fileoperation.h"
-#include "utilities.h"
 #include "filepropsdialog.h"
-#include "pathedit.h"
-#include "ui_about.h"
-#include "application.h"
-#include "path.h"
-#include "metadata.h"
-#include "windowregistry.h"
 #include "gotofolderwindow.h"
+#include "metadata.h"
+#include "path.h"
+#include "pathedit.h"
+#include "tabpage.h"
 #include "trash.h"
+#include "ui_about.h"
+#include "utilities.h"
+#include "windowregistry.h"
 
 // #include "qmodeltest/modeltest.h"
 
@@ -59,11 +63,9 @@ using namespace Fm;
 
 namespace Filer {
 
-MainWindow::MainWindow(FmPath* path):
-  QMainWindow(),
-  fileLauncher_(NULL){
+MainWindow::MainWindow(FmPath *path) : QMainWindow(), fileLauncher_(NULL) {
 
-  Settings& settings = static_cast<Application*>(qApp)->settings();
+  Settings &settings = static_cast<Application *>(qApp)->settings();
   setAttribute(Qt::WA_DeleteOnClose);
   // setup user interface
   ui.setupUi(this);
@@ -73,18 +75,22 @@ MainWindow::MainWindow(FmPath* path):
   this->raise();
 
   // hide menu items that are not usable
-  //if(!uriExists("computer:///"))
+  // if(!uriExists("computer:///"))
   //  ui.actionComputer->setVisible(false);
-  if(!settings.supportTrash())
+  if (!settings.supportTrash())
     ui.actionTrash->setVisible(false);
 
   // add a context menu for showing browse history to back and forward buttons
-  QToolButton* forwardButton = static_cast<QToolButton*>(ui.toolBar->widgetForAction(ui.actionGoForward));
+  QToolButton *forwardButton = static_cast<QToolButton *>(
+      ui.toolBar->widgetForAction(ui.actionGoForward));
   forwardButton->setContextMenuPolicy(Qt::CustomContextMenu);
-  connect(forwardButton, &QToolButton::customContextMenuRequested, this, &MainWindow::onBackForwardContextMenu);
-  QToolButton* backButton = static_cast<QToolButton*>(ui.toolBar->widgetForAction(ui.actionGoBack));
+  connect(forwardButton, &QToolButton::customContextMenuRequested, this,
+          &MainWindow::onBackForwardContextMenu);
+  QToolButton *backButton =
+      static_cast<QToolButton *>(ui.toolBar->widgetForAction(ui.actionGoBack));
   backButton->setContextMenuPolicy(Qt::CustomContextMenu);
-  connect(backButton, &QToolButton::customContextMenuRequested, this, &MainWindow::onBackForwardContextMenu);
+  connect(backButton, &QToolButton::customContextMenuRequested, this,
+          &MainWindow::onBackForwardContextMenu);
 
   // tabbed browsing interface
   ui.tabBar->setDocumentMode(true);
@@ -99,34 +105,48 @@ MainWindow::MainWindow(FmPath* path):
   ui.tabBar->setAcceptDrops(true);
 #endif
 
-  connect(ui.tabBar, &QTabBar::currentChanged, this, &MainWindow::onTabBarCurrentChanged);
-  connect(ui.tabBar, &QTabBar::tabCloseRequested, this, &MainWindow::onTabBarCloseRequested);
+  connect(ui.tabBar, &QTabBar::currentChanged, this,
+          &MainWindow::onTabBarCurrentChanged);
+  connect(ui.tabBar, &QTabBar::tabCloseRequested, this,
+          &MainWindow::onTabBarCloseRequested);
   connect(ui.tabBar, &QTabBar::tabMoved, this, &MainWindow::onTabBarTabMoved);
-  connect(ui.stackedWidget, &QStackedWidget::widgetRemoved, this, &MainWindow::onStackedWidgetWidgetRemoved);
+  connect(ui.stackedWidget, &QStackedWidget::widgetRemoved, this,
+          &MainWindow::onStackedWidgetWidgetRemoved);
 
   // FIXME: should we make the filter bar a per-view configuration?
   ui.filterBar->setVisible(settings.showFilter());
   ui.actionFilter->setChecked(settings.showFilter());
-  connect(ui.filterBar, &QLineEdit::textChanged, this, &MainWindow::onFilterStringChanged);
+  connect(ui.filterBar, &QLineEdit::textChanged, this,
+          &MainWindow::onFilterStringChanged);
 
   // side pane
-  ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
+  ui.sidePane->setIconSize(
+      QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
   ui.sidePane->setMode(settings.sidePaneMode());
-  connect(ui.sidePane, &Fm::SidePane::chdirRequested, this, &MainWindow::onSidePaneChdirRequested);
-  connect(ui.sidePane, &Fm::SidePane::openFolderInNewWindowRequested, this, &MainWindow::onSidePaneOpenFolderInNewWindowRequested);
-  connect(ui.sidePane, &Fm::SidePane::openFolderInNewTabRequested, this, &MainWindow::onSidePaneOpenFolderInNewTabRequested);
-  connect(ui.sidePane, &Fm::SidePane::openFolderInTerminalRequested, this, &MainWindow::onSidePaneOpenFolderInTerminalRequested);
-  connect(ui.sidePane, &Fm::SidePane::createNewFolderRequested, this, &MainWindow::onSidePaneCreateNewFolderRequested);
-  connect(ui.sidePane, &Fm::SidePane::modeChanged, this, &MainWindow::onSidePaneModeChanged);
+  connect(ui.sidePane, &Fm::SidePane::chdirRequested, this,
+          &MainWindow::onSidePaneChdirRequested);
+  connect(ui.sidePane, &Fm::SidePane::openFolderInNewWindowRequested, this,
+          &MainWindow::onSidePaneOpenFolderInNewWindowRequested);
+  connect(ui.sidePane, &Fm::SidePane::openFolderInNewTabRequested, this,
+          &MainWindow::onSidePaneOpenFolderInNewTabRequested);
+  connect(ui.sidePane, &Fm::SidePane::openFolderInTerminalRequested, this,
+          &MainWindow::onSidePaneOpenFolderInTerminalRequested);
+  connect(ui.sidePane, &Fm::SidePane::createNewFolderRequested, this,
+          &MainWindow::onSidePaneCreateNewFolderRequested);
+  connect(ui.sidePane, &Fm::SidePane::modeChanged, this,
+          &MainWindow::onSidePaneModeChanged);
 
-  ui.splitter->setHandleWidth(0); // probono: No handles between side bar and main window content
+  ui.splitter->setHandleWidth(
+      0); // probono: No handles between side bar and main window content
 
   // detect change of splitter position
-  connect(ui.splitter, &QSplitter::splitterMoved, this, &MainWindow::onSplitterMoved);
+  connect(ui.splitter, &QSplitter::splitterMoved, this,
+          &MainWindow::onSplitterMoved);
 
   // path bar
   pathEntry = new Fm::PathEdit(this);
-  connect(pathEntry, &Fm::PathEdit::returnPressed, this, &MainWindow::onPathEntryReturnPressed);
+  connect(pathEntry, &Fm::PathEdit::returnPressed, this,
+          &MainWindow::onPathEntryReturnPressed);
   ui.toolBar->insertWidget(ui.actionGo, pathEntry);
 
   // add filesystem info to status bar
@@ -147,7 +167,7 @@ MainWindow::MainWindow(FmPath* path):
 
   // Fix the menu groups which is not done by Qt designer
   // To my suprise, this was supported in Qt designer 3 :-(
-  QActionGroup* group = new QActionGroup(ui.menu_View);
+  QActionGroup *group = new QActionGroup(ui.menu_View);
   group->setExclusive(true);
   group->addAction(ui.actionIconView);
   group->addAction(ui.actionCompactView);
@@ -168,59 +188,80 @@ MainWindow::MainWindow(FmPath* path):
   group->addAction(ui.actionDescending);
 
   // create shortcuts
-  QShortcut* shortcut;
+  QShortcut *shortcut;
   shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_L), this);
-  connect(shortcut, &QShortcut::activated, pathEntry, static_cast<void (QWidget::*)()>(&Fm::PathEdit::setFocus));
+  connect(shortcut, &QShortcut::activated, pathEntry,
+          static_cast<void (QWidget::*)()>(&Fm::PathEdit::setFocus));
 
   shortcut = new QShortcut(Qt::ALT + Qt::Key_D, this);
-  connect(shortcut, &QShortcut::activated, pathEntry, static_cast<void (QWidget::*)()>(&QWidget::setFocus));
+  connect(shortcut, &QShortcut::activated, pathEntry,
+          static_cast<void (QWidget::*)()>(&QWidget::setFocus));
 
   shortcut = new QShortcut(Qt::CTRL + Qt::Key_Tab, this);
-  connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutNextTab);
+  connect(shortcut, &QShortcut::activated, this,
+          &MainWindow::onShortcutNextTab);
 
   shortcut = new QShortcut(Qt::CTRL + Qt::SHIFT + Qt::Key_Tab, this);
-  connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutPrevTab);
+  connect(shortcut, &QShortcut::activated, this,
+          &MainWindow::onShortcutPrevTab);
 
   int i;
-  for(i = 0; i < 10; ++i) {
+  for (i = 0; i < 10; ++i) {
     shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::Key_0 + i), this);
-    connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutJumpToTab);
+    connect(shortcut, &QShortcut::activated, this,
+            &MainWindow::onShortcutJumpToTab);
 
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_0 + i), this);
-    connect(shortcut, &QShortcut::activated, this, &MainWindow::onShortcutJumpToTab);
+    connect(shortcut, &QShortcut::activated, this,
+            &MainWindow::onShortcutJumpToTab);
   }
 
-  shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_Down), this); // pronono: open
-  connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionOpen_triggered); // probono
+  shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_Down),
+                           this); // pronono: open
+  connect(shortcut, &QShortcut::activated, this,
+          &MainWindow::on_actionOpen_triggered); // probono
 
-  shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::CTRL + Qt::Key_Down), this); // pronono: open
-  connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionOpenWith_triggered); // probono
+  shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::CTRL + Qt::Key_Down),
+                           this); // pronono: open
+  connect(shortcut, &QShortcut::activated, this,
+          &MainWindow::on_actionOpenWith_triggered); // probono
 
-  shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_Down), this); // pronono: open and close current window
-  connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionOpenAndCloseCurrentWindow_triggered); // probono
+  shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::SHIFT + Qt::Key_Down),
+                           this); // pronono: open and close current window
+  connect(shortcut, &QShortcut::activated, this,
+          &MainWindow::on_actionOpenAndCloseCurrentWindow_triggered); // probono
 
-  shortcut = new QShortcut(QKeySequence(Qt::Key_Delete), this); // probono: put in trash
-  connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionDelete_triggered);
+  shortcut = new QShortcut(QKeySequence(Qt::Key_Delete),
+                           this); // probono: put in trash
+  connect(shortcut, &QShortcut::activated, this,
+          &MainWindow::on_actionDelete_triggered);
 
-  shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete), this); // probono: force delete
-  connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionDeleteWithoutTrash_triggered);
+  shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::Key_Delete),
+                           this); // probono: force delete
+  connect(shortcut, &QShortcut::activated, this,
+          &MainWindow::on_actionDeleteWithoutTrash_triggered);
 
-  shortcut = new QShortcut(QKeySequence(Qt::SHIFT + Qt::CTRL + Qt::Key_Backspace), this); // probono: force delete
-  connect(shortcut, &QShortcut::activated, this, &MainWindow::on_actionDeleteWithoutTrash_triggered);
+  shortcut =
+      new QShortcut(QKeySequence(Qt::SHIFT + Qt::CTRL + Qt::Key_Backspace),
+                    this); // probono: force delete
+  connect(shortcut, &QShortcut::activated, this,
+          &MainWindow::on_actionDeleteWithoutTrash_triggered);
 
-  if(QToolButton* clearButton = ui.filterBar->findChild<QToolButton*>()) {
+  if (QToolButton *clearButton = ui.filterBar->findChild<QToolButton *>()) {
     clearButton->setToolTip(tr("Clear text (Ctrl+K)"));
     shortcut = new QShortcut(Qt::CTRL + Qt::Key_K, this);
     connect(shortcut, &QShortcut::activated, ui.filterBar, &QLineEdit::clear);
   }
 
-  if(path)
+  if (path)
     addTab(path);
 
   // Will be reflected in menubar when window is opened next time;
-  // hence also treating this in MainWindow::updateFromSettings for immediate effect
-  ui.actionNewWin->setVisible( ! settings.spatialMode() ); // probono
-  ui.actionGoUpAndCloseCurrentWindow->setVisible( settings.spatialMode() ); // probono
+  // hence also treating this in MainWindow::updateFromSettings for immediate
+  // effect
+  ui.actionNewWin->setVisible(!settings.spatialMode()); // probono
+  ui.actionGoUpAndCloseCurrentWindow->setVisible(
+      settings.spatialMode()); // probono
 
   // size from spatial mode or from settings
   if (settings.spatialMode()) {
@@ -317,7 +358,8 @@ MainWindow::MainWindow(FmPath* path):
     }
 
     // Set the window 'folder first' sort option
-    MetaData::SortFolderFirst folderFirst = metaData.getWindowSortFolderFirst(ok);
+    MetaData::SortFolderFirst folderFirst =
+        metaData.getWindowSortFolderFirst(ok);
     if (ok) {
       switch (folderFirst) {
       case MetaData::FoldersFirst:
@@ -329,44 +371,51 @@ MainWindow::MainWindow(FmPath* path):
       }
     }
 
-  }
-  else if(settings.rememberWindowSize()) {
+  } else if (settings.rememberWindowSize()) {
     resize(settings.windowWidth(), settings.windowHeight());
-    if(settings.windowMaximized())
+    if (settings.windowMaximized())
       setWindowState(windowState() | Qt::WindowMaximized);
   }
 
-  // register current path with the window registry
-  WindowRegistry::instance().registerPath(fm_path_to_str(path));
-  connect(&WindowRegistry::instance(), &WindowRegistry::raiseWindow,
-          this, &MainWindow::onRaiseWindow);
-  connect(&WindowRegistry::instance(), &WindowRegistry::raiseWindowAndSelectItems,
-          this, &MainWindow::onRaiseWindowAndSelectItems);
-  connect(&WindowRegistry::instance(), &WindowRegistry::closeWindow,
-          this, &MainWindow::onCloseWindow);
+  connect(&WindowRegistry::instance(), &WindowRegistry::raiseWindow, this,
+          &MainWindow::onRaiseWindow);
+  connect(&WindowRegistry::instance(),
+          &WindowRegistry::raiseWindowAndSelectItems, this,
+          &MainWindow::onRaiseWindowAndSelectItems);
+  connect(&WindowRegistry::instance(), &WindowRegistry::closeWindow, this,
+          &MainWindow::onCloseWindow);
+
+  // Set an X11 atom on the window that contains the path
+  const char *atomName = "_FILER_PATH";
+  const char *atomValue = fm_path_to_str(path);
+  WId x11Window = this->winId();
+  xcb_connection_t *connection = QX11Info::connection();
+  xcb_intern_atom_cookie_t cookie =
+      xcb_intern_atom(connection, 1, strlen(atomName), atomName);
+  xcb_intern_atom_reply_t *reply =
+      xcb_intern_atom_reply(connection, cookie, NULL);
+  xcb_atom_t atom = reply->atom;
+  xcb_change_property(connection, XCB_PROP_MODE_REPLACE, x11Window, atom,
+                      XCB_ATOM_STRING, 8, strlen(atomValue), atomValue);
+  xcb_flush(connection);
 }
 
 MainWindow::~MainWindow() {
   // update registry
-  TabPage* page = currentPage();
-  if(page) {
-    QString path = page->pathName();
-    WindowRegistry::instance().deregisterPath(path);
-  }
-  if(bookmarks)
+  TabPage *page = currentPage();
+  if (bookmarks)
     g_object_unref(bookmarks);
 }
 
-void MainWindow::chdir(FmPath* path) {
+void MainWindow::chdir(FmPath *path) {
   if (isSpatialMode()) {
-    if ( ! WindowRegistry::instance().checkPathAndRaise(fm_path_to_str(path))) {
-        (new MainWindow(path))->show();
+    if (!WindowRegistry::instance().checkPathAndRaise(fm_path_to_str(path))) {
+      (new MainWindow(path))->show();
     }
-  }
-  else {
-    TabPage* page = currentPage();
+  } else {
+    TabPage *page = currentPage();
 
-    if(page) {
+    if (page) {
       ui.filterBar->clear();
       page->chdir(path, true);
       updateUIForCurrentPage();
@@ -375,48 +424,62 @@ void MainWindow::chdir(FmPath* path) {
 }
 
 // add a new tab
-void MainWindow::addTab(FmPath* path) {
-  Settings& settings = static_cast<Application*>(qApp)->settings();
+void MainWindow::addTab(FmPath *path) {
+  Settings &settings = static_cast<Application *>(qApp)->settings();
 
-  TabPage* newPage = new TabPage(path, this);
+  TabPage *newPage = new TabPage(path, this);
   newPage->setFileLauncher(&fileLauncher_);
   int index = ui.stackedWidget->addWidget(newPage);
-  connect(newPage, &TabPage::titleChanged, this, &MainWindow::onTabPageTitleChanged);
-  connect(newPage, &TabPage::statusChanged, this, &MainWindow::onTabPageStatusChanged);
-  connect(newPage, &TabPage::openDirRequested, this, &MainWindow::onTabPageOpenDirRequested);
-  connect(newPage, &TabPage::sortFilterChanged, this, &MainWindow::onTabPageSortFilterChanged);
-  connect(newPage, &TabPage::backwardRequested, this, &MainWindow::on_actionGoBack_triggered);
-  connect(newPage, &TabPage::forwardRequested, this, &MainWindow::on_actionGoForward_triggered);
+  connect(newPage, &TabPage::titleChanged, this,
+          &MainWindow::onTabPageTitleChanged);
+  connect(newPage, &TabPage::statusChanged, this,
+          &MainWindow::onTabPageStatusChanged);
+  connect(newPage, &TabPage::openDirRequested, this,
+          &MainWindow::onTabPageOpenDirRequested);
+  connect(newPage, &TabPage::sortFilterChanged, this,
+          &MainWindow::onTabPageSortFilterChanged);
+  connect(newPage, &TabPage::backwardRequested, this,
+          &MainWindow::on_actionGoBack_triggered);
+  connect(newPage, &TabPage::forwardRequested, this,
+          &MainWindow::on_actionGoForward_triggered);
 
   ui.tabBar->insertTab(index, newPage->title());
 
-  if(!settings.alwaysShowTabs()) {
+  if (!settings.alwaysShowTabs()) {
     ui.tabBar->setVisible(ui.tabBar->count() > 1);
   }
 
-  // update registry
-  WindowRegistry::instance().registerPath(fm_path_to_str(path));
+  // Set an X11 atom on the window that contains the path
+  const char *atomName = "_FILER_PATH";
+  const char *atomValue = fm_path_to_str(path);
+  WId x11Window = this->winId();
+  xcb_connection_t *connection = QX11Info::connection();
+  xcb_intern_atom_cookie_t cookie =
+      xcb_intern_atom(connection, 1, strlen(atomName), atomName);
+  xcb_intern_atom_reply_t *reply =
+      xcb_intern_atom_reply(connection, cookie, NULL);
+  xcb_atom_t atom = reply->atom;
+  xcb_change_property(connection, XCB_PROP_MODE_REPLACE, x11Window, atom,
+                      XCB_ATOM_STRING, 8, strlen(atomValue), atomValue);
+  xcb_flush(connection);
 }
 
-void MainWindow::addWindow(FmPath *path)
-{
-  (new MainWindow(path))->show();
-}
+void MainWindow::addWindow(FmPath *path) { (new MainWindow(path))->show(); }
 
 void MainWindow::onPathEntryReturnPressed() {
   QString text = pathEntry->text();
   QByteArray utext = text.toUtf8();
-  FmPath* path = fm_path_new_for_display_name(utext);
+  FmPath *path = fm_path_new_for_display_name(utext);
   chdir(path);
   fm_path_unref(path);
 }
 
 void MainWindow::on_actionGoUp_triggered() {
-  TabPage* page = currentPage();
+  TabPage *page = currentPage();
 
-  if(page) {
+  if (page) {
     ui.filterBar->clear();
-    FmPath* parent = fm_path_get_parent(page->path());
+    FmPath *parent = fm_path_get_parent(page->path());
     if (parent)
       chdir(parent);
     updateUIForCurrentPage();
@@ -425,24 +488,24 @@ void MainWindow::on_actionGoUp_triggered() {
 
 // probono
 void MainWindow::on_actionGoUpAndCloseCurrentWindow_triggered() {
-    // Do not blindly close the window, but only when the path has a parent (= is not /)
-    TabPage* page = currentPage();
+  // Do not blindly close the window, but only when the path has a parent (= is
+  // not /)
+  TabPage *page = currentPage();
 
-    if(page) {
-      ui.filterBar->clear();
-      FmPath* parent = fm_path_get_parent(page->path());
-      if (parent)
-      {
-          MainWindow::on_actionGoUp_triggered();
-          close();
-      }
+  if (page) {
+    ui.filterBar->clear();
+    FmPath *parent = fm_path_get_parent(page->path());
+    if (parent) {
+      MainWindow::on_actionGoUp_triggered();
+      close();
     }
+  }
 }
 
 void MainWindow::on_actionGoBack_triggered() {
-  TabPage* page = currentPage();
+  TabPage *page = currentPage();
 
-  if(page) {
+  if (page) {
     ui.filterBar->clear();
     page->backward();
     updateUIForCurrentPage();
@@ -450,51 +513,45 @@ void MainWindow::on_actionGoBack_triggered() {
 }
 
 void MainWindow::on_actionGoForward_triggered() {
-  TabPage* page = currentPage();
+  TabPage *page = currentPage();
 
-  if(page) {
+  if (page) {
     ui.filterBar->clear();
     page->forward();
     updateUIForCurrentPage();
   }
 }
 
-void MainWindow::on_actionHome_triggered() {
-  chdir(fm_path_get_home());
-}
+void MainWindow::on_actionHome_triggered() { chdir(fm_path_get_home()); }
 
-void MainWindow::on_actionReload_triggered() {
-  currentPage()->reload();
-}
+void MainWindow::on_actionReload_triggered() { currentPage()->reload(); }
 
-void MainWindow::on_actionGo_triggered() {
-  onPathEntryReturnPressed();
-}
+void MainWindow::on_actionGo_triggered() { onPathEntryReturnPressed(); }
 
 void MainWindow::on_actionNewTab_triggered() {
-  FmPath* path = currentPage()->path();
+  FmPath *path = currentPage()->path();
   addTab(path);
 }
 
 void MainWindow::on_actionNewWin_triggered() {
-  FmPath* path = currentPage()->path();
+  FmPath *path = currentPage()->path();
   (new MainWindow(path))->show();
 }
 
 void MainWindow::on_actionNewFolder_triggered() {
-  if(TabPage* tabPage = currentPage()) {
-    FmPath* dirPath = tabPage->folderView()->path();
+  if (TabPage *tabPage = currentPage()) {
+    FmPath *dirPath = tabPage->folderView()->path();
 
-    if(dirPath)
+    if (dirPath)
       createFileOrFolder(CreateNewFolder, dirPath);
   }
 }
 
 void MainWindow::on_actionNewBlankFile_triggered() {
-  if(TabPage* tabPage = currentPage()) {
-    FmPath* dirPath = tabPage->folderView()->path();
+  if (TabPage *tabPage = currentPage()) {
+    FmPath *dirPath = tabPage->folderView()->path();
 
-    if(dirPath)
+    if (dirPath)
       createFileOrFolder(CreateNewTextFile, dirPath);
   }
 }
@@ -511,91 +568,87 @@ void MainWindow::on_actionCloseWindow_triggered() {
 
 // probono
 void MainWindow::on_actionOpen_triggered() {
-    TabPage* page = currentPage();
+  TabPage *page = currentPage();
 
-    if(page) {
-        FmFileInfoList* files = page->selectedFiles();
+  if (page) {
+    FmFileInfoList *files = page->selectedFiles();
 
-        if(files) {
-            if(page->fileLauncher()) {
-                page->fileLauncher()->launchFiles(NULL, files);
-            }
-            else { // use the default launcher
-                Fm::FileLauncher launcher;
-                launcher.launchFiles(NULL, files);
-            }
-        }
+    if (files) {
+      if (page->fileLauncher()) {
+        page->fileLauncher()->launchFiles(NULL, files);
+      } else { // use the default launcher
+        Fm::FileLauncher launcher;
+        launcher.launchFiles(NULL, files);
+      }
     }
+  }
 }
 
 // probono
 void MainWindow::on_actionOpenWith_triggered() {
-    TabPage* page = currentPage();
+  TabPage *page = currentPage();
 
-    if(page) {
-        FmFileInfoList* files = page->selectedFiles();
+  if (page) {
+    FmFileInfoList *files = page->selectedFiles();
 
-        if(files) {
+    if (files) {
 
-
-            FmPathList* paths = fm_path_list_new_from_file_info_list(files);
-            for(GList* l = fm_path_list_peek_head_link(paths); l; l = l->next) {
-                FmPath* path = FM_PATH(l->data);
-                QString sourcePathStr =  QString(fm_path_to_str(path));
-                qDebug() << "probono: pathStr" << sourcePathStr;
-                QProcess p;
-                p.setProgram("open");
-                p.setArguments({"--chooser", sourcePathStr});
-                qDebug() << p.program() << p.arguments();
-                p.startDetached();
-            }
-            fm_path_list_unref(paths);
-
-        }
+      FmPathList *paths = fm_path_list_new_from_file_info_list(files);
+      for (GList *l = fm_path_list_peek_head_link(paths); l; l = l->next) {
+        FmPath *path = FM_PATH(l->data);
+        QString sourcePathStr = QString(fm_path_to_str(path));
+        qDebug() << "probono: pathStr" << sourcePathStr;
+        QProcess p;
+        p.setProgram("open");
+        p.setArguments({"--chooser", sourcePathStr});
+        qDebug() << p.program() << p.arguments();
+        p.startDetached();
+      }
+      fm_path_list_unref(paths);
     }
+  }
 }
 
 // probono
 void MainWindow::on_actionOpenAndCloseCurrentWindow_triggered() {
-    // Do not blindly do this, but only if files are selected
-    TabPage* page = currentPage();
+  // Do not blindly do this, but only if files are selected
+  TabPage *page = currentPage();
 
-    if(page) {
-        FmFileInfoList* files = page->selectedFiles();
+  if (page) {
+    FmFileInfoList *files = page->selectedFiles();
 
-        if(files) {
-            MainWindow::on_actionOpen_triggered();
-            close();
-        }
+    if (files) {
+      MainWindow::on_actionOpen_triggered();
+      close();
     }
+  }
 }
 
 // probono
 void MainWindow::on_actionShowContents_triggered() {
-    TabPage* page = currentPage();
+  TabPage *page = currentPage();
 
-    if(page) {
-        FmFileInfoList* files = page->selectedFiles();
+  if (page) {
+    FmFileInfoList *files = page->selectedFiles();
 
-        if(files) {
-            if(page->fileLauncher()) {
-                page->fileLauncher()->launchFiles(NULL, files, true);
-            }
-            else { // use the default launcher
-                Fm::FileLauncher launcher;
-                launcher.launchFiles(NULL, files, true);
-            }
-        }
+    if (files) {
+      if (page->fileLauncher()) {
+        page->fileLauncher()->launchFiles(NULL, files, true);
+      } else { // use the default launcher
+        Fm::FileLauncher launcher;
+        launcher.launchFiles(NULL, files, true);
+      }
     }
+  }
 }
 
 void MainWindow::on_actionFileProperties_triggered() {
-  TabPage* page = currentPage();
+  TabPage *page = currentPage();
 
-  if(page) {
-    FmFileInfoList* files = page->selectedFiles();
+  if (page) {
+    FmFileInfoList *files = page->selectedFiles();
 
-    if(files) {
+    if (files) {
       Fm::FilePropsDialog::showForFiles(files);
       fm_file_info_list_unref(files);
     }
@@ -603,29 +656,30 @@ void MainWindow::on_actionFileProperties_triggered() {
 }
 
 void MainWindow::on_actionFolderProperties_triggered() {
-  TabPage* page = currentPage();
+  TabPage *page = currentPage();
 
-  if(page) {
-    FmFolder* folder = page->folder();
+  if (page) {
+    FmFolder *folder = page->folder();
 
-    if(folder) {
-      FmFileInfo* info = fm_folder_get_info(folder);
+    if (folder) {
+      FmFileInfo *info = fm_folder_get_info(folder);
 
-      if(info)
+      if (info)
         Fm::FilePropsDialog::showForFile(info);
     }
   }
 }
 
 void MainWindow::on_actionShowHidden_triggered(bool checked) {
-  TabPage* tabPage = currentPage();
+  TabPage *tabPage = currentPage();
   tabPage->setShowHidden(checked);
   ui.sidePane->setShowHidden(checked);
-  static_cast<Application*>(qApp)->settings().setShowHidden(checked);
+  static_cast<Application *>(qApp)->settings().setShowHidden(checked);
 }
 
 void MainWindow::on_actionByFileName_triggered(bool checked) {
-  currentPage()->sort(Fm::FolderModel::ColumnFileName, currentPage()->sortOrder());
+  currentPage()->sort(Fm::FolderModel::ColumnFileName,
+                      currentPage()->sortOrder());
   if (isSpatialMode()) {
     QString path = currentPage()->pathName();
     MetaData metaData(path);
@@ -634,7 +688,8 @@ void MainWindow::on_actionByFileName_triggered(bool checked) {
 }
 
 void MainWindow::on_actionByMTime_triggered(bool checked) {
-  currentPage()->sort(Fm::FolderModel::ColumnFileMTime, currentPage()->sortOrder());
+  currentPage()->sort(Fm::FolderModel::ColumnFileMTime,
+                      currentPage()->sortOrder());
   if (isSpatialMode()) {
     QString path = currentPage()->pathName();
     MetaData metaData(path);
@@ -643,7 +698,8 @@ void MainWindow::on_actionByMTime_triggered(bool checked) {
 }
 
 void MainWindow::on_actionByOwner_triggered(bool checked) {
-  currentPage()->sort(Fm::FolderModel::ColumnFileOwner, currentPage()->sortOrder());
+  currentPage()->sort(Fm::FolderModel::ColumnFileOwner,
+                      currentPage()->sortOrder());
   if (isSpatialMode()) {
     QString path = currentPage()->pathName();
     MetaData metaData(path);
@@ -652,7 +708,8 @@ void MainWindow::on_actionByOwner_triggered(bool checked) {
 }
 
 void MainWindow::on_actionByFileSize_triggered(bool checked) {
-  currentPage()->sort(Fm::FolderModel::ColumnFileSize, currentPage()->sortOrder());
+  currentPage()->sort(Fm::FolderModel::ColumnFileSize,
+                      currentPage()->sortOrder());
   if (isSpatialMode()) {
     QString path = currentPage()->pathName();
     MetaData metaData(path);
@@ -661,7 +718,8 @@ void MainWindow::on_actionByFileSize_triggered(bool checked) {
 }
 
 void MainWindow::on_actionByFileType_triggered(bool checked) {
-  currentPage()->sort(Fm::FolderModel::ColumnFileType, currentPage()->sortOrder());
+  currentPage()->sort(Fm::FolderModel::ColumnFileType,
+                      currentPage()->sortOrder());
   if (isSpatialMode()) {
     QString path = currentPage()->pathName();
     MetaData metaData(path);
@@ -692,9 +750,8 @@ void MainWindow::on_actionCaseSensitive_triggered(bool checked) {
   if (isSpatialMode()) {
     QString path = currentPage()->pathName();
     MetaData metaData(path);
-    metaData.setWindowSortCase(checked ?
-                                 MetaData::SortCase::CaseSensitive
-                               : MetaData::SortCase::NotCaseSensitive);
+    metaData.setWindowSortCase(checked ? MetaData::SortCase::CaseSensitive
+                                       : MetaData::SortCase::NotCaseSensitive);
   }
 }
 
@@ -703,19 +760,19 @@ void MainWindow::on_actionFolderFirst_triggered(bool checked) {
   if (isSpatialMode()) {
     QString path = currentPage()->pathName();
     MetaData metaData(path);
-    metaData.setWindowSortFolderFirst(checked ?
-                                 MetaData::SortFolderFirst::FoldersFirst
-                               : MetaData::SortFolderFirst::NotFoldersFirst);
+    metaData.setWindowSortFolderFirst(
+        checked ? MetaData::SortFolderFirst::FoldersFirst
+                : MetaData::SortFolderFirst::NotFoldersFirst);
   }
 }
 
 void MainWindow::on_actionFilter_triggered(bool checked) {
   ui.filterBar->setVisible(checked);
-  static_cast<Application*>(qApp)->settings().setShowFilter(checked);
+  static_cast<Application *>(qApp)->settings().setShowFilter(checked);
 }
 
 void MainWindow::on_actionComputer_triggered() {
-  FmPath* path = fm_path_new_for_uri("file:/");
+  FmPath *path = fm_path_new_for_uri("file:/");
   chdir(path);
   fm_path_unref(path);
 }
@@ -723,58 +780,65 @@ void MainWindow::on_actionComputer_triggered() {
 void MainWindow::on_actionApplications_triggered() {
   // chdir(fm_path_get_apps_menu());
   // probono: Use hardcoded /Applications for now
-  FmPath* path = fm_path_new_for_uri("file:///Applications");
+  FmPath *path = fm_path_new_for_uri("file:///Applications");
   chdir(path);
   fm_path_unref(path);
 }
 
 void MainWindow::on_actionUtilities_triggered() {
-  FmPath* path = fm_path_new_for_uri("file:///Applications/Utilities");
+  FmPath *path = fm_path_new_for_uri("file:///Applications/Utilities");
   chdir(path);
   fm_path_unref(path);
 }
 
 void MainWindow::on_actionDocuments_triggered() {
   // chdir(fm_path_get_apps_menu());
-  FmPath* path;
-  path = fm_path_new_for_str(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation).toLocal8Bit().data());
+  FmPath *path;
+  path = fm_path_new_for_str(
+      QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)
+          .toLocal8Bit()
+          .data());
   chdir(path);
   fm_path_unref(path);
 }
 
 void MainWindow::on_actionDownloads_triggered() {
   // chdir(fm_path_get_apps_menu());
-  FmPath* path;
-  path = fm_path_new_for_str(QStandardPaths::writableLocation(QStandardPaths::DownloadLocation).toLocal8Bit().data());
+  FmPath *path;
+  path = fm_path_new_for_str(
+      QStandardPaths::writableLocation(QStandardPaths::DownloadLocation)
+          .toLocal8Bit()
+          .data());
   chdir(path);
   fm_path_unref(path);
 }
 
 void MainWindow::on_actionTrash_triggered() {
-    // chdir(fm_path_get_trash()); // Do not use trash://
-    FmPath* path;
-    path = fm_path_new_for_str(QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/Trash/files").toUtf8());
-    chdir(path);
-    fm_path_unref(path);
+  // chdir(fm_path_get_trash()); // Do not use trash://
+  FmPath *path;
+  path = fm_path_new_for_str(QString(QStandardPaths::writableLocation(
+                                         QStandardPaths::GenericDataLocation) +
+                                     "/Trash/files")
+                                 .toUtf8());
+  chdir(path);
+  fm_path_unref(path);
 }
 
 void MainWindow::on_actionNetwork_triggered() {
-    qDebug() << "Launching Zeroconf.app using the 'launch' command";
-    QProcess::startDetached("launch", {"Zeroconf"});
+  qDebug() << "Launching Zeroconf.app using the 'launch' command";
+  QProcess::startDetached("launch", {"Zeroconf"});
 }
 
-void MainWindow::on_actionDesktop_triggered() {
-  chdir(fm_path_get_desktop());
-}
+void MainWindow::on_actionDesktop_triggered() { chdir(fm_path_get_desktop()); }
 
 void MainWindow::on_actionAddToBookmarks_triggered() {
-  TabPage* page = currentPage();
+  TabPage *page = currentPage();
 
-  if(page) {
-    FmPath* cwd = page->path();
+  if (page) {
+    FmPath *cwd = page->path();
 
-    if(cwd) {
-      char* dispName = fm_path_display_basename(cwd);
+    if (cwd) {
+      char *dispName = fm_path_display_basename(cwd);
       fm_bookmarks_insert(bookmarks, cwd, dispName, -1);
       g_free(dispName);
     }
@@ -782,7 +846,7 @@ void MainWindow::on_actionAddToBookmarks_triggered() {
 }
 
 void MainWindow::on_actionEditBookmarks_triggered() {
-  Application* app = static_cast<Application*>(qApp);
+  Application *app = static_cast<Application *>(qApp);
   app->editBookmarks();
 }
 
@@ -790,10 +854,11 @@ void MainWindow::on_actionAbout_triggered() {
   // the about dialog
   class AboutDialog : public QDialog {
   public:
-    explicit AboutDialog(QWidget* parent = 0, Qt::WindowFlags f = 0) {
+    explicit AboutDialog(QWidget *parent = 0, Qt::WindowFlags f = 0) {
       ui.setupUi(this);
       ui.version->setText(tr("Version: %1").arg(FILER_VERSION));
     }
+
   private:
     Ui::AboutDialog ui;
   };
@@ -838,39 +903,39 @@ void MainWindow::on_actionThumbnailView_triggered() {
 }
 
 void MainWindow::on_actionGoToFolder_triggered() {
-  GotoFolderDialog* gotoFolderDialog = new GotoFolderDialog(this);
+  GotoFolderDialog *gotoFolderDialog = new GotoFolderDialog(this);
   int code = gotoFolderDialog->exec();
   if (code == QDialog::Accepted) {
-    FmPath* path = fm_path_new_for_path(gotoFolderDialog->getPath().toLatin1().data());
+    FmPath *path =
+        fm_path_new_for_path(gotoFolderDialog->getPath().toLatin1().data());
     chdir(path);
     fm_path_unref(path);
   }
 }
 
-void MainWindow::onTabBarCloseRequested(int index) {
-  closeTab(index);
-}
+void MainWindow::onTabBarCloseRequested(int index) { closeTab(index); }
 
 void MainWindow::onTabBarTabMoved(int from, int to) {
   // a tab in the tab bar is moved by the user, so we have to move the
   //  corredponding tab page in the stacked widget to the new position, too.
-  QWidget* page = ui.stackedWidget->widget(from);
-  if(page) {
-	// we're not going to delete the tab page, so here we block signals
-	// to avoid calling the slot onStackedWidgetWidgetRemoved() before
-	// removing the page. Otherwise the page widget will be destroyed.
+  QWidget *page = ui.stackedWidget->widget(from);
+  if (page) {
+    // we're not going to delete the tab page, so here we block signals
+    // to avoid calling the slot onStackedWidgetWidgetRemoved() before
+    // removing the page. Otherwise the page widget will be destroyed.
     ui.stackedWidget->blockSignals(true);
     ui.stackedWidget->removeWidget(page);
-    ui.stackedWidget->insertWidget(to, page); // insert the page to the new position
+    ui.stackedWidget->insertWidget(to,
+                                   page); // insert the page to the new position
     ui.stackedWidget->blockSignals(false); // unblock signals
     ui.stackedWidget->setCurrentWidget(page);
   }
 }
 
 void MainWindow::onFilterStringChanged(QString str) {
-  if(TabPage* tabPage = currentPage()) {
+  if (TabPage *tabPage = currentPage()) {
     // appy filter only if needed (not if tab is changed)
-    if(str != tabPage->getFilterStr()) {
+    if (str != tabPage->getFilterStr()) {
       tabPage->setFilterStr(str);
       tabPage->applyFilter();
     }
@@ -878,14 +943,10 @@ void MainWindow::onFilterStringChanged(QString str) {
 }
 
 void MainWindow::closeTab(int index) {
-  // update registry
-  if (TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(index))) {
-    WindowRegistry::instance().deregisterPath(page->pathName());
-  }
-
-  QWidget* page = ui.stackedWidget->widget(index);
-  if(page) {
-    ui.stackedWidget->removeWidget(page); // this does not delete the page widget
+  QWidget *page = ui.stackedWidget->widget(index);
+  if (page) {
+    ui.stackedWidget->removeWidget(
+        page); // this does not delete the page widget
     delete page;
     // NOTE: we do not remove the tab here.
     // it'll be donoe in onStackedWidgetWidgetRemoved()
@@ -894,32 +955,30 @@ void MainWindow::closeTab(int index) {
 
 void MainWindow::resizeEvent(QResizeEvent *event) {
   QMainWindow::resizeEvent(event);
-  Settings& settings = static_cast<Application*>(qApp)->settings();
+  Settings &settings = static_cast<Application *>(qApp)->settings();
   if (settings.spatialMode()) {
-    TabPage* page = currentPage();
-    if(page) {
+    TabPage *page = currentPage();
+    if (page) {
       QString path = page->pathName();
       MetaData metaData(path);
       metaData.setWindowHeight(height());
       metaData.setWindowWidth(width());
     }
-  }
-  else if(settings.rememberWindowSize()) {
+  } else if (settings.rememberWindowSize()) {
     settings.setLastWindowMaximized(isMaximized());
 
-    if(!isMaximized()) {
-        settings.setLastWindowWidth(width());
-        settings.setLastWindowHeight(height());
+    if (!isMaximized()) {
+      settings.setLastWindowWidth(width());
+      settings.setLastWindowHeight(height());
     }
   }
 }
 
-void MainWindow::moveEvent(QMoveEvent *event)
-{
+void MainWindow::moveEvent(QMoveEvent *event) {
   QMainWindow::moveEvent(event);
   if (isSpatialMode()) {
-    TabPage* page = currentPage();
-    if(page) {
+    TabPage *page = currentPage();
+    if (page) {
       QString path = page->pathName();
       MetaData metaData(path);
       metaData.setWindowOriginX(geometry().x());
@@ -928,31 +987,30 @@ void MainWindow::moveEvent(QMoveEvent *event)
   }
 }
 
-void MainWindow::closeEvent(QCloseEvent *event)
-{
+void MainWindow::closeEvent(QCloseEvent *event) {
   QWidget::closeEvent(event);
-  Settings& settings = static_cast<Application*>(qApp)->settings();
-  if(settings.rememberWindowSize()) {
+  Settings &settings = static_cast<Application *>(qApp)->settings();
+  if (settings.rememberWindowSize()) {
     settings.setLastWindowMaximized(isMaximized());
 
-    if(!isMaximized()) {
-        settings.setLastWindowWidth(width());
-        settings.setLastWindowHeight(height());
+    if (!isMaximized()) {
+      settings.setLastWindowWidth(width());
+      settings.setLastWindowHeight(height());
     }
   }
 }
 
 void MainWindow::onTabBarCurrentChanged(int index) {
   ui.stackedWidget->setCurrentIndex(index);
-  if(TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(index)))
+  if (TabPage *page = static_cast<TabPage *>(ui.stackedWidget->widget(index)))
     ui.filterBar->setText(page->getFilterStr());
   updateUIForCurrentPage();
 }
 
 void MainWindow::updateStatusBarForCurrentPage() {
-  TabPage* tabPage = currentPage();
+  TabPage *tabPage = currentPage();
   QString text = tabPage->statusText(TabPage::StatusTextSelectedFiles);
-  if(text.isEmpty())
+  if (text.isEmpty())
     text = tabPage->statusText(TabPage::StatusTextNormal);
   ui.statusbar->showMessage(text);
 
@@ -961,23 +1019,22 @@ void MainWindow::updateStatusBarForCurrentPage() {
   fsInfoLabel->setVisible(!text.isEmpty());
 }
 
-bool MainWindow::isSpatialMode() const
-{
-  Settings& settings = static_cast<Application*>(qApp)->settings();
+bool MainWindow::isSpatialMode() const {
+  Settings &settings = static_cast<Application *>(qApp)->settings();
   return settings.spatialMode();
 }
 
 void MainWindow::updateViewMenuForCurrentPage() {
-  TabPage* tabPage = currentPage();
+  TabPage *tabPage = currentPage();
 
-  if(tabPage) {
+  if (tabPage) {
     // update menus. FIXME: should we move this to another method?
     ui.actionShowHidden->setChecked(tabPage->showHidden());
 
     // view mode
-    QAction* modeAction = NULL;
+    QAction *modeAction = NULL;
 
-    switch(tabPage->viewMode()) {
+    switch (tabPage->viewMode()) {
     case Fm::FolderView::IconMode:
       modeAction = ui.actionIconView;
       break;
@@ -999,7 +1056,7 @@ void MainWindow::updateViewMenuForCurrentPage() {
     modeAction->setChecked(true);
 
     // sort menu
-    QAction* sortActions[Fm::FolderModel::NumOfColumns];
+    QAction *sortActions[Fm::FolderModel::NumOfColumns];
     sortActions[Fm::FolderModel::ColumnFileName] = ui.actionByFileName;
     sortActions[Fm::FolderModel::ColumnFileMTime] = ui.actionByMTime;
     sortActions[Fm::FolderModel::ColumnFileSize] = ui.actionByFileSize;
@@ -1007,7 +1064,7 @@ void MainWindow::updateViewMenuForCurrentPage() {
     sortActions[Fm::FolderModel::ColumnFileOwner] = ui.actionByOwner;
     sortActions[tabPage->sortColumn()]->setChecked(true);
 
-    if(tabPage->sortOrder() == Qt::AscendingOrder)
+    if (tabPage->sortOrder() == Qt::AscendingOrder)
       ui.actionAscending->setChecked(true);
     else
       ui.actionDescending->setChecked(true);
@@ -1019,11 +1076,12 @@ void MainWindow::updateViewMenuForCurrentPage() {
 
 void MainWindow::updateUIForCurrentPage() {
 
-  TabPage* tabPage = currentPage();
+  TabPage *tabPage = currentPage();
 
-  if(tabPage) {
-    // probono: Whenever we switch to a tab, see whether the user has items selected and enable/disable menu items accordingly
-    if(currentPage()->selectedFiles() == 0x0)
+  if (tabPage) {
+    // probono: Whenever we switch to a tab, see whether the user has items
+    // selected and enable/disable menu items accordingly
+    if (currentPage()->selectedFiles() == 0x0)
       disableMenuItems();
     else
       enableMenuItems();
@@ -1053,69 +1111,69 @@ void MainWindow::onStackedWidgetWidgetRemoved(int index) {
   // qDebug("onStackedWidgetWidgetRemoved: %d", index);
   // need to remove associated tab from tabBar
   ui.tabBar->removeTab(index);
-  if(ui.tabBar->count() == 0) { // this is the last one
-    deleteLater(); // destroy the whole window
+  if (ui.tabBar->count() == 0) { // this is the last one
+    deleteLater();               // destroy the whole window
     // qDebug("delete window");
-  }
-  else {
-    Settings& settings = static_cast<Application*>(qApp)->settings();
-    if(!settings.alwaysShowTabs() && ui.tabBar->count() == 1) {
+  } else {
+    Settings &settings = static_cast<Application *>(qApp)->settings();
+    if (!settings.alwaysShowTabs() && ui.tabBar->count() == 1) {
       ui.tabBar->setVisible(false);
     }
   }
 }
 
 void MainWindow::onTabPageTitleChanged(QString title) {
-  TabPage* tabPage = static_cast<TabPage*>(sender());
+  TabPage *tabPage = static_cast<TabPage *>(sender());
   int index = ui.stackedWidget->indexOf(tabPage);
 
-  if(index >= 0)
+  if (index >= 0)
     ui.tabBar->setTabText(index, title);
 
-  if(tabPage == currentPage())
+  if (tabPage == currentPage())
     setWindowTitle(title);
 }
 
-void Filer::MainWindow::disableMenuItems()
-{
-    // probono: No object has been selected by the user, so disable the actions that work on filesystem objects
-    // qDebug() << "probono: disableMenuItems";
-    ui.actionOpen->setEnabled(false);
-    ui.actionOpenWith->setEnabled(false);
-    ui.actionFileProperties->setEnabled(false);
-    ui.actionCut->setEnabled(false);
-    ui.actionCopy->setEnabled(false);
-    ui.actionDuplicate->setEnabled(false);
-    ui.actionRename->setEnabled(false);
-    ui.actionTrash->setEnabled(false);
-    ui.actionShowContents->setEnabled(false);
+void Filer::MainWindow::disableMenuItems() {
+  // probono: No object has been selected by the user, so disable the actions
+  // that work on filesystem objects qDebug() << "probono: disableMenuItems";
+  ui.actionOpen->setEnabled(false);
+  ui.actionOpenWith->setEnabled(false);
+  ui.actionFileProperties->setEnabled(false);
+  ui.actionCut->setEnabled(false);
+  ui.actionCopy->setEnabled(false);
+  ui.actionDuplicate->setEnabled(false);
+  ui.actionRename->setEnabled(false);
+  ui.actionTrash->setEnabled(false);
+  ui.actionShowContents->setEnabled(false);
 }
 
-void Filer::MainWindow::enableMenuItems()
-{
-    // probono: At least one object has been selected, so enable the actions that work on filesystem objects
-    // qDebug() << "probono: enableMenuItems";
-    ui.actionOpen->setEnabled(true);
-    ui.actionOpenWith->setEnabled(true);
-    ui.actionFileProperties->setEnabled(true);
-    ui.actionCut->setEnabled(true);
-    ui.actionCopy->setEnabled(true);
-    ui.actionDuplicate->setEnabled(true);
-    ui.actionRename->setEnabled(true);
-    ui.actionTrash->setEnabled(true);
-    ui.actionShowContents->setEnabled(true);
+void Filer::MainWindow::enableMenuItems() {
+  // probono: At least one object has been selected, so enable the actions that
+  // work on filesystem objects qDebug() << "probono: enableMenuItems";
+  ui.actionOpen->setEnabled(true);
+  ui.actionOpenWith->setEnabled(true);
+  ui.actionFileProperties->setEnabled(true);
+  ui.actionCut->setEnabled(true);
+  ui.actionCopy->setEnabled(true);
+  ui.actionDuplicate->setEnabled(true);
+  ui.actionRename->setEnabled(true);
+  ui.actionTrash->setEnabled(true);
+  ui.actionShowContents->setEnabled(true);
 }
 
 void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
-  TabPage* tabPage = static_cast<TabPage*>(sender());
-  if(tabPage == currentPage()) {
-    switch(type) {
+  TabPage *tabPage = static_cast<TabPage *>(sender());
+  if (tabPage == currentPage()) {
+    switch (type) {
     case TabPage::StatusTextNormal:
     case TabPage::StatusTextSelectedFiles: {
-      // FIXME: updating the status text so frequently is a little bit ineffiecient
-      QString text = statusText = tabPage->statusText(TabPage::StatusTextSelectedFiles);
-      if(text.isEmpty()) {
-        ui.statusbar->showMessage(tabPage->statusText(TabPage::StatusTextNormal));
+      // FIXME: updating the status text so frequently is a little bit
+      // ineffiecient
+      QString text = statusText =
+          tabPage->statusText(TabPage::StatusTextSelectedFiles);
+      if (text.isEmpty()) {
+        ui.statusbar->showMessage(
+            tabPage->statusText(TabPage::StatusTextNormal));
         disableMenuItems(); // probono
       } else {
         ui.statusbar->showMessage(text);
@@ -1131,8 +1189,8 @@ void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
   }
 }
 
-void MainWindow::onTabPageOpenDirRequested(FmPath* path, int target) {
-  switch(target) {
+void MainWindow::onTabPageOpenDirRequested(FmPath *path, int target) {
+  switch (target) {
   case OpenInCurrentTab:
     chdir(path);
     break;
@@ -1149,12 +1207,13 @@ void MainWindow::onTabPageOpenDirRequested(FmPath* path, int target) {
 }
 
 void MainWindow::onTabPageSortFilterChanged() {
-  TabPage* tabPage = static_cast<TabPage*>(sender());
+  TabPage *tabPage = static_cast<TabPage *>(sender());
 
-  if(tabPage == currentPage()) {
+  if (tabPage == currentPage()) {
     updateViewMenuForCurrentPage();
-    Settings& settings = static_cast<Application*>(qApp)->settings();
-    settings.setSortColumn(static_cast<Fm::FolderModel::ColumnId>(tabPage->sortColumn()));
+    Settings &settings = static_cast<Application *>(qApp)->settings();
+    settings.setSortColumn(
+        static_cast<Fm::FolderModel::ColumnId>(tabPage->sortColumn()));
     settings.setSortOrder(tabPage->sortOrder());
     settings.setSortFolderFirst(tabPage->sortFolderFirst());
 
@@ -1194,59 +1253,59 @@ void MainWindow::onTabPageSortFilterChanged() {
         break;
       }
 
-      metaData.setWindowSortFolderFirst(tabPage->sortFolderFirst() ?
-                                          MetaData::SortFolderFirst::FoldersFirst
-                                        : MetaData::SortFolderFirst::NotFoldersFirst);
-
+      metaData.setWindowSortFolderFirst(
+          tabPage->sortFolderFirst()
+              ? MetaData::SortFolderFirst::FoldersFirst
+              : MetaData::SortFolderFirst::NotFoldersFirst);
     }
   }
 }
 
-
-void MainWindow::onSidePaneChdirRequested(int type, FmPath* path) {
+void MainWindow::onSidePaneChdirRequested(int type, FmPath *path) {
   // FIXME: use enum for type value or change it to button.
-  if(type == 0) // left button (default)
+  if (type == 0) // left button (default)
     chdir(path);
-  else if(type == 1) // middle button
+  else if (type == 1) // middle button
     addTab(path);
-  else if(type == 2) // new window
+  else if (type == 2) // new window
     (new MainWindow(path))->show();
 }
 
-void MainWindow::onSidePaneOpenFolderInNewWindowRequested(FmPath* path) {
+void MainWindow::onSidePaneOpenFolderInNewWindowRequested(FmPath *path) {
   (new MainWindow(path))->show();
 }
 
-void MainWindow::onSidePaneOpenFolderInNewTabRequested(FmPath* path) {
+void MainWindow::onSidePaneOpenFolderInNewTabRequested(FmPath *path) {
   addTab(path);
 }
 
-void MainWindow::onSidePaneOpenFolderInTerminalRequested(FmPath* path) {
-  Application* app = static_cast<Application*>(qApp);
+void MainWindow::onSidePaneOpenFolderInTerminalRequested(FmPath *path) {
+  Application *app = static_cast<Application *>(qApp);
   app->openFolderInTerminal(path);
 }
 
-void MainWindow::onSidePaneCreateNewFolderRequested(FmPath* path) {
+void MainWindow::onSidePaneCreateNewFolderRequested(FmPath *path) {
   createFileOrFolder(CreateNewFolder, path);
 }
 
 void MainWindow::onSidePaneModeChanged(Fm::SidePane::Mode mode) {
-  static_cast<Application*>(qApp)->settings().setSidePaneMode(mode);
+  static_cast<Application *>(qApp)->settings().setSidePaneMode(mode);
 }
 
 void MainWindow::onSplitterMoved(int pos, int index) {
-  Application* app = static_cast<Application*>(qApp);
+  Application *app = static_cast<Application *>(qApp);
   app->settings().setSplitterPos(pos);
 }
 
 void MainWindow::loadBookmarksMenu() {
-  GList* allBookmarks = fm_bookmarks_get_all(bookmarks);
-  QAction* before = ui.actionAddToBookmarks;
+  GList *allBookmarks = fm_bookmarks_get_all(bookmarks);
+  QAction *before = ui.actionAddToBookmarks;
 
-  for(GList* l = allBookmarks; l; l = l->next) {
-    FmBookmarkItem* item = reinterpret_cast<FmBookmarkItem*>(l->data);
-    BookmarkAction* action = new BookmarkAction(item, ui.menu_Bookmarks);
-    connect(action, &QAction::triggered, this, &MainWindow::onBookmarkActionTriggered);
+  for (GList *l = allBookmarks; l; l = l->next) {
+    FmBookmarkItem *item = reinterpret_cast<FmBookmarkItem *>(l->data);
+    BookmarkAction *action = new BookmarkAction(item, ui.menu_Bookmarks);
+    connect(action, &QAction::triggered, this,
+            &MainWindow::onBookmarkActionTriggered);
     ui.menu_Bookmarks->insertAction(before, action);
   }
 
@@ -1254,17 +1313,17 @@ void MainWindow::loadBookmarksMenu() {
   g_list_free_full(allBookmarks, (GDestroyNotify)fm_bookmark_item_unref);
 }
 
-void MainWindow::onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis) {
+void MainWindow::onBookmarksChanged(FmBookmarks *bookmarks, MainWindow *pThis) {
   // delete existing items
-  if ( ! pThis->ui.menu_Bookmarks )
+  if (!pThis->ui.menu_Bookmarks)
     return;
 
-  QList<QAction*> actions = pThis->ui.menu_Bookmarks->actions();
-  QList<QAction*>::const_iterator it = actions.begin();
-  QList<QAction*>::const_iterator last_it = actions.end() - 2;
+  QList<QAction *> actions = pThis->ui.menu_Bookmarks->actions();
+  QList<QAction *>::const_iterator it = actions.begin();
+  QList<QAction *>::const_iterator last_it = actions.end() - 2;
 
-  while(it != last_it) {
-    QAction* action = *it;
+  while (it != last_it) {
+    QAction *action = *it;
     ++it;
     pThis->ui.menu_Bookmarks->removeAction(action);
   }
@@ -1273,12 +1332,12 @@ void MainWindow::onBookmarksChanged(FmBookmarks* bookmarks, MainWindow* pThis) {
 }
 
 void MainWindow::onBookmarkActionTriggered() {
-  BookmarkAction* action = static_cast<BookmarkAction*>(sender());
-  FmPath* path = action->path();
-  if(path) {
-    Application* app = static_cast<Application*>(qApp);
-    Settings& settings = app->settings();
-    switch(settings.bookmarkOpenMethod()) {
+  BookmarkAction *action = static_cast<BookmarkAction *>(sender());
+  FmPath *path = action->path();
+  if (path) {
+    Application *app = static_cast<Application *>(qApp);
+    Settings &settings = app->settings();
+    switch (settings.bookmarkOpenMethod()) {
     case OpenInCurrentTab: /* current tab */
     default:
       chdir(path);
@@ -1294,15 +1353,15 @@ void MainWindow::onBookmarkActionTriggered() {
 }
 
 void MainWindow::on_actionCopy_triggered() {
-  TabPage* page = currentPage();
-  FmPathList* paths = page->selectedFilePaths();
+  TabPage *page = currentPage();
+  FmPathList *paths = page->selectedFilePaths();
   copyFilesToClipboard(paths);
   fm_path_list_unref(paths);
 }
 
 void MainWindow::on_actionCut_triggered() {
-  TabPage* page = currentPage();
-  FmPathList* paths = page->selectedFilePaths();
+  TabPage *page = currentPage();
+  FmPathList *paths = page->selectedFilePaths();
   cutFilesToClipboard(paths);
   fm_path_list_unref(paths);
 }
@@ -1316,64 +1375,60 @@ void MainWindow::on_actionDuplicate_triggered() {
   on_actionPaste_triggered();
 }
 
-void MainWindow::on_actionEmptyTrash_triggered() {
-  Fm::Trash::emptyTrash();
-}
+void MainWindow::on_actionEmptyTrash_triggered() { Fm::Trash::emptyTrash(); }
 
 void MainWindow::on_actionDelete_triggered() {
-  Application* app = static_cast<Application*>(qApp);
-  Settings& settings = app->settings();
-  TabPage* page = currentPage();
-  FmPathList* paths = page->selectedFilePaths();
+  Application *app = static_cast<Application *>(qApp);
+  Settings &settings = app->settings();
+  TabPage *page = currentPage();
+  FmPathList *paths = page->selectedFilePaths();
   FileOperation::trashFiles(paths, settings.confirmTrash(), this);
   fm_path_list_unref(paths);
 }
 
 void MainWindow::on_actionDeleteWithoutTrash_triggered() {
-  Application* app = static_cast<Application*>(qApp);
-  Settings& settings = app->settings();
-  TabPage* page = currentPage();
-  FmPathList* paths = page->selectedFilePaths();
+  Application *app = static_cast<Application *>(qApp);
+  Settings &settings = app->settings();
+  TabPage *page = currentPage();
+  FmPathList *paths = page->selectedFilePaths();
   FileOperation::deleteFiles(paths, settings.confirmDelete(), this);
   fm_path_list_unref(paths);
 }
 
 void MainWindow::on_actionRename_triggered() {
-  TabPage* page = currentPage();
-  FmFileInfoList* files = page->selectedFiles();
+  TabPage *page = currentPage();
+  FmFileInfoList *files = page->selectedFiles();
 
-  for(GList* l = fm_file_info_list_peek_head_link(files); l; l = l->next) {
-    FmFileInfo* file = FM_FILE_INFO(l->data);
+  for (GList *l = fm_file_info_list_peek_head_link(files); l; l = l->next) {
+    FmFileInfo *file = FM_FILE_INFO(l->data);
     Fm::renameFile(file, NULL);
   }
   fm_file_info_list_unref(files);
 }
 
-void MainWindow::on_actionSelectAll_triggered() {
-  currentPage()->selectAll();
-}
+void MainWindow::on_actionSelectAll_triggered() { currentPage()->selectAll(); }
 
 void MainWindow::on_actionInvertSelection_triggered() {
   currentPage()->invertSelection();
 }
 
 void MainWindow::on_actionPreferences_triggered() {
-  Application* app = reinterpret_cast<Application*>(qApp);
+  Application *app = reinterpret_cast<Application *>(qApp);
   app->preferences(QString());
 }
 
 void MainWindow::onBackForwardContextMenu(QPoint pos) {
   // show a popup menu for browsing history here.
-  QToolButton* btn = static_cast<QToolButton*>(sender());
-  TabPage* page = currentPage();
-  Fm::BrowseHistory& history = page->browseHistory();
+  QToolButton *btn = static_cast<QToolButton *>(sender());
+  TabPage *page = currentPage();
+  Fm::BrowseHistory &history = page->browseHistory();
   int current = history.currentIndex();
   QMenu menu;
-  for(int i = 0; i < history.size(); ++i) {
-    const BrowseHistoryItem& item = history.at(i);
+  for (int i = 0; i < history.size(); ++i) {
+    const BrowseHistoryItem &item = history.at(i);
     Fm::Path path = item.path();
-    QAction* action = menu.addAction(path.displayName());
-    if(i == current) {
+    QAction *action = menu.addAction(path.displayName());
+    if (i == current) {
       // make the current path bold and checked
       action->setCheckable(true);
       action->setChecked(true);
@@ -1382,8 +1437,8 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
       action->setFont(font);
     }
   }
-  QAction* selectedAction = menu.exec(btn->mapToGlobal(pos));
-  if(selectedAction) {
+  QAction *selectedAction = menu.exec(btn->mapToGlobal(pos));
+  if (selectedAction) {
     int index = menu.actions().indexOf(selectedAction);
     ui.filterBar->clear();
     page->jumpToHistory(index);
@@ -1391,12 +1446,11 @@ void MainWindow::onBackForwardContextMenu(QPoint pos) {
   }
 }
 
-void MainWindow::onRaiseWindow(const QString& path)
-{
+void MainWindow::onRaiseWindow(const QString &path) {
   // all tab pages
   int n = ui.stackedWidget->count();
-  for(int i = 0; i < n; ++i) {
-    TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(i));
+  for (int i = 0; i < n; ++i) {
+    TabPage *page = static_cast<TabPage *>(ui.stackedWidget->widget(i));
     if (page) {
       QString ourPath = page->pathName();
       if (path == ourPath) {
@@ -1410,7 +1464,8 @@ void MainWindow::onRaiseWindow(const QString& path)
         bool maximized = isMaximized();
         if (isMinimized()) {
           showNormal();
-          if (maximized) // window was maximized before being minimized - showNormal restores it
+          if (maximized) // window was maximized before being minimized -
+                         // showNormal restores it
             showMaximized();
         }
         break;
@@ -1419,12 +1474,11 @@ void MainWindow::onRaiseWindow(const QString& path)
   }
 }
 
-void MainWindow::onCloseWindow(const QString& path)
-{
+void MainWindow::onCloseWindow(const QString &path) {
   // all tab pages
   int n = ui.stackedWidget->count();
-  for(int i = 0; i < n; ++i) {
-    TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(i));
+  for (int i = 0; i < n; ++i) {
+    TabPage *page = static_cast<TabPage *>(ui.stackedWidget->widget(i));
     if (page) {
       QString ourPath = page->pathName();
       if (path == ourPath) {
@@ -1434,91 +1488,97 @@ void MainWindow::onCloseWindow(const QString& path)
   }
   n = ui.stackedWidget->count();
   qDebug() << "Widgets left:" << n;
-  if(n=1){
-      // qDebug() << "No more tabs left. Now close the whole window";
-      close();
+  if (n = 1) {
+    // qDebug() << "No more tabs left. Now close the whole window";
+    close();
   }
 }
 
-void MainWindow::onRaiseWindowAndSelectItems(const QString& path, const QStringList& items) {
-    onRaiseWindow(path);
-    TabPage* page = currentPage();
-    if(page) {
-      page->folderView()->selectFiles(items, false);
-    }
+void MainWindow::onRaiseWindowAndSelectItems(const QString &path,
+                                             const QStringList &items) {
+  onRaiseWindow(path);
+  TabPage *page = currentPage();
+  if (page) {
+    page->folderView()->selectFiles(items, false);
+  }
 }
 
-void MainWindow::updateFromSettings(Settings& settings) {
+void MainWindow::updateFromSettings(Settings &settings) {
   // apply settings
 
   // side pane
-  ui.sidePane->setIconSize(QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
+  ui.sidePane->setIconSize(
+      QSize(settings.sidePaneIconSize(), settings.sidePaneIconSize()));
 
   // tabs
   ui.tabBar->setTabsClosable(settings.showTabClose());
 
-  if(!settings.alwaysShowTabs()) {
+  if (!settings.alwaysShowTabs()) {
     ui.tabBar->setVisible(ui.tabBar->count() > 1);
   }
 
   // all tab pages
   int n = ui.stackedWidget->count();
 
-  for(int i = 0; i < n; ++i) {
-    TabPage* page = static_cast<TabPage*>(ui.stackedWidget->widget(i));
+  for (int i = 0; i < n; ++i) {
+    TabPage *page = static_cast<TabPage *>(ui.stackedWidget->widget(i));
     page->updateFromSettings(settings);
   }
 
   // spatial mode
-  ui.actionNewWin->setVisible( ! settings.spatialMode() ); // probono
-  ui.actionGoUpAndCloseCurrentWindow->setVisible( settings.spatialMode() ); // probono
-  ui.tabBar->setVisible( ! settings.spatialMode() );
-  ui.sidePane->setVisible( ! settings.spatialMode() );
-  ui.toolBar->setVisible( ! settings.spatialMode() );
-  ui.frame->layout()->setContentsMargins(settings.spatialMode() ? 0 : 1, 0, 0, 0);
+  ui.actionNewWin->setVisible(!settings.spatialMode()); // probono
+  ui.actionGoUpAndCloseCurrentWindow->setVisible(
+      settings.spatialMode()); // probono
+  ui.tabBar->setVisible(!settings.spatialMode());
+  ui.sidePane->setVisible(!settings.spatialMode());
+  ui.toolBar->setVisible(!settings.spatialMode());
+  ui.frame->layout()->setContentsMargins(settings.spatialMode() ? 0 : 1, 0, 0,
+                                         0);
 }
 
-static const char* su_cmd_subst(char opt, gpointer user_data) {
-  return (const char*)user_data;
+static const char *su_cmd_subst(char opt, gpointer user_data) {
+  return (const char *)user_data;
 }
 
-static FmAppCommandParseOption su_cmd_opts[] = {
-  { 's', su_cmd_subst },
-  { 0, NULL }
-};
+static FmAppCommandParseOption su_cmd_opts[] = {{'s', su_cmd_subst}, {0, NULL}};
 
 void MainWindow::on_actionOpenAsRoot_triggered() {
-  TabPage* page = currentPage();
+  TabPage *page = currentPage();
 
-  if(page) {
-    Application* app = static_cast<Application*>(qApp);
-    Settings& settings = app->settings();
+  if (page) {
+    Application *app = static_cast<Application *>(qApp);
+    Settings &settings = app->settings();
 
-    if(!settings.suCommand().isEmpty()) {
+    if (!settings.suCommand().isEmpty()) {
       // run the su command
-      // FIXME: it's better to get the filename of the current process rather than hard-code filer-qt here.
+      // FIXME: it's better to get the filename of the current process rather
+      // than hard-code filer-qt here.
       QByteArray suCommand = settings.suCommand().toLocal8Bit();
-      char* cmd = NULL;
+      char *cmd = NULL;
       QByteArray programCommand = app->applicationFilePath().toLocal8Bit();
       programCommand += " %U";
 
-      if(fm_app_command_parse(suCommand.constData(), su_cmd_opts, &cmd, gpointer(programCommand.constData())) == 0) {
+      if (fm_app_command_parse(suCommand.constData(), su_cmd_opts, &cmd,
+                               gpointer(programCommand.constData())) == 0) {
         /* no %s found so just append to it */
         g_free(cmd);
-        cmd = g_strconcat(suCommand.constData(), programCommand.constData(), NULL);
+        cmd = g_strconcat(suCommand.constData(), programCommand.constData(),
+                          NULL);
       }
 
-      GAppInfo* appInfo = g_app_info_create_from_commandline(cmd, NULL, GAppInfoCreateFlags(0), NULL);
+      GAppInfo *appInfo = g_app_info_create_from_commandline(
+          cmd, NULL, GAppInfoCreateFlags(0), NULL);
       g_free(cmd);
 
-      if(appInfo) {
-        FmPath* cwd = page->path();
-        GError* err = NULL;
-        char* uri = fm_path_to_uri(cwd);
-        GList* uris = g_list_prepend(NULL, uri);
+      if (appInfo) {
+        FmPath *cwd = page->path();
+        GError *err = NULL;
+        char *uri = fm_path_to_uri(cwd);
+        GList *uris = g_list_prepend(NULL, uri);
 
-        if(!g_app_info_launch_uris(appInfo, uris, NULL, &err)) {
-          QMessageBox::critical(this, tr("Error"), QString::fromUtf8(err->message));
+        if (!g_app_info_launch_uris(appInfo, uris, NULL, &err)) {
+          QMessageBox::critical(this, tr("Error"),
+                                QString::fromUtf8(err->message));
           g_error_free(err);
         }
 
@@ -1526,45 +1586,45 @@ void MainWindow::on_actionOpenAsRoot_triggered() {
         g_free(uri);
         g_object_unref(appInfo);
       }
-    }
-    else {
+    } else {
       // show an error message and ask the user to set the command
-      QMessageBox::critical(this, tr("Error"), tr("Switch user command is not set."));
+      QMessageBox::critical(this, tr("Error"),
+                            tr("Switch user command is not set."));
       app->preferences("advanced");
     }
   }
 }
 
 void MainWindow::on_actionFindFiles_triggered() {
-  Application* app = static_cast<Application*>(qApp);
-  FmPathList* selectedPaths = currentPage()->selectedFilePaths();
+  Application *app = static_cast<Application *>(qApp);
+  FmPathList *selectedPaths = currentPage()->selectedFilePaths();
   QStringList paths;
-  if(selectedPaths) {
-    for(GList* l = fm_path_list_peek_head_link(selectedPaths); l; l = l->next) {
+  if (selectedPaths) {
+    for (GList *l = fm_path_list_peek_head_link(selectedPaths); l;
+         l = l->next) {
       // FIXME: is it ok to use display name here?
       // This might be broken on filesystems with non-UTF-8 filenames.
       Fm::Path path(FM_PATH(l->data));
       paths.append(path.displayName(false));
     }
     fm_path_list_unref(selectedPaths);
-  }
-  else {
+  } else {
     paths.append(currentPage()->pathName());
   }
   app->findFiles(paths);
 }
 
 void MainWindow::on_actionOpenTerminal_triggered() {
-  TabPage* page = currentPage();
-  if(page) {
-    Application* app = static_cast<Application*>(qApp);
+  TabPage *page = currentPage();
+  if (page) {
+    Application *app = static_cast<Application *>(qApp);
     app->openFolderInTerminal(page->path());
   }
 }
 
 void MainWindow::onShortcutNextTab() {
   int current = ui.tabBar->currentIndex();
-  if(current < ui.tabBar->count() - 1)
+  if (current < ui.tabBar->count() - 1)
     ui.tabBar->setCurrentIndex(current + 1);
   else
     ui.tabBar->setCurrentIndex(0);
@@ -1572,7 +1632,7 @@ void MainWindow::onShortcutNextTab() {
 
 void MainWindow::onShortcutPrevTab() {
   int current = ui.tabBar->currentIndex();
-  if(current > 0)
+  if (current > 0)
     ui.tabBar->setCurrentIndex(current - 1);
   else
     ui.tabBar->setCurrentIndex(ui.tabBar->count() - 1);
@@ -1580,27 +1640,29 @@ void MainWindow::onShortcutPrevTab() {
 
 // Switch to nth tab when Alt+n or Ctrl+n is pressed
 void MainWindow::onShortcutJumpToTab() {
-  QShortcut* shortcut = reinterpret_cast<QShortcut*>(sender());
+  QShortcut *shortcut = reinterpret_cast<QShortcut *>(sender());
   QKeySequence seq = shortcut->key();
   int keyValue = seq[0];
   // See the source code of QKeySequence and refer to the method:
-  // QString QKeySequencePrivate::encodeString(int key, QKeySequence::SequenceFormat format).
-  // Then we know how to test if a key sequence contains a modifier.
-  // It's a shame that Qt has no API for this task.
+  // QString QKeySequencePrivate::encodeString(int key,
+  // QKeySequence::SequenceFormat format). Then we know how to test if a key
+  // sequence contains a modifier. It's a shame that Qt has no API for this
+  // task.
 
-  if((keyValue & Qt::ALT) == Qt::ALT) // test if we have Alt key pressed
+  if ((keyValue & Qt::ALT) == Qt::ALT) // test if we have Alt key pressed
     keyValue -= Qt::ALT;
-  else if((keyValue & Qt::CTRL) == Qt::CTRL) // test if we have Ctrl key pressed
+  else if ((keyValue & Qt::CTRL) ==
+           Qt::CTRL) // test if we have Ctrl key pressed
     keyValue -= Qt::CTRL;
 
   // now keyValue should contains '0' - '9' only
   int index;
-  if(keyValue == '0')
+  if (keyValue == '0')
     index = 9;
   else
     index = keyValue - '1';
-  if(index < ui.tabBar->count())
+  if (index < ui.tabBar->count())
     ui.tabBar->setCurrentIndex(index);
 }
 
-}
+} // namespace Filer
