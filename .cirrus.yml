@@ -1,5 +1,5 @@
 freebsd_instance:
-  image: freebsd-12-1-release-amd64
+  image: freebsd-12-3-release-amd64
   
 env:
   CIRRUS_CLONE_DEPTH: 1
@@ -7,10 +7,10 @@ env:
   
 task:
   # This name gets reported as a build status in GitHub
-  name: freebsd-12-1-release-amd64
+  name: freebsd-12-3-release-amd64
   stateful: false
   setup_script:
-    - sed -i '' -e 's|quarterly|release_1|g' "/etc/pkg/FreeBSD.conf" # https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=270940
+    - sed -i '' -e 's|quarterly|release_3|g' "/etc/pkg/FreeBSD.conf" # https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=270940
     - pkg install -y git-lite curl wget zip cmake pkgconf libfm qt5-core qt5-x11extras qt5-widgets qt5-qmake qt5-buildtools qt5-linguisttools qt5-multimedia
   test_script:
     - git config --global http.sslVerify false # Workaround for: fatal: unable to access 'https://github.com/helloSystem/Sounds.git/': SSL certificate problem: unable to get local issuer certificate
