@@ -192,6 +192,9 @@ void renameFile(FmFileInfo *file, QWidget *parent) {
         }
     }
 
+    // Refresh the view that contains the renamed object
+    parent->update();
+
     return;
   }
 
