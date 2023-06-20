@@ -33,6 +33,7 @@
 #include <QMessageBox>
 #include <QCommandLineParser>
 #include <QSocketNotifier>
+#include <QTimer>
 #include <QDeadlineTimer>
 #include <gio/gio.h>
 #include <sys/socket.h>
@@ -417,6 +418,44 @@ int Application::exec() {
         setQuitOnLastWindowClosed(false);
     }
 
+  if (isPrimaryInstance) {
+    // Every 10 seconds call a lambda function that deletes empty mount points
+    qDebug() << "Periodically checking for empty mount points";
+    // Check if /media exists and exit with an error if it doesn't
+    if (!QDir("/media").exists()) {
+      qCritical() << "The /media directory does not exist. Exiting.";
+      qApp->exit(1);
+    }
+    QTimer *timer = new QTimer(this);
+    connect(timer, &QTimer::timeout, []() {
+      // qDebug() << "Checking for empty mount points";
+      // Get all directories in /media that are empty
+      QDir mediaDir("/media");
+      QStringList emptyDirs;
+      for (const QFileInfo &fileInfo :
+           mediaDir.entryInfoList(QDir::Dirs | QDir::NoDotAndDotDot)) {
+        QDir dir(fileInfo.absoluteFilePath());
+        if (dir.entryInfoList(QDir::AllEntries | QDir::NoDotAndDotDot)
+                .isEmpty()) {
+          emptyDirs << fileInfo.absoluteFilePath();
+        }
+      }
+      // Delete the empty mount points
+      for (const QString &dir : emptyDirs) {
+        // If the directory is still empty after 3 seconds, delete it
+        QTimer::singleShot(3000, [dir]() {
+          QDir dirObj(dir);
+          if (dirObj.entryInfoList(QDir::AllEntries | QDir::NoDotAndDotDot)
+                  .isEmpty()) {
+            qDebug() << "Deleting empty mount point" << dir;
+            QDir().rmdir(dir);
+          }
+        });
+      }
+    });
+    timer->start(5000);
+  }
+    
     volumeMonitor = g_volume_monitor_get();
     // delay the volume manager a little because in newer versions of glib/gio there's a problem.
     // when the first volume monitor object is created, it discovers volumes asynchonously.
