@@ -155,7 +155,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="161"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="161"/>
         <source>Keep terminal window open after command execution</source>
-        <translation type="unfinished"></translation>
+        <translation>Håll terminalfönster öppna efter att kommandot har körts</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="98"/>
@@ -179,14 +179,14 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../../build/src/ui_autorun.h" line="108"/>
         <location filename="../../cmake-build-debug/src/ui_autorun.h" line="108"/>
         <source>Removable medium is inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Borttagbart medium är isatt</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="33"/>
         <location filename="../../build/src/ui_autorun.h" line="110"/>
         <location filename="../../cmake-build-debug/src/ui_autorun.h" line="110"/>
         <source>&lt;b&gt;Removable medium is inserted&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Borttagbart medium är isatt&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../autorun.ui" line="40"/>
@@ -568,7 +568,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../../build/src/ui_file-props.h" line="386"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="386"/>
         <source>Make the file executable</source>
-        <translation type="unfinished"></translation>
+        <translation>Gör filen exekverbar</translation>
     </message>
 </context>
 <context>
@@ -620,7 +620,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../application.cpp" line="286"/>
         <source>Launch desktop manager (deprecated)</source>
-        <translation type="unfinished"></translation>
+        <translation>Starta skrivbordshanterare (utfasad)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="289"/>
@@ -705,7 +705,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../autorundialog.cpp" line="133"/>
         <source>Removable Disk</source>
-        <translation type="unfinished"></translation>
+        <translation>Borttagbar disk</translation>
     </message>
 </context>
 <context>
@@ -910,13 +910,13 @@ Functionality may be broken.</source>
         <location filename="../file-search.ui" line="46"/>
         <location filename="../file-search.ui" line="221"/>
         <source>Case insensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Skiftlägesokänslig</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="53"/>
         <location filename="../file-search.ui" line="228"/>
         <source>Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Använd reguljärt uttryck</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="63"/>
@@ -1176,7 +1176,7 @@ Vad vill du göra med det?</translation>
     <message>
         <location filename="../filemenu.cpp" line="237"/>
         <source>Get Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Få information</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="242"/>
@@ -1410,7 +1410,7 @@ Vill du ta bort dom istället?</translation>
     <message>
         <location filename="../foldermenu.cpp" line="69"/>
         <source>Get Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Få information</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="95"/>
@@ -1987,7 +1987,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="723"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="723"/>
         <source>Get &amp;Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Få &amp;information</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
@@ -2593,7 +2593,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="620"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="620"/>
         <source>Spatial mode (folders open in a new window)</source>
-        <translation type="unfinished"></translation>
+        <translation>Spatiellt läge (mappar öppnas i nytt fönster)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="134"/>
@@ -2670,7 +2670,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="617"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="617"/>
         <source>Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation>Bläddra</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="47"/>
@@ -2719,7 +2719,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="623"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="623"/>
         <source>Erase files on removable media instead of &quot;trash can&quot; creation</source>
-        <translation type="unfinished"></translation>
+        <translation>Radera filer på flyttbara media istället för att skapa &quot;papperskorgen&quot;</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="97"/>
@@ -2733,7 +2733,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="625"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="625"/>
         <source>Don&apos;t ask options on launch executable file</source>
-        <translation type="unfinished"></translation>
+        <translation>Fråga inte efter alternativ för att starta körbar fil</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="206"/>
@@ -2859,28 +2859,28 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="682"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="682"/>
         <source>Mount removable media automatically when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Montera flyttbara media automatiskt när de sätts in</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="605"/>
         <location filename="../../build/src/ui_preferences.h" line="683"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="683"/>
         <source>Show available options for removable media when they are inserted</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa tillgängliga alternativ för flyttbara media när de sätts i</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="615"/>
         <location filename="../../build/src/ui_preferences.h" line="684"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="684"/>
         <source>When removable medium unmounted:</source>
-        <translation type="unfinished"></translation>
+        <translation>När flyttbart medium avmonterat:</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="621"/>
         <location filename="../../build/src/ui_preferences.h" line="685"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="685"/>
         <source>Close &amp;tab containing removable medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Stäng &amp;flik som innehåller flyttbart medium</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="628"/>
@@ -3118,14 +3118,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="401"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="401"/>
         <source>Case insensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>Skiftlägesokänslig</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="55"/>
         <location filename="../../build/src/ui_filesearch.h" line="402"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="402"/>
         <source>Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>Använd reguljärt uttryck</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="65"/>
@@ -3237,14 +3237,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="418"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="418"/>
         <source>Case insensiti&amp;ve</source>
-        <translation type="unfinished"></translation>
+        <translation>Skiftlägesokä&amp;nslig</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="230"/>
         <location filename="../../build/src/ui_filesearch.h" line="419"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="419"/>
         <source>&amp;Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Använd reguljärt uttryck</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="254"/>
