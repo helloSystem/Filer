@@ -433,26 +433,24 @@ QStringList FolderModel::mimeTypes() const {
   return types;
 }
 
-QMimeData* FolderModel::mimeData(const QModelIndexList& indexes) const {
-  QMimeData* data = QAbstractItemModel::mimeData(indexes);
+QMimeData *FolderModel::mimeData(const QModelIndexList &indexes) const {
+  QMimeData *data = QAbstractItemModel::mimeData(indexes);
   qDebug("FolderModel::mimeData");
-  // build a uri list
-  QByteArray urilist;
-  urilist.reserve(4096);
 
   QModelIndexList::const_iterator it;
-  for(it = indexes.constBegin(); it != indexes.end(); ++it) {
+
+  QStringList paths;
+  for (it = indexes.constBegin(); it != indexes.end(); ++it) {
     const QModelIndex index = *it;
-    FolderModelItem* item = itemFromIndex(index);
-    if(item) {
-      FmPath* path = fm_file_info_get_path(item->info);
-      char* uri = fm_path_to_uri(path);
-      urilist.append(uri);
-      urilist.append('\n');
-      g_free(uri);
+    FolderModelItem *item = itemFromIndex(index);
+    if (item) {
+      FmPath *path = fm_file_info_get_path(item->info);
+      char *unix_path = fm_path_to_str(path);
+      paths << unix_path;
+      g_free(unix_path);
     }
   }
-  data->setData("text/uri-list", urilist);
+  data->setData("text/plain", paths.join("\n").toUtf8());
 
   return data;
 }
