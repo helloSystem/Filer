@@ -83,7 +83,35 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
 Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
 
 Used with permission of the creator https://raphaellopes.me/</source>
-        <translation type="unfinished"></translation>
+        <translation>Filer
+
+Copyright (C) 2020-21 Simon Peter
+Copyright (C) 2021 Chris Moore
+
+Ursprungligen baserad på PCMan Filhanterare
+Vissa delar Copyright (C) 2009-14 洪任諭 (Hong Jen Yee)
+
+Detta program är fri programvara; du kan omdistribuera det och/eller
+ändra den enligt villkoren i GNU General Public License
+som publicerats av Free Software Foundation; antingen version 2
+av licensen, eller (efter eget val) någon senare version.
+
+Detta program distribueras i hopp om att det kommer att vara användbart,
+men UTAN NÅGON GARANTI; utan ens den underförstådda garantin för
+SÄLJBARHET ELLER LÄMPLIGHET FÖR ETT SÄRSKILT SYFTE. Se den
+GNU General Public Licens för mer information.
+
+Du borde ha fått en kopia av GNU General Public Licens
+tillsammans med detta program; om inte, skriv till den fria programvaran
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+
+Programikon
+
+https://dribbble.com/shots/2541211--Pirate-Finder-icon#
+
+Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
+
+Används med tillstånd av skaparen https://raphaellopes.me/</translation>
     </message>
     <message>
         <location filename="../about.ui" line="90"/>
@@ -148,7 +176,13 @@ Used with permission of the creator https://raphaellopes.me/</source>
 &lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: Represents a single URI of the file&lt;/li&gt;
 &lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: Represents multiple URIs&lt;/li&gt;
 &lt;/ul&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Dessa specialkoder kan användas på kommandoraden:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;%f&lt;/b&gt;:Representerar ett enda filnamn&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%F&lt;/b&gt;:Representerar flera filnamn&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%u&lt;/b&gt;:Representerar en enda URI för fil&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%U&lt;/b&gt;:Representerar flera URIs&lt;/li&gt;
+&lt;/ul&gt;</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="91"/>
@@ -512,7 +546,7 @@ Used with permission of the creator https://raphaellopes.me/</source>
         <location filename="../../build/src/ui_file-props.h" line="363"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="363"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>Textetikett</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="185"/>
@@ -580,7 +614,11 @@ from an application bundle.
 
 This is not how it should be invoked.
 Functionality may be broken.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 startades inte av startkommandot
+från ett applikationspaket.
+
+Det är inte så det ska åberopas.
+Funktionaliteten kan vara trasig.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="215"/>
@@ -661,7 +699,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../application.cpp" line="305"/>
         <source>Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ställ in läge för skrivbordsunderlägg. MODE=(färg|sträcka ut|passa in|mitten|kakla)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="305"/>
@@ -738,7 +776,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="54"/>
         <source>Tile the image to fill the entire screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Placera bilden så att den fyller hela skärmen</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="140"/>
@@ -751,7 +789,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../desktopwindow.cpp" line="445"/>
         <source>Stic&amp;k to Current Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Sträc&amp;k till nuvarande position</translation>
     </message>
     <message>
         <location filename="../desktopwindow.cpp" line="467"/>
