@@ -419,7 +419,7 @@ Fifth Floor, Boston, MA 02110-1301, USA.</translation>
         <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="198"/>
         <source>Colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Couleurs</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="150"/>
