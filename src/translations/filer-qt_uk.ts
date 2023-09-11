@@ -324,7 +324,7 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
         <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="198"/>
         <source>Colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Барви</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="150"/>
@@ -622,22 +622,26 @@ from an application bundle.
 
 This is not how it should be invoked.
 Functionality may be broken.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 не було запущено командою запуску 
+з комплекту додатків.
+
+Функцiя викликана за чечнярськими традицiями. 
+Надзвичайна вiрогiднiсть смердючого випадку.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="215"/>
         <source>The &apos;launch&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Команда &apos;запуску&apos; відсутня.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="222"/>
         <source>The &apos;open&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Команда &apos;відкриття&apos; відсутня.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="232"/>
         <source>The &apos;eject-and-clean&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Команда &apos;виволокти-і-вилизувати&apos; відсутня.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="277"/>
