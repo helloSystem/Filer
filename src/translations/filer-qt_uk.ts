@@ -540,7 +540,7 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
         <location filename="../../build/src/ui_file-props.h" line="368"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="368"/>
         <source>File size:</source>
-        <translation>Розмір файлу:</translation>
+        <translation>Великість файлу:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="20"/>
@@ -890,33 +890,33 @@ Functionality may be broken.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="278"/>
         <source>%n items</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n предмет</numerusform>
+            <numerusform>%n предмета</numerusform>
+            <numerusform>%n предметів</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="280"/>
         <source>1 item</source>
-        <translation type="unfinished"></translation>
+        <translation>один предмет</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="436"/>
         <source>%1 items selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 вибраний предмет</numerusform>
+            <numerusform>%1 вибраних предметів</numerusform>
+            <numerusform>%1 вибраних предметів</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="440"/>
         <source>%1 item selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 обраний елемент</numerusform>
+            <numerusform>%1 обраних елементів</numerusform>
+            <numerusform>%1 обраних елементів</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1103,7 +1103,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../appchoosercombobox.cpp" line="79"/>
         <source>Customize</source>
-        <translation>Налаштування</translation>
+        <translation>Налаштувати</translation>
     </message>
 </context>
 <context>
@@ -1287,7 +1287,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperation.cpp" line="273"/>
         <source>%1 is required by the system and cannot be deleted.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 необхідний устрою та не може бути знищений.</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="281"/>
@@ -1304,12 +1304,12 @@ Do you want to delete them instead?</source>
         <location filename="../fileoperation.cpp" line="272"/>
         <location filename="../fileoperation.cpp" line="304"/>
         <source> </source>
-        <translation type="unfinished"></translation>
+        <translation> Крапка </translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="305"/>
         <source>%1 is required by the system and cannot be moved to the Trash.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 необхідний устрою та не може бути переміщений у смітисько.</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="314"/>
@@ -1357,7 +1357,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="56"/>
         <source>Deleting the following files</source>
-        <translation>Видалення таких файлів:</translation>
+        <translation>Ампутація спідозних файлів</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="61"/>
@@ -1626,7 +1626,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesmodel.cpp" line="204"/>
         <source>Trash</source>
-        <translation>Смітник</translation>
+        <translation>Смітисько</translation>
     </message>
 </context>
 <context>
@@ -1789,7 +1789,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="623"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="623"/>
         <source>Quit</source>
-        <translation>Вийти</translation>
+        <translation>Висуватися</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="344"/>
@@ -2006,7 +2006,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="683"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="683"/>
         <source>Ctrl+,</source>
-        <translation type="unfinished"></translation>
+        <translation>КонтрольПлюсКома</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -2265,7 +2265,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="795"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="795"/>
         <source>Ctrl+Alt+Shift+O</source>
-        <translation type="unfinished"></translation>
+        <translation>КонтрольПлюсАльтухаПлюсЗдвигПлюсО</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
@@ -2296,7 +2296,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="804"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="804"/>
         <source>Open With...</source>
-        <translation type="unfinished">Відкрити з...</translation>
+        <translation>Відкрити з...</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="582"/>
@@ -2637,7 +2637,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="616"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="616"/>
         <source>Preferences</source>
-        <translation>Налаштування</translation>
+        <translation>Конфігурація устрою</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="263"/>
@@ -2878,7 +2878,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="652"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="652"/>
         <source>Trash can</source>
-        <translation>Смітник</translation>
+        <translation>Смітисько може</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="359"/>
@@ -2927,7 +2927,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="687"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="687"/>
         <source>Mount</source>
-        <translation type="unfinished">Монтувати</translation>
+        <translation>Монтувати</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="585"/>
@@ -3347,7 +3347,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="421"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="421"/>
         <source>File Size:</source>
-        <translation>Розмір файлу:</translation>
+        <translation>Величність файлу:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="266"/>
