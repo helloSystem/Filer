@@ -324,7 +324,7 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
         <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="198"/>
         <source>Colors</source>
-        <translation>Барви</translation>
+        <translation>Кольори</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="150"/>
@@ -540,7 +540,7 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
         <location filename="../../build/src/ui_file-props.h" line="368"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="368"/>
         <source>File size:</source>
-        <translation>Великість файлу:</translation>
+        <translation>Розмір файлу:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="20"/>
@@ -622,26 +622,22 @@ from an application bundle.
 
 This is not how it should be invoked.
 Functionality may be broken.</source>
-        <translation>%1 не було запущено командою запуску 
-з комплекту додатків.
-
-Функцiя викликана за чечнярськими традицiями. 
-Надзвичайна вiрогiднiсть смердючого випадку.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="215"/>
         <source>The &apos;launch&apos; command is missing.</source>
-        <translation>Команда &apos;запуску&apos; відсутня.</translation>
+        <translation>Команда &apos;запустити&apos; відсутня.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="222"/>
         <source>The &apos;open&apos; command is missing.</source>
-        <translation>Команда &apos;відкриття&apos; відсутня.</translation>
+        <translation>Команда &apos;відкрити&apos; відсутня.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="232"/>
         <source>The &apos;eject-and-clean&apos; command is missing.</source>
-        <translation>Команда &apos;виволокти-і-вилизувати&apos; відсутня.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../application.cpp" line="277"/>
@@ -899,24 +895,24 @@ Functionality may be broken.</source>
     <message>
         <location filename="../tabpage.cpp" line="280"/>
         <source>1 item</source>
-        <translation>один предмет</translation>
+        <translation>1 елемент</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="436"/>
         <source>%1 items selected</source>
         <translation>
-            <numerusform>%1 вибраний предмет</numerusform>
-            <numerusform>%1 вибраних предметів</numerusform>
-            <numerusform>%1 вибраних предметів</numerusform>
+            <numerusform>%1 вибраний елемент</numerusform>
+            <numerusform>%1 вибрані елементи</numerusform>
+            <numerusform>%1 вибраних елементів</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="440"/>
         <source>%1 item selected</source>
         <translation>
-            <numerusform>%1 обраний елемент</numerusform>
-            <numerusform>%1 обраних елементів</numerusform>
-            <numerusform>%1 обраних елементів</numerusform>
+            <numerusform>%1 вибраний елемент</numerusform>
+            <numerusform>%1 вибрані елементи</numerusform>
+            <numerusform>%1 вибраних елементів</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1287,7 +1283,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperation.cpp" line="273"/>
         <source>%1 is required by the system and cannot be deleted.</source>
-        <translation>%1 необхідний устрою та не може бути знищений.</translation>
+        <translation>%1 необхідний системі і не може бути видалений.</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="281"/>
@@ -1304,12 +1300,12 @@ Do you want to delete them instead?</source>
         <location filename="../fileoperation.cpp" line="272"/>
         <location filename="../fileoperation.cpp" line="304"/>
         <source> </source>
-        <translation> Крапка </translation>
+        <translation> </translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="305"/>
         <source>%1 is required by the system and cannot be moved to the Trash.</source>
-        <translation>%1 необхідний устрою та не може бути переміщений у смітисько.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="314"/>
@@ -1357,7 +1353,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="56"/>
         <source>Deleting the following files</source>
-        <translation>Ампутація спідозних файлів</translation>
+        <translation>Видалення наступних файлів</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="61"/>
@@ -1626,7 +1622,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesmodel.cpp" line="204"/>
         <source>Trash</source>
-        <translation>Смітисько</translation>
+        <translation>Смітник</translation>
     </message>
 </context>
 <context>
@@ -1789,7 +1785,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="623"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="623"/>
         <source>Quit</source>
-        <translation>Висуватися</translation>
+        <translation>Вийти</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="344"/>
@@ -2006,7 +2002,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="683"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="683"/>
         <source>Ctrl+,</source>
-        <translation>КонтрольПлюсКома</translation>
+        <translation>Ctrl+,</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="525"/>
@@ -2265,7 +2261,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="795"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="795"/>
         <source>Ctrl+Alt+Shift+O</source>
-        <translation>КонтрольПлюсАльтухаПлюсЗдвигПлюсО</translation>
+        <translation>Ctrl+Alt+Shift+O</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="867"/>
@@ -2296,7 +2292,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="804"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="804"/>
         <source>Open With...</source>
-        <translation>Відкрити з...</translation>
+        <translation>Відкрити в...</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="582"/>
@@ -2637,7 +2633,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="616"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="616"/>
         <source>Preferences</source>
-        <translation>Конфігурація устрою</translation>
+        <translation>Налаштування</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="263"/>
@@ -2878,7 +2874,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="652"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="652"/>
         <source>Trash can</source>
-        <translation>Смітисько може</translation>
+        <translation>Смітник</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="359"/>
@@ -3347,7 +3343,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="421"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="421"/>
         <source>File Size:</source>
-        <translation>Величність файлу:</translation>
+        <translation>Розмір файлу:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="266"/>
