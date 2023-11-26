@@ -689,8 +689,28 @@ void Application::setWallpaper(QString path, QString modeString) {
     }
 }
 
+/* This method receives a list of file:// URIs from DBus and opens windows
+ * or tabs for each of them
+ */
 void Application::ShowFolders(const QStringList uriList, const QString startupId)
 {
+    // Absolute insane amount of effort is needed to convert QStringList to FmFileInfoList;
+    // this is why we need to get rid of libfm-qt and use Qt only
+    FmFileInfoList* files = fm_file_info_list_new();
+
+    Q_EMIT openFolders(files);
+
+    for (QString uri : uriList) {
+        GFile* file = fm_file_new_for_uri(uri.toUtf8().constData());
+        FmFileInfo* fileInfo = fm_file_info_new();
+        FmPath* path = fm_path_new_for_gfile(file);
+        fm_file_info_set_path(fileInfo, path);
+        fm_file_info_list_push_tail(files, fileInfo);
+        fm_file_info_unref(fileInfo);
+        g_object_unref(file);
+    }
+
+    fm_file_info_list_unref(files);
 }
 
 /* This method receives a list of file:// URIs from DBus and opens windows
