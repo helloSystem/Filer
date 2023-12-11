@@ -22,7 +22,7 @@
         <location filename="../../build/src/ui_about.h" line="144"/>
         <location filename="../../cmake-build-debug/src/ui_about.h" line="144"/>
         <source>The Desktop Experience</source>
-        <translation type="unfinished"></translation>
+        <translation>데스크탑 환경</translation>
     </message>
     <message>
         <location filename="../about.ui" line="70"/>
@@ -42,7 +42,13 @@
 
 Application icon:
 * Raphael Lopes (https://raphaellopes.me/)</source>
-        <translation type="unfinished"></translation>
+        <translation>프로그래밍:
+* Simon Peter (probono)
+* Chris Moore (moochris)
+* Hong Jen Yee (PCMan) &lt;pcman.tw@gmail.com&gt;
+
+어플리케이션 아이콘:
+* Raphael Lopes (https://raphaellopes.me/)</translation>
     </message>
     <message>
         <location filename="../about.ui" line="125"/>
@@ -77,7 +83,35 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
 Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
 
 Used with permission of the creator https://raphaellopes.me/</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Filer
+
+Copyright (C) 2020-21 Simon Peter
+Copyright (C) 2021 Chris Moore
+
+ PCMan File Manager 기반
+Portions Copyright (C) 2009-14 洪任諭 (Hong Jen Yee)
+
+이 프로그램은  free software입니다. 재배포 및/또는
+GNU General Public License 조건에 따라 수정합니다
+Free Software Foundation에 의해 출판된 대로; 라이센스 버전2,
+또는 (선택 사항에 따라) 나중 버전 중 하나를 선택합니다.
+
+이 프로그램은 유용하게 쓰이기를 바라는 마음으로 배포되지만,
+어떠한 보증도 제공하지 않습니다. 상품성이나 특정 목적에 적합성에 대한
+묵시적 보증조차도 없습니다. 자세한 내용은 GNU General Public License를 참조하세요.
+
+
+이 프로그램과 함께 GNU General Public License의 사본을 받았어야 합니다.
+그렇지 않다면 Free Software에 쓰십시오.
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+어플리케이션 아이콘
+
+https://dribbble.com/shots/2541211--Pirate-Finder-icon #
+
+Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com &gt;
+
+작성자 https://raphaellopes.me/ 의 허락을 받아 사용합니다</translation>
     </message>
     <message>
         <source>Lightweight file manager</source>
@@ -153,35 +187,35 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="150"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="150"/>
         <source>Choose an Application</source>
-        <translation type="unfinished"></translation>
+        <translation>어플리케이션 선택</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="36"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="151"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="151"/>
         <source>Installed Applications</source>
-        <translation type="unfinished"></translation>
+        <translation>설치된 어플리케이션</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="46"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="163"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="163"/>
         <source>Custom Command</source>
-        <translation type="unfinished"></translation>
+        <translation>사용자 지정 명령</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="52"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="152"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="152"/>
         <source>Command line to execute:</source>
-        <translation type="unfinished"></translation>
+        <translation>실행할 명령줄:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="62"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="153"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="153"/>
         <source>Application name:</source>
-        <translation type="unfinished"></translation>
+        <translation>어플리케이션 이름:</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="72"/>
@@ -194,28 +228,34 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
 &lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: Represents a single URI of the file&lt;/li&gt;
 &lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: Represents multiple URIs&lt;/li&gt;
 &lt;/ul&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;이러한 특수 코드는 명령줄에서 사용할 수 있습니다:&lt;b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;%f&lt;/b&gt;: 단일 파일 이름을 나타냅니다&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%F&lt;/b&gt;: 여러 파일 이름을 나타냅니다&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%u&lt;/b&gt;: 파일의 단일 URI를 나타냅니다. &lt;/li&gt;
+&lt;li&gt;&lt;b&gt;%U&lt;/b&gt;: 다중 URI를 나타냅니다.&lt;/li&gt;
+&lt;/ul&gt;</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="91"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="161"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="161"/>
         <source>Keep terminal window open after command execution</source>
-        <translation type="unfinished"></translation>
+        <translation>명령 실행 후 터미널 창을 열어 두십시오</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="98"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="162"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="162"/>
         <source>Execute in terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>터미널 에뮬레이터에서 실행</translation>
     </message>
     <message>
         <location filename="../app-chooser-dialog.ui" line="109"/>
         <location filename="../../build/src/ui_app-chooser-dialog.h" line="164"/>
         <location filename="../../cmake-build-debug/src/ui_app-chooser-dialog.h" line="164"/>
         <source>Set selected application as default action of this file type</source>
-        <translation type="unfinished"></translation>
+        <translation>선택한 애플리케이션을 이 파일 형식의 기본 작업으로 설정</translation>
     </message>
 </context>
 <context>
@@ -336,28 +376,28 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="198"/>
         <source>Colors</source>
-        <translation type="unfinished"></translation>
+        <translation>색상</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="150"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="203"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="203"/>
         <source>Background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>배경색:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="104"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="199"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="199"/>
         <source>Text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>글자 색:</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="143"/>
         <location filename="../../build/src/ui_desktop-preferences.h" line="202"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="202"/>
         <source>Shadow color:</source>
-        <translation type="unfinished"></translation>
+        <translation>그림자 색:</translation>
     </message>
     <message>
         <source>Select background color:</source>
@@ -431,35 +471,35 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../../build/src/ui_edit-bookmarks.h" line="106"/>
         <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="106"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>이름</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="47"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="105"/>
         <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="105"/>
         <source>Location</source>
-        <translation type="unfinished"></translation>
+        <translation>위치</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="67"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="107"/>
         <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="107"/>
         <source>&amp;Add Item</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;추가항목</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="77"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="108"/>
         <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="108"/>
         <source>&amp;Remove Item</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;항목 제거</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="102"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="109"/>
         <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="109"/>
         <source>Use drag and drop to reorder the items</source>
-        <translation type="unfinished"></translation>
+        <translation>드래그 앤 드롭을 사용하여 항목 순서 바꾸기</translation>
     </message>
 </context>
 <context>
@@ -469,14 +509,14 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../../build/src/ui_exec-file.h" line="114"/>
         <location filename="../../cmake-build-debug/src/ui_exec-file.h" line="114"/>
         <source>Execute file</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 실행</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="39"/>
         <location filename="../../build/src/ui_exec-file.h" line="116"/>
         <location filename="../../cmake-build-debug/src/ui_exec-file.h" line="116"/>
         <source>&amp;Open</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;열기</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="52"/>
@@ -490,14 +530,14 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../../build/src/ui_exec-file.h" line="118"/>
         <location filename="../../cmake-build-debug/src/ui_exec-file.h" line="118"/>
         <source>Execute in &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;터미널에서 실행</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="85"/>
         <location filename="../../build/src/ui_exec-file.h" line="119"/>
         <location filename="../../cmake-build-debug/src/ui_exec-file.h" line="119"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>취소</translation>
     </message>
 </context>
 <context>
@@ -507,35 +547,35 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../../build/src/ui_file-operation-dialog.h" line="124"/>
         <location filename="../../cmake-build-debug/src/ui_file-operation-dialog.h" line="124"/>
         <source>Destination:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">목적대상:</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="48"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="126"/>
         <location filename="../../cmake-build-debug/src/ui_file-operation-dialog.h" line="126"/>
         <source>Processing:</source>
-        <translation type="unfinished"></translation>
+        <translation>처리:</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="61"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="127"/>
         <location filename="../../cmake-build-debug/src/ui_file-operation-dialog.h" line="127"/>
         <source>Preparing...</source>
-        <translation type="unfinished"></translation>
+        <translation>준비 중...</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="68"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="128"/>
         <location filename="../../cmake-build-debug/src/ui_file-operation-dialog.h" line="128"/>
         <source>Progress</source>
-        <translation type="unfinished"></translation>
+        <translation>진행상황</translation>
     </message>
     <message>
         <location filename="../file-operation-dialog.ui" line="88"/>
         <location filename="../../build/src/ui_file-operation-dialog.h" line="129"/>
         <location filename="../../cmake-build-debug/src/ui_file-operation-dialog.h" line="129"/>
         <source>Time remaining:</source>
-        <translation type="unfinished"></translation>
+        <translation>남은 시간:</translation>
     </message>
 </context>
 <context>
@@ -545,14 +585,14 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../../build/src/ui_file-props.h" line="362"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="362"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>정보</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="60"/>
         <location filename="../../build/src/ui_file-props.h" line="363"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="363"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">텍스트라벨</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="133"/>
@@ -566,77 +606,77 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../../build/src/ui_file-props.h" line="366"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="366"/>
         <source>File type:</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 유형:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="162"/>
         <location filename="../../build/src/ui_file-props.h" line="368"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="368"/>
         <source>File size:</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 크기:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="185"/>
         <location filename="../../build/src/ui_file-props.h" line="370"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="370"/>
         <source>On-disk size:</source>
-        <translation type="unfinished"></translation>
+        <translation>디스크상 크기:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="208"/>
         <location filename="../../build/src/ui_file-props.h" line="372"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="372"/>
         <source>Location:</source>
-        <translation type="unfinished"></translation>
+        <translation>위치:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="234"/>
         <location filename="../../build/src/ui_file-props.h" line="374"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="374"/>
         <source>Link target:</source>
-        <translation type="unfinished"></translation>
+        <translation>링크 대상:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="260"/>
         <location filename="../../build/src/ui_file-props.h" line="376"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="376"/>
         <source>Last modified:</source>
-        <translation type="unfinished"></translation>
+        <translation>마지막 수정:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="283"/>
         <location filename="../../build/src/ui_file-props.h" line="378"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="378"/>
         <source>Last accessed:</source>
-        <translation type="unfinished"></translation>
+        <translation>마지막 접속:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="317"/>
         <location filename="../../build/src/ui_file-props.h" line="380"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="380"/>
         <source>Open with</source>
-        <translation type="unfinished"></translation>
+        <translation>다음으로 열기</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="323"/>
         <location filename="../../build/src/ui_file-props.h" line="381"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="381"/>
         <source>Mime type:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Mime 형식</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="346"/>
         <location filename="../../build/src/ui_file-props.h" line="383"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="383"/>
         <source>Open With:</source>
-        <translation type="unfinished"></translation>
+        <translation>다음으로 열기:</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="380"/>
         <location filename="../../build/src/ui_file-props.h" line="384"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="384"/>
         <source>Access Control</source>
-        <translation type="unfinished"></translation>
+        <translation>접근 제어</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="423"/>
@@ -650,7 +690,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../../build/src/ui_file-props.h" line="386"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="386"/>
         <source>Make the file executable</source>
-        <translation type="unfinished"></translation>
+        <translation>파일을 실행 가능한 파일로 만들기</translation>
     </message>
 </context>
 <context>
@@ -686,27 +726,31 @@ from an application bundle.
 
 This is not how it should be invoked.
 Functionality may be broken.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1이(가) 애플리케이션 번들에서
+실행 명령에 의해 실행되지 않았습니다.
+
+이것은 호출되는 방법이 아닙니다.
+기능이 고장날 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="215"/>
         <source>The &apos;launch&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&apos;launch&apos; 명령이 없습니다.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="222"/>
         <source>The &apos;open&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&apos;open&apos; 명령이 없습니다.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="232"/>
         <source>The &apos;eject-and-clean&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&apos;eject-and-clean&apos; 명령이 없습니다.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="286"/>
         <source>Launch desktop manager (deprecated)</source>
-        <translation type="unfinished"></translation>
+        <translation>데스크톱 관리자 실행(사용하지 않음)</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="289"/>
@@ -809,7 +853,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="51"/>
         <source>Stretch to fill the entire screen</source>
-        <translation>전체 화면을 채우기 위해 늘이기</translation>
+        <translation>전체 화면을 채우려면 펼칩니다</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="52"/>
@@ -860,12 +904,12 @@ Functionality may be broken.</source>
     <message>
         <location filename="../gotofolderwindow.cpp" line="48"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>취소</translation>
     </message>
     <message>
         <location filename="../gotofolderwindow.cpp" line="59"/>
         <source>Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>폴더로 이동</translation>
     </message>
 </context>
 <context>
@@ -940,7 +984,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../tabpage.cpp" line="280"/>
         <source>1 item</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">항목 1</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="436"/>
@@ -963,7 +1007,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../tabpage.cpp" line="265"/>
         <source>%1 available</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 사용가능</translation>
     </message>
     <message numerus="yes">
         <source>%n item(s)</source>
@@ -1006,140 +1050,140 @@ Functionality may be broken.</source>
     <message>
         <location filename="../file-search.ui" line="14"/>
         <source>Find Files</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 찾기</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="24"/>
         <source>Name/Location</source>
-        <translation type="unfinished"></translation>
+        <translation>이름/위치</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="30"/>
         <source>File name patterns</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 이름 패턴</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="36"/>
         <source>Pattern:</source>
-        <translation type="unfinished"></translation>
+        <translation>패턴:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="46"/>
         <location filename="../file-search.ui" line="221"/>
         <source>Case insensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>대소문자를 구분하지 않습니다</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="53"/>
         <location filename="../file-search.ui" line="228"/>
         <source>Use regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">정규 표현식을 사용합니다</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="63"/>
         <source>Places to search</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">위치를 검색합니다</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="76"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>추가</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="88"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>삭제</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="117"/>
         <source>Search in sub directories</source>
-        <translation type="unfinished"></translation>
+        <translation>하위 디렉토리에서 검색합니다</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="124"/>
         <source>Search hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>숨겨진 파일을 검색합니다</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="135"/>
         <location filename="../file-search.ui" line="141"/>
         <source>File Type</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 유형</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="147"/>
         <source>Only search for files of following types:</source>
-        <translation type="unfinished"></translation>
+        <translation>다음 유형의 파일만 검색합니다:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="154"/>
         <source>Text files</source>
-        <translation type="unfinished"></translation>
+        <translation>텍스트 파일</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="161"/>
         <source>Image files</source>
-        <translation type="unfinished"></translation>
+        <translation>이미지 파일</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="168"/>
         <source>Audio files</source>
-        <translation type="unfinished"></translation>
+        <translation>오디오 파일</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="175"/>
         <source>Video files</source>
-        <translation type="unfinished"></translation>
+        <translation>비디오 파일</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="182"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>문서</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="206"/>
         <source>Content</source>
-        <translation type="unfinished"></translation>
+        <translation>내용물</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="212"/>
         <source>File contains</source>
-        <translation type="unfinished"></translation>
+        <translation>포함된 파일</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="252"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>정보</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="258"/>
         <source>File Size</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 크기</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="264"/>
         <source>Bigger than:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">보다 큰:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="289"/>
         <source>Smaller than:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">보다 작은:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="317"/>
         <source>Last Modified Time</source>
-        <translation type="unfinished"></translation>
+        <translation>마지막 수정 시간</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="323"/>
         <source>Earlier than:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">보다 일찍:</translation>
     </message>
     <message>
         <location filename="../file-search.ui" line="340"/>
         <source>Later than:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">보다 나중에:</translation>
     </message>
 </context>
 <context>
@@ -1147,7 +1191,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../appchoosercombobox.cpp" line="79"/>
         <source>Customize</source>
-        <translation type="unfinished"></translation>
+        <translation>맞춤화</translation>
     </message>
 </context>
 <context>
@@ -1155,7 +1199,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../appchooserdialog.cpp" line="262"/>
         <source>Select an application to open &quot;%1&quot; files</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 파일을 열 응용 프로그램을 선택합니다</translation>
     </message>
 </context>
 <context>
@@ -1163,12 +1207,12 @@ Functionality may be broken.</source>
     <message>
         <location filename="../createnewmenu.cpp" line="29"/>
         <source>Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>폴더</translation>
     </message>
     <message>
         <location filename="../createnewmenu.cpp" line="33"/>
         <source>Blank File</source>
-        <translation type="unfinished"></translation>
+        <translation>빈 파일</translation>
     </message>
 </context>
 <context>
@@ -1176,12 +1220,12 @@ Functionality may be broken.</source>
     <message>
         <location filename="../dirtreemodelitem.cpp" line="77"/>
         <source>Loading...</source>
-        <translation type="unfinished"></translation>
+        <translation>로딩중...</translation>
     </message>
     <message>
         <location filename="../dirtreemodelitem.cpp" line="208"/>
         <source>&lt;No sub folders&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;하위 폴더가 없습니다&gt;</translation>
     </message>
 </context>
 <context>
@@ -1202,22 +1246,22 @@ Functionality may be broken.</source>
     <message>
         <location filename="../dndactionmenu.cpp" line="26"/>
         <source>Copy here</source>
-        <translation type="unfinished"></translation>
+        <translation>여기에 복사합니다</translation>
     </message>
     <message>
         <location filename="../dndactionmenu.cpp" line="27"/>
         <source>Move here</source>
-        <translation type="unfinished"></translation>
+        <translation>여기로 이동합니다</translation>
     </message>
     <message>
         <location filename="../dndactionmenu.cpp" line="28"/>
         <source>Create symlink here</source>
-        <translation type="unfinished"></translation>
+        <translation>여기에 심볼릭 링크를 만듭니다</translation>
     </message>
     <message>
         <location filename="../dndactionmenu.cpp" line="30"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>취소</translation>
     </message>
 </context>
 <context>
@@ -1225,7 +1269,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../editbookmarksdialog.cpp" line="96"/>
         <source>New bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">새로운 북마크</translation>
     </message>
 </context>
 <context>
@@ -1234,12 +1278,13 @@ Functionality may be broken.</source>
         <location filename="../execfiledialog.cpp" line="40"/>
         <source>This text file &apos;%1&apos; seems to be an executable script.
 What do you want to do with it?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">이 텍스트 파일 &apos;%1&apos;은(는) 실행 가능한 스크립트로 보입니다.
+당신은 그것으로 무엇을 하고 싶습니까?</translation>
     </message>
     <message>
         <location filename="../execfiledialog.cpp" line="45"/>
         <source>This file &apos;%1&apos; is executable. Do you want to execute it?</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 &apos;%1&apos;은(는) 실행 가능합니다. 실행하시겠습니까?</translation>
     </message>
 </context>
 <context>
@@ -1247,7 +1292,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="96"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>열기</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="108"/>
@@ -1257,27 +1302,27 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="101"/>
         <source>Open With...</source>
-        <translation type="unfinished"></translation>
+        <translation>다음으로 열기...</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="165"/>
         <source>Create &amp;New</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;새로 만들기</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="172"/>
         <source>Cut</source>
-        <translation type="unfinished"></translation>
+        <translation>자르기</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="176"/>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>복사</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="180"/>
         <source>Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>붙여넣기</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="185"/>
@@ -1287,22 +1332,22 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="189"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>이름 변경</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="237"/>
         <source>Get Info</source>
-        <translation type="unfinished"></translation>
+        <translation>정보 가져오기</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="242"/>
         <source>&amp;Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;휴지통 비우기</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="369"/>
         <source>Output</source>
-        <translation type="unfinished"></translation>
+        <translation>출력</translation>
     </message>
 </context>
 <context>
@@ -1310,29 +1355,30 @@ What do you want to do with it?</source>
     <message>
         <location filename="../fileoperation.cpp" line="223"/>
         <source>Error</source>
-        <translation type="unfinished">오류</translation>
+        <translation>오류</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="224"/>
         <source>Some files cannot be moved to trash can because the underlying file systems don&apos;t support this operation.
 Do you want to delete them instead?</source>
-        <translation type="unfinished"></translation>
+        <translation>기본 파일 시스템에서 이 작업을 지원하지 않기 때문에 일부 파일을 휴지통으로 이동할 수 없습니다.
+휴지통으로 이동하는 대신 파일을 삭제하시겠습니까?</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="273"/>
         <source>%1 is required by the system and cannot be deleted.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1은(는) 시스템에 필요한 항목이므로 삭제할 수 없습니다.</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="281"/>
         <location filename="../fileoperation.cpp" line="313"/>
         <source>Confirm</source>
-        <translation type="unfinished"></translation>
+        <translation>확정</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="282"/>
         <source>Do you want to delete the selected files?</source>
-        <translation type="unfinished"></translation>
+        <translation>선택한 파일을 삭제하시겠습니까?</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="272"/>
@@ -1343,12 +1389,12 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperation.cpp" line="305"/>
         <source>%1 is required by the system and cannot be moved to the Trash.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1은(는) 시스템에 필요한 것으로 휴지통으로 이동할 수 없습니다.</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="314"/>
         <source>Do you want to move the selected files to trash can?</source>
-        <translation type="unfinished"></translation>
+        <translation>선택한 파일을 휴지통으로 이동하시겠습니까?</translation>
     </message>
 </context>
 <context>
@@ -1356,72 +1402,72 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fileoperationdialog.cpp" line="43"/>
         <source>Move files</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 이동</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="44"/>
         <source>Moving the following files to destination folder:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">다음 파일을 대상 폴더로 이동하는 중:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="47"/>
         <source>Copy Files</source>
-        <translation type="unfinished"></translation>
+        <translation>파일을 복사</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="48"/>
         <source>Copying the following files to destination folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>다음 파일을 대상 폴더로 복사하는 중:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="51"/>
         <source>Trash Files</source>
-        <translation type="unfinished"></translation>
+        <translation>휴지통 파일</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="52"/>
         <source>Moving the following files to trash can:</source>
-        <translation type="unfinished"></translation>
+        <translation>다음 파일을 휴지통으로 이동합니다:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="55"/>
         <source>Delete Files</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 삭제</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="56"/>
         <source>Deleting the following files</source>
-        <translation type="unfinished"></translation>
+        <translation>다음 파일을 삭제합니다</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="61"/>
         <source>Create Symlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>심볼릭 링크를 생성합니다</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="62"/>
         <source>Creating symlinks for the following files:</source>
-        <translation type="unfinished"></translation>
+        <translation>다음 파일에 대한 심볼릭 링크 만들기:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="65"/>
         <source>Change Attributes</source>
-        <translation type="unfinished"></translation>
+        <translation>속성 변경</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="66"/>
         <source>Changing attributes of the following files:</source>
-        <translation type="unfinished"></translation>
+        <translation>다음 파일의 속성 변경:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="71"/>
         <source>Restore Trashed Files</source>
-        <translation type="unfinished"></translation>
+        <translation>휴지통 파일 복원</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="72"/>
         <source>Restoring the following files from trash can:</source>
-        <translation type="unfinished"></translation>
+        <translation>휴지통에서 다음 파일을 복원하는 중:</translation>
     </message>
     <message>
         <location filename="../fileoperationdialog.cpp" line="141"/>
@@ -1434,47 +1480,47 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../filepropsdialog.cpp" line="148"/>
         <source>View folder content</source>
-        <translation type="unfinished"></translation>
+        <translation>폴더 내용 보기</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="149"/>
         <source>View and modify folder content</source>
-        <translation type="unfinished"></translation>
+        <translation>폴더 내용 보기 및 수정</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="153"/>
         <source>Read</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">읽기</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="154"/>
         <source>Read and write</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">읽기와 쓰기</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="156"/>
         <source>Forbidden</source>
-        <translation type="unfinished"></translation>
+        <translation>금지됨</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="274"/>
         <source>Files of different types</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">다른 종류의 파일</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="304"/>
         <source>Multiple Files</source>
-        <translation type="unfinished"></translation>
+        <translation>여러 개의 파일</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="432"/>
         <source>Apply changes</source>
-        <translation type="unfinished"></translation>
+        <translation>변경사항 적용</translation>
     </message>
     <message>
         <location filename="../filepropsdialog.cpp" line="433"/>
         <source>Do you want to recursively apply these changes to all files and sub-folders?</source>
-        <translation type="unfinished"></translation>
+        <translation>이러한 변경사항을 모든 파일 및 하위 폴더에 재귀적으로 적용하시겠습니까?</translation>
     </message>
 </context>
 <context>
@@ -1482,17 +1528,17 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>Error</source>
-        <translation type="unfinished">오류</translation>
+        <translation>오류</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="120"/>
         <source>You should add at least add one directory to search.</source>
-        <translation type="unfinished"></translation>
+        <translation>검색할 디렉토리를 하나 이상 추가해야 합니다.</translation>
     </message>
     <message>
         <location filename="../filesearchdialog.cpp" line="127"/>
         <source>Select a folder</source>
-        <translation type="unfinished"></translation>
+        <translation>폴더 선택</translation>
     </message>
 </context>
 <context>
@@ -1500,7 +1546,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../foldermenu.cpp" line="37"/>
         <source>Create &amp;New</source>
-        <translation type="unfinished"></translation>
+        <translation>새로 만들기 (&amp;N)</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="44"/>
@@ -1515,62 +1561,62 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../foldermenu.cpp" line="56"/>
         <source>Sorting</source>
-        <translation type="unfinished"></translation>
+        <translation>정렬</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="61"/>
         <source>Show Hidden</source>
-        <translation type="unfinished"></translation>
+        <translation>숨김 표시</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="69"/>
         <source>Get Info</source>
-        <translation type="unfinished"></translation>
+        <translation>정보 불러오기</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="95"/>
         <source>By File Name</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 이름 순</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="96"/>
         <source>By Modification Time</source>
-        <translation type="unfinished"></translation>
+        <translation>수정 시간 순</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="97"/>
         <source>By File Size</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 크기 순</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="98"/>
         <source>By File Type</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 유형 순</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="99"/>
         <source>By File Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 소유자 순</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="111"/>
         <source>Ascending</source>
-        <translation type="unfinished"></translation>
+        <translation>오름차순</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="116"/>
         <source>Descending</source>
-        <translation type="unfinished"></translation>
+        <translation>내림차순</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="131"/>
         <source>Folder First</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">폴더 먼저</translation>
     </message>
     <message>
         <location filename="../foldermenu.cpp" line="140"/>
         <source>Case Sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>대소문자 구분</translation>
     </message>
 </context>
 <context>
@@ -1578,27 +1624,27 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../foldermodel.cpp" line="330"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>이름</translation>
     </message>
     <message>
         <location filename="../foldermodel.cpp" line="333"/>
         <source>Type</source>
-        <translation type="unfinished"></translation>
+        <translation>유형</translation>
     </message>
     <message>
         <location filename="../foldermodel.cpp" line="336"/>
         <source>Size</source>
-        <translation type="unfinished"></translation>
+        <translation>크기</translation>
     </message>
     <message>
         <location filename="../foldermodel.cpp" line="339"/>
         <source>Modified</source>
-        <translation type="unfinished"></translation>
+        <translation>변형</translation>
     </message>
     <message>
         <location filename="../foldermodel.cpp" line="342"/>
         <source>Owner</source>
-        <translation type="unfinished"></translation>
+        <translation>소유자</translation>
     </message>
 </context>
 <context>
@@ -1606,12 +1652,12 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../fontbutton.cpp" line="46"/>
         <source>Bold</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">굵게</translation>
     </message>
     <message>
         <location filename="../fontbutton.cpp" line="50"/>
         <source>Italic</source>
-        <translation type="unfinished"></translation>
+        <translation>기울임</translation>
     </message>
 </context>
 <context>
@@ -1619,7 +1665,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../mountoperationpassworddialog.cpp" line="40"/>
         <source>&amp;Connect</source>
-        <translation type="unfinished"></translation>
+        <translation>연결하기(&amp;C)</translation>
     </message>
 </context>
 <context>
@@ -1632,7 +1678,7 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesmodel.cpp" line="83"/>
         <source>Places</source>
-        <translation type="unfinished"></translation>
+        <translation>위치</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="91"/>
@@ -1651,12 +1697,12 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesmodel.cpp" line="122"/>
         <source>Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>북마크</translation>
     </message>
     <message>
         <location filename="../placesmodel.cpp" line="204"/>
         <source>Trash</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">휴지통</translation>
     </message>
 </context>
 <context>
@@ -1664,48 +1710,48 @@ Do you want to delete them instead?</source>
     <message>
         <location filename="../placesview.cpp" line="352"/>
         <source>Open in New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>새 창에서 열기</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="365"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>휴지통 비우기</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="375"/>
         <source>Move Bookmark Up</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">북마크를 위로 이동하기</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="380"/>
         <source>Move Bookmark Down</source>
-        <translation type="unfinished"></translation>
+        <translation>북마크를 아래로 내리기</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="384"/>
         <source>Rename Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>북마크 이름 바꾸기</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="387"/>
         <source>Remove Bookmark</source>
-        <translation type="unfinished"></translation>
+        <translation>북마크 삭제하기</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="396"/>
         <location filename="../placesview.cpp" line="413"/>
         <source>Unmount</source>
-        <translation type="unfinished"></translation>
+        <translation>마운트 해제</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="400"/>
         <source>Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>마운트</translation>
     </message>
     <message>
         <location filename="../placesview.cpp" line="406"/>
         <source>Eject</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">추출</translation>
     </message>
 </context>
 <context>
@@ -1716,29 +1762,33 @@ Do you want to delete them instead?</source>
         <source>Type: %1
 Size: %2
 Modified: %3</source>
-        <translation type="unfinished"></translation>
+        <translation>유형: %1
+크기: %2
+수정된 날짜: %3</translation>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="56"/>
         <source>Type: %1
 Modified: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>유형: %1
+수정된 날짜: %2</translation>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="75"/>
         <source>Type: %1
 Modified: %3</source>
-        <translation type="unfinished"></translation>
+        <translation>유형: %1
+수정된 날짜: %3</translation>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="89"/>
         <source>&amp;Overwrite</source>
-        <translation type="unfinished"></translation>
+        <translation>덮어쓰기(&amp;O)</translation>
     </message>
     <message>
         <location filename="../renamedialog.cpp" line="91"/>
         <source>&amp;Rename</source>
-        <translation type="unfinished">이름 바꾸기 (&amp;R)</translation>
+        <translation>이름 바꾸기 (&amp;R)</translation>
     </message>
 </context>
 <context>
@@ -1747,23 +1797,23 @@ Modified: %3</source>
         <location filename="../sidepane.cpp" line="49"/>
         <location filename="../sidepane.cpp" line="133"/>
         <source>Places</source>
-        <translation type="unfinished"></translation>
+        <translation>위치</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="50"/>
         <location filename="../sidepane.cpp" line="135"/>
         <source>Directory Tree</source>
-        <translation type="unfinished"></translation>
+        <translation>디렉토리 트리</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="143"/>
         <source>Shows list of common places, devices, and bookmarks in sidebar</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">사이드바에 일반적인 장소, 장치, 북마크의 목록을 표시합니다</translation>
     </message>
     <message>
         <location filename="../sidepane.cpp" line="145"/>
         <source>Shows tree of directories in sidebar</source>
-        <translation type="unfinished"></translation>
+        <translation>사이드바에 디렉토리 트리 표시</translation>
     </message>
 </context>
 <context>
@@ -1827,7 +1877,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="623"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="623"/>
         <source>Quit</source>
-        <translation>사임하다</translation>
+        <translation>종료</translation>
     </message>
     <message>
         <source>&amp;About</source>
@@ -1877,7 +1927,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="635"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="635"/>
         <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ctrl+Shift+C</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="379"/>
@@ -2073,35 +2123,35 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="687"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="687"/>
         <source>&amp;By File Name</source>
-        <translation>파일 이름별 (&amp;B)</translation>
+        <translation>파일 이름순 (&amp;B)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="549"/>
         <location filename="../../build/src/ui_main-win.h" line="688"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="688"/>
         <source>By &amp;Modification Time</source>
-        <translation>수정 시간별 (&amp;M)</translation>
+        <translation>수정 시간순 (&amp;M)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="557"/>
         <location filename="../../build/src/ui_main-win.h" line="689"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="689"/>
         <source>By File &amp;Type</source>
-        <translation>파일 유형별 (&amp;T)</translation>
+        <translation>파일 유형순 (&amp;T)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="565"/>
         <location filename="../../build/src/ui_main-win.h" line="690"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="690"/>
         <source>By &amp;Owner</source>
-        <translation>소유자별 (&amp;O)</translation>
+        <translation>소유자순 (&amp;O)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="573"/>
         <location filename="../../build/src/ui_main-win.h" line="691"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="691"/>
         <source>&amp;Folder First</source>
-        <translation>폴더 먼저 (&amp;F)</translation>
+        <translation type="unfinished">폴더 먼저 (&amp;F)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="644"/>
@@ -2122,7 +2172,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="723"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="723"/>
         <source>Get &amp;Info</source>
-        <translation type="unfinished"></translation>
+        <translation>정보 불러오기 (&amp;I)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="668"/>
@@ -2178,14 +2228,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="753"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="753"/>
         <source>&amp;Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>폴더로 이동 (&amp;G)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="767"/>
         <location filename="../../build/src/ui_main-win.h" line="755"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="755"/>
         <source>Go To Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>폴더로 이동</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="770"/>
@@ -2199,14 +2249,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="760"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="760"/>
         <source>&amp;Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">다운로드 (&amp;D)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="778"/>
         <location filename="../../build/src/ui_main-win.h" line="762"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="762"/>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>다운로드</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="781"/>
@@ -2220,14 +2270,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="767"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="767"/>
         <source>&amp;Utilities</source>
-        <translation type="unfinished"></translation>
+        <translation>도구 (&amp;U)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="792"/>
         <location filename="../../build/src/ui_main-win.h" line="769"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="769"/>
         <source>Utilities</source>
-        <translation type="unfinished"></translation>
+        <translation>도구</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="795"/>
@@ -2241,14 +2291,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="774"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="774"/>
         <source>&amp;Documents</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">문서 (&amp;D)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="806"/>
         <location filename="../../build/src/ui_main-win.h" line="776"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="776"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>문서</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="809"/>
@@ -2262,7 +2312,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="781"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="781"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>열기</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="820"/>
@@ -2276,7 +2326,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="785"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="785"/>
         <source>&amp;Duplicate</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">복제 (&amp;D)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="828"/>
@@ -2304,7 +2354,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="793"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="793"/>
         <source>Show Contents</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">내용 표시</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="844"/>
@@ -2342,7 +2392,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="804"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="804"/>
         <source>Open With...</source>
-        <translation type="unfinished"></translation>
+        <translation>다음으로 열기...</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="582"/>
@@ -2377,7 +2427,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="624"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="624"/>
         <source>&amp;About Filer</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">파일러 정보(&amp;A)</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="585"/>
@@ -2645,7 +2695,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_mount-operation-password.h" line="172"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="172"/>
         <source>Mount</source>
-        <translation type="unfinished"></translation>
+        <translation>마운트</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="48"/>
@@ -2666,21 +2716,21 @@ Modified: %3</source>
         <location filename="../../build/src/ui_mount-operation-password.h" line="176"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="176"/>
         <source>&amp;Username:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;아이디:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="102"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="177"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="177"/>
         <source>&amp;Password:</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;비밀번호:</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="112"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="178"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="178"/>
         <source>&amp;Domain:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;도메인(주소)</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="127"/>
@@ -2753,14 +2803,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_preferences.h" line="619"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="619"/>
         <source>Save metadata to directories (.DirInfo files)</source>
-        <translation type="unfinished"></translation>
+        <translation>메타데이터(metadata)를 디렉토리(.DirInfo 파일)에 저장합니다</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="67"/>
         <location filename="../../build/src/ui_preferences.h" line="620"/>
         <location filename="../../cmake-build-debug/src/ui_preferences.h" line="620"/>
         <source>Spatial mode (folders open in a new window)</source>
-        <translation type="unfinished"></translation>
+        <translation>공간 모드(새 창에서 폴더 열기)</translation>
     </message>
     <message>
         <location filename="../preferences.ui" line="134"/>
@@ -3180,52 +3230,52 @@ Modified: %3</source>
     <message>
         <location filename="../utilities.cpp" line="127"/>
         <source>Rename</source>
-        <translation type="unfinished"></translation>
+        <translation>이름 변경</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="128"/>
         <source>Please enter a new name:</source>
-        <translation type="unfinished"></translation>
+        <translation>새 이름을 입력하십시오:</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="133"/>
         <source>The startvolume cannot be renamed.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">시작 볼륨의 이름을 바꿀 수 없습니다.</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="222"/>
         <source>Create Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>폴더 만들기</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="223"/>
         <source>Create File</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 만들기</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="227"/>
         <source>Please enter a new file name:</source>
-        <translation type="unfinished"></translation>
+        <translation>새 파일 이름을 입력하십시오:</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="228"/>
         <source>New text file</source>
-        <translation type="unfinished"></translation>
+        <translation>새 텍스트 파일</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="232"/>
         <source>Please enter a new folder name:</source>
-        <translation type="unfinished"></translation>
+        <translation>새 폴더 이름을 입력하십시오:</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="233"/>
         <source>New folder</source>
-        <translation type="unfinished"></translation>
+        <translation>새 폴더</translation>
     </message>
     <message>
         <location filename="../utilities.cpp" line="238"/>
         <source>Enter a name for the new %1:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">새 %1의 이름을 입력하십시오:</translation>
     </message>
 </context>
 <context>
@@ -3235,14 +3285,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_rename-dialog.h" line="156"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="156"/>
         <source>Confirm to replace files</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">파일 교체 확인</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="35"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="157"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="157"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;There is already a file with the same name in this location.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Do you want to replace the existing file?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;이곳에 같은 이름의 파일이 이미 있습니다.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;기존 파일을 바꾸시겠습니까?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="56"/>
@@ -3256,7 +3306,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_rename-dialog.h" line="159"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="159"/>
         <source>with the following file?</source>
-        <translation type="unfinished"></translation>
+        <translation>다음과 같은 파일?</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="76"/>
@@ -3291,7 +3341,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_rename-dialog.h" line="164"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="164"/>
         <source>Apply this option to all existing files</source>
-        <translation type="unfinished"></translation>
+        <translation>모든 기존 파일에 이 옵션 적용</translation>
     </message>
 </context>
 <context>
@@ -3301,14 +3351,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="398"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="398"/>
         <source>Search Files</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 검색</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="29"/>
         <location filename="../../build/src/ui_filesearch.h" line="408"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="408"/>
         <source>Name/Location</source>
-        <translation type="unfinished"></translation>
+        <translation>이름/위치</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="35"/>
@@ -3329,7 +3379,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="401"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="401"/>
         <source>Case insensitive</source>
-        <translation type="unfinished"></translation>
+        <translation>대소문자 구분</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="55"/>
@@ -3343,14 +3393,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="403"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="403"/>
         <source>Places to Search:</source>
-        <translation type="unfinished"></translation>
+        <translation>장소를 검색:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="78"/>
         <location filename="../../build/src/ui_filesearch.h" line="404"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="404"/>
         <source>&amp;Add</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;추가</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="90"/>
@@ -3364,14 +3414,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="406"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="406"/>
         <source>Search in sub directories</source>
-        <translation type="unfinished"></translation>
+        <translation>하위 디렉토리에서 검색</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="126"/>
         <location filename="../../build/src/ui_filesearch.h" line="407"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="407"/>
         <source>Search for hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>숨겨진 파일 검색</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="137"/>
@@ -3385,63 +3435,63 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="409"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="409"/>
         <source>Only search for files of following types:</source>
-        <translation type="unfinished"></translation>
+        <translation>다음 유형의 파일만 검색합니다:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="149"/>
         <location filename="../../build/src/ui_filesearch.h" line="410"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="410"/>
         <source>Text files</source>
-        <translation type="unfinished"></translation>
+        <translation>텍스트 파일</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="156"/>
         <location filename="../../build/src/ui_filesearch.h" line="411"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="411"/>
         <source>Image files</source>
-        <translation type="unfinished"></translation>
+        <translation>이미지 파일</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="163"/>
         <location filename="../../build/src/ui_filesearch.h" line="412"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="412"/>
         <source>Audio files</source>
-        <translation type="unfinished"></translation>
+        <translation>오디오 파일</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="170"/>
         <location filename="../../build/src/ui_filesearch.h" line="413"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="413"/>
         <source>Video files</source>
-        <translation type="unfinished"></translation>
+        <translation>비디오 파일</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="177"/>
         <location filename="../../build/src/ui_filesearch.h" line="414"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="414"/>
         <source>Documents</source>
-        <translation type="unfinished"></translation>
+        <translation>문서</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="184"/>
         <location filename="../../build/src/ui_filesearch.h" line="415"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="415"/>
         <source>Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>폴더</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="208"/>
         <location filename="../../build/src/ui_filesearch.h" line="420"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="420"/>
         <source>Content</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">내용물</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="214"/>
         <location filename="../../build/src/ui_filesearch.h" line="417"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="417"/>
         <source>File contains:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">파일 내용</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="223"/>
@@ -3462,14 +3512,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="437"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="437"/>
         <source>Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>속성</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="260"/>
         <location filename="../../build/src/ui_filesearch.h" line="421"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="421"/>
         <source>File Size:</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 크기:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="266"/>
@@ -3486,7 +3536,7 @@ Modified: %3</source>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="423"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="429"/>
         <source>Bytes</source>
-        <translation type="unfinished"></translation>
+        <translation>바이트</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="287"/>
@@ -3496,7 +3546,7 @@ Modified: %3</source>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="424"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="430"/>
         <source>KiB</source>
-        <translation type="unfinished"></translation>
+        <translation>KiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="292"/>
@@ -3506,7 +3556,7 @@ Modified: %3</source>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="425"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="431"/>
         <source>MiB</source>
-        <translation type="unfinished"></translation>
+        <translation>MiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="297"/>
@@ -3516,7 +3566,7 @@ Modified: %3</source>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="426"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="432"/>
         <source>GiB</source>
-        <translation type="unfinished"></translation>
+        <translation>GiB</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="307"/>
@@ -3530,7 +3580,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="434"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="434"/>
         <source>Last Modified Time:</source>
-        <translation type="unfinished"></translation>
+        <translation>마지막 수정 시간:</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="357"/>
