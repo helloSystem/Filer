@@ -83,7 +83,7 @@ https://dribbble.com/shots/2541211--Pirate-Finder-icon#
 Copyright (C) 2016 Raphael Lopes &lt;raphaellopes8@gmail.com&gt;
 
 Used with permission of the creator https://raphaellopes.me/</source>
-        <translation type="unfinished">Filer
+        <translation>Filer
 
 Copyright (C) 2020-21 Simon Peter
 Copyright (C) 2021 Chris Moore
@@ -362,7 +362,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../../build/src/ui_desktop-preferences.h" line="189"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="189"/>
         <source>Wallpaper mode:</source>
-        <translation>벽지 모드 :</translation>
+        <translation>배경화면 모드 :</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="32"/>
@@ -464,7 +464,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../../build/src/ui_edit-bookmarks.h" line="103"/>
         <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="103"/>
         <source>Edit Bookmarks</source>
-        <translation type="unfinished">북마크 편집</translation>
+        <translation>북마크 편집</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="42"/>
@@ -485,14 +485,14 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../../build/src/ui_edit-bookmarks.h" line="107"/>
         <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="107"/>
         <source>&amp;Add Item</source>
-        <translation type="unfinished">&amp;추가항목</translation>
+        <translation type="unfinished">항목 추가 (&amp;A)</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="77"/>
         <location filename="../../build/src/ui_edit-bookmarks.h" line="108"/>
         <location filename="../../cmake-build-debug/src/ui_edit-bookmarks.h" line="108"/>
         <source>&amp;Remove Item</source>
-        <translation type="unfinished">&amp;항목 제거</translation>
+        <translation>항목 제거 (&amp;R)</translation>
     </message>
     <message>
         <location filename="../edit-bookmarks.ui" line="102"/>
@@ -516,14 +516,14 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../../build/src/ui_exec-file.h" line="116"/>
         <location filename="../../cmake-build-debug/src/ui_exec-file.h" line="116"/>
         <source>&amp;Open</source>
-        <translation>&amp;열기</translation>
+        <translation>열기 (&amp;O)</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="52"/>
         <location filename="../../build/src/ui_exec-file.h" line="117"/>
         <location filename="../../cmake-build-debug/src/ui_exec-file.h" line="117"/>
         <source>E&amp;xecute</source>
-        <translation type="unfinished"></translation>
+        <translation>실행 (&amp;x)</translation>
     </message>
     <message>
         <location filename="../exec-file.ui" line="62"/>
@@ -599,7 +599,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../../build/src/ui_file-props.h" line="365"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="365"/>
         <source>General</source>
-        <translation type="unfinished">일반</translation>
+        <translation>일반</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="139"/>
@@ -683,7 +683,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.</
         <location filename="../../build/src/ui_file-props.h" line="385"/>
         <location filename="../../cmake-build-debug/src/ui_file-props.h" line="385"/>
         <source>Everyone</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">모든 사용자</translation>
     </message>
     <message>
         <location filename="../file-props.ui" line="440"/>
@@ -781,7 +781,7 @@ Functionality may be broken.</source>
     <message>
         <location filename="../application.cpp" line="301"/>
         <source>Set desktop wallpaper from image FILE</source>
-        <translation>이미지 파일에서 설정 데스크톱 배경 화면</translation>
+        <translation>이미지 파일에서 바탕화면 배경화면 설정</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="301"/>
@@ -843,12 +843,12 @@ Functionality may be broken.</source>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="49"/>
         <source>Fill with background color only</source>
-        <translation>배경색으로 만 채우기</translation>
+        <translation>배경색으로만 채우기</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="50"/>
         <source>Transparent</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">투명</translation>
     </message>
     <message>
         <location filename="../desktoppreferencesdialog.cpp" line="51"/>
@@ -1297,7 +1297,7 @@ What do you want to do with it?</source>
     <message>
         <location filename="../filemenu.cpp" line="108"/>
         <source>Show Contents</source>
-        <translation type="unfinished"></translation>
+        <translation>내용을 표시</translation>
     </message>
     <message>
         <location filename="../filemenu.cpp" line="101"/>
@@ -1941,7 +1941,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="639"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="639"/>
         <source>Ctrl+Shift+T</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+T</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="387"/>
@@ -1962,7 +1962,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="647"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="647"/>
         <source>Ctrl+Shift+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+D</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="411"/>
@@ -1983,7 +1983,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="652"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="652"/>
         <source>Ctrl+Shift+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Shift+A</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="427"/>
@@ -2340,7 +2340,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_main-win.h" line="789"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="789"/>
         <source>Empty Trash</source>
-        <translation type="unfinished"></translation>
+        <translation>휴지통 비우기</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="836"/>
@@ -2378,7 +2378,7 @@ Modified: %3</source>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="797"/>
         <location filename="../../cmake-build-debug/src/ui_main-win.h" line="799"/>
         <source>Go Up and Close Current</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">현재 열려있는 파일을 닫고 상위 파일로 이동</translation>
     </message>
     <message>
         <location filename="../main-win.ui" line="859"/>
@@ -2702,14 +2702,14 @@ Modified: %3</source>
         <location filename="../../build/src/ui_mount-operation-password.h" line="174"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="174"/>
         <source>Connect &amp;anonymously</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">익명으로 연결 (&amp;a)</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="58"/>
         <location filename="../../build/src/ui_mount-operation-password.h" line="175"/>
         <location filename="../../cmake-build-debug/src/ui_mount-operation-password.h" line="175"/>
         <source>Connect as u&amp;ser:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">유저로 연결 (&amp;s)</translation>
     </message>
     <message>
         <location filename="../mount-operation-password.ui" line="79"/>
@@ -3313,21 +3313,21 @@ Modified: %3</source>
         <location filename="../../build/src/ui_rename-dialog.h" line="160"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="160"/>
         <source>src file info</source>
-        <translation type="unfinished"></translation>
+        <translation>소스 파일 정보</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="89"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="161"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="161"/>
         <source>dest file info</source>
-        <translation type="unfinished"></translation>
+        <translation>대상 파일 정보</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="102"/>
         <location filename="../../build/src/ui_rename-dialog.h" line="162"/>
         <location filename="../../cmake-build-debug/src/ui_rename-dialog.h" line="162"/>
         <source>src</source>
-        <translation type="unfinished"></translation>
+        <translation>소스</translation>
     </message>
     <message>
         <location filename="../rename-dialog.ui" line="122"/>
@@ -3428,7 +3428,7 @@ Modified: %3</source>
         <location filename="../../build/src/ui_filesearch.h" line="416"/>
         <location filename="../../cmake-build-debug/src/ui_filesearch.h" line="416"/>
         <source>File Type</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 유형</translation>
     </message>
     <message>
         <location filename="../filesearch.ui" line="143"/>
