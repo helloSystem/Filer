@@ -8,7 +8,7 @@
         <location filename="../../build/src/ui_about.h" line="140"/>
         <location filename="../../cmake-build-debug/src/ui_about.h" line="140"/>
         <source>About</source>
-        <translation>Acerca</translation>
+        <translation>Sobre</translation>
     </message>
     <message>
         <location filename="../about.ui" line="37"/>
