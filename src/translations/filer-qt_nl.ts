@@ -324,7 +324,7 @@ Gebruikt met toestemming van de maker https://raphaellopes.me/</translation>
         <location filename="../../build/src/ui_desktop-preferences.h" line="198"/>
         <location filename="../../cmake-build-debug/src/ui_desktop-preferences.h" line="198"/>
         <source>Colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Kleuren</translation>
     </message>
     <message>
         <location filename="../desktop-preferences.ui" line="150"/>
@@ -622,22 +622,26 @@ from an application bundle.
 
 This is not how it should be invoked.
 Functionality may be broken.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 werd niet geopend door het opencommando
+van een applicatiebundel
+
+Dit is niet hoe het gestart hoort te worden.
+Mogelijks werkt niet alles naar behoren.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="215"/>
         <source>The &apos;launch&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Het &apos;lanceercommando&apos; ontbreekt.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="222"/>
         <source>The &apos;open&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Het &apos;opencommando&apos; ontbreekt.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="232"/>
         <source>The &apos;eject-and-clean&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>Het &apos;uitwerpen-en-opruimcommando&apos; ontbreekt.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="277"/>
@@ -887,14 +891,14 @@ Functionality may be broken.</source>
         <location filename="../tabpage.cpp" line="278"/>
         <source>%n items</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+            <numerusform>%n items</numerusform>
+            <numerusform>%n items</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="280"/>
         <source>1 item</source>
-        <translation type="unfinished"></translation>
+        <translation>1 item</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="436"/>
