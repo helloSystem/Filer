@@ -825,22 +825,26 @@ from an application bundle.
 
 This is not how it should be invoked.
 Functionality may be broken.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 n&apos;a pas été lancé par une commande de lancement
+depuis le pack d&apos;application
+
+Ceci n&apos;est pas comment il devrait être lancé.
+Certaines fonctionnalitées pouraient disfonctionner.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="215"/>
         <source>The &apos;launch&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>La commande &quot;Lancer&quot; est manquante.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="222"/>
         <source>The &apos;open&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>La commande &quot;Ouvrir&quot; est manquante.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="232"/>
         <source>The &apos;eject-and-clean&apos; command is missing.</source>
-        <translation type="unfinished"></translation>
+        <translation>La commande &quot;Éjecter &amp; nettoyer&quot; est manquante.</translation>
     </message>
     <message>
         <location filename="../application.cpp" line="289"/>
@@ -1072,22 +1076,22 @@ Functionality may be broken.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="278"/>
         <source>%n items</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n élément</numerusform>
+            <numerusform>%n éléments</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../tabpage.cpp" line="280"/>
         <source>1 item</source>
-        <translation type="unfinished"></translation>
+        <translation>1 élément</translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="436"/>
         <source>%1 items selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 élément sélectionné</numerusform>
+            <numerusform>%1 éléments sélectionnés</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1500,7 +1504,7 @@ Voulez-vous plutôt les supprimer ?</translation>
     <message>
         <location filename="../fileoperation.cpp" line="273"/>
         <source>%1 is required by the system and cannot be deleted.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 est requis par le système et ne peut être effacé.</translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="281"/>
