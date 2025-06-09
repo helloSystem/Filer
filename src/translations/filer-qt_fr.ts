@@ -1097,9 +1097,9 @@ Certaines fonctionnalitées pouraient disfonctionner.</translation>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="440"/>
         <source>%1 item selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%1 objet séléctionné</numerusform>
+            <numerusform>%1 objets séléctionnés</numerusform>
         </translation>
     </message>
     <message>
@@ -1521,7 +1521,7 @@ Voulez-vous plutôt les supprimer ?</translation>
         <location filename="../fileoperation.cpp" line="272"/>
         <location filename="../fileoperation.cpp" line="304"/>
         <source> </source>
-        <translation type="unfinished"></translation>
+        <translation> . </translation>
     </message>
     <message>
         <location filename="../fileoperation.cpp" line="305"/>
