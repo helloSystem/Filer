@@ -838,9 +838,9 @@ Functionality may be broken.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="278"/>
         <source>%n items</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n ელემენტი</numerusform>
+            <numerusform>%n ელემენტი</numerusform>
         </translation>
     </message>
     <message>
@@ -851,17 +851,17 @@ Functionality may be broken.</source>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="436"/>
         <source>%1 items selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>არჩეულია %1 ელემენტი</numerusform>
+            <numerusform>არჩეულია %1 ელემენტი</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../tabpage.cpp" line="440"/>
         <source>%1 item selected</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>არჩეულია %1 ელემენტი</numerusform>
+            <numerusform>არჩეულია %1 ელემენტი</numerusform>
         </translation>
     </message>
 </context>
